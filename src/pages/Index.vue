@@ -5,8 +5,8 @@
         <img class="hero-bg-img" src="/uploads/home-hero-image.png" srcset=""></img>
         <div class="hero-body">
           <div class="container is-fullhd">
-            <h1 class="title has-text-white" v-html="$page.siteConfig.heroTitle" />
-            <h2 class="subtitle has-text-white"v-html="$page.siteConfig.heroSubTitle" />
+            <h1 class="title has-text-white" v-html="$page.homeData.heroTitle" />
+            <h2 class="subtitle has-text-white"v-html="$page.homeData.heroSubTitle" />
           </div>
         </div>
       </section>
@@ -15,8 +15,8 @@
 </template>
 
 <page-query>
-  query SiteConfig {
-    siteConfig: siteLevelData (path: "/content/site-config") {
+  query Home {
+    homeData: homeData (path: "/content/home") {
       title
       heroTitle
       heroSubTitle

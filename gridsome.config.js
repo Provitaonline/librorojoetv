@@ -11,7 +11,7 @@ module.exports = {
       use: '@gridsome/source-filesystem',
       options: {
         path: 'content/**/*.md',
-        typeName: 'SiteLevelData'
+        typeName: 'HomeData'
       }
     }
   ]
