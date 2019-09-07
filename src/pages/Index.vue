@@ -11,6 +11,24 @@
           <a class="button explore is-primary is-inverted is-outlined"><font-awesome size="lg" :icon="['fas', 'angle-double-down']"/></a>
         </div>
       </section>
+      <section>
+        <div class="container">
+
+        </div>
+      </section>
+      <section>
+        <div class="container" style="height: 800px;">
+          <l-map
+            ref="myMap"
+            :zoom="zoom"
+            :center="center"
+            :options="mapOptions"
+            style="height: 80%"
+          >
+            <l-tile-layer :url="url" />
+          </l-map>
+        </div>
+      </section>
     </div>
   </Layout>
 </template>
@@ -52,5 +70,26 @@
 </style>
 
 <script>
+import { latLng } from "leaflet";
+  import { LMap, LTileLayer, LMarker } from "vue2-leaflet";
 
+  export default {
+    components: {
+      LMap,
+      LTileLayer,
+      LMarker,
+    },
+    data() {
+      return {
+        zoom: 6,
+        center: latLng(6.4238, -66.5897),
+        url: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}",
+        currentZoom: 11.5,
+        currentCenter: latLng(52.547715, 13.413936),
+        mapOptions: {
+          zoomSnap: 0.5
+        }
+      }
+    }
+  }
 </script>
