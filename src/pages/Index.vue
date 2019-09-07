@@ -8,6 +8,7 @@
             <h1 class="title has-text-white" v-html="$page.homeData.heroTitle" />
             <h2 class="subtitle has-text-white"v-html="$page.homeData.heroSubTitle" />
           </div>
+          <a class="button explore is-primary is-inverted is-outlined"><font-awesome size="lg" :icon="['fas', 'angle-double-down']"/></a>
         </div>
       </section>
     </div>
@@ -40,6 +41,13 @@
     width: 100%;
     height: 100%;
     opacity: 0.35;
+  }
+
+  .explore {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
   }
 </style>
 
