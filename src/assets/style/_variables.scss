@@ -22,6 +22,8 @@ $colors: (
 );
 
 // Links
-$link: $primary;
-$link-invert: $primary-invert;
+$link: $dark;
+$link-hover: $primary;
+$link-active: $primary;
+$link-invert: $dark-invert;
 $link-focus-border: $primary;
