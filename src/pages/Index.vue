@@ -81,6 +81,7 @@
     overflow: hidden;
     position: relative;
   }
+
   .hero-bg-img {
     position: absolute;
     object-fit: cover;
@@ -106,11 +107,12 @@
     width: 20px;
     display: inline-block;
   }
-
+  
   .lightstripe {
     background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc1JyBoZWlnaHQ9JzUnPgogIDxyZWN0IHdpZHRoPSc1JyBoZWlnaHQ9JzUnIGZpbGw9J3doaXRlJy8+CiAgPHBhdGggZD0nTTAgNUw1IDBaTTYgNEw0IDZaTS0xIDFMMSAtMVonIHN0cm9rZT0nIzg4OCcgc3Ryb2tlLXdpZHRoPScxJy8+Cjwvc3ZnPg==");
     background-repeat: repeat;
   }
+
   .dot {
     margin-left: 6px;
     margin-right: 6px;
@@ -120,13 +122,11 @@
     border-radius: 50%;
     display: inline-block;
   }
-
 </style>
 
 <script>
 import { latLng } from "leaflet";
   import { LMap, LTileLayer, LMarker } from "vue2-leaflet";
-
   export default {
     components: {
       LMap,
