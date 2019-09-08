@@ -20,7 +20,6 @@
             <l-map
               ref='myMap'
               :zoom='zoom'
-              :center='center'
               :options='mapOptions'
               style='height: 100%'
             >
@@ -127,29 +126,15 @@
 </style>
 
 <script>
-  import { latLng } from 'leaflet'
-  import { Icon } from 'leaflet'
-  import 'leaflet/dist/leaflet.css'
-
-  delete Icon.Default.prototype._getIconUrl
-
-  Icon.Default.mergeOptions({
-    iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
-    iconUrl: require('leaflet/dist/images/marker-icon.png'),
-    shadowUrl: require('leaflet/dist/images/marker-shadow.png')
-  });
-
-  //var LTileLayer, LMap
+  //import { latLng } from "leaflet";
+  console.log('*******', process.isClient);
+  var latLng;
+  if (process.isClient) {
+    latLng =  () => import ('vue2-leaflet').then(m => m.latLng)
+    //console.log(this.$context);
+  }
 
   export default {
-    mounted() {
-      console.log('mounted')
-    },
-    components: {
-      'l-map': () => import ('vue2-leaflet').then(m => m.LMap),
-      'l-tile-layer': () => import ('vue2-leaflet').then(m => m.LTileLayer),
-      'l-marker': () => import ('vue2-leaflet').then(m => m.LMarker)
-    },
     data() {
       return {
         zoom: 6,
