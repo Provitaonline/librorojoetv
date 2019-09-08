@@ -15,17 +15,19 @@
         <div class="map-title has-text-centered">
           <b>FORMACIONES VEGETALES DE VENEZUELA - 2010</b>
         </div>
-        <div class="container" style="height: 600px;">
-          <l-map
-            ref="myMap"
-            :zoom="zoom"
-            :center="center"
-            :options="mapOptions"
-            style="height: 100%"
-          >
-            <l-tile-layer :url="url" />
-          </l-map>
-        </div>
+        <ClientOnly>
+          <div class="container" style="height: 600px;">
+            <l-map
+              ref='myMap'
+              :zoom='zoom'
+              :center='center'
+              :options='mapOptions'
+              style='height: 100%'
+            >
+              <l-tile-layer :url="url" />
+            </l-map>
+          </div>
+        </ClientOnly>
         <div class="section container legend is-size-7 has-text-left">
           <div class="columns">
             <div class="column">
@@ -107,7 +109,7 @@
     width: 20px;
     display: inline-block;
   }
-  
+
   .lightstripe {
     background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc1JyBoZWlnaHQ9JzUnPgogIDxyZWN0IHdpZHRoPSc1JyBoZWlnaHQ9JzUnIGZpbGw9J3doaXRlJy8+CiAgPHBhdGggZD0nTTAgNUw1IDBaTTYgNEw0IDZaTS0xIDFMMSAtMVonIHN0cm9rZT0nIzg4OCcgc3Ryb2tlLXdpZHRoPScxJy8+Cjwvc3ZnPg==");
     background-repeat: repeat;
@@ -125,8 +127,19 @@
 </style>
 
 <script>
-import { latLng } from "leaflet";
-  import { LMap, LTileLayer, LMarker } from "vue2-leaflet";
+  import { latLng } from 'leaflet';
+  import { LMap, LTileLayer, LMarker } from 'vue2-leaflet';
+  import { Icon } from 'leaflet';
+  import 'leaflet/dist/leaflet.css';
+
+  delete Icon.Default.prototype._getIconUrl;
+
+  Icon.Default.mergeOptions({
+    iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
+    iconUrl: require('leaflet/dist/images/marker-icon.png'),
+    shadowUrl: require('leaflet/dist/images/marker-shadow.png')
+  });
+
   export default {
     components: {
       LMap,
