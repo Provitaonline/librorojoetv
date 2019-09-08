@@ -29,34 +29,25 @@
         <div class="section container legend is-size-7 has-text-left">
           <div class="columns">
             <div class="column">
-              <g-link><span class="legend-item" style="background: #1f743a;"></span> Bosques siempreverdes per se<br></g-link>
-              <g-link><span class="legend-item" style="background: #6cbd45;"></span> Bosques nublados<br></g-link>
-              <g-link><span class="legend-item" style="background: #75b374;"></span> Bosques de palmas<br></g-link>
-              <g-link><span class="legend-item" style="background: #5fbb46;"></span> Bosques de pantano<br></g-link>
-              <g-link><span class="legend-item" style="background: #5b8a45;"></span> Bosques de manglares<br></g-link>
-              <g-link><span class="legend-item" style="background: #7bc46c;"></span> Bosques semideciduos<br></g-link>
-              <g-link><span class="legend-item" style="background: #b0d136;"></span> Bosques deciduos<br></g-link>
-              <g-link><span class="legend-item" style="background: #aaab37;"></span> Bosques ribereños</g-link>
+              <div v-for="item in columnOneItems">
+                <g-link v-if="item.legend === 'colorkey'"><span class="legend-item" :style="'background:' + item.color"></span> {{ item.name }}<br></g-link>
+                <g-link v-else-if="item.legend === 'stripes'"><span class="legend-item lightstripe"></span> {{ item.name }}<br></g-link>
+                <g-link v-else-if="item.legend === 'dotkey'"><span class="dot" :style="'background:' + item.color"></span> {{ item.name }}<br></g-link>
+              </div>
             </div>
             <div class="column">
-              <g-link><span class="legend-item" style="background: #cba865;"></span> Arbustales siempreverdes per se<br></g-link>
-              <g-link><span class="legend-item" style="background: #a83b23;"></span> Arbustales tepuyanos<br></g-link>
-              <g-link><span class="legend-item" style="background: #f2633e;"></span> Arbustales espinosos<br></g-link>
-              <g-link><span class="legend-item" style="background: #f8a67f;"></span> Arbustales litorales<br></g-link>
-              <g-link><span class="legend-item" style="background: #a77129;"></span> Arbustales ribereños<br></g-link>
-              <g-link><span class="legend-item" style="background: #e6b620;"></span> Arbustales y herbazales parameros<br></g-link>
-              <g-link><span class="legend-item" style="background: #ffd27f;"></span> Sabanas abiertas<br></g-link>
-              <g-link><span class="legend-item" style="background: #fca91c;"></span> Sabanas arbustivas y/o arboladas</g-link>
+              <div v-for="item in columnTwoItems">
+                <g-link v-if="item.legend === 'colorkey'"><span class="legend-item" :style="'background:' + item.color"></span> {{ item.name }}<br></g-link>
+                <g-link v-else-if="item.legend === 'stripes'"><span class="legend-item lightstripe"></span> {{ item.name }}<br></g-link>
+                <g-link v-else-if="item.legend === 'dotkey'"><span class="dot" :style="'background:' + item.color"></span> {{ item.name }}<br></g-link>
+              </div>
             </div>
             <div class="column">
-              <g-link><span class="legend-item" style="background: #d5e9b9;"></span> Herbazales de pantano<br></g-link>
-              <g-link><span class="legend-item" style="background: #cfe188;"></span> Herbazales arbustivos sobre arena<br></g-link>
-              <g-link><span class="legend-item" style="background: #fbeabd;"></span> Herbazales tepuyanos<br></g-link>
-              <g-link><span class="legend-item" style="background: #f7f175;"></span> Herbazales litorales<br></g-link>
-              <g-link><span class="dot" style="background: black;"></span> Vegetación saxícola<br></g-link>
-              <span class="legend-item lightstripe"></span> Áreas intervenidas<br>
-              <span class="legend-item" style="background: #99daf2"></span> Cuerpos de agua<br>
-
+              <div v-for="item in columnThreeItems">
+                <g-link v-if="item.legend === 'colorkey'"><span class="legend-item" :style="'background:' + item.color"></span> {{ item.name }}<br></g-link>
+                <g-link v-else-if="item.legend === 'stripes'"><span class="legend-item lightstripe"></span> {{ item.name }}<br></g-link>
+                <g-link v-else-if="item.legend === 'dotkey'"><span class="dot" :style="'background:' + item.color"></span> {{ item.name }}<br></g-link>
+              </div>
             </div>
           </div>
         </div>
@@ -71,7 +62,12 @@
       title
       heroTitle
       heroSubTitle
-    	content
+    	vegetation {
+        name
+        group
+        color
+        legend
+      }
     }
   }
 </page-query>
@@ -148,6 +144,17 @@ import { latLng } from "leaflet";
           zoomSnap: 0.5
         }
       }
+    },
+    computed: {
+      columnOneItems() {
+        return(this.$page.homeData.vegetation.filter(function(v) { return v.group == 1}))
+      },
+      columnTwoItems() {
+        return(this.$page.homeData.vegetation.filter(function(v) { return v.group == 2}))
+      },
+      columnThreeItems() {
+        return(this.$page.homeData.vegetation.filter(function(v) { return v.group == 3}))
+      },
     }
   }
 </script>
