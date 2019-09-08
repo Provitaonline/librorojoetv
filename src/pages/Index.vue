@@ -128,7 +128,6 @@
 
 <script>
   import { latLng } from 'leaflet'
-  import { LMap, LTileLayer, LMarker } from 'vue2-leaflet'
   import { Icon } from 'leaflet'
   import 'leaflet/dist/leaflet.css'
 
@@ -145,14 +144,11 @@
   export default {
     mounted() {
       console.log('mounted')
-      //LMap = require('vue2-leaflet/dist/components/LMap')
-      //LTileLayer = require('vue2-leaflet/dist/components/LTileLayer')
-
     },
     components: {
-      'l-map': LMap,
-      'l-tile-layer': LTileLayer,
-      'l-marker': LMarker
+      'l-map': () => import ('vue2-leaflet').then(m => m.LMap),
+      'l-tile-layer': () => import ('vue2-leaflet').then(m => m.LTileLayer),
+      'l-marker': () => import ('vue2-leaflet').then(m => m.LMarker)
     },
     data() {
       return {
