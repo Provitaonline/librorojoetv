@@ -127,12 +127,12 @@
 </style>
 
 <script>
-  import { latLng } from 'leaflet';
-  import { LMap, LTileLayer, LMarker } from 'vue2-leaflet';
-  import { Icon } from 'leaflet';
-  import 'leaflet/dist/leaflet.css';
+  import { latLng } from 'leaflet'
+  import { LMap, LTileLayer, LMarker } from 'vue2-leaflet'
+  import { Icon } from 'leaflet'
+  import 'leaflet/dist/leaflet.css'
 
-  delete Icon.Default.prototype._getIconUrl;
+  delete Icon.Default.prototype._getIconUrl
 
   Icon.Default.mergeOptions({
     iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
@@ -140,11 +140,19 @@
     shadowUrl: require('leaflet/dist/images/marker-shadow.png')
   });
 
+  //var LTileLayer, LMap
+
   export default {
+    mounted() {
+      console.log('mounted')
+      //LMap = require('vue2-leaflet/dist/components/LMap')
+      //LTileLayer = require('vue2-leaflet/dist/components/LTileLayer')
+
+    },
     components: {
-      LMap,
-      LTileLayer,
-      LMarker,
+      'l-map': LMap,
+      'l-tile-layer': LTileLayer,
+      'l-marker': LMarker
     },
     data() {
       return {
