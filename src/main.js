@@ -18,9 +18,10 @@ export default function (Vue, { router, head, isClient }) {
 
   if (isClient) {
     console.log('Client');
-    Vue.component("l-map", () => import ('vue2-leaflet').then(m => m.LMap));
-    Vue.component("l-tile-layer", () => import ('vue2-leaflet').then(m => m.LTileLayer));
-    Vue.component("l-marker", () => import ('vue2-leaflet').then(m => m.LMarker));
+    Vue.component("l-map", () => import ('vue2-leaflet').then(m => m.LMap))
+    Vue.component("l-tile-layer", () => import ('vue2-leaflet').then(m => m.LTileLayer))
+    Vue.component("l-marker", () => import ('vue2-leaflet').then(m => m.LMarker))
+    Vue.component('l-geo-json', () => import ('vue2-leaflet').then(m => m.LGeoJson))
   }
 
 }

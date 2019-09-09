@@ -25,6 +25,7 @@
               style='height: 100%'
             >
               <l-tile-layer :url="url" />
+              <l-geo-json :geojson="geojson" />
             </l-map>
           </div>
         </ClientOnly>
@@ -127,14 +128,16 @@
 </style>
 
 <script>
+  import axios from 'axios';
+
   var latLng, Icon;
   if (process.isClient) {
     Icon = require('leaflet').Icon
     delete Icon.Default.prototype._getIconUrl;
     Icon.Default.mergeOptions({
-      iconRetinaUrl: require("leaflet/dist/images/marker-icon-2x.png"),
-      iconUrl: require("leaflet/dist/images/marker-icon.png"),
-      shadowUrl: require("leaflet/dist/images/marker-shadow.png")
+      iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
+      iconUrl: require('leaflet/dist/images/marker-icon.png'),
+      shadowUrl: require('leaflet/dist/images/marker-shadow.png')
     })
     latLng =  require('leaflet').latLng
   }
@@ -145,10 +148,16 @@
         zoom: 6,
         url: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}",
         currentZoom: 11.5,
+        geojson: null,
         mapOptions: {
           zoomSnap: 0.5
         }
       }
+    },
+    mounted () {
+      axios.get('/mapdata/FormacionesVegetales.geojson').then((response) => {
+        this.geojson = response.data;
+      })
     },
     computed: {
       columnOneItems() {
