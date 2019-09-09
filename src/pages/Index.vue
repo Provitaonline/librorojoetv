@@ -25,7 +25,8 @@
               style='height: 100%'
             >
               <l-tile-layer :url="url" />
-              <l-geo-json :geojson="geojson" />
+              <l-geo-json :geojson="geojson" :options="options">
+              </l-geo-json>
             </l-map>
           </div>
         </ClientOnly>
@@ -151,6 +152,25 @@
         geojson: null,
         mapOptions: {
           zoomSnap: 0.5
+        },
+        options: {
+  /*        style: function(feature) {
+            if (feature.properties.in_port) {
+              return {
+                weight: 4,
+                color: '#00FF00'
+              }
+            } else {
+              return {
+                weight: 4,
+                color: '#FF0000'
+              }
+            }
+
+          }, */
+          onEachFeature: function onEachFeature(feature, layer) {
+            layer.bindPopup(feature.properties.T_VE);
+          }
         }
       }
     },
