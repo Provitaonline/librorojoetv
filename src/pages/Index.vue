@@ -8,10 +8,10 @@
             <h1 class="title has-text-white" v-html="$page.homeData.heroTitle" />
             <h2 class="subtitle has-text-white"v-html="$page.homeData.heroSubTitle" />
           </div>
-          <a class="button explore is-primary is-inverted is-outlined"><font-awesome size="lg" :icon="['fas', 'angle-double-down']"/></a>
+          <a href="#" v-scroll-to="'#mapSection'" style="border:none;" class="button explore is-primary is-inverted is-outlined"><font-awesome size="lg" :icon="['fas', 'angle-double-down']"/></a>
         </div>
       </section>
-      <section class="section">
+      <section id="mapSection" class="section">
         <div class="map-title has-text-centered">
           <b>FORMACIONES VEGETALES DE VENEZUELA - 2010</b>
         </div>

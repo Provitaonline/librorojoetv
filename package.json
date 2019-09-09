@@ -16,6 +16,7 @@
     "bulma": "^0.7.5",
     "gridsome": "^0.6.0",
     "leaflet": "^1.5.1",
+    "vue-scrollto": "^2.15.0",
     "vue2-leaflet": "^2.2.1"
   },
   "devDependencies": {

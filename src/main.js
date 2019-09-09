@@ -6,11 +6,15 @@ import '~/assets/style/index.scss';
 
 import DefaultLayout from '~/layouts/Default.vue'
 
-import 'leaflet/dist/leaflet.css';
+import 'leaflet/dist/leaflet.css'
+
+import VueScrollTo from 'vue-scrollto'
 
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
+
+  Vue.use(VueScrollTo)
 
   if (isClient) {
     console.log('Client');
