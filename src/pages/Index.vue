@@ -20,6 +20,7 @@
             <l-map
               ref='myMap'
               :zoom='zoom'
+              :center="center"
               :options='mapOptions'
               style='height: 100%'
             >
@@ -126,22 +127,24 @@
 </style>
 
 <script>
-  //import { latLng } from "leaflet";
-  console.log('*******', process.isClient);
-  var latLng;
+  var latLng, Icon;
   if (process.isClient) {
-    latLng =  () => import ('vue2-leaflet').then(m => m.latLng)
-    //console.log(this.$context);
+    Icon = require('leaflet').Icon
+    delete Icon.Default.prototype._getIconUrl;
+    Icon.Default.mergeOptions({
+      iconRetinaUrl: require("leaflet/dist/images/marker-icon-2x.png"),
+      iconUrl: require("leaflet/dist/images/marker-icon.png"),
+      shadowUrl: require("leaflet/dist/images/marker-shadow.png")
+    })
+    latLng =  require('leaflet').latLng
   }
 
   export default {
     data() {
       return {
         zoom: 6,
-        center: latLng(6.4238, -66.5897),
         url: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}",
         currentZoom: 11.5,
-        currentCenter: latLng(52.547715, 13.413936),
         mapOptions: {
           zoomSnap: 0.5
         }
@@ -157,6 +160,11 @@
       columnThreeItems() {
         return(this.$page.homeData.vegetation.filter(function(v) { return v.group == 3}))
       },
+      center() {
+        if (process.isClient) {
+          return latLng(6.4238, -66.5897)
+        }
+      }
     }
   }
 </script>

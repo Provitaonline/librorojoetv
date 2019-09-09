@@ -6,17 +6,7 @@ import '~/assets/style/index.scss';
 
 import DefaultLayout from '~/layouts/Default.vue'
 
-// import { LMap, LTileLayer, LMarker } from "vue2-leaflet";
-//import { Icon } from "leaflet";
-import "leaflet/dist/leaflet.css";
-
-/*delete Icon.Default.prototype._getIconUrl;
-
-Icon.Default.mergeOptions({
-  iconRetinaUrl: require("leaflet/dist/images/marker-icon-2x.png"),
-  iconUrl: require("leaflet/dist/images/marker-icon.png"),
-  shadowUrl: require("leaflet/dist/images/marker-shadow.png")
-});*/
+import 'leaflet/dist/leaflet.css';
 
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
