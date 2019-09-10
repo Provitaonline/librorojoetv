@@ -25,7 +25,7 @@
               style='height: 100%'
             >
               <l-tile-layer :url="url" />
-              <l-geo-json :geojson="geojson" :options="options">
+              <l-geo-json ref="myGeoJson" :geojson="geojson" :options="options" @mouseover="mouseOver" @mouseleave="mouseLeave">
               </l-geo-json>
             </l-map>
           </div>
@@ -145,6 +145,7 @@
 
   export default {
     data() {
+      let self = this
       return {
         zoom: 6,
         url: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}",
@@ -154,22 +155,21 @@
           zoomSnap: 0.5
         },
         options: {
-  /*        style: function(feature) {
-            if (feature.properties.in_port) {
+          style: function(feature) {
+            let a = self.$page.homeData.vegetation.find(function(v) { return v.name === feature.properties.T_VE})
+            if (a) {
               return {
-                weight: 4,
-                color: '#00FF00'
-              }
-            } else {
-              return {
-                weight: 4,
-                color: '#FF0000'
+                weight: 1,
+                fillOpacity: 0.7,
+                color: a.color
               }
             }
-
-          }, */
+          },
           onEachFeature: function onEachFeature(feature, layer) {
-            layer.bindPopup(feature.properties.T_VE);
+            layer.bindPopup(feature.properties.T_VE)
+            layer.on('popupopen', function() {
+              console.log('open popup')
+            })
           }
         }
       }
@@ -193,6 +193,17 @@
         if (process.isClient) {
           return latLng(6.4238, -66.5897)
         }
+      }
+    },
+    methods: {
+      mouseOver(info) {
+        info.layer.setStyle({
+          fillOpacity: 1,
+          weight: 3,
+        })
+      },
+      mouseLeave(info) {
+        this.$refs.myGeoJson.mapObject.resetStyle(info.layer)
       }
     }
   }
