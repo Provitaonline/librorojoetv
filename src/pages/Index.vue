@@ -18,11 +18,12 @@
         <ClientOnly>
           <div class="container" style="height: 600px;">
             <l-map
-              ref='myMap'
-              :zoom='zoom'
+              ref="myMap"
+              :zoom="zoom"
               :center="center"
-              :options='mapOptions'
-              style='height: 100%'
+              :maxBounds="maxBounds"
+              :options="mapOptions"
+              style="height: 100%"
             >
               <l-tile-layer :url="url" />
               <l-geo-json ref="myGeoJson" :geojson="geojson" :options="options">
@@ -131,7 +132,7 @@
 <script>
   import axios from 'axios';
 
-  var latLng, Icon;
+  var latLng, Icon, latLngBounds;
   if (process.isClient) {
     Icon = require('leaflet').Icon
     delete Icon.Default.prototype._getIconUrl;
@@ -141,6 +142,7 @@
       shadowUrl: require('leaflet/dist/images/marker-shadow.png')
     })
     latLng =  require('leaflet').latLng
+    latLngBounds = require('leaflet').latLngBounds
   }
 
   export default {
@@ -149,7 +151,6 @@
       return {
         zoom: 6,
         url: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}",
-        currentZoom: 11.5,
         geojson: null,
         mapOptions: {
           zoomSnap: 0.5
@@ -184,6 +185,7 @@
       }
     },
     mounted () {
+      //this.$refs.myMap.mapObject.fitBounds(maxbounds)
       axios.get('/mapdata/FormacionesVegetales.geojson').then((response) => {
         this.geojson = response.data;
       })
@@ -202,6 +204,9 @@
         if (process.isClient) {
           return latLng(6.4238, -66.5897)
         }
+      },
+      maxBounds() {
+        return latLngBounds(latLng(0.724452215982, -73.3049515449), latLng(12.1623070337, -59.7582848782))
       }
     }
   }
