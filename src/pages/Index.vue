@@ -2,7 +2,7 @@
   <Layout>
     <div class="page-wrapper">
       <section class="hero is-medium is-black">
-        <img class="hero-bg-img" src="/uploads/home-hero-image.png" srcset=""></img>
+        <g-image class="hero-bg-img" src="~/assets/images/home-hero-image.png"/>
         <div class="hero-body">
           <div class="container is-fullhd">
             <h1 class="title has-text-white" v-html="$page.homeData.heroTitle" />
@@ -127,10 +127,13 @@
     border-radius: 50%;
     display: inline-block;
   }
+
 </style>
 
 <script>
   import axios from 'axios';
+
+  import vegetationLayer from '~/assets/mapdata/FormacionesVegetales.json'
 
   var latLng, Icon, latLngBounds;
   if (process.isClient) {
@@ -151,7 +154,7 @@
       return {
         zoom: 6,
         url: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}",
-        geojson: null,
+        geojson: vegetationLayer,
         mapOptions: {
           zoomSnap: 0.5
         },
@@ -187,9 +190,9 @@
     mounted () {
       //console.log(this.maxBounds)
       //this.$refs.myMap.mapObject.fitBounds(maxbounds())
-      axios.get('/mapdata/FormacionesVegetales.geojson').then((response) => {
+      /*axios.get('/mapdata/FormacionesVegetales.geojson').then((response) => {
         this.geojson = response.data;
-      })
+      })*/
     },
     updated() {
       //console.log(this.geojson)

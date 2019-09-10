@@ -16,20 +16,18 @@
       <div class="navbar-menu" :class="{ 'is-active': showNav }">
         <div class="navbar-end">
           <a class="navbar-item">
-            Acerca de
+            ACERCA DE
           </a>
 
           <a class="navbar-item">
-            Metodología
+            METODOLOGÍA
           </a>
 
           <a class="navbar-item">
-            Mas información
+            MAS INFORMACIÓN
           </a>
 
-          <a class="navbar-item">
-            Contacto
-          </a>
+          <g-link class="navbar-item" to="/contact">CONTACTO</g-link>
         </div>
       </div>
     </nav>
