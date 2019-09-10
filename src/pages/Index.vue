@@ -185,10 +185,20 @@
       }
     },
     mounted () {
-      //this.$refs.myMap.mapObject.fitBounds(maxbounds)
+      //console.log(this.maxBounds)
+      //this.$refs.myMap.mapObject.fitBounds(maxbounds())
       axios.get('/mapdata/FormacionesVegetales.geojson').then((response) => {
         this.geojson = response.data;
       })
+    },
+    updated() {
+      //console.log(this.geojson)
+      if (process.isClient) {
+        let mb = latLngBounds(latLng(12.1623070337, -73.3049515449), latLng(0.724452215982, -59.7582848782))
+        if (this.$refs.myMap) {
+          this.$refs.myMap.fitBounds(mb)
+        }
+      }
     },
     computed: {
       columnOneItems() {
@@ -206,7 +216,10 @@
         }
       },
       maxBounds() {
-        return latLngBounds(latLng(0.724452215982, -73.3049515449), latLng(12.1623070337, -59.7582848782))
+        //return latLngBounds(latLng(0.724452215982, -73.3049515449), latLng(12.1623070337, -59.7582848782))
+        if (process.isClient) {
+          return latLngBounds(latLng(12.1623070337, -73.3049515449), latLng(0.724452215982, -59.7582848782))
+        }
       }
     }
   }
