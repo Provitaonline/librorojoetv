@@ -25,7 +25,7 @@
               style='height: 100%'
             >
               <l-tile-layer :url="url" />
-              <l-geo-json ref="myGeoJson" :geojson="geojson" :options="options" @mouseover="mouseOver" @mouseleave="mouseLeave">
+              <l-geo-json ref="myGeoJson" :geojson="geojson" :options="options">
               </l-geo-json>
             </l-map>
           </div>
@@ -160,7 +160,7 @@
             if (a) {
               return {
                 weight: 1,
-                fillOpacity: 0.7,
+                fillOpacity: 0.6,
                 color: a.color
               }
             }
@@ -168,7 +168,16 @@
           onEachFeature: function onEachFeature(feature, layer) {
             layer.bindPopup(feature.properties.T_VE)
             layer.on('popupopen', function() {
-              console.log('open popup')
+              layer.setStyle({
+                weight: 3,
+                fillOpacity: 1
+              })
+            })
+            layer.on('popupclose', function() {
+              layer.setStyle({
+                weight: 1,
+                fillOpacity: 0.6
+              })
             })
           }
         }
@@ -193,17 +202,6 @@
         if (process.isClient) {
           return latLng(6.4238, -66.5897)
         }
-      }
-    },
-    methods: {
-      mouseOver(info) {
-        info.layer.setStyle({
-          fillOpacity: 1,
-          weight: 3,
-        })
-      },
-      mouseLeave(info) {
-        this.$refs.myGeoJson.mapObject.resetStyle(info.layer)
       }
     }
   }

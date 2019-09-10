@@ -130,11 +130,4 @@ vegetation:
     legend: "dotkey"
     cardPath: "c124"
     detailPath: "d124"
-  - name: "Áreas intervenidas"
-    group: 3
-    legend: "stripes"
-  - name: "Cuerpos de agua"
-    group: 3
-    color: "#99daf2"
-    legend: "colorkey"
 ---
