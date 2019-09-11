@@ -29,10 +29,11 @@
         </div>
       </div>
     </nav>
-
-    <main>
-      <slot />
-    </main>
+    <transition name="fade" appear>
+      <main>
+        <slot />
+      </main>
+    </transition>
 
     <section>
       <footer class="footer">
@@ -60,6 +61,15 @@
   .navbar-item img {
     max-height: 3rem;
   }
+
+  .fade-enter-active {
+    transition: opacity .5s;
+  }
+
+  .fade-enter {
+    opacity: 0;
+  }
+
 </style>
 
 <script>
