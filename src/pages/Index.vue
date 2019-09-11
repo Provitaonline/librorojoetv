@@ -8,7 +8,7 @@
             <h1 class="title has-text-white" v-html="$page.homeData.heroTitle" />
             <h2 class="subtitle has-text-white"v-html="$page.homeData.heroSubTitle" />
           </div>
-          <a href="#" v-scroll-to="'#mapSection'" style="border:none;" class="button explore is-primary is-inverted is-outlined"><font-awesome size="lg" :icon="['fas', 'angle-double-down']"/></a>
+          <a href="#" v-scroll-to="'#mapSection'" style="border:none;" class="explore"><font-awesome size="lg" :icon="['fas', 'angle-double-down']"/></a>
         </div>
       </section>
       <section id="mapSection" class="section">
@@ -108,7 +108,12 @@
     position: absolute;
     bottom: 10px;
     left: 50%;
+    color: white;
     transform: translate(-50%, 0);
+  }
+
+  .explore:hover {
+    color: #BE1421;
   }
 
   .legend {
