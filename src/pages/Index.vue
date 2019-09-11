@@ -24,7 +24,7 @@
               :options="mapOptions"
               style="height: 100%"
             >
-              <l-tile-layer :url="url" />
+              <l-tile-layer :url="url" :options="tileLayerOptions" />
               <l-geo-json ref="myGeoJson" :geojson="geojson" :options="options">
               </l-geo-json>
             </l-map>
@@ -168,6 +168,9 @@
       return {
         zoom: 6,
         url: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}",
+        tileLayerOptions: {
+          attribution: 'Tiles © Esri — Source: <a href="https://www.arcgis.com/home/item.html?id=30e5fe3149c34df1ba922e6f5bbf808f">ArcGIS World Topographic Map</a>'
+        },
         geojson: vegetationLayer,
         mapOptions: {
           zoomSnap: 0.5
@@ -183,8 +186,13 @@
               }
             }
           },
+          attribution: 'Provita',
           onEachFeature: function onEachFeature(feature, layer) {
-            layer.bindPopup(feature.properties.T_VE)
+            let link = '<a href=' + self.makeLink(feature.properties.T_VE) + '>' + feature.properties.T_VE + '</a>'
+            console.log(link);
+            layer.bindPopup(link)
+
+            //layer.bindPopup(feature.properties.T_VE)
             layer.on('popupopen', function() {
               layer.setStyle({
                 weight: 3,

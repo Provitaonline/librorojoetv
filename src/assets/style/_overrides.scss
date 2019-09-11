@@ -1,3 +1,11 @@
 .leaflet-popup-content-wrapper {
   border-radius: 2px
 }
+
+.leaflet-container a {
+  color: #363636;
+}
+
+.leaflet-container a:hover {
+  color: $primary;
+}
