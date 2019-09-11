@@ -34,7 +34,7 @@
           <div class="columns">
             <div class="column">
               <div v-for="item in columnOneItems">
-                <g-link v-if="item.legend === 'colorkey'"><span class="legend-item" :style="'background:' + item.color"></span> {{ item.name }}<br></g-link>
+                <g-link :to="makeLink(item.name)" v-if="item.legend === 'colorkey'"><span class="legend-item" :style="'background:' + item.color"></span> {{ item.name }}<br></g-link>
                 <g-link v-else-if="item.legend === 'stripes'"><span class="legend-item lightstripe"></span> {{ item.name }}<br></g-link>
                 <g-link v-else-if="item.legend === 'dotkey'"><span class="dot" :style="'background:' + item.color"></span> {{ item.name }}<br></g-link>
               </div>
@@ -237,6 +237,11 @@
         if (process.isClient) {
           return latLngBounds(latLng(12.1623070337, -73.3049515449), latLng(0.724452215982, -59.7582848782))
         }
+      }
+    },
+    methods: {
+      makeLink(t) {
+        return 'vcards/' + slugify(t, {lower: true});
       }
     }
   }
