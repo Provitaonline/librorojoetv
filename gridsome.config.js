@@ -12,7 +12,7 @@ module.exports = {
       options: {
         path: 'content/vcards/**/*.md',
         typeName: 'VegetationCard',
-        route: 'vcards/:slug'
+        route: 'vcards/:title'
       }
     },
     {
