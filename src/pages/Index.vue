@@ -15,7 +15,7 @@
         <div class="map-title title has-text-centered is-uppercase">Formaciones Vegetales</div>
         <div class="has-text-centered">[Haz clic en una de las areas para ver la ficha de información]</div>
         <ClientOnly>
-          <div class="container" style="height: 600px;">
+          <div style="height: 600px;">
             <l-map
               ref="myMap"
               :zoom="zoom"
