@@ -15,9 +15,7 @@
       </div>
       <div class="navbar-menu" :class="{ 'is-active': showNav }">
         <div class="navbar-end">
-          <a class="navbar-item">
-            ACERCA DE
-          </a>
+          <g-link class="navbar-item" to="/about">ACERCA DE</g-link>
 
           <a class="navbar-item">
             METODOLOGÍA
@@ -35,6 +33,17 @@
     <main>
       <slot />
     </main>
+
+    <section>
+      <footer class="footer">
+        <div class="content has-text-centered">
+          <p>Este sitio es un prototipo en desarrollo</p>
+          <p>
+            Derechos reservados, copyright © 2019 Provita, licencia <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>.
+          </p>
+        </div>
+      </footer>
+    </section>
   </div>
 </template>
 

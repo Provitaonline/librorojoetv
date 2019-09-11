@@ -4,7 +4,7 @@
       <section class="hero is-small is-white">
         <div class="hero-body">
           <div class="container is-fullhd has-text-centered">
-            <h1 class="title">CONTACTO</h1>
+            <h1 class="title">ACERCA DE</h1>
           </div>
         </div>
         <div class="section">

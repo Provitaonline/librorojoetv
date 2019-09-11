@@ -10,7 +10,15 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        path: 'content/**/*.md',
+        path: 'content/vcards/**/*.md',
+        typeName: 'VegetationCard',
+        route: 'vcards/:slug'
+      }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'content/home.md',
         typeName: 'HomeData'
       }
     }

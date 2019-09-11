@@ -12,9 +12,8 @@
         </div>
       </section>
       <section id="mapSection" class="section">
-        <div class="map-title has-text-centered">
-          <b>FORMACIONES VEGETALES DE VENEZUELA - 2010</b>
-        </div>
+        <div class="map-title title has-text-centered is-uppercase">Formaciones Vegetales</div>
+        <div class="has-text-centered">[Haz clic en una de las areas para ver la ficha de información]</div>
         <ClientOnly>
           <div class="container" style="height: 600px;">
             <l-map
@@ -55,6 +54,16 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <section id="acercaDe" class="hero is-small is-white">
+        <div class="hero-body">
+          <div class="container is-fullhd has-text-centered">
+            <h1 class="title is-uppercase">Explicación</h1>
+          </div>
+        </div>
+        <div class="section">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
         </div>
       </section>
     </div>
@@ -128,12 +137,17 @@
     display: inline-block;
   }
 
+  .map-title {
+    margin-bottom: 0;
+  }
+
 </style>
 
 <script>
   import axios from 'axios';
+  import slugify from 'slugify';
 
-  import vegetationLayer from '~/assets/mapdata/FormacionesVegetales.json'
+  import vegetationLayer from '~/data/mapdata/FormacionesVegetales.json'
 
   var latLng, Icon, latLngBounds;
   if (process.isClient) {
