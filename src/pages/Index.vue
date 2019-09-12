@@ -7,7 +7,7 @@
     </div>
     <div class="page-wrapper">
       <section class="hero is-medium is-black">
-        <g-image class="hero-bg-img" src="~/assets/images/home-hero-image.png"/>
+        <g-image class="hero-bg-img" src="~/assets/images/home-hero-image.jpg"/>
         <div class="hero-body">
           <div class="container is-fullhd">
             <h1 class="title has-text-white" v-html="$page.homeData.heroTitle" />
