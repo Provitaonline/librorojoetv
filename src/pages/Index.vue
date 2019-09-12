@@ -1,5 +1,10 @@
 <template>
   <Layout>
+    <div class="vld-parent">
+      <loading :active.sync="isLoading"
+        :is-full-page="fullPage">
+      </loading>
+    </div>
     <div class="page-wrapper">
       <section class="hero is-medium is-black">
         <g-image class="hero-bg-img" src="~/assets/images/home-hero-image.png"/>
@@ -152,6 +157,9 @@
   import axios from 'axios';
   import slugify from 'slugify';
 
+  import Loading from 'vue-loading-overlay';
+  import 'vue-loading-overlay/dist/vue-loading.css';
+
   import vegetationLayer from '~/data/mapdata/FormacionesVegetales.json'
 
   var latLng, Icon, latLngBounds;
@@ -171,6 +179,8 @@
     data() {
       let self = this
       return {
+        isLoading: true,
+        fullPage: true,
         zoom: 6,
         url: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}",
         tileLayerOptions: {
@@ -213,10 +223,10 @@
         }
       }
     },
+    components: {
+        Loading
+    },
     mounted () {
-      this.$nextTick(() => {
-        console.log(this.$refs.myMap);
-      })
       //this.$refs.myMap.mapObject.fitBounds(maxbounds())
       /*axios.get('/mapdata/FormacionesVegetales.geojson').then((response) => {
         this.geojson = response.data;
@@ -259,6 +269,7 @@
       },
       mapReady() {
         console.log('Map is ready');
+        this.isLoading = false;
       }
     }
   }
