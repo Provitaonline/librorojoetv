@@ -188,6 +188,7 @@
         },
         geojson: vegetationLayer,
         mapOptions: {
+          scrollWheelZoom: false,
           zoomSnap: 0.5
         },
         options: {
