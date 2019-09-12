@@ -16,7 +16,7 @@
         <div class="has-text-centered">[Haz clic en una de las areas para ver la ficha de información]</div>
         <ClientOnly>
           <div style="height: 600px;">
-            <l-map
+            <l-map @leaflet:load="mapReady"
               ref="myMap"
               :zoom="zoom"
               :center="center"
@@ -194,7 +194,6 @@
           attribution: 'Provita',
           onEachFeature: function onEachFeature(feature, layer) {
             let link = '<a href=' + self.makeLink(feature.properties.T_VE) + '>' + feature.properties.T_VE + '</a>'
-            console.log(link);
             layer.bindPopup(link)
 
             //layer.bindPopup(feature.properties.T_VE)
@@ -215,7 +214,9 @@
       }
     },
     mounted () {
-      //console.log(this.maxBounds)
+      this.$nextTick(() => {
+        console.log(this.$refs.myMap);
+      })
       //this.$refs.myMap.mapObject.fitBounds(maxbounds())
       /*axios.get('/mapdata/FormacionesVegetales.geojson').then((response) => {
         this.geojson = response.data;
@@ -255,6 +256,9 @@
     methods: {
       makeLink(t) {
         return 'vcards/' + slugify(t, {lower: true});
+      },
+      mapReady() {
+        console.log('Map is ready');
       }
     }
   }
