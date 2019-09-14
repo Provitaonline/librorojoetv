@@ -22,7 +22,7 @@
         <ClientOnly>
           <div style="height: 600px;">
             <l-map @leaflet:load="mapReady"
-              ref="myMap"
+              ref="theMap"
               :zoom="zoom"
               :center="center"
               :maxBounds="maxBounds"
@@ -30,7 +30,7 @@
               style="height: 100%"
             >
               <l-tile-layer :url="url" :options="tileLayerOptions" />
-              <l-geo-json ref="myGeoJson" :geojson="geojson" :options="options">
+              <l-geo-json :geojson="vegetationLayer" :options="options">
               </l-geo-json>
             </l-map>
           </div>
@@ -160,8 +160,6 @@
   import Loading from 'vue-loading-overlay';
   import 'vue-loading-overlay/dist/vue-loading.css';
 
-  import vegetationLayer from '~/data/mapdata/FormacionesVegetales.json'
-
   var latLng, Icon, latLngBounds;
   if (process.isClient) {
     Icon = require('leaflet').Icon
@@ -186,7 +184,7 @@
         tileLayerOptions: {
           attribution: 'Tiles © Esri — Source: <a href="https://www.arcgis.com/home/item.html?id=30e5fe3149c34df1ba922e6f5bbf808f">ArcGIS World Topographic Map</a>'
         },
-        geojson: vegetationLayer,
+        vegetationLayer: null,
         mapOptions: {
           scrollWheelZoom: false,
           zoomSnap: 0.5
@@ -228,17 +226,17 @@
         Loading
     },
     mounted () {
-      //this.$refs.myMap.mapObject.fitBounds(maxbounds())
-      /*axios.get('/mapdata/FormacionesVegetales.geojson').then((response) => {
-        this.geojson = response.data;
-      })*/
+      //this.$refs.theMap.mapObject.fitBounds(maxbounds())
+      axios.get('/mapdata/FormacionesVegetales.json').then((response) => {
+        this.vegetationLayer = response.data;
+        this.isLoading = false;
+      })
     },
     updated() {
-      //console.log(this.geojson)
       if (process.isClient) {
         let mb = latLngBounds(latLng(12.1623070337, -73.3049515449), latLng(0.724452215982, -59.7582848782))
-        if (this.$refs.myMap) {
-          this.$refs.myMap.fitBounds(mb)
+        if (this.$refs.theMap) {
+          this.$refs.theMap.fitBounds(mb)
         }
       }
     },
@@ -258,7 +256,6 @@
         }
       },
       maxBounds() {
-        //return latLngBounds(latLng(0.724452215982, -73.3049515449), latLng(12.1623070337, -59.7582848782))
         if (process.isClient) {
           return latLngBounds(latLng(12.1623070337, -73.3049515449), latLng(0.724452215982, -59.7582848782))
         }
@@ -269,8 +266,9 @@
         return 'vcards/' + slugify(t, {lower: true});
       },
       mapReady() {
-        console.log('Map is ready');
-        this.isLoading = false;
+        //console.log('Map is ready');
+        //console.log(this.$refs.theMap.mapObject);
+        //this.isLoading = false;
       }
     }
   }
