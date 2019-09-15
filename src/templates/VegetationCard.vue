@@ -4,7 +4,9 @@
       <section class="hero is-small is-white">
         <div class="hero-body">
           <div class="container is-fullhd has-text-centered">
-            <h1 class="title is-uppercase">{{$page.vegetationCard.title}}</h1>
+            <h1 class="title is-uppercase">{{$page.vegetationCard.title}}
+                <img :src="$page.vegetationCard.categoryicon" height="40" width="40" align="right">
+            </h1>
           </div>
         </div>
       </section>
@@ -23,12 +25,12 @@
             </div>
             <div class="is-size-4 is-uppercase has-text-weight-semibold has-text-centered">Distribución</div>
             <div class="tile is-parent">
-              <div class="tile is-child is-5 box">
+              <div class="tile is-child is-7 box">
                 <p v-html="$page.vegetationCard.distribution" />
               </div>
-              <div class="tile is-child is-7 box">
+              <div class="tile is-child is-5 box">
                 <figure class="image is-4by3">
-                  <img src="https://bulma.io/images/placeholders/640x480.png">
+                  <img :src="$page.vegetationCard.distributionmap">
                 </figure>
               </div>
             </div>
@@ -69,10 +71,12 @@
   query VegetationCard ($path: String!) {
     vegetationCard: vegetationCard (path: $path) {
       title
+      categoryicon
       description
       cardimage
       cardimagecaption
       distribution
+      distributionmap
     }
   }
 </page-query>
