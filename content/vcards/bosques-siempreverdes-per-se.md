@@ -9,7 +9,7 @@ Los bosques siempreverdes per se están conformados por tipos más específicos 
 distribution: "Es la formación boscosa de mayor superficie en el país, abarcando aproximadamente 34% del territorio nacional, cerca de 311.496 km2. Su principal extensión se alcanza en la Guayana venezolana, en los estados Bolívar, Amazonas y el estado Delta Amacuro, con 90% de los bosques siempreverdes per se y donde son dominantes los bosques macrotérmicos siempreverdes detierras bajas. Al norte del país, son abundantes en los estados Zulia, Trujillo y Miranda, con más de 2.000 km2 (Figura 1). El subtipoespecífico mejor representado en esta última región es el bosque siempreverde montano. Los bosques siempreverdes per se están presentes en 24 unidades de paisajes vegetales venezolanos, distribuidas en 13 subregiones."
 distributionmap: "/uploads/bsvps-dist.png"
 areain1988: "338426"
-areain2010: "311496"
+areain2010: "311493"
 stateleveltable:
   - state: "Amazonas"
     areain1988: "145555"

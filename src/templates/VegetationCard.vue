@@ -73,9 +73,9 @@
                   <tfoot>
                     <tr>
                       <th>Total</th>
-                      <th class="has-text-right">PRONTO</th>
-                      <th class="has-text-right">PRONTO</th>
-                      <th class="has-text-right">PRONTO</th>
+                      <th class="has-text-right">{{($page.vegetationCard.stateleveltable.reduce((a, b) => +a + +b.areain1988, 0)) | number}}</th>
+                      <th class="has-text-right">{{($page.vegetationCard.stateleveltable.reduce((a, b) => +a + +b.areain2010, 0)) | number}}</th>
+                      <th class="has-text-right">{{($page.vegetationCard.stateleveltable.reduce((a, b) => +a + +b.areain2010, 0)) - ($page.vegetationCard.stateleveltable.reduce((a, b) => +a + +b.areain1988, 0)) | number}}</th>
                       <th></th>
                     </tr>
                   </tfoot>
