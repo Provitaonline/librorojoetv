@@ -67,7 +67,7 @@
                       <td class="has-text-right">{{item.areain1988 | number}}</td>
                       <td class="has-text-right">{{item.areain2010 | number}}</td>
                       <td class="has-text-right">{{ (item.areain2010 - item.areain1988) | number}}</td>
-                      <td class="has-text-right">{{ ((item.areain1988 - item.areain2010) < 0) ? '↑' : '↓' }}</td>
+                      <td :style="'color: ' + redOrGreen(item.areain1988 - item.areain2010) + ';'" class="has-text-right">{{ (item.areain1988 - item.areain2010) | upOrDown}}</td>
                     </tr>
                   </tbody>
                   <tfoot>
@@ -140,8 +140,18 @@
       number: function(value) {
         if (!value) return ''
         return parseInt(value).toLocaleString('de', {style: 'decimal'})
+      },
+      upOrDown: function(value) {
+        if (!value) return ''
+        if (value === 0) return ''
+        return (value < 0) ? '▲' : '▼'
+      }
+    },
+    methods: {
+      redOrGreen: function(value) {
+        if (!value) return ''
+        return (value < 0) ? 'green' : 'red'
       }
     }
-
   }
 </script>
