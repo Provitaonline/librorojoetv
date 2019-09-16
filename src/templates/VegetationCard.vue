@@ -139,7 +139,6 @@
     filters: {
       number: function(value) {
         if (!value) return ''
-        console.log(value, parseInt(value).toLocaleString('de', {style: 'decimal'}))
         return parseInt(value).toLocaleString('de', {style: 'decimal'})
       }
     }
