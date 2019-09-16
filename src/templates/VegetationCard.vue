@@ -37,14 +37,46 @@
             <div class="is-size-4 is-uppercase has-text-weight-semibold has-text-centered">Cambios en la distribución</div>
             <div class="tile is-parent">
               <div class="tile is-child is-6 box">
+                <b>Superficie en 1988 (km<sup>2</sup>): </b>{{$page.vegetationCard.areain1988 | number}}<br>
+                <b>Superficie en 2010 (km<sup>2</sup>): </b>{{$page.vegetationCard.areain2010 | number}}<br><br>
+                <figure class="image is-4by3">
+                  <img src="https://bulma.io/images/placeholders/640x480.png">
+                </figure>
+                <br>
                 <figure class="image is-4by3">
                   <img src="https://bulma.io/images/placeholders/640x480.png">
                 </figure>
               </div>
               <div class="tile is-child is-6 box">
-                <figure class="image is-4by3">
-                  <img src="https://bulma.io/images/placeholders/640x480.png">
-                </figure>
+                <table class=table>
+                  <thead>
+                    <tr>
+                      <th>Estado</th>
+                      <th class="has-text-right">1988</th>
+                      <th class="has-text-right">2010</th>
+                      <th class="has-text-right">Diferencia</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr v-for="item in $page.vegetationCard.stateleveltable">
+                      <td>{{item.state}}</td>
+                      <td class="has-text-right">{{item.areain1988 | number}}</td>
+                      <td class="has-text-right">{{item.areain2010 | number}}</td>
+                      <td class="has-text-right">{{ (item.areain2010 - item.areain1988) | number}}</td>
+                      <td class="has-text-right">{{ ((item.areain1988 - item.areain2010) < 0) ? '↑' : '↓' }}</td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <th>Total</th>
+                      <th class="has-text-right">PRONTO</th>
+                      <th class="has-text-right">PRONTO</th>
+                      <th class="has-text-right">PRONTO</th>
+                      <th></th>
+                    </tr>
+                  </tfoot>
+                </table>
               </div>
             </div>
             <div class="is-size-4 is-uppercase has-text-weight-semibold has-text-centered">Situación a 2010</div>
@@ -77,12 +109,26 @@
       cardimagecaption
       distribution
       distributionmap
+      areain1988
+      areain2010
+      stateleveltable {
+        state
+        areain1988
+        areain2010
+      }
     }
   }
 </page-query>
 
 <script>
   export default {
+    filters: {
+      number: function(value) {
+        if (!value) return ''
+        console.log(value, parseInt(value).toLocaleString('de', {style: 'decimal'}))
+        return parseInt(value).toLocaleString('de', {style: 'decimal'})
+      }
+    }
 
   }
 </script>
