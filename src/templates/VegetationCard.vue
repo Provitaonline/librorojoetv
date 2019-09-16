@@ -7,6 +7,9 @@
             <h1 class="title is-uppercase">{{$page.vegetationCard.title}}
                 <img :src="$page.vegetationCard.categoryicon" height="40" width="40" align="right">
             </h1>
+            <h2 class="subtitle is-uppercase" v-if="$page.vegetationCard.plantformation">
+              ({{$page.vegetationCard.plantformation}})
+            </h2>
           </div>
         </div>
       </section>
@@ -103,6 +106,7 @@
   query VegetationCard ($path: String!) {
     vegetationCard: vegetationCard (path: $path) {
       title
+      plantformation
       categoryicon
       description
       cardimage
