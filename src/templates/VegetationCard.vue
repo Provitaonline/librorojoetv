@@ -51,7 +51,7 @@
                 </figure>
               </div>
               <div class="tile is-child is-7 box">
-                <table align="center" class="table is-narrow is-size-6 is-size-7-mobile">
+                <table align="center" class="statetable table is-narrow is-size-6 is-size-7-mobile">
                   <thead>
                     <tr>
                       <th>Estado</th>
@@ -123,6 +123,16 @@
     }
   }
 </page-query>
+
+<style lang="scss" scoped>
+
+  @media only screen and (max-width: 400px) {
+    .statetable {
+      font-family: "Helvetica Narrow","Arial Narrow",Tahoma,Arial,Helvetica,sans-serif;
+    }
+  }
+
+</style>
 
 <script>
   export default {
