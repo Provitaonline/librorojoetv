@@ -36,7 +36,7 @@
             </div>
             <div class="is-size-4 is-uppercase has-text-weight-semibold has-text-centered">Cambios en la distribución</div>
             <div class="tile is-parent">
-              <div class="tile is-child is-6 box">
+              <div class="tile is-child is-5 box">
                 <b>Superficie en 1988 (km<sup>2</sup>): </b>{{$page.vegetationCard.areain1988 | number}}<br>
                 <b>Superficie en 2010 (km<sup>2</sup>): </b>{{$page.vegetationCard.areain2010 | number}}<br><br>
                 <figure class="image is-4by3">
@@ -47,8 +47,8 @@
                   <img src="https://bulma.io/images/placeholders/640x480.png">
                 </figure>
               </div>
-              <div class="tile is-child is-6 box">
-                <table class=table>
+              <div class="tile is-child is-7 box">
+                <table align="center" class="table is-narrow is-size-6 is-size-7-mobile">
                   <thead>
                     <tr>
                       <th>Estado</th>
