@@ -238,8 +238,8 @@
     mounted () {
       axios.get('/mapdata/FormacionesVegetales.json').then((response) => {
         this.vegetationLayer = response.data;
-        this.isLoading = false;
         axios.get('/mapdata/Saxicola.json').then((response) => {
+          this.isLoading = false;
           this.saxicolaLayer = response.data;
         })
       })
