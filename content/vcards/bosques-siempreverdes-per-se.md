@@ -10,6 +10,13 @@ distribution: "Es la formación boscosa de mayor superficie en el país, abarcan
 distributionmap: "/uploads/bsvps-dist.png"
 areain1988: "338426"
 areain2010: "311493"
+mapcompare:
+  - in2010: "/uploads/figura_1a_bosquessiempreverdes_occi.jpg"
+    in1988: "/uploads/figura_2a_bosquessiempreverdes_88_occi.jpg"
+  - in2010: "/uploads/figura_1c_bosquessiempreverdes_centro.jpg"
+    in1988: "/uploads/figura_2c_bosquessiempreverdes_88_centro.jpg"
+  - in2010: "/uploads/figura_1b_bosquessiempreverdes_sur.jpg"
+    in1988: "/uploads/figura_2b_bosquessiempreverdes_88_sur.jpg"
 stateleveltable:
   - state: "Amazonas"
     areain1988: "145555"
