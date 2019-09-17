@@ -26,8 +26,8 @@
               style="height: 100%"
             >
               <l-tile-layer :url="url" :options="tileLayerOptions" />
-              <l-geo-json :geojson="vegetationLayer" :options="options">
-              </l-geo-json>
+              <l-geo-json ref="theSaxicolaLayer" :geojson="saxicolaLayer" :options="saxicolaLayerOptions" />
+              <l-geo-json :geojson="vegetationLayer" :options="vegetationLayerOptions" />
             </l-map>
           </div>
         </ClientOnly>
@@ -153,11 +153,12 @@
   import axios from 'axios';
   import slugify from 'slugify';
 
-  var latLng, Icon, latLngBounds;
+  var latLng, icon, circleMarker, latLngBounds;
   if (process.isClient) {
-    Icon = require('leaflet').Icon
-    delete Icon.Default.prototype._getIconUrl;
-    Icon.Default.mergeOptions({
+    icon = require('leaflet').Icon
+    circleMarker = require('leaflet').circleMarker
+    delete icon.Default.prototype._getIconUrl;
+    icon.Default.mergeOptions({
       iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
       iconUrl: require('leaflet/dist/images/marker-icon.png'),
       shadowUrl: require('leaflet/dist/images/marker-shadow.png')
@@ -178,11 +179,28 @@
           attribution: 'Tiles © Esri — Source: <a href="https://www.arcgis.com/home/item.html?id=30e5fe3149c34df1ba922e6f5bbf808f">ArcGIS World Topographic Map</a>'
         },
         vegetationLayer: null,
+        saxicolaLayer: null,
         mapOptions: {
           scrollWheelZoom: false,
           zoomSnap: 0.5
         },
-        options: {
+        saxicolaLayerOptions: {
+          onEachFeature: function onEachFeature(feature, layer) {
+            let t = 'Vegetación Saxícola'
+            layer.bindPopup('<a href=' + self.makeLink(t) + '>' + t + '</a>')
+          },
+          pointToLayer: function(feature, latlng) {
+            return circleMarker(latlng, {
+              radius: 3,
+              fillColor: "#333333",
+              fillOpacity: 1,
+              color: "#333333",
+              weight: 1,
+              opacity: 1
+            })
+          }
+        },
+        vegetationLayerOptions: {
           style: function(feature) {
             let a = self.$page.homeData.vegetation.find(function(v) { return v.name === feature.properties.T_VE})
             if (a) {
@@ -218,10 +236,12 @@
     components: {
     },
     mounted () {
-      //this.$refs.theMap.mapObject.fitBounds(maxbounds())
       axios.get('/mapdata/FormacionesVegetales.json').then((response) => {
         this.vegetationLayer = response.data;
         this.isLoading = false;
+        axios.get('/mapdata/Saxicola.json').then((response) => {
+          this.saxicolaLayer = response.data;
+        })
       })
     },
     updated() {
