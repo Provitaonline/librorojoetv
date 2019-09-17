@@ -131,12 +131,20 @@
 
   @media only screen and (max-width: 1024px) {
     .statetable {
-      font-family: "Helvetica Narrow","Arial Narrow",Tahoma,Arial,Helvetica,sans-serif;
+      font-size: 0.8em !important;
     }
   }
-</style>
 
-<div data-v-c6a22f46="" class="right-arrow" style="border-width: 6px; border-style: inset inset inset solid; border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) white; border-image: initial; margin-right: -10px;"></div>
+  @media only screen and (max-width: 400px) {
+    .statetable {
+      font-size: 0.6em !important;
+    }
+    .statetable td, th {
+      padding: 2px;
+    }
+  }
+
+</style>
 
 <style lang="scss">
   .handle {
@@ -157,6 +165,7 @@
 
 
 </style>
+
 
 <script>
 
