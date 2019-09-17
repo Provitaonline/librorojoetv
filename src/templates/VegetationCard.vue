@@ -5,11 +5,14 @@
         <div class="hero-body">
           <div class="container is-fullhd has-text-centered">
             <h1 class="title is-uppercase">{{$page.vegetationCard.title}}
-                <img :src="$page.vegetationCard.categoryicon" height="40" width="40" align="right">
             </h1>
-            <h2 class="subtitle is-uppercase" v-if="$page.vegetationCard.plantformation">
+            <h2 style="margin-bottom: 0px;" class="subtitle is-uppercase" v-if="$page.vegetationCard.plantformation">
               ({{$page.vegetationCard.plantformation}})
             </h2>
+            <div class="categoryicon">
+              <img :src="$page.vegetationCard.categoryicon" height="40" width="40">
+              <span style="display: block; font-size: x-small;"><b>{{$page.vegetationCard.categorycaption}}</b></span>
+            </div>
           </div>
         </div>
       </section>
@@ -107,6 +110,7 @@
       title
       plantformation
       categoryicon
+      categorycaption
       description
       cardimage
       cardimagecaption
@@ -141,6 +145,14 @@
     }
     .statetable td, th {
       padding: 2px;
+    }
+  }
+
+  @media only screen and (min-width: 800px) {
+    .categoryicon {
+      position: absolute;
+      right: 0px;
+      top: 0px;
     }
   }
 
