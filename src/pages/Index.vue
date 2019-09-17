@@ -1,10 +1,6 @@
 <template>
   <Layout>
-    <div class="vld-parent">
-      <loading :active.sync="isLoading"
-        :is-full-page="fullPage">
-      </loading>
-    </div>
+    <b-loading :is-full-page="isFullPage" :active.sync="isLoading" :can-cancel="true"></b-loading>
     <div class="page-wrapper">
       <section class="hero is-medium is-black">
         <g-image class="hero-bg-img" src="~/assets/images/home-hero-image.jpg"/>
@@ -157,9 +153,6 @@
   import axios from 'axios';
   import slugify from 'slugify';
 
-  import Loading from 'vue-loading-overlay';
-  import 'vue-loading-overlay/dist/vue-loading.css';
-
   var latLng, Icon, latLngBounds;
   if (process.isClient) {
     Icon = require('leaflet').Icon
@@ -178,7 +171,7 @@
       let self = this
       return {
         isLoading: true,
-        fullPage: true,
+        isFullPage: true,
         zoom: 6,
         url: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}",
         tileLayerOptions: {
@@ -223,7 +216,6 @@
       }
     },
     components: {
-        Loading
     },
     mounted () {
       //this.$refs.theMap.mapObject.fitBounds(maxbounds())
