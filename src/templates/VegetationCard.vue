@@ -42,10 +42,12 @@
               <div class="tile is-child is-6 box">
                 <b>Superficie en 1988 (km<sup>2</sup>): </b>{{$page.vegetationCard.areain1988 | number}}<br>
                 <b>Superficie en 2010 (km<sup>2</sup>): </b>{{$page.vegetationCard.areain2010 | number}}<br>
-                <div v-for="item in $page.vegetationCard.mapcompare">
-                  <br>
-                  <VueCompareImage style="border-style: solid; border-color: black;" :leftImage="item.in2010" :rightImage="item.in1988" />
-                </div>
+                <ClientOnly>
+                  <div v-for="item in $page.vegetationCard.mapcompare">
+                    <br>
+                    <VueCompareImage style="border-style: solid; border-color: black;" :leftImage="item.in2010" :rightImage="item.in1988" />
+                  </div>
+                </ClientOnly>
               </div>
               <div class="tile is-child is-6 box">
                 <table align="center" class="statetable table is-size-6 is-size-7-mobile">
@@ -158,7 +160,7 @@
 
 <script>
 
-  import VueCompareImage from 'vue-compare-image';
+  //import VueCompareImage from 'vue-compare-image';
 
   export default {
     filters: {
@@ -173,7 +175,7 @@
       }
     },
     components: {
-        VueCompareImage
+        VueCompareImage: () => import ('vue-compare-image').then(m => m)
     },
     methods: {
       redOrGreen: function(value) {
