@@ -6,7 +6,9 @@ Como se muestra en la Figura 1, se trata de una formaciónvegetal de poca extens
 distributionmap: "/uploads/bn-dist.png"
 areain1988: "7140"
 areain2010: "7078"
-mapcompare: ""
+mapcompare:
+  - in2010: "/uploads/figura_1a_bosquesnublados_andes.jpg"
+    in1988: "/uploads/figura_2a_bosquesnublados_88_occ.jpg"
 stateleveltable:
   - state: "Anzoátegui"
     areain1988: "100"
