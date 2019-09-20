@@ -87,9 +87,15 @@
             <div class="is-size-4 is-uppercase has-text-weight-semibold has-text-centered">Situación a 2010</div>
             <div class="tile is-parent">
               <div class="tile is-child is-6 box">
-                <figure class="image is-4by3">
-                  <img src="https://bulma.io/images/placeholders/640x480.png">
-                </figure>
+                <b>Riesgo de colapso a nivel nacional: </b>
+                {{$page.vegetationCard.categorycaption}}
+                <img :src="$page.vegetationCard.categoryicon" height="30" width="30">
+                <br><br>
+                <b>Grado de amenaza 2010: </b>
+                <div v-for="item in $page.vegetationCard.threatLevelMaps">
+                  <br>
+                  <img style="border-style: solid; border-color: black;" :src="item">
+                </div>
               </div>
               <div class="tile is-child is-6 box">
                 <figure class="image is-4by3">
@@ -127,6 +133,7 @@
         in2010
         in1988
       }
+      threatLevelMaps
     }
   }
 </page-query>

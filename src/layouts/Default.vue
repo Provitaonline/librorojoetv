@@ -18,7 +18,7 @@
           <g-link class="navbar-item" to="/about">ACERCA DE</g-link>
 
           <a class="navbar-item">
-            METODOLOGÍA
+            MÉTODOS
           </a>
 
           <a class="navbar-item">

@@ -88,7 +88,7 @@ stateleveltable:
   - state: "Zulia"
     areain1988: "8007"
     areain2010: "4949"
-riskofcolapsenational: ""
+threatLevelMaps: ""
 riskofcolapsestatelevel: ""
 
 ---
