@@ -15,6 +15,8 @@ areain2010: "7078"
 mapcompare:
   - in2010: "/uploads/figura_1a_bosquesnublados_andes.jpg"
     in1988: "/uploads/figura_2a_bosquesnublados_88_occ.jpg"
+  - in2010: "/uploads/figura_1b_bosquesnublados_2010_norte.jpg"
+    in1988: "/uploads/figura_2b_bosquesnublados_88_norte.jpg"
 stateleveltable:
   - state: "Anzoátegui"
     areain1988: "100"
