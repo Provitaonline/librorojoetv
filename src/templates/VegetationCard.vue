@@ -89,7 +89,7 @@
               <div class="tile is-child is-6 box">
                 <b>Riesgo de colapso a nivel nacional: </b>
                 {{$page.vegetationCard.categorycaption}}
-                <img :src="$page.vegetationCard.categoryicon" height="30" width="30">
+                <img :src="$page.vegetationCard.categoryicon" height="30" width="30" style="margin-bottom: -5px;">
                 <br><br>
                 <b>Grado de amenaza 2010: </b>
                 <div v-for="item in $page.vegetationCard.threatLevelMaps">
@@ -97,10 +97,29 @@
                   <img style="border-style: solid; border-color: black;" :src="item">
                 </div>
               </div>
-              <div class="tile is-child is-6 box">
-                <figure class="image is-4by3">
-                  <img src="https://bulma.io/images/placeholders/640x480.png">
-                </figure>
+              <div v-if="$page.vegetationCard.riskofcolapsestatelevel.length" class="tile is-child is-6 box">
+                <table align="center" class="table is-size-6 is-size-7-mobile">
+                  <thead>
+                    <tr>
+                      <td></td>
+                      <td class="has-text-centered" colspan="3">Criterios</td>
+                    </tr>
+                    <tr>
+                      <th>Estado</th>
+                      <th>A3</th>
+                      <th>A4</th>
+                      <th>C2</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr v-for="item in $page.vegetationCard.riskofcolapsestatelevel">
+                      <td>{{item.state}}</td>
+                      <td><img v-if="item.a3" :src="'/uploads/' + item.a3 + '-icon.svg'" height="30" width="30"></td>
+                      <td><img v-if="item.a4" :src="'/uploads/' + item.a4 + '-icon.svg'" height="30" width="30"></td>
+                      <td><img v-if="item.c2" :src="'/uploads/' + item.c2 + '-icon.svg'" height="30" width="30"></td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
@@ -134,6 +153,12 @@
         in1988
       }
       threatLevelMaps
+      riskofcolapsestatelevel {
+        state
+        a3
+        a4
+        c2
+      }
     }
   }
 </page-query>
