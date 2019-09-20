@@ -1,0 +1,12 @@
+{
+  "criteria": {
+    "el": "Eliminado",
+    "cr": "En Peligro Crítico",
+    "en": "En Peligo",
+    "vu": "Vulnerable",
+    "nt": "Casi Amenazado",
+    "lc": "Preocupación Menor",
+    "dd": "Datos Insuficientes",
+    "ne": "No Evaluado"
+  }
+}

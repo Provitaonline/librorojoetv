@@ -10,8 +10,8 @@
               ({{$page.vegetationCard.plantformation}})
             </h2>
             <div class="categoryicon">
-              <img :src="$page.vegetationCard.categoryicon" height="40" width="40">
-              <span style="display: block; font-size: x-small;"><b>{{$page.vegetationCard.categorycaption}}</b></span>
+              <img :src="'/uploads/' + $page.vegetationCard.category + '-icon.svg'" height="40" width="40">
+              <span style="display: block; font-size: x-small;"><b>{{siteConfig.criteria[$page.vegetationCard.category].toUpperCase()}}</b></span>
             </div>
           </div>
         </div>
@@ -88,8 +88,8 @@
             <div class="tile is-parent">
               <div class="tile is-child is-6 box">
                 <b>Riesgo de colapso a nivel nacional: </b>
-                {{$page.vegetationCard.categorycaption}}
-                <img :src="$page.vegetationCard.categoryicon" height="30" width="30" style="margin-bottom: -5px;">
+                {{siteConfig.criteria[$page.vegetationCard.category].toUpperCase()}}
+                <img :src="'/uploads/' + $page.vegetationCard.category + '-icon.svg'" height="30" width="30" style="margin-bottom: -5px;">
                 <br><br>
                 <b>Grado de amenaza 2010: </b>
                 <div v-for="item in $page.vegetationCard.threatLevelMaps">
@@ -134,8 +134,7 @@
     vegetationCard: vegetationCard (path: $path) {
       title
       plantformation
-      categoryicon
-      categorycaption
+      category
       description
       cardimage
       cardimagecaption
@@ -213,9 +212,14 @@
 
 <script>
 
-  //import VueCompareImage from 'vue-compare-image';
+  import siteConfig from '~/data/siteConfig.json'
 
   export default {
+    data() {
+      return {
+        siteConfig: siteConfig
+      }
+    },
     filters: {
       number: function(value) {
         if (!value) return ''

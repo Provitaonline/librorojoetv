@@ -1,5 +1,5 @@
 ---
-title: "Libro Rojo ABC"
+title: "Home Page"
 heroTitle: "LIBRO ROJO DE LOS ECOSISTEMAS TERRESTRES DE VENEZUELA"
 heroSubTitle: "Lorem ipsum dolor sit amet, consectetur adipisicing elit"
 vegetation:
