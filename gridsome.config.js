@@ -12,7 +12,6 @@ module.exports = {
       options: {
         path: 'content/vcards/**/*.md',
         typeName: 'VegetationCard',
-        route: 'vcards/:title'
       }
     },
     {
@@ -22,5 +21,8 @@ module.exports = {
         typeName: 'HomeData'
       }
     }
-  ]
+  ],
+  templates: {
+    VegetationCard: '/vcards/:title'
+  }
 }
