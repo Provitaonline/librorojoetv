@@ -102,13 +102,13 @@
                   <thead>
                     <tr>
                       <td></td>
-                      <td class="has-text-centered" colspan="3"><b>Criterios</b></td>
+                      <td align="center" colspan="3"><b>Criterios</b></td>
                     </tr>
                     <tr>
                       <th>Estado</th>
-                      <th>A3</th>
-                      <th>A4</th>
-                      <th>C2</th>
+                      <th align="center">A3</th>
+                      <th align="center">A4</th>
+                      <th align="center">C2</th>
                     </tr>
                   </thead>
                   <tbody>
