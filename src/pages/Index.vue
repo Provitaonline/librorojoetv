@@ -35,7 +35,7 @@
           <div class="columns">
             <div class="column">
               <div v-for="item in columnOneItems">
-                <g-link :to="makeLink(item.name)" v-if="item.legend === 'colorkey'"><span class="legend-item" :style="'background:' + item.color"></span> {{ item.name }}<br></g-link>
+                <g-link :to="makeLink(item)" v-if="item.legend === 'colorkey'"><span class="legend-item" :style="'background:' + item.color"></span> {{ item.name }}<br></g-link>
                 <g-link v-else-if="item.legend === 'stripes'"><span class="legend-item lightstripe"></span> {{ item.name }}<br></g-link>
                 <g-link v-else-if="item.legend === 'dotkey'"><span class="dot" :style="'background:' + item.color"></span> {{ item.name }}<br></g-link>
               </div>
@@ -82,6 +82,7 @@
         group
         color
         legend
+        cardPath
       }
     }
   }
@@ -186,7 +187,7 @@
         },
         saxicolaLayerOptions: {
           onEachFeature: function onEachFeature(feature, layer) {
-            let t = 'Vegetación Saxícola'
+            let t = 'Vegetación saxícola'
             layer.bindPopup('<a href=' + self.makeLink(t) + '>' + t + '</a>')
           },
           pointToLayer: function(feature, latlng) {
@@ -275,7 +276,17 @@
     },
     methods: {
       makeLink(t) {
-        return 'vcards/' + slugify(t, {lower: true});
+        let it
+        if (typeof t === 'string') {
+          it = this.$page.homeData.vegetation.find(function(v) { return v.name === t})
+        } else {
+          it = t
+        }
+        if (it.cardPath){
+          return 'vcards/' + slugify(it.cardPath, {lower: true})
+        } else {
+          return 'vcards/' + slugify(it.name, {lower: true})
+        }
       },
       mapReady() {
         //console.log('Map is ready');
