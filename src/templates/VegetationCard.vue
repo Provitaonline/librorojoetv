@@ -101,40 +101,27 @@
                 <table align="center" class="table is-size-6 is-size-7-mobile">
                   <thead>
                     <tr>
-                      <td></td>
-                      <td align="center" colspan="3"><b>Criterios</b></td>
+                      <th></th>
+                      <th align="center" colspan="3"><b>Criterios</b></th>
+                      <th></th>
                     </tr>
                     <tr>
                       <th>Estado</th>
-                      <th align="center">A3</th>
-                      <th align="center">A4</th>
-                      <th align="center">C2</th>
+                      <th v-for="value in $page.vegetationCard.criteriaused" align="center">{{value}}</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr v-for="item in $page.vegetationCard.riskofcolapsestatelevel">
                       <td>{{item.state}}</td>
-                      <td>
-                        <b-tooltip :label="siteConfig.criteria[item.a3]" position="is-top" type="is-warning">
+
+                      <td align="center" v-for="value in item.criteria">
+                        <b-tooltip :label="siteConfig.criteria[value]" position="is-top" type="is-warning">
                           <div>
-                            <img v-if="item.a3" :src="'/uploads/' + item.a3 + '-icon.svg'" height="30" width="30">
+                            <img :src="'/uploads/' + value + '-icon.svg'" height="30" width="30">
                           </div>
                         </b-tooltip>
                       </td>
-                      <td>
-                        <b-tooltip :label="siteConfig.criteria[item.a4]" position="is-top" type="is-warning">
-                          <div>
-                            <img v-if="item.a4" :src="'/uploads/' + item.a4 + '-icon.svg'" height="30" width="30">
-                          </div>
-                        </b-tooltip>
-                      </td>
-                      <td>
-                        <b-tooltip :label="siteConfig.criteria[item.c2]" position="is-top" type="is-warning">
-                          <div>
-                            <img v-if="item.c2" :src="'/uploads/' + item.c2 + '-icon.svg'" height="30" width="30">
-                          </div>
-                        </b-tooltip>
-                      </td>
+
                     </tr>
                   </tbody>
                 </table>
@@ -170,11 +157,10 @@
         in1988
       }
       threatLevelMaps
+      criteriaused
       riskofcolapsestatelevel {
         state
-        a3
-        a4
-        c2
+        criteria
       }
     }
   }
