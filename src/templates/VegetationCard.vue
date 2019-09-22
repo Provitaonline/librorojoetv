@@ -98,7 +98,7 @@
                 </div>
               </div>
               <div v-if="$page.vegetationCard.riskofcolapsestatelevel.length" class="tile is-child is-6 box">
-                <table align="center" class="table is-size-6 is-size-7-mobile">
+                <table align="center" class=" risktable table is-size-6 is-size-7-mobile">
                   <thead>
                     <tr>
                       <th></th>
@@ -168,6 +168,8 @@
 
 <style lang="scss" scoped>
 
+  $primary: #BE1421; /* Remove this after figuring out how to global scss vars */
+
   @media only screen and (max-width: 1024px) {
     .statetable {
       font-size: 0.8em !important;
@@ -189,6 +191,30 @@
       right: 0px;
       top: 0px;
     }
+  }
+
+  .risktable tbody > tr > td:nth-last-child(2), .risktable thead > tr > th:nth-last-child(2) {
+    border-right: solid $primary 2px;
+  }
+
+  .risktable tbody > tr > td:first-child, .risktable thead > tr > th:first-child {
+    border-left: solid $primary 2px;
+  }
+
+  .risktable tbody > tr:last-child > td {
+    border-bottom: solid $primary 2px;
+  }
+
+  .risktable thead > tr:first-child > th {
+    border-top: solid $primary 2px;
+  }
+
+  .risktable tbody > tr:last-child > td:last-child {
+    border-bottom: 0;
+  }
+
+  .risktable thead > tr:first-child > th:last-child {
+    border-top: 0;
   }
 
 </style>
