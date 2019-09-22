@@ -29,11 +29,14 @@
         </div>
       </div>
     </nav>
-    <transition name="fade" appear>
+    <transition v-if="isNotHomePage()" name="fade" appear>
       <main>
         <slot />
       </main>
     </transition>
+    <main v-else>
+      <slot />
+    </main>
 
     <section>
       <footer class="footer">
@@ -77,6 +80,15 @@ export default {
   data () {
     return {
       showNav: false
+    }
+  },
+  methods: {
+    isNotHomePage() {
+      if (this.$page && this.$page.homeData) {
+        return false
+      } else {
+        return true
+      }
     }
   }
 }
