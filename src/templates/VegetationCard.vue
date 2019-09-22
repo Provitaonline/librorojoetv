@@ -98,43 +98,30 @@
                 </div>
               </div>
               <div v-if="$page.vegetationCard.riskofcolapsestatelevel.length" class="tile is-child is-6 box">
-                <table align="center" class="table is-size-6 is-size-7-mobile">
+                <table align="center" class=" risktable table is-size-6 is-size-7-mobile">
                   <thead>
                     <tr>
-                      <td></td>
-                      <td align="center" colspan="3"><b>Criterios</b></td>
+                      <th></th>
+                      <th align="center" colspan="3"><b>Criterios</b></th>
+                      <th></th>
                     </tr>
                     <tr>
                       <th>Estado</th>
-                      <th align="center">A3</th>
-                      <th align="center">A4</th>
-                      <th align="center">C2</th>
+                      <th v-for="value in $page.vegetationCard.criteriaused" align="center">{{value}}</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr v-for="item in $page.vegetationCard.riskofcolapsestatelevel">
                       <td>{{item.state}}</td>
-                      <td>
-                        <b-tooltip :label="siteConfig.criteria[item.a3]" position="is-top" type="is-warning">
+
+                      <td align="center" v-for="value in item.criteria">
+                        <b-tooltip :label="siteConfig.criteria[value]" position="is-top" type="is-warning">
                           <div>
-                            <img v-if="item.a3" :src="'/uploads/' + item.a3 + '-icon.svg'" height="30" width="30">
+                            <img :src="'/uploads/' + value + '-icon.svg'" height="30" width="30">
                           </div>
                         </b-tooltip>
                       </td>
-                      <td>
-                        <b-tooltip :label="siteConfig.criteria[item.a4]" position="is-top" type="is-warning">
-                          <div>
-                            <img v-if="item.a4" :src="'/uploads/' + item.a4 + '-icon.svg'" height="30" width="30">
-                          </div>
-                        </b-tooltip>
-                      </td>
-                      <td>
-                        <b-tooltip :label="siteConfig.criteria[item.c2]" position="is-top" type="is-warning">
-                          <div>
-                            <img v-if="item.c2" :src="'/uploads/' + item.c2 + '-icon.svg'" height="30" width="30">
-                          </div>
-                        </b-tooltip>
-                      </td>
+
                     </tr>
                   </tbody>
                 </table>
@@ -170,17 +157,18 @@
         in1988
       }
       threatLevelMaps
+      criteriaused
       riskofcolapsestatelevel {
         state
-        a3
-        a4
-        c2
+        criteria
       }
     }
   }
 </page-query>
 
 <style lang="scss" scoped>
+
+  $primary: #BE1421; /* Remove this after figuring out how to global scss vars */
 
   @media only screen and (max-width: 1024px) {
     .statetable {
@@ -203,6 +191,30 @@
       right: 0px;
       top: 0px;
     }
+  }
+
+  .risktable tbody > tr > td:nth-last-child(2), .risktable thead > tr > th:nth-last-child(2) {
+    border-right: solid $primary 2px;
+  }
+
+  .risktable tbody > tr > td:first-child, .risktable thead > tr > th:first-child {
+    border-left: solid $primary 2px;
+  }
+
+  .risktable tbody > tr:last-child > td {
+    border-bottom: solid $primary 2px;
+  }
+
+  .risktable thead > tr:first-child > th {
+    border-top: solid $primary 2px;
+  }
+
+  .risktable tbody > tr:last-child > td:last-child {
+    border-bottom: 0;
+  }
+
+  .risktable thead > tr:first-child > th:last-child {
+    border-top: 0;
   }
 
 </style>

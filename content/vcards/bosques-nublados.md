@@ -77,81 +77,44 @@ stateleveltable:
 threatLevelMaps:
   - "/uploads/figura_3a_bn_amen_occ.jpg"
   - "/uploads/figura_3b_bn_amen_nort.jpg"
+criteriaused: [A3, A4, C2, "Situación por estado"]
 riskofcolapsestatelevel:
 - state: "Anzoátegui"
-  a3: "cr"
-  a4: "vu"
-  c2: "cr"
+  criteria: [cr, vu, cr, cr]
 - state: "Apure"
-  a3: "dd"
-  a4: "vu"
-  c2: "cr"
+  criteria: [dd, vu, cr, cr]
 - state: "Aragua"
-  a3: "dd"
-  a4: "vu"
-  c2: "en"
+  criteria: [dd, vu, en, en]
 - state: "Barinas"
-  a3: "cr"
-  a4: "vu"
-  c2: "en"
+  criteria: [cr, vu, en, cr]
 - state: "Carabobo"
-  a3: "cr"
-  a4: "vu"
-  c2: "cr"
+  criteria: [cr, vu, cr, cr]
 - state: "Distrito Capital"
-  a3: "dd"
-  a4: "vu"
-  c2: "cr"
+  criteria: [dd, vu, cr, cr]
 - state: "Falcón"
-  a3: "dd"
-  a4: "vu"
-  c2: "en"
+  criteria: [dd, vu, en, en]
 - state: "Guárico"
-  a3: "dd"
-  a4: "vu"
-  c2: "cr"
+  criteria: [dd, vu, cr, cr]
 - state: "Lara"
-  a3: "dd"
-  a4: "vu"
-  c2: "en"
+  criteria: [dd, vu, en, en]
 - state: "Mérida"
-  a3: "cr"
-  a4: "vu"
-  c2: "en"
+  criteria: [cr, vu, en, cr]
 - state: "Miranda"
-  a3: "dd"
-  a4: "vu"
-  c2: "cr"
+  criteria: [dd, vu, cr, cr]
 - state: "Monagas"
-  a3: "dd"
-  a4: "vu"
-  c2: "cr"
+  criteria: [dd, vu, cr, cr]
 - state: "Portuguesa"
-  a3: ""
-  a4: ""
-  c2: "cr"
+  criteria: [ne, ne, cr, cr]
 - state: "Sucre"
-  a3: "dd"
-  a4: "vu"
-  c2: "en"
+  criteria: [dd, vu, en, en]
 - state: "Táchira"
-  a3: "dd"
-  a4: "vu"
-  c2: "en"
+  criteria: [dd, vu, en, en]
 - state: "Trujillo"
-  a3: "dd"
-  a4: "vu"
-  c2: "en"
+  criteria: [dd, vu, en, en]
 - state: "Vargas"
-  a3: "cr"
-  a4: "vu"
-  c2: "cr"
+  criteria: [cr, vu, cr, cr]
 - state: "Yaracuy"
-  a3: "lc"
-  a4: "vu"
-  c2: "en"
+  criteria: [lc, vu, en, en]
 - state: "Zulia"
-  a3: "dd"
-  a4: "vu"
-  c2: "vu"
+  criteria: [dd, vu, vu, vu]
 ---
