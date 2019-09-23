@@ -48,7 +48,7 @@
                 <ClientOnly>
                   <div v-for="item in $page.vegetationCard.mapcompare">
                     <br>
-                    <VueCompareImage style="border-style: solid; border-color: black;" :leftImage="item.in2010" :rightImage="item.in1988" />
+                    <VueCompareImage style="border-style: solid; border-color: dimgrey;" :leftImage="item.in2010" :rightImage="item.in1988" />
                   </div>
                 </ClientOnly>
                 <br><span class="intervention-legend-item" :style="'background-image: url(' + $page.vegetationCard.interventionlegendimage + ');'"></span> Areas intervenidas
@@ -88,17 +88,18 @@
             <div class="is-size-4 is-uppercase has-text-weight-semibold has-text-centered">Situación a 2010</div>
             <div class="tile is-parent">
               <div class="tile is-child is-6 box">
-                <b>Riesgo de colapso a nivel nacional: </b>
+                <b >Riesgo de colapso a nivel nacional: </b>
                 {{siteConfig.criteria[$page.vegetationCard.category].toUpperCase()}}
                 <img :src="'/images/' + $page.vegetationCard.category + '-icon.svg'" height="30" width="30" style="margin-bottom: -5px;">
                 <br><br>
                 <b>Grado de amenaza 2010: </b>
                 <div v-for="item in $page.vegetationCard.threatLevelMaps">
                   <br>
-                  <img style="border-style: solid; border-color: black;" :src="item">
+                  <img style="border-style: solid; border-color: dimgrey;" :src="item">
                 </div>
               </div>
               <div v-if="$page.vegetationCard.riskofcolapsestatelevel.length" class="tile is-child is-6 box">
+                <div class="has-text-centered"><b>Riesgo de colapso por estado:</b><br><br></div>
                 <table align="center" class=" risktable table is-size-6 is-size-7-mobile">
                   <thead>
                     <tr>
