@@ -104,7 +104,7 @@ riskofcolapsestatelevel:
 - state: "Monagas"
   criteria: [dd, vu, cr, cr]
 - state: "Portuguesa"
-  criteria: [ne, ne, cr, cr]
+  criteria: ["-", "-", cr, cr]
 - state: "Sucre"
   criteria: [dd, vu, en, en]
 - state: "Táchira"

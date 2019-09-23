@@ -115,11 +115,12 @@
                       <td>{{item.state}}</td>
 
                       <td align="center" v-for="value in item.criteria">
-                        <b-tooltip :label="siteConfig.criteria[value]" position="is-top" type="is-warning">
+                        <b-tooltip v-if="value != '-'" :label="siteConfig.criteria[value]" position="is-top" type="is-warning">
                           <div>
                             <img :src="'/uploads/' + value + '-icon.svg'" height="30" width="30">
                           </div>
                         </b-tooltip>
+                        <div v-else>{{value}}</div>
                       </td>
 
                     </tr>
