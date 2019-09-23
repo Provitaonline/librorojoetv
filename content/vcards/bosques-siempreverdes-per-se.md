@@ -89,4 +89,52 @@ stateleveltable:
     areain1988: "8007"
     areain2010: "4949"
 threatLevelMaps: ""
+criteriaused: [A3, A4, C2, "Situación por estado"]
+riskofcolapsestatelevel:
+- state: "Amazonas"
+  criteria: ["-", "-", "-", nt]
+- state: "Anzoátegui"
+  criteria: ["-", "-", "-", vu]
+- state: "Apure"
+  criteria: [cr, "-", en, cr]
+- state: "Aragua"
+  criteria: [cr, "-", en, cr]
+- state: "Barinas"
+  criteria: ["-", "-", "-", vu]
+- state: "Bolívar"
+  criteria: ["-", "-", "-", nt]
+- state: "Carabobo"
+  criteria: ["-", "-", "-", vu]
+- state: "Cojedes"
+  criteria: ["-", "-", "-", vu]
+- state: "Delta Amacuro"
+  criteria: ["-", "-", "-", nt]
+- state: "Distrito Capital"
+  criteria: [cr, "-", en, cr]
+- state: "Guárico"
+  criteria: ["-", "-", "-", vu]
+- state: "Lara"
+  criteria: [cr, "-", "-", cr]
+- state: "Mérida"
+  criteria: ["-", "-", "-", vu]
+- state: "Miranda"
+  criteria: ["-", "-", "-", vu]
+- state: "Monagas"
+  criteria: ["-", "-", "-", vu]
+- state: "Nueva Esparta"
+  criteria: ["-", "-", "-", vu]
+- state: "Portuguesa"
+  criteria: ["-", "-", "-", vu]
+- state: "Sucre"
+  criteria: ["-", "-", "-", vu]
+- state: "Táchira"
+  criteria: [cr, "-", "-", cr]
+- state: "Trujillo"
+  criteria: ["-", "-", "-", vu]
+- state: "Vargas"
+  criteria: ["-", "-", "-", vu]
+- state: "Yaracuy"
+  criteria: ["-", "-", "-", vu]
+- state: "Zulia"
+  criteria: [cr, "-", "-", cr]
 ---

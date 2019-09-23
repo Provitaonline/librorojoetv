@@ -103,7 +103,7 @@
                   <thead>
                     <tr>
                       <th></th>
-                      <th align="center" colspan="3"><b>Criterios</b></th>
+                      <th align="center" :colspan="$page.vegetationCard.criteriaused.length - 1"><b>Criterios</b></th>
                       <th></th>
                     </tr>
                     <tr>
