@@ -10,7 +10,7 @@
               ({{$page.vegetationCard.plantformation}})
             </h2>
             <div class="categoryicon">
-              <img :src="'/uploads/' + $page.vegetationCard.category + '-icon.svg'" height="40" width="40">
+              <img :src="'/images/' + $page.vegetationCard.category + '-icon.svg'" height="40" width="40">
               <span style="display: block; font-size: x-small;"><b>{{siteConfig.criteria[$page.vegetationCard.category].toUpperCase()}}</b></span>
             </div>
           </div>
@@ -51,6 +51,7 @@
                     <VueCompareImage style="border-style: solid; border-color: black;" :leftImage="item.in2010" :rightImage="item.in1988" />
                   </div>
                 </ClientOnly>
+                <br><span class="intervention-legend-item" :style="'background-image: url(' + $page.vegetationCard.interventionlegendimage + ');'"></span> Areas intervenidas
               </div>
               <div class="tile is-child is-6 box">
                 <table align="center" class="statetable table is-size-6 is-size-7-mobile">
@@ -89,7 +90,7 @@
               <div class="tile is-child is-6 box">
                 <b>Riesgo de colapso a nivel nacional: </b>
                 {{siteConfig.criteria[$page.vegetationCard.category].toUpperCase()}}
-                <img :src="'/uploads/' + $page.vegetationCard.category + '-icon.svg'" height="30" width="30" style="margin-bottom: -5px;">
+                <img :src="'/images/' + $page.vegetationCard.category + '-icon.svg'" height="30" width="30" style="margin-bottom: -5px;">
                 <br><br>
                 <b>Grado de amenaza 2010: </b>
                 <div v-for="item in $page.vegetationCard.threatLevelMaps">
@@ -117,7 +118,7 @@
                       <td align="center" v-for="value in item.criteria">
                         <b-tooltip v-if="value != '-'" :label="siteConfig.criteria[value]" position="is-top" type="is-warning">
                           <div>
-                            <img :src="'/uploads/' + value + '-icon.svg'" height="30" width="30">
+                            <img :src="'/images/' + value + '-icon.svg'" height="30" width="30">
                           </div>
                         </b-tooltip>
                         <div v-else>{{value}}</div>
@@ -157,6 +158,7 @@
         in2010
         in1988
       }
+      interventionlegendimage
       threatLevelMaps
       criteriaused
       riskofcolapsestatelevel {
@@ -216,6 +218,12 @@
 
   .risktable thead > tr:first-child > th:last-child {
     border-top: 0;
+  }
+
+  .intervention-legend-item {
+    height: 12px;
+    width: 14px;
+    display: inline-block;
   }
 
 </style>

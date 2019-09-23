@@ -17,6 +17,7 @@ mapcompare:
     in1988: "/uploads/figura_2c_bosquessiempreverdes_88_centro.jpg"
   - in2010: "/uploads/figura_1b_bosquessiempreverdes_sur.jpg"
     in1988: "/uploads/figura_2b_bosquessiempreverdes_88_sur.jpg"
+interventionlegendimage: "/uploads/bosques-siempreverdes-per-se-intervenidas.png"
 stateleveltable:
   - state: "Amazonas"
     areain1988: "145555"
