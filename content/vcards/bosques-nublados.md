@@ -1,5 +1,5 @@
 ---
-title: "Bosques nublados"cardimage: "/uploads/foto_1_bosques_nublados.jpg"
+title: "Bosques nublados"cardimage: "/uploads/bosques-nublados-foto-1.jpg"
 cardimagecaption: "Bosque nublado entre Humocaro Alto y Campo Elias, Cordillera de los Andes. Giuseppe Colonnello"
 plantformation: "Bosques siempreverdes"
 category: "vu"
@@ -8,14 +8,14 @@ Se desarrollan en vertientes montañosas, generalmente por encima de 800 m, aunq
 La composición florística varía de acuerdo con su ubicación geográfica y se nutre de un número importante de endemismos. Por ejemplo, en el Parque Nacional Guaramacal, estado Trujillo, estos ecosistemas son dominados por las familias Lauraceae, Melastomataceae y Rubiaceae, con una marcada distribución altitudinal, siendo las especies características del dos el Pouteria baehniana, Meriania macrophylla, Ruagea pubescens, Sapiumstylare, Hyeronima oblonga y H. moritziana, entre otras (Cuello2002). En La Mucuy (PN Sierra Nevada, estado Mérida), entre las principales especies de árboles altos se cuentan Clusia multiflora, Guettarda steyermarkii, Laplacea fruticosa, Alchornea triplinerviay, Billia colombiana, mientras que las especies más comunes enel sotobos que comprenden a Psychotria aubletiana, Palicourea demissa, Solanum meridense, Monochaetum meridense, Fuchsiavenusta y Chusquea fendleri, y entre las epífitas resaltan Tillandsia biflora, Racinaea tetrantha, Epidendrum dendrobii, Oncidium falcipetalum y Peperomia microphylla (Lamprecht 1954, Acevedoet al. 2003). En el PN Henri Pittier, en el estado Aragua, entre 800 y 1.000 m de altitud, son características especies como el cucharón (Gyranthera caribensis), la cual destaca por su altura en el dosel, mientras que en estratos intermedios e inferiores abundan las palmas (Bactris, Euterpe y Geonoma). Por encima de 1.000 m y hasta 1.600 m, predominan especies como Ecclinusa sp., Chimarrhis microcarpa y palmas como Socratea sp. y Dictyocaryum sp. en el dosel, y a nivel de sotobosque se encuentran especies como Hyospathe elegans y Geonoma spinescens. La abundancia de epífitas es significativamente alta (Foto 2). La franja superior, entre 1.600 m y 2.000 m, es menos diversa, con una clara dominancia de palmas, condición que se mantiene en otros sectores de la cordillera de la Costa Central (Huber 1976, Huber 1986a)."
 distribution: "Los bosques nublados típicos de Venezuela se hallan asociados a las zonas montañosas del norte (Figura 1). Su distribución está estrechamente relacionada con el proceso de formaciónde nubes (Foto 3), que aun cuando sujeto a múltiples causas,puede entenderse como la sinergia entre un fenómeno conocido enbiogeografía como “efecto de masa” (tamaño y continentalidad de las masas montañosas), la topografía y orientación de las montañas y la acción local del viento (Ataroff 2003). En las montañas aisladas cercanas al mar Caribe los bosques nublados pueden encontrarse apartir de 500 m, como en el cerro Santa Ana. En el cerro El Copey, en cambio, lo que existe es una formación sólo semejante al bosque nublado, pero que no llega a constituirse como tal. En la sierra de Aroa, serranía de San Luis y cordillera de la Costa, este bosque puede hallarse entre los 800 m y los 2.000 m. En los Andes se extienden desde 1.800 m hasta 3.000 m (Hueck 1966, Steyermark1977, Zinck 1986, Huber & Alarcón 1988, Ataroff 2003).<br><br>
 Como se muestra en la Figura 1, se trata de una formación vegetal de poca extensión, con alrededor de 7.079 km2, lo que comprende menos de 1% de la superficie terrestre de Venezuela. Se presenta en fragmentos aislados, incluso dentro de una misma formación montañosa. La mayor proporción de bosques nublados se encuentra en los estados Mérida (16%), Yaracuy (14%), Lara (14%)y Zulia (11%); salvo Yaracuy, los estados mencionados forman parte de la cordillera de los Andes (Tabla 1). Están presentes sólo en la región de montañas del norte del país, es decir, en 4 subregiones y los 4 sectores que las integran."
-distributionmap: "/uploads/bn-dist.png"
+distributionmap: "/uploads/bosques-nublados-dist.png"
 areain1988: "7140"
 areain2010: "7078"
 mapcompare:
-  - in2010: "/uploads/figura_1a_bosquesnublados_andes.jpg"
-    in1988: "/uploads/figura_2a_bosquesnublados_88_occ.jpg"
-  - in2010: "/uploads/figura_1b_bosquesnublados_2010_norte.jpg"
-    in1988: "/uploads/figura_2b_bosquesnublados_88_norte.jpg"
+  - in2010: "/uploads/bosques-nublados-figura-1a-andes.jpg"
+    in1988: "/uploads/bosques-nublados-figura-2a-88-occ.jpg"
+  - in2010: "/uploads/bosques-nublados-figura-1b-2010-norte.jpg"
+    in1988: "/uploads/bosques-nublados-figura-2b-88-norte.jpg"
 interventionlegendimage: "/uploads/bosques-nublados-intervenidas.png"
 stateleveltable:
   - state: "Anzoátegui"
@@ -76,8 +76,8 @@ stateleveltable:
     areain1988: ""
     areain2010: "796"
 threatLevelMaps:
-  - "/uploads/figura_3a_bn_amen_occ.jpg"
-  - "/uploads/figura_3b_bn_amen_nort.jpg"
+  - "/uploads/bosques-nublados-figura-3a-amen-occ.jpg"
+  - "/uploads/bosques-nublados-figura-3b-amen-nort.jpg"
 criteriaused: [A3, A4, C2, "Situación por estado"]
 riskofcolapsestatelevel:
 - state: "Anzoátegui"
