@@ -17,13 +17,13 @@ vegetation:
     group: 1
     color: "#75b374"
     legend: "colorkey"
-    cardPath: "Bosques de palmas y pantano"
+    cardPath: "Bosques de palmas y bosques de pantano"
     detailPath: "d124"
   - name: "Bosques de pantano"
     group: 1
     color: "#5fbb46"
     legend: "colorkey"
-    cardPath: "Bosques de palmas y pantano"
+    cardPath: "Bosques de palmas y bosques pantano"
     detailPath: "d124"
   - name: "Bosques de manglares"
     group: 1

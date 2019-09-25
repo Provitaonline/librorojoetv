@@ -1,5 +1,6 @@
 ---
-title: "Bosques nublados"cardimage: "/uploads/bosques-nublados-foto-1.jpg"
+title: "Bosques nublados"
+cardimage: "/uploads/bosques-nublados-foto-1.jpg"
 cardimagecaption: "Bosque nublado entre Humocaro Alto y Campo Elias, Cordillera de los Andes. Giuseppe Colonnello"
 plantformation: "Bosques siempreverdes"
 category: "vu"
