@@ -15,8 +15,12 @@ En cuanto a los bosques de pantano de Venezuela, ocupan una gran extensión en e
 distributionmap: "/uploads/bosques-de-palmas-y-bosques-de-pantano-dist.png"
 areain1988: "22296"
 areain2010: "23102"
-mapcompare: ""
-interventionlegendimage: ""
+mapcompare:
+  - in2010: "/uploads/bosques-de-palmas-y-de-pantano-figura-1b-1-2010.jpg"
+    in1988: "/uploads/bosques-de-palmas-y-de-pantano-figura-1a-1-88.jpg"
+  - in2010: "/uploads/bosques-de-palmas-y-de-pantano-figura-1b-2-2010.jpg"
+    in1988: "/uploads/bosques-de-palmas-y-de-pantano-figura-1a-2-88.jpg"
+interventionlegendimage: "/uploads/bosques-de-palmas-y-de-pantano-intervenidas.png"
 formationColumn: true
 stateleveltable:
   - formation: "Bosques de palmas"
@@ -79,7 +83,8 @@ stateleveltable:
     state: "Sucre"
     areain1988: "481"
     areain2010: ""
-threatLevelMaps: ""
+threatLevelMaps:
+  - "/uploads/bosques-de-palmas-y-de-pantano-figura-1c-amenazas.jpg"
 criteriaused: [C2, "Situación por estado"]
 riskofcolapsestatelevel:
   - formation: "Bosques de palmas"
