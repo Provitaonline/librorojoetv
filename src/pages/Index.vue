@@ -33,25 +33,10 @@
         </ClientOnly>
         <div class="section container legend is-size-7 has-text-left">
           <div class="columns">
-            <div class="column">
-              <div v-for="item in columnOneItems">
+            <div v-for="i in 3" class="column">
+              <div v-for="item in columnItems(i)">
                 <g-link :to="makeLink(item)" v-if="item.legend === 'colorkey'"><span class="legend-item" :style="'background:' + item.color"></span> {{ item.name }}<br></g-link>
-                <g-link v-else-if="item.legend === 'stripes'"><span class="legend-item lightstripe"></span> {{ item.name }}<br></g-link>
-                <g-link v-else-if="item.legend === 'dotkey'"><span class="dot" :style="'background:' + item.color"></span> {{ item.name }}<br></g-link>
-              </div>
-            </div>
-            <div class="column">
-              <div v-for="item in columnTwoItems">
-                <g-link v-if="item.legend === 'colorkey'"><span class="legend-item" :style="'background:' + item.color"></span> {{ item.name }}<br></g-link>
-                <g-link v-else-if="item.legend === 'stripes'"><span class="legend-item lightstripe"></span> {{ item.name }}<br></g-link>
-                <g-link v-else-if="item.legend === 'dotkey'"><span class="dot" :style="'background:' + item.color"></span> {{ item.name }}<br></g-link>
-              </div>
-            </div>
-            <div class="column">
-              <div v-for="item in columnThreeItems">
-                <g-link v-if="item.legend === 'colorkey'"><span class="legend-item" :style="'background:' + item.color"></span> {{ item.name }}<br></g-link>
-                <g-link v-else-if="item.legend === 'stripes'"><span class="legend-item lightstripe"></span> {{ item.name }}<br></g-link>
-                <g-link v-else-if="item.legend === 'dotkey'"><span class="dot" :style="'background:' + item.color"></span> {{ item.name }}<br></g-link>
+                <g-link v-else-if="item.legend === 'dotkey'" :to="makeLink(item)"><span class="dot" :style="'background:' + item.color"></span> {{ item.name }}<br></g-link>
               </div>
             </div>
           </div>
@@ -254,15 +239,6 @@
       }
     },
     computed: {
-      columnOneItems() {
-        return(this.$page.homeData.vegetation.filter(function(v) { return v.group == 1}))
-      },
-      columnTwoItems() {
-        return(this.$page.homeData.vegetation.filter(function(v) { return v.group == 2}))
-      },
-      columnThreeItems() {
-        return(this.$page.homeData.vegetation.filter(function(v) { return v.group == 3}))
-      },
       center() {
         if (process.isClient) {
           return latLng(6.4238, -66.5897)
@@ -275,6 +251,9 @@
       }
     },
     methods: {
+      columnItems(g) {
+        return(this.$page.homeData.vegetation.filter(function(v) { return v.group == g}))
+      },
       makeLink(t) {
         let it
         if (typeof t === 'string') {
