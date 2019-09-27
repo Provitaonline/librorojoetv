@@ -18,6 +18,7 @@ mapcompare:
   - in2010: "/uploads/bosques-nublados-figura-1b-2010-norte.jpg"
     in1988: "/uploads/bosques-nublados-figura-2b-88-norte.jpg"
 interventionlegendimage: "/uploads/bosques-nublados-intervenidas.png"
+formationColumn: false
 stateleveltable:
   - state: "Anzoátegui"
     areain1988: "100"

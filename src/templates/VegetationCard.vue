@@ -57,6 +57,7 @@
                 <table align="center" class="statetable table is-size-6 is-size-7-mobile">
                   <thead>
                     <tr>
+                      <th v-if="$page.vegetationCard.formationColumn">Formación</th>
                       <th>Estado</th>
                       <th class="has-text-right">1988</th>
                       <th class="has-text-right">2010</th>
@@ -66,6 +67,7 @@
                   </thead>
                   <tbody>
                     <tr v-for="item in $page.vegetationCard.stateleveltable">
+                      <td v-if="$page.vegetationCard.formationColumn">{{item.formation}}</td>
                       <td>{{item.state}}</td>
                       <td class="has-text-right">{{item.areain1988 | number}}</td>
                       <td class="has-text-right">{{item.areain2010 | number}}</td>
@@ -75,6 +77,7 @@
                   </tbody>
                   <tfoot>
                     <tr>
+                      <td v-if="$page.vegetationCard.formationColumn"></td>
                       <th>Total</th>
                       <th class="has-text-right">{{($page.vegetationCard.stateleveltable.reduce((a, b) => +a + +b.areain1988, 0)) | number}}</th>
                       <th class="has-text-right">{{($page.vegetationCard.stateleveltable.reduce((a, b) => +a + +b.areain2010, 0)) | number}}</th>
@@ -103,17 +106,20 @@
                 <table align="center" class=" risktable table is-size-6 is-size-7-mobile">
                   <thead>
                     <tr>
+                      <th v-if="$page.vegetationCard.formationColumn"></th>
                       <th></th>
                       <th align="center" :colspan="$page.vegetationCard.criteriaused.length - 1"><b>Criterios</b></th>
                       <th></th>
                     </tr>
                     <tr>
+                      <th v-if="$page.vegetationCard.formationColumn">Formación</th>
                       <th>Estado</th>
                       <th v-for="value in $page.vegetationCard.criteriaused" align="center">{{value}}</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr v-for="item in $page.vegetationCard.riskofcolapsestatelevel">
+                      <td v-if="$page.vegetationCard.formationColumn">{{item.formation}}</td>
                       <td>{{item.state}}</td>
 
                       <td align="center" v-for="value in item.criteria">
@@ -150,7 +156,9 @@
       distributionmap
       areain1988
       areain2010
+      formationColumn
       stateleveltable {
+        formation
         state
         areain1988
         areain2010
@@ -163,6 +171,7 @@
       threatLevelMaps
       criteriaused
       riskofcolapsestatelevel {
+        formation
         state
         criteria
       }

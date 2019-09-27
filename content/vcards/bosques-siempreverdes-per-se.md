@@ -18,6 +18,7 @@ mapcompare:
   - in2010: "/uploads/bosques-siempreverdes-per-se-figura-1b-sur.jpg"
     in1988: "/uploads/bosques-siempreverdes-per-se-figura-2b-88-sur.jpg"
 interventionlegendimage: "/uploads/bosques-siempreverdes-per-se-intervenidas.png"
+formationColumn: false
 stateleveltable:
   - state: "Amazonas"
     areain1988: "145555"
@@ -89,52 +90,52 @@ stateleveltable:
     areain1988: "8007"
     areain2010: "4949"
 threatLevelMaps: ""
-criteriaused: [A3, A4, C2, "Situación por estado"]
+criteriaused: [A3, C2, "Situación por estado"]
 riskofcolapsestatelevel:
 - state: "Amazonas"
-  criteria: ["-", "-", "-", nt]
+  criteria: ["-", "-", nt]
 - state: "Anzoátegui"
-  criteria: ["-", "-", "-", vu]
+  criteria: ["-", "-", vu]
 - state: "Apure"
-  criteria: [cr, "-", en, cr]
+  criteria: [cr, en, cr]
 - state: "Aragua"
-  criteria: [cr, "-", en, cr]
+  criteria: [cr, en, cr]
 - state: "Barinas"
-  criteria: ["-", "-", "-", vu]
+  criteria: ["-", "-", vu]
 - state: "Bolívar"
-  criteria: ["-", "-", "-", nt]
+  criteria: ["-", "-", nt]
 - state: "Carabobo"
-  criteria: ["-", "-", "-", vu]
+  criteria: ["-", "-", vu]
 - state: "Cojedes"
-  criteria: ["-", "-", "-", vu]
+  criteria: ["-", "-", vu]
 - state: "Delta Amacuro"
-  criteria: ["-", "-", "-", nt]
+  criteria: ["-", "-", nt]
 - state: "Distrito Capital"
-  criteria: [cr, "-", en, cr]
+  criteria: [cr, en, cr]
 - state: "Guárico"
-  criteria: ["-", "-", "-", vu]
+  criteria: ["-", "-", vu]
 - state: "Lara"
-  criteria: [cr, "-", "-", cr]
+  criteria: [cr, "-", cr]
 - state: "Mérida"
-  criteria: ["-", "-", "-", vu]
+  criteria: ["-", "-", vu]
 - state: "Miranda"
-  criteria: ["-", "-", "-", vu]
+  criteria: ["-", "-", vu]
 - state: "Monagas"
-  criteria: ["-", "-", "-", vu]
+  criteria: ["-", "-", vu]
 - state: "Nueva Esparta"
-  criteria: ["-", "-", "-", vu]
+  criteria: ["-", "-", vu]
 - state: "Portuguesa"
-  criteria: ["-", "-", "-", vu]
+  criteria: ["-", "-", vu]
 - state: "Sucre"
-  criteria: ["-", "-", "-", vu]
+  criteria: ["-", "-", vu]
 - state: "Táchira"
-  criteria: [cr, "-", "-", cr]
+  criteria: [cr, "-", cr]
 - state: "Trujillo"
-  criteria: ["-", "-", "-", vu]
+  criteria: ["-", "-", vu]
 - state: "Vargas"
-  criteria: ["-", "-", "-", vu]
+  criteria: ["-", "-", vu]
 - state: "Yaracuy"
-  criteria: ["-", "-", "-", vu]
+  criteria: ["-", "-", vu]
 - state: "Zulia"
-  criteria: [cr, "-", "-", cr]
+  criteria: [cr, "-", cr]
 ---
