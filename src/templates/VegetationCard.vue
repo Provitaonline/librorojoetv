@@ -16,9 +16,9 @@
           </div>
         </div>
       </section>
-      <figure class="image is-4by3 is-fullwidth">
-        <img :src="$page.vegetationCard.cardimage">
-      </figure>
+      <div class="has-text-centered">
+        <g-image v-if="$page.vegetationCard.cardimage" :src="$page.vegetationCard.cardimage" fit="inside" />
+      </div>
       <figcaption class="has-text-centered"><small>{{$page.vegetationCard.cardimagecaption}}</small></figcaption>
       <section class="section">
         <div class="tile is-ancestor">
@@ -36,7 +36,7 @@
               </div>
               <div class="tile is-child is-5 box">
                 <figure class="image is-4by3">
-                  <img :src="$page.vegetationCard.distributionmap">
+                  <img :src="$page.vegetationCard.distributionmap.src">
                 </figure>
               </div>
             </div>
@@ -48,10 +48,10 @@
                 <ClientOnly>
                   <div v-for="item in $page.vegetationCard.mapcompare">
                     <br>
-                    <VueCompareImage style="border-style: solid; border-color: dimgrey;" :leftImage="item.in2010" :rightImage="item.in1988" />
+                    <VueCompareImage style="border-style: solid; border-color: dimgrey;" :leftImage="item.in2010.src" :rightImage="item.in1988.src" />
                   </div>
                 </ClientOnly>
-                <br><span class="intervention-legend-item" :style="'background-image: url(' + $page.vegetationCard.interventionlegendimage + ');'"></span> Areas intervenidas
+                <br><span class="intervention-legend-item" :style="'background-image: url(' + $page.vegetationCard.interventionlegendimage.src + ');'"></span> Areas intervenidas
               </div>
               <div class="tile is-child is-6 box">
                 <table align="center" class="statetable table is-size-6 is-size-7-mobile">
@@ -98,7 +98,7 @@
                 <b>Grado de amenaza 2010: </b>
                 <div v-for="item in $page.vegetationCard.threatLevelMaps">
                   <br>
-                  <img style="border-style: solid; border-color: dimgrey;" :src="item">
+                  <img style="border-style: solid; border-color: dimgrey;" :src="item.src">
                 </div>
               </div>
               <div v-if="$page.vegetationCard.riskofcolapsestatelevel.length" class="tile is-child is-6 box">

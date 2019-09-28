@@ -1,6 +1,6 @@
 ---
 title: "Bosques de palmas y bosques de pantano"
-cardimage: "/uploads/bosques-de-palmas-y-bosques-de-pantano-foto-1.jpg"
+cardimage: "./foto-1.jpg"
 cardimagecaption: "Bosque de palmas denso (chaguaramos), en las inmediaciones del Parque Nacional Turuépano. Giuseppe Colonnello"
 plantformation: "Bosques siempreverdes"
 category: "lc"
@@ -12,15 +12,15 @@ Por su parte, los bosques de pantano se caracterizan por estar adaptados a inund
 distribution: "Los bosques de palmas están mejor representados al sur del río Orinoco (Tabla 1, Figura 1). En las planicies del delta del Orinoco, al sur de Paria y en la desembocadura del río San Juan, se encuentran entremezclados con el bosque de pantano, pueden ser bosques prácticamente monoespecíficos de Mauritia flexuosa (Foto 4) o de Roystonea oleracea (Foto 5), o bosques más diversos al sur del Río Grande, donde las especies de palmas más abundantes suelen ser Manicaria saccifera (temiche) y Euterpe oleracea (palmito o manaca) [González-Jiménez 2003]. Los bosques de palma de Manicaria saccifera, también llamados temichales, adoptan disposiciones alargadas, asociadas con formas de terreno predominantemente cóncavas e inundadas, que parecen estar alineadas y paralelas con los ejes de drenaje que actúan como cursos de aguas (González-Jiménez 2003).<br><br>
 Le siguen en orden de importancia desde el punto de vista de su extensión, los bosques de palmas en las llanuras de los ríos Ventuari y Orinoco en el estado Amazonas (vid. supra, cap. I: Figura 9, unidad de paisaje B5) [Foto 6] y los de la penillanura de los ríos Caura y Paragua, en el estado Bolívar (vid. supra, cap. I: Figura 9, unidad de paisaje B4). Al norte del Orinoco los bosques de palmas tienen superficies muy reducidas (puntos en la Figura 1), constituyendo remanentes aislados de chaguaramales o maporales ubicados en tierras bajo diferentes usos humanos. Se les encuentra en las cuencas de los ríos Tocuyo (Falcón) y Aroa (Yaracuy), y en el estado Miranda (Barlovento) en las cercanías de Chuspa (Foto 7), en un área pequeña, menor a 1 km2 (Steyermark 1977).<br><br>
 En cuanto a los bosques de pantano de Venezuela, ocupan una gran extensión en el delta medio e inferior del río Orinoco, así como al sur de Paria y en el delta de los ríos San Juan y Guarapiche. Se observan también al sur del lago de Maracaibo, en las ciénagas de Juan Manuel (Figura 1). Así mismo, existen parches de menor tamaño en otras regiones del país, pero por la escala de análisis de esta investigación no pueden ser cuantificados."
-distributionmap: "/uploads/bosques-de-palmas-y-bosques-de-pantano-dist.png"
+distributionmap: "./dist.png"
 areain1988: "22296"
 areain2010: "23102"
 mapcompare:
-  - in2010: "/uploads/bosques-de-palmas-y-de-pantano-figura-1b-1-2010.jpg"
-    in1988: "/uploads/bosques-de-palmas-y-de-pantano-figura-1a-1-88.jpg"
-  - in2010: "/uploads/bosques-de-palmas-y-de-pantano-figura-1b-2-2010.jpg"
-    in1988: "/uploads/bosques-de-palmas-y-de-pantano-figura-1a-2-88.jpg"
-interventionlegendimage: "/uploads/bosques-de-palmas-y-de-pantano-intervenidas.png"
+  - in2010: "./figura-1b-1-2010.jpg"
+    in1988: "./figura-1a-1-88.jpg"
+  - in2010: "./figura-1b-2-2010.jpg"
+    in1988: "./figura-1a-2-88.jpg"
+interventionlegendimage: "./intervenidas.png"
 formationColumn: true
 stateleveltable:
   - formation: "Bosques de palmas"
@@ -84,7 +84,7 @@ stateleveltable:
     areain1988: "481"
     areain2010: ""
 threatLevelMaps:
-  - "/uploads/bosques-de-palmas-y-de-pantano-figura-1c-amenazas.jpg"
+  - "./figura-1c-amenazas.jpg"
 criteriaused: [C2, "Situación por estado"]
 riskofcolapsestatelevel:
   - formation: "Bosques de palmas"
