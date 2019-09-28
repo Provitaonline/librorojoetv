@@ -1,40 +1,34 @@
 <template>
   <div>
-    <b-navbar>
+    <nav
+      class="navbar header"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand">
+        <g-link class="navbar-item" to="/"><img src="/images/librorojo.png" alt="logo" /></g-link>
+        <div class="navbar-burger" :class="{ 'is-active': showNav }" @click="showNav = !showNav">
+          <span />
+          <span />
+          <span />
+        </div>
+      </div>
+      <div class="navbar-menu" :class="{ 'is-active': showNav }">
+        <div class="navbar-end">
+          <g-link class="navbar-item" to="/about">ACERCA DE</g-link>
 
-      <template slot="brand">
-        <b-navbar-item tag="router-link" :to="{ path: '/' }">
-          <img src="/images/librorojo.png" alt="logo" />
-        </b-navbar-item>
-      </template>
-      <template slot="end">
-        <b-navbar-item>
-          <g-link to="/about">ACERCA DE</g-link>
-        </b-navbar-item>
-        <b-navbar-item>
-          MÉTODOS
-        </b-navbar-item>
-        <b-navbar-dropdown label="MAS INFORMACIÓN">
-            <b-navbar-item>
-                Unidades de paisaje
-            </b-navbar-item>
-            <b-navbar-item>
-                Casos de estudio
-            </b-navbar-item>
-        </b-navbar-dropdown>
-        <b-navbar-item>
-          <g-link to="/contact">CONTACTO</g-link>
-        </b-navbar-item>
-        <b-navbar-dropdown label="COMPARTIR">
-            <b-navbar-item>
-                Facebook
-            </b-navbar-item>
-            <b-navbar-item>
-                Twitter
-            </b-navbar-item>
-        </b-navbar-dropdown>
-      </template>
-    </b-navbar>
+          <a class="navbar-item">
+            MÉTODOS
+          </a>
+
+          <a class="navbar-item">
+            MAS INFORMACIÓN
+          </a>
+
+          <g-link class="navbar-item" to="/contact">CONTACTO</g-link>
+        </div>
+      </div>
+    </nav>
     <transition v-if="isNotHomePage()" name="fade" appear>
       <main>
         <slot />
@@ -82,15 +76,20 @@
 </style>
 
 <script>
-  export default {
-    methods: {
-      isNotHomePage() {
-        if (this.$page && this.$page.homeData) {
-          return false
-        } else {
-          return true
-        }
+export default {
+  data () {
+    return {
+      showNav: false
+    }
+  },
+  methods: {
+    isNotHomePage() {
+      if (this.$page && this.$page.homeData) {
+        return false
+      } else {
+        return true
       }
     }
   }
+}
 </script>
