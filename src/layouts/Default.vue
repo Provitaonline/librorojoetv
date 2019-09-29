@@ -58,18 +58,6 @@
 </template>
 
 <style lang="scss" scoped>
-  .navbar {
-    border-bottom: 6px solid #BE1421;
-  }
-
-  a.navbar-item {
-    padding-top: 0.1rem;
-    padding-bottom: 0.1rem;
-  }
-
-  .navbar-item img {
-    max-height: 3rem;
-  }
 
   .fade-enter-active {
     transition: opacity .5s;

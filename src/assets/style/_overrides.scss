@@ -9,3 +9,21 @@
 .leaflet-container a:hover {
   color: $primary;
 }
+
+.navbar-dropdown {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.navbar {
+  border-bottom: 6px solid #BE1421;
+}
+
+a.navbar-item {
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+}
+
+.navbar-item img {
+  max-height: 3rem;
+}
