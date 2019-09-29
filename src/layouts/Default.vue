@@ -14,7 +14,7 @@
         <b-navbar-item>
           MÉTODOS
         </b-navbar-item>
-        <b-navbar-dropdown label="MAS INFORMACIÓN">
+        <b-navbar-dropdown :arrowless="true" label="MAS INFORMACIÓN">
             <b-navbar-item>
                 Unidades de paisaje
             </b-navbar-item>
@@ -25,7 +25,7 @@
         <b-navbar-item tag="router-link" to="/contact">
           CONTACTO
         </b-navbar-item>
-        <b-navbar-dropdown class="is-arrowless is-boxed" label="COMPARTIR">
+        <b-navbar-dropdown :arrowless="true" label="COMPARTIR">
             <b-navbar-item>
                 Facebook
             </b-navbar-item>
@@ -72,11 +72,7 @@
 <script>
   export default {
     mounted () {
-      // This is a hack to force the arrowless functionality (bug reported)
-      let elements = document.getElementsByClassName('navbar-link')
-      for (let i=0; i < elements.length; i++) {
-        elements[i].classList.add('is-arrowless')
-      }
+
     },
     methods: {
       isNotHomePage() {
