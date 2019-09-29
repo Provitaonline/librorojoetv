@@ -4,7 +4,7 @@
 
       <template slot="brand">
         <b-navbar-item tag="router-link" :to="{ path: '/' }">
-          <img src="/images/librorojo.png" alt="logo" />
+          <g-image width="140" src="~/assets/images/librorojo.png" />
         </b-navbar-item>
       </template>
       <template slot="end">
@@ -69,7 +69,6 @@
   .fade-enter {
     opacity: 0;
   }
-
 
 </style>
 
