@@ -14,10 +14,10 @@ export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
 
-  Vue.use(Buefy)
   Vue.use(VueScrollTo)
 
   if (isClient) {
+    Vue.use(Buefy)
     Vue.component('l-map', () => import ('vue2-leaflet').then(m => m.LMap))
     Vue.component('l-tile-layer', () => import ('vue2-leaflet').then(m => m.LTileLayer))
     Vue.component('l-geo-json', () => import ('vue2-leaflet').then(m => m.LGeoJson))
