@@ -27,10 +27,10 @@
         </b-navbar-item>
         <b-navbar-dropdown :arrowless="true" label="COMPARTIR">
             <b-navbar-item>
-                Facebook
+              <font-awesome :icon="['fab', 'facebook']"/>&nbsp;Facebook
             </b-navbar-item>
             <b-navbar-item>
-                Twitter
+              <font-awesome :icon="['fab', 'twitter']"/>&nbsp;Twitter
             </b-navbar-item>
         </b-navbar-dropdown>
       </template>
@@ -47,6 +47,9 @@
     <section>
       <footer class="footer">
         <div class="content has-text-centered">
+          <g-link to="https://www.facebook.com/ProvitaONG/"><g-image src="~/assets/svgs/facebook.svg" /></g-link>&nbsp;
+          <g-link to="https://www.instagram.com/provita_ong/"><g-image src="~/assets/svgs/instagram.svg" /></g-link>&nbsp;
+          <g-link to="https://twitter.com/provita_ong"><g-image src="~/assets/svgs/twitter.svg" /></g-link>
           <p>Este sitio es un prototipo en desarrollo</p>
           <p>
             Derechos reservados, copyright © 2019 Provita, licencia <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>.
@@ -67,10 +70,21 @@
     opacity: 0;
   }
 
+
 </style>
 
 <script>
+
+  // import FacebookLogo from '~/assets/svgs/facebook.svg'
+  // import InstagramLogo from '~/assets/svgs/instagram.svg'
+  // import TwitterLogo from '~/assets/svgs/twitter.svg'
+
   export default {
+    components: {
+      // FacebookLogo,
+      // InstagramLogo,
+      // TwitterLogo
+    },
     mounted () {
 
     },
