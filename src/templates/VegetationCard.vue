@@ -103,7 +103,7 @@
               </div>
               <div v-if="$page.vegetationCard.riskofcolapsestatelevel.length" class="tile is-child is-6 box">
                 <div class="has-text-centered"><b>Riesgo de colapso por estado:</b><br><br></div>
-                <table align="center" class=" risktable table is-size-6 is-size-7-mobile">
+                <table align="center" class="risktable table is-size-6 is-size-7-mobile">
                   <thead>
                     <tr>
                       <th v-if="$page.vegetationCard.formationColumn"></th>
@@ -125,7 +125,7 @@
                       <td align="center" v-for="value in item.criteria">
                         <b-tooltip v-if="value != '-'" :label="siteConfig.criteria[value]" position="is-top" type="is-warning">
                           <div>
-                            <component v-bind:is="(criteriaIcons[value])" height="30" width="30"></component>
+                            <component v-bind:is="(criteriaIcons[value])" class="iconInTable"></component>
                           </div>
                         </b-tooltip>
                         <div v-else>{{value}}</div>
@@ -190,11 +190,16 @@
   }
 
   @media only screen and (max-width: 400px) {
-    .statetable {
+    .statetable, .risktable  {
       font-size: 0.6em !important;
     }
     .statetable td, th {
       padding: 2px;
+    }
+
+    .iconInTable {
+      width: 18px !important;
+      height: 18px !important;
     }
   }
 
@@ -204,6 +209,11 @@
       right: 0px;
       top: 0px;
     }
+  }
+
+  .iconInTable {
+    width: 30px;
+    height: 30px;
   }
 
   .risktable tbody > tr > td:nth-last-child(2), .risktable thead > tr > th:nth-last-child(2) {
