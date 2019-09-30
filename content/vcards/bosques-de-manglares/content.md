@@ -1,6 +1,6 @@
 ---
 title: "Bosques de manglares"
-cardimage: ""
+cardimage: "./foto-1.jpg"
 cardimagecaption: "Bosque de manglares de Avicennia germinans y Rhizophora mangle, Parque Nacional Turuépano, estado Sucre. Giuseppe Colonnello"
 plantformation: "Bosques siempreverdes"
 category: "lc"
@@ -14,8 +14,10 @@ En algunas áreas se desarrollan bosques de manglares enanos, posiblemente asoci
 distributionmap: "./dist.png"
 areain1988: "22296"
 areain2010: "23102"
-mapcompare: ""
-interventionlegendimage: ""
+mapcompare:
+  - in2010: "./figura-1b-2010.jpg"
+    in1988: "./figura-1a-88.jpg"
+interventionlegendimage: "./intervenidas.png"
 formationColumn: true
 stateleveltable:
   - formation: "Bosques de palmas"

@@ -51,7 +51,7 @@
                     <VueCompareImage v-if="item.in2010" style="border-style: solid; border-color: dimgrey;" :leftImage="item.in2010.src" :rightImage="item.in1988.src" />
                   </div>
                 </ClientOnly>
-                <br><span v-if="$page.vegetationCard.interventionlegendimage" class="intervention-legend-item" :style="'background-image: url(' + $page.vegetationCard.interventionlegendimage.src + ');'"></span> Areas intervenidas
+                <div v-if="$page.vegetationCard.interventionlegendimage"><br><span class="intervention-legend-item" :style="'background-image: url(' + $page.vegetationCard.interventionlegendimage.src + ');'"></span> Areas intervenidas</div>
               </div>
               <div class="tile is-child is-6 box">
                 <table align="center" class="statetable table is-size-6 is-size-7-mobile">
