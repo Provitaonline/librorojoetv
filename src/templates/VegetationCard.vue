@@ -102,7 +102,7 @@
                 </div>
               </div>
               <div v-if="$page.vegetationCard.riskofcolapsestatelevel.length" class="tile is-child is-6 box">
-                <div class="has-text-centered"><b>Riesgo de colapso por estado:</b><br><br></div>
+                <div class="has-text-centered"><b>Riesgo de colapso por {{($page.vegetationCard.zonelabel).toLowerCase()}}:</b><br><br></div>
                 <table align="center" class="risktable table is-size-6 is-size-7-mobile">
                   <thead>
                     <tr>
@@ -113,7 +113,7 @@
                     </tr>
                     <tr>
                       <th v-if="$page.vegetationCard.formationColumn">Formación</th>
-                      <th>Estado</th>
+                      <th>{{$page.vegetationCard.zonelabel}}</th>
                       <th v-for="value in $page.vegetationCard.criteriaused" align="center">{{value}}</th>
                     </tr>
                   </thead>
@@ -169,6 +169,7 @@
       }
       interventionlegendimage
       threatLevelMaps
+      zonelabel
       criteriaused
       riskofcolapsestatelevel {
         formation

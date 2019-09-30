@@ -12,101 +12,85 @@ distribution: "Los bosques de manglar se distribuyen a lo largo de las costas e 
 Los bosques de manglar más extensos, estructuralmente complejos y diversos de Venezuela son los ubicados en la planicie deltaica del río Orinoco y sur de Paria (Conde & Alarcón 1993). Pueden llegar a formar cinturones continuos, interrumpidos sólo por ríos y pequeños cursos de agua, desde Yaguaraparo, en el estado Sucre, hasta Guyana. Estos bosques son los más altos del país, con portes entre 25 y 35-40 m (Conde & Alarcón 1993, Colonnello et al. 2009), lo que puede observarse al contrastar las fotos 1-5.<br><br>
 En algunas áreas se desarrollan bosques de manglares enanos, posiblemente asociados a factores edáficos (Huber y Riina 1997). Este parece ser al caso en la laguna Aguas Blancas al norte del parque nacional Turuépano, donde se cree existe una alta concentración natural de aluminio (Colonnello et al. 2009)."
 distributionmap: "./dist.png"
-areain1988: "22296"
-areain2010: "23102"
+areain1988: "5452"
+areain2010: "8750"
 mapcompare:
   - in2010: "./figura-1b-2010.jpg"
     in1988: "./figura-1a-88.jpg"
 interventionlegendimage: "./intervenidas.png"
-formationColumn: true
+formationColumn: false
 stateleveltable:
-  - formation: "Bosques de palmas"
-    state: "Amazonas"
-    areain1988: "4508"
-    areain2010: "1412"
-  - formation: ""
-    state: "Bolívar"
+  - state: "Anzoátegui"
     areain1988: ""
-    areain2010: "1301"
-  - formation: ""
-    state: "Delta Amacuro"
+    areain2010: "13"
+  - state: "Aragua"
     areain1988: ""
-    areain2010: "2489"
-  - formation: ""
-    state: "Falcón"
+    areain2010: "6"
+  - state: "Carabobo"
     areain1988: ""
-    areain2010: "3"
-  - formation: ""
-    state: "Miranda"
-    areain1988: ""
-    areain2010: "1"
-  - formation: ""
-    state: "Monagas"
-    areain1988: ""
-    areain2010: "45"
-  - formation: ""
-    state: "Sucre"
-    areain1988: ""
-    areain2010: "367"
-  - formation: ""
-    state: "Yaracuy"
-    areain1988: ""
-    areain2010: "3"
-  - formation: "Bosques de pantano"
-    state: "Delta Amacuro"
-    areain1988: ""
-    areain2010: "13687"
-  - formation: ""
-    state: "Monagas"
-    areain1988: ""
-    areain2010: "1147"
-  - formation: ""
-    state: "Sucre"
-    areain1988: ""
-    areain2010: "219"
-  - formation: ""
-    state: "Zulia"
-    areain1988: ""
-    areain2010: "2435"
-  - formation: "Bosques de pantano y de palmas"
-    state: "Delta Amacuro"
-    areain1988: "15433"
-    areain2010: ""
-  - formation: ""
-    state: "Monagas"
-    areain1988: "1847"
-    areain2010: ""
-  - formation: ""
-    state: "Sucre"
-    areain1988: "481"
-    areain2010: ""
-threatLevelMaps: ""
-criteriaused: [C2, "Situación por estado"]
-riskofcolapsestatelevel:
-  - formation: "Bosques de palmas"
-    state: "Amazonas"
-    criteria: [vu, vu]
-  - state: "Bolívar"
-    criteria: [vu, vu]
+    areain2010: "31"
   - state: "Delta Amacuro"
-    criteria: [nt, nt]
+    areain1988: "2587"
+    areain2010: "4513"
+  - state: "Dependencias Federales"
+    areain1988: "224"
+    areain2010: "219"
   - state: "Falcón"
-    criteria: [cr, cr]
+    areain1988: "220"
+    areain2010: "273"  
   - state: "Miranda"
-    criteria: [cr, cr]
+    areain1988: "18"
+    areain2010: "162"
   - state: "Monagas"
-    criteria: [en, en]
+    areain1988: "744"
+    areain2010: "1880"
+  - state: "Nueva Esparta"
+    areain1988: "157"
+    areain2010: "39"
   - state: "Sucre"
-    criteria: [en, en]
+    areain1988: "1146"
+    areain2010: "1090"
+  - state: "Trujillo"
+    areain1988: ""
+    areain2010: "24"
   - state: "Yaracuy"
-    criteria: [cr, cr]
-  - formation: "Bosques de pantano"
-    state: "Delta Amacuro"
-    criteria: [lc, lc]
-  - state: "Monagas"
-    criteria: [vu, vu]
-  - state: "Sucre"
-    criteria: [vu, vu]
+    areain1988: ""
+    areain2010: "8"
   - state: "Zulia"
-    criteria: [nt, nt]
+    areain1988: "356"
+    areain2010: "492"
+threatLevelMaps: ""
+zonelabel: "Localidad"
+criteriaused: [D2, "Situación por localidad"]
+riskofcolapsestatelevel:
+- state: "Delta del Orinoco"
+  criteria: [lc, lc]
+- state: "Golfo de Paria"
+  criteria: [lc, lc]
+- state: "Río San Juan"
+  criteria: [lc, lc]
+- state: "Río Limón–Isla San Carlos"
+  criteria: [vu, vu]
+- state: "Bahía Morrocoy"
+  criteria: [en, en]
+- state: "Ciénaga Los Olivitos"
+  criteria: [en, en]
+- state: "Laguna Tacarigua"
+  criteria: [en, en]
+- state: "Isla de Margarita"
+  criteria: [en, en]
+- state: "Península de la Guajira"
+  criteria: [en, en]
+- state: "Delta Yaracuy"
+  criteria: [en, en]
+- state: "Maracaibo (costa este)"
+  criteria: [cr, cr]
+- state: "Puerto Cabello"
+  criteria: [cr, cr]
+- state: "Boca de Aroa"
+  criteria: [cr, cr]
+- state: "Laguna Cocinetas"
+  criteria: [cr, cr]
+- state: "Maracaibo (costa oeste)"
+  criteria: [cr, cr]
 ---

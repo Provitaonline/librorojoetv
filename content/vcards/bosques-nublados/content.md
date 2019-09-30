@@ -80,6 +80,7 @@ stateleveltable:
 threatLevelMaps:
   - "./figura-3a-amen-occ.jpg"
   - "./figura-3b-amen-nort.jpg"
+zonelabel: "Estado"
 criteriaused: [A3, A4, C2, "Situación por estado"]
 riskofcolapsestatelevel:
 - state: "Anzoátegui"

@@ -84,6 +84,7 @@ stateleveltable:
     areain2010: ""
 threatLevelMaps:
   - "./figura-1c-amenazas.jpg"
+zonelabel: "Estado"
 criteriaused: [C2, "Situación por estado"]
 riskofcolapsestatelevel:
   - formation: "Bosques de palmas"
