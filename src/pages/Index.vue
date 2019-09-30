@@ -1,6 +1,5 @@
 <template>
   <Layout>
-    <b-loading :is-full-page="isFullPage" :active.sync="isLoading" :can-cancel="true"></b-loading>
     <div class="page-wrapper">
       <section class="hero is-medium is-black">
         <g-image class="hero-bg-img" src="~/assets/images/home-hero-image.jpg"/>
@@ -25,6 +24,8 @@
               :options="mapOptions"
               style="height: 100%"
             >
+              <b-loading :is-full-page="isFullPage" :active.sync="isLoading"></b-loading>
+
               <l-tile-layer :url="url" :options="tileLayerOptions" />
               <l-geo-json ref="theSaxicolaLayer" :geojson="saxicolaLayer" :options="saxicolaLayerOptions" />
               <l-geo-json :geojson="vegetationLayer" :options="vegetationLayerOptions" />
@@ -158,7 +159,7 @@
       let self = this
       return {
         isLoading: true,
-        isFullPage: true,
+        isFullPage: false,
         zoom: 6,
         url: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}",
         tileLayerOptions: {

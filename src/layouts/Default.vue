@@ -35,14 +35,11 @@
         </b-navbar-dropdown>
       </template>
     </b-navbar>
-    <transition v-if="isNotHomePage()" name="fade" appear>
+    <transition name="fade" appear>
       <main>
         <slot />
       </main>
     </transition>
-    <main v-else>
-      <slot />
-    </main>
 
     <section>
       <footer class="footer">
@@ -63,7 +60,7 @@
 <style lang="scss" scoped>
 
   .fade-enter-active {
-    transition: opacity .5s;
+    transition: opacity 1s;
   }
 
   .fade-enter {
@@ -88,13 +85,7 @@
 
     },
     methods: {
-      isNotHomePage() {
-        if (this.$page && this.$page.homeData) {
-          return false
-        } else {
-          return true
-        }
-      }
+
     }
   }
 </script>
