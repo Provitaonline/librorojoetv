@@ -90,52 +90,53 @@ stateleveltable:
     areain1988: "8007"
     areain2010: "4949"
 threatLevelMaps: ""
+zonelabel: "Estado"
 criteriaused: [A3, C2, "Situación por estado"]
 riskofcolapsestatelevel:
-- state: "Amazonas"
+- zone: "Amazonas"
   criteria: ["-", "-", nt]
-- state: "Anzoátegui"
+- zone: "Anzoátegui"
   criteria: ["-", "-", vu]
-- state: "Apure"
+- zone: "Apure"
   criteria: [cr, en, cr]
-- state: "Aragua"
+- zone: "Aragua"
   criteria: [cr, en, cr]
-- state: "Barinas"
+- zone: "Barinas"
   criteria: ["-", "-", vu]
-- state: "Bolívar"
+- zone: "Bolívar"
   criteria: ["-", "-", nt]
-- state: "Carabobo"
+- zone: "Carabobo"
   criteria: ["-", "-", vu]
-- state: "Cojedes"
+- zone: "Cojedes"
   criteria: ["-", "-", vu]
-- state: "Delta Amacuro"
+- zone: "Delta Amacuro"
   criteria: ["-", "-", nt]
-- state: "Distrito Capital"
+- zone: "Distrito Capital"
   criteria: [cr, en, cr]
-- state: "Guárico"
+- zone: "Guárico"
   criteria: ["-", "-", vu]
-- state: "Lara"
+- zone: "Lara"
   criteria: [cr, "-", cr]
-- state: "Mérida"
+- zone: "Mérida"
   criteria: ["-", "-", vu]
-- state: "Miranda"
+- zone: "Miranda"
   criteria: ["-", "-", vu]
-- state: "Monagas"
+- zone: "Monagas"
   criteria: ["-", "-", vu]
-- state: "Nueva Esparta"
+- zone: "Nueva Esparta"
   criteria: ["-", "-", vu]
-- state: "Portuguesa"
+- zone: "Portuguesa"
   criteria: ["-", "-", vu]
-- state: "Sucre"
+- zone: "Sucre"
   criteria: ["-", "-", vu]
-- state: "Táchira"
+- zone: "Táchira"
   criteria: [cr, "-", cr]
-- state: "Trujillo"
+- zone: "Trujillo"
   criteria: ["-", "-", vu]
-- state: "Vargas"
+- zone: "Vargas"
   criteria: ["-", "-", vu]
-- state: "Yaracuy"
+- zone: "Yaracuy"
   criteria: ["-", "-", vu]
-- state: "Zulia"
+- zone: "Zulia"
   criteria: [cr, "-", cr]
 ---

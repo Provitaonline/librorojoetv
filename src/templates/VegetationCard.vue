@@ -120,8 +120,8 @@
                   <tbody>
                     <tr v-for="item in $page.vegetationCard.riskofcolapsestatelevel">
                       <td v-if="$page.vegetationCard.formationColumn">{{item.formation}}</td>
-                      <td>{{item.state}}</td>
-
+                      <td>{{item.zone}}</td>
+                      <td v-if="item.area" class="has-text-right">{{item.area | decimal(1)}}</td>
                       <td align="center" v-for="value in item.criteria">
                         <b-tooltip v-if="value != '-'" :label="siteConfig.criteria[value]" position="is-top" type="is-warning">
                           <div>
@@ -173,7 +173,8 @@
       criteriaused
       riskofcolapsestatelevel {
         formation
-        state
+        zone
+        area
         criteria
       }
     }
@@ -295,6 +296,10 @@
       number: function(value) {
         if (!value) return ''
         return parseInt(value).toLocaleString('de', {style: 'decimal'})
+      },
+      decimal: function(value, decimals) {
+        if (!value) return ''
+        return parseFloat(value).toFixed(decimals).toLocaleString('de', {style: 'decimal'})
       },
       upOrDown: function(value) {
         if (!value) return ''

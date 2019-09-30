@@ -61,36 +61,51 @@ stateleveltable:
     areain2010: "492"
 threatLevelMaps: ""
 zonelabel: "Localidad"
-criteriaused: [D2, "Situación por localidad"]
+criteriaused: ["Extensión", D2, "Situación por localidad"]
 riskofcolapsestatelevel:
-- state: "Delta del Orinoco"
+- zone: "Delta del Orinoco"
+  area: 468
   criteria: [lc, lc]
-- state: "Golfo de Paria"
+- zone: "Golfo de Paria"
+  area: 451.5
   criteria: [lc, lc]
-- state: "Río San Juan"
+- zone: "Río San Juan"
+  area: 413.1
   criteria: [lc, lc]
-- state: "Río Limón–Isla San Carlos"
+- zone: "Río Limón–Isla San Carlos"
+  area: 90.3
   criteria: [vu, vu]
-- state: "Bahía Morrocoy"
+- zone: "Bahía Morrocoy"
+  area: 45
   criteria: [en, en]
-- state: "Ciénaga Los Olivitos"
+- zone: "Ciénaga Los Olivitos"
+  area: 40
   criteria: [en, en]
-- state: "Laguna Tacarigua"
+- zone: "Laguna Tacarigua"
+  area: 39
   criteria: [en, en]
-- state: "Isla de Margarita"
+- zone: "Isla de Margarita"
+  area: 23.4
   criteria: [en, en]
-- state: "Península de la Guajira"
+- zone: "Península de la Guajira"
+  area: 20.3
   criteria: [en, en]
-- state: "Delta Yaracuy"
+- zone: "Delta Yaracuy"
+  area: 15
   criteria: [en, en]
-- state: "Maracaibo (costa este)"
+- zone: "Maracaibo (costa este)"
+  area: 9.2
   criteria: [cr, cr]
-- state: "Puerto Cabello"
+- zone: "Puerto Cabello"
+  area: 7
   criteria: [cr, cr]
-- state: "Boca de Aroa"
+- zone: "Boca de Aroa"
+  area: 3
   criteria: [cr, cr]
-- state: "Laguna Cocinetas"
+- zone: "Laguna Cocinetas"
+  area: 2.7
   criteria: [cr, cr]
-- state: "Maracaibo (costa oeste)"
+- zone: "Maracaibo (costa oeste)"
+  area: 2.6
   criteria: [cr, cr]
 ---

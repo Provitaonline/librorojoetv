@@ -88,29 +88,29 @@ zonelabel: "Estado"
 criteriaused: [C2, "Situación por estado"]
 riskofcolapsestatelevel:
   - formation: "Bosques de palmas"
-    state: "Amazonas"
+    zone: "Amazonas"
     criteria: [vu, vu]
-  - state: "Bolívar"
+  - zone: "Bolívar"
     criteria: [vu, vu]
-  - state: "Delta Amacuro"
+  - zone: "Delta Amacuro"
     criteria: [nt, nt]
-  - state: "Falcón"
+  - zone: "Falcón"
     criteria: [cr, cr]
-  - state: "Miranda"
+  - zone: "Miranda"
     criteria: [cr, cr]
-  - state: "Monagas"
+  - zone: "Monagas"
     criteria: [en, en]
-  - state: "Sucre"
+  - zone: "Sucre"
     criteria: [en, en]
-  - state: "Yaracuy"
+  - zone: "Yaracuy"
     criteria: [cr, cr]
   - formation: "Bosques de pantano"
-    state: "Delta Amacuro"
+    zone: "Delta Amacuro"
     criteria: [lc, lc]
-  - state: "Monagas"
+  - zone: "Monagas"
     criteria: [vu, vu]
-  - state: "Sucre"
+  - zone: "Sucre"
     criteria: [vu, vu]
-  - state: "Zulia"
+  - zone: "Zulia"
     criteria: [nt, nt]
 ---

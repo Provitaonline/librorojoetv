@@ -83,42 +83,42 @@ threatLevelMaps:
 zonelabel: "Estado"
 criteriaused: [A3, A4, C2, "Situación por estado"]
 riskofcolapsestatelevel:
-- state: "Anzoátegui"
+- zone: "Anzoátegui"
   criteria: [cr, vu, cr, cr]
-- state: "Apure"
+- zone: "Apure"
   criteria: [dd, vu, cr, cr]
-- state: "Aragua"
+- zone: "Aragua"
   criteria: [dd, vu, en, en]
-- state: "Barinas"
+- zone: "Barinas"
   criteria: [cr, vu, en, cr]
-- state: "Carabobo"
+- zone: "Carabobo"
   criteria: [cr, vu, cr, cr]
-- state: "Distrito Capital"
+- zone: "Distrito Capital"
   criteria: [dd, vu, cr, cr]
-- state: "Falcón"
+- zone: "Falcón"
   criteria: [dd, vu, en, en]
-- state: "Guárico"
+- zone: "Guárico"
   criteria: [dd, vu, cr, cr]
-- state: "Lara"
+- zone: "Lara"
   criteria: [dd, vu, en, en]
-- state: "Mérida"
+- zone: "Mérida"
   criteria: [cr, vu, en, cr]
-- state: "Miranda"
+- zone: "Miranda"
   criteria: [dd, vu, cr, cr]
-- state: "Monagas"
+- zone: "Monagas"
   criteria: [dd, vu, cr, cr]
-- state: "Portuguesa"
+- zone: "Portuguesa"
   criteria: ["-", "-", cr, cr]
-- state: "Sucre"
+- zone: "Sucre"
   criteria: [dd, vu, en, en]
-- state: "Táchira"
+- zone: "Táchira"
   criteria: [dd, vu, en, en]
-- state: "Trujillo"
+- zone: "Trujillo"
   criteria: [dd, vu, en, en]
-- state: "Vargas"
+- zone: "Vargas"
   criteria: [cr, vu, cr, cr]
-- state: "Yaracuy"
+- zone: "Yaracuy"
   criteria: [lc, vu, en, en]
-- state: "Zulia"
+- zone: "Zulia"
   criteria: [dd, vu, vu, vu]
 ---
