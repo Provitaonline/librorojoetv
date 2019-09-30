@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-navbar>
+    <b-navbar :close-on-click="false">
 
       <template slot="brand">
         <b-navbar-item tag="a" href="/">
