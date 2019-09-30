@@ -59,7 +59,10 @@ stateleveltable:
   - state: "Zulia"
     areain1988: "356"
     areain2010: "492"
-threatLevelMaps: ""
+threatLevelMaps:
+  - "./figura-1c-1-amenazas-occ.jpg"
+  - "./figura-1c-2-amenazas-centro.jpg"
+  - "./figura-1c-3-amenazas-ori.jpg"
 zonelabel: "Localidad"
 criteriaused: ["Extensión", D2, "Situación por localidad"]
 riskofcolapsestatelevel:
