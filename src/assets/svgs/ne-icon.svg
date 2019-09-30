@@ -7,7 +7,6 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="66mm"
@@ -21,29 +20,7 @@
    inkscape:export-xdpi="26.540001"
    inkscape:export-ydpi="26.540001">
   <defs
-     id="defs4">
-    <linearGradient
-       inkscape:collect="always"
-       id="linearGradient4810">
-      <stop
-         style="stop-color:#0792cd;stop-opacity:1;"
-         offset="0"
-         id="stop4812" />
-      <stop
-         style="stop-color:#0792cd;stop-opacity:0;"
-         offset="1"
-         id="stop4814" />
-    </linearGradient>
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient4810"
-       id="linearGradient4816"
-       x1="382.11554"
-       y1="326.5675"
-       x2="381.05493"
-       y2="617.99652"
-       gradientUnits="userSpaceOnUse" />
-  </defs>
+     id="defs4" />
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -52,7 +29,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
-     inkscape:cx="114.9248"
+     inkscape:cx="-4.5257376"
      inkscape:cy="95.601012"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -74,7 +51,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -84,7 +61,7 @@
      id="layer1"
      transform="translate(-265.19036,-326.02918)">
     <path
-       style="opacity:1;fill:url(#linearGradient4816);fill-opacity:1;fill-rule:nonzero;stroke:#0792cd;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="opacity:1;fill:#0792cd;fill-opacity:0.70588237;fill-rule:nonzero;stroke:#0792cd;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path4136"
        sodipodi:type="arc"
        sodipodi:cx="381.58514"

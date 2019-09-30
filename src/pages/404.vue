@@ -8,7 +8,7 @@
           </div>
         </div>
         <div class="section has-text-centered">
-          <img src="/images/404.jpg" alt="logo" >
+          <g-image src="~/assets/images/404.jpg" alt="logo" />
         </div>
       </section>
     </div>

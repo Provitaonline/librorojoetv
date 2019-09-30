@@ -10,7 +10,7 @@
               ({{$page.vegetationCard.plantformation}})
             </h2>
             <div class="categoryicon">
-              <img :src="'/images/' + $page.vegetationCard.category + '-icon.svg'" height="40" width="40">
+              <component v-bind:is="(criteriaIcons[$page.vegetationCard.category])" height="40" width="40"></component>
               <span style="display: block; font-size: x-small;"><b>{{siteConfig.criteria[$page.vegetationCard.category].toUpperCase()}}</b></span>
             </div>
           </div>
@@ -93,7 +93,7 @@
               <div class="tile is-child is-6 box">
                 <b >Riesgo de colapso a nivel nacional: </b>
                 {{siteConfig.criteria[$page.vegetationCard.category].toUpperCase()}}
-                <img :src="'/images/' + $page.vegetationCard.category + '-icon.svg'" height="30" width="30" style="margin-bottom: -5px;">
+                <component v-bind:is="(criteriaIcons[$page.vegetationCard.category])" height="30" width="30" style="margin-bottom: -5px;"></component>
                 <br><br>
                 <b>Grado de amenaza 2010: </b>
                 <div v-for="item in $page.vegetationCard.threatLevelMaps">
@@ -125,7 +125,7 @@
                       <td align="center" v-for="value in item.criteria">
                         <b-tooltip v-if="value != '-'" :label="siteConfig.criteria[value]" position="is-top" type="is-warning">
                           <div>
-                            <img :src="'/images/' + value + '-icon.svg'" height="30" width="30">
+                            <component v-bind:is="(criteriaIcons[value])" height="30" width="30"></component>
                           </div>
                         </b-tooltip>
                         <div v-else>{{value}}</div>
@@ -263,11 +263,22 @@
 
   import siteConfig from '~/data/siteConfig.json'
 
+  let criteriaIcons = {}
+
+  for (let key in siteConfig.criteria) {
+    criteriaIcons[key] = () => import ('~/assets/svgs/' + key + '-icon.svg').then(m => m)
+  }
+
+
   export default {
     data() {
       return {
-        siteConfig: siteConfig
+        siteConfig: siteConfig,
+        criteriaIcons: criteriaIcons
       }
+    },
+    mounted () {
+
     },
     filters: {
       number: function(value) {
@@ -281,7 +292,8 @@
       }
     },
     components: {
-        VueCompareImage: () => import ('vue-compare-image').then(m => m)
+        VueCompareImage: () => import ('vue-compare-image').then(m => m),
+        //vuIcon
     },
     methods: {
       redOrGreen: function(value) {
