@@ -3,12 +3,12 @@
     <b-navbar>
 
       <template slot="brand">
-        <b-navbar-item tag="router-link" :to="{ path: '/' }">
+        <b-navbar-item tag="a" href="/">
           <g-image width="140" src="~/assets/images/librorojo.png" />
         </b-navbar-item>
       </template>
       <template slot="end">
-        <b-navbar-item tag="router-link" to="/about">
+        <b-navbar-item tag="a" href="/about">
           ACERCA DE
         </b-navbar-item>
         <b-navbar-item>
@@ -22,7 +22,7 @@
                 Casos de estudio
             </b-navbar-item>
         </b-navbar-dropdown>
-        <b-navbar-item tag="router-link" to="/contact">
+        <b-navbar-item tag="a" href="/contact">
           CONTACTO
         </b-navbar-item>
         <b-navbar-dropdown :arrowless="true" label="COMPARTIR">

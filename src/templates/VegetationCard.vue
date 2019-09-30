@@ -36,7 +36,7 @@
               </div>
               <div class="tile is-child is-5 box">
                 <figure class="image is-4by3">
-                  <img :src="$page.vegetationCard.distributionmap.src">
+                  <img v-if="$page.vegetationCard.distributionmap" :src="$page.vegetationCard.distributionmap.src">
                 </figure>
               </div>
             </div>
@@ -48,10 +48,10 @@
                 <ClientOnly>
                   <div v-for="item in $page.vegetationCard.mapcompare">
                     <br>
-                    <VueCompareImage style="border-style: solid; border-color: dimgrey;" :leftImage="item.in2010.src" :rightImage="item.in1988.src" />
+                    <VueCompareImage v-if="item.in2010" style="border-style: solid; border-color: dimgrey;" :leftImage="item.in2010.src" :rightImage="item.in1988.src" />
                   </div>
                 </ClientOnly>
-                <br><span class="intervention-legend-item" :style="'background-image: url(' + $page.vegetationCard.interventionlegendimage.src + ');'"></span> Areas intervenidas
+                <br><span v-if="$page.vegetationCard.interventionlegendimage" class="intervention-legend-item" :style="'background-image: url(' + $page.vegetationCard.interventionlegendimage.src + ');'"></span> Areas intervenidas
               </div>
               <div class="tile is-child is-6 box">
                 <table align="center" class="statetable table is-size-6 is-size-7-mobile">
@@ -98,7 +98,7 @@
                 <b>Grado de amenaza 2010: </b>
                 <div v-for="item in $page.vegetationCard.threatLevelMaps">
                   <br>
-                  <img style="border-style: solid; border-color: dimgrey;" :src="item.src">
+                  <img v-if="item" style="border-style: solid; border-color: dimgrey;" :src="item.src">
                 </div>
               </div>
               <div v-if="$page.vegetationCard.riskofcolapsestatelevel.length" class="tile is-child is-6 box">
