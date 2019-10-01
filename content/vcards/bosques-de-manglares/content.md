@@ -15,8 +15,12 @@ distributionmap: "./dist.png"
 areain1988: "5452"
 areain2010: "8750"
 mapcompare:
-  - in2010: "./figura-1b-2010.jpg"
-    in1988: "./figura-1a-88.jpg"
+  - in2010: "./figura-1b-2010-1.jpg"
+    in1988: "./figura-1a-88-1.jpg"
+  - in2010: "./figura-1b-2010-2.jpg"
+    in1988: "./figura-1a-88-2.jpg"
+  - in2010: "./figura-1b-2010-3.jpg"
+    in1988: "./figura-1a-88-3.jpg"
 interventionlegendimage: "./intervenidas.png"
 formationColumn: false
 stateleveltable:
