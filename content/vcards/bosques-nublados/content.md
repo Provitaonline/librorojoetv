@@ -11,7 +11,7 @@ distribution: "Los bosques nublados típicos de Venezuela se hallan asociados a 
 Como se muestra en la Figura 1, se trata de una formación vegetal de poca extensión, con alrededor de 7.079 km2, lo que comprende menos de 1% de la superficie terrestre de Venezuela. Se presenta en fragmentos aislados, incluso dentro de una misma formación montañosa. La mayor proporción de bosques nublados se encuentra en los estados Mérida (16%), Yaracuy (14%), Lara (14%)y Zulia (11%); salvo Yaracuy, los estados mencionados forman parte de la cordillera de los Andes (Tabla 1). Están presentes sólo en la región de montañas del norte del país, es decir, en 4 subregiones y los 4 sectores que las integran."
 distributionmap: "./dist.png"
 areain1988: "7140"
-areain2010: "7078"
+areain2010: "7179"
 mapcompare:
   - in2010: "./figura-1a-andes.jpg"
     in1988: "./figura-2a-88-occ.jpg"

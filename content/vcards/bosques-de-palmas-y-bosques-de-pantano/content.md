@@ -20,6 +20,7 @@ mapcompare:
     in1988: "./figura-1a-1-88.jpg"
   - in2010: "./figura-1b-2-2010.jpg"
     in1988: "./figura-1a-2-88.jpg"
+interventionlegendimage: "./intervenidas.png"
 formationColumn: true
 stateleveltable:
   - formation: "Bosques de palmas"
