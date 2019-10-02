@@ -5,7 +5,7 @@
         <g-image class="hero-bg-img" src="~/assets/images/home-hero-image.jpg"/>
         <div class="hero-body">
           <div class="container is-fullhd">
-            <h1 class="title has-text-white" v-html="$page.homeData.heroTitle" />
+            <h1 class="title has-text-white" v-html="$page.homeData.heroTitle" /><br>
             <h2 class="subtitle has-text-white"v-html="$page.homeData.heroSubTitle" />
           </div>
           <a href="#" v-scroll-to="'#mapSection'" style="border:none;" class="explore"><font-awesome size="lg" :icon="['fas', 'angle-double-down']"/></a>

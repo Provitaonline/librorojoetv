@@ -1,7 +1,7 @@
 ---
 title: "Home Page"
 heroTitle: "LIBRO ROJO DE LOS ECOSISTEMAS TERRESTRES DE VENEZUELA"
-heroSubTitle: "Lorem ipsum dolor sit amet, consectetur adipisicing elit"
+heroSubTitle: "Explora las principales formaciones vegetales de Venezuela, sus características mas importantes, los cambios temporales en su distribución geográfica y sus riesgos de colapso and nivel nacional y estatal."
 vegetation:
   - name: "Bosques siempreverdes per se"
     group: 1
