@@ -24,7 +24,6 @@
               :options="mapOptions"
               style="height: 100%"
             >
-
               <l-tile-layer :url="url" :options="tileLayerOptions" />
               <l-geo-json :geojson="saxicolaLayer" :options="saxicolaLayerOptions" />
               <l-geo-json :geojson="vegetationLayer" :options="vegetationLayerOptions" />
