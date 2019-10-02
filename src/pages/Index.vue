@@ -14,8 +14,8 @@
       <section id="mapSection" class="section">
         <div class="map-title title has-text-centered is-uppercase">Formaciones Vegetales</div>
         <div class="has-text-centered">[Haz clic en una de las areas para ver la ficha de información]</div>
-        <ClientOnly>
-          <div style="height: 600px;">
+        <div style="height: 600px;">
+          <ClientOnly>
             <l-map @leaflet:load="mapReady"
               ref="theMap"
               :zoom="zoom"
@@ -24,14 +24,14 @@
               :options="mapOptions"
               style="height: 100%"
             >
-              <b-loading :is-full-page="isFullPage" :active.sync="isLoading"></b-loading>
 
               <l-tile-layer :url="url" :options="tileLayerOptions" />
               <l-geo-json ref="theSaxicolaLayer" :geojson="saxicolaLayer" :options="saxicolaLayerOptions" />
               <l-geo-json :geojson="vegetationLayer" :options="vegetationLayerOptions" />
+              <b-loading :is-full-page="false" :active.sync="isLoading"></b-loading>
             </l-map>
-          </div>
-        </ClientOnly>
+          </ClientOnly>
+        </div>
         <div class="section container legend is-size-7 has-text-left">
           <div class="columns">
             <div v-for="i in 3" class="column">
@@ -159,7 +159,6 @@
       let self = this
       return {
         isLoading: true,
-        isFullPage: false,
         zoom: 6,
         url: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}",
         tileLayerOptions: {
