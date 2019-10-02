@@ -26,7 +26,7 @@
             >
 
               <l-tile-layer :url="url" :options="tileLayerOptions" />
-              <l-geo-json ref="theSaxicolaLayer" :geojson="saxicolaLayer" :options="saxicolaLayerOptions" />
+              <l-geo-json :geojson="saxicolaLayer" :options="saxicolaLayerOptions" />
               <l-geo-json :geojson="vegetationLayer" :options="vegetationLayerOptions" />
               <b-loading :is-full-page="false" :active.sync="isLoading"></b-loading>
             </l-map>
