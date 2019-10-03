@@ -274,13 +274,25 @@
 <script>
 
   import siteConfig from '~/data/siteConfig.json'
+  import crIcon from '~/assets/svgs/cr-icon.svg'
+  import ddIcon from '~/assets/svgs/dd-icon.svg'
+  import elIcon from '~/assets/svgs/el-icon.svg'
+  import enIcon from '~/assets/svgs/en-icon.svg'
+  import lcIcon from '~/assets/svgs/lc-icon.svg'
+  import neIcon from '~/assets/svgs/ne-icon.svg'
+  import ntIcon from '~/assets/svgs/nt-icon.svg'
+  import vuIcon from '~/assets/svgs/vu-icon.svg'
 
-  let criteriaIcons = {}
-
-  for (let key in siteConfig.criteria) {
-    criteriaIcons[key] = () => import ('~/assets/svgs/' + key + '-icon.svg').then(m => m)
+  let criteriaIcons = {
+    cr: crIcon,
+    dd: ddIcon,
+    el: elIcon,
+    en: enIcon,
+    lc: lcIcon,
+    ne: neIcon,
+    nt: ntIcon,
+    vu: vuIcon
   }
-
 
   export default {
     data() {
