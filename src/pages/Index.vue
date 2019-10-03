@@ -225,7 +225,6 @@
     mounted () {
       axios.get('/mapdata/FormacionesVegetales.topojson').then((response) => {
         this.vegetationLayer = topojson.feature(response.data, response.data.objects.FormacionesVegetales);
-        //this.vegetationLayer = response.data;
         axios.get('/mapdata/Saxicola.json').then((response) => {
           this.isLoading = false;
           this.saxicolaLayer = response.data;
