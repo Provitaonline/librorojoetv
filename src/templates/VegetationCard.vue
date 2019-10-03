@@ -320,7 +320,7 @@
       }
     },
     components: {
-        VueCompareImage: () => import ('vue-compare-image').then(m => m),
+        VueCompareImage: () => import ('vue-compare-image').then(m => m)
         //vuIcon
     },
     methods: {
