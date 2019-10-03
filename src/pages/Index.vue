@@ -139,6 +139,7 @@
 <script>
   import axios from 'axios';
   import slugify from 'slugify';
+  import * as topojson from 'topojson-client'
 
   var latLng, icon, circleMarker, latLngBounds;
   if (process.isClient) {
@@ -222,8 +223,9 @@
     components: {
     },
     mounted () {
-      axios.get('/mapdata/FormacionesVegetales.json').then((response) => {
-        this.vegetationLayer = response.data;
+      axios.get('/mapdata/FormacionesVegetales.topojson').then((response) => {
+        this.vegetationLayer = topojson.feature(response.data, response.data.objects.FormacionesVegetales);
+        //this.vegetationLayer = response.data;
         axios.get('/mapdata/Saxicola.json').then((response) => {
           this.isLoading = false;
           this.saxicolaLayer = response.data;
