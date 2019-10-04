@@ -19,6 +19,7 @@ config.autoAddCss = false;
 library.add(faFacebook, faTwitter, faArrowDown, faAngleDoubleDown)
 
 export default function (Vue, { router, head, isClient }) {
+  head.htmlAttrs = { lang: 'es' }
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
 
