@@ -124,7 +124,7 @@
                       <td>{{item.zone}}</td>
                       <td v-if="item.area" class="has-text-right">{{item.area | decimal(1)}}</td>
                       <td align="center" v-for="value in item.criteria">
-                        <b-tooltip v-if="value != '-'" :label="siteConfig.criteria[value]" position="is-top" type="is-warning">
+                        <b-tooltip v-if="value != '-' && value != '(*)'" :label="siteConfig.criteria[value]" position="is-top" type="is-warning">
                           <div class="iconInTable">
                             <img :src="criteriaIcons[value]">
                           </div>
