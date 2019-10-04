@@ -10,7 +10,8 @@
               ({{$page.vegetationCard.plantformation}})
             </h2>
             <div class="categoryicon">
-              <component v-bind:is="(criteriaIcons[$page.vegetationCard.category])" height="40" width="40"></component>
+
+              <img :src="criteriaIcons[$page.vegetationCard.category]" height="40" width="40" />
               <span style="display: block; font-size: x-small;"><b>{{siteConfig.criteria[$page.vegetationCard.category].toUpperCase()}}</b></span>
             </div>
           </div>
@@ -93,7 +94,7 @@
               <div class="tile is-child is-6 box">
                 <b >Riesgo de colapso a nivel nacional: </b>
                 {{siteConfig.criteria[$page.vegetationCard.category].toUpperCase()}}
-                <component v-bind:is="(criteriaIcons[$page.vegetationCard.category])" height="30" width="30" style="margin-bottom: -5px;"></component>
+                <img :src="criteriaIcons[$page.vegetationCard.category]" height="30" width="30" style="margin-bottom: -5px;">
                 <br><br>
                 <b>Grado de amenaza 2010: </b>
                 <div v-for="item in $page.vegetationCard.threatLevelMaps">
@@ -125,7 +126,7 @@
                       <td align="center" v-for="value in item.criteria">
                         <b-tooltip v-if="value != '-'" :label="siteConfig.criteria[value]" position="is-top" type="is-warning">
                           <div>
-                            <component v-bind:is="(criteriaIcons[value])" class="iconInTable"></component>
+                            <img :src="criteriaIcons[value]" height="30" width="30">
                           </div>
                         </b-tooltip>
                         <div v-else>{{value}}</div>
@@ -274,24 +275,10 @@
 <script>
 
   import siteConfig from '~/data/siteConfig.json'
-  import crIcon from '~/assets/svgs/cr-icon.svg'
-  import ddIcon from '~/assets/svgs/dd-icon.svg'
-  import elIcon from '~/assets/svgs/el-icon.svg'
-  import enIcon from '~/assets/svgs/en-icon.svg'
-  import lcIcon from '~/assets/svgs/lc-icon.svg'
-  import neIcon from '~/assets/svgs/ne-icon.svg'
-  import ntIcon from '~/assets/svgs/nt-icon.svg'
-  import vuIcon from '~/assets/svgs/vu-icon.svg'
 
-  let criteriaIcons = {
-    cr: crIcon,
-    dd: ddIcon,
-    el: elIcon,
-    en: enIcon,
-    lc: lcIcon,
-    ne: neIcon,
-    nt: ntIcon,
-    vu: vuIcon
+  let criteriaIcons = {}
+  for (let key in siteConfig.criteria) {
+    criteriaIcons[key] = require('~/assets/svgs/' + key + '-icon.svg')
   }
 
   export default {
