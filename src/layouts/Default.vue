@@ -47,7 +47,7 @@
           <g-link to="https://www.facebook.com/ProvitaONG/"><g-image src="~/assets/svgs/facebook.svg" /></g-link>&nbsp;
           <g-link to="https://www.instagram.com/provita_ong/"><g-image src="~/assets/svgs/instagram.svg" /></g-link>&nbsp;
           <g-link to="https://twitter.com/provita_ong"><g-image src="~/assets/svgs/twitter.svg" /></g-link>
-          <p>Este sitio es un prototipo en desarrollo</p>
+          <p>Este sitio es un prototipo en desarrollo (v{{version}})</p>
           <p>
             Derechos reservados, copyright © 2019 Provita, licencia <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>.
           </p>
@@ -60,7 +60,7 @@
 <style lang="scss" scoped>
 
   .fade-enter-active {
-    transition: opacity 1s;
+    transition: opacity 0.5s;
   }
 
   .fade-enter {
@@ -71,15 +71,16 @@
 
 <script>
 
-  // import FacebookLogo from '~/assets/svgs/facebook.svg'
-  // import InstagramLogo from '~/assets/svgs/instagram.svg'
-  // import TwitterLogo from '~/assets/svgs/twitter.svg'
+  import {version} from '../../package.json'
 
   export default {
+    data() {
+      return {
+        version: version
+      }
+    },
     components: {
-      // FacebookLogo,
-      // InstagramLogo,
-      // TwitterLogo
+
     },
     mounted () {
 
