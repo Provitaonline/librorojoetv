@@ -194,10 +194,10 @@
 
   @media only screen and (max-width: 400px) {
     .statetable, .risktable  {
-      font-size: 0.6em !important;
+      font-size: 0.5em !important;
     }
     .statetable td, th {
-      padding: 2px;
+      padding: 1px;
     }
 
     .iconInTable {
