@@ -55,6 +55,7 @@ vegetation:
     group: 2
     color: "#a83b23"
     legend: "colorkey"
+    cardPath: "Arbustales y herbazales tepuyanos"
     detailPath: "d124"
   - name: "Arbustales espinosos"
     group: 2
@@ -100,6 +101,7 @@ vegetation:
     group: 3
     color: "#fbeabd"
     legend: "colorkey"
+    cardPath: "Arbustales y herbazales tepuyanos"
     detailPath: "d124"
   - name: "Herbazales litorales"
     group: 3
