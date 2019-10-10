@@ -35,7 +35,7 @@
             <div class="tile is-parent">
               <div class="tile is-child box is-size-5">
                 <div>
-                  <div style="width: 50%; float: right;">
+                  <div class="distribution-map">
                     <p class="is-size-7 has-text-centered">{{$page.vegetationCard.title}}<br>Distribución en 2010</p>
                     <g-image v-if="$page.vegetationCard.distributionmap" :src="$page.vegetationCard.distributionmap" />
                     <p class="is-size-7 has-text-right"><i>Huber y Oliveira-Miranda (2010)</i></p>
@@ -59,7 +59,7 @@
                 <div v-if="$page.vegetationCard.interventionlegendimage"><br><span class="intervention-legend-item" :style="'background-image: url(' + $page.vegetationCard.interventionlegendimage.src + ');'"></span> Áreas intervenidas</div>
               </div>
               <div class="tile is-child is-7 box">
-                <div class="has-text-centered"><b>Superficie aproximada en Km<sup>2</sup>:</b><br><br></div>
+                <div class="has-text-centered"><b>Superficie estimada (km<sup>2</sup>) por estado:</b><br><br></div>
                 <table align="center" class="statetable table is-size-6 is-size-7-mobile">
                   <thead>
                     <tr>
@@ -257,6 +257,13 @@
     height: 12px;
     width: 14px;
     display: inline-block;
+  }
+
+  @media only screen and (min-width: 769px) {
+    .distribution-map {
+      width: 50%;
+      float: right;
+    }
   }
 
 </style>
