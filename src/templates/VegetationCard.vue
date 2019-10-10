@@ -55,6 +55,7 @@
                 <div v-if="$page.vegetationCard.interventionlegendimage"><br><span class="intervention-legend-item" :style="'background-image: url(' + $page.vegetationCard.interventionlegendimage.src + ');'"></span> Áreas intervenidas</div>
               </div>
               <div class="tile is-child is-7 box">
+                <div class="has-text-centered"><b>Superficie aproximada en Km<sup>2</sup>:</b><br><br></div>
                 <table align="center" class="statetable table is-size-6 is-size-7-mobile">
                   <thead>
                     <tr>
@@ -115,7 +116,7 @@
                     <tr>
                       <th v-if="$page.vegetationCard.formationColumn">Formación</th>
                       <th>{{$page.vegetationCard.zonelabel}}</th>
-                      <th v-for="value in $page.vegetationCard.criteriaused" align="center">{{value}}</th>
+                      <th v-for="value in $page.vegetationCard.criteriaused" align="center" v-html="value"></th>
                     </tr>
                   </thead>
                   <tbody>

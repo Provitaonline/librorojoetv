@@ -68,7 +68,7 @@ threatLevelMaps:
   - "./figura-1c-2-amenazas-centro.jpg"
   - "./figura-1c-3-amenazas-ori.jpg"
 zonelabel: "Localidad"
-criteriaused: ["Extensión", D2, "Situación por localidad"]
+criteriaused: ["Extensión (Km<sup>2</sup>)", D2, "Situación por localidad"]
 riskofcolapsestatelevel:
 - zone: "Delta del Orinoco"
   area: 468
