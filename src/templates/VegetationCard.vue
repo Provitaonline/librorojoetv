@@ -4,14 +4,16 @@
       <section class="hero is-small is-white">
         <div class="hero-body">
           <div class="container is-fullhd has-text-centered">
-            <h1 class="title is-uppercase">{{$page.vegetationCard.title}}
-            </h1>
-            <h2 style="margin-bottom: 0px;" class="subtitle is-uppercase" v-if="$page.vegetationCard.plantformation">
-              ({{$page.vegetationCard.plantformation}})
-            </h2>
+            <div class="container" style="width: 78%;">
+              <h1 v-if="$page.vegetationCard.plantformation" style="margin-bottom: 0;" class="title is-uppercase">{{$page.vegetationCard.plantformation}}</h1>
+              <h1 v-else class="title is-uppercase">{{$page.vegetationCard.title}}</h1>
+              <h2 style="margin-bottom: 0px;" class="is-size-3" v-if="$page.vegetationCard.plantformation">
+                ({{$page.vegetationCard.title}})
+              </h2>
+            </div>
             <div class="categoryicon">
               <img :src="criteriaIcons[$page.vegetationCard.category]" height="50" width="50" />
-              <span style="display: block; font-size: small;"><b>{{siteConfig.criteria[$page.vegetationCard.category].toUpperCase()}}</b></span>
+              <p style="display: block; font-size: small;"><b>{{siteConfig.criteria[$page.vegetationCard.category].toUpperCase()}}</b></p>
             </div>
           </div>
         </div>
@@ -33,8 +35,8 @@
             <div class="tile is-parent">
               <div class="tile is-child box is-size-5">
                 <div>
-                  <g-image style="float: right;" v-if="$page.vegetationCard.distributionmap" :src="$page.vegetationCard.distributionmap" />
-                  <p style="margin: 0;" v-html="$page.vegetationCard.distribution"></p>
+                  <g-image style="width: 50%; float: right;" v-if="$page.vegetationCard.distributionmap" :src="$page.vegetationCard.distributionmap" />
+                  <p v-html="$page.vegetationCard.distribution"></p>
                 </div>
               </div>
             </div>
@@ -209,6 +211,7 @@
       position: absolute;
       right: 0px;
       top: 0px;
+      margin-top: -15px;
     }
   }
 
