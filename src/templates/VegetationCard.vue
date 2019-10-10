@@ -35,7 +35,11 @@
             <div class="tile is-parent">
               <div class="tile is-child box is-size-5">
                 <div>
-                  <g-image style="width: 50%; float: right;" v-if="$page.vegetationCard.distributionmap" :src="$page.vegetationCard.distributionmap" />
+                  <div style="width: 50%; float: right;">
+                    <p class="is-size-7 has-text-centered">{{$page.vegetationCard.title}}<br>Distribución en 2010</p>
+                    <g-image v-if="$page.vegetationCard.distributionmap" :src="$page.vegetationCard.distributionmap" />
+                    <p class="is-size-7 has-text-right"><i>Huber y Oliveira-Miranda (2010)</i></p>
+                  </div>
                   <p v-html="$page.vegetationCard.distribution"></p>
                 </div>
               </div>
@@ -222,6 +226,7 @@
 
   .risktable {
     border: solid $primary 2px;
+    border-collapse: separate;
   }
 
   /*.risktable tbody > tr > td:nth-last-child(2), .risktable thead > tr > th:nth-last-child(2) {
