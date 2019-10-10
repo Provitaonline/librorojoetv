@@ -68,7 +68,7 @@
                   </thead>
                   <tbody>
                     <tr v-for="item in $page.vegetationCard.stateleveltable">
-                      <td v-if="$page.vegetationCard.formationColumn">{{item.formation}}</td>
+                      <td v-if="$page.vegetationCard.formationColumn"><b>{{item.formation}}</b></td>
                       <td>{{item.state}}</td>
                       <td class="has-text-right">{{item.areain1988 | number}}</td>
                       <td class="has-text-right">{{item.areain2010 | number}}</td>
@@ -120,7 +120,7 @@
                   </thead>
                   <tbody>
                     <tr v-for="item in $page.vegetationCard.riskofcolapsestatelevel">
-                      <td v-if="$page.vegetationCard.formationColumn">{{item.formation}}</td>
+                      <td v-if="$page.vegetationCard.formationColumn"><b>{{item.formation}}</b></td>
                       <td>{{item.zone}}</td>
                       <td v-if="item.area" class="has-text-right">{{item.area | decimal(1)}}</td>
                       <td align="center" v-for="value in item.criteria">
@@ -131,7 +131,6 @@
                         </b-tooltip>
                         <div v-else>{{value}}</div>
                       </td>
-
                     </tr>
                   </tbody>
                 </table>
@@ -220,7 +219,11 @@
     height: 30px;
   }
 
-  .risktable tbody > tr > td:nth-last-child(2), .risktable thead > tr > th:nth-last-child(2) {
+  .risktable {
+    border: solid $primary 2px;
+  }
+
+  /*.risktable tbody > tr > td:nth-last-child(2), .risktable thead > tr > th:nth-last-child(2) {
     border-right: solid $primary 2px;
   }
 
@@ -242,7 +245,7 @@
 
   .risktable thead > tr:first-child > th:last-child {
     border-top: 0;
-  }
+  } */
 
   .intervention-legend-item {
     height: 12px;
