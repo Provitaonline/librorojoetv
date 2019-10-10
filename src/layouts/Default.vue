@@ -35,11 +35,10 @@
         </b-navbar-dropdown>
       </template>
     </b-navbar>
-    <transition name="fade" appear>
-      <main>
-        <slot />
-      </main>
-    </transition>
+    
+    <main>
+      <slot />
+    </main>
 
     <section>
       <footer class="footer">
