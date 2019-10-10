@@ -1,7 +1,7 @@
 ---
 title: "Bosques de manglares"
 cardimage: "./foto-1.jpg"
-cardimagecaption: "Bosque de manglares de Avicennia germinans y Rhizophora mangle, Parque Nacional Turuépano, estado Sucre. Giuseppe Colonnello"
+cardimagecaption: "Bosque de manglares de Avicennia germinans y Rhizophora mangle, Parque Nacional Turuépano, estado Sucre. <i>Giuseppe Colonnello</i>"
 plantformation: "Bosques siempreverdes"
 category: "lc"
 description: "Los bosques de manglares son formaciones intermareales marinas y estuarinas, que pueden desarrollarse tanto a orillas del mar como en ambientes fluviales a decenas de kilómetros río arriba. Las especies que los conforman tienen la capacidad de vivir en ambientes salinos y salobres, con tolerancia a sumersiones periódicas y sobre suelos poco desarrollados (Conde & Alarcón 1993, Conde & Carmona-Suárez 2003). Para el establecimiento y desarrollo de los manglares es necesario que se den diversas condiciones. En Venezuela, donde la temperatura ambiental y del agua son relativamente altas y estables, los factores determinantes están asociados con la salinidad, el ámbito mareal, el tipo de sustrato, el perfil de la costa, el grado de protección al oleaje y las corrientes marinas (MARNR 1986, Conde & Carmona-Suárez 2003). Los planos lodosos, en ciénagas e islas, donde los suelos arcillosos son inmaduros y están saturados de agua por largos períodos, son ambientes propicios para esta formación (Conde & Alarcón 1993). En el caso de la salinidad, la tolerancia de las diferentes especies abarca el intervalo desde 0 hasta 90 ‰ (partes por mil), siendo la salinidad promedio del mar 35‰ (Suckow et al. 1995).<br><br>

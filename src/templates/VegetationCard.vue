@@ -10,9 +10,8 @@
               ({{$page.vegetationCard.plantformation}})
             </h2>
             <div class="categoryicon">
-
-              <img :src="criteriaIcons[$page.vegetationCard.category]" height="40" width="40" />
-              <span style="display: block; font-size: x-small;"><b>{{siteConfig.criteria[$page.vegetationCard.category].toUpperCase()}}</b></span>
+              <img :src="criteriaIcons[$page.vegetationCard.category]" height="50" width="50" />
+              <span style="display: block; font-size: small;"><b>{{siteConfig.criteria[$page.vegetationCard.category].toUpperCase()}}</b></span>
             </div>
           </div>
         </div>
@@ -20,28 +19,27 @@
       <div class="has-text-centered">
         <g-image v-if="$page.vegetationCard.cardimage" :src="$page.vegetationCard.cardimage" fit="inside" />
       </div>
-      <figcaption class="has-text-centered"><small>{{$page.vegetationCard.cardimagecaption}}</small></figcaption>
+      <figcaption class="has-text-centered"><div class="is-size-6" v-html="$page.vegetationCard.cardimagecaption"></div></figcaption>
       <section class="section">
         <div class="tile is-ancestor">
           <div class="tile is-vertical is-parent">
-            <div class="is-size-4 is-uppercase has-text-weight-semibold has-text-centered">Descripción</div>
+            <div class="section-header box is-size-3 has-text-weight-bold has-text-centered">Descripción</div>
             <div class="tile is-parent">
-              <div class="tile is-child box">
+              <div class="tile is-child box is-size-5">
                 <p v-html="$page.vegetationCard.description" />
               </div>
             </div>
-            <div class="is-size-4 is-uppercase has-text-weight-semibold has-text-centered">Distribución</div>
+            <div class="section-header box is-size-3 has-text-weight-bold has-text-centered">Distribución</div>
             <div class="tile is-parent">
-              <div class="tile is-child is-7 box">
-                <p v-html="$page.vegetationCard.distribution" />
-              </div>
-              <div class="tile is-child is-5 box">
-                <figure class="image is-4by3">
-                  <img v-if="$page.vegetationCard.distributionmap" :src="$page.vegetationCard.distributionmap.src">
-                </figure>
+              <div class="tile is-child box is-size-5">
+                <div>
+                  <g-image style="float: right;" v-if="$page.vegetationCard.distributionmap" :src="$page.vegetationCard.distributionmap" />
+                  <p style="margin: 0;" v-html="$page.vegetationCard.distribution"></p>
+                </div>
               </div>
             </div>
-            <div class="is-size-4 is-uppercase has-text-weight-semibold has-text-centered">Cambios en la distribución</div>
+            <br>
+            <div class="section-header box is-size-3 has-text-weight-bold has-text-centered">Cambios en la distribución</div>
             <div class="tile is-parent">
               <div class="tile is-child is-6 box">
                 <b>Superficie en 1988 (km<sup>2</sup>): </b>{{$page.vegetationCard.areain1988 | number}}<br>
@@ -52,7 +50,7 @@
                     <VueCompareImage v-if="item.in2010" style="border-style: solid; border-color: dimgrey;" :leftImage="item.in2010.src" :rightImage="item.in1988.src" />
                   </div>
                 </ClientOnly>
-                <div v-if="$page.vegetationCard.interventionlegendimage"><br><span class="intervention-legend-item" :style="'background-image: url(' + $page.vegetationCard.interventionlegendimage.src + ');'"></span> Areas intervenidas</div>
+                <div v-if="$page.vegetationCard.interventionlegendimage"><br><span class="intervention-legend-item" :style="'background-image: url(' + $page.vegetationCard.interventionlegendimage.src + ');'"></span> Áreas intervenidas</div>
               </div>
               <div class="tile is-child is-6 box">
                 <table align="center" class="statetable table is-size-6 is-size-7-mobile">
@@ -89,7 +87,7 @@
                 </table>
               </div>
             </div>
-            <div class="is-size-4 is-uppercase has-text-weight-semibold has-text-centered">Situación a 2010</div>
+            <div class="section-header box is-size-3 has-text-weight-bold has-text-centered">Situación a 2010</div>
             <div class="tile is-parent">
               <div class="tile is-child is-6 box">
                 <b >Riesgo de colapso a nivel nacional: </b>
@@ -249,6 +247,10 @@
     display: inline-block;
   }
 
+  .section-header {
+    background-color: #f8e7e8;
+  }
+
 </style>
 
 <style lang="scss">
@@ -267,7 +269,6 @@
   .line {
     background: gray !important;
   }
-
 
 </style>
 
@@ -294,11 +295,12 @@
     filters: {
       number: function(value) {
         if (!value) return ''
-        return parseInt(value).toLocaleString('de', {style: 'decimal'})
+        return parseInt(value).toLocaleString('de-DE', {style: 'decimal', localeMatcher: 'best fit'})
       },
       decimal: function(value, decimals) {
         if (!value) return ''
-        return parseFloat(value).toFixed(decimals).toLocaleString('de', {style: 'decimal'})
+        return Number(value).toLocaleString('de-DE', {style: 'decimal', minimumFractionDigits: decimals})
+        //return parseFloat(value).toFixed(decimals).toLocaleString('es-VE', {style: 'decimal'})
       },
       upOrDown: function(value) {
         if (!value) return ''

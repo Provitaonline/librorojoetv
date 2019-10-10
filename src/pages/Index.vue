@@ -12,9 +12,9 @@
         </div>
       </section>
       <section id="mapSection" class="section">
-        <div class="map-title title has-text-centered is-uppercase">Formaciones Vegetales</div>
-        <div class="has-text-centered">[Haz clic en una de las areas para ver la ficha de información]</div>
-        <div style="height: 600px;">
+        <div class="map-title title has-text-centered is-uppercase">Formaciones Vegetales de Venezuela - 2010</div>
+        <div class="has-text-centered">[Haz clic en una de las áreas para ver la ficha de información]</div>
+        <div style="height: 800px;">
           <ClientOnly>
             <l-map @leaflet:load="mapReady"
               ref="theMap"
@@ -31,7 +31,7 @@
             </l-map>
           </ClientOnly>
         </div>
-        <div class="section container legend is-size-7 has-text-left">
+        <div class="section container legend is-size-6 has-text-left">
           <div class="columns">
             <div v-for="i in 3" class="column">
               <div v-for="item in columnItems(i)">
@@ -40,6 +40,7 @@
               </div>
             </div>
           </div>
+          <div class="has-text-centered">[Haz clic en uno de los títulos de la leyenda para ver la ficha de información]</div>
         </div>
       </section>
       <section id="acercaDe" class="hero is-small is-white">
@@ -186,7 +187,7 @@
           },
           pointToLayer: function(feature, latlng) {
             return circleMarker(latlng, {
-              radius: 3,
+              radius: 2,
               fillColor: "#333333",
               fillOpacity: 1,
               color: "#333333",
@@ -200,13 +201,13 @@
             let a = self.$page.homeData.vegetation.find(function(v) { return v.name === feature.properties.T_VE})
             if (a) {
               return {
-                weight: 1,
-                fillOpacity: 0.6,
+                weight: 0,
+                fillOpacity: 0.95,
                 color: a.color
               }
             }
           },
-          attribution: 'Provita',
+          attribution: 'Provita, Huber y Oliveira-Miranda (2010)',
           onEachFeature: function onEachFeature(feature, layer) {
             let link = '<a href=' + self.makeLink(feature.properties.T_VE) + '>' + feature.properties.T_VE + '</a>'
             layer.bindPopup(link)
@@ -214,14 +215,14 @@
             //layer.bindPopup(feature.properties.T_VE)
             layer.on('popupopen', function() {
               layer.setStyle({
-                weight: 3,
+                weight: 1,
                 fillOpacity: 1
               })
             })
             layer.on('popupclose', function() {
               layer.setStyle({
-                weight: 1,
-                fillOpacity: 0.6
+                weight: 0,
+                fillOpacity: 0.95
               })
             })
           }
