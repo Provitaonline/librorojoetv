@@ -1,7 +1,7 @@
 ---
 title: "Bosques deciduos"
 cardimage: "./foto-1.jpg"
-cardimagecaption: "Bosque deciduo bajo, estado Cojedes. José Antonio González-Carcacía"
+cardimagecaption: "Bosque deciduo bajo, estado Cojedes. <i>José Antonio González-Carcacía</i>"
 category: "cr"
 description: "Los bosques deciduos se caracterizan porque al menos 75% de los individuos arbóreos pierden su follaje durante la época de sequía (Huber & Alarcón 1988, Huber 1995c). Están restringidos a zonas macrotérmicas (>24°C) y de acuerdo al régimen climático que predomina son principalmente tropófilos (estacionales), con precipitaciones promedio anual menores a 1.400 mm. Con frecuencia se les conoce como “bosques secos tropicales”, aunque no son sinónimos, ya que entre éstos se incluyen varias comunidades arbóreas semideciduas o con cierto grado de caducifolia, siempre que sean afectados por un período relativamente prolongado de sequía (típicamente de 3 a 6 meses). Los bosques deciduos son equivalentes al denominado bosque estacional caducifolio por sequía (Murphy & Lugo 1986, González 2003). En ocasiones, dada su asociación con bosques secos, y las diferentes clasificaciones y nomenclaturas existentes en la literatura, esta formación es confundida con los arbustales secos o espinosos, en especial cuando los conforman leguminosas y especies deciduas.<br><br>
 El período durante el cual los bosques deciduos se encuentran defoliados coincide con la estación seca de enero a abril (Fotos 1 a 4), que también coincide con la floración de algunos de sus árboles típicos (Foto 5). La brotadura foliar comienza a mediados de abril, antes del comienzo de las lluvias (González 2003).<br><br>

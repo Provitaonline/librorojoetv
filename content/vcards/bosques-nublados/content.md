@@ -1,7 +1,7 @@
 ---
 title: "Bosques nublados"
 cardimage: "./foto-1.jpg"
-cardimagecaption: "Bosque nublado entre Humocaro Alto y Campo Elias, Cordillera de los Andes. Giuseppe Colonnello"
+cardimagecaption: "Bosque nublado entre Humocaro Alto y Campo Elias, Cordillera de los Andes. <i>Giuseppe Colonnello</i>"
 plantformation: "Bosques siempreverdes"
 category: "vu"
 description: "La característica visual más llamativa de los bosques nublados es la presencia de niebla o nubes durante más de la mitad del año. Se trata de de una comunidad boscosa siempreverde densa con árboles entre 10 y 20m de altura, con 2 a 3 estratos arbóreos y un sotobosque bien desarrollado (Huber & Riina 1997) [Foto 1]. Otro de sus elementos característicos es la presencia de abundantes epífitas, las cuales pueden llegar a representarentre 40% y 60% de su flora vascular, lo que le imprime rasgos particulares en la dinámica hídrica, de nutrientes y hojarasca del ecosistema, por llegar a constituir más de 50% de la biomasa fotosintética (Walter & Ataroff 2002, Ataroff 2003). Este tipo de formación siempreverde también ha recibido el nombre de selva nublada, bosqueombrófilo montano siempreverde y bosque montano. Estos últimos, los bosques nublados, son realmente una de sus variantes ecológicas, ya que esas denominaciones incluyen bosques con otras características fisionómicas y florísticas.<br><br>

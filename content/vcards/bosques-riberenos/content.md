@@ -1,7 +1,7 @@
 ---
 title: "Bosques ribereños"
 cardimage: "./foto-1.jpg"
-cardimagecaption: "Bosque ribereño de montaña, río Cuyagua, estado Aragua. César Molina"
+cardimagecaption: "Bosque ribereño de montaña, río Cuyagua, estado Aragua. <i>César Molina</i>"
 category: "vu"
 description: "Los bosques ribereños se ubican en las orillas de ríos, normalmente sobre bancos y albardones fluviales. Están asociados a climas macrotérmicos (>24 °C), con un régimen de precipitación que puede ser húmedo (ombrófilos), estacional (tropófilos) o incluso seco (xerófilo). Factor determinante de la presencia de un bosque ribereño es una mayor humedad del suelo, regulada por la dinámica del cuerpo de agua que drena los terrenos adyacentes. En algunos casos, generalmente debido a variaciones bioclimáticas, este tipo de bosque traza mosaicos con formaciones de sabanas, como ocurre a lo largo de los ríos Caura, Cuchivero y Suapure (Rosales 2003).<br><br>
 Presentan diversidad en su estructura, pudiendo tener dos o tres estratos y un dosel que varía entre 3 y 40 m de altura (Huber & Alarcón 1988, Huber 1995c, Rosales et al. 1997, Rosales et al. 2003, CVG-Edelca 2004, Fernández et al. 2007). Con frecuencia están sometidos a regímenes de inundación, en cuyo caso suelen ser de menor heterogeneidad florística y menor altura de dosel que los no inundables (Salamanca 1983, Huber & Alarcón 1988, Huber & Riina 1997). Por ejemplo, al sur de Venezuela los bosques ribereños sometidos a inundación alcanzan de 15 a 20 m, mientras que los no inundables tienen desde 20 hasta 25 m de altura y árboles emergentes de 30 a 40 m. En el caso de bosques ribereños inundables, el sotobosque es ralo o relativamente poco denso (Rosales et al. 1997).<br><br>

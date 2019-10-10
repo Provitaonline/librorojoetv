@@ -1,7 +1,7 @@
 ---
 title: "Bosques de palmas y bosques de pantano"
 cardimage: "./foto-1.jpg"
-cardimagecaption: "Bosque de palmas denso (chaguaramos), en las inmediaciones del Parque Nacional Turuépano. Giuseppe Colonnello"
+cardimagecaption: "Bosque de palmas denso (chaguaramos), en las inmediaciones del Parque Nacional Turuépano. <i>Giuseppe Colonnello</i>"
 plantformation: "Bosques siempreverdes"
 category: "lc"
 description: "Los bosques de palmas y de pantano son formaciones siempreverdes caracterizadas por individuos de gran porte y altura. Pese a que pueden distinguirse entre sí por su composición florística y por las características del ambiente que ocupan, requieren conocimientos de campo muy específicos para cartografiarlas de manera detallada e independientemente. Sus mayores extensiones son contiguas y están sometidas a amenazas similares en el delta del Orinoco y al sur del país, de allí que se presenten en conjunto.<br><br>

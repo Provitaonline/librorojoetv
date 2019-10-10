@@ -1,7 +1,7 @@
 ---
 title: "Bosques semideciduos"
 cardimage: "./foto-1.jpg"
-cardimagecaption: "Bosque semideciduo intervenido para uso agrícola, carretera desde San Cristóbal (estado Zulia) hacia Piñango (estado Mérida). Giuseppe Colonnello"
+cardimagecaption: "Bosque semideciduo intervenido para uso agrícola, carretera desde San Cristóbal (estado Zulia) hacia Piñango (estado Mérida). <i>Giuseppe Colonnello</i>"
 category: "en"
 description: "La característica más resaltante de los bosques semideciduos es que sus especies arbóreas dominantes pierden entre 25% y 75% del follaje durante la época de sequía. En Venezuela están restringidos a las regiones macrotérmicas (>24°C) y submesotérmicas (18-24°C), aunque de acuerdo con la disponibilidad de agua pueden ser desde estacionales (tropófilos) hasta húmedos (ombrófilos). En cuanto a su ubicación altitudinal, es posible encontrarlos tanto en tierras bajas en la depresión del lago de Maracaibo como en los Llanos occidentales, y hasta a 1.200 m en las cordilleras de los Andes y de la Costa, por lo que se consideran basimontanos y montanos (Huber & Alarcón 1988). Presentan dos o tres estratos arbóreos y con individuos que pueden alcanzar hasta 35 m de altura, con abundancia de lianas y epífitas.<br><br>
 Al norte del río Orinoco entre las familias más comunes para esta formación se encuentran Fabaceae, Rutaceae, Boraginaceae y Bignoneaceae, y en bosques semideciduos del estado Bolívar especies de las familias Leguminosae, Lecythidaceae y Sapotaceae, Burseraceae, Meliaceae y Chrysobalanaceae (Díaz 2007)."
