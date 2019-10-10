@@ -90,7 +90,7 @@
             <div class="section-header box is-size-3 has-text-weight-bold has-text-centered">Situación a 2010</div>
             <div class="tile is-parent">
               <div class="tile is-child is-6 box">
-                <b >Riesgo de colapso a nivel nacional: </b>
+                <b>Riesgo de colapso a nivel nacional: </b>
                 {{siteConfig.criteria[$page.vegetationCard.category].toUpperCase()}}
                 <img :src="criteriaIcons[$page.vegetationCard.category]" height="30" width="30" style="margin-bottom: -5px;">
                 <br><br>

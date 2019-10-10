@@ -11,9 +11,11 @@
           <a href="#" v-scroll-to="'#mapSection'" style="border:none;" class="explore"><font-awesome size="lg" :icon="['fas', 'angle-double-down']"/></a>
         </div>
       </section>
-      <section id="mapSection" class="section">
-        <div class="map-title title has-text-centered is-uppercase">Formaciones Vegetales de Venezuela - 2010</div>
-        <div class="has-text-centered">[Haz clic en una de las áreas para ver la ficha de información]</div>
+      <section class="section">
+        <div id="mapSection" class="section-header map-title box">
+          <div class="is-size-3 has-text-weight-bold has-text-centered">Formaciones Vegetales de Venezuela - 2010</div>
+          <div class="has-text-centered">[Haz clic en una de las áreas para ver la ficha de información]</div>
+        </div>
         <div style="height: 800px;">
           <ClientOnly>
             <l-map @leaflet:load="mapReady"
@@ -44,12 +46,8 @@
         </div>
       </section>
       <section id="acercaDe" class="hero is-small is-white">
-        <div class="hero-body">
-          <div class="container is-fullhd has-text-centered">
-            <h1 class="title is-uppercase">Explicación</h1>
-          </div>
-        </div>
-        <div class="section">
+        <div class="section-header box is-size-3 has-text-weight-bold has-text-centered">Explicación</div>
+        <div class="box is-size-5">
           {{$page.homeData.explanation}}
         </div>
       </section>
@@ -141,6 +139,7 @@
 
   .map-title {
     margin-bottom: 0;
+    padding-bottom: 4px;
   }
 
 </style>
