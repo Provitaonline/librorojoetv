@@ -21,7 +21,7 @@
       <div class="has-text-centered">
         <g-image v-if="$page.vegetationCard.cardimage" :src="$page.vegetationCard.cardimage" fit="inside" />
       </div>
-      <figcaption class="has-text-centered"><div class="is-size-6" v-html="$page.vegetationCard.cardimagecaption"></div></figcaption>
+      <figcaption class="has-text-centered"><div class="is-size-7" v-html="$page.vegetationCard.cardimagecaption"></div></figcaption>
       <section class="section">
         <div class="tile is-ancestor">
           <div class="tile is-vertical is-parent">
