@@ -33,7 +33,7 @@
             </l-map>
           </ClientOnly>
         </div>
-        <div class="section container legend is-size-6 has-text-left">
+        <div class="legend is-size-6 has-text-left">
           <div class="columns">
             <div v-for="i in 3" class="column">
               <div v-for="item in columnItems(i)">
@@ -44,8 +44,7 @@
           </div>
           <div class="has-text-centered">[Haz clic en uno de los títulos de la leyenda para ver la ficha de información]</div>
         </div>
-      </section>
-      <section id="acercaDe" class="hero is-small is-white">
+        <br>
         <div class="section-header box is-size-3 has-text-weight-bold has-text-centered">Explicación</div>
         <div class="box is-size-5">
           {{$page.homeData.explanation}}
