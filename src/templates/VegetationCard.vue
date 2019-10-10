@@ -247,10 +247,6 @@
     display: inline-block;
   }
 
-  .section-header {
-    background-color: #f8e7e8;
-  }
-
 </style>
 
 <style lang="scss">
