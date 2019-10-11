@@ -8,7 +8,8 @@
               <h1 v-if="$page.vegetationCard.plantformation" style="margin-bottom: 0;" class="title is-uppercase">{{$page.vegetationCard.plantformation}}</h1>
               <h1 v-else class="title is-uppercase">{{$page.vegetationCard.title}}</h1>
               <h2 style="margin-bottom: 0px;" class="is-size-3" v-if="$page.vegetationCard.plantformation">
-                (<span v-html="$page.vegetationCard.formattedtitle"></span>)
+                (<span v-if="$page.vegetationCard.formattedtitle" v-html="$page.vegetationCard.formattedtitle"></span>
+                <span v-else v-html="$page.vegetationCard.title"></span>)
               </h2>
             </div>
             <div class="categoryicon">
