@@ -20,10 +20,10 @@
           <ClientOnly>
             <l-map @leaflet:load="mapReady"
               ref="theMap"
-              :zoom="zoom"
               :center="center"
               :maxBounds="maxBounds"
               :options="mapOptions"
+              :minZoom="minZoom"
               style="height: 100%"
             >
               <l-tile-layer :url="url" :options="tileLayerOptions" />
@@ -171,7 +171,7 @@
       let self = this
       return {
         isLoading: true,
-        zoom: 6,
+        minZoom: 5,
         url: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}",
         //url: "https://server.arcgisonline.com/ArcGIS/rest/services/Ocean/World_Ocean_Base/MapServer/tile/{z}/{y}/{x}",
         tileLayerOptions: {
