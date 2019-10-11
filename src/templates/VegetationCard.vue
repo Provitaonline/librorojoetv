@@ -8,7 +8,7 @@
               <h1 v-if="$page.vegetationCard.plantformation" style="margin-bottom: 0;" class="title is-uppercase">{{$page.vegetationCard.plantformation}}</h1>
               <h1 v-else class="title is-uppercase">{{$page.vegetationCard.title}}</h1>
               <h2 style="margin-bottom: 0px;" class="is-size-3" v-if="$page.vegetationCard.plantformation">
-                ({{$page.vegetationCard.title}})
+                (<span v-html="$page.vegetationCard.formattedtitle"></span>)
               </h2>
             </div>
             <div class="categoryicon">
@@ -152,6 +152,7 @@
   query VegetationCard ($path: String!) {
     vegetationCard: vegetationCard (path: $path) {
       title
+      formattedtitle
       plantformation
       category
       description
