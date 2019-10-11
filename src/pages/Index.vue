@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <div class="page-wrapper">
-      <section class="hero is-medium is-black">
+      <section class="hero is-medium">
         <g-image class="hero-bg-img" src="~/assets/images/home-hero-image.jpg"/>
         <div class="hero-body">
           <div class="container is-fullhd">
@@ -37,8 +37,11 @@
           <div class="columns">
             <div v-for="i in 3" class="column">
               <div v-for="item in columnItems(i)">
-                <g-link :to="makeLink(item)" v-if="item.legend === 'colorkey'"><span class="legend-item" :style="'background:' + item.color"></span> {{ item.name }}<br></g-link>
-                <g-link v-else-if="item.legend === 'dotkey'" :to="makeLink(item)"><span class="dot" :style="'background:' + item.color"></span> {{ item.name }}<br></g-link>
+                <div style="display: flex;">
+                  <div v-if="item.legend === 'colorkey'" style="box-sizing: border-box; padding-right: 10px;"><span class="legend-item" :style="'background:' + item.color"></span></div>
+                  <div v-else-if="item.legend === 'dotkey'" style="box-sizing: border-box; padding-right: 10px;"><span class="dot" :style="'background:' + item.color"></span></div>
+                  <div style="box-sizing: border-box;"><g-link :to="makeLink(item)"> {{ item.name }}<br></g-link></div>
+                </div>
               </div>
             </div>
           </div>
@@ -87,10 +90,11 @@
     object-fit: cover;
     width: 100%;
     height: 100%;
-    opacity: 0.8;
+    /* opacity: 0.8; */
   }
 
   .hero-text {
+    color: white;
   	text-shadow:
   		-1px -1px 0 black,
   		1px -1px 0 black,
