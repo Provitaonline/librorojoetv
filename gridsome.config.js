@@ -34,5 +34,12 @@ module.exports = {
   ],
   templates: {
     VegetationCard: '/vcards/:title'
+  },
+  chainWebpack: config => {
+    config.module
+      .rule('raw')
+      .test(/\.html$/)
+      .use('raw-loader')
+      .loader('raw-loader')
   }
 }

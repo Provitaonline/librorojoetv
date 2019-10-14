@@ -29,7 +29,7 @@
             <div class="section-header box is-size-3 has-text-weight-bold has-text-centered">Descripción</div>
             <div class="tile is-parent">
               <div class="tile is-child box is-size-5">
-                <div v-html="testComputed"></div>
+                <div v-html="description"></div>
                 <div v-if="$page.vegetationCard.descriptionmd" v-html="$page.vegetationCard.descriptionmd.content"></div>
                 <p v-else v-html="$page.vegetationCard.description" />
               </div>
@@ -302,6 +302,7 @@
 <script>
 
   import siteConfig from '~/data/siteConfig.json'
+  import dropdown from './referencesDropDown.html'
 
   let criteriaIcons = {}
   for (let key in siteConfig.criteria) {
@@ -309,9 +310,7 @@
   }
 
   function openReferenceDropdown (e) {
-    //event.stopPropagation();
     e.srcElement.classList.toggle('is-active');
-    console.log(e)
   }
 
   function closeDropdowns(dropdownElements) {
@@ -321,28 +320,19 @@
   }
 
   function dropdownListener(e) {
-    console.log(e.target.parentElement.parentElement)
-    e.target.parentElement.parentElement.classList.toggle('is-active')
+    closeDropdowns(document.getElementsByClassName('reference-dropdown'))
+    e.target.parentElement.classList.toggle('is-active')
     e.preventDefault()
     e.stopPropagation()
   }
 
-  function testFunc() {
-    let dropdown = `
-      <div class="dropdown reference-dropdown">
-        <div class="dropdown-trigger">
-          <a href=""> HOLA</a>
-        </div>
-        <div class="dropdown-menu">
-          <div class="dropdown-content">
-            <div class="dropdown-item">
-              <p>Here we go reference</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    `
-    return 'test ' + dropdown
+  function addReferenceDropdowns(data) {
+    let r = data.replace(/\(.*?\)/g, function (match, offset) {
+      let modDropdown = dropdown.replace(/{{referencekey}}/, match)
+      return (modDropdown.trim())
+    })
+    // console.log(r)
+    return r
   }
 
   export default {
@@ -353,7 +343,6 @@
       }
     },
     mounted () {
-      console.log('mounted')
       let dropdownElements = document.getElementsByClassName('reference-dropdown')
 
       if (dropdownElements.length > 0) {
@@ -369,7 +358,6 @@
 
     },
     beforeDestroy() {
-      console.log('beforeDestroy')
       let dropdownElements = document.getElementsByClassName('reference-dropdown')
       if (dropdownElements.length > 0) {
         Array.from(dropdownElements).forEach(function(element) {
@@ -399,18 +387,14 @@
         //vuIcon
     },
     computed: {
-      testComputed() {
-        // return testFunc(this.$page.vegetationCard.title)
-        return testFunc()
+      description() {
+        return addReferenceDropdowns(this.$page.vegetationCard.description)
       }
     },
     methods: {
       redOrGreen: function(value) {
         if (!value) return ''
         return (value < 0) ? 'green' : 'red'
-      },
-      openReferenceDropdown: function (e) {
-        console.log('hey ' + e)
       }
     }
   }
