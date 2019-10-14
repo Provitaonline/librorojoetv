@@ -54,7 +54,7 @@
                 <ClientOnly>
                   <div v-for="item in $page.vegetationCard.mapcompare">
                     <br>
-                    <VueCompareImage v-if="item.in2010" style="border-style: solid; border-color: dimgrey;" :leftImage="item.in2010.src" :rightImage="item.in1988.src" />
+                    <VueCompareImage v-if="item.in2010" style="border-style: solid; border-color: dimgrey;" :leftImage="item.in1988.src" leftLabel="1988" :rightImage="item.in2010.src" rightLabel="2010" />
                   </div>
                 </ClientOnly>
                 <div v-if="$page.vegetationCard.interventionlegendimage"><br><span class="intervention-legend-item" :style="'background-image: url(' + $page.vegetationCard.interventionlegendimage.src + ');'"></span> Áreas intervenidas</div>
@@ -285,6 +285,10 @@
 
   .line {
     background: gray !important;
+  }
+
+  .left-label, .right-label {
+    font-weight: bold !important;
   }
 
 </style>
