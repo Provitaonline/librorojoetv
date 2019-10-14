@@ -29,7 +29,9 @@
             <div class="section-header box is-size-3 has-text-weight-bold has-text-centered">Descripción</div>
             <div class="tile is-parent">
               <div class="tile is-child box is-size-5">
-                <p v-html="$page.vegetationCard.description" />
+                <div v-html="testComputed"></div>
+                <div v-if="$page.vegetationCard.descriptionmd" v-html="$page.vegetationCard.descriptionmd.content"></div>
+                <p v-else v-html="$page.vegetationCard.description" />
               </div>
             </div>
             <div class="section-header box is-size-3 has-text-weight-bold has-text-centered">Distribución</div>
@@ -157,6 +159,9 @@
       plantformation
       category
       description
+      descriptionmd {
+        content
+      }
       cardimage
       cardimagecaption
       distribution
@@ -287,6 +292,10 @@
     background: gray !important;
   }
 
+  h1 {
+    color: red;
+  }
+
 </style>
 
 
@@ -299,6 +308,43 @@
     criteriaIcons[key] = require('~/assets/svgs/' + key + '-icon.svg')
   }
 
+  function openReferenceDropdown (e) {
+    //event.stopPropagation();
+    e.srcElement.classList.toggle('is-active');
+    console.log(e)
+  }
+
+  function closeDropdowns(dropdownElements) {
+    Array.from(dropdownElements).forEach(function (element) {
+      element.classList.remove('is-active');
+    });
+  }
+
+  function dropdownListener(e) {
+    console.log(e.target.parentElement.parentElement)
+    e.target.parentElement.parentElement.classList.toggle('is-active')
+    e.preventDefault()
+    e.stopPropagation()
+  }
+
+  function testFunc() {
+    let dropdown = `
+      <div class="dropdown reference-dropdown">
+        <div class="dropdown-trigger">
+          <a href=""> HOLA</a>
+        </div>
+        <div class="dropdown-menu">
+          <div class="dropdown-content">
+            <div class="dropdown-item">
+              <p>Here we go reference</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    `
+    return 'test ' + dropdown
+  }
+
   export default {
     data() {
       return {
@@ -307,7 +353,30 @@
       }
     },
     mounted () {
+      console.log('mounted')
+      let dropdownElements = document.getElementsByClassName('reference-dropdown')
 
+      if (dropdownElements.length > 0) {
+        Array.from(dropdownElements).forEach(function(element) {
+          element.addEventListener('click', dropdownListener)
+        });
+
+        document.addEventListener('click', function (event) {
+          closeDropdowns(dropdownElements);
+        });
+
+      }
+
+    },
+    beforeDestroy() {
+      console.log('beforeDestroy')
+      let dropdownElements = document.getElementsByClassName('reference-dropdown')
+      if (dropdownElements.length > 0) {
+        Array.from(dropdownElements).forEach(function(element) {
+          element.removeEventListener('click', dropdownListener)
+        });
+        document.removeEventListener('click', closeDropdowns);
+      }
     },
     filters: {
       number: function(value) {
@@ -329,10 +398,19 @@
         VueCompareImage: () => import ('vue-compare-image').then(m => m)
         //vuIcon
     },
+    computed: {
+      testComputed() {
+        // return testFunc(this.$page.vegetationCard.title)
+        return testFunc()
+      }
+    },
     methods: {
       redOrGreen: function(value) {
         if (!value) return ''
         return (value < 0) ? 'green' : 'red'
+      },
+      openReferenceDropdown: function (e) {
+        console.log('hey ' + e)
       }
     }
   }

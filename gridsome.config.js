@@ -10,8 +10,18 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        path: 'content/vcards/**/*.md',
+        path: 'content/vcards/*/content.md',
         typeName: 'VegetationCard',
+        refs: {
+          descriptionmd: 'VegetationCardDescription'
+        }
+      }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'content/vcards/*/description.md',
+        typeName: 'VegetationCardDescription',
       }
     },
     {
