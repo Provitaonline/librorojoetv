@@ -178,7 +178,6 @@
         caption
       }
       interventionlegendimage
-      threatLevelMaps
       threatlevelmaps {
         map
         caption
