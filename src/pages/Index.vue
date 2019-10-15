@@ -13,7 +13,7 @@
       </section>
       <section class="section">
         <div id="mapSection" class="section-header map-title box">
-          <div class="is-size-3 has-text-weight-bold has-text-centered">Formaciones Vegetales de Venezuela - 2010</div>
+          <div class="is-size-3 is-size-4-mobile has-text-weight-bold has-text-centered">Formaciones Vegetales de Venezuela - 2010</div>
           <div class="has-text-centered">[Haz clic en una de las áreas para ver la ficha de información]</div>
         </div>
         <div style="height: 800px;">
@@ -48,7 +48,7 @@
           <div class="has-text-centered">[Haz clic en uno de los títulos de la leyenda para ver la ficha de información]</div>
         </div>
         <br>
-        <div class="section-header box is-size-3 has-text-weight-bold has-text-centered">Explicación</div>
+        <div class="section-header box is-size-3 is-size-4-mobile has-text-weight-bold has-text-centered">Explicación</div>
         <div class="box is-size-5">
           {{$page.homeData.explanation}}
         </div>

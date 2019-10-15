@@ -26,18 +26,18 @@
       <section class="section">
         <div class="tile is-ancestor">
           <div class="tile is-vertical is-parent">
-            <div class="section-header box is-size-3 has-text-weight-bold has-text-centered">Descripción</div>
+            <div class="section-header box is-size-3 is-size-4-mobile has-text-weight-bold has-text-centered">Descripción</div>
             <div class="tile is-parent">
               <div class="tile is-child box is-size-5">
                 <p v-html="$page.vegetationCard.description" />
               </div>
             </div>
-            <div class="section-header box is-size-3 has-text-weight-bold has-text-centered">Distribución</div>
+            <div class="section-header box is-size-3 is-size-4-mobile has-text-weight-bold has-text-centered">Distribución</div>
             <div class="tile is-parent">
               <div class="tile is-child box is-size-5">
                 <div>
                   <div class="distribution-map">
-                    <p class="is-size-7 has-text-centered">{{$page.vegetationCard.title}}<br>Distribución en 2010</p>
+                    <p class="is-size-7 has-text-centered has-text-weight-bold">{{$page.vegetationCard.title}}<br>Distribución en 2010</p>
                     <g-image v-if="$page.vegetationCard.distributionmap" :src="$page.vegetationCard.distributionmap" />
                     <p class="is-size-7 has-text-right"><i>Huber y Oliveira-Miranda (2010)</i></p>
                   </div>
@@ -46,21 +46,22 @@
               </div>
             </div>
             <br>
-            <div class="section-header box is-size-3 has-text-weight-bold has-text-centered">Cambios en la distribución</div>
+            <div class="section-header box is-size-3 is-size-4-mobile has-text-weight-bold has-text-centered">Cambios en la distribución</div>
             <div class="tile is-parent">
-              <div class="tile is-child is-5 box">
+              <div class="tile is-child is-5 box is-size-6 has-text-centered">
                 <b>Superficie en 1988 (km<sup>2</sup>): </b>{{$page.vegetationCard.areain1988 | number}}<br>
                 <b>Superficie en 2010 (km<sup>2</sup>): </b>{{$page.vegetationCard.areain2010 | number}}<br>
                 <ClientOnly>
                   <div v-for="item in $page.vegetationCard.mapcompare">
                     <br>
+                    <div class="has-text-centered is-size-7 has-text-weight-bold" >{{item.caption}}</div>
                     <VueCompareImage v-if="item.in2010" style="border-style: solid; border-color: dimgrey;" :leftImage="item.in1988.src" leftLabel="1988" :rightImage="item.in2010.src" rightLabel="2010" />
                   </div>
                 </ClientOnly>
                 <div v-if="$page.vegetationCard.interventionlegendimage"><br><span class="intervention-legend-item" :style="'background-image: url(' + $page.vegetationCard.interventionlegendimage.src + ');'"></span> Áreas intervenidas</div>
               </div>
               <div class="tile is-child is-7 box">
-                <div class="has-text-centered"><b>Superficie estimada (km<sup>2</sup>) por estado:</b><br><br></div>
+                <div class="has-text-centered is-size-6 has-text-weight-bold">Superficie estimada (km<sup>2</sup>) por estado:<br><br></div>
                 <table align="center" class="statetable table is-size-6 is-size-7-mobile">
                   <thead>
                     <tr>
@@ -95,9 +96,9 @@
                 </table>
               </div>
             </div>
-            <div class="section-header box is-size-3 has-text-weight-bold has-text-centered">Situación a 2010</div>
+            <div class="section-header box is-size-3 is-size-4-mobile has-text-weight-bold has-text-centered">Situación a 2010</div>
             <div class="tile is-parent">
-              <div class="tile is-child is-5 box">
+              <div class="tile is-child is-5 box has-text-centered">
                 <b>Riesgo de colapso a nivel nacional: </b>
                 {{siteConfig.criteria[$page.vegetationCard.category].toUpperCase()}}
                 <img :src="criteriaIcons[$page.vegetationCard.category]" height="30" width="30" style="margin-bottom: -5px;">
@@ -105,7 +106,7 @@
                 <b>Grado de amenaza 2010: </b>
                 <div v-for="item in $page.vegetationCard.threatLevelMaps">
                   <br>
-                  <img v-if="item" style="border-style: solid; border-color: dimgrey;" :src="item.src">
+                  <g-image v-if="item" style="border-style: solid; border-color: dimgrey;" :src="item"></g-image>
                 </div>
               </div>
               <div v-if="$page.vegetationCard.riskofcolapsestatelevel.length" class="tile is-child is-7 box">
@@ -173,6 +174,7 @@
       mapcompare {
         in2010
         in1988
+        caption
       }
       interventionlegendimage
       threatLevelMaps
