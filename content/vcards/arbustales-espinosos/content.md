@@ -60,31 +60,31 @@ zonelabel: "Estado"
 criteriaused: [A3, A4, C2, "Situación por estado"]
 riskofcolapsestatelevel:
 - zone: "Anzoátegui"
-  criteria: ["-", en, en, en]
+  threatcategories: ["-", en, en, en]
 - zone: "Aragua"
-  criteria: [lc, vu, en, en]
+  threatcategories: [lc, vu, en, en]
 - zone: "Dependencias Federales"
-  criteria: [lc, vu, vu, vu]
+  threatcategories: [lc, vu, vu, vu]
 - zone: "Falcón"
-  criteria: [vu, en, lc, en]
+  threatcategories: [vu, en, lc, en]
 - zone: "Lara"
-  criteria: [cr, vu, lc, cr]
+  threatcategories: [cr, vu, lc, cr]
 - zone: "Mérida"
-  criteria: ["-", en, vu, en]
+  threatcategories: ["-", en, vu, en]
 - zone: "Miranda"
-  criteria: [cr, vu, en, cr]
+  threatcategories: [cr, vu, en, cr]
 - zone: "Nueva Esparta"
-  criteria: [en, vu, en, en]
+  threatcategories: [en, vu, en, en]
 - zone: "Sucre"
-  criteria: [cr, vu, vu, cr]
+  threatcategories: [cr, vu, vu, cr]
 - zone: "Táchira"
-  criteria: ["-", en, en, en]
+  threatcategories: ["-", en, en, en]
 - zone: "Trujillo"
-  criteria: ["-", en, vu, en]
+  threatcategories: ["-", en, vu, en]
 - zone: "Vargas"
-  criteria: [cr, vu, en, cr]
+  threatcategories: [cr, vu, en, cr]
 - zone: "Yaracuy"
-  criteria: ["-", en, en, en]
+  threatcategories: ["-", en, en, en]
 - zone: "Zulia"
-  criteria: [en, vu, vu, en]
+  threatcategories: [en, vu, vu, en]
 ---

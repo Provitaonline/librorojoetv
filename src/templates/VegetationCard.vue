@@ -131,7 +131,7 @@
                       <td v-if="$page.vegetationCard.formationColumn"><b>{{item.formation}}</b></td>
                       <td>{{item.zone}}</td>
                       <td v-if="item.area" class="has-text-right">{{item.area | decimal(1)}}</td>
-                      <td align="center" v-for="value in item.criteria">
+                      <td align="center" v-for="value in item.threatcategories">
                         <b-tooltip v-if="value != '-' && value != '(*)'" :label="siteConfig.threatCategories[value].text" position="is-top" type="is-warning">
                           <div class="iconInTable">
                             <img :src="threatCategoryIcons[value]">
@@ -188,7 +188,7 @@
         formation
         zone
         area
-        criteria
+        threatcategories
       }
     }
   }

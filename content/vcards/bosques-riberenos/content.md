@@ -67,31 +67,31 @@ zonelabel: "Estado"
 criteriaused: [A3, A4, C2, "Situación por estado"]
 riskofcolapsestatelevel:
 - zone: "Amazonas"
-  criteria: ["(*)", lc, " ", lc]
+  threatcategories: ["(*)", lc, " ", lc]
 - zone: "Anzoátegui"
-  criteria: ["(*)", en, " ", en]
+  threatcategories: ["(*)", en, " ", en]
 - zone: "Apure"
-  criteria: [lc, en, " ", en]
+  threatcategories: [lc, en, " ", en]
 - zone: "Aragua"
-  criteria: ["(*)", en, en, en]
+  threatcategories: ["(*)", en, en, en]
 - zone: "Barinas"
-  criteria: [cr, en, " ", cr]
+  threatcategories: [cr, en, " ", cr]
 - zone: "Bolívar"
-  criteria: [lc, nt, " ", nt]
+  threatcategories: [lc, nt, " ", nt]
 - zone: "Cojedes"
-  criteria: [cr, en, vu, cr]
+  threatcategories: [cr, en, vu, cr]
 - zone: "Delta Amacuro"
-  criteria: ["(*)", vu, vu, vu]
+  threatcategories: ["(*)", vu, vu, vu]
 - zone: "Falcón"
-  criteria: ["(*)", vu, en, en]
+  threatcategories: ["(*)", vu, en, en]
 - zone: "Guárico"
-  criteria: [nt, en, " ", en]
+  threatcategories: [nt, en, " ", en]
 - zone: "Monagas"
-  criteria: ["(*)", en, nt, en]
+  threatcategories: ["(*)", en, nt, en]
 - zone: "Portuguesa"
-  criteria: [cr, en, nt, cr]
+  threatcategories: [cr, en, nt, cr]
 - zone: "Trujillo"
-  criteria: ["(*)", en, en, en]
+  threatcategories: ["(*)", en, en, en]
 - zone: "Zulia"
-  criteria: ["(*)", en, vu, en]
+  threatcategories: ["(*)", en, vu, en]
 ---

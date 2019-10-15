@@ -93,43 +93,43 @@ zonelabel: "Estado"
 criteriaused: [A3, A4(b2), C2, "Situación por estado"]
 riskofcolapsestatelevel:
 - zone: "Anzoátegui"
-  criteria: [cr, en, "-", cr]
+  threatcategories: [cr, en, "-", cr]
 - zone: "Aragua"
-  criteria: ["-", en, vu, en]
+  threatcategories: ["-", en, vu, en]
 - zone: "Barinas"
-  criteria: [el, "-", cr, el]
+  threatcategories: [el, "-", cr, el]
 - zone: "Bolívar"
-  criteria: ["-", vu, lc, vu]
+  threatcategories: ["-", vu, lc, vu]
 - zone: "Carabobo"
-  criteria: [en, en, vu, en]
+  threatcategories: [en, en, vu, en]
 - zone: "Cojedes"
-  criteria: [en, en, vu, en]
+  threatcategories: [en, en, vu, en]
 - zone: "Delta Amacuro"
-  criteria: ["-", en, en, en]
+  threatcategories: ["-", en, en, en]
 - zone: "Distrito Capital"
-  criteria: ["-", en, en, en]
+  threatcategories: ["-", en, en, en]
 - zone: "Falcón"
-  criteria: [cr, en, nt, cr]
+  threatcategories: [cr, en, nt, cr]
 - zone: "Guárico"
-  criteria: [cr, en, en, cr]
+  threatcategories: [cr, en, en, cr]
 - zone: "Lara"
-  criteria: [nt, en, lc, en]
+  threatcategories: [nt, en, lc, en]
 - zone: "Miranda"
-  criteria: ["-", en, vu, en]
+  threatcategories: ["-", en, vu, en]
 - zone: "Monagas"
-  criteria: [cr, en, en, cr]
+  threatcategories: [cr, en, en, cr]
 - zone: "Nueva Esparta"
-  criteria: ["-", "-", en, en]
+  threatcategories: ["-", "-", en, en]
 - zone: "Portuguesa"
-  criteria: ["-", en, vu, en]
+  threatcategories: ["-", en, vu, en]
 - zone: "Sucre"
-  criteria: [cr, en, vu, cr]
+  threatcategories: [cr, en, vu, cr]
 - zone: "Trujillo"
-  criteria: [cr, en, vu, cr]
+  threatcategories: [cr, en, vu, cr]
 - zone: "Vargas"
-  criteria: [cr, en, en, cr]
+  threatcategories: [cr, en, en, cr]
 - zone: "Yaracuy"
-  criteria: [cr, en, vu, cr]
+  threatcategories: [cr, en, vu, cr]
 - zone: "Zulia"
-  criteria: [cr, en, en, cr]
+  threatcategories: [cr, en, en, cr]
 ---

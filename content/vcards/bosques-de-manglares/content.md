@@ -78,47 +78,47 @@ criteriaused: ["Extensión (Km<sup>2</sup>)", D2, "Situación por localidad"]
 riskofcolapsestatelevel:
 - zone: "Delta del Orinoco"
   area: 468
-  criteria: [lc, lc]
+  threatcategories: [lc, lc]
 - zone: "Golfo de Paria"
   area: 451.5
-  criteria: [lc, lc]
+  threatcategories: [lc, lc]
 - zone: "Río San Juan"
   area: 413.1
-  criteria: [lc, lc]
+  threatcategories: [lc, lc]
 - zone: "Río Limón–Isla San Carlos"
   area: 90.3
-  criteria: [vu, vu]
+  threatcategories: [vu, vu]
 - zone: "Bahía Morrocoy"
   area: 45
-  criteria: [en, en]
+  threatcategories: [en, en]
 - zone: "Ciénaga Los Olivitos"
   area: 40
-  criteria: [en, en]
+  threatcategories: [en, en]
 - zone: "Laguna Tacarigua"
   area: 39
-  criteria: [en, en]
+  threatcategories: [en, en]
 - zone: "Isla de Margarita"
   area: 23.4
-  criteria: [en, en]
+  threatcategories: [en, en]
 - zone: "Península de la Guajira"
   area: 20.3
-  criteria: [en, en]
+  threatcategories: [en, en]
 - zone: "Delta Yaracuy"
   area: 15
-  criteria: [en, en]
+  threatcategories: [en, en]
 - zone: "Maracaibo (costa este)"
   area: 9.2
-  criteria: [cr, cr]
+  threatcategories: [cr, cr]
 - zone: "Puerto Cabello"
   area: 7
-  criteria: [cr, cr]
+  threatcategories: [cr, cr]
 - zone: "Boca de Aroa"
   area: 3
-  criteria: [cr, cr]
+  threatcategories: [cr, cr]
 - zone: "Laguna Cocinetas"
   area: 2.7
-  criteria: [cr, cr]
+  threatcategories: [cr, cr]
 - zone: "Maracaibo (costa oeste)"
   area: 2.6
-  criteria: [cr, cr]
+  threatcategories: [cr, cr]
 ---

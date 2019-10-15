@@ -51,12 +51,12 @@ criteriaused: [C2, "Situación por estado"]
 riskofcolapsestatelevel:
   - formation: "Arbustales tepuyanos"
     zone: "Amazonas"
-    criteria: [vu, vu]
+    threatcategories: [vu, vu]
   - zone: "Bolívar"
-    criteria: [lc, lc]
+    threatcategories: [lc, lc]
   - formation: "Herbazales tepuyanos"
     zone: "Amazonas"
-    criteria: [vu, vu]
+    threatcategories: [vu, vu]
   - zone: "Bolívar"
-    criteria: [nt, nt]
+    threatcategories: [nt, nt]
 ---

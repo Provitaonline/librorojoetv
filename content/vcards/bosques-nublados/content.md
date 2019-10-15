@@ -88,41 +88,41 @@ zonelabel: "Estado"
 criteriaused: [A3, A4, C2, "Situación por estado"]
 riskofcolapsestatelevel:
 - zone: "Anzoátegui"
-  criteria: [cr, vu, cr, cr]
+  threatcategories: [cr, vu, cr, cr]
 - zone: "Apure"
-  criteria: [dd, vu, cr, cr]
+  threatcategories: [dd, vu, cr, cr]
 - zone: "Aragua"
-  criteria: [dd, vu, en, en]
+  threatcategories: [dd, vu, en, en]
 - zone: "Barinas"
-  criteria: [cr, vu, en, cr]
+  threatcategories: [cr, vu, en, cr]
 - zone: "Carabobo"
-  criteria: [cr, vu, cr, cr]
+  threatcategories: [cr, vu, cr, cr]
 - zone: "Distrito Capital"
-  criteria: [dd, vu, cr, cr]
+  threatcategories: [dd, vu, cr, cr]
 - zone: "Falcón"
-  criteria: [dd, vu, en, en]
+  threatcategories: [dd, vu, en, en]
 - zone: "Guárico"
-  criteria: [dd, vu, cr, cr]
+  threatcategories: [dd, vu, cr, cr]
 - zone: "Lara"
-  criteria: [dd, vu, en, en]
+  threatcategories: [dd, vu, en, en]
 - zone: "Mérida"
-  criteria: [cr, vu, en, cr]
+  threatcategories: [cr, vu, en, cr]
 - zone: "Miranda"
-  criteria: [dd, vu, cr, cr]
+  threatcategories: [dd, vu, cr, cr]
 - zone: "Monagas"
-  criteria: [dd, vu, cr, cr]
+  threatcategories: [dd, vu, cr, cr]
 - zone: "Portuguesa"
-  criteria: ["-", "-", cr, cr]
+  threatcategories: ["-", "-", cr, cr]
 - zone: "Sucre"
-  criteria: [dd, vu, en, en]
+  threatcategories: [dd, vu, en, en]
 - zone: "Táchira"
-  criteria: [dd, vu, en, en]
+  threatcategories: [dd, vu, en, en]
 - zone: "Trujillo"
-  criteria: [dd, vu, en, en]
+  threatcategories: [dd, vu, en, en]
 - zone: "Vargas"
-  criteria: [cr, vu, cr, cr]
+  threatcategories: [cr, vu, cr, cr]
 - zone: "Yaracuy"
-  criteria: [lc, vu, en, en]
+  threatcategories: [lc, vu, en, en]
 - zone: "Zulia"
-  criteria: [dd, vu, vu, vu]
+  threatcategories: [dd, vu, vu, vu]
 ---

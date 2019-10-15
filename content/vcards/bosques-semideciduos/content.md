@@ -101,51 +101,51 @@ zonelabel: "Estado"
 criteriaused: [A3, A4, C2, "Situación por estado"]
 riskofcolapsestatelevel:
 - zone: "Amazonas"
-  criteria: ["-", nt, lc, nt]
+  threatcategories: ["-", nt, lc, nt]
 - zone: "Anzoátegui"
-  criteria: ["-", cr, vu, cr]
+  threatcategories: ["-", cr, vu, cr]
 - zone: "Apure"
-  criteria: ["-", cr, nt, cr]
+  threatcategories: ["-", cr, nt, cr]
 - zone: "Aragua"
-  criteria: [cr, cr, en, cr]
+  threatcategories: [cr, cr, en, cr]
 - zone: "Barinas"
-  criteria: [cr, cr, lc, cr]
+  threatcategories: [cr, cr, lc, cr]
 - zone: "Bolívar"
-  criteria: [vu, vu, lc, vu]
+  threatcategories: [vu, vu, lc, vu]
 - zone: "Carabobo"
-  criteria: [cr, cr, vu, cr]
+  threatcategories: [cr, cr, vu, cr]
 - zone: "Cojedes"
-  criteria: ["-", cr, vu, cr]
+  threatcategories: ["-", cr, vu, cr]
 - zone: "Delta Amacuro"
-  criteria: [en, cr, vu, cr]
+  threatcategories: [en, cr, vu, cr]
 - zone: "Distrito Capital"
-  criteria: [cr, cr, en, cr]
+  threatcategories: [cr, cr, en, cr]
 - zone: "Falcón"
-  criteria: ["-", cr, en, cr]
+  threatcategories: ["-", cr, en, cr]
 - zone: "Guárico"
-  criteria: [cr, cr, en, cr]
+  threatcategories: [cr, cr, en, cr]
 - zone: "Lara"
-  criteria: ["-", cr, vu, cr]
+  threatcategories: ["-", cr, vu, cr]
 - zone: "Mérida"
-  criteria: ["-", cr, en, cr]
+  threatcategories: ["-", cr, en, cr]
 - zone: "Miranda"
-  criteria: [vu, cr, nt, cr]
+  threatcategories: [vu, cr, nt, cr]
 - zone: "Monagas"
-  criteria: [cr, cr, cr, cr]
+  threatcategories: [cr, cr, cr, cr]
 - zone: "Nueva Esparta"
-  criteria: ["-", cr, en, cr]
+  threatcategories: ["-", cr, en, cr]
 - zone: "Portuguesa"
-  criteria: [vr, cr, vu, cr]
+  threatcategories: [vr, cr, vu, cr]
 - zone: "Sucre"
-  criteria: [vu, cr, nt, cr]
+  threatcategories: [vu, cr, nt, cr]
 - zone: "Táchira"
-  criteria: ["-", cr, vu, cr]
+  threatcategories: ["-", cr, vu, cr]
 - zone: "Trujillo"
-  criteria: ["-", cr, en, cr]
+  threatcategories: ["-", cr, en, cr]
 - zone: "Vargas"
-  criteria: ["-", dd, en, en]
+  threatcategories: ["-", dd, en, en]
 - zone: "Yaracuy"
-  criteria: [cr, cr, vu, cr]
+  threatcategories: [cr, cr, vu, cr]
 - zone: "Zulia"
-  criteria: [en, cr, lc, cr]
+  threatcategories: [en, cr, lc, cr]
 ---

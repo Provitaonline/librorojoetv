@@ -95,28 +95,28 @@ criteriaused: [C2, "Situación por estado"]
 riskofcolapsestatelevel:
   - formation: "Bosques de palmas"
     zone: "Amazonas"
-    criteria: [vu, vu]
+    threatcategories: [vu, vu]
   - zone: "Bolívar"
-    criteria: [vu, vu]
+    threatcategories: [vu, vu]
   - zone: "Delta Amacuro"
-    criteria: [nt, nt]
+    threatcategories: [nt, nt]
   - zone: "Falcón"
-    criteria: [cr, cr]
+    threatcategories: [cr, cr]
   - zone: "Miranda"
-    criteria: [cr, cr]
+    threatcategories: [cr, cr]
   - zone: "Monagas"
-    criteria: [en, en]
+    threatcategories: [en, en]
   - zone: "Sucre"
-    criteria: [en, en]
+    threatcategories: [en, en]
   - zone: "Yaracuy"
-    criteria: [cr, cr]
+    threatcategories: [cr, cr]
   - formation: "Bosques de pantano"
     zone: "Delta Amacuro"
-    criteria: [lc, lc]
+    threatcategories: [lc, lc]
   - zone: "Monagas"
-    criteria: [vu, vu]
+    threatcategories: [vu, vu]
   - zone: "Sucre"
-    criteria: [vu, vu]
+    threatcategories: [vu, vu]
   - zone: "Zulia"
-    criteria: [nt, nt]
+    threatcategories: [nt, nt]
 ---
