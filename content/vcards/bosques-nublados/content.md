@@ -15,8 +15,10 @@ areain2010: "7179"
 mapcompare:
   - in2010: "./figura-1a-andes.jpg"
     in1988: "./figura-2a-88-occ.jpg"
+    caption: "Cordillera de Mérida, Sierra de Perijá, Aroa, San Luis y Cerro Santa Ana"
   - in2010: "./figura-1b-2010-norte.jpg"
     in1988: "./figura-2b-88-norte.jpg"
+    caption: "Cordillera de la Costa Central y Oriental"
 interventionlegendimage: "./intervenidas.png"
 formationColumn: false
 stateleveltable:
@@ -77,9 +79,11 @@ stateleveltable:
   - state: "Zulia"
     areain1988: ""
     areain2010: "796"
-threatLevelMaps:
-  - "./figura-3a-amen-occ.jpg"
-  - "./figura-3b-amen-nort.jpg"
+threatlevelmaps:
+  - map: "./figura-3a-amen-occ.jpg"
+    caption: "Cordillera de Mérida, Sierra de Perijá, Aroa, San Luis y Cerro Santa Ana"
+  - map: "./figura-3b-amen-nort.jpg"
+    caption: "Cordillera de la Costa Central y Oriental"
 zonelabel: "Estado"
 criteriaused: [A3, A4, C2, "Situación por estado"]
 riskofcolapsestatelevel:

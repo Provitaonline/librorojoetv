@@ -13,8 +13,10 @@ areain2010: "56690"
 mapcompare:
   - in2010: "./figura-1b-2010-1.jpg"
     in1988: "./figura-1a-88-1.jpg"
+    caption: "Norte del Orinoco"
   - in2010: "./figura-1b-2010-2.jpg"
     in1988: "./figura-1a-88-2.jpg"
+    caption: "Sur del Orinoco"
 interventionlegendimage: "./intervenidas.png"
 formationColumn: false
 stateleveltable:
@@ -90,9 +92,11 @@ stateleveltable:
   - state: "Zulia"
     areain1988: "6445"
     areain2010: "4580"
-threatLevelMaps:
-  - "./figura-1c-1.jpg"
-  - "./figura-1c-2.jpg"
+threatlevelmaps:
+  - map: "./figura-1c-1.jpg"
+    caption: "Norte del Orinoco"
+  - map: "./figura-1c-2.jpg"
+    caption: "Sur del Orinoco"
 zonelabel: "Estado"
 criteriaused: [A3, A4, C2, "Situación por estado"]
 riskofcolapsestatelevel:

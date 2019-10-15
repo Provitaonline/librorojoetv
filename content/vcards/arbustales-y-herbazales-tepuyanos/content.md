@@ -16,6 +16,7 @@ areain2010: "8863"
 mapcompare:
   - in2010: "./figura-1b-2010.jpg"
     in1988: "./figura-1a-88.jpg"
+    caption: "Macizo Guayanés"
 formationColumn: true
 stateleveltable:
   - formation: "Arbustales tepuyanos"
@@ -42,8 +43,9 @@ stateleveltable:
     state: "Bolívar"
     areain1988: "3297"
     areain2010: ""
-threatLevelMaps:
-  - "./figura-1c.jpg"
+threatlevelmaps:
+  - map: "./figura-1c.jpg"
+    caption: "Macizo Guayanés"
 zonelabel: "Estado"
 criteriaused: [C2, "Situación por estado"]
 riskofcolapsestatelevel:

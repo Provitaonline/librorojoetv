@@ -17,10 +17,13 @@ areain2010: "8750"
 mapcompare:
   - in2010: "./figura-1b-2010-1.jpg"
     in1988: "./figura-1a-88-1.jpg"
+    caption: "Costa Occidental"
   - in2010: "./figura-1b-2010-2.jpg"
     in1988: "./figura-1a-88-2.jpg"
+    caption: "Costa Central"
   - in2010: "./figura-1b-2010-3.jpg"
     in1988: "./figura-1a-88-3.jpg"
+    caption: "Costa Oriental"
 interventionlegendimage: "./intervenidas.png"
 formationColumn: false
 stateleveltable:
@@ -63,10 +66,13 @@ stateleveltable:
   - state: "Zulia"
     areain1988: "356"
     areain2010: "492"
-threatLevelMaps:
-  - "./figura-1c-1-amenazas-occ.jpg"
-  - "./figura-1c-2-amenazas-centro.jpg"
-  - "./figura-1c-3-amenazas-ori.jpg"
+threatlevelmaps:
+  - map: "./figura-1c-1-amenazas-occ.jpg"
+    caption: "Costa Occidental"
+  - map: "./figura-1c-2-amenazas-centro.jpg"
+    caption: "Costa Central"
+  - map: "./figura-1c-3-amenazas-ori.jpg"
+    caption: "Costa Oriental"
 zonelabel: "Localidad"
 criteriaused: ["Extensión (Km<sup>2</sup>)", D2, "Situación por localidad"]
 riskofcolapsestatelevel:

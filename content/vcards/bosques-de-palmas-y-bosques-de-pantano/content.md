@@ -18,8 +18,10 @@ areain2010: "23102"
 mapcompare:
   - in2010: "./figura-1b-1-2010.jpg"
     in1988: "./figura-1a-1-88.jpg"
+    caption: "Norte y Delta del río Orinoco"
   - in2010: "./figura-1b-2-2010.jpg"
     in1988: "./figura-1a-2-88.jpg"
+    caption: "Estado Amazonas y Suroeste del estado Bolívar"
 interventionlegendimage: "./intervenidas.png"
 formationColumn: true
 stateleveltable:
@@ -83,8 +85,11 @@ stateleveltable:
     state: "Sucre"
     areain1988: "481"
     areain2010: ""
-threatLevelMaps:
-  - "./figura-1c-amenazas.jpg"
+threatlevelmaps:
+  - map: "./figura-1c-1-amenazas.jpg"
+    caption: "Norte y Delta del río Orinoco"
+  - map: "./figura-1c-2-amenazas.jpg"
+    caption: "Estado Amazonas y Suroeste del estado Bolívar"
 zonelabel: "Estado"
 criteriaused: [C2, "Situación por estado"]
 riskofcolapsestatelevel:

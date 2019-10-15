@@ -104,9 +104,10 @@
                 <img :src="criteriaIcons[$page.vegetationCard.category]" height="30" width="30" style="margin-bottom: -5px;">
                 <br><br>
                 <b>Grado de amenaza 2010: </b>
-                <div v-for="item in $page.vegetationCard.threatLevelMaps">
+                <div v-for="item in $page.vegetationCard.threatlevelmaps">
                   <br>
-                  <g-image v-if="item" style="border-style: solid; border-color: dimgrey;" :src="item"></g-image>
+                  <div class="has-text-centered is-size-7 has-text-weight-bold" >{{item.caption}}</div>
+                  <g-image v-if="item" style="border-style: solid; border-color: dimgrey;" :src="item.map"></g-image>
                 </div>
               </div>
               <div v-if="$page.vegetationCard.riskofcolapsestatelevel.length" class="tile is-child is-7 box">
@@ -178,6 +179,10 @@
       }
       interventionlegendimage
       threatLevelMaps
+      threatlevelmaps {
+        map
+        caption
+      }
       zonelabel
       criteriaused
       riskofcolapsestatelevel {
