@@ -13,8 +13,8 @@
               </h2>
             </div>
             <div class="categoryicon">
-              <img :src="criteriaIcons[$page.vegetationCard.category]" height="50" width="50" />
-              <p style="display: block; font-size: small;"><b>{{siteConfig.criteria[$page.vegetationCard.category].toUpperCase()}}</b></p>
+              <img :src="threatCategoryIcons[$page.vegetationCard.category]" height="50" width="50" />
+              <p style="display: block; font-size: small;"><b>{{siteConfig.threatCategories[$page.vegetationCard.category].text.toUpperCase()}}</b></p>
             </div>
           </div>
         </div>
@@ -100,8 +100,8 @@
             <div class="tile is-parent">
               <div class="tile is-child is-5 box has-text-centered">
                 <b>Riesgo de colapso a nivel nacional: </b>
-                {{siteConfig.criteria[$page.vegetationCard.category].toUpperCase()}}
-                <img :src="criteriaIcons[$page.vegetationCard.category]" height="30" width="30" style="margin-bottom: -5px;">
+                {{siteConfig.threatCategories[$page.vegetationCard.category].text.toUpperCase()}}
+                <img :src="threatCategoryIcons[$page.vegetationCard.category]" height="30" width="30" style="margin-bottom: -5px;">
                 <br><br>
                 <b>Grado de amenaza 2010: </b>
                 <div v-for="item in $page.vegetationCard.threatlevelmaps">
@@ -132,9 +132,9 @@
                       <td>{{item.zone}}</td>
                       <td v-if="item.area" class="has-text-right">{{item.area | decimal(1)}}</td>
                       <td align="center" v-for="value in item.criteria">
-                        <b-tooltip v-if="value != '-' && value != '(*)'" :label="siteConfig.criteria[value]" position="is-top" type="is-warning">
+                        <b-tooltip v-if="value != '-' && value != '(*)'" :label="siteConfig.threatCategories[value].text" position="is-top" type="is-warning">
                           <div class="iconInTable">
-                            <img :src="criteriaIcons[value]">
+                            <img :src="threatCategoryIcons[value]">
                           </div>
                         </b-tooltip>
                         <div v-else>{{value}}</div>
@@ -304,16 +304,16 @@
 
   import siteConfig from '~/data/siteConfig.json'
 
-  let criteriaIcons = {}
-  for (let key in siteConfig.criteria) {
-    criteriaIcons[key] = require('~/assets/svgs/' + key + '-icon.svg')
+  let threatCategoryIcons = {}
+  for (let key in siteConfig.threatCategories) {
+    threatCategoryIcons[key] = require('~/assets/svgs/' + key + '-icon.svg')
   }
 
   export default {
     data() {
       return {
         siteConfig: siteConfig,
-        criteriaIcons: criteriaIcons
+        threatCategoryIcons: threatCategoryIcons
       }
     },
     mounted () {

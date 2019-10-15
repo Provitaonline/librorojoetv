@@ -1,12 +1,36 @@
 {
-  "criteria": {
-    "el": "Eliminado",
-    "cr": "En Peligro Crítico",
-    "en": "En Peligro",
-    "vu": "Vulnerable",
-    "nt": "Casi Amenazado",
-    "lc": "Preocupación Menor",
-    "dd": "Datos Insuficientes",
-    "ne": "No Evaluado"
+  "threatCategories": {
+    "el": {
+      "text": "Eliminado",
+      "color": ""
+    },
+    "cr": {
+      "text": "En Peligro Crítico",
+      "color": ""
+    },
+    "en": {
+      "text": "En Peligro",
+      "color": ""
+    },
+    "vu": {
+      "text": "Vulnerable",
+      "color": ""
+    },
+    "nt": {
+      "text": "Casi Amenazado",
+      "color": ""
+    },
+    "lc": {
+      "text": "Preocupación Menor",
+      "color": ""
+    },
+    "dd": {
+      "text": "Datos Insuficientes",
+      "color": ""
+    },
+    "ne": {
+      "text": "No Evaluado",
+      "color": ""
+    }
   }
 }
