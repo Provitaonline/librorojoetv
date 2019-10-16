@@ -194,7 +194,6 @@
           text
         }
       }
-      interventionlegendimage
       threatlevelmaps {
         map
         caption
