@@ -23,10 +23,11 @@
               :center="center"
               :maxBounds="maxBounds"
               :options="mapOptions"
+              :zoom="zoom"
               :minZoom="minZoom"
               style="height: 100%"
             >
-              <l-tile-layer :url="url" :options="tileLayerOptions" />
+              <l-tile-layer @load="tileLayerReady" :url="url" :options="tileLayerOptions" />
               <l-geo-json :geojson="saxicolaLayer" :options="saxicolaLayerOptions" />
               <l-geo-json :geojson="vegetationLayer" :options="vegetationLayerOptions" />
               <b-loading :is-full-page="false" :active.sync="isLoading"></b-loading>
@@ -171,6 +172,7 @@
       let self = this
       return {
         isLoading: true,
+        zoom: 7,
         minZoom: 5,
         url: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}",
         //url: "https://server.arcgisonline.com/ArcGIS/rest/services/Ocean/World_Ocean_Base/MapServer/tile/{z}/{y}/{x}",
@@ -283,6 +285,11 @@
       },
       mapReady() {
         //console.log('Map is ready');
+        //console.log(this.$refs.theMap.mapObject);
+        //this.isLoading = false;
+      },
+      tileLayerReady() {
+        //console.log('Tile layer is ready');
         //console.log(this.$refs.theMap.mapObject);
         //this.isLoading = false;
       }
