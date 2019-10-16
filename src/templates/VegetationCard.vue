@@ -85,7 +85,7 @@
                       <td>{{item.state}}</td>
                       <td class="has-text-right">{{item.areain1988 | number}}</td>
                       <td class="has-text-right">{{item.areain2010 | number}}</td>
-                      <td class="has-text-right">{{ (item.areain2010 - item.areain1988) | number}}</td>
+                      <td class="has-text-right">{{ (difference(item.areain2010,item.areain1988)) | number}}</td>
                       <td :style="'color: ' + redOrGreen(item.areain1988 - item.areain2010) + ';'" class="has-text-right">{{ (item.areain1988 - item.areain2010) | upOrDown}}</td>
                     </tr>
                   </tbody>
@@ -93,9 +93,9 @@
                     <tr>
                       <td v-if="$page.vegetationCard.formationColumn"></td>
                       <th>Total</th>
-                      <th class="has-text-right">{{($page.vegetationCard.stateleveltable.reduce((a, b) => +a + +b.areain1988, 0)) | number}}</th>
-                      <th class="has-text-right">{{($page.vegetationCard.stateleveltable.reduce((a, b) => +a + +b.areain2010, 0)) | number}}</th>
-                      <th class="has-text-right">{{($page.vegetationCard.stateleveltable.reduce((a, b) => +a + +b.areain2010, 0)) - ($page.vegetationCard.stateleveltable.reduce((a, b) => +a + +b.areain1988, 0)) | number}}</th>
+                      <th class="has-text-right">{{($page.vegetationCard.stateleveltable.reduce((a, b) => +a + +numbernobrackets(b.areain1988), 0)) | number}}</th>
+                      <th class="has-text-right">{{($page.vegetationCard.stateleveltable.reduce((a, b) => +a + +numbernobrackets(b.areain2010), 0)) | number}}</th>
+                      <th class="has-text-right">{{($page.vegetationCard.stateleveltable.reduce((a, b) => +a + +numbernobrackets(b.areain2010), 0)) - ($page.vegetationCard.stateleveltable.reduce((a, b) => +a + +numbernobrackets(b.areain1988), 0)) | number}}</th>
                       <th></th>
                     </tr>
                   </tfoot>
@@ -347,6 +347,7 @@
     filters: {
       number: function(value) {
         if (!value) return ''
+        if (isNaN(value)) return value
         return parseInt(value).toLocaleString('de-DE', {style: 'decimal', localeMatcher: 'best fit'})
       },
       decimal: function(value, decimals) {
@@ -368,6 +369,12 @@
       redOrGreen: function(value) {
         if (!value) return ''
         return (value < 0) ? 'green' : 'red'
+      },
+      difference: function (a, b) {
+        return a.replace(/[\<\>]/g, '') - b.replace(/[\<\>]/g, '')
+      },
+      numbernobrackets: function (a) {
+        return Number(a.replace(/[\<\>]/g, ''))
       }
     }
   }
