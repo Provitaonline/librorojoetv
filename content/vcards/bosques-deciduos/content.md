@@ -89,6 +89,7 @@ stateleveltable:
 threatlevelmaps:
   - map: "./figura-1c.jpg"
     caption: "Norte del Orinoco"
+    threatcategories: ["cr", "en", "vu"]
 zonelabel: "Estado"
 criteriaused: [A3, A4(b2), C2, "Situación por estado"]
 riskofcolapsestatelevel:

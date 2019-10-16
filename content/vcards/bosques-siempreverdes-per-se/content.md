@@ -96,10 +96,13 @@ stateleveltable:
 threatlevelmaps:
   - map: "./figura-3a-occi.jpg"
     caption: "Cordillera andina"
+    threatcategories: ["cr", "vu"]
   - map: "./figura-3b-centro.jpg"
     caption: "Cordillera de la Costa Central y Oriental"
+    threatcategories: ["cr", "vu"]
   - map: "./figura-3c-sur.jpg"
     caption: "Guayana"
+    threatcategories: ["nt"]
 zonelabel: "Estado"
 criteriaused: [A3, C2, "Situación por estado"]
 riskofcolapsestatelevel:

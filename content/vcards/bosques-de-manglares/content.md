@@ -69,10 +69,13 @@ stateleveltable:
 threatlevelmaps:
   - map: "./figura-1c-1-amenazas-occ.jpg"
     caption: "Costa Occidental"
+    threatcategories: ["cr", "en"]
   - map: "./figura-1c-2-amenazas-centro.jpg"
     caption: "Costa Central"
+    threatcategories: ["cr", "en"]
   - map: "./figura-1c-3-amenazas-ori.jpg"
     caption: "Costa Oriental"
+    threatcategories: ["vu", "lc"]
 zonelabel: "Localidad"
 criteriaused: ["Extensión (Km<sup>2</sup>)", D2, "Situación por localidad"]
 riskofcolapsestatelevel:

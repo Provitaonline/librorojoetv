@@ -63,6 +63,7 @@ stateleveltable:
     areain2010: "1390"
 threatlevelmaps:
   - map: "./figura-1c.jpg"
+    threatcategories: ["cr", "en", "vu", "nt"]
 zonelabel: "Estado"
 criteriaused: [A3, A4, C2, "Situación por estado"]
 riskofcolapsestatelevel:

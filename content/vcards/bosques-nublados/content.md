@@ -82,8 +82,10 @@ stateleveltable:
 threatlevelmaps:
   - map: "./figura-3a-amen-occ.jpg"
     caption: "Cordillera de Mérida, Sierra de Perijá, Aroa, San Luis y Cerro Santa Ana"
+    threatcategories: ["cr", "en", "vu"]
   - map: "./figura-3b-amen-nort.jpg"
     caption: "Cordillera de la Costa Central y Oriental"
+    threatcategories: ["cr", "en"]
 zonelabel: "Estado"
 criteriaused: [A3, A4, C2, "Situación por estado"]
 riskofcolapsestatelevel:

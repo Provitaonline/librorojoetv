@@ -108,6 +108,13 @@
                   <br>
                   <div class="has-text-centered is-size-7 has-text-weight-bold" >{{item.caption}}</div>
                   <g-image v-if="item" style="border-style: solid; border-color: dimgrey;" :src="item.map"></g-image>
+                  <div>
+                    <div v-for="tl in item.threatcategories" style="float: left;" class="has-text-left is-size-7">
+                      <span class="legend-item" :style="'background:' + siteConfig.threatCategories[tl].color"></span>
+                      <span style="padding-left: 4px; padding-right: 4px;"> {{siteConfig.threatCategories[tl].text}}</span>
+                    </div>
+                    <br>
+                  </div>
                 </div>
               </div>
               <div v-if="$page.vegetationCard.riskofcolapsestatelevel.length" class="tile is-child is-7 box">
@@ -132,7 +139,7 @@
                       <td>{{item.zone}}</td>
                       <td v-if="item.area" class="has-text-right">{{item.area | decimal(1)}}</td>
                       <td align="center" v-for="value in item.threatcategories">
-                        <b-tooltip v-if="value != '-' && value != '(*)'" :label="siteConfig.threatCategories[value].text" position="is-top" type="is-warning">
+                        <b-tooltip v-if="value != '-' && value != '(*)'" :label="siteConfig.threatCategories[value] ? siteConfig.threatCategories[value].text : ''" position="is-top" type="is-warning">
                           <div class="iconInTable">
                             <img :src="threatCategoryIcons[value]">
                           </div>
@@ -181,6 +188,7 @@
       threatlevelmaps {
         map
         caption
+        threatcategories
       }
       zonelabel
       criteriaused
@@ -272,6 +280,13 @@
       width: 50%;
       float: right;
     }
+  }
+
+  .legend-item {
+    margin-bottom: -1.5px;
+    height: 12px;
+    width: 20px;
+    display: inline-block;
   }
 
 </style>

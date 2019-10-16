@@ -46,6 +46,7 @@ stateleveltable:
 threatlevelmaps:
   - map: "./figura-1c.jpg"
     caption: "Macizo Guayanés"
+    threatcategories: ["vu", "lc"]
 zonelabel: "Estado"
 criteriaused: [C2, "Situación por estado"]
 riskofcolapsestatelevel:

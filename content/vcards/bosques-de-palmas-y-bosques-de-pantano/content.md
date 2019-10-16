@@ -88,8 +88,10 @@ stateleveltable:
 threatlevelmaps:
   - map: "./figura-1c-1-amenazas.jpg"
     caption: "Norte y Delta del río Orinoco"
+    threatcategories: ["cr", "en", "vu", "lc", "nt"]
   - map: "./figura-1c-2-amenazas.jpg"
     caption: "Estado Amazonas y Suroeste del estado Bolívar"
+    threatcategories: ["vu"]
 zonelabel: "Estado"
 criteriaused: [C2, "Situación por estado"]
 riskofcolapsestatelevel:

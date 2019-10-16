@@ -2,35 +2,35 @@
   "threatCategories": {
     "el": {
       "text": "Eliminado",
-      "color": ""
+      "color": "#AD322A"
     },
     "cr": {
       "text": "En Peligro Crítico",
-      "color": ""
+      "color": "#DE6124"
     },
     "en": {
       "text": "En Peligro",
-      "color": ""
+      "color": "#F8941E"
     },
     "vu": {
       "text": "Vulnerable",
-      "color": ""
+      "color": "#FFD979"
     },
     "nt": {
       "text": "Casi Amenazado",
-      "color": ""
+      "color": "#77C151"
     },
     "lc": {
       "text": "Preocupación Menor",
-      "color": ""
+      "color": "#00B7B1"
     },
     "dd": {
       "text": "Datos Insuficientes",
-      "color": ""
+      "color": "#00BAF1"
     },
     "ne": {
       "text": "No Evaluado",
-      "color": ""
+      "color": "#0068B4"
     }
   }
 }
