@@ -20,7 +20,9 @@ mapcompare:
   - in2010: "./figura-1b-2010.jpg"
     in1988: "./figura-1a-88.jpg"
     caption: "Norte del Orinoco"
-interventionlegendimage: "./intervenidas.png"
+    interventionlegend:
+    - image: "./intervenidas.png"
+      text: "Áreas intervenidas"
 formationColumn: false
 stateleveltable:
   - state: "Amazonas"

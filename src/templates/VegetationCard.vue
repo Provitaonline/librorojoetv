@@ -56,9 +56,15 @@
                     <br>
                     <div class="has-text-centered is-size-7 has-text-weight-bold" >{{item.caption}}</div>
                     <VueCompareImage v-if="item.in2010" style="border-style: solid; border-color: dimgrey;" :leftImage="item.in1988.src" leftLabel="1988" :rightImage="item.in2010.src" rightLabel="2010" />
+                    <div style="padding-top: 8px;">
+                      <div v-for="il in item.interventionlegend" style="float: left;" class="has-text-left is-size-7">
+                        <span class="intervention-legend-item" :style="'background-image: url(' + il.image.src + ');'"></span>
+                        <span style="padding-left: 4px; padding-right: 4px;">{{il.text}}</span>
+                      </div>
+                      <br>
+                    </div>
                   </div>
                 </ClientOnly>
-                <div v-if="$page.vegetationCard.interventionlegendimage"><br><span class="intervention-legend-item" :style="'background-image: url(' + $page.vegetationCard.interventionlegendimage.src + ');'"></span> Áreas intervenidas</div>
               </div>
               <div class="tile is-child is-7 box">
                 <div class="has-text-centered is-size-6 has-text-weight-bold">Superficie estimada (km<sup>2</sup>) por estado:<br><br></div>
@@ -183,6 +189,10 @@
         in2010
         in1988
         caption
+        interventionlegend {
+          image
+          text
+        }
       }
       interventionlegendimage
       threatlevelmaps {

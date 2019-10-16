@@ -18,13 +18,21 @@ mapcompare:
   - in2010: "./figura-1b-2010-1.jpg"
     in1988: "./figura-1a-88-1.jpg"
     caption: "Costa Occidental"
+    interventionlegend:
+    - image: "./intervenidas.png"
+      text: "Áreas intervenidas"
   - in2010: "./figura-1b-2010-2.jpg"
     in1988: "./figura-1a-88-2.jpg"
+    interventionlegend:
+    - image: "./intervenidas.png"
+      text: "Áreas intervenidas"
     caption: "Costa Central"
   - in2010: "./figura-1b-2010-3.jpg"
     in1988: "./figura-1a-88-3.jpg"
     caption: "Costa Oriental"
-interventionlegendimage: "./intervenidas.png"
+    interventionlegend:
+    - image: "./intervenidas.png"
+      text: "Áreas intervenidas"
 formationColumn: false
 stateleveltable:
   - state: "Anzoátegui"

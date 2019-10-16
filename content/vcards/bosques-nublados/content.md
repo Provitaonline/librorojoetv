@@ -16,10 +16,15 @@ mapcompare:
   - in2010: "./figura-1a-andes.jpg"
     in1988: "./figura-2a-88-occ.jpg"
     caption: "Cordillera de Mérida, Sierra de Perijá, Aroa, San Luis y Cerro Santa Ana"
+    interventionlegend:
+    - image: "./intervenidas.png"
+      text: "Áreas intervenidas"
   - in2010: "./figura-1b-2010-norte.jpg"
     in1988: "./figura-2b-88-norte.jpg"
     caption: "Cordillera de la Costa Central y Oriental"
-interventionlegendimage: "./intervenidas.png"
+    interventionlegend:
+    - image: "./intervenidas.png"
+      text: "Áreas intervenidas"
 formationColumn: false
 stateleveltable:
   - state: "Anzoátegui"

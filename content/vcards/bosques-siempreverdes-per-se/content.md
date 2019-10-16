@@ -15,13 +15,21 @@ mapcompare:
   - in2010: "./figura-1a-occi.jpg"
     in1988: "./figura-2a-88-occi.jpg"
     caption: "Cordillera andina"
+    interventionlegend:
+    - image: "./intervenidas.png"
+      text: "Áreas intervenidas"
   - in2010: "./figura-1c-centro.jpg"
     in1988: "./figura-2c-88-centro.jpg"
     caption: "Cordillera de la Costa Central y Oriental"
+    interventionlegend:
+    - image: "./intervenidas.png"
+      text: "Áreas intervenidas"
   - in2010: "./figura-1b-sur.jpg"
     in1988: "./figura-2b-88-sur.jpg"
     caption: "Guayana"
-interventionlegendimage: "./intervenidas.png"
+    interventionlegend:
+    - image: "./intervenidas.png"
+      text: "Áreas intervenidas"
 formationColumn: false
 stateleveltable:
   - state: "Amazonas"

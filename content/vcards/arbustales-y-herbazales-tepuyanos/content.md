@@ -17,6 +17,13 @@ mapcompare:
   - in2010: "./figura-1b-2010.jpg"
     in1988: "./figura-1a-88.jpg"
     caption: "Macizo Guayanés"
+    interventionlegend:
+    - image: "./herbazales.jpg"
+      text: "Herbazal tepuyano"
+    - image: "./arbustalesyherbazales.jpg"
+      text: "Arbustal y herbazal tepuyano"
+    - image: "./arbustales.jpg"
+      text: "Arbustal tepuyano"
 formationColumn: true
 stateleveltable:
   - formation: "Arbustales tepuyanos"
