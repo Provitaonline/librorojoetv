@@ -20,6 +20,13 @@ module.exports = {
         path: 'content/home.md',
         typeName: 'HomeData'
       }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'content/vcards-references.md',
+        typeName: 'VegetationCardReferences'
+      }
     }
   ],
   templates: {

@@ -208,6 +208,12 @@
         threatcategories
       }
     }
+    vegetationCardReferences: vegetationCardReferences (path: "/content/vcards-references") {
+      references {
+        referencekey
+        reference
+      }
+    }
   }
 </page-query>
 
@@ -341,7 +347,7 @@
       }
     },
     mounted () {
-
+      console.log(this.$page.vegetationCardReferences.references) 
     },
     filters: {
       number: function(value) {
