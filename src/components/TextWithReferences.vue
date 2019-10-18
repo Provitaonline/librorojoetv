@@ -18,11 +18,11 @@ function addReferenceDropdowns(data, references) {
   let r = data.replace(/\(.*?\)/g, function (match, offset) {
     let lookup = ((match.replace(/[{()}]/g, ''))).split(',');
     //this.refs.find(function(r) { return r.referencekey === lookup})
-    let referenceEntry = references.find(function(r) { return r.referencekey === lookup[0]})
+    let referenceEntry = references.find(function(r) { return r.referencekey === (lookup[0]).trim()})
     if (referenceEntry) {
       let dropdown =
         `<b-dropdown>
-          <a slot="trigger" href=""><b>` + match + `</b></a>
+          <a slot="trigger" href="">` + match + `</a>
           <b-dropdown-item :custom="true">` + referenceEntry.reference +
           `</b-dropdown-item>
         </b-dropdown>
