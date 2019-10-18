@@ -6,6 +6,7 @@
 
 module.exports = {
   siteName: 'Libro Rojo ETV',
+  runtimeCompiler: true,
   plugins: [
     {
       use: '@gridsome/source-filesystem',

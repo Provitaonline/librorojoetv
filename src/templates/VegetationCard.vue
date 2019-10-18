@@ -29,7 +29,7 @@
             <div class="section-header box is-size-3 is-size-4-mobile has-text-weight-bold has-text-centered">Descripción</div>
             <div class="tile is-parent">
               <div class="tile is-child box is-size-5">
-                <p v-html="$page.vegetationCard.description" />
+                <TextWithReferences :text="$page.vegetationCard.description" :refs="$page.vegetationCardReferences.references"></TextWithReferences>
               </div>
             </div>
             <div class="section-header box is-size-3 is-size-4-mobile has-text-weight-bold has-text-centered">Distribución</div>
@@ -41,7 +41,7 @@
                     <g-image v-if="$page.vegetationCard.distributionmap" :src="$page.vegetationCard.distributionmap" />
                     <p class="is-size-7 has-text-right"><i>Huber y Oliveira-Miranda (2010)</i></p>
                   </div>
-                  <p v-html="$page.vegetationCard.distribution"></p>
+                  <TextWithReferences :text="$page.vegetationCard.distribution" :refs="$page.vegetationCardReferences.references"></TextWithReferences>
                 </div>
               </div>
             </div>
@@ -333,6 +333,7 @@
 <script>
 
   import siteConfig from '~/data/siteConfig.json'
+  import TextWithReferences from '~/components/TextWithReferences.vue'
 
   let threatCategoryIcons = {}
   for (let key in siteConfig.threatCategories) {
@@ -340,6 +341,9 @@
   }
 
   export default {
+    created() {
+      console.log(this.$page.vegetationCardReferences)
+    },
     data() {
       return {
         siteConfig: siteConfig,
@@ -347,7 +351,6 @@
       }
     },
     mounted () {
-      console.log(this.$page.vegetationCardReferences.references) 
     },
     filters: {
       number: function(value) {
@@ -367,8 +370,9 @@
       }
     },
     components: {
-        VueCompareImage: () => import ('vue-compare-image').then(m => m)
+        VueCompareImage: () => import ('vue-compare-image').then(m => m),
         //vuIcon
+        TextWithReferences
     },
     methods: {
       redOrGreen: function(value) {
