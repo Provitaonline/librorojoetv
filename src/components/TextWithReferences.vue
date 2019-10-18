@@ -17,21 +17,22 @@ import VRuntimeTemplate from "v-runtime-template"
 function addReferenceDropdowns(data, references) {
   let r = data.replace(/\(.*?\)/g, function (match, offset) {
     let lookup = ((match.replace(/[{()}]/g, ''))).split(',');
-    //this.refs.find(function(r) { return r.referencekey === lookup})
+    let dropDownItems = ''
+    lookup.forEach(refItem => {
+      refItem = refItem.replace(/\<i\>|\<\/i\>/g, '')
+      let re = references.find(function(r) { return r.referencekey === refItem.trim()})
+      if (re) {
+        dropDownItems += '<b-dropdown-item :custom="true">' + re.reference + '</b-dropdown-item>'
+      }
+    })
     let referenceEntry = references.find(function(r) { return r.referencekey === (lookup[0]).trim()})
     if (referenceEntry) {
       let dropdown =
-        `<b-dropdown>
-          <a slot="trigger" href="">` + match + `</a>
-          <b-dropdown-item :custom="true">` + referenceEntry.reference +
-          `</b-dropdown-item>
-        </b-dropdown>
-      `
+        '<b-dropdown><a slot="trigger" href="">' + match + '</a>' + dropDownItems + '</b-dropdown>'
       return (dropdown.trim())
     }
     return match
   })
-  // console.log(r)
   return '<p>' + r + '</p>'
 }
 
@@ -41,15 +42,6 @@ export default {
     text: { type: String, required: true },
     refs: { type: Array, required: true }
   },
-  /*beforeMount() {
-    console.log('created', this.text)
-    let r = Vue.compile(this.text)
-  },
-  render: function (createElement) {
-    //return createElement('p', {domProps: {innerHTML: this.injectReferences()}})
-    return createElement('p', {domProps: {innerHTML: '<div>HOLA</div><g-image>HOLA</g-image>'}})
-    //return createElement('g-image', {attrs: {src: ''}})
-  },*/
   data () {
     return {
     }
