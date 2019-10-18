@@ -8,6 +8,9 @@
   .dropdown {
     margin-left: 0 !important;
   }
+
+  sup { vertical-align: top; font-size: 0.6em; }
+  
 </style>
 
 <script>
