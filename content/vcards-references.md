@@ -63,7 +63,7 @@ references:
 - referencekey: Brunner et. al. 2001
   reference: >
       Bruner, A.G., R.E. Gullison, R.E. Rice & G.A.B. da Fonseca (2001). Effectiveness of parks in protecting tropical biodiversity. Science 291: 125-128.
-- referencekey: Calzadilla y Lárez 2008
+- referencekey: Calzadilla & Lárez 2008
   reference: >
       Calzadilla, J.J. & A. Lárez R. (2008). Flora y vegetación de la cuenca alta del Río Aragua, Municipio Piar, estado Monagas, Venezuela. Acta Botánica Venezuelica 31(1): 251-272.
 - referencekey: Cárdenas et. al. 2010

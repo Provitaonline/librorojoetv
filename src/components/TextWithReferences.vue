@@ -10,7 +10,7 @@
   }
 
   sup { vertical-align: top; font-size: 0.6em; }
-  
+
 </style>
 
 <script>
@@ -22,7 +22,7 @@ function addReferenceDropdowns(data, references) {
     let lookup = ((match.replace(/[{()}]/g, ''))).split(',');
     let dropDownItems = ''
     lookup.forEach(refItem => {
-      refItem = refItem.replace(/\<i\>|\<\/i\>/g, '')
+      refItem = refItem.replace(/\<i\>|\<\/i\>/g, '') // Get rid of italic markup
       let re = references.find(function(r) { return r.referencekey === refItem.trim()})
       if (re) {
         dropDownItems += '<b-dropdown-item :custom="true">' + re.reference + '</b-dropdown-item>'
