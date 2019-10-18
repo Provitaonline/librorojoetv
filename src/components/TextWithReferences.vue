@@ -25,8 +25,7 @@ function addReferenceDropdowns(data, references) {
         dropDownItems += '<b-dropdown-item :custom="true">' + re.reference + '</b-dropdown-item>'
       }
     })
-    let referenceEntry = references.find(function(r) { return r.referencekey === (lookup[0]).trim()})
-    if (referenceEntry) {
+    if (dropDownItems != '') {
       let dropdown =
         '<b-dropdown><a slot="trigger" href="">' + match + '</a>' + dropDownItems + '</b-dropdown>'
       return (dropdown.trim())
