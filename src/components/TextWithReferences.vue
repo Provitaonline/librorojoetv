@@ -25,17 +25,46 @@ function addReferenceDropdowns(data, references) {
       refItem = refItem.replace(/\<i\>|\<\/i\>/g, '') // Get rid of italic markup
       let re = references.find(function(r) { return r.referencekey === refItem.trim()})
       if (re) {
-        dropDownItems += '<b-dropdown-item :custom="true">' + re.reference + '</b-dropdown-item>'
+        dropDownItems += `
+          <div class="dropdown-item">
+            <p>` + re.reference + `</p>
+          </div>
+        `
       }
     })
     if (dropDownItems != '') {
-      let dropdown =
-        '<b-dropdown><a slot="trigger" href="">' + match + '</a>' + dropDownItems + '</b-dropdown>'
+      let dropdown = `
+        <div style="margin-left: 0; display: inline;" class="dropdown reference-dropdown">
+          <a @click="dropDownClick" class="dropdown-trigger" href="">` + match + `</a>
+          <div style="width:50vw; position: absolute;" class="dropdown-menu">
+            <div class="dropdown-content">` + dropDownItems + `</div>
+          </div>
+        </div>`
       return (dropdown.trim())
     }
     return match
   })
-  return '<p>' + r + '</p>'
+  return '<div>' + r  + '</div>'
+}
+
+function closeDropdowns(dropdownElements, el) {
+  Array.from(dropdownElements).forEach(function (element) {
+    if (element != el) {
+      element.classList.remove('is-active');
+    }
+  })
+}
+
+function documentClickHandler() {
+  let dropdownElements = document.getElementsByClassName('reference-dropdown')
+  closeDropdowns(dropdownElements)
+}
+
+function documentKeyHandler(event) {
+  if (event.keyCode === 27) {
+    let dropdownElements = document.getElementsByClassName('reference-dropdown')
+    closeDropdowns(dropdownElements)
+  }
 }
 
 export default {
@@ -46,7 +75,16 @@ export default {
   },
   data () {
     return {
+      position: 'is-top-right'
     }
+  },
+  mounted() {
+    document.addEventListener('click', documentClickHandler)
+    document.addEventListener('keyup', documentKeyHandler)
+  },
+  beforeDestroy() {
+    document.removeEventListener('click', documentClickHandler)
+    document.removeEventListener('keyup', documentKeyHandler)
   },
   components: {
     VRuntimeTemplate
@@ -54,8 +92,17 @@ export default {
   methods: {
     injectReferences: function() {
       return addReferenceDropdowns(this.text, this.refs)
-      //return '<p><b-tooltip position="is-bottom" size="is-medium" multilined label="here is a e sdf sfd sdf sd fsdf s df s df sdf sd f sd fs df ssdsdfsdsfdfs  sfdsdfsdf">TEST REF</b-tooltip>' + this.text + '</p>'
-      return '<p>fwef wef we rwe rt wer we rwe r wer we rw er we rwe r wer werwerwerwer <b-dropdown><a href="" slot="trigger"><b>(Huber 1988) </b></a><b-dropdown-item :custom="true">Arismendi, J. (2007). Presentación geográfica de las formas de relieve. Pp.128-183. En: M. Aguilera, R. Anderssen, J. Arismendi, J. Córdova Rodríguez, G. Elizalde, A.J. Gabaldón, M. González Sanabria, A. Hernández Arocha, O. Huber, V. Jiménez, J. Méndez Baamondes, N. Orihuela Guevara, R. Pérez-Hernández, A. Rosales, J. Vitoria & L. Vivas. Geo Venezuela. Tomo 2: Medio físico y recursos ambientales.</b-dropdown-item></b-dropdown>' + this.text + '</p>'
+    },
+    dropDownClick: function(e) {
+      closeDropdowns(document.getElementsByClassName('reference-dropdown'), e.target.parentElement)
+      if (e.target.parentElement.offsetLeft > window.innerWidth / 2) {
+        e.target.parentElement.classList.add('is-right')
+      } else {
+        e.target.parentElement.classList.remove('is-right')
+      }
+      e.target.parentElement.classList.toggle('is-active')
+      e.preventDefault()
+      e.stopPropagation()
     }
   }
 }
