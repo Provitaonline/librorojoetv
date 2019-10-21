@@ -342,7 +342,6 @@
 
   export default {
     created() {
-      console.log(this.$page.vegetationCardReferences)
     },
     data() {
       return {
@@ -370,9 +369,9 @@
       }
     },
     components: {
-        VueCompareImage: () => import ('vue-compare-image').then(m => m),
-        //vuIcon
-        TextWithReferences
+      VueCompareImage: () => import ('vue-compare-image').then(m => m),
+      //vuIcon
+      TextWithReferences
     },
     methods: {
       redOrGreen: function(value) {
@@ -380,9 +379,12 @@
         return (value < 0) ? 'green' : 'red'
       },
       difference: function (a, b) {
+        a = (a === null ? '' : a)
+        b = (b === null ? '' : b)
         return a.replace(/[\<\>]/g, '') - b.replace(/[\<\>]/g, '')
       },
       numbernobrackets: function (a) {
+        a = (a === null ? '' : a)
         return Number(a.replace(/[\<\>]/g, ''))
       }
     }
