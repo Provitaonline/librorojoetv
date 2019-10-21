@@ -36,7 +36,7 @@ function addReferenceDropdowns(data, references) {
       let dropdown = `
         <div style="margin-left: 0; display: inline;" class="dropdown reference-dropdown">
           <a @click="dropDownClick" class="dropdown-trigger" href="">` + match + `</a>
-          <div style="width:50vw; position: absolute;" class="dropdown-menu">
+          <div style="width:50vw;" class="dropdown-menu">
             <div class="dropdown-content">` + dropDownItems + `</div>
           </div>
         </div>`
@@ -95,7 +95,7 @@ export default {
     },
     dropDownClick: function(e) {
       closeDropdowns(document.getElementsByClassName('reference-dropdown'), e.target.parentElement)
-      if (e.target.parentElement.offsetLeft > window.innerWidth / 2) {
+      if (e.target.parentElement.offsetLeft > window.innerWidth / 2.3) {
         e.target.parentElement.classList.add('is-right')
       } else {
         e.target.parentElement.classList.remove('is-right')
