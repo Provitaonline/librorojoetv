@@ -6,6 +6,7 @@
 
 module.exports = {
   siteName: 'Libro Rojo ETV',
+  runtimeCompiler: true,
   plugins: [
     {
       use: '@gridsome/source-filesystem',
@@ -19,6 +20,13 @@ module.exports = {
       options: {
         path: 'content/home.md',
         typeName: 'HomeData'
+      }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'content/vcards-references.md',
+        typeName: 'VegetationCardReferences'
       }
     }
   ],
