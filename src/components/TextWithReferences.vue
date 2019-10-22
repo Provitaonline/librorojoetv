@@ -17,10 +17,11 @@
 
 import VRuntimeTemplate from "v-runtime-template"
 
-function addReferenceDropdowns(data, references) {
+function addReferenceDropdowns(data, references, photos) {
   let r = data.replace(/\(.*?\)/g, function (match, offset) {
     let lookup = ((match.replace(/[{()}]/g, ''))).split(',');
     let dropDownItems = ''
+    let photoItems = ''
     lookup.forEach(refItem => {
       refItem = refItem.replace(/\<i\>|\<\/i\>/g, '') // Get rid of italic markup
       let re = references.find(function(r) { return r.referencekey === refItem.trim()})
@@ -42,13 +43,37 @@ function addReferenceDropdowns(data, references) {
         </div>`
       return (dropdown.trim())
     }
+    if (photos) {
+      lookup.forEach(refItem => {
+        let pIdx = photos.findIndex(function(p) { return p.photokey === refItem.trim()})
+        if (pIdx >= 0) {
+          photoItems += `
+            <a @click="photoClick">` + match + `</a>
+            <div class="modal photo-modal">
+              <div @click="closePhotoModal" class="modal-background"></div>
+              <div class="modal-content">
+                <g-image :src="photos[` + pIdx + `].photourl"></g-image>
+                <figcaption class="has-text-centered">
+                  <div class="is-size-7 has-text-white" v-html="photos[` + pIdx + `].photocaption">
+                  </div>
+                </figcaption>
+              </div>
+              <button @click="closePhotoModal" class="modal-close is-large" aria-label="close"></button>
+            </div>
+          `
+        }
+      })
+      if (photoItems != '') {
+        return (photoItems.trim())
+      }
+    }
     return match
   })
   return '<div>' + r  + '</div>'
 }
 
-function closeDropdowns(dropdownElements, el) {
-  Array.from(dropdownElements).forEach(function (element) {
+function closePopovers(elements, el) {
+  Array.from(elements).forEach(function (element) {
     if (element != el) {
       element.classList.remove('is-active');
     }
@@ -56,14 +81,13 @@ function closeDropdowns(dropdownElements, el) {
 }
 
 function documentClickHandler() {
-  let dropdownElements = document.getElementsByClassName('reference-dropdown')
-  closeDropdowns(dropdownElements)
+  closePopovers(document.getElementsByClassName('reference-dropdown'))
 }
 
 function documentKeyHandler(event) {
   if (event.keyCode === 27) {
-    let dropdownElements = document.getElementsByClassName('reference-dropdown')
-    closeDropdowns(dropdownElements)
+    closePopovers(document.getElementsByClassName('reference-dropdown'))
+    closePopovers(document.getElementsByClassName('photo-modal'))
   }
 }
 
@@ -71,11 +95,12 @@ export default {
   name: 'TextWithReferences',
   props: {
     text: { type: String, required: true },
-    refs: { type: Array, required: true }
+    refs: { type: Array, required: true },
+    photos: {type: Array, required: false}
   },
   data () {
     return {
-      position: 'is-top-right'
+      isImageModalActive: false
     }
   },
   mounted() {
@@ -89,18 +114,29 @@ export default {
   components: {
     VRuntimeTemplate
   },
+  computed: {
+    imageModalActive() {
+      return this.isImageModalActive
+    }
+  },
   methods: {
     injectReferences: function() {
-      return addReferenceDropdowns(this.text, this.refs)
+      return addReferenceDropdowns(this.text, this.refs, this.photos)
     },
     dropDownClick: function(e) {
       let referenceDropdownElement = e.target.closest('.reference-dropdown')
-      closeDropdowns(document.getElementsByClassName('reference-dropdown'), referenceDropdownElement)
+      closePopovers(document.getElementsByClassName('reference-dropdown'), referenceDropdownElement)
       let offset =  (window.innerWidth / 2) - referenceDropdownElement.offsetLeft - 40
       referenceDropdownElement.querySelector('.dropdown-menu').setAttribute('style', 'width:40vw; left: ' + Math.min(0,offset) + 'px')
       referenceDropdownElement.classList.toggle('is-active')
       e.preventDefault()
       e.stopPropagation()
+    },
+    photoClick: function(e) {
+      e.target.nextElementSibling.classList.toggle('is-active')
+    },
+    closePhotoModal: function(e) {
+      e.target.closest('.photo-modal').classList.toggle('is-active')
     }
   }
 }

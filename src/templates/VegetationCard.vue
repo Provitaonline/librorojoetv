@@ -29,7 +29,11 @@
             <div class="section-header box is-size-3 is-size-4-mobile has-text-weight-bold has-text-centered">Descripción</div>
             <div class="tile is-parent">
               <div class="tile is-child box is-size-5">
-                <TextWithReferences :text="$page.vegetationCard.description" :refs="$page.vegetationCardReferences.references"></TextWithReferences>
+                <TextWithReferences
+                  :text="$page.vegetationCard.description"
+                  :refs="$page.vegetationCardReferences.references"
+                  :photos="$page.vegetationCard.photos">
+                </TextWithReferences>
               </div>
             </div>
             <div class="section-header box is-size-3 is-size-4-mobile has-text-weight-bold has-text-centered">Distribución</div>
@@ -206,6 +210,11 @@
         zone
         area
         threatcategories
+      }
+      photos {
+        photokey
+        photourl
+        photocaption
       }
     }
     vegetationCardReferences: vegetationCardReferences (path: "/content/vcards-references") {
