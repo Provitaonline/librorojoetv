@@ -17,7 +17,7 @@
 
 import VRuntimeTemplate from "v-runtime-template"
 
-function addReferenceDropdowns(data, references, photos) {
+function addPopovers(data, references, photos) {
   let r = data.replace(/\(.*?\)/g, function (match, offset) {
     let lookup = ((match.replace(/[{()}]/g, ''))).split(',');
     let dropDownItems = ''
@@ -48,10 +48,9 @@ function addReferenceDropdowns(data, references, photos) {
         let pIdx = photos.findIndex(function(p) { return p.photokey === refItem.trim()})
         if (pIdx >= 0) {
           photoItems += `
-            <a @click="photoClick">` + match + `</a>
-            <div class="modal photo-modal">
+            <a @click="photoClick">` + (pIdx > 0 ? ', ' :  '' ) + refItem.trim() + `</a><div class="modal photo-modal">
               <div @click="closePhotoModal" class="modal-background"></div>
-              <div class="modal-content">
+              <div class="modal-content has-text-centered">
                 <g-image :src="photos[` + pIdx + `].photourl"></g-image>
                 <figcaption class="has-text-centered">
                   <div class="is-size-7 has-text-white" v-html="photos[` + pIdx + `].photocaption">
@@ -64,7 +63,7 @@ function addReferenceDropdowns(data, references, photos) {
         }
       })
       if (photoItems != '') {
-        return (photoItems.trim())
+        return ('(' + photoItems.trim().replace(/\n|\r/g, "") + ')')
       }
     }
     return match
@@ -121,7 +120,7 @@ export default {
   },
   methods: {
     injectReferences: function() {
-      return addReferenceDropdowns(this.text, this.refs, this.photos)
+      return addPopovers(this.text, this.refs, this.photos)
     },
     dropDownClick: function(e) {
       let referenceDropdownElement = e.target.closest('.reference-dropdown')

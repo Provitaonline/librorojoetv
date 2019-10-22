@@ -29,11 +29,11 @@
             <div class="section-header box is-size-3 is-size-4-mobile has-text-weight-bold has-text-centered">Descripción</div>
             <div class="tile is-parent">
               <div class="tile is-child box is-size-5">
-                <TextWithReferences
+                <TextWithRefsAndPhotos
                   :text="$page.vegetationCard.description"
                   :refs="$page.vegetationCardReferences.references"
                   :photos="$page.vegetationCard.photos">
-                </TextWithReferences>
+                </TextWithRefsAndPhotos>
               </div>
             </div>
             <div class="section-header box is-size-3 is-size-4-mobile has-text-weight-bold has-text-centered">Distribución</div>
@@ -45,7 +45,7 @@
                     <g-image v-if="$page.vegetationCard.distributionmap" :src="$page.vegetationCard.distributionmap" />
                     <p class="is-size-7 has-text-right"><i>Huber y Oliveira-Miranda (2010)</i></p>
                   </div>
-                  <TextWithReferences :text="$page.vegetationCard.distribution" :refs="$page.vegetationCardReferences.references"></TextWithReferences>
+                  <TextWithRefsAndPhotos :text="$page.vegetationCard.distribution" :refs="$page.vegetationCardReferences.references"></TextWithRefsAndPhotos>
                 </div>
               </div>
             </div>
@@ -338,7 +338,7 @@
 <script>
 
   import siteConfig from '~/data/siteConfig.json'
-  import TextWithReferences from '~/components/TextWithReferences.vue'
+  import TextWithRefsAndPhotos from '~/components/TextWithRefsAndPhotos.vue'
 
   let threatCategoryIcons = {}
   for (let key in siteConfig.threatCategories) {
@@ -376,7 +376,7 @@
     components: {
       VueCompareImage: () => import ('vue-compare-image').then(m => m),
       //vuIcon
-      TextWithReferences
+      TextWithRefsAndPhotos
     },
     methods: {
       redOrGreen: function(value) {
