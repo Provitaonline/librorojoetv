@@ -1,41 +1,42 @@
 <template>
   <div>
-    <b-navbar :close-on-click="false">
+    <ClientOnly>
+      <b-navbar :close-on-click="false">
+        <template slot="brand">
+          <b-navbar-item tag="a" href="/">
+            <g-image width="140" src="~/assets/images/librorojo.png" />
+          </b-navbar-item>
+        </template>
+        <template slot="end">
+          <b-navbar-item tag="a" href="/about">
+            ACERCA DE
+          </b-navbar-item>
+          <b-navbar-item>
+            MÉTODOS
+          </b-navbar-item>
+          <b-navbar-dropdown :arrowless="true" label="MAS INFORMACIÓN">
+              <b-navbar-item>
+                  Unidades de paisaje
+              </b-navbar-item>
+              <b-navbar-item>
+                  Casos de estudio
+              </b-navbar-item>
+          </b-navbar-dropdown>
+          <b-navbar-item tag="a" href="/contact">
+            CONTACTO
+          </b-navbar-item>
+          <b-navbar-dropdown :arrowless="true" label="COMPARTIR">
+              <b-navbar-item>
+                <font-awesome :icon="['fab', 'facebook']"/>&nbsp;Facebook
+              </b-navbar-item>
+              <b-navbar-item>
+                <font-awesome :icon="['fab', 'twitter']"/>&nbsp;Twitter
+              </b-navbar-item>
+          </b-navbar-dropdown>
+        </template>
+      </b-navbar>
+    </ClientOnly>
 
-      <template slot="brand">
-        <b-navbar-item tag="a" href="/">
-          <g-image width="140" src="~/assets/images/librorojo.png" />
-        </b-navbar-item>
-      </template>
-      <template slot="end">
-        <b-navbar-item tag="a" href="/about">
-          ACERCA DE
-        </b-navbar-item>
-        <b-navbar-item>
-          MÉTODOS
-        </b-navbar-item>
-        <b-navbar-dropdown :arrowless="true" label="MAS INFORMACIÓN">
-            <b-navbar-item>
-                Unidades de paisaje
-            </b-navbar-item>
-            <b-navbar-item>
-                Casos de estudio
-            </b-navbar-item>
-        </b-navbar-dropdown>
-        <b-navbar-item tag="a" href="/contact">
-          CONTACTO
-        </b-navbar-item>
-        <b-navbar-dropdown :arrowless="true" label="COMPARTIR">
-            <b-navbar-item>
-              <font-awesome :icon="['fab', 'facebook']"/>&nbsp;Facebook
-            </b-navbar-item>
-            <b-navbar-item>
-              <font-awesome :icon="['fab', 'twitter']"/>&nbsp;Twitter
-            </b-navbar-item>
-        </b-navbar-dropdown>
-      </template>
-    </b-navbar>
-    
     <main>
       <slot />
     </main>
