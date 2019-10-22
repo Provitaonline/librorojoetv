@@ -304,31 +304,27 @@
     display: inline-block;
   }
 
-</style>
-
-<style lang="scss">
-  .handle {
+  ::v-deep .handle {
     border: 2px solid gray !important;
   }
 
-  .right-arrow {
+  ::v-deep .right-arrow {
     border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) gray !important;
   }
 
-  .left-arrow {
+  ::v-deep .left-arrow {
     border-color: rgba(0, 0, 0, 0) gray rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) !important;
   }
 
-  .line {
+  ::v-deep .line {
     background: gray !important;
   }
 
-  .left-label, .right-label {
+  ::v-deep .left-label, .right-label {
     font-weight: bold !important;
   }
 
 </style>
-
 
 <script>
 
