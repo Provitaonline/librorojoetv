@@ -52,7 +52,7 @@ function addPopovers(data, references, photos) {
               <div @click="closePhotoModal" class="modal-background"></div>
               <div class="modal-content has-text-centered">
                 <figure style="padding: 2%;">
-                  <g-image :src="photos[` + pIdx + `].photourl"></g-image>
+                  <g-image style="max-height: calc(100vh - 120px); width: auto;" :src="photos[` + pIdx + `].photourl"></g-image>
                 </figure>
                 <figcaption class="has-text-centered">
                   <div class="is-size-7 has-text-white" v-html="photos[` + pIdx + `].photocaption">
