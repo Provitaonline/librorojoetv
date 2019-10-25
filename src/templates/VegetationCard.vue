@@ -329,8 +329,8 @@
     background: gray !important;
   }
 
-  ::v-deep .left-label, .right-label {
-    font-weight: bold !important;
+  ::v-deep .left-label, ::v-deep .right-label {
+    font-weight: bold;
   }
 
 </style>

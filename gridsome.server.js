@@ -14,3 +14,22 @@ module.exports = function (api) {
     // Use the Pages API here: https://gridsome.org/docs/pages-api
   })
 }
+
+function useProcessedImages (api, options) {
+  const fs = require('fs-extra')
+  const { info } = require('gridsome/lib/utils/log')
+  api.afterBuild(() => {
+    info(`After build... copy ${api.config.imagesDir} to  ./${options.processedImagesDir}`)
+    fs.copySync(api.config.imagesDir, './' + options.processedImagesDir)
+  })
+  api.beforeBuild(() => {
+    info(`Before build... move ./${options.processedImagesDir} to: ${api.config.imageCacheDir}`)
+    fs.moveSync('./' + options.processedImagesDir, api.config.imageCacheDir, { overwrite: true })
+  })
+}
+
+useProcessedImages.defaultOptions = () => ({
+  processedImagesDir: 'pimages' // Relative to project root
+})
+
+module.exports = useProcessedImages
