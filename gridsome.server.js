@@ -5,8 +5,6 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
-const fs = require('fs-extra')
-
 module.exports = function (api) {
   api.loadSource(({ addContentType }) => {
     // Use the Data Store API here: https://gridsome.org/docs/data-store-api
@@ -15,13 +13,23 @@ module.exports = function (api) {
   api.createPages(({ createPage }) => {
     // Use the Pages API here: https://gridsome.org/docs/pages-api
   })
+}
 
+function useProcessedImages (api, options) {
+  const fs = require('fs-extra')
+  const { info } = require('gridsome/lib/utils/log')
   api.afterBuild(() => {
-    console.log('After build... copy to: ', api.config.imagesDir)
-    fs.copySync(api.config.imagesDir, './pimages')
+    info(`After build... copy ${api.config.imagesDir} to  ./${options.processedImagesDir}`)
+    fs.copySync(api.config.imagesDir, './' + options.processedImagesDir)
   })
   api.beforeBuild(() => {
-    console.log('Before build... move to: ', api.config.imageCacheDir)
-    fs.moveSync('./pimages', api.config.imageCacheDir, { overwrite: true })
+    info(`Before build... move ./${options.processedImagesDir} to: ${api.config.imageCacheDir}`)
+    fs.moveSync('./' + options.processedImagesDir, api.config.imageCacheDir, { overwrite: true })
   })
 }
+
+useProcessedImages.defaultOptions = () => ({
+  processedImagesDir: 'pimages' // Relative to project root
+})
+
+module.exports = useProcessedImages
