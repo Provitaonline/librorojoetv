@@ -17,6 +17,10 @@
 
 import VRuntimeTemplate from "v-runtime-template"
 
+var unified = require('unified')
+var html = require('remark-html')
+var markdown = require('remark-parse')
+
 function addPopovers(data, references, photos) {
   let r = data.replace(/\(.*?\)/g, function (match, offset) {
     let lookup = ((match.replace(/[{()}]/g, ''))).split(',');
@@ -107,6 +111,13 @@ export default {
   mounted() {
     document.addEventListener('click', documentClickHandler)
     document.addEventListener('keyup', documentKeyHandler)
+
+    unified()
+      .use(markdown)
+      .use(html)
+      .process(this.text, function (err, result) {
+        console.log(String(result))
+      })
   },
   beforeDestroy() {
     document.removeEventListener('click', documentClickHandler)
