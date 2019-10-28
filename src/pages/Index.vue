@@ -20,7 +20,6 @@
           <ClientOnly>
             <l-map @leaflet:load="mapReady"
               ref="theMap"
-              :center="center"
               :maxBounds="maxBounds"
               :bounds="initialBounds"
               :options="mapOptions"
@@ -266,15 +265,16 @@
         mapLabel: '',
         zoom: 7,
         minZoom: 5,
-        initialBounds: [[12.1623070337, -73.3049515449], [0.724452215982, -59.7582848782]],
+        initialBounds: [[13, -73], [0.6, -59]],
         maxBounds: [[13, -74], [0.5, -58]],
-        center: [6.4238, -66.5897],
+        center: [6.42, -66.59 ],
         //url: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}",
         url: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Terrain_Base/MapServer/tile/{z}/{y}/{x}",
         //url: "https://server.arcgisonline.com/ArcGIS/rest/services/Ocean/World_Ocean_Base/MapServer/tile/{z}/{y}/{x}",
         //url: "https://services.arcgisonline.com/arcgis/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",
         tileLayerOptions: {
-          attribution: 'Tiles © Esri — Source: <a href="https://www.arcgis.com/home/item.html?id=30e5fe3149c34df1ba922e6f5bbf808f">ArcGIS World Topographic Map</a>',
+          //attribution: 'Tiles © Esri — Source: <a href="https://www.arcgis.com/home/item.html?id=30e5fe3149c34df1ba922e6f5bbf808f">ArcGIS World Topographic Map</a>',
+          attribution: 'Tiles © Esri — Source: <a href="https://www.arcgis.com/home/item.html?id=c61ad8ab017d49e1a82f580ee1298931">ArcGIS World Terrain Base</a>',
           maxNativeZoom: 9
         },
         vegetationLayer: null,
