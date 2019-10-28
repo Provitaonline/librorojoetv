@@ -22,6 +22,7 @@
               ref="theMap"
               :center="center"
               :maxBounds="maxBounds"
+              :bounds="initialBounds"
               :options="mapOptions"
               :zoom="zoom"
               :minZoom="minZoom"
@@ -32,6 +33,10 @@
               <l-geo-json :geojson="venezuelaLayer" :options="venezuelaLayerOptions" />
               <l-geo-json :geojson="saxicolaLayer" :options="saxicolaLayerOptions" />
               <l-geo-json :geojson="vegetationLayer" :options="vegetationLayerOptions" />
+
+              <l-control class="leaflet-control leaflet-bar" position="topleft" >
+                <a href="#" title="Reset View"><font-awesome size="lg" :icon="['fas', 'sync-alt']"/></a>
+              </l-control>
 
               <l-marker :options="{interactive: false}" :lat-lng="[10.5418, -66.9067]">
                 <l-icon>
@@ -177,7 +182,7 @@
   import slugify from 'slugify';
   import * as topojson from 'topojson-client'
 
-  var latLng, icon, circleMarker, latLngBounds;
+  var latLng, icon, circleMarker;
   if (process.isClient) {
     icon = require('leaflet').Icon
     circleMarker = require('leaflet').circleMarker
@@ -188,7 +193,6 @@
       shadowUrl: require('leaflet/dist/images/marker-shadow.png')
     })
     latLng =  require('leaflet').latLng
-    latLngBounds = require('leaflet').latLngBounds
   }
 
   export default {
@@ -198,6 +202,9 @@
         isLoading: true,
         zoom: 7,
         minZoom: 5,
+        initialBounds: [[12.1623070337, -73.3049515449], [0.724452215982, -59.7582848782]],
+        maxBounds: [[13, -74], [0.5, -58]],
+        center: [6.4238, -66.5897],
         //url: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}",
         url: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Terrain_Base/MapServer/tile/{z}/{y}/{x}",
         //url: "https://server.arcgisonline.com/ArcGIS/rest/services/Ocean/World_Ocean_Base/MapServer/tile/{z}/{y}/{x}",
@@ -211,7 +218,9 @@
         venezuelaLayer: null,
         mapOptions: {
           scrollWheelZoom: false,
-          zoomSnap: 0.5
+          markerZoomAnimation: false,
+          zoomDelta: 0.2,
+          zoomSnap: 0.1
         },
         venezuelaLayerOptions: {
           style: function(feature) {
@@ -286,6 +295,9 @@
     },
     components: {
     },
+    created() {
+
+    },
     mounted () {
       axios.get('/mapdata/FormacionesVegetales.topojson').then((response) => {
         this.vegetationLayer = topojson.feature(response.data, response.data.objects.FormacionesVegetales)
@@ -299,24 +311,10 @@
       })
     },
     updated() {
-      if (process.isClient) {
-        let mb = latLngBounds(latLng(12.1623070337, -73.3049515449), latLng(0.724452215982, -59.7582848782))
-        if (this.$refs.theMap) {
-          this.$refs.theMap.fitBounds(mb)
-        }
-      }
+
     },
     computed: {
-      center() {
-        if (process.isClient) {
-          return latLng(6.4238, -66.5897)
-        }
-      },
-      maxBounds() {
-        if (process.isClient) {
-          return latLngBounds(latLng(13, -74), latLng(0.5, -58))
-        }
-      }
+
     },
     methods: {
       columnItems(g) {
@@ -346,7 +344,6 @@
         //this.isLoading = false;
       },
       zoomUpdated(zoom) {
-        console.log(zoom, (7/8) * 1.25)
         let elements = document.getElementsByClassName('map-label')
         Array.from(elements).forEach(function (element) {
           element.setAttribute('style', 'font-size:' +  (zoom/8) * 1.25 + 'rem; margin-left: -2rem')

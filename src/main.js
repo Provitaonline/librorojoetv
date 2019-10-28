@@ -13,10 +13,10 @@ import VueScrollTo from 'vue-scrollto'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { config, library } from '@fortawesome/fontawesome-svg-core'
 import { faFacebook, faTwitter } from '@fortawesome/free-brands-svg-icons'
-import { faArrowDown, faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons'
+import { faArrowDown, faAngleDoubleDown, faSyncAlt } from '@fortawesome/free-solid-svg-icons'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false;
-library.add(faFacebook, faTwitter, faArrowDown, faAngleDoubleDown)
+library.add(faFacebook, faTwitter, faArrowDown, faAngleDoubleDown, faSyncAlt)
 
 export default function (Vue, { router, head, isClient }) {
   head.htmlAttrs = { lang: 'es' }
@@ -35,6 +35,7 @@ export default function (Vue, { router, head, isClient }) {
     Vue.component('l-geo-json', () => import ('vue2-leaflet').then(m => m.LGeoJson))
     Vue.component('l-marker', () => import ('vue2-leaflet').then(m => m.LMarker))
     Vue.component('l-icon', () => import ('vue2-leaflet').then(m => m.LIcon))
+    Vue.component('l-control', () => import ('vue2-leaflet').then(m => m.LControl))
   }
 
 }
