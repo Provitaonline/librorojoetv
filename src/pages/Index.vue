@@ -26,10 +26,25 @@
               :zoom="zoom"
               :minZoom="minZoom"
               style="height: 100%"
+              @update:zoom="zoomUpdated"
             >
               <l-tile-layer @load="tileLayerReady" :url="url" :options="tileLayerOptions" />
+              <l-geo-json :geojson="venezuelaLayer" :options="venezuelaLayerOptions" />
               <l-geo-json :geojson="saxicolaLayer" :options="saxicolaLayerOptions" />
               <l-geo-json :geojson="vegetationLayer" :options="vegetationLayerOptions" />
+
+              <l-marker :options="{interactive: false}" :lat-lng="[10.5418, -66.9067]">
+                <l-icon>
+                  <div class="map-label map-city-label">Caracas</div>
+                </l-icon>
+              </l-marker>
+
+              <l-marker :options="{interactive: false}" :lat-lng="[11.2430, -66.2255]">
+                <l-icon>
+                  <div class="map-label map-ocean-label">Mar&nbsp;Caribe</div>
+                </l-icon>
+              </l-marker>
+
               <b-loading :is-full-page="false" :active.sync="isLoading"></b-loading>
             </l-map>
           </ClientOnly>
@@ -146,6 +161,15 @@
     padding-bottom: 4px;
   }
 
+  .map-city-label {
+
+  }
+
+  .map-ocean-label {
+    color: #2D60AB;
+    font-style: italic;
+  }
+
 </style>
 
 <script>
@@ -174,17 +198,42 @@
         isLoading: true,
         zoom: 7,
         minZoom: 5,
-        url: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}",
+        //url: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}",
+        url: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Terrain_Base/MapServer/tile/{z}/{y}/{x}",
         //url: "https://server.arcgisonline.com/ArcGIS/rest/services/Ocean/World_Ocean_Base/MapServer/tile/{z}/{y}/{x}",
         //url: "https://services.arcgisonline.com/arcgis/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",
         tileLayerOptions: {
-          attribution: 'Tiles © Esri — Source: <a href="https://www.arcgis.com/home/item.html?id=30e5fe3149c34df1ba922e6f5bbf808f">ArcGIS World Topographic Map</a>'
+          attribution: 'Tiles © Esri — Source: <a href="https://www.arcgis.com/home/item.html?id=30e5fe3149c34df1ba922e6f5bbf808f">ArcGIS World Topographic Map</a>',
+          maxNativeZoom: 9
         },
         vegetationLayer: null,
         saxicolaLayer: null,
+        venezuelaLayer: null,
         mapOptions: {
           scrollWheelZoom: false,
           zoomSnap: 0.5
+        },
+        venezuelaLayerOptions: {
+          style: function(feature) {
+            if (feature.properties.T_VE === 'Cuerpos de agua') {
+              return {
+                weight: 0,
+                opacity: 0,
+                fillOpacity: 1,
+                fillColor: '#BDE6E0',
+                interactive: false
+              }
+            } else {
+              return {
+                weight: 1,
+                color: '#696969',
+                dashArray: '2,3',
+                opacity: 1,
+                fillOpacity: 0,
+                interactive: false
+              }
+            }
+          }
         },
         saxicolaLayerOptions: {
           onEachFeature: function onEachFeature(feature, layer) {
@@ -239,10 +288,13 @@
     },
     mounted () {
       axios.get('/mapdata/FormacionesVegetales.topojson').then((response) => {
-        this.vegetationLayer = topojson.feature(response.data, response.data.objects.FormacionesVegetales);
-        axios.get('/mapdata/Saxicola.json').then((response) => {
-          this.isLoading = false;
-          this.saxicolaLayer = response.data;
+        this.vegetationLayer = topojson.feature(response.data, response.data.objects.FormacionesVegetales)
+        axios.get('/mapdata/VenezuelaNoStates.topojson').then((response) => {
+          this.venezuelaLayer = topojson.feature(response.data, response.data.objects.VenezuelaNoStates)
+          axios.get('/mapdata/Saxicola.json').then((response) => {
+            this.isLoading = false
+            this.saxicolaLayer = response.data
+          })
         })
       })
     },
@@ -262,7 +314,7 @@
       },
       maxBounds() {
         if (process.isClient) {
-          return latLngBounds(latLng(12.1623070337, -73.3049515449), latLng(0.724452215982, -59.7582848782))
+          return latLngBounds(latLng(13, -74), latLng(0.5, -58))
         }
       }
     },
@@ -292,6 +344,13 @@
         //console.log('Tile layer is ready');
         //console.log(this.$refs.theMap.mapObject);
         //this.isLoading = false;
+      },
+      zoomUpdated(zoom) {
+        console.log(zoom, (7/8) * 1.25)
+        let elements = document.getElementsByClassName('map-label')
+        Array.from(elements).forEach(function (element) {
+          element.setAttribute('style', 'font-size:' +  (zoom/8) * 1.25 + 'rem; margin-left: -2rem')
+        })
       }
     }
   }
