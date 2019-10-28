@@ -35,7 +35,7 @@
               <l-geo-json :geojson="vegetationLayer" :options="vegetationLayerOptions" />
 
               <l-control class="leaflet-control leaflet-bar" position="topleft" >
-                <a href="#" title="Reset View"><font-awesome size="lg" :icon="['fas', 'sync-alt']"/></a>
+                <a @click="resetView" href="#" title="Reset View"><font-awesome size="lg" :icon="['fas', 'sync-alt']"/></a>
               </l-control>
 
               <l-marker :options="{interactive: false}" :lat-lng="[10.5418, -66.9067]">
@@ -219,7 +219,7 @@
         mapOptions: {
           scrollWheelZoom: false,
           markerZoomAnimation: false,
-          zoomDelta: 0.2,
+          //zoomDelta: 0.2,
           zoomSnap: 0.1
         },
         venezuelaLayerOptions: {
@@ -348,6 +348,9 @@
         Array.from(elements).forEach(function (element) {
           element.setAttribute('style', 'font-size:' +  (zoom/8) * 1.25 + 'rem; margin-left: -2rem')
         })
+      },
+      resetView() {
+        this.$refs.theMap.mapObject.fitBounds(this. initialBounds)
       }
     }
   }
