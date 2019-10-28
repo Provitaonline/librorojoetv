@@ -257,6 +257,17 @@
     })
   }
 
+  async function getLayers(dataObject) {
+    let response
+    response = await axios.get('/mapdata/FormacionesVegetales.topojson')
+    dataObject.vegetationLayer = topojson.feature(response.data, response.data.objects.FormacionesVegetales)
+    response = await axios.get('/mapdata/VenezuelaNoStates.topojson')
+    dataObject.venezuelaLayer = topojson.feature(response.data, response.data.objects.VenezuelaNoStates)
+    response = await axios.get('/mapdata/Saxicola.json')
+    dataObject.saxicolaLayer = response.data
+    dataObject.isLoading = false
+  }
+
   export default {
     data() {
       let self = this
@@ -363,16 +374,7 @@
 
     },
     mounted () {
-      axios.get('/mapdata/FormacionesVegetales.topojson').then((response) => {
-        this.vegetationLayer = topojson.feature(response.data, response.data.objects.FormacionesVegetales)
-        axios.get('/mapdata/VenezuelaNoStates.topojson').then((response) => {
-          this.venezuelaLayer = topojson.feature(response.data, response.data.objects.VenezuelaNoStates)
-          axios.get('/mapdata/Saxicola.json').then((response) => {
-            this.isLoading = false
-            this.saxicolaLayer = response.data
-          })
-        })
-      })
+      getLayers(this)
     },
     updated() {
 
