@@ -51,7 +51,7 @@
               </l-marker>
 
               <l-control position="topright" >
-                <div class="map-info is-size-4 is-size-6-mobile"><span>{{mapLabel}}</span></div>
+                <div class="map-info is-size-4 is-size-7-mobile"><span>{{mapLabel}}</span></div>
               </l-control>
 
               <b-loading :is-full-page="false" :active.sync="isLoading"></b-loading>
