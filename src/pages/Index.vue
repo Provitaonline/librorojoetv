@@ -22,14 +22,38 @@
               ref="theMap"
               :center="center"
               :maxBounds="maxBounds"
+              :bounds="initialBounds"
               :options="mapOptions"
               :zoom="zoom"
               :minZoom="minZoom"
               style="height: 100%"
+              @update:zoom="zoomUpdated"
             >
               <l-tile-layer @load="tileLayerReady" :url="url" :options="tileLayerOptions" />
-              <l-geo-json :geojson="saxicolaLayer" :options="saxicolaLayerOptions" />
-              <l-geo-json :geojson="vegetationLayer" :options="vegetationLayerOptions" />
+              <l-geo-json :geojson="venezuelaLayer" :options="venezuelaLayerOptions" />
+              <l-geo-json ref="saxicolaLayer" :geojson="saxicolaLayer" :options="saxicolaLayerOptions" />
+              <l-geo-json ref="vegetationLayer" :geojson="vegetationLayer" :options="vegetationLayerOptions" />
+
+              <l-control class="leaflet-control leaflet-bar" position="topleft" >
+                <a @click="resetView" href="#" title="Reset View"><font-awesome size="lg" :icon="['fas', 'sync-alt']"/></a>
+              </l-control>
+
+              <l-marker :options="{interactive: false}" :lat-lng="[10.5418, -66.9067]">
+                <l-icon>
+                  <div class="map-label map-city-label">Caracas</div>
+                </l-icon>
+              </l-marker>
+
+              <l-marker :options="{interactive: false}" :lat-lng="[11.2430, -66.2255]">
+                <l-icon>
+                  <div class="map-label map-ocean-label">Mar&nbsp;Caribe</div>
+                </l-icon>
+              </l-marker>
+
+              <l-control position="topright" >
+                <div class="map-info is-size-4 is-size-7-mobile"><span>{{mapLabel}}</span></div>
+              </l-control>
+
               <b-loading :is-full-page="false" :active.sync="isLoading"></b-loading>
             </l-map>
           </ClientOnly>
@@ -38,15 +62,23 @@
           <div class="columns">
             <div v-for="i in 3" class="column">
               <div v-for="item in columnItems(i)">
-                <div style="display: flex;">
-                  <div v-if="item.legend === 'colorkey'" style="box-sizing: border-box; padding-right: 10px;"><span class="legend-item" :style="'background:' + item.color"></span></div>
-                  <div v-else-if="item.legend === 'dotkey'" style="box-sizing: border-box; padding-right: 10px;"><span class="dot" :style="'background:' + item.color"></span></div>
-                  <div style="box-sizing: border-box;"><g-link :to="makeLink(item)"> {{ item.name }}<br></g-link></div>
+                <div :id="makeId(item.name)" class="legend-box">
+                  <div v-if="item.legend === 'colorkey'" @click="legendClick(item)" class="legend-symbol"><span class="legend-item" :style="'background:' + item.color + ';'"></span></div>
+                  <div v-else-if="item.legend === 'dotkey'" @click="legendClick(item)" class="legend-symbol"><span class="dot" :style="'background:' + item.color + ';'"></span></div>
+                  <g-link :to="makeLink(item)"> {{ item.name }}</g-link>
                 </div>
+              </div>
+              <div v-if="i === 3" style="display: flex;">
+                <div>&nbsp;</div>
+              </div>
+              <div v-if="i === 3" style="display: flex;">
+                <div @click="legendClick({name: 'all'})" class="legend-symbol"><span class="legend-item" :style="'background: #f8e7e8;'"></span></div>
+                <div> <font-awesome size="sm" :icon="['fas', 'arrow-left']"/><i> Clic para ver todas</i></div>
               </div>
             </div>
           </div>
           <div class="has-text-centered">[Haz clic en uno de los títulos de la leyenda para ver la ficha de información]</div>
+          <div class="has-text-centered">[Haz clic en uno de los elementos de color para ver sólo esa formación]</div>
         </div>
         <br>
         <div class="section-header box is-size-3 is-size-4-mobile has-text-weight-bold has-text-centered">Explicación</div>
@@ -126,6 +158,23 @@
     display: inline-block;
   }
 
+  .legend-symbol {
+    cursor: pointer;
+    box-sizing:
+    border-box;
+    padding-right: 10px;
+  }
+
+  .legend-item:hover, .dot:hover {
+    border: 2px solid #BE1421;
+  }
+
+  .legend-box {
+    display: flex;
+    box-sizing:
+    border-box;
+  }
+
   .lightstripe {
     background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc1JyBoZWlnaHQ9JzUnPgogIDxyZWN0IHdpZHRoPSc1JyBoZWlnaHQ9JzUnIGZpbGw9J3doaXRlJy8+CiAgPHBhdGggZD0nTTAgNUw1IDBaTTYgNEw0IDZaTS0xIDFMMSAtMVonIHN0cm9rZT0nIzg4OCcgc3Ryb2tlLXdpZHRoPScxJy8+Cjwvc3ZnPg==");
     background-repeat: repeat;
@@ -133,9 +182,9 @@
 
   .dot {
     margin-left: 6px;
-    margin-right: 6px;
-    height: 8px;
-    width: 8px;
+    margin-right: 2px;
+    height: 12px;
+    width: 12px;
     background-color: black;
     border-radius: 50%;
     display: inline-block;
@@ -146,6 +195,27 @@
     padding-bottom: 4px;
   }
 
+  .map-info {
+    background: #f8e7e8;
+  }
+
+  .map-info span {
+    margin: 10px;
+  }
+
+  .map-info span:empty {
+    display: none;
+  }
+
+  .map-city-label {
+
+  }
+
+  .map-ocean-label {
+    color: #2D60AB;
+    font-style: italic;
+  }
+
 </style>
 
 <script>
@@ -153,7 +223,7 @@
   import slugify from 'slugify';
   import * as topojson from 'topojson-client'
 
-  var latLng, icon, circleMarker, latLngBounds;
+  var latLng, icon, circleMarker;
   if (process.isClient) {
     icon = require('leaflet').Icon
     circleMarker = require('leaflet').circleMarker
@@ -164,7 +234,28 @@
       shadowUrl: require('leaflet/dist/images/marker-shadow.png')
     })
     latLng =  require('leaflet').latLng
-    latLngBounds = require('leaflet').latLngBounds
+  }
+
+  function displaySelectedFeature(layerGroup, name, property) {
+    layerGroup.eachLayer(function (layer) {
+      if (name === layer.feature.properties[property] || name === 'all') {
+        layer.setStyle({fillOpacity: 0.95})
+      } else {
+        layer.setStyle({fillOpacity: 0})
+      }
+    })
+  }
+
+  function displayLayer(layerGroup) {
+    layerGroup.eachLayer(function (layer) {
+      layer.setStyle({fillOpacity: 1, opacity: 1})
+    })
+  }
+
+  function hideLayer(layerGroup) {
+    layerGroup.eachLayer(function (layer) {
+      layer.setStyle({fillOpacity: 0, opacity: 0})
+    })
   }
 
   export default {
@@ -172,19 +263,50 @@
       let self = this
       return {
         isLoading: true,
+        mapLabel: '',
         zoom: 7,
         minZoom: 5,
-        url: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}",
+        initialBounds: [[12.1623070337, -73.3049515449], [0.724452215982, -59.7582848782]],
+        maxBounds: [[13, -74], [0.5, -58]],
+        center: [6.4238, -66.5897],
+        //url: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}",
+        url: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Terrain_Base/MapServer/tile/{z}/{y}/{x}",
         //url: "https://server.arcgisonline.com/ArcGIS/rest/services/Ocean/World_Ocean_Base/MapServer/tile/{z}/{y}/{x}",
         //url: "https://services.arcgisonline.com/arcgis/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",
         tileLayerOptions: {
-          attribution: 'Tiles © Esri — Source: <a href="https://www.arcgis.com/home/item.html?id=30e5fe3149c34df1ba922e6f5bbf808f">ArcGIS World Topographic Map</a>'
+          attribution: 'Tiles © Esri — Source: <a href="https://www.arcgis.com/home/item.html?id=30e5fe3149c34df1ba922e6f5bbf808f">ArcGIS World Topographic Map</a>',
+          maxNativeZoom: 9
         },
         vegetationLayer: null,
         saxicolaLayer: null,
+        venezuelaLayer: null,
         mapOptions: {
           scrollWheelZoom: false,
-          zoomSnap: 0.5
+          markerZoomAnimation: false,
+          //zoomDelta: 0.2,
+          zoomSnap: 0.1
+        },
+        venezuelaLayerOptions: {
+          style: function(feature) {
+            if (feature.properties.T_VE === 'Cuerpos de agua') {
+              return {
+                weight: 0,
+                opacity: 0,
+                fillOpacity: 1,
+                fillColor: '#BDE6E0',
+                interactive: false
+              }
+            } else {
+              return {
+                weight: 1,
+                color: '#696969',
+                dashArray: '2,3',
+                opacity: 1,
+                fillOpacity: 0,
+                interactive: false
+              }
+            }
+          }
         },
         saxicolaLayerOptions: {
           onEachFeature: function onEachFeature(feature, layer) {
@@ -237,34 +359,26 @@
     },
     components: {
     },
+    created() {
+
+    },
     mounted () {
       axios.get('/mapdata/FormacionesVegetales.topojson').then((response) => {
-        this.vegetationLayer = topojson.feature(response.data, response.data.objects.FormacionesVegetales);
-        axios.get('/mapdata/Saxicola.json').then((response) => {
-          this.isLoading = false;
-          this.saxicolaLayer = response.data;
+        this.vegetationLayer = topojson.feature(response.data, response.data.objects.FormacionesVegetales)
+        axios.get('/mapdata/VenezuelaNoStates.topojson').then((response) => {
+          this.venezuelaLayer = topojson.feature(response.data, response.data.objects.VenezuelaNoStates)
+          axios.get('/mapdata/Saxicola.json').then((response) => {
+            this.isLoading = false
+            this.saxicolaLayer = response.data
+          })
         })
       })
     },
     updated() {
-      if (process.isClient) {
-        let mb = latLngBounds(latLng(12.1623070337, -73.3049515449), latLng(0.724452215982, -59.7582848782))
-        if (this.$refs.theMap) {
-          this.$refs.theMap.fitBounds(mb)
-        }
-      }
+
     },
     computed: {
-      center() {
-        if (process.isClient) {
-          return latLng(6.4238, -66.5897)
-        }
-      },
-      maxBounds() {
-        if (process.isClient) {
-          return latLngBounds(latLng(12.1623070337, -73.3049515449), latLng(0.724452215982, -59.7582848782))
-        }
-      }
+
     },
     methods: {
       columnItems(g) {
@@ -283,6 +397,9 @@
           return 'vcards/' + slugify(it.name, {lower: true})
         }
       },
+      makeId(t) {
+        return(slugify(t, {lower: true}))
+      },
       mapReady() {
         //console.log('Map is ready');
         //console.log(this.$refs.theMap.mapObject);
@@ -292,6 +409,44 @@
         //console.log('Tile layer is ready');
         //console.log(this.$refs.theMap.mapObject);
         //this.isLoading = false;
+      },
+      zoomUpdated(zoom) {
+        let elements = document.getElementsByClassName('map-label')
+        Array.from(elements).forEach(function (element) {
+          element.setAttribute('style', 'font-size:' +  (zoom/8) * 1.25 + 'rem; margin-left: -2rem')
+        })
+      },
+      resetView() {
+        this.$refs.theMap.mapObject.fitBounds(this. initialBounds)
+      },
+      legendClick(item) {
+        //console.log('legend click', this.$refs.saxicolaLayer.mapObject)
+        displaySelectedFeature(this.$refs.vegetationLayer.mapObject, item.name, 'T_VE')
+        if (item.name === 'Vegetación saxícola' || item.name === 'all') {
+          displayLayer(this.$refs.saxicolaLayer.mapObject)
+        } else {
+          hideLayer(this.$refs.saxicolaLayer.mapObject)
+        }
+
+        Array.from(document.getElementsByClassName('legend-box')).forEach(function (element) {
+          element.setAttribute('style', 'background: none;')
+        })
+
+        if (item.name != 'all') {
+          this.mapLabel = item.name
+          document.getElementById(this.makeId(item.name)).setAttribute('style', 'background: #f8e7e8;')
+        } else {
+          this.mapLabel = ''
+        }
+
+        /*this.$refs.vegetationLayer.mapObject.eachLayer(function (layer) {
+          if (item.name === layer.feature.properties.T_VE) {
+            layer.setStyle({fillOpacity: 0.95})
+            console.log(layer.feature.properties.T_VE)
+          } else {
+            layer.setStyle({fillOpacity: 0})
+          }
+        }) */
       }
     }
   }
