@@ -257,14 +257,24 @@
     })
   }
 
-  async function getLayers(dataObject) {
+  async function getLayers(dataObject, geoJsonLayers) {
     let response
+    //geoJsonLayers.forEach(function(l) {
+    for (let l of geoJsonLayers) {
+      response = await axios.get(l.url)
+      if (l.isTopoJson) {
+        dataObject[l.targetDataItem] = topojson.feature(response.data, response.data.objects[l.topoJsonObject])
+      } else {
+        dataObject[l.targetDataItem] = response.data
+      }
+    }
+    /*let response
     response = await axios.get('/mapdata/FormacionesVegetales.topojson')
     dataObject.vegetationLayer = topojson.feature(response.data, response.data.objects.FormacionesVegetales)
     response = await axios.get('/mapdata/VenezuelaNoStates.topojson')
     dataObject.venezuelaLayer = topojson.feature(response.data, response.data.objects.VenezuelaNoStates)
     response = await axios.get('/mapdata/Saxicola.json')
-    dataObject.saxicolaLayer = response.data
+    dataObject.saxicolaLayer = response.data */
     dataObject.isLoading = false
   }
 
@@ -310,7 +320,7 @@
             } else {
               return {
                 weight: 1,
-                color: '#696969',
+                color: '#504f54',
                 dashArray: '2,3',
                 opacity: 1,
                 fillOpacity: 0,
@@ -374,7 +384,25 @@
 
     },
     mounted () {
-      getLayers(this)
+      let geoJsonLayers = [
+        {
+          url: '/mapdata/FormacionesVegetales.topojson',
+          isTopoJson: true,
+          targetDataItem: 'vegetationLayer',
+          topoJsonObject: 'FormacionesVegetales'
+        },
+        {
+          url: '/mapdata/VenezuelaNoStates.topojson',
+          isTopoJson: true,
+          targetDataItem: 'venezuelaLayer',
+          topoJsonObject: 'VenezuelaNoStates'
+        },
+        {
+          url: '/mapdata/Saxicola.json',
+          targetDataItem: 'saxicolaLayer'
+        }
+      ]
+      getLayers(this, geoJsonLayers)
     },
     updated() {
 
