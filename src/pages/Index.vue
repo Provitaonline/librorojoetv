@@ -231,6 +231,12 @@
     font-style: italic;
   }
 
+  @media only screen and (max-width: 600px) {
+    ::v-deep .transparency-control {
+      margin-bottom: 28px;
+    }
+  }
+
   ::v-deep .transparency-control label {
     font-size: 0.9rem;
     font-weight: 400;
