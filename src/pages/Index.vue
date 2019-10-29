@@ -340,7 +340,6 @@
             let link = '<a href=' + self.makeLink(feature.properties.T_VE) + '>' + feature.properties.T_VE + '</a>'
             layer.bindPopup(link)
 
-            //layer.bindPopup(feature.properties.T_VE)
             layer.on('popupopen', function() {
               layer.setStyle({
                 weight: 1,
@@ -401,14 +400,10 @@
         return(slugify(t, {lower: true}))
       },
       mapReady() {
-        //console.log('Map is ready');
-        //console.log(this.$refs.theMap.mapObject);
-        //this.isLoading = false;
+
       },
       tileLayerReady() {
-        //console.log('Tile layer is ready');
-        //console.log(this.$refs.theMap.mapObject);
-        //this.isLoading = false;
+
       },
       zoomUpdated(zoom) {
         let elements = document.getElementsByClassName('map-label')
@@ -439,14 +434,6 @@
           this.mapLabel = ''
         }
 
-        /*this.$refs.vegetationLayer.mapObject.eachLayer(function (layer) {
-          if (item.name === layer.feature.properties.T_VE) {
-            layer.setStyle({fillOpacity: 0.95})
-            console.log(layer.feature.properties.T_VE)
-          } else {
-            layer.setStyle({fillOpacity: 0})
-          }
-        }) */
       }
     }
   }
