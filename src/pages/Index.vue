@@ -28,13 +28,14 @@
               style="height: 100%"
               @update:zoom="zoomUpdated"
             >
+              <l-control-zoom zoomInTitle="Acercarse" zoomOutTitle="Alejarse" position="topleft"></l-control-zoom>
               <l-tile-layer @load="tileLayerReady" :url="url" :options="tileLayerOptions" />
               <l-geo-json :geojson="venezuelaLayer" :options="venezuelaLayerOptions" />
               <l-geo-json ref="saxicolaLayer" :geojson="saxicolaLayer" :options="saxicolaLayerOptions" />
               <l-geo-json ref="vegetationLayer" :geojson="vegetationLayer" :options="vegetationLayerOptions" />
 
               <l-control class="leaflet-control leaflet-bar" position="topleft" >
-                <a @click="resetView" href="#" title="Reset View"><font-awesome size="lg" :icon="['fas', 'sync-alt']"/></a>
+                <a @click="resetView" href="#" title="Vista inicial"><font-awesome size="lg" :icon="['fas', 'sync-alt']"/></a>
               </l-control>
 
               <l-marker :options="{interactive: false}" :lat-lng="[10.5418, -66.9067]">
@@ -62,16 +63,16 @@
             <div v-for="i in 3" class="column">
               <div v-for="item in columnItems(i)">
                 <div :id="makeId(item.name)" class="legend-box">
-                  <div v-if="item.legend === 'colorkey'" @click="legendClick(item)" class="legend-symbol"><span class="legend-item" :style="'background:' + item.color + ';'"></span></div>
-                  <div v-else-if="item.legend === 'dotkey'" @click="legendClick(item)" class="legend-symbol"><span class="dot" :style="'background:' + item.color + ';'"></span></div>
-                  <g-link :to="makeLink(item)"> {{ item.name }}</g-link>
+                  <div title="Clic para sólo ver esto en el mapa" v-if="item.legend === 'colorkey'" @click="legendClick(item)" class="legend-symbol"><span class="legend-item" :style="'background:' + item.color + ';'"></span></div>
+                  <div title="Clic para sólo ver esto en el mapa" v-else-if="item.legend === 'dotkey'" @click="legendClick(item)" class="legend-symbol"><span class="dot" :style="'background:' + item.color + ';'"></span></div>
+                  <g-link title="Clic para ir a los detalles" :to="makeLink(item)"> {{ item.name }}</g-link>
                 </div>
               </div>
               <div v-if="i === 3" style="display: flex;">
                 <div>&nbsp;</div>
               </div>
               <div v-if="i === 3" style="display: flex;">
-                <div @click="legendClick({name: 'all'})" class="legend-symbol"><span class="legend-item" :style="'background: #f8e7e8;'"></span></div>
+                <div title="Clic para ver todo en el mapa" @click="legendClick({name: 'all'})" class="legend-symbol"><span class="legend-item" :style="'background: #f8e7e8;'"></span></div>
                 <div> <font-awesome size="sm" :icon="['fas', 'arrow-left']"/><i> Clic para ver todas</i></div>
               </div>
             </div>
@@ -268,13 +269,6 @@
         dataObject[l.targetDataItem] = response.data
       }
     }
-    /*let response
-    response = await axios.get('/mapdata/FormacionesVegetales.topojson')
-    dataObject.vegetationLayer = topojson.feature(response.data, response.data.objects.FormacionesVegetales)
-    response = await axios.get('/mapdata/VenezuelaNoStates.topojson')
-    dataObject.venezuelaLayer = topojson.feature(response.data, response.data.objects.VenezuelaNoStates)
-    response = await axios.get('/mapdata/Saxicola.json')
-    dataObject.saxicolaLayer = response.data */
     dataObject.isLoading = false
   }
 
@@ -305,7 +299,8 @@
           scrollWheelZoom: false,
           markerZoomAnimation: false,
           //zoomDelta: 0.2,
-          zoomSnap: 0.1
+          zoomSnap: 0.1,
+          zoomControl: false
         },
         venezuelaLayerOptions: {
           style: function(feature) {
@@ -445,7 +440,6 @@
         this.$refs.theMap.mapObject.fitBounds(this. initialBounds)
       },
       legendClick(item) {
-        //console.log('legend click', this.$refs.saxicolaLayer.mapObject)
         displaySelectedFeature(this.$refs.vegetationLayer.mapObject, item.name, 'T_VE')
         if (item.name === 'Vegetación saxícola' || item.name === 'all') {
           displayLayer(this.$refs.saxicolaLayer.mapObject)

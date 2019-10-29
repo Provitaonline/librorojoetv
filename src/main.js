@@ -36,6 +36,7 @@ export default function (Vue, { router, head, isClient }) {
     Vue.component('l-marker', () => import ('vue2-leaflet').then(m => m.LMarker))
     Vue.component('l-icon', () => import ('vue2-leaflet').then(m => m.LIcon))
     Vue.component('l-control', () => import ('vue2-leaflet').then(m => m.LControl))
+    Vue.component('l-control-zoom', () => import ('vue2-leaflet').then(m => m.LControlZoom))
   }
 
 }
