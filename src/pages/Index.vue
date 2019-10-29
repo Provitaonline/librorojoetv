@@ -20,7 +20,6 @@
           <ClientOnly>
             <l-map @leaflet:load="mapReady"
               ref="theMap"
-              :center="center"
               :maxBounds="maxBounds"
               :bounds="initialBounds"
               :options="mapOptions"
@@ -258,6 +257,27 @@
     })
   }
 
+  async function getLayers(dataObject, geoJsonLayers) {
+    let response
+    //geoJsonLayers.forEach(function(l) {
+    for (let l of geoJsonLayers) {
+      response = await axios.get(l.url)
+      if (l.isTopoJson) {
+        dataObject[l.targetDataItem] = topojson.feature(response.data, response.data.objects[l.topoJsonObject])
+      } else {
+        dataObject[l.targetDataItem] = response.data
+      }
+    }
+    /*let response
+    response = await axios.get('/mapdata/FormacionesVegetales.topojson')
+    dataObject.vegetationLayer = topojson.feature(response.data, response.data.objects.FormacionesVegetales)
+    response = await axios.get('/mapdata/VenezuelaNoStates.topojson')
+    dataObject.venezuelaLayer = topojson.feature(response.data, response.data.objects.VenezuelaNoStates)
+    response = await axios.get('/mapdata/Saxicola.json')
+    dataObject.saxicolaLayer = response.data */
+    dataObject.isLoading = false
+  }
+
   export default {
     data() {
       let self = this
@@ -266,15 +286,16 @@
         mapLabel: '',
         zoom: 7,
         minZoom: 5,
-        initialBounds: [[12.1623070337, -73.3049515449], [0.724452215982, -59.7582848782]],
+        initialBounds: [[13, -73], [0.6, -59]],
         maxBounds: [[13, -74], [0.5, -58]],
-        center: [6.4238, -66.5897],
+        center: [6.42, -66.59 ],
         //url: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}",
         url: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Terrain_Base/MapServer/tile/{z}/{y}/{x}",
         //url: "https://server.arcgisonline.com/ArcGIS/rest/services/Ocean/World_Ocean_Base/MapServer/tile/{z}/{y}/{x}",
         //url: "https://services.arcgisonline.com/arcgis/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",
         tileLayerOptions: {
-          attribution: 'Tiles © Esri — Source: <a href="https://www.arcgis.com/home/item.html?id=30e5fe3149c34df1ba922e6f5bbf808f">ArcGIS World Topographic Map</a>',
+          //attribution: 'Tiles © Esri — Source: <a href="https://www.arcgis.com/home/item.html?id=30e5fe3149c34df1ba922e6f5bbf808f">ArcGIS World Topographic Map</a>',
+          attribution: 'Tiles © Esri — Source: <a href="https://www.arcgis.com/home/item.html?id=c61ad8ab017d49e1a82f580ee1298931">ArcGIS World Terrain Base</a>',
           maxNativeZoom: 9
         },
         vegetationLayer: null,
@@ -299,7 +320,7 @@
             } else {
               return {
                 weight: 1,
-                color: '#696969',
+                color: '#504f54',
                 dashArray: '2,3',
                 opacity: 1,
                 fillOpacity: 0,
@@ -363,16 +384,25 @@
 
     },
     mounted () {
-      axios.get('/mapdata/FormacionesVegetales.topojson').then((response) => {
-        this.vegetationLayer = topojson.feature(response.data, response.data.objects.FormacionesVegetales)
-        axios.get('/mapdata/VenezuelaNoStates.topojson').then((response) => {
-          this.venezuelaLayer = topojson.feature(response.data, response.data.objects.VenezuelaNoStates)
-          axios.get('/mapdata/Saxicola.json').then((response) => {
-            this.isLoading = false
-            this.saxicolaLayer = response.data
-          })
-        })
-      })
+      let geoJsonLayers = [
+        {
+          url: '/mapdata/FormacionesVegetales.topojson',
+          isTopoJson: true,
+          targetDataItem: 'vegetationLayer',
+          topoJsonObject: 'FormacionesVegetales'
+        },
+        {
+          url: '/mapdata/VenezuelaNoStates.topojson',
+          isTopoJson: true,
+          targetDataItem: 'venezuelaLayer',
+          topoJsonObject: 'VenezuelaNoStates'
+        },
+        {
+          url: '/mapdata/Saxicola.json',
+          targetDataItem: 'saxicolaLayer'
+        }
+      ]
+      getLayers(this, geoJsonLayers)
     },
     updated() {
 
