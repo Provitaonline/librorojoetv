@@ -318,7 +318,7 @@
             attribution: 'Tiles © Esri — Source: <a href="https://www.arcgis.com/home/item.html?id=30e5fe3149c34df1ba922e6f5bbf808f">ArcGIS World Topographic Map</a>'
           },
           {
-            name: 'Imágenes aéreas',
+            name: 'Imágenes aéreas/satelitales',
             visible: false,
             url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
             attribution: 'Tiles © Esri — Source: <a href="http://www.arcgis.com/home/item.html?id=10df2279f9684e4a9f6a7f08febac2a9">ArcGIS World Imagery</a>'
@@ -392,7 +392,7 @@
               }
             }
           },
-          attribution: 'Provita, Huber y Oliveira-Miranda (2010)',
+          attribution: '| Provita, Huber y Oliveira-Miranda (2010)',
           onEachFeature: function onEachFeature(feature, layer) {
             let link = '<a href=' + self.makeLink(feature.properties.T_VE) + '>' + feature.properties.T_VE + '</a>'
             layer.bindPopup(link)
