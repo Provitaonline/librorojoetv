@@ -29,14 +29,23 @@
               @update:zoom="zoomUpdated"
             >
               <l-control-zoom zoomInTitle="Acercarse" zoomOutTitle="Alejarse" position="topleft"></l-control-zoom>
-              <l-tile-layer @load="tileLayerReady" :url="url" :options="tileLayerOptions" />
-              <l-geo-json :geojson="venezuelaLayer" :options="venezuelaLayerOptions" />
-              <l-geo-json ref="saxicolaLayer" :geojson="saxicolaLayer" :options="saxicolaLayerOptions" />
-              <l-geo-json ref="vegetationLayer" :geojson="vegetationLayer" :options="vegetationLayerOptions" />
-
               <l-control class="leaflet-control leaflet-bar" position="topleft" >
                 <a @click="resetView" href="#" title="Vista inicial"><font-awesome size="lg" :icon="['fas', 'sync-alt']"/></a>
               </l-control>
+              <l-control-layers position="topleft"  ></l-control-layers>
+              <l-tile-layer @load="tileLayerReady" :url="url" :options="tileLayerOptions" />
+              <l-tile-layer
+                v-for="tileProvider in tileProviders"
+                @load="tileLayerReady"
+                :key="tileProvider.name"
+                :name="tileProvider.name"
+                :visible="tileProvider.visible"
+                :url="tileProvider.url"
+                :attribution="tileProvider.attribution"
+                layer-type="base"/>
+              <l-geo-json :geojson="venezuelaLayer" :options="venezuelaLayerOptions" />
+              <l-geo-json ref="saxicolaLayer" :geojson="saxicolaLayer" :options="saxicolaLayerOptions" />
+              <l-geo-json ref="vegetationLayer" :geojson="vegetationLayer" :options="vegetationLayerOptions" />
 
               <l-marker :options="{interactive: false}" :lat-lng="[10.5418, -66.9067]">
                 <l-icon>
@@ -52,6 +61,12 @@
 
               <l-control position="topright" >
                 <div class="map-info is-size-4 is-size-7-mobile"><span>{{mapLabel}}</span></div>
+              </l-control>
+
+              <l-control position="bottomleft" >
+                <b-field class="transparency-control" label="Ajuste de transparencia">
+                  <b-slider v-model="layerTransparency" :custom-formatter="val => val + '%'" type="is-light" rounded></b-slider>
+                </b-field>
               </l-control>
 
               <b-loading :is-full-page="false" :active.sync="isLoading"></b-loading>
@@ -216,6 +231,11 @@
     font-style: italic;
   }
 
+  ::v-deep .transparency-control label {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+
 </style>
 
 <script>
@@ -236,10 +256,10 @@
     latLng =  require('leaflet').latLng
   }
 
-  function displaySelectedFeature(layerGroup, name, property) {
+  function displaySelectedFeature(layerGroup, name, property, opacity) {
     layerGroup.eachLayer(function (layer) {
       if (name === layer.feature.properties[property] || name === 'all') {
-        layer.setStyle({fillOpacity: 0.95})
+        layer.setStyle({fillOpacity: opacity})
       } else {
         layer.setStyle({fillOpacity: 0})
       }
@@ -283,6 +303,27 @@
         initialBounds: [[13, -73], [0.6, -59]],
         maxBounds: [[13, -74], [0.5, -58]],
         center: [6.42, -66.59 ],
+        layerTransparency: 5,
+        tileProviders: [
+          {
+            name: 'Mapa base simple',
+            visible: true,
+            attribution: 'Tiles © Esri — Source: <a href="https://www.arcgis.com/home/item.html?id=c61ad8ab017d49e1a82f580ee1298931">ArcGIS World Terrain Base</a>',
+            url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Terrain_Base/MapServer/tile/{z}/{y}/{x}'
+          },
+          {
+            name: 'Mapa base topográfico',
+            visible: false,
+            url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}',
+            attribution: 'Tiles © Esri — Source: <a href="https://www.arcgis.com/home/item.html?id=30e5fe3149c34df1ba922e6f5bbf808f">ArcGIS World Topographic Map</a>'
+          },
+          {
+            name: 'Imágenes aéreas',
+            visible: false,
+            url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+            attribution: 'Tiles © Esri — Source: <a href="http://www.arcgis.com/home/item.html?id=10df2279f9684e4a9f6a7f08febac2a9">ArcGIS World Imagery</a>'
+          }
+        ],
         //url: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}",
         url: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Terrain_Base/MapServer/tile/{z}/{y}/{x}",
         //url: "https://server.arcgisonline.com/ArcGIS/rest/services/Ocean/World_Ocean_Base/MapServer/tile/{z}/{y}/{x}",
@@ -440,7 +481,7 @@
         this.$refs.theMap.mapObject.fitBounds(this. initialBounds)
       },
       legendClick(item) {
-        displaySelectedFeature(this.$refs.vegetationLayer.mapObject, item.name, 'T_VE')
+        displaySelectedFeature(this.$refs.vegetationLayer.mapObject, item.name, 'T_VE', 1 - this.layerTransparency/100)
         if (item.name === 'Vegetación saxícola' || item.name === 'all') {
           displayLayer(this.$refs.saxicolaLayer.mapObject)
         } else {
@@ -458,6 +499,19 @@
           this.mapLabel = ''
         }
 
+      }
+    },
+    watch: {
+      layerTransparency: function() {
+        this.$refs.vegetationLayer.mapObject.eachLayer((layer) => {
+          if (this.mapLabel != '') {
+            if (this.mapLabel === layer.feature.properties.T_VE) {
+              layer.setStyle({fillOpacity: 1 - this.layerTransparency/100})
+            }
+          } else {
+            layer.setStyle({fillOpacity: 1 - this.layerTransparency/100})
+          }
+        })
       }
     }
   }
