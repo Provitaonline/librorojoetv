@@ -33,7 +33,6 @@
                 <a @click="resetView" href="#" title="Vista inicial"><font-awesome size="lg" :icon="['fas', 'sync-alt']"/></a>
               </l-control>
               <l-control-layers position="topleft"  ></l-control-layers>
-              <l-tile-layer @load="tileLayerReady" :url="url" :options="tileLayerOptions" />
               <l-tile-layer
                 v-for="tileProvider in tileProviders"
                 @load="tileLayerReady"
@@ -42,6 +41,7 @@
                 :visible="tileProvider.visible"
                 :url="tileProvider.url"
                 :attribution="tileProvider.attribution"
+                :options="tileProvider.options"
                 layer-type="base"/>
               <l-geo-json :geojson="venezuelaLayer" :options="venezuelaLayerOptions" />
               <l-geo-json ref="saxicolaLayer" :geojson="saxicolaLayer" :options="saxicolaLayerOptions" />
@@ -309,6 +309,9 @@
             name: 'Mapa base simple',
             visible: true,
             attribution: 'Tiles © Esri — Source: <a href="https://www.arcgis.com/home/item.html?id=c61ad8ab017d49e1a82f580ee1298931">ArcGIS World Terrain Base</a>',
+            options: {
+              maxNativeZoom: 9
+            },
             url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Terrain_Base/MapServer/tile/{z}/{y}/{x}'
           },
           {
@@ -325,14 +328,8 @@
           }
         ],
         //url: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}",
-        url: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Terrain_Base/MapServer/tile/{z}/{y}/{x}",
         //url: "https://server.arcgisonline.com/ArcGIS/rest/services/Ocean/World_Ocean_Base/MapServer/tile/{z}/{y}/{x}",
         //url: "https://services.arcgisonline.com/arcgis/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",
-        tileLayerOptions: {
-          //attribution: 'Tiles © Esri — Source: <a href="https://www.arcgis.com/home/item.html?id=30e5fe3149c34df1ba922e6f5bbf808f">ArcGIS World Topographic Map</a>',
-          attribution: 'Tiles © Esri — Source: <a href="https://www.arcgis.com/home/item.html?id=c61ad8ab017d49e1a82f580ee1298931">ArcGIS World Terrain Base</a>',
-          maxNativeZoom: 9
-        },
         vegetationLayer: null,
         saxicolaLayer: null,
         venezuelaLayer: null,
