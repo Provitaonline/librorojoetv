@@ -237,6 +237,12 @@
     }
   }
 
+  @media only screen and (max-width: 400px) {
+    ::v-deep .transparency-control {
+      margin-bottom: 42px;
+    }
+  }
+
   ::v-deep .transparency-control label {
     font-size: 0.9rem;
     font-weight: 400;
