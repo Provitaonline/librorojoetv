@@ -31,9 +31,11 @@
             :attribution="tileProvider.attribution"
             :options="tileProvider.options"
             layer-type="base"/>
-          <l-geo-json :ref="geoJsonResources[1].targetDataItem" :geojson="geoJsonLayers[1]" :options="geoJsonResources[1].geoJsonLayerOptions" />
-          <l-geo-json :ref="geoJsonResources[2].targetDataItem" :geojson="geoJsonLayers[2]" :options="geoJsonResources[2].geoJsonLayerOptions" />
-          <l-geo-json :ref="geoJsonResources[0].targetDataItem" :geojson="geoJsonLayers[0]" :options="geoJsonResources[0].geoJsonLayerOptions" />
+
+          <l-geo-json v-for="item in geoJsonResources" v-bind:key="item.url" ref="layerReference" :geojson="item.geoJsonLayer" :options="item.geoJsonLayerOptions" />
+          <!-- <l-geo-json :ref="geoJsonResources[0].targetDataItem" :geojson="geoJsonResources[0].geoJsonLayer" :options="geoJsonResources[0].geoJsonLayerOptions" />
+          <l-geo-json :ref="geoJsonResources[1].targetDataItem" :geojson="geoJsonResources[1].geoJsonLayer" :options="geoJsonResources[1].geoJsonLayerOptions" />
+          <l-geo-json :ref="geoJsonResources[2].targetDataItem" :geojson="geoJsonResources[2].geoJsonLayer" :options="geoJsonResources[2].geoJsonLayerOptions" /> -->
 
           <l-marker :options="{interactive: false}" :lat-lng="[10.5418, -66.9067]">
             <l-icon>
@@ -198,12 +200,12 @@
     latLng =  require('leaflet').latLng
   }
 
-  function displaySelectedFeature(layerGroup, name, property, opacity) {
+  function displaySelectedFeature(layerGroup, name, opacity, property) {
     layerGroup.eachLayer(function (layer) {
       if (name === layer.feature.properties[property] || name === 'all') {
-        layer.setStyle({fillOpacity: opacity})
+        layer.setStyle({fillOpacity: opacity, opacity: opacity})
       } else {
-        layer.setStyle({fillOpacity: 0})
+        layer.setStyle({fillOpacity: 0, opacity: 0})
       }
     })
   }
@@ -226,16 +228,51 @@
     for (let [i, l] of geoJsonResources.entries()) {
       response = await axios.get(l.url)
       if (l.isTopoJson) {
-        dataObject.geoJsonLayers[i] = topojson.feature(response.data, response.data.objects[l.topoJsonObject])
-        dataObject[l.targetDataItem] = topojson.feature(response.data, response.data.objects[l.topoJsonObject])
+        l.geoJsonLayer = topojson.feature(response.data, response.data.objects[l.topoJsonObject])
       } else {
-        dataObject.geoJsonLayers[i] = response.data
-        dataObject[l.targetDataItem] = response.data
-        console.log(i, dataObject.geoJsonLayers[i], dataObject[l.targetDataItem])
+        l.geoJsonLayer = response.data
 
       }
     }
     dataObject.isLoading = false
+  }
+
+  function makeGeoJsonLayerOptions(dataObject, legendItems, geoJsonResource) {
+    let geoJsonLayerOptions = {}
+    let a
+    if (geoJsonResource.makePointsToCircles) {
+      geoJsonLayerOptions.pointToLayer = function(feature, latlng) {
+        a = legendItems.find(function(v) { return v.name === feature.properties[geoJsonResource.legendTitleProperty]})
+        return circleMarker(latlng, {
+          radius: 2,
+          fillColor: a.color,
+          fillOpacity: 1,
+          color: a.color,
+          weight: 1,
+          opacity: 1
+        })
+      }
+    } else {
+      geoJsonLayerOptions.style = function(feature) {
+        a = legendItems.find(function(v) { return v.name === feature.properties[geoJsonResource.legendTitleProperty]})
+        if (a) {
+          return {
+            weight: 0,
+            fillOpacity: 1,
+            color: a.color
+          }
+        }
+      }
+    }
+
+    geoJsonLayerOptions.attribution = '| Provita, Huber y Oliveira-Miranda (2010)'
+
+    geoJsonLayerOptions.onEachFeature = function onEachFeature(feature, layer) {
+      let link = '<a href=' + dataObject.makeLink(feature.properties[geoJsonResource.legendTitleProperty]) + '>' + feature.properties[geoJsonResource.legendTitleProperty] + '</a>'
+      layer.bindPopup(link)
+    }
+
+    return geoJsonLayerOptions
   }
 
   export default {
@@ -281,7 +318,6 @@
         //url: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}",
         //url: "https://server.arcgisonline.com/ArcGIS/rest/services/Ocean/World_Ocean_Base/MapServer/tile/{z}/{y}/{x}",
         //url: "https://services.arcgisonline.com/arcgis/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",
-        geoJsonLayers: [null, null, null, null, null], //Up to five layers
         mapOptions: {
           scrollWheelZoom: false,
           markerZoomAnimation: false,
@@ -299,7 +335,14 @@
 
     },
     mounted () {
-      getLayers(this, this.geoJsonResources)
+      if (process.isClient) {
+        this.geoJsonResources.forEach((r) => {
+          if (!r.geoJsonLayerOptions) {
+            r.geoJsonLayerOptions = makeGeoJsonLayerOptions(this, this.legendItems, r)
+          }
+        })
+        getLayers(this, this.geoJsonResources)
+      }
     },
     updated() {
 
@@ -343,12 +386,11 @@
         this.$refs.theMap.mapObject.fitBounds(this. initialBounds)
       },
       legendClick(item) {
-        displaySelectedFeature(this.$refs.vegetationLayer.mapObject, item.name, 'T_VE', 1 - this.layerTransparency/100)
-        if (item.name === 'Vegetación saxícola' || item.name === 'all') {
-          displayLayer(this.$refs.saxicolaLayer.mapObject)
-        } else {
-          hideLayer(this.$refs.saxicolaLayer.mapObject)
-        }
+        this.geoJsonResources.forEach((r, i) => {
+          if (r.legendTitleProperty) {
+            displaySelectedFeature(this.$refs.layerReference[i].mapObject, item.name, 1 - this.layerTransparency/100, r.legendTitleProperty)
+          }
+        })
 
         Array.from(document.getElementsByClassName('legend-box')).forEach(function (element) {
           element.setAttribute('style', 'background: none;')
@@ -365,13 +407,18 @@
     },
     watch: {
       layerTransparency: function() {
-        this.$refs.vegetationLayer.mapObject.eachLayer((layer) => {
-          if (this.mapLabel != '') {
-            if (this.mapLabel === layer.feature.properties.T_VE) {
-              layer.setStyle({fillOpacity: 1 - this.layerTransparency/100})
-            }
-          } else {
-            layer.setStyle({fillOpacity: 1 - this.layerTransparency/100})
+        let opacity = 1 - this.layerTransparency/100
+        this.geoJsonResources.forEach((r, i) => {
+          if (r.legendTitleProperty) {
+            this.$refs.layerReference[i].mapObject.eachLayer((layer) => {
+              if (this.mapLabel != '') {
+                if (this.mapLabel === layer.feature.properties[r.legendTitleProperty]) {
+                  layer.setStyle({fillOpacity: opacity, opacity: opacity})
+                }
+              } else {
+                layer.setStyle({fillOpacity: opacity, opacity: opacity})
+              }
+            })
           }
         })
       }

@@ -92,13 +92,7 @@
 </style>
 
 <script>
-  import slugify from 'slugify';
   import InteractiveMap from '~/components/InteractiveMap.vue'
-
-  var circleMarker
-  if (process.isClient) {
-    circleMarker = require('leaflet').circleMarker
-  }
 
   export default {
     data() {
@@ -107,87 +101,47 @@
         geoJsonResources: [
           {
             url: '/mapdata/FormacionesVegetales.topojson',
+            geoJsonLayer: null,
+            legendTitleProperty: 'T_VE',
             isTopoJson: true,
-            targetDataItem: 'vegetationLayer',
-            topoJsonObject: 'FormacionesVegetales',
+            topoJsonObject: 'FormacionesVegetales'
+          },
+          {
+            url: '/mapdata/VenezuelaAgua.topojson',
+            geoJsonLayer: null,
+            isTopoJson: true,
+            topoJsonObject: 'collection',
             geoJsonLayerOptions: {
-              style: function(feature) {
-                let a = self.$page.homeData.vegetation.find(function(v) { return v.name === feature.properties.T_VE})
-                if (a) {
-                  return {
-                    weight: 0,
-                    fillOpacity: 0.95,
-                    color: a.color
-                  }
-                }
-              },
-              attribution: '| Provita, Huber y Oliveira-Miranda (2010)',
-              onEachFeature: function onEachFeature(feature, layer) {
-                let link = '<a href=' + self.makeLink(feature.properties.T_VE) + '>' + feature.properties.T_VE + '</a>'
-                layer.bindPopup(link)
-
-                layer.on('popupopen', function() {
-                  layer.setStyle({
-                    weight: 1,
-                    fillOpacity: 1
-                  })
-                })
-                layer.on('popupclose', function() {
-                  layer.setStyle({
-                    weight: 0,
-                    fillOpacity: 0.95
-                  })
-                })
+              style: {
+                weight: 0,
+                opacity: 0,
+                fillOpacity: 1,
+                fillColor: '#BDE6E0',
+                interactive: false
               }
             }
           },
           {
             url: '/mapdata/VenezuelaNoStates.topojson',
+            geoJsonLayer: null,
             isTopoJson: true,
-            targetDataItem: 'venezuelaLayer',
-            topoJsonObject: 'VenezuelaNoStates',
+            topoJsonObject: 'collection',
             geoJsonLayerOptions: {
-              style: function(feature) {
-                if (feature.properties.T_VE === 'Cuerpos de agua') {
-                  return {
-                    weight: 0,
-                    opacity: 0,
-                    fillOpacity: 1,
-                    fillColor: '#BDE6E0',
-                    interactive: false
-                  }
-                } else {
-                  return {
-                    weight: 1,
-                    color: '#504f54',
-                    dashArray: '2,3',
-                    opacity: 1,
-                    fillOpacity: 0,
-                    interactive: false
-                  }
-                }
+              style: {
+                weight: 1,
+                color: '#504f54',
+                dashArray: '2,3',
+                opacity: 1,
+                fillOpacity: 0,
+                interactive: false
               }
             }
           },
           {
             url: '/mapdata/Saxicola.json',
-            targetDataItem: 'saxicolaLayer',
-            geoJsonLayerOptions: {
-              onEachFeature: function (feature, layer) {
-                let t = 'Vegetación saxícola'
-                layer.bindPopup('<a href=' + self.makeLink(t) + '>' + t + '</a>')
-              },
-              pointToLayer: function(feature, latlng) {
-                return circleMarker(latlng, {
-                  radius: 2,
-                  fillColor: "#333333",
-                  fillOpacity: 1,
-                  color: "#333333",
-                  weight: 1,
-                  opacity: 1
-                })
-              }
-            }
+            geoJsonLayer: null,
+            legendTitleProperty: 'name',
+            makePointsToCircles: true,
           }
         ]
       }
