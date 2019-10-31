@@ -162,19 +162,7 @@
 
     },
     methods: {
-      makeLink(t) {
-        let it
-        if (typeof t === 'string') {
-          it = this.$page.homeData.vegetation.find(function(v) { return v.name === t})
-        } else {
-          it = t
-        }
-        if (it.cardPath){
-          return 'vcards/' + slugify(it.cardPath, {lower: true})
-        } else {
-          return 'vcards/' + slugify(it.name, {lower: true})
-        }
-      }
+
     },
     watch: {
     }
