@@ -33,9 +33,6 @@
             layer-type="base"/>
 
           <l-geo-json v-for="(item, index) in geoJsonResources" v-bind:key="item.url" ref="layerReference" :geojson="$options.geoJsonLayers[index]" :options="$options.geoJsonLayerOptions[index]" />
-          <!-- <l-geo-json :ref="geoJsonResources[0].targetDataItem" :geojson="geoJsonResources[0].geoJsonLayer" :options="geoJsonResources[0].geoJsonLayerOptions" />
-          <l-geo-json :ref="geoJsonResources[1].targetDataItem" :geojson="geoJsonResources[1].geoJsonLayer" :options="geoJsonResources[1].geoJsonLayerOptions" />
-          <l-geo-json :ref="geoJsonResources[2].targetDataItem" :geojson="geoJsonResources[2].geoJsonLayer" :options="geoJsonResources[2].geoJsonLayerOptions" /> -->
 
           <l-marker :options="{interactive: false}" :lat-lng="[10.5418, -66.9067]">
             <l-icon>
