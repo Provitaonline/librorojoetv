@@ -101,14 +101,12 @@
         geoJsonResources: [
           {
             url: '/mapdata/FormacionesVegetales.topojson',
-            geoJsonLayer: null,
             legendTitleProperty: 'T_VE',
             isTopoJson: true,
             topoJsonObject: 'FormacionesVegetales'
           },
           {
             url: '/mapdata/VenezuelaAgua.topojson',
-            geoJsonLayer: null,
             isTopoJson: true,
             topoJsonObject: 'collection',
             geoJsonLayerOptions: {
@@ -123,7 +121,6 @@
           },
           {
             url: '/mapdata/VenezuelaNoStates.topojson',
-            geoJsonLayer: null,
             isTopoJson: true,
             topoJsonObject: 'collection',
             geoJsonLayerOptions: {
@@ -139,7 +136,6 @@
           },
           {
             url: '/mapdata/Saxicola.json',
-            geoJsonLayer: null,
             legendTitleProperty: 'name',
             makePointsToCircles: true,
           }

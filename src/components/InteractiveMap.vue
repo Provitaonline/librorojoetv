@@ -32,7 +32,7 @@
             :options="tileProvider.options"
             layer-type="base"/>
 
-          <l-geo-json v-for="item in geoJsonResources" v-bind:key="item.url" ref="layerReference" :geojson="item.geoJsonLayer" :options="item.geoJsonLayerOptions" />
+          <l-geo-json v-for="(item, index) in geoJsonResources" v-bind:key="item.url" ref="layerReference" :geojson="$options.geoJsonLayers[index]" :options="$options.geoJsonLayerOptions[index]" />
           <!-- <l-geo-json :ref="geoJsonResources[0].targetDataItem" :geojson="geoJsonResources[0].geoJsonLayer" :options="geoJsonResources[0].geoJsonLayerOptions" />
           <l-geo-json :ref="geoJsonResources[1].targetDataItem" :geojson="geoJsonResources[1].geoJsonLayer" :options="geoJsonResources[1].geoJsonLayerOptions" />
           <l-geo-json :ref="geoJsonResources[2].targetDataItem" :geojson="geoJsonResources[2].geoJsonLayer" :options="geoJsonResources[2].geoJsonLayerOptions" /> -->
@@ -222,22 +222,19 @@
     })
   }
 
-  async function getLayers(dataObject, geoJsonResources) {
-    let response
-    //geoJsonResources.forEach(function(l) {
+  async function getLayers(t, geoJsonResources) {
     for (let [i, l] of geoJsonResources.entries()) {
-      response = await axios.get(l.url)
+      let response = await axios.get(l.url)
       if (l.isTopoJson) {
-        l.geoJsonLayer = topojson.feature(response.data, response.data.objects[l.topoJsonObject])
+        t.$options.geoJsonLayers[i] = topojson.feature(response.data, response.data.objects[l.topoJsonObject])
       } else {
-        l.geoJsonLayer = response.data
-
+        t.$options.geoJsonLayers[i] = response.data
       }
     }
-    dataObject.isLoading = false
+    t.isLoading = false
   }
 
-  function makeGeoJsonLayerOptions(dataObject, legendItems, geoJsonResource) {
+  function makeGeoJsonLayerOptions(makeLink, legendItems, geoJsonResource) {
     let geoJsonLayerOptions = {}
     let a
     if (geoJsonResource.makePointsToCircles) {
@@ -268,13 +265,12 @@
     geoJsonLayerOptions.attribution = '| Provita, Huber y Oliveira-Miranda (2010)'
 
     geoJsonLayerOptions.onEachFeature = function onEachFeature(feature, layer) {
-      let link = '<a href=' + dataObject.makeLink(feature.properties[geoJsonResource.legendTitleProperty]) + '>' + feature.properties[geoJsonResource.legendTitleProperty] + '</a>'
+      let link = '<a href=' + makeLink(feature.properties[geoJsonResource.legendTitleProperty]) + '>' + feature.properties[geoJsonResource.legendTitleProperty] + '</a>'
       layer.bindPopup(link)
     }
 
     return geoJsonLayerOptions
   }
-
   export default {
     name: 'InteractiveMap',
     props: {
@@ -282,7 +278,6 @@
       geoJsonResources: { type: Array, required: true }
     },
     data() {
-      let self = this
       return {
         isLoading: true,
         mapLabel: '',
@@ -330,15 +325,19 @@
     components: {
     },
     beforeCreate() {
+      this.$options.geoJsonLayers = (new Array(this.$options.propsData.geoJsonResources.length)).fill(null)
+      this.$options.geoJsonLayerOptions = (new Array(this.$options.propsData.geoJsonResources.length)).fill(null)
     },
     created() {
 
     },
     mounted () {
       if (process.isClient) {
-        this.geoJsonResources.forEach((r) => {
-          if (!r.geoJsonLayerOptions) {
-            r.geoJsonLayerOptions = makeGeoJsonLayerOptions(this, this.legendItems, r)
+        this.geoJsonResources.forEach((r, i) => {
+          if (r.geoJsonLayerOptions) {
+            this.$options.geoJsonLayerOptions[i] = r.geoJsonLayerOptions
+          } else {
+            this.$options.geoJsonLayerOptions[i] = makeGeoJsonLayerOptions(this.makeLink, this.legendItems, r)
           }
         })
         getLayers(this, this.geoJsonResources)
