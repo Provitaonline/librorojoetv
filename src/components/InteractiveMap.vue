@@ -11,8 +11,8 @@
           :maxBounds="maxBounds"
           :bounds="initialBounds"
           :options="mapOptions"
-          :zoom="zoom"
           :minZoom="minZoom"
+          :zoomAnimation="zoomAnimation"
           style="height: 100%"
           @update:zoom="zoomUpdated"
         >
@@ -277,6 +277,7 @@
     data() {
       return {
         isLoading: true,
+        zoomAnimation: true,
         mapLabel: '',
         zoom: 7,
         minZoom: 5,
