@@ -28,7 +28,7 @@
                   </figure>
                 </div>
                 <div class="card-content">
-                  <div class="content">
+                  <div class="content has-text-centered">
                     Formaciones vegetales de Venezuela, cambios temporales en distribución geográfica y riesgos de colapso and nivel nacional y estatal.
                     <br>
                   </div>
@@ -48,7 +48,7 @@
                   </figure>
                 </div>
                 <div class="card-content">
-                  <div class="content">
+                  <div class="content has-text-centered">
                     Aplicación de las categorías y criterios de las listas rojas de ecosistems a diferentes escalas geográficas.
                     <br>
                   </div>
@@ -68,7 +68,7 @@
                   </figure>
                 </div>
                 <div class="card-content">
-                  <div class="content">
+                  <div class="content has-text-centered">
                     Clasificación, descripción y distribución geográfica de los principales paisajes vegetales de Venezuela.
                     <br>
                   </div>
