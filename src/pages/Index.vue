@@ -1,30 +1,81 @@
 <template>
   <Layout>
     <div class="page-wrapper">
-      <section class="hero is-medium">
+      <section class="hero is-large">
         <g-image class="hero-bg-img" src="~/assets/images/home-hero-image.jpg"/>
         <div class="hero-body">
-          <div class="container is-fullhd">
-            <h1 class="hero-text title is-uppercase" v-html="$page.homeData.heroTitle" /><br>
-            <h2 class="hero-text subtitle"v-html="$page.homeData.heroSubTitle" />
+          <div style="max-width: 80%;" class="container is-fullhd">
+            <h1 class="hero-text title is-uppercase" v-html="$page.homeData.heroTitle" />
           </div>
-          <a href="#" v-scroll-to="'#mapSection'" style="border:none;" class="explore"><font-awesome size="lg" :icon="['fas', 'angle-double-down']"/></a>
+
         </div>
       </section>
 
       <section class="section">
-        <InteractiveMap
-          :legendItems="$page.homeData.vegetation"
-          :geoJsonResources="geoJsonResources"
-        >
-      </InteractiveMap>
-      </section>
-
-      <section class="section">
-        <br>
-        <div class="section-header box is-size-3 is-size-4-mobile has-text-weight-bold has-text-centered">Explicación</div>
-        <div class="box is-size-5">
-          {{$page.homeData.explanation}}
+        <div class="box is-size-3 is-size-4-mobile has-text-weight-bold has-text-centered">Explora</div>
+        <div class="tile is-ancestor">
+          <div class="tile">
+            <div class="tile is-parent">
+              <div class="card tile is-child">
+                <header class="card-header">
+                  <p class="card-header-title is-centered">
+                    <g-link to="/vcards/">Riesgo de colapso</g-link>
+                  </p>
+                </header>
+                <div class="card-image">
+                  <figure style="border-top: 1px solid rgba(20, 20, 20, 0.1); border-bottom: 1px solid rgba(20, 20, 20, 0.1);" class="image is-4by3">
+                    <g-link to="/vcards/"><g-image src="~/assets/images/riesgo.png"/></g-link>
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="content">
+                    Formaciones vegetales de Venezuela, cambios temporales en distribución geográfica y riesgos de colapso and nivel nacional y estatal.
+                    <br>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tile is-parent">
+              <div class="card tile is-child">
+                <header class="card-header">
+                  <p class="card-header-title is-centered">
+                    <g-link to="/cases/">Casos de estudio</g-link>
+                  </p>
+                </header>
+                <div class="card-image">
+                  <figure style="border-top: 1px solid rgba(20, 20, 20, 0.1); border-bottom: 1px solid rgba(20, 20, 20, 0.1);" class="image is-4by3">
+                    <g-link to="/cases/"><g-image src="~/assets/images/casos.png"/></g-link>
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="content">
+                    Aplicación de las categorías y criterios de las listas rojas de ecosistems a diferentes escalas geográficas.
+                    <br>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tile is-parent">
+              <div class="card tile is-child">
+                <header class="card-header">
+                  <p class="card-header-title is-centered">
+                    <g-link to="/units/">Unidades de paisaje</g-link>
+                  </p>
+                </header>
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <g-link to="/units/"><g-image style="border-top: 1px solid rgba(20, 20, 20, 0.1); border-bottom: 1px solid rgba(20, 20, 20, 0.1);" src="~/assets/images/unidades.png"/></g-link>
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="content">
+                    Clasificación, descripción y distribución geográfica de los principales paisajes vegetales de Venezuela.
+                    <br>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -39,13 +90,6 @@
       heroTitle
       heroSubTitle
       explanation
-    	vegetation {
-        name
-        group
-        color
-        legend
-        cardPath
-      }
     }
   }
 </page-query>
@@ -60,6 +104,10 @@
     position: relative;
   }
 
+  .hero-body {
+    padding-bottom: 2rem !important;
+  }
+
   .hero-bg-img {
     position: absolute;
     object-fit: cover;
@@ -70,11 +118,14 @@
 
   .hero-text {
     color: white;
-    text-shadow:
+    font-size: 2.5rem;
+    font-weight: 300;
+    background: rgba(0, 0, 0, .2);
+    /*text-shadow:
       -1px -1px 0 black,
       1px -1px 0 black,
       -1px 1px 0 black,
-      1px 1px 0 black;
+      1px 1px 0 black;*/
   }
 
   .explore {
@@ -87,6 +138,10 @@
 
   .explore:hover {
     color: #BE1421;
+  }
+
+  .card-header-title {
+    background-color: #f8e7e8;
   }
 
 </style>
