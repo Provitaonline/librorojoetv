@@ -20,9 +20,9 @@
       <section class="section">
         <br>
         <div class="section-header box is-size-3 is-size-4-mobile has-text-weight-bold has-text-centered">Lista alfabética de fichas</div>
-        <div style="width: 85%;" class="container is-size-5">
+        <div style="width: 85%;" class="container is-size-5 is-size-6-mobile">
           <div v-for="item in $page.vcards.edges" class="media">
-            <figure class="media-left">
+            <figure class="media-left is-hidden-mobile">
               <g-link :to="'/vcards/' + makeLink(item.node.title)"><g-image :src="item.node.cardimage"></g-image></g-link>
             </figure>
             <div class="media-content">
@@ -31,8 +31,8 @@
                   <img style="margin-bottom: -0.5rem;" :src="$options.threatCategoryIcons[item.node.category]" height="30" width="30">&nbsp;</img>
                   <g-link :to="'/vcards/' + makeLink(item.node.title)"><strong v-html="item.node.title"></strong> ({{$options.threatCategories[item.node.category].text}}) </g-link>
                   <br>
-                  Superficie en 1988 (km<sup>2</sup>): {{item.node.areain1988 | number}}<br>
-                  Superficie en 2010 (km<sup>2</sup>): {{item.node.areain2010 | number}}<br>
+                  {{item.node.areain1988 | number}} km<sup>2</sup> en 1988<br>
+                  {{item.node.areain2010 | number}} km<sup>2</sup> en 2010<br>
                 </p>
               </div>
             </div>
