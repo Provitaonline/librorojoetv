@@ -29,7 +29,7 @@
                 </div>
                 <div class="card-content">
                   <div class="content has-text-centered">
-                    Formaciones vegetales de Venezuela, cambios temporales en distribución geográfica y riesgos de colapso and nivel nacional y estatal.
+                    Cambios temporales en distribución geográfica y riesgos de colapso and nivel nacional y estatal.
                     <br>
                   </div>
                 </div>
