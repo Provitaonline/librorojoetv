@@ -110,7 +110,7 @@ vegetation:
     detailPath: "d124"
   - name: "Vegetación saxícola"
     group: 3
-    color: ""#333333""
+    color: "#333333"
     legend: "dotkey"
     detailPath: "d124"
 ---

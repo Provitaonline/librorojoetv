@@ -14,7 +14,7 @@
             </div>
             <div class="categoryicon">
               <img :src="threatCategoryIcons[$page.vegetationCard.category]" height="50" width="50" />
-              <p style="display: block; font-size: small;"><b>{{siteConfig.threatCategories[$page.vegetationCard.category].text.toUpperCase()}}</b></p>
+              <p style="display: block; font-size: small;"><b>{{threatCategories[$page.vegetationCard.category].text.toUpperCase()}}</b></p>
             </div>
           </div>
         </div>
@@ -110,7 +110,7 @@
             <div class="tile is-parent">
               <div class="tile is-child is-5 box has-text-centered">
                 <b>Riesgo de colapso a nivel nacional: </b>
-                {{siteConfig.threatCategories[$page.vegetationCard.category].text.toUpperCase()}}
+                {{threatCategories[$page.vegetationCard.category].text.toUpperCase()}}
                 <img :src="threatCategoryIcons[$page.vegetationCard.category]" height="30" width="30" style="margin-bottom: -5px;">
                 <br><br>
                 <b>Grado de amenaza 2010: </b>
@@ -120,8 +120,8 @@
                   <g-image v-if="item" style="border-style: solid; border-color: dimgrey;" :src="item.map"></g-image>
                   <div>
                     <div v-for="tl in item.threatcategories" style="float: left;" class="has-text-left is-size-7">
-                      <span class="legend-item" :style="'background:' + siteConfig.threatCategories[tl].color"></span>
-                      <span style="padding-left: 4px; padding-right: 4px;"> {{siteConfig.threatCategories[tl].text}}</span>
+                      <span class="legend-item" :style="'background:' + threatCategories[tl].color"></span>
+                      <span style="padding-left: 4px; padding-right: 4px;"> {{threatCategories[tl].text}}</span>
                     </div>
                     <br>
                   </div>
@@ -149,7 +149,7 @@
                       <td>{{item.zone}}</td>
                       <td v-if="item.area" class="has-text-right">{{item.area | decimal(1)}}</td>
                       <td align="center" v-for="value in item.threatcategories">
-                        <b-tooltip v-if="value != '-' && value != '(*)'" :label="siteConfig.threatCategories[value] ? siteConfig.threatCategories[value].text : ''" position="is-top" type="is-warning">
+                        <b-tooltip v-if="value != '-' && value != '(*)'" :label="threatCategories[value] ? threatCategories[value].text : ''" position="is-top" type="is-warning">
                           <div class="iconInTable">
                             <img :src="threatCategoryIcons[value]">
                           </div>
@@ -337,11 +337,11 @@
 
 <script>
 
-  import siteConfig from '~/data/siteConfig.json'
+  import {threatCategories} from '~/assets/js/siteConfig.js'
   import TextWithRefsAndPhotos from '~/components/TextWithRefsAndPhotos.vue'
 
   let threatCategoryIcons = {}
-  for (let key in siteConfig.threatCategories) {
+  for (let key in threatCategories) {
     threatCategoryIcons[key] = require('~/assets/svgs/' + key + '-icon.svg')
   }
 
@@ -350,18 +350,13 @@
     },
     data() {
       return {
-        siteConfig: siteConfig,
+        threatCategories: threatCategories,
         threatCategoryIcons: threatCategoryIcons
       }
     },
     mounted () {
     },
     filters: {
-      number: function(value) {
-        if (!value) return ''
-        if (isNaN(value)) return value
-        return parseInt(value).toLocaleString('de-DE', {style: 'decimal', localeMatcher: 'best fit'})
-      },
       decimal: function(value, decimals) {
         if (!value) return ''
         return Number(value).toLocaleString('de-DE', {style: 'decimal', minimumFractionDigits: decimals})

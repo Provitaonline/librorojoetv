@@ -29,6 +29,12 @@ export default function (Vue, { router, head, isClient }) {
 
   Vue.use(Buefy)
 
+  Vue.filter('number', function(value) {
+    if (!value) return ''
+    if (isNaN(value)) return value
+    return parseInt(value).toLocaleString('de-DE', {style: 'decimal', localeMatcher: 'best fit'})
+  })
+
   if (isClient) {
     Vue.component('l-map', () => import ('vue2-leaflet').then(m => m.LMap))
     Vue.component('l-tile-layer', () => import ('vue2-leaflet').then(m => m.LTileLayer))
