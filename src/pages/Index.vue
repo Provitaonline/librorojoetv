@@ -24,7 +24,7 @@
                 </header>
                 <div class="card-image">
                   <figure style="border-top: 1px solid rgba(20, 20, 20, 0.1); border-bottom: 1px solid rgba(20, 20, 20, 0.1);" class="image is-4by3">
-                    <g-link to="/vcards/"><g-image src="~/assets/images/riesgo.png"/></g-link>
+                    <g-link to="/vcards/"><g-image class="img-hover-effect" src="~/assets/images/riesgo.png"/></g-link>
                   </figure>
                 </div>
                 <div class="card-content">
@@ -44,7 +44,7 @@
                 </header>
                 <div class="card-image">
                   <figure style="border-top: 1px solid rgba(20, 20, 20, 0.1); border-bottom: 1px solid rgba(20, 20, 20, 0.1);" class="image is-4by3">
-                    <g-link to="/cases/"><g-image src="~/assets/images/casos.png"/></g-link>
+                    <g-link to="/cases/"><g-image class="img-hover-effect" src="~/assets/images/casos.png"/></g-link>
                   </figure>
                 </div>
                 <div class="card-content">
@@ -64,7 +64,7 @@
                 </header>
                 <div class="card-image">
                   <figure class="image is-4by3">
-                    <g-link to="/units/"><g-image style="border-top: 1px solid rgba(20, 20, 20, 0.1); border-bottom: 1px solid rgba(20, 20, 20, 0.1);" src="~/assets/images/unidades.png"/></g-link>
+                    <g-link to="/units/"><g-image class="img-hover-effect" style="border-top: 1px solid rgba(20, 20, 20, 0.1); border-bottom: 1px solid rgba(20, 20, 20, 0.1);" src="~/assets/images/unidades.png"/></g-link>
                   </figure>
                 </div>
                 <div class="card-content">
@@ -141,6 +141,17 @@
 
   .card-header-title {
     background-color: #f8e7e8;
+  }
+
+  .img-hover-effect {
+    transition: all ease 0.2s;
+    //filter: grayscale(90%);
+    opacity: 0.9;
+  }
+
+  .img-hover-effect:hover {
+    //filter: grayscale(0%);
+    opacity: 1;
   }
 
 </style>
