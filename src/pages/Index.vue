@@ -5,7 +5,7 @@
         <g-image class="hero-bg-img" src="~/assets/images/home-hero-image.jpg"/>
         <div class="hero-body">
           <div style="max-width: 80%;" class="container is-fullhd">
-            <h1 class="hero-text title is-uppercase" v-html="$page.homeData.heroTitle" />
+            <h1 class="hero-text title is-uppercase is-size-2 is-size-3-mobile" v-html="$page.homeData.heroTitle" />
           </div>
 
         </div>
@@ -118,7 +118,6 @@
 
   .hero-text {
     color: white;
-    font-size: 2.5rem;
     font-weight: 300;
     background: rgba(0, 0, 0, .2);
     /*text-shadow:
