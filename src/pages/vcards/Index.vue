@@ -19,7 +19,7 @@
 
       <section class="section">
         <br>
-        <div class="section-header box is-size-3 is-size-4-mobile has-text-weight-bold has-text-centered">Lista de fichas de información</div>
+        <div class="section-header box is-size-3 is-size-4-mobile has-text-weight-bold has-text-centered">Lista alfabética de fichas</div>
         <div style="width: 85%;" class="container is-size-5">
           <div v-for="item in $page.vcards.edges" class="media">
             <figure class="media-left">
@@ -60,7 +60,7 @@
         cardPath
       }
     }
-    vcards: allVegetationCard {
+    vcards: allVegetationCard (sortBy: "title", order: ASC) {
       edges {
         node {
           title
