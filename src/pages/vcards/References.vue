@@ -4,7 +4,7 @@
       <section class="hero is-small is-white">
         <div class="hero-body">
           <div class="container is-fullhd has-text-centered">
-            <h1 class="title">FORMACIONES VEGETALES</h1>
+            <h1 class="title is-uppercase ">Riesgo de colapso de los<br>ecosistemas terrestres de Venezuela</h1>
             <h2 class="title">Bibliografía</h2>
           </div>
         </div>
