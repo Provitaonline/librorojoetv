@@ -13,6 +13,9 @@ module.exports = {
       options: {
         path: 'content/vcards/**/*.md',
         typeName: 'VegetationCard',
+        remark:{
+          autolinkHeadings: false
+        }
       }
     },
     {

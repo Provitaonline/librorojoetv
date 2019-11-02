@@ -161,6 +161,14 @@
                 </table>
               </div>
             </div>
+            <div v-show="!showMore" class="container is-size-5 has-text-centered">
+              <a @click="showMore = true"><p>LEER MÁS...</p></a>
+            </div>
+            <div v-show="showMore">
+              <div class="tile is-parent">
+                <div class="d-content tile is-child is-size-5" v-html="$page.vegetationCard.content"></div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -216,6 +224,7 @@
         photourl
         photocaption
       }
+      content
     }
     vegetationCardReferences: vegetationCardReferences (path: "/content/vcards-references") {
       references {
@@ -351,7 +360,8 @@
     data() {
       return {
         threatCategories: threatCategories,
-        threatCategoryIcons: threatCategoryIcons
+        threatCategoryIcons: threatCategoryIcons,
+        showMore: false
       }
     },
     mounted () {
