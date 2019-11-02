@@ -19,10 +19,26 @@
 
       <section class="section">
         <br>
-        <div class="section-header box is-size-3 is-size-4-mobile has-text-weight-bold has-text-centered">Fichas de información</div>
-        <div class="box is-size-5">
-          {{$page.homeData.explanation}}
+        <div class="section-header box is-size-3 is-size-4-mobile has-text-weight-bold has-text-centered">Lista de fichas de información</div>
+        <div style="width: 85%;" class="container is-size-5">
+          <div v-for="item in $page.vcards.edges" class="media">
+            <figure class="media-left">
+              <g-image :src="item.node.cardimage"></g-image>
+            </figure>
+            <div class="media-content">
+              <div class="content">
+                <p>
+                  <img style="margin-bottom: -0.5rem;" :src="$options.threatCategoryIcons[item.node.category]" height="30" width="30">&nbsp;</img>
+                  <strong v-html="item.node.title"></strong> ({{$options.threatCategories[item.node.category].text}})
+                  <br>
+                  Superficie en 1988 (km<sup>2</sup>): {{item.node.areain1988 | number}}<br>
+                  Superficie en 2010 (km<sup>2</sup>): {{item.node.areain2010 | number}}<br>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+
       </section>
 
     </div>
@@ -42,6 +58,19 @@
         color
         legend
         cardPath
+      }
+    }
+    vcards: allVegetationCard {
+      edges {
+        node {
+          title
+          formattedtitle
+          category
+          description
+          cardimage (width: 100, height: 100, quality: 90)
+          areain1988
+          areain2010
+        }
       }
     }
   }
@@ -90,8 +119,16 @@
 
 <script>
   import InteractiveMap from '~/components/InteractiveMap.vue'
+  import {threatCategories} from '~/assets/js/siteConfig.js'
+
+  let threatCategoryIcons = {}
+  for (let key in threatCategories) {
+    threatCategoryIcons[key] = require('~/assets/svgs/' + key + '-icon.svg')
+  }
 
   export default {
+    threatCategories: threatCategories,
+    threatCategoryIcons: threatCategoryIcons,
     data() {
       let self = this
       return {

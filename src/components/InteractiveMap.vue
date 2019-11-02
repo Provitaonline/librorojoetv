@@ -67,7 +67,7 @@
             <div :id="makeId(item.name)" class="legend-box">
               <div title="Clic para sólo ver esto en el mapa" v-if="item.legend === 'colorkey'" @click="legendClick(item)" class="legend-symbol"><span class="legend-item" :style="'background:' + item.color + ';'"></span></div>
               <div title="Clic para sólo ver esto en el mapa" v-else-if="item.legend === 'dotkey'" @click="legendClick(item)" class="legend-symbol"><span class="dot" :style="'background:' + item.color + ';'"></span></div>
-              <g-link title="Clic para ir a los detalles" :to="makeLink(item)"> {{ item.name }}</g-link>
+              <a title="Clic para ir a los detalles" :href="makeLink(item)"> {{ item.name }}</a>
             </div>
           </div>
           <div v-if="i === 3" style="display: flex;">
@@ -358,10 +358,10 @@
         } else {
           it = t
         }
-        if (it.cardPath){
-          return 'vcards/' + slugify(it.cardPath, {lower: true})
+        if (it.cardPath) {
+          return slugify(it.cardPath, {lower: true})
         } else {
-          return 'vcards/' + slugify(it.name, {lower: true})
+          return slugify(it.name, {lower: true})
         }
       },
       makeId(t) {
