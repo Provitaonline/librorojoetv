@@ -13,13 +13,16 @@
         <b-navbar-item>
           MÉTODOS
         </b-navbar-item>
-        <b-navbar-dropdown :arrowless="true" label="MAS INFORMACIÓN">
-            <b-navbar-item>
-                Unidades de paisaje
-            </b-navbar-item>
-            <b-navbar-item>
-                Casos de estudio
-            </b-navbar-item>
+        <b-navbar-dropdown :arrowless="true" label="EXPLORAR">
+          <b-navbar-item tag="a" href="/vcards">
+              Riesgo de colapso
+          </b-navbar-item>
+          <b-navbar-item>
+              Casos de estudio
+          </b-navbar-item>
+          <b-navbar-item>
+              Unidades de paisaje
+          </b-navbar-item>
         </b-navbar-dropdown>
         <b-navbar-item tag="a" href="/contact">
           CONTACTO
