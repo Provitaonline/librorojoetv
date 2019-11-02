@@ -23,13 +23,13 @@
         <div style="width: 85%;" class="container is-size-5">
           <div v-for="item in $page.vcards.edges" class="media">
             <figure class="media-left">
-              <g-image :src="item.node.cardimage"></g-image>
+              <g-link :to="'/vcards/' + makeLink(item.node.title)"><g-image :src="item.node.cardimage"></g-image></g-link>
             </figure>
             <div class="media-content">
               <div class="content">
                 <p>
                   <img style="margin-bottom: -0.5rem;" :src="$options.threatCategoryIcons[item.node.category]" height="30" width="30">&nbsp;</img>
-                  <strong v-html="item.node.title"></strong> ({{$options.threatCategories[item.node.category].text}})
+                  <g-link :to="'/vcards/' + makeLink(item.node.title)"><strong v-html="item.node.title"></strong> ({{$options.threatCategories[item.node.category].text}}) </g-link>
                   <br>
                   Superficie en 1988 (km<sup>2</sup>): {{item.node.areain1988 | number}}<br>
                   Superficie en 2010 (km<sup>2</sup>): {{item.node.areain2010 | number}}<br>
@@ -118,6 +118,7 @@
 </style>
 
 <script>
+  import slugify from 'slugify';
   import InteractiveMap from '~/components/InteractiveMap.vue'
   import {threatCategories} from '~/assets/js/siteConfig.js'
 
@@ -192,7 +193,9 @@
 
     },
     methods: {
-
+      makeLink(t) {
+        return slugify(t, {lower: true})
+      }
     },
     watch: {
     }
