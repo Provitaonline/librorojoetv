@@ -165,9 +165,11 @@
               <a @click="showMore = true"><p>LEER MÁS...</p></a>
             </div>
             <div v-show="showMore">
-              <div class="tile is-parent">
-                <div class="d-content tile is-child is-size-5" v-html="$page.vegetationCard.content"></div>
-              </div>
+              <TextWithRefsAndPhotos class="d-content tile is-child is-size-5"
+                :text="$page.vegetationCard.content"
+                :refs="$page.vegetationCardReferences.references"
+                :photos="$page.vegetationCard.photos">
+              </TextWithRefsAndPhotos>
             </div>
           </div>
         </div>
