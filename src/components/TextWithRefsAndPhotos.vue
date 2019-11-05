@@ -1,6 +1,6 @@
 <template>
   <div>
-	   <v-runtime-template :template="injectReferences()"></v-runtime-template>
+	   <v-runtime-template :template="injectReferencesAndModalPhotos()"></v-runtime-template>
   </div>
 </template>
 
@@ -11,6 +11,13 @@
 
   sup { vertical-align: top; font-size: 0.6em; }
 
+  @media only screen and (min-width: 769px) {
+    .inline-figure > figure,  .inline-figure > fig-caption,{
+      max-width: 80%;
+      margin: 0 auto;
+    }
+  }
+
 </style>
 
 <script>
@@ -18,7 +25,7 @@
 import VRuntimeTemplate from "v-runtime-template"
 
 function addPopovers(data, references, photos) {
-  let r = data.replace(/\(.*?\)/g, function (match, offset) {
+  let r = data.replace(/\(.*?\)/g, function (match) {
     let lookup = ((match.replace(/[{()}]/g, ''))).split(',');
     let dropDownItems = ''
     let photoItems = ''
@@ -44,11 +51,12 @@ function addPopovers(data, references, photos) {
       return (dropdown.trim())
     }
     if (photos) {
+      let i = 0
       lookup.forEach(refItem => {
         let pIdx = photos.findIndex(function(p) { return p.photokey === refItem.trim()})
         if (pIdx >= 0) {
           photoItems += `
-            <a @click="photoClick">` + (pIdx > 0 ? ', ' :  '' ) + refItem.trim() + `</a><div class="modal photo-modal">
+            <a @click="photoClick">` + (i++ > 0 ? ', ' :  '' ) + refItem.trim() + `</a><div class="modal photo-modal">
               <div @click="closePhotoModal" class="modal-background"></div>
               <div class="modal-content has-text-centered">
                 <figure style="padding: 2%;">
@@ -65,12 +73,41 @@ function addPopovers(data, references, photos) {
         }
       })
       if (photoItems != '') {
-        return ('(' + photoItems.trim().replace(/\n|\r/g, "") + ')')
+        console.log('(' + photoItems.trim().replace(/\n\s*|\r\s*/g, "") + ')')
+        return ('(' + photoItems.trim().replace(/\n\s*|\r\s*/g, "") + ')')
       }
     }
     return match
   })
   return '<div>' + r  + '</div>'
+}
+
+function processContent(text, photos) {
+  let r = text.replace(/<p>/g, '<div class="d-content">').replace(/<\/p>/g, '</div>')
+
+  r = r.replace(/\{.*?\}/g, function (match, offset) {
+    let item = ((match.replace(/[{\{\}}]/g, '')))
+    let pIdx = photos.findIndex(function(p) { return p.photokey === item.trim()})
+
+    if (pIdx >= 0) {
+      return `
+        <div class="inline-figure has-text-centered">
+          <br>
+          <figure style="padding: 2%;">
+            <g-image :src="photos[` + pIdx + `].photourl"></g-image>
+          </figure>
+          <figcaption style="max-width: 80%; margin: 0 auto;">
+            <div class="is-size-7" v-html="photos[` + pIdx + `].photocaption"></div>
+          </figcaption>
+          <br>
+        </div>
+      `
+    } else {
+      return match
+    }
+  })
+
+  return r
 }
 
 function closePopovers(elements, el) {
@@ -97,7 +134,8 @@ export default {
   props: {
     text: { type: String, required: true },
     refs: { type: Array, required: true },
-    photos: {type: Array, required: false}
+    photos: {type: Array, required: false},
+    isContent: {type: Boolean, required: false}
   },
   data () {
     return {
@@ -121,8 +159,14 @@ export default {
     }
   },
   methods: {
-    injectReferences: function() {
-      return addPopovers(this.text, this.refs, this.photos)
+    injectReferencesAndModalPhotos: function() {
+      let text
+      if (this.isContent) {
+        text = processContent(this.text, this.photos)
+      } else {
+        text = this.text
+      }
+      return addPopovers(text, this.refs, this.photos)
     },
     dropDownClick: function(e) {
       let referenceDropdownElement = e.target.closest('.reference-dropdown')

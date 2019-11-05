@@ -58,8 +58,10 @@ h1 {
   @extend .is-size-3;
   @extend .is-size-4-mobile;
   @extend .has-text-weight-bold;
+  margin-top: 24px;
 }
 
-.d-content > div > p {
-  padding: 32px;
+.d-content {
+  padding-left: 32px;
+  padding-right: 32px;
 }

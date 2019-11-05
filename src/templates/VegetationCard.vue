@@ -5,12 +5,12 @@
         <div class="hero-body">
           <div class="container is-fullhd has-text-centered">
             <div class="container" style="width: 78%;">
-              <h1 v-if="$page.vegetationCard.plantformation" style="margin-bottom: 0;" class="title is-uppercase">{{$page.vegetationCard.plantformation}}</h1>
-              <h1 v-else class="title is-uppercase">{{$page.vegetationCard.title}}</h1>
-              <h2 style="margin-bottom: 0px;" class="is-size-3" v-if="$page.vegetationCard.plantformation">
+              <p v-if="$page.vegetationCard.plantformation" style="margin-bottom: 0;" class="title is-uppercase is-size-4-mobile">{{$page.vegetationCard.plantformation}}</p>
+              <p v-else class="title is-uppercase is-size-4-mobile">{{$page.vegetationCard.title}}</p>
+              <p style="margin-bottom: 0px;" class="is-size-3 is-size-4-mobile" v-if="$page.vegetationCard.plantformation">
                 (<span v-if="$page.vegetationCard.formattedtitle" v-html="$page.vegetationCard.formattedtitle"></span>
                 <span v-else v-html="$page.vegetationCard.title"></span>)
-              </h2>
+              </p>
             </div>
             <div class="categoryicon">
               <img :src="threatCategoryIcons[$page.vegetationCard.category]" height="50" width="50" />
@@ -22,13 +22,13 @@
       <div class="has-text-centered">
         <g-image v-if="$page.vegetationCard.cardimage" :src="$page.vegetationCard.cardimage" fit="inside" />
       </div>
-      <figcaption class="has-text-centered"><div class="is-size-7" v-html="$page.vegetationCard.cardimagecaption"></div></figcaption>
+      <figcaption class="has-text-centered"><div class="is-size-6" v-html="$page.vegetationCard.cardimagecaption"></div></figcaption>
       <section class="section">
         <div class="tile is-ancestor">
           <div class="tile is-vertical is-parent">
             <div class="section-header box is-size-3 is-size-4-mobile has-text-weight-bold has-text-centered">Descripción</div>
             <div class="tile is-parent">
-              <div class="tile is-child box is-size-5">
+              <div class="tile is-child box is-size-5 is-size-6-mobile">
                 <TextWithRefsAndPhotos
                   :text="$page.vegetationCard.description"
                   :refs="$page.vegetationCardReferences.references"
@@ -38,7 +38,7 @@
             </div>
             <div class="section-header box is-size-3 is-size-4-mobile has-text-weight-bold has-text-centered">Distribución</div>
             <div class="tile is-parent">
-              <div class="tile is-child box is-size-5">
+              <div class="tile is-child box is-size-5 is-size-6-mobile">
                 <div>
                   <div class="distribution-map">
                     <p class="is-size-7 has-text-centered has-text-weight-bold">{{$page.vegetationCard.title}}<br>Distribución en 2010</p>
@@ -161,14 +161,16 @@
                 </table>
               </div>
             </div>
-            <div v-show="!showMore" class="container is-size-5 has-text-centered">
+            <div v-if="$page.vegetationCard.content != '\n'" v-show="!showMore" class="container is-size-5 has-text-centered">
               <a @click="showMore = true"><p>LEER MÁS...</p></a>
             </div>
             <div v-show="showMore">
-              <TextWithRefsAndPhotos class="d-content tile is-child is-size-5"
+              <!-- <div class="d-content tile is-child is-size-5" v-html="$page.vegetationCard.content"></div> -->
+              <TextWithRefsAndPhotos class="tile is-parent box is-size-5 is-size-6-mobile"
                 :text="$page.vegetationCard.content"
                 :refs="$page.vegetationCardReferences.references"
-                :photos="$page.vegetationCard.photos">
+                :photos="$page.vegetationCard.photos"
+                :isContent="true" />
               </TextWithRefsAndPhotos>
             </div>
           </div>
