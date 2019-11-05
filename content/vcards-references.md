@@ -105,9 +105,9 @@ references:
 - referencekey: Dávalos 2010
   reference: >
       Dávalos, A.L. (2010). Distribución Geográfica Contemporánea de Los Manglares en la Costa Caribe de Venezuela. Trabajo de Grado, Maestría en Ecología, Instituto Venezolano de Investigaciones Científicas. Caracas, Venezuela. 142 pp.
-- referencekey: De Oliveria-Miranda 2008
+- referencekey: De Oliveira-Miranda 2008
   reference: >
-      De Oliveria-Miranda, R.M. (2008). Los parques nacionales como instrumento de conservación. Caso de estudio Parque Nacional Macarao. Tesis especial de Grado, Universidad Simón Bolívar. Caracas. 68 pp.
+      De Oliveira-Miranda, R.M. (2008). Los parques nacionales como instrumento de conservación. Caso de estudio Parque Nacional Macarao. Tesis especial de Grado, Universidad Simón Bolívar. Caracas. 68 pp.
 - referencekey: Díaz 2007
   reference: >
       Díaz, W. (2007). Composición florística y estructura de bosques en los asentamientos campesinos Las Delicias, El Guamo y Lechozal, Estado Bolívar, Venezuela. Ernstia 17(1): 1-24.
