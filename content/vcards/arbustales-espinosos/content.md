@@ -16,6 +16,23 @@ mapcompare:
   - in2010: "./figura-1a-1-88.jpg"
     in1988: "./figura-1b-1-2010.jpg"
     caption: "Occidente"
+    interventionlegend:
+    - image: "./muy-intervenido.png"
+      text: "Muy intervenido"
+    - image: "./medio-alto.png"
+      text: "Medio alto"
+    - image: "./bajo.png"
+      text: "Bajo o información no disponible"
+  - in2010: "./figura-1a-2-88.jpg"
+    in1988: "./figura-1b-2-2010.jpg"
+    caption: "Centro-este"
+    interventionlegend:
+    - image: "./muy-intervenido.png"
+      text: "Muy intervenido"
+    - image: "./medio-alto.png"
+      text: "Medio alto"
+    - image: "./bajo.png"
+      text: "Bajo o información no disponible"
 formationColumn: false
 stateleveltable:
   - state: "Anzoátegui"
@@ -60,6 +77,13 @@ stateleveltable:
   - state: "Zulia"
     areain1988: "3352"
     areain2010: "1558"
+threatlevelmaps:
+  - map: "./figura-1c-1.jpg"
+    caption: "Occidente"
+    threatcategories: ["cr", "en"]
+  - map: "./figura-1c-2.jpg"
+    caption: "Centro-este"
+    threatcategories: ["cr", "en", "vu"]
 zonelabel: "Estado"
 criteriaused: [A3, A4, C2, "Situación por estado"]
 riskofcolapsestatelevel:
