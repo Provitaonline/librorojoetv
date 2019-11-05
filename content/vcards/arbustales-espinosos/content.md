@@ -12,6 +12,10 @@ Desde el punto de vista de las unidades de paisajes, esta formación se concentr
 distributionmap: "./dist.png"
 areain1988: "25173"
 areain2010: "20297"
+mapcompare:
+  - in2010: "./figura-1a-1-88.jpg"
+    in1988: "./figura-1b-1-2010.jpg"
+    caption: "Occidente"
 formationColumn: false
 stateleveltable:
   - state: "Anzoátegui"
