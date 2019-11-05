@@ -68,7 +68,7 @@ function addPopovers(data, references, photos) {
                   <g-image style="max-height: calc(100vh - 120px); width: auto;" :src="photos[` + pIdx + `].photourl"></g-image>
                 </figure>
                 <figcaption class="has-text-centered">
-                  <div class="is-size-7 has-text-white" v-html="photos[` + pIdx + `].photocaption">
+                  <div class="is-size-6 is-size-7-mobile has-text-white" v-html="photos[` + pIdx + `].photocaption">
                   </div>
                 </figcaption>
               </div>
@@ -104,7 +104,7 @@ function processContent(text, photos) {
             <g-image :src="photos[` + pIdx + `].photourl"></g-image>
           </figure>
           <figcaption style="max-width: 80%; margin: 0 auto;">
-            <div class="is-size-7" v-html="photos[` + pIdx + `].photocaption"></div>
+            <div class="is-size-6 is-size-7-mobile" v-html="photos[` + pIdx + `].photocaption"></div>
           </figcaption>
           <br>
         </div>
