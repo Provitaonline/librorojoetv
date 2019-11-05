@@ -359,9 +359,9 @@
           it = t
         }
         if (it.cardPath) {
-          return this.$route.path + '/' + slugify(it.cardPath, {lower: true})
+          return this.$route.path.replace(/\/$/, "") + '/' + slugify(it.cardPath, {lower: true})
         } else {
-          return this.$route.path + '/' + slugify(it.name, {lower: true})
+          return this.$route.path.replace(/\/$/, "") + '/' + slugify(it.name, {lower: true})
         }
       },
       makeId(t) {
