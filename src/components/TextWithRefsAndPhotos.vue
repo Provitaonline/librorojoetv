@@ -73,7 +73,7 @@ function addPopovers(data, references, photos) {
         }
       })
       if (photoItems != '') {
-        console.log('(' + photoItems.trim().replace(/\n\s*|\r\s*/g, "") + ')')
+        // Get rid of all blanks to avoid formatting glitches
         return ('(' + photoItems.trim().replace(/\n\s*|\r\s*/g, "") + ')')
       }
     }
@@ -83,6 +83,8 @@ function addPopovers(data, references, photos) {
 }
 
 function processContent(text, photos) {
+
+  // Replace mardownified content <p> with <div> so that <div> elements can be inserted
   let r = text.replace(/<p>/g, '<div class="d-content">').replace(/<\/p>/g, '</div>')
 
   r = r.replace(/\{.*?\}/g, function (match, offset) {
