@@ -12,10 +12,15 @@
   sup { vertical-align: top; font-size: 0.6em; }
 
   @media only screen and (min-width: 769px) {
-    .inline-figure > figure,  .inline-figure > fig-caption,{
+    .inline-figure > figure, .inline-figure > fig-caption {
       max-width: 80%;
       margin: 0 auto;
     }
+  }
+
+  .d-content {
+    padding-left: 32px;
+    padding-right: 32px;
   }
 
 </style>
