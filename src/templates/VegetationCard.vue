@@ -48,7 +48,11 @@
                     <g-image v-if="$page.vegetationCard.distributionmap" :src="$page.vegetationCard.distributionmap" />
                     <p class="is-size-7 has-text-right"><i>Huber y Oliveira-Miranda (2010)</i></p>
                   </div>
-                  <TextWithRefsAndPhotos :text="$page.vegetationCard.distribution" :refs="$page.vegetationCardReferences.references"></TextWithRefsAndPhotos>
+                  <TextWithRefsAndPhotos
+                    :text="$page.vegetationCard.distribution"
+                    :refs="$page.vegetationCardReferences.references"
+                    :photos="$page.vegetationCard.photos">
+                  </TextWithRefsAndPhotos>
                 </div>
               </div>
             </div>
