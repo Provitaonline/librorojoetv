@@ -19,9 +19,6 @@
   }
 
   .d-content {
-    /* padding-top: 20px; */
-    padding-left: 32px;
-    padding-right: 32px;
     margin-bottom: 2rem;
   }
 

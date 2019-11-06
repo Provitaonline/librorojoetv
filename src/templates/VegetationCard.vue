@@ -171,9 +171,9 @@
             <div v-if="$page.vegetationCard.content != '\n'" v-show="!showMore" class="container is-size-5 has-text-centered">
               <a @click="showMore = true"><p>LEER MÁS...</p></a>
             </div>
-            <div v-show="showMore">
+            <div v-show="showMore" class="tile is-parent">
               <!-- <div class="d-content tile is-child is-size-5" v-html="$page.vegetationCard.content"></div> -->
-              <TextWithRefsAndPhotos class="tile is-parent box is-size-5 is-size-6-mobile"
+              <TextWithRefsAndPhotos class="tile is-child box is-size-5 is-size-6-mobile"
                 :text="$page.vegetationCard.content"
                 :refs="$page.vegetationCardReferences.references"
                 :photos="$page.vegetationCard.photos"
