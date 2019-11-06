@@ -6,7 +6,10 @@
           <div class="container is-fullhd has-text-centered">
             <div class="container" style="width: 78%;">
               <p v-if="$page.vegetationCard.plantformation" style="margin-bottom: 0;" class="title is-uppercase is-size-4-mobile">{{$page.vegetationCard.plantformation}}</p>
-              <p v-else class="title is-uppercase is-size-4-mobile">{{$page.vegetationCard.title}}</p>
+              <p v-else class="title is-uppercase is-size-4-mobile">
+                <span v-if="$page.vegetationCard.formattedtitle" v-html="$page.vegetationCard.formattedtitle"></span>
+                <span v-else v-html="$page.vegetationCard.title"></span>
+              </p>
               <p style="margin-bottom: 0px;" class="is-size-3 is-size-4-mobile" v-if="$page.vegetationCard.plantformation">
                 (<span v-if="$page.vegetationCard.formattedtitle" v-html="$page.vegetationCard.formattedtitle"></span>
                 <span v-else v-html="$page.vegetationCard.title"></span>)
