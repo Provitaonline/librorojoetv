@@ -3,7 +3,9 @@
     <div class="page-wrapper">
       <nav-side :value="sidePanelState">
         <div>
-          <a style="float: right; padding: 8px;" v-on:click="toggleSidePanelState()"><font-awesome :icon="['fas', 'times']"/></a>
+          <a style="float: right; padding: 8px; color: #4A4A4A;" v-on:click="toggleSidePanelState()">
+            <font-awesome :icon="['fas', 'times']"/>
+          </a>
           <div class="box">
             <p>Índice de fichas</p>
             <p>Lorem ipsum dolor sit amet</p>
@@ -30,7 +32,7 @@
         </div>
       </nav-side>
       <div>
-        <a v-if="sidePanelState === -1" style="position: absolute; padding: 8px;" v-on:click="toggleSidePanelState()" role="button">
+        <a v-if="sidePanelState === -1" style="position: absolute; padding: 8px; color: #4A4A4A;" v-on:click="toggleSidePanelState()" role="button">
           <font-awesome :icon="['fas', 'ellipsis-h']"/>
         </a>
 
