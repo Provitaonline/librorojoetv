@@ -1,17 +1,23 @@
 <template>
   <Layout>
-    <div class="columns">
-      <div v-bind:class=" {hidden: hiddenLeftPanel}" class="column left-side">
-        <div class="box">
-          <p>Lorem ipsum dolor sit amet</p>
-          <p>Lorem ipsum dolor sit amet</p>
-          <p>Lorem ipsum dolor sit amet</p>
-          <p>Lorem ipsum dolor sit amet</p>
-          <p>Lorem ipsum dolor sit amet</p>
+    <div class="page-wrapper">
+      <nav-side :value="sidePanelState">
+        <div>
+          <a style="float: right;" v-on:click="toggleSidePanelState()"><font-awesome :icon="['fas', 'times']"/></a>
+          <div class="box">
+            <p>Índice de fichas</p>
+            <p>Lorem ipsum dolor sit amet</p>
+            <p>Lorem ipsum dolor sit amet</p>
+            <p>Lorem ipsum dolor sit amet</p>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
         </div>
-      </div>
-      <div class="column page-wrapper">
-        <div style="position: absolute;" v-on:click="hiddenLeftPanel = !hiddenLeftPanel">AA</div>
+      </nav-side>
+      <div>
+        <a style="position: absolute; padding-left: 5px;" v-on:click="toggleSidePanelState()" role="button">
+          <font-awesome :icon="['fas', 'ellipsis-h']"/>
+        </a>
+
         <section class="hero is-small is-white">
           <div class="hero-body">
             <div class="container is-fullhd has-text-centered">
@@ -365,16 +371,8 @@
     font-weight: bold;
   }
 
-  .left-side {
-    flex: none;
-    width: 20%;
-  }
-
-  .hidden {
-    display: none;
-  }
-
   .page-wrapper {
+    display: flex;
     /*padding-left: 0px;
     padding-right: 0px;*/
   }
@@ -385,6 +383,7 @@
 
   import {threatCategories} from '~/assets/js/siteConfig.js'
   import TextWithRefsAndPhotos from '~/components/TextWithRefsAndPhotos.vue'
+  import NavSide from 'vue-nav-side/src/components/NavSide.vue'
 
   let threatCategoryIcons = {}
   for (let key in threatCategories) {
@@ -399,7 +398,7 @@
         threatCategories: threatCategories,
         threatCategoryIcons: threatCategoryIcons,
         showMore: false,
-        hiddenLeftPanel: false
+        sidePanelState: -1
       }
     },
     mounted () {
@@ -419,7 +418,8 @@
     components: {
       VueCompareImage: () => import ('vue-compare-image').then(m => m),
       //vuIcon
-      TextWithRefsAndPhotos
+      TextWithRefsAndPhotos,
+      NavSide
     },
     methods: {
       redOrGreen: function(value) {
@@ -434,6 +434,9 @@
       numbernobrackets: function (a) {
         a = (a === null ? '' : a)
         return Number(a.replace(/[\<\>]/g, ''))
+      },
+      toggleSidePanelState: function() {
+        this.sidePanelState = (this.sidePanelState === 1) ? -1 : 1
       }
     }
   }
