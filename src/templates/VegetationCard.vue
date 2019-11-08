@@ -3,31 +3,17 @@
     <div class="page-wrapper">
       <nav-side :value="sidePanelState">
         <div>
-          <a style="float: right; padding: 8px; color: #4A4A4A;" v-on:click="toggleSidePanelState()">
-            <font-awesome :icon="['fas', 'times']"/>
-          </a>
+          <div class="side-panel-title">
+            <a style="float: right; padding-right: 8px;" v-on:click="toggleSidePanelState()">
+              <font-awesome size="sm" :icon="['fas', 'times']"/>
+            </a>
+            <p class="is-size-4 has-text-weight-bold has-text-centered" style="padding: 20px;">Índice de fichas</p>
+          </div>
           <div class="box">
-            <p>Índice de fichas</p>
-            <p>Lorem ipsum dolor sit amet</p>
-            <p>Lorem ipsum dolor sit amet</p>
-            <p><b>Arbustales y herbazales parameros</b></p>
-            <p>Lorem ipsum dolor sit amet</p>
-            <p>Lorem ipsum dolor sit amet</p>
-            <p>Lorem ipsum dolor sit amet</p>
-            <p>Lorem ipsum dolor sit amet</p>
-            <p>Lorem ipsum dolor sit amet</p>
-            <p>Lorem ipsum dolor sit amet</p>
-            <p>Lorem ipsum dolor sit amet</p>
-            <p>Lorem ipsum dolor sit amet</p>
-            <p>Lorem ipsum dolor sit amet</p>
-            <p>Lorem ipsum dolor sit amet</p>
-            <p>Lorem ipsum dolor sit amet</p>
-            <p>Lorem ipsum dolor sit amet</p>
-            <p>Lorem ipsum dolor sit amet</p>
-            <p>Lorem ipsum dolor sit amet</p>
-            <p>Lorem ipsum dolor sit amet</p>
-            <p>Lorem ipsum dolor sit amet</p>
-            <p>Lorem ipsum dolor sit amet</p>
+            <p class='side-panel-item' v-for="item in $page.vcards.edges">
+              <g-link v-if="slugify(item.node.title) != currentSlug" :to="pathParent + '/' + slugify(item.node.title)">{{item.node.title}}</g-link>
+              <span v-else><b><i>{{item.node.title}}</i></b></span>
+            </p>
           </div>
         </div>
       </nav-side>
@@ -279,6 +265,23 @@
         reference
       }
     }
+    homeData: homeData (path: "/content/home") {
+    	vegetation {
+        name
+        group
+        color
+        legend
+        cardPath
+      }
+    }
+    vcards: allVegetationCard (sortBy: "title", order: ASC) {
+      edges {
+        node {
+          title
+          formattedtitle
+        }
+      }
+    }
   }
 </page-query>
 
@@ -399,6 +402,18 @@
     padding-right: 0px;*/
   }
 
+  .side-panel-title {
+    background-color: #f8e7e8;
+  }
+
+  .side-panel-item {
+    padding: 10px;
+  }
+
+  .side-panel-item:hover {
+    background-color: #fafafa;
+  }
+
 </style>
 
 <script>
@@ -406,6 +421,7 @@
   import {threatCategories} from '~/assets/js/siteConfig.js'
   import TextWithRefsAndPhotos from '~/components/TextWithRefsAndPhotos.vue'
   import NavSide from 'vue-nav-side/src/components/NavSide.vue'
+  import slugify from 'slugify'
 
   let threatCategoryIcons = {}
   for (let key in threatCategories) {
@@ -414,16 +430,23 @@
 
   export default {
     created() {
+
     },
     data() {
       return {
         threatCategories: threatCategories,
         threatCategoryIcons: threatCategoryIcons,
         showMore: false,
-        sidePanelState: -1
+        sidePanelState: -1,
+        currentSlug: null,
+        pathParent: null
       }
     },
     mounted () {
+      this.pathParent = this.$route.path.replace(/\/$/, '').replace(/\/[^\/]+$/,'')
+    },
+    updated() {
+      this.currentSlug = this.$route.path.replace(/\/$/, '').match(/\/[^\/]+$/)[0].substring(1)
     },
     filters: {
       decimal: function(value, decimals) {
@@ -459,6 +482,9 @@
       },
       toggleSidePanelState: function() {
         this.sidePanelState = (this.sidePanelState === 1) ? -1 : 1
+      },
+      slugify: function(t) {
+        return slugify(t, {lower: true})
       }
     }
   }
