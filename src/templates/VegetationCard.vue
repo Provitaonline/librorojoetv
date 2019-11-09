@@ -441,10 +441,7 @@
 
   export default {
     created() {
-      /*this.$router.beforeEach((to, from, next) => {
-        console.log(to)
-        next()
-      })*/
+
     },
     data() {
       return {
@@ -461,11 +458,6 @@
     },
     updated() {
       this.currentSlug = this.$route.path.replace(/\/$/, '').match(/\/[^\/]+$/)[0].substring(1)
-      //console.log(window.screen.width)
-    },
-    beforeRouteLeave (to, from, next) {
-      console.log(to)
-      next()
     },
     filters: {
       decimal: function(value, decimals) {
