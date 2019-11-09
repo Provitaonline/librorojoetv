@@ -10,7 +10,7 @@
             <p class="is-size-4 has-text-weight-bold has-text-centered" style="padding: 20px;">Índice de fichas</p>
           </div>
           <div class="box">
-            <p class='side-panel-item' v-for="item in $page.vcards.edges">
+            <p @click="sidePanelItemClicked()" class='side-panel-item' v-for="item in $page.vcards.edges">
               <g-link v-if="slugify(item.node.title) != currentSlug" :to="pathParent + '/' + slugify(item.node.title)">{{item.node.title}}</g-link>
               <span v-else><b><i>{{item.node.title}}</i></b></span>
             </p>
@@ -18,7 +18,7 @@
         </div>
       </nav-side>
       <div>
-        <a v-if="sidePanelState === -1" style="position: absolute; padding: 8px; color: #4A4A4A;" v-on:click="toggleSidePanelState()" role="button">
+        <a v-if="sidePanelState === -1" style="position: absolute; padding-top: 10px; color: #4A4A4A;" v-on:click="toggleSidePanelState()" role="button">
           <OpenSidePanelIcon class="open-side-panel-icon" ></OpenSidePanelIcon>
           <!-- <font-awesome :icon="['fas', 'ellipsis-h']"/> -->
         </a>
@@ -441,7 +441,10 @@
 
   export default {
     created() {
-
+      /*this.$router.beforeEach((to, from, next) => {
+        console.log(to)
+        next()
+      })*/
     },
     data() {
       return {
@@ -455,10 +458,14 @@
     },
     mounted () {
       this.pathParent = this.$route.path.replace(/\/$/, '').replace(/\/[^\/]+$/,'')
-      console.log(OpenSidePanelIcon)
     },
     updated() {
       this.currentSlug = this.$route.path.replace(/\/$/, '').match(/\/[^\/]+$/)[0].substring(1)
+      //console.log(window.screen.width)
+    },
+    beforeRouteLeave (to, from, next) {
+      console.log(to)
+      next()
     },
     filters: {
       decimal: function(value, decimals) {
@@ -498,6 +505,11 @@
       },
       slugify: function(t) {
         return slugify(t, {lower: true})
+      },
+      sidePanelItemClicked: function() {
+        if (window.screen.width < 500) {
+          this.sidePanelState = -1
+        }
       }
     }
   }
