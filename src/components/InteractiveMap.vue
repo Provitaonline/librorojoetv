@@ -180,8 +180,8 @@
 </style>
 
 <script>
-  import axios from 'axios';
-  import slugify from 'slugify';
+  import axios from 'axios'
+  import slugify from 'slugify'
   import * as topojson from 'topojson-client'
 
   var latLng, icon, circleMarker;
