@@ -19,7 +19,8 @@
       </nav-side>
       <div>
         <a v-if="sidePanelState === -1" style="position: absolute; padding: 8px; color: #4A4A4A;" v-on:click="toggleSidePanelState()" role="button">
-          <font-awesome :icon="['fas', 'ellipsis-h']"/>
+          <OpenSidePanelIcon class="open-side-panel-icon" ></OpenSidePanelIcon>
+          <!-- <font-awesome :icon="['fas', 'ellipsis-h']"/> -->
         </a>
 
         <section class="hero is-small is-white">
@@ -414,6 +415,14 @@
     background-color: #fafafa;
   }
 
+  .open-side-panel-icon>g {
+    stroke: #4a4a4a;
+  }
+
+  .open-side-panel-icon>g:hover {
+    stroke: $primary;
+  }
+
 </style>
 
 <script>
@@ -422,6 +431,8 @@
   import TextWithRefsAndPhotos from '~/components/TextWithRefsAndPhotos.vue'
   import NavSide from 'vue-nav-side/src/components/NavSide.vue'
   import slugify from 'slugify'
+
+  import OpenSidePanelIcon from '~/assets/svgs/opensidepanel.svg?inline'
 
   let threatCategoryIcons = {}
   for (let key in threatCategories) {
@@ -444,6 +455,7 @@
     },
     mounted () {
       this.pathParent = this.$route.path.replace(/\/$/, '').replace(/\/[^\/]+$/,'')
+      console.log(OpenSidePanelIcon)
     },
     updated() {
       this.currentSlug = this.$route.path.replace(/\/$/, '').match(/\/[^\/]+$/)[0].substring(1)
@@ -464,7 +476,8 @@
       VueCompareImage: () => import ('vue-compare-image').then(m => m),
       //vuIcon
       TextWithRefsAndPhotos,
-      NavSide
+      NavSide,
+      OpenSidePanelIcon
     },
     methods: {
       redOrGreen: function(value) {
