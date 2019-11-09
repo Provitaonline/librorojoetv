@@ -7,14 +7,28 @@
             <a style="float: right; padding-right: 8px;" v-on:click="toggleSidePanelState()">
               <font-awesome size="sm" :icon="['fas', 'times']"/>
             </a>
-            <p class="is-size-4 has-text-weight-bold has-text-centered" style="padding: 20px;">Índice de fichas</p>
+            <p class="is-size-4 has-text-weight-bold has-text-centered" style="padding: 20px;">Formaciones vegetales</p>
           </div>
           <div class="box">
+            <div v-for="item, index in $page.homeData.vegetation">
+              <div>
+                <p class="side-panel-item-title" v-if="isTitle(index)">
+                  <b>{{item.plantformation}}</b>
+                </p>
+                <div @click="sidePanelItemClicked()" class="side-panel-item-box side-panel-item">
+                  <span v-if="item.plantformation">&nbsp;&nbsp;&nbsp;</span>
+                  <g-link v-if="getTargetSlug(item) != currentSlug" :to="pathParent + '/' + getTargetSlug(item)">{{item.name}}</g-link>
+                  <span v-else><b><i>{{item.name}}</i></b></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="box">
             <p @click="sidePanelItemClicked()" class='side-panel-item' v-for="item in $page.vcards.edges">
               <g-link v-if="slugify(item.node.title) != currentSlug" :to="pathParent + '/' + slugify(item.node.title)">{{item.node.title}}</g-link>
               <span v-else><b><i>{{item.node.title}}</i></b></span>
             </p>
-          </div>
+          </div> -->
         </div>
       </nav-side>
       <div>
@@ -273,6 +287,7 @@
         color
         legend
         cardPath
+        plantformation
       }
     }
     vcards: allVegetationCard (sortBy: "title", order: ASC) {
@@ -407,8 +422,8 @@
     background-color: #f8e7e8;
   }
 
-  .side-panel-item {
-    padding: 10px;
+  .side-panel-item, .side-panel-item-title {
+    padding: 8px;
   }
 
   .side-panel-item:hover {
@@ -421,6 +436,11 @@
 
   .open-side-panel-icon>g:hover {
     stroke: $primary;
+  }
+
+  .side-panel-item-box {
+    display: flex;
+    box-sizing: border-box;
   }
 
 </style>
@@ -502,6 +522,20 @@
         if (window.screen.width < 500) {
           this.sidePanelState = -1
         }
+      },
+      getTargetSlug: function(t) {
+        return t.cardPath ? slugify(t.cardPath, {lower: true}) : slugify(t.name, {lower: true})
+      },
+      isTitle: function(i) {
+        let pf = this.$page.homeData.vegetation[i].plantformation
+        if (pf) {
+          if (i > 0) {
+            return (pf === this.$page.homeData.vegetation[i-1].plantformation) ? false : true
+          } else {
+            return true
+          }
+        }
+        return false
       }
     }
   }

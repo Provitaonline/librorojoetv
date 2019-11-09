@@ -115,8 +115,7 @@
 
   .legend-box {
     display: flex;
-    box-sizing:
-    border-box;
+    box-sizing: border-box;
   }
 
   .lightstripe {
