@@ -33,8 +33,15 @@
       </nav-side>
       <div>
         <a v-if="sidePanelState === -1" style="position: absolute; padding-top: 10px; color: #4A4A4A;" v-on:click="toggleSidePanelState()" role="button">
-          <OpenSidePanelIcon class="open-side-panel-icon" ></OpenSidePanelIcon>
+          <!-- <OpenSidePanelIcon class="open-side-panel-icon" ></OpenSidePanelIcon> -->
           <!-- <font-awesome :icon="['fas', 'ellipsis-h']"/> -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 278.571 275.714" class="open-side-panel-icon">
+            <g fill="#fff" stroke="#0a0a0a">
+              <path  stroke-width="27.857" stroke-linecap="round" stroke-linejoin="round" d="M10 10h258.57v255.714H10z"></path>
+              <path d="M77.143 10.714L78.57 265" fill-rule="evenodd" stroke-width="27.857"></path>
+              <path d="M582.857 733.79L210.906 945.68l2.474-428.064z" transform="matrix(.33171 0 0 .39595 48.089 -151.84)" stroke-width="76.866" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+          </svg>
         </a>
 
         <section class="hero is-small is-white">
@@ -452,7 +459,7 @@
   import NavSide from 'vue-nav-side/src/components/NavSide.vue'
   import slugify from 'slugify'
 
-  import OpenSidePanelIcon from '~/assets/svgs/opensidepanel.svg?inline'
+  //import OpenSidePanelIcon from '~/assets/svgs/opensidepanel.svg?inline'
 
   let threatCategoryIcons = {}
   for (let key in threatCategories) {
@@ -495,8 +502,8 @@
       VueCompareImage: () => import ('vue-compare-image').then(m => m),
       //vuIcon
       TextWithRefsAndPhotos,
-      NavSide,
-      OpenSidePanelIcon
+      NavSide
+      //OpenSidePanelIcon
     },
     methods: {
       redOrGreen: function(value) {
