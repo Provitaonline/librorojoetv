@@ -460,6 +460,7 @@
   import slugify from 'slugify'
 
   //import OpenSidePanelIcon from '~/assets/svgs/opensidepanel.svg?inline'
+  // There is an issue with vue-svg-loader on MS Edge and older browsers
 
   let threatCategoryIcons = {}
   for (let key in threatCategories) {
