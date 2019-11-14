@@ -49,7 +49,7 @@
                 </div>
                 <div class="card-content">
                   <div class="content has-text-centered">
-                    Aplicación de las categorías y criterios de las listas rojas de ecosistems a diferentes escalas geográficas.
+                    Aplicación de las categorías y criterios de las listas rojas de ecosistemas a diferentes escalas geográficas.
                     <br>
                   </div>
                 </div>
