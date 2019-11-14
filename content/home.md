@@ -71,6 +71,7 @@ vegetation:
     group: 2
     color: "#f8a67f"
     legend: "colorkey"
+    cardPath: "Arbustales espinosos"
     detailPath: "d124"
   - name: "Arbustales ribereños"
     group: 2
