@@ -105,6 +105,7 @@ vegetation:
     group: 3
     color: "#cfe188"
     legend: "colorkey"
+    cardPath: "Herbazales arbustivos sobre arena blanca"
     detailPath: "d124"
     plantformation: "Herbazales"
   - name: "Herbazales tepuyanos"
