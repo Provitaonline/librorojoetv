@@ -126,6 +126,8 @@
   import InteractiveMap from '~/components/InteractiveMap.vue'
   import {threatCategories} from '~/assets/js/siteConfig.js'
 
+  slugify.extend({'/': '-'})
+
   let threatCategoryIcons = {}
   for (let key in threatCategories) {
     threatCategoryIcons[key] = require('~/assets/svgs/' + key + '-icon.svg')

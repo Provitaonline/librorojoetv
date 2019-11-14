@@ -183,6 +183,8 @@
   import slugify from 'slugify'
   import * as topojson from 'topojson-client'
 
+  slugify.extend({'/': '-'})
+
   var latLng, icon, circleMarker;
   if (process.isClient) {
     icon = require('leaflet').Icon

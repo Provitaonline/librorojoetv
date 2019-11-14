@@ -459,6 +459,8 @@
   import NavSide from 'vue-nav-side/src/components/NavSide.vue'
   import slugify from 'slugify'
 
+  slugify.extend({'/': '-'})
+
   //import OpenSidePanelIcon from '~/assets/svgs/opensidepanel.svg?inline'
   // There is an issue with vue-svg-loader on MS Edge and older browsers
 
