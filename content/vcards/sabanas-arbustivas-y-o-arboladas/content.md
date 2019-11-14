@@ -129,7 +129,7 @@ photos:
   photocaption: "Foto 2: Sabana con palma llanera (<i>Copernicia tectorum</i>), esteros de Camaguán, estado Guárico. <i>Sergio Zambrano-Martínez</i>"
 - photokey: "Foto 3"
   photourl: "./foto-3.jpg"
-  photocaption: "Foto 3: Sabanas con chaparro (<i>Curatella americana</i>), estado Anzoátegui. César Molina"
+  photocaption: "Foto 3: Sabanas con chaparro (<i>Curatella americana</i>), estado Anzoátegui. <i>César Molina</i>"
 - photokey: "Foto 4"
   photourl: "./foto-4.jpg"
   photocaption: "Foto 4: Sabana con morichal a 750 msnm, entre el río Kukenán y Santa Elena, estado Bolívar. <i>Giuseppe Colonnello</i>"
