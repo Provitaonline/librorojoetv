@@ -31,8 +31,10 @@
                   <img style="margin-bottom: -0.5rem;" :src="$options.threatCategoryIcons[item.node.category]" height="30" width="30">&nbsp;</img>
                   <g-link :to="'/vcards/' + makeLink(item.node.title)"><strong v-html="item.node.title"></strong> ({{$options.threatCategories[item.node.category].text}}) </g-link>
                   <br>
-                  {{item.node.areain1988 | number}} km<sup>2</sup> en 1988<br>
-                  {{item.node.areain2010 | number}} km<sup>2</sup> en 2010<br>
+                  <span v-if="item.node.areain2010">
+                    {{item.node.areain1988 | number}} km<sup>2</sup> en 1988<br>
+                    {{item.node.areain2010 | number}} km<sup>2</sup> en 2010<br>
+                  </span>
                 </p>
               </div>
             </div>
