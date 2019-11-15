@@ -4,7 +4,7 @@
       <nav-side :value="sidePanelState">
         <div>
           <div class="side-panel-title">
-            <a style="float: right; padding-right: 8px;" v-on:click="toggleSidePanelState()">
+            <a title="Cerrar panel" style="float: right; padding-right: 8px;" v-on:click="toggleSidePanelState()">
               <font-awesome size="sm" :icon="['fas', 'times']"/>
             </a>
             <p class="is-size-4 has-text-weight-bold has-text-centered" style="padding: 20px;">Formaciones vegetales</p>
@@ -37,6 +37,7 @@
           <!-- <font-awesome :icon="['fas', 'ellipsis-h']"/> -->
           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 278.571 275.714" class="open-side-panel-icon">
             <g fill="#fff" stroke="#0a0a0a">
+              <title>Clic para abrir panel de fichas</title>
               <path  stroke-width="27.857" stroke-linecap="round" stroke-linejoin="round" d="M10 10h258.57v255.714H10z"></path>
               <path d="M77.143 10.714L78.57 265" fill-rule="evenodd" stroke-width="27.857"></path>
               <path d="M582.857 733.79L210.906 945.68l2.474-428.064z" transform="matrix(.33171 0 0 .39595 48.089 -151.84)" stroke-width="76.866" stroke-linecap="round" stroke-linejoin="round"></path>
