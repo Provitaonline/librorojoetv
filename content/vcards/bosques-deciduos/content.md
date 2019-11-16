@@ -1,10 +1,10 @@
 ---
 title: "Bosques deciduos"
-cardimage: "./foto-1.jpg"
+cardimage: "./pancarta.jpg"
 cardimagecaption: "Bosque deciduo bajo, estado Cojedes. <i>José Antonio González-Carcacía</i>"
 category: "cr"
 description: "Los bosques deciduos se caracterizan porque al menos 75% de los individuos arbóreos pierden su follaje durante la época de sequía (Huber & Alarcón 1988, Huber 1995c). Están restringidos a zonas macrotérmicas (>24°C) y de acuerdo al régimen climático que predomina son principalmente tropófilos (estacionales), con precipitaciones promedio anual menores a 1.400 mm. Con frecuencia se les conoce como “bosques secos tropicales”, aunque no son sinónimos, ya que entre éstos se incluyen varias comunidades arbóreas semideciduas o con cierto grado de caducifolia, siempre que sean afectados por un período relativamente prolongado de sequía (típicamente de 3 a 6 meses). Los bosques deciduos son equivalentes al denominado bosque estacional caducifolio por sequía (Murphy & Lugo 1986, González 2003). En ocasiones, dada su asociación con bosques secos, y las diferentes clasificaciones y nomenclaturas existentes en la literatura, esta formación es confundida con los arbustales secos o espinosos, en especial cuando los conforman leguminosas y especies deciduas.<br><br>
-El período durante el cual los bosques deciduos se encuentran defoliados coincide con la estación seca de enero a abril (Fotos 1 a 4), que también coincide con la floración de algunos de sus árboles típicos (Foto 5). La brotadura foliar comienza a mediados de abril, antes del comienzo de las lluvias (González 2003).<br><br>
+El período durante el cual los bosques deciduos se encuentran defoliados coincide con la estación seca de enero a abril (Foto 1, Foto 2, Foto 3, Foto 4), que también coincide con la floración de algunos de sus árboles típicos (Foto 5). La brotadura foliar comienza a mediados de abril, antes del comienzo de las lluvias (González 2003).<br><br>
 Existe una gran variación en cuanto a la riqueza florística y en la complejidad estructural de este tipo de bosque, asociada a la pluviosidad total anual y a su distribución durante el año. En ambientes áridos los bosques deciduos tienden a estar dominados por una sola especie, como los constituidos por especies del género <i>Prosopis</i> (Gentry 1995, González 2003). Sin embargo, el patrón general es que presentan varios estratos: el superior con árboles emergentes de copas redondeadas y en algunos casos aplanadas, un estrato arbóreo inferior con copas cónicas, piramidales o aplanadas, y un sotobosque con poca vegetación y en algunas localidades con colonias extensas de bromelias terrestres (<i>Bromelia pinguin</i>). Las lianas leñosas son relativamente abundantes, y las palmas y las epífitas muy escasas o ausentes, aunque donde se observan epífitas usualmente son bromelias del género <i>Tillandsia</i> (González 2003). El estrato inferior suele contener árboles de hasta 10 m de alto y en el superior destacan individuos que alcanzan entre 10 m y 15 m (Foto 2), aun cuando los árboles emergentes pueden tener hasta 25 m (Díaz 2007).<br><br>
 Si bien los bosques deciduos son menos diversos que los bosques húmedos, algunas familias como Zygophyllaceae, son exclusivas de estas formaciones (Gentry 1995). También contienen una gran variedad de árboles de las familias Capparidaceae y Erythroxylaceae, y en mayor proporción que los bosques húmedos. Entre los géneros exclusivos de las localidades de bosques deciduos más secos se incluye <i>Guaiacum</i> (Zygophyllaceae), <i>Zizyphus</i> (Rhamnaceae) y <i>Cnidoscolus, Jatropha</i> y <i>Pedilanthus</i> (Euphorbiaceae). Los géneros señalados no están presentes en bosques húmedos (González 2003).<br><br>
 Los bosques deciduos, asociados a un intervalo de pluviosidad entre 800 mm y 1.200 mm y a suelos con poco desarrollo pedogénico, exhiben pocas variaciones fisionómicas y florísticas, independientemente de la localidad de Venezuela que se considere
@@ -135,4 +135,26 @@ riskofcolapsestatelevel:
   threatcategories: [cr, en, vu, cr]
 - zone: "Zulia"
   threatcategories: [cr, en, en, cr]
+photos:
+- photokey: "Foto 1"
+  photourl: "./foto-1.jpg"
+  photocaption: "Bosque deciduo bajo, estado Cojedes. <i>José Antonio González-Carcacía</i>"
+- photokey: "Foto 2"
+  photourl: "./foto-2.jpg"
+  photocaption: "Foto 2: Bosque seco en período de sequía con árboles desprovistos de hojas. <i>José Antonio González-Carcacía</i>"
+- photokey: "Foto 3"
+  photourl: "./foto-3.jpg"
+  photocaption: "Foto 3: Aceite (<i>Copaifera officinalis</i>) frecuente en bosques deciduos. <i>José Antonio González-Carcacía</i>"
+- photokey: "Foto 4"
+  photourl: "./foto-4.jpg"
+  photocaption: "Foto 4: Bosque seco en la estación lluviosa con recuperación de cobertura foliar. <i>José Antonio González-Carcacía</i>"
+- photokey: "Foto 5"
+  photourl: "./foto-5.jpg"
+  photocaption: "Foto 5: Araguaney (<i>Tabebuia chrysantha</i>) en bosque deciduo durante el período seco. <i>Giuseppe Colonnello</i>"
+- photokey: "Foto 6"
+  photourl: "./foto-6.jpg"
+  photocaption: "Foto 6: Bosque deciduo transformado para cultivos, con pastizales y cocotales en el piedemonte, entre Bejuma y Morón, estado Carabobo. <i>Giuseppe Colonnello</i>"
+- photokey: "Foto 7"
+  photourl: "./foto-7.jpg"
+  photocaption: "Foto 7: Bosque deciduo transformado para pastizales, con obras de nivelación (camellones) e inundación artifi cial, estado Zulia. <i>Giuseppe Colonnello</i>"
 ---
