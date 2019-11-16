@@ -106,6 +106,7 @@
                 <div class="tile is-child is-5 box is-size-6 has-text-centered">
                   <b>Superficie en 1988 (km<sup>2</sup>): </b>{{$page.vegetationCard.areain1988 | number}}<br>
                   <b>Superficie en 2010 (km<sup>2</sup>): </b>{{$page.vegetationCard.areain2010 | number}}<br>
+                  <span class="is-size-7"><b>(Figuras 1a y 1b)</b></span>
                   <ClientOnly>
                     <div v-for="item in $page.vegetationCard.mapcompare">
                       <br>
@@ -122,7 +123,10 @@
                   </ClientOnly>
                 </div>
                 <div class="tile is-child is-7 box">
-                  <div class="has-text-centered is-size-6 has-text-weight-bold">Superficie estimada (km<sup>2</sup>) por estado:<br><br></div>
+                  <div class="has-text-centered is-size-6 has-text-weight-bold">Superficie estimada (km<sup>2</sup>) por estado:<br>
+                    <span class="is-size-7"><b>(Tabla 1)</b></span>
+                    <br><br>
+                  </div>
                   <table align="center" class="statetable table is-size-6 is-size-7-mobile">
                     <thead>
                       <tr>
@@ -164,7 +168,8 @@
                   {{threatCategories[$page.vegetationCard.category].text.toUpperCase()}}
                   <img :src="threatCategoryIcons[$page.vegetationCard.category]" height="30" width="30" style="margin-bottom: -5px;">
                   <br><br>
-                  <b>Grado de amenaza 2010: </b>
+                  <b>Grado de amenaza 2010: </b><br>
+                  <span class="is-size-7"><b>(Figura 1c)</b></span>
                   <div v-for="item in $page.vegetationCard.threatlevelmaps">
                     <br>
                     <div class="has-text-centered is-size-7 has-text-weight-bold" >{{item.caption}}</div>
@@ -179,7 +184,10 @@
                   </div>
                 </div>
                 <div v-if="$page.vegetationCard.riskofcolapsestatelevel.length" class="tile is-child is-7 box">
-                  <div class="has-text-centered"><b>Riesgo de colapso por {{($page.vegetationCard.zonelabel).toLowerCase()}}:</b><br><br></div>
+                  <div class="has-text-centered"><b>Riesgo de colapso por {{($page.vegetationCard.zonelabel).toLowerCase()}}:</b><br>
+                    <span class="is-size-7"><b>(Tabla 2)</b></span>
+                    <br><br>
+                  </div>
                   <table align="center" class="risktable table is-size-6 is-size-7-mobile">
                     <thead>
                       <tr>
