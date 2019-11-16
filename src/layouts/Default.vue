@@ -39,6 +39,11 @@
     </b-navbar>
 
     <main>
+      <back-to-top bottom="25px" right="30px">
+        <span class="button">
+          <font-awesome size="md" :icon="['fas', 'angle-up']"/>
+        </span>
+      </back-to-top>
       <slot />
     </main>
 
@@ -68,11 +73,16 @@
     opacity: 0;
   }
 
+  .button {
+    border-radius: 0px;
+  }
+
 </style>
 
 <script>
 
   import {version} from '../../package.json'
+  import BackToTop from 'vue-backtotop'
 
   export default {
     data() {
@@ -81,7 +91,7 @@
       }
     },
     components: {
-
+      BackToTop
     },
     mounted () {
 
