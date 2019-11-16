@@ -40,9 +40,9 @@
 
     <main>
       <back-to-top bottom="25px" right="30px">
-        <span class="button">
-          <font-awesome size="md" :icon="['fas', 'angle-up']"/>
-        </span>
+        <button class="button">
+          <font-awesome :icon="['fas', 'angle-up']"/>
+        </button>
       </back-to-top>
       <slot />
     </main>
