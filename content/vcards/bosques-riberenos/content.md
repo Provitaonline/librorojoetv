@@ -119,5 +119,4 @@ photos:
 - photokey: "Foto 7"
   photourl: "./foto-7.jpg"
   photocaption: "Foto 7: Bosque ribereño clareado por actividades de pobladores locales, sur del Orinoco. <i>Rebecca Miller</i>"
-
 ---
