@@ -1,6 +1,6 @@
 ---
 title: "Bosques ribereños"
-cardimage: "./foto-1.jpg"
+cardimage: "./pancarta.jpg"
 cardimagecaption: "Bosque ribereño de montaña, río Cuyagua, estado Aragua. <i>César Molina</i>"
 category: "vu"
 description: "Los bosques ribereños se ubican en las orillas de ríos, normalmente sobre bancos y albardones fluviales. Están asociados a climas macrotérmicos (>24 °C), con un régimen de precipitación que puede ser húmedo (ombrófilos), estacional (tropófilos) o incluso seco (xerófilo). Factor determinante de la presencia de un bosque ribereño es una mayor humedad del suelo, regulada por la dinámica del cuerpo de agua que drena los terrenos adyacentes. En algunos casos, generalmente debido a variaciones bioclimáticas, este tipo de bosque traza mosaicos con formaciones de sabanas, como ocurre a lo largo de los ríos Caura, Cuchivero y Suapure (Rosales 2003).<br><br>
@@ -8,7 +8,7 @@ Presentan diversidad en su estructura, pudiendo tener dos o tres estratos y un d
 Debido a la diversidad bioclimática, geológica e hidrológica de las cuencas hidrográficas de Venezuela, los bosques ribereños ubicados en diferentes regiones pueden ser muy distintos entre sí. Se puede encontrar desde bosques ribereños que pierden todas las hojas en la época seca (caducifolios) hasta aquéllos que permanecen con follaje durante todo el año (siempreverdes), y que además ocupan una gran variedad de altitudes (Huber & Alarcón 1988, Rosales 2003).<br><br>
 Uno de los tipos de bosque ribereño es el que se constituye en bosques de galería (Rosales 2003). Presentan un sólo estrato de árboles siempreverdes y crecen a orillas de los cursos de agua, tanto en zonas de vegetación baja (sabanas) como dentro de las masas boscosas (MARNR 1982). Sin embargo, algunos autores reservan el término “bosque de galería” a los bosques ribereños que se encuentran en un paisaje de sabana, rodeados por vegetación de menor porte (Rosales 2003).<br><br>
 Los bosques de galería del río Caura han sido objeto de numerosas investigaciones, donde se demuestra que la distribución de sus especies características (provenientes principalmente de las familias Fabaceae, Caesalpiniaceae, Leguminosae, Euphorbiaceae, Mimosaceae, Rubiaceae, Sapotaceae, Arecaceae, Burseraceae, Moraceae y Chrysobalanaceae), guarda estrecha relación con el gradiente de humedad del suelo y el nivel de inundación estacional (Briceño <i>et al.</i> 1997, Rosales <i>et al.</i> 1997). También comparten especies con otras formaciones boscosas contiguas y con bosques ribereños en otras regiones del país. Por ejemplo, algunas especies de las familias Fabaceae, Mimosaceae y Caesalpiniaceae, también están presentes en bosques ribereños del norte de Venezuela, donde además hay numerosas plantas de otras familias como Bignoniaceae y Sapindaceae (Guerra & Pietrangeli 2007, Calzadilla & Lárez 2008).<br><br>
-Pero los bosques ribereños no están ubicados solamente a lo largo del curso de grandes ríos como el Caura. Hay pequeñas zonas con estas formaciones en las sabanas de Caracas y el Litoral Central (Foto 1), en las llanuras bajas del alto Orinoco y en las altiplanicies tepuyanas. También existen en zonas intermedias, como la depresión del lago de Maracaibo, la depresión de Unare o la parte superior del delta del Orinoco, donde son un elemento prominente del paisaje (Rosales 2003). No obstante, las zonas más importantes y más conocidas por la presencia de bosques ribereños son los llanos (Foto 2), la Gran Sabana y otras áreas del Escudo Guayanés (Fotos 3 a 5) (Rosales 2003)."
+Pero los bosques ribereños no están ubicados solamente a lo largo del curso de grandes ríos como el Caura. Hay pequeñas zonas con estas formaciones en las sabanas de Caracas y el Litoral Central (Foto 1), en las llanuras bajas del alto Orinoco y en las altiplanicies tepuyanas. También existen en zonas intermedias, como la depresión del lago de Maracaibo, la depresión de Unare o la parte superior del delta del Orinoco, donde son un elemento prominente del paisaje (Rosales 2003). No obstante, las zonas más importantes y más conocidas por la presencia de bosques ribereños son los llanos (Foto 2), la Gran Sabana y otras áreas del Escudo Guayanés (Foto 3, Foto 4, Foto 5) (Rosales 2003)."
 distribution: "La distribución de los bosques ribereños está claramente asociada a la red hidrográfica nacional. De acuerdo al análisis de imágenes de satélite, su superficie en 2010 era aproximadamente de 66.707 km<sup>2</sup>, equivalente a 7% del territorio continental de Venezuela (Figura 1, Tabla 1). En la subregión de los Llanos (B2) los bosques ribereños resultan más conspicuos. La vegetación que los rodea, más seca y de menor porte, proporciona un mayor contraste en las imágenes de satélite. Extensiones importantes de esta formación se encuentran también al sur del país (Figura 1, Tabla 1)."
 distributionmap: "./dist.png"
 areain1988: "70839"
@@ -97,4 +97,27 @@ riskofcolapsestatelevel:
   threatcategories: ["(*)", en, en, en]
 - zone: "Zulia"
   threatcategories: ["(*)", en, vu, en]
+photos:
+- photokey: "Foto 1"
+  photourl: "./foto-1.jpg"
+  photocaption: "Bosque ribereño de montaña, río Cuyagua, estado Aragua. <i>César Molina</i>"
+- photokey: "Foto 2"
+  photourl: "./foto-2.jpg"
+  photocaption: "Bosque ribereño llanero, río Guaritico, estado Apure. <i>César Molina</i>"
+- photokey: "Foto 3"
+  photourl: "./foto-3.jpg"
+  photocaption: "Foto 3: Bosques ribereños inundables, Orinoco medio, Reserva de Fauna Silvestre Tortuga Arrau. <i>César Molina</i>"
+- photokey: "Foto 4"
+  photourl: "./foto-4.jpg"
+  photocaption: "Foto 4: Bosques ribereños inundables, río Orinoco a la altura de Puerto Ayacucho, Monumento Natural Piedra de La Tortuga, estado Amazonas. <i>César Molina</i>"
+- photokey: "Foto 5"
+  photourl: "./foto-5.jpg"
+  photocaption: "Foto 5: Bosques ribereños, estado Bolívar. <i>Rebecca Miller</i>"
+- photokey: "Foto 6"
+  photourl: "./foto-6.jpg"
+  photocaption: "Foto 6: Extracción de madera de samán, orillas del río Palmar, estado Zulia. <i>Giuseppe Colonnello</i>"
+- photokey: "Foto 7"
+  photourl: "./foto-7.jpg"
+  photocaption: "Foto 7: Bosque ribereño clareado por actividades de pobladores locales, sur del Orinoco. <i>Rebecca Miller</i>"
+
 ---
