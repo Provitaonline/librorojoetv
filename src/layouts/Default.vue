@@ -39,11 +39,13 @@
     </b-navbar>
 
     <main>
-      <back-to-top bottom="25px" right="30px">
-        <button class="button">
-          <font-awesome :icon="['fas', 'angle-up']"/>
-        </button>
-      </back-to-top>
+      <ClientOnly>
+        <back-to-top bottom="25px" right="30px">
+          <button class="button">
+            <font-awesome :icon="['fas', 'angle-up']"/>
+          </button>
+        </back-to-top>
+      </ClientOnly>
       <slot />
     </main>
 
