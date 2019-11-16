@@ -31,7 +31,7 @@ photos:
   photocaption: "Foto 1: Arbustales siempreverdes esclerófilos, Parque Nacional Yapacana, estado Amazonas. <i>Otto Huber</i>"
 - photokey: "Foto 2"
   photourl: "./foto-2.jpg"
-  photocaption: "Foto 2: Pentamerista neotropica, género y especie endémicos de los arbustales siempreverdes esclerófilos, estado Amazonas. <i>Otto Huber</i>"
+  photocaption: "Foto 2: <i>Pentamerista neotropica</i>, género y especie endémicos de los arbustales siempreverdes esclerófilos, estado Amazonas. <i>Otto Huber</i>"
 - photokey: "Foto 3"
   photourl: "./foto-3.jpg"
   photocaption: "Foto 3: Arbustal esclerófilo (vista aérea), Gran Sabana, estado Bolívar. <i>Otto Huber</i>"
@@ -40,5 +40,8 @@ photos:
   photocaption: "Foto 4: Arbustal siempreverde denso, sección sur del cerro Guaiquinima, estado Bolívar. <i>Otto Huber</i>"
 - photokey: "Foto 5"
   photourl: "./foto-5.jpg"
-  photocaption: "Foto 5: Arbustal siempreverde denso, sección sur del cerro Guaiquinima, estado Bolívar. <i>Otto Huber</i>"
+  photocaption: "Foto 5: Arbustales esclerófilos sobre arena blanca (alineados en relación con la disponibilidad hídrica de los suelos), río Yagua, estado Amazonas. <i>Otto Huber</i>"
+- photokey: "Foto 6"
+  photourl: "./foto-6.jpg"
+  photocaption: "Foto 6: Arbustal esclerófilo quemado (al fondo, después del herbazal). El color grisáceo indica al menos dos años de su quema, caño Yagua, estado Amazonas. <i>Otto Huber</i>"
 ---
