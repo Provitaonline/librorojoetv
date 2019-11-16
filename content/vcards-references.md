@@ -39,34 +39,34 @@ references:
 - referencekey: Berroterán 2003
   reference: >
       Berroterán, J.L. (ed.) (2003). Reserva Forestal Imataca: ecología y bases técnicas para el ordenamiento territorial. MARN. 208 pp.
-- referencekey: Bevilacqua et. al. 2002
+- referencekey: Bevilacqua et al. 2002
   reference: >
       Bevilacqua, M., L. Cárdenas, L. Hernández, A. Manzutti, M. Miranda, J. Ochoa, M. Rodríguez & E. Selig (2002). Situación de los Bosques en Venezuela: La región Guayana como caso de estudio. World Resources Institute (Washington, D.C.), Fundación Polar (Caracas). 132 pp.
-- referencekey: Bevilacqua et. al. 2005
+- referencekey: Bevilacqua et al. 2005
   reference: >
       Bevilacqua, M., L. Cárdenas, L. Chacón, V. Behm & F. Rojas-Suárez (eds.) (2005). Mapa de las Áreas protegidas de Venezuela. En: M. Bevilacqua, L. Cárdenas & D.A. Medina (2006). Las Áreas Protegidas de Venezuela: Diagnóstico de su condición, 1993-2004. Asociación Venezolana para la Conservación de Áreas Naturales (ACOANA), Conservación Internacional Venezuela (CI), Fundación Empresas Polar, Comité Venezolano de la Unión Mundial para la Naturaleza Venezuela (UICN): Caracas. 165 pp.
-- referencekey: Bevilacqua et. al. 2006a
+- referencekey: Bevilacqua et al. 2006a
   reference: >
       Bevilacqua, M., L. Cárdenas & D.A. Medina (2006a). Las Áreas Protegidas de Venezuela: Diagnóstico de su Condición, 1993-2004. Asociación Venezolana para la Conservación de Áreas Naturales (ACOANA), Conservación Internacional Venezuela (CI), Fundación Empresas Polar, Comité Venezolano de la Unión Mundial para la Naturaleza Venezuela (UICN): Caracas. 165 pp.
-- referencekey: Bevilacqua et. al. 2006b
+- referencekey: Bevilacqua et al. 2006b
   reference: >
       Bevilacqua, M., D.A. Medina & L. Cárdenas (2006b). Manejo de recursos comunes en áreas protegidas, tierras y hábitats indígenas en Venezuela: pensando más allá de los procesos de demarcación. Antropológica 105-106: 161-184.
-- referencekey: Bermúdez et. al. 2008
+- referencekey: Bermúdez et al. 2008
   reference: >
       Bermúdez, A., J. Gámez, R. Briceño & A. Rial (2008). Conservación y aprovechamiento de plantas medicinales en huertas familiares, en comunidades de Calderas, Estado Barinas. Talleres 11: 12-23.
 - referencekey: Bisbal 1988
   reference: >
       Bisbal, F.J. (1988). Impacto humano sobre los hábitats de Venezuela. Interciencia 13(5): 226-232.
-- referencekey: Briceño et. al. 1997
+- referencekey: Briceño et al. 1997
   reference: >
       Briceño, E., L. Balbás & J.A. Blanco (1997). Bosques ribereños del bajo Río Caura: vegetación, suelos y fauna. Scientia Guaianae 7: 259-289.
-- referencekey: Brunner et. al. 2001
+- referencekey: Brunner et al. 2001
   reference: >
       Bruner, A.G., R.E. Gullison, R.E. Rice & G.A.B. da Fonseca (2001). Effectiveness of parks in protecting tropical biodiversity. Science 291: 125-128.
 - referencekey: Calzadilla & Lárez 2008
   reference: >
       Calzadilla, J.J. & A. Lárez R. (2008). Flora y vegetación de la cuenca alta del Río Aragua, Municipio Piar, estado Monagas, Venezuela. Acta Botánica Venezuelica 31(1): 251-272.
-- referencekey: Cárdenas et. al. 2010
+- referencekey: Cárdenas et al. 2010
   reference: >
       Cárdenas, J.J., E. Klein & D. Esclasans (eds.) (2010). Identificación de Prioridades de Conservación asociadas a los Ecosistemas de la Fachada Atlántica y a su Biodiversidad. The Nature Conservancy Venezuela, Universidad Simón Bolívar: Caracas, Venezuela (en prensa).
 - referencekey: Casler & Castellano 2008
@@ -84,7 +84,7 @@ references:
 - referencekey: Colonnello 2004
   reference: >
       Colonnello, G. (2004). Las planicies deltaicas del río Orinoco y golfo de Paria: aspectos físicos y vegetación. Pp. 37-54. En: C.A. Lasso, L.E. Alonso, A.L. Flores & G. Love (eds.). Evaluación rápida de la biodiversidad y aspectos sociales de los ecosistemas acuáticos del delta del río Orinoco y golfo de Paria, Venezuela. Boletín RAP de Evaluación Biológica 37. Conservation International: Washington, D.C.
-- referencekey: Colonnello et. al. 2009
+- referencekey: Colonnello et al. 2009
   reference: >
       Colonnello, G., M.A. Oliveira-Miranda, H. Álvarez & C. Fedón (2009). Parque Nacional Turuépano, Estado Sucre, Venezuela. Sus unidades de vegetación y estado de conservación. Mem. de la Soc. de Cienc. Naturales La Salle 172: 5-35 [2010].
 - referencekey: Conde & Alarcón 1993
@@ -111,13 +111,13 @@ references:
 - referencekey: Díaz 2007
   reference: >
       Díaz, W. (2007). Composición florística y estructura de bosques en los asentamientos campesinos Las Delicias, El Guamo y Lechozal, Estado Bolívar, Venezuela. Ernstia 17(1): 1-24.
-- referencekey: Dinerstein et. al. 1995
+- referencekey: Dinerstein et al. 1995
   reference: >
       Dinerstein, E., D.M. Olson, D.J. Graham, A.L. Webster, S.A. Primm, M.P. Bookbinder & G. Ledec (1995). Una Evaluación del Estado de Conservación de las Ecoregiones Terrestres de América Latina y el Caribe. The World Bank, The World Wildlife Fund: Washington, D.C. 135 pp.
 - referencekey: Dore 2005
   reference: >
       Dore, M.H.I. (2005). Climate change and changes in global precipitation patterns: What do we know? Environment International 31(8): 1167-1181.
-- referencekey: Duno de Stefano et. al. 2007
+- referencekey: Duno de Stefano et al. 2007
   reference: >
       Duno de Stefano, R., G. Aymard & O. Huber (2007). Exploraciones botánicas en los llanos venezolanos. Pp. 47-58. En: R. Duno de Stefano, G. Aymard & O. Huber (eds.). Catálogo Anotado e Ilustrado de la Flora Vascular de los Llanos de Venezuela. Fundación para la Defensa de la Naturaleza (FUDENA), Fundación Empresas Polar, Fundación Instituto Botánico de Venezuela Dr. Tobías Lasser (FIBV): Caracas, Venezuela.
 - referencekey: Durán & Castaño 2002
@@ -129,10 +129,10 @@ references:
 - referencekey: Fajardo 2007
   reference: >
       Fajardo, L. (2007). Bases ecológicas para la restauración de bosques secos tropicales en la Península de Macanao, Isla de Margarita. Tesis de Grado, Instituto Venezolano de Investigaciones Científicas (IVIC), Centro de Estudios Avanzados. Caracas. 171 pp.
-- referencekey: Fajardo et. al. 2005
+- referencekey: Fajardo et al. 2005
   reference: >
       Fajardo, L., V. González, J.M. Nassar, P. Lacabana, C.A. Portillo, F. Carrasquel & J.P. Rodríguez (2005). Tropical dry forests of Venezuela: characterization and current conservation status. Biotropica 37(4): 531-546.
-- referencekey: Fernández et. al. 2007
+- referencekey: Fernández et al. 2007
   reference: >
       Fernández, A., G. Colonnello & E. Guzmán (2007). Inventario de la diversidad florística de un sector del curso medio del río Palmar, estado Zulia. Rev. Fav. Agron. (LUZ) 24 (Supl. 1): 415-421.
 - referencekey: Franco & Sharpe 1996
@@ -159,13 +159,13 @@ references:
 - referencekey: Guerra & Pietrangeli 2007
   reference: >
       Guerra, M. & M. Pietrangeli (2007). Caracterización florística de las comunidades forestales ribereñas presentes en un sector de la cuenca media del Río Socuy, estado Zulia, Venezuela. Rev. Fav. Agron. (LUZ) 24 (Supl. 1): 427-434.
-- referencekey: Hamilton et. al. 1977
+- referencekey: Hamilton et al. 1977
   reference: >
       Hamilton, L.S., J. Steyermark, J.P. Veillon & E. Mondolfi (1977). Conservación de los bosques húmedos de Venezuela. 3ra. ed. Sierra Club, Consejo de Bienestar Rural, Ministerio del Ambiente y de los Recursos Naturales Renovables: Caracas. 181 pp.
 - referencekey: Hernández-Montilla 2010
   reference: >
       Hernández-Montilla, M. (2010). Estimación del riesgo de extinción de los hábitat terrestres de la cuenca de los ríos lajas y palmar del Estado Zulia. Trabajo Especial de Grado, Universidad del Zulia. 79 pp.
-- referencekey: Hoegh-Guldberg et. al. 2008
+- referencekey: Hoegh-Guldberg et al. 2008
   reference: >
       Hoegh-Guldberg, O., L. Hughes, S. McIntyre, D.B. Lindenmayer, C. Parmesan, H.P. Possingham & C.D. Thomas (2008). Assisted colonization and rapid climate change. Science 321(5887): 345-346.
 - referencekey: Houhgton & Hackler 1995
@@ -216,7 +216,7 @@ references:
 - referencekey: Jácome 2002
   reference: >
       Jácome, A. (2002). Evaluación del efecto del cambio de cobertura y uso de la tierra sobre la producción de sedimentos en la cuenca del río Caramacate (subcuenca portante del embalse Camatagua). Trabajo de ascenso, Facultad de Agronomía, Universidad Central de Venezuela. Maracay, Venezuela. 159 pp.
-- referencekey: Josse et. al. 2009
+- referencekey: Josse et al. 2009
   reference: >
       Josse, C., F. Cuesta, G. Navarro, V. Barrena, E. Cabrera, E. Chacón-Moreno, W. Ferreira, M. Peralvo, J. Saito & A. Tovar (2009). Ecosistemas de los Andes del Norte y Centro. Bolivia, Colombia, Ecuador, Perú y Venezuela. Secretaría General de la Comunidad Andina, Programa Regional ECOBONA-Intercooperation, CONDESAN-Proyecto Páramo Andino, Programa BioAndes, EcoCiencia, NatureServe, IAvH, LTA-UNALM, ICAE-ULA, CDC-UNALM, RUMBOL SRL: Lima.
 - referencekey: Klein & Cárdenas 2009
@@ -228,16 +228,16 @@ references:
 - referencekey: Lentino 1994
   reference: >
       Lentino, M. & A.R. Bruni (1994). Humedales Costeros de Venezuela: Situación Ambiental. Sociedad Conservacionista Audubon de Venezuela: Caracas. 188 pp.
-- referencekey: Lentino et. al. 2005
+- referencekey: Lentino et al. 2005
   reference: >
       Lentino, M., D. Esclasans & F. Medina (2005). Áreas Importantes para la Conservación de Aves en Venezuela. Pp. 621-730. En: BirdLife International & Conservation International (eds.). Áreas Importantes para la Conservación de las Aves en Los Andes Tropicales: Sitios Prioritarios para la Conservación de la Biodiversidad. BirdLife International (Serie de Conservación de BirdLife N° 14): Quito, Ecuador.
-- referencekey: Llamozas et. al. 2003
+- referencekey: Llamozas et al. 2003
   reference: >
       Llamozas, S., R. Duno de Stefano, W. Meier, R. Riina, F. Stauffer, G. Aymard, O. Huber & R. Ortiz (2003). Libro Rojo de la Flora Venezolana. Provita, Fundación Polar, Fundación Instituto Botánico de Venezuela Dr. Tobías Lasser: Caracas. 555 pp.
-- referencekey: López et. al. 1996
+- referencekey: López et al. 1996
   reference: >
       López, J., E. Pernía & E. Pozzobón (1996). Avance de las deforestaciones en la Reserva Forestal de Caparo, estado Barinas, Venezuela, entre 1987 y 1994. Revista Forestal Venezolana 40(2): 29-36.
-- referencekey: Maguire et. al. 1972
+- referencekey: Maguire et al. 1972
   reference: >
       Maguire, B., D.B. Lellinger, G. Agostini, T. Koyama, J.G. Wessels-Boer, G. Harling, R.C. Barneby, J.J. Wurdack, G.T. Prance, A. Aubréville & J.A. Steyermark (1972). The Botany of the Guayana Highland [IX]. Memoirs of the New York Botanical Garden 23: 1-832.
 - referencekey: MARN 2002
@@ -279,7 +279,7 @@ references:
 - referencekey: Naveda & Yerena 2010
   reference: >
       Naveda, J.A. & E. Yerena (2010). Sistema de Parques Nacionales de Venezuela: una evaluación aproximada de su situación actual. Pp. 225-246. En: A. Machado-Allison (ed.). Simposio Investigación y Manejo de Fauna Silvestre en Venezuela en homenaje al Dr. Juhani Ojasti. Academia de Ciencias Físicas, Matemáticas y Naturales, Embajada de Finlandia en la República Bolivariana de Venezuela: Caracas, Venezuela.
-- referencekey: Nogué et. al. 2009
+- referencekey: Nogué et al. 2009
   reference: >
       Nogué, S., V. Rull & T. Vegas-Vilarrúbia (2009). Modeling biodiversity loss by global warming on Pantepui, northern South America: projected upward migration and potential habitat loss. Climatic Change 94(1): 77-85.
 - referencekey: Noss 1996
@@ -288,7 +288,7 @@ references:
 - referencekey: OCEI 1999
   reference: >
       OCEI (1999). Censo Agrícola. Oficina Central de Estadística e Informática (OCEI). Venezuela.
-- referencekey: Oliveira-Miranda et. al. 2010
+- referencekey: Oliveira-Miranda et al. 2010
   reference: >
       Oliveira-Miranda, M.A., M. Riveros-Caballero, R. Lazo (2010). Análisis espacial e identificación de áreas vulnerables a la desertificación en Venezuela mediante modelaje en SIG. Proyecto Recuperación de Áreas del Caribe en proceso de Desertificación. Fase I: Diagnóstico de Áreas Vulnerables y en proceso de Desertificación mediante el uso de un SIG. Informe Componente SIG. Instituto Venezolano de Investigaciones Científicas. 99 pp.
 - referencekey: Orians 1993
@@ -315,7 +315,7 @@ references:
 - referencekey: Riina & Huber 2003
   reference: >
       Riina, R. & O. Huber (2003). Ecosistemas exclusivos de la Guayana. Pp. 828-861. En: M. Aguilera, A. Azócar & E. González Jiménez (eds.). Biodiversidad de Venezuela. Tomo II. Fundación Polar, Ministerio de Ciencia y Tecnología, Fondo Nacional para la Ciencia, Tecnología e Innovación (FONACIT). Editorial ExLibris: Caracas.
-- referencekey: Riveros Caballero et. al. 2007
+- referencekey: Riveros Caballero et al. 2007
   reference: >
       Riveros Caballero, M., L.E. Sánchez & J. Paolini (eds.) (2007). Memoria Taller Binacional y Regional Sobre Desertificación. Ediciones IVIC (Instituto Venezolano de Investigaciones Científicas): Caracas, Venezuela. 150 pp.
 - referencekey: Roa 2007
@@ -333,10 +333,10 @@ references:
 - referencekey: Rodríguez & Rojas-Suárez 2008
   reference: >
       Rodríguez, J.P. & F. Rojas-Suárez (eds.) (2008). Libro Rojo de la Fauna Venezolana. 3ra. ed. Provita y Shell Venezuela, S.A.: Caracas. 364 pp.
-- referencekey: Rodríguez et. al. 2008
+- referencekey: Rodríguez et al. 2008
   reference: >
       Rodríguez, J.P., J.M. Nassar, K.M. Rodríguez-Clark, I. Zager, C.A. Portillo-Quintero, F. Carrasquel & S. Zambrano (2008). Tropical dry forests in Venezuela: assessing status, threats and future prospects. Environmental Conservation 35(4): 311-318.
-- referencekey: Rodríguez et. al. 2011
+- referencekey: Rodríguez et al. 2011
   reference: >
       Rodríguez, J.P., K. Rodríguez-Clark, J.E. M. Baillie, N. Ash, J. Benson, T. Boucher, C. Brown, N.D. Burgess, B. Collen, M. Jennings, D.A. Keith, E. Nicholson, C. Revenga, B. Reyers, M. Rouget, T. Smith, M. Spalding, A. Taber, M. Walpole, I. Zager & T. Zamin (2011). Definición de Categorías de UICN para Ecosistemas Amenazados. Conservation Biology 25: [doi: 10.1111/j.1523-1739.2010.1598].
 - referencekey: Rodríguez & Rosales 2008
@@ -348,19 +348,19 @@ references:
 - referencekey: Rosales 2003
   reference: >
       Rosales, J. (2003). Bosques y selvas de galería. Pp. 812-826. En: M. Aguilera, A. Azócar & E. González Jiménez (eds.). Biodiversidad de Venezuela. Tomo II. Fundación Polar, Ministerio de Ciencia y Tecnología, Fondo Nacional para la Ciencia, Tecnología e Innovación (FONACIT). Editorial ExLibris: Caracas.
-- referencekey: Rosales et. al. 1997
+- referencekey: Rosales et al. 1997
   reference: >
       Rosales, J., C. Knab-Vispo & G. Rodríguez (1997). Bosques ribereños del bajo Caura entre el salto Pará y los raudales de la Mura: su clasificación e importancia en la cultura Ye’kwana. Scientia Guaianae 7: 171-213.
-- referencekey: Rosales et. al. 2003
+- referencekey: Rosales et al. 2003
   reference: >
       Rosales, J., M. Bevilacqua, W. Díaz, R. Pérez, D. Rivas & S. Caura (2003). Riparian Vegetation Communities of the Caura River Basin, Bolívar State, Venezuela. Pp. 34-43. En: B. Chernoff, A. Machado-Allison, K. Riseng & J. Montambault (eds.). Una evaluación rápida de los ecosistemas acuáticos de la Cuenca del Río Caura, Estado Bolívar, Venezuela. Boletín RAP de Evaluación Biológica 28. Conservation International: Washington.
 - referencekey: Rull & Vegas-Vilarrúbia 2006
   reference: >
       Rull, V. & T. Vegas-Vilarrúbia (2006). Unexpected biodiversity loss under global warming in the neotropical Guayana Highlands: a preliminary appraisal. Global Change Biology 12: 1-9.
-- referencekey: Rull et. al. 2005
+- referencekey: Rull et al. 2005
   reference: >
       Rull, V., T. Vegas-Vilarrúbia, & S. Nogué (2005). Cambio climático y diversidad de la flora vascular en las montañas tabulares de Guayana. Orsis 20: 61-71.
-- referencekey: Rull et. al. 2009
+- referencekey: Rull et al. 2009
   reference: >
       Rull, V., T. Vegas-Vilarrubia, S. Nogué & O. Huber (2009). Conservation of the unique Neotropical vascular flora of the Guayana Highlands in the face of global warming. Conservation Biology 23(5): 1323-1327. Sánchez-Arias, L.E., J. Paolini & J.P. Rodríguez (2010). Dinámica de las propiedades del suelo en bosques de Rhizophora mangle L. (Rhizophoraceae) en Isla de Margarita, Venezuela. Revista de Biología Tropical (International Journal of Tropical Biology) 58(2): 547-564.
 - referencekey: San José & Montes 2001
@@ -369,7 +369,7 @@ references:
 - referencekey: San José & Montes 2007
   reference: >
       San José, J.J. & R.A. Montes (2007). Diversidad y conservación de las sabanas llaneras de Venezuela. Pp. 87-90. En: R. Duno de Stefano, G. Aymard & O. Huber (eds.). Flora vascular de los Llanos de Venezuela. FUDENA, Fundación Empresas Polar, FIBV: Caracas. 738 pp.
-- referencekey: San José et. al. 2003
+- referencekey: San José et al. 2003
   reference: >
       San José, J.J., R.A. Montes & C. Montes (2003). Neotropical savanna converted to food cropping and cattle feeding systems: soil carbon and nitrogen changes over 30 years. For. Ecol Managem. 184: 17-32.
 - referencekey: Sarmiento 1990
@@ -384,10 +384,10 @@ references:
 - referencekey: Schubert 1976
   reference: >
       Schubert, C. (1976). Evidence of former glaciation in the Sierra de Perijá, Western Venezuela. Erkunde 30: 222-224.
-- referencekey: Scott et. al. 1993
+- referencekey: Scott et al. 1993
   reference: >
       Scott, J.M., F. Davis, B. Csuti, R. Noss, B. Butterfield, C. Groves, H. Anderson, S. Caicco, F. Derchia, T.C. Edwards, J. Ulliman & R.G. Wright (1993). Gap analysis: a geographic approach to protection of biological diversity. Wildlife Monographs 123: 1-41.
-- referencekey: Sebastiani et. al. 1994
+- referencekey: Sebastiani et al. 1994
   reference: >
       Sebastiani, M., S. González, M. Castillo, P. Alvizu, M. Oliveira, J. Pérez, A. Quilici, M. Rada, M. Yáber & M. Lentino (1994). Large-Scale Shrimp Farming in Coastal Wetlands of Venezuela, South America: Causes and Consequences of Land-Use Conflicts. Environmental Management: 18(5): 647-661.
 - referencekey: Sevilla & Comerma 2009
@@ -396,7 +396,7 @@ references:
 - referencekey: Silva 2003
   reference: >
       Silva, J.F. (2003). Sabanas. Pp. 678-695. En: M. Aguilera, A. Azócar & E. González Jiménez (eds.). Biodiversidad de Venezuela. Tomo II. Fundación Polar, Ministerio de Ciencia y Tecnología, Fondo Nacional para la Ciencia, Tecnología e Innovación (FONACIT). Editorial ExLibris: Caracas.
-- referencekey: Silva et. al. 1971
+- referencekey: Silva et al. 1971
   reference: >
       Silva, J., M. Monasterio & G. Sarmiento (1971). Reconocimiento ecológico de los Llanos Occidentales. Acta Cient. Venezolana 22: 61-72.
 - referencekey: Soriano & Ruiz 2003
@@ -420,22 +420,22 @@ references:
 - referencekey: Steyermark & Huber 1978
   reference: >
       Steyermark, J. & O. Huber (1978). Flora del Ávila. Publicación Especial de la Sociedad Venezolana de Ciencias Naturales y del Ministerio del Ambiente y de los Recursos Naturales Renovables: Caracas. 971 pp.
-- referencekey: Steyermark et. al. 1995
+- referencekey: Steyermark et al. 1995
   reference: >
       Steyermark, J., P. Berry & B. Holst (1995). Flora of the Venezuelan Guayana. Missouri Botanical Garden: Portland. 320 pp.
-- referencekey: Suckow et. al. 1995
+- referencekey: Suckow et al. 1995
   reference: >
       Suckow, M.A., S.H. Weisbroth & C.L. Franklin (1995). Salinity in the oceans. Pp. 29-38. En: A.S. Mark, H.W. Steven & L.F. Craig (eds.). Seawater. 2nd Edition. Butterworth-Heinemann: Oxford.
 - referencekey: Tate 1931
   reference: >
       Tate, G.H.H. (1931). The Ascent of Mount Turimiquire. Natural History 6 (XXXI): 639-648.
-- referencekey: Tejos et. al. 1990
+- referencekey: Tejos et al. 1990
   reference: >
       Tejos, R., R. Schargel & F. Berrade (1990). Características y perspectivas de utilización de sabanas inundables en Venezuela. Pp. 163-190. En: G. Sarmiento (ed.). Las sabanas americanas. Aspectos de su biogeografía, ecología y utilización. Simposio organizado en Guanare, Venezuela, bajo el auspicio del Programa Década de los Trópicos (IUBS, MAB-UNESCO). Fundación Fondo Editorial Acta Científica Venezolana: Caracas. 332 pp.
 - referencekey: Tergas 1987
   reference: >
       Tergas, L. (1987). Producción animal, potencial y manejo de praderas naturales y cultivadas en los Llanos Orientales de Colombia. Pp. 350-366. En: J.J. San José & R.A. Montes (eds.). La capacidad bioproductiva de sabana. Centro Internacional de Ecología Tropical (UNESCO/CIET): Caracas.
-- referencekey: Thomas et. al. 1990
+- referencekey: Thomas et al. 1990
   reference: >
       Thomas, D., R.R. Vera, C. Lascano & M.J. Fisher (1990). Uso y mejoramiento de pasturas en las sabanas neotropicales. Pp. 141-162. En: G. Sarmiento (ed.). Las sabanas americanas. Aspectos de su biogeografía, ecología y utilización. Simposio organizado en Guanare, Venezuela, bajo el auspicio del Programa Década de los Trópicos (IUBS, MAB-UNESCO). Fundación Fondo Editorial Acta Científica Venezolana: Caracas. 332 pp.
 - referencekey: Veillon 1977
@@ -468,7 +468,7 @@ references:
 - referencekey: Walter & Ataroff 2002
   reference: >
       Walter, R. & M. Ataroff (2002). Biomasa epifita y su contenido de nutrientes en una selva nublada andina, Venezuela. Sociedad Venezolana de Ecología Ecotrópicos 15(2): 203-210.
-- referencekey: Yerena et. al. 2008
+- referencekey: Yerena et al. 2008
   reference: >
       Yerena, E., J. Padrón & H. Guada (2008). Caso de estudio: Contribución para la conservación de la diversidad biológica de la región del Golfo y Serranía de Paria, estado Sucre: Aplicación del protocolo de “Planificación para la conservación de áreas”. Intecmar, TNC. 217 pp.
 - referencekey: Zinck 1986
