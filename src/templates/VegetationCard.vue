@@ -122,7 +122,7 @@
                     </div>
                   </ClientOnly>
                 </div>
-                <div class="tile is-child is-7 box">
+                <div v-if="$page.vegetationCard.stateleveltable.length" class="tile is-child is-7 box">
                   <div class="has-text-centered is-size-6 has-text-weight-bold">Superficie estimada (km<sup>2</sup>) por estado:<br>
                     <span class="is-size-7"><b>(Tabla 1)</b></span>
                     <br><br>
