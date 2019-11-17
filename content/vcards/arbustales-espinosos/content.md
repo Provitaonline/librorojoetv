@@ -13,8 +13,8 @@ distributionmap: "./dist.png"
 areain1988: "25173"
 areain2010: "20297"
 mapcompare:
-  - in2010: "./figura-1a-1-88.jpg"
-    in1988: "./figura-1b-1-2010.jpg"
+  - in2010: "./figura-1b-1-2010.jpg"
+    in1988: "./figura-1a-1-88.jpg"
     caption: "Occidente"
     interventionlegend:
     - image: "./muy-intervenido.png"
@@ -23,8 +23,8 @@ mapcompare:
       text: "Medio alto"
     - image: "./bajo.png"
       text: "Bajo o información no disponible"
-  - in2010: "./figura-1a-2-88.jpg"
-    in1988: "./figura-1b-2-2010.jpg"
+  - in2010: "./figura-1b-2-2010.jpg"
+    in1988: "./figura-1a-2-88.jpg"
     caption: "Centro-este"
     interventionlegend:
     - image: "./muy-intervenido.png"
