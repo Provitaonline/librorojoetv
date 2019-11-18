@@ -10,7 +10,7 @@
             <p class="is-size-4 has-text-weight-bold has-text-centered" style="padding: 20px;">Formaciones vegetales</p>
           </div>
           <div class="box">
-            <div v-for="item, index in $page.homeData.vegetation">
+            <div v-for="item, index in $page.vegetationCardsIndex.legendItems">
               <div>
                 <p class="side-panel-item-title" v-if="isTitle(index)">
                   <b>{{item.plantformation}}</b>
@@ -296,22 +296,14 @@
         reference
       }
     }
-    homeData: homeData (path: "/content/home") {
-    	vegetation {
+    vegetationCardsIndex: vegetationCardsIndex (path: "/content/vcards-index") {
+    	legendItems {
         name
         group
         color
         legend
         cardPath
         plantformation
-      }
-    }
-    vcards: allVegetationCard (sortBy: "title", order: ASC) {
-      edges {
-        node {
-          title
-          formattedtitle
-        }
       }
     }
   }
@@ -546,10 +538,10 @@
         return t.cardPath ? slugify(t.cardPath, {lower: true}) : slugify(t.name, {lower: true})
       },
       isTitle: function(i) {
-        let pf = this.$page.homeData.vegetation[i].plantformation
+        let pf = this.$page.vegetationCardsIndex.legendItems[i].plantformation
         if (pf) {
           if (i > 0) {
-            return (pf === this.$page.homeData.vegetation[i-1].plantformation) ? false : true
+            return (pf === this.$page.vegetationCardsIndex.legendItems[i-1].plantformation) ? false : true
           } else {
             return true
           }

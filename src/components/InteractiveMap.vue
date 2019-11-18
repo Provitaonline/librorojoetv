@@ -1,7 +1,7 @@
 <template>
   <div>
     <div id="mapSection" class="section-header map-title box">
-      <div class="is-size-3 is-size-4-mobile has-text-weight-bold has-text-centered">Formaciones Vegetales de Venezuela - 2010</div>
+      <div class="is-size-3 is-size-4-mobile has-text-weight-bold has-text-centered" v-html="mapTitle"></div>
       <div class="has-text-centered">[Haz clic en una de las áreas para ver la ficha de información]</div>
     </div>
     <div style="height: 800px;">
@@ -80,7 +80,7 @@
         </div>
       </div>
       <div class="has-text-centered">[Haz clic en uno de los títulos de la leyenda para ver la ficha de información]</div>
-      <div class="has-text-centered">[Haz clic en uno de los elementos de color para ver sólo esa formación]</div>
+      <div class="has-text-centered">[Haz clic en uno de los elementos de color para ver sólo ese en el mapa]</div>
     </div>
   </div>
 </template>
@@ -273,7 +273,8 @@
     name: 'InteractiveMap',
     props: {
       legendItems: { type: Array, required: true },
-      geoJsonResources: { type: Array, required: true }
+      geoJsonResources: { type: Array, required: true },
+      mapTitle: { type: String, required: true }
     },
     data() {
       return {

@@ -31,6 +31,13 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
+        path: 'content/vcards-index.md',
+        typeName: 'VegetationCardsIndex'
+      }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
         path: 'content/vcards-references.md',
         typeName: 'VegetationCardReferences'
       }

@@ -4,15 +4,16 @@
       <section class="hero is-small is-white">
         <div class="hero-body">
           <div class="container is-fullhd is-uppercase has-text-centered">
-            <h1 class="title">Riesgo de colapso de los<br>ecosistemas terrestres de Venezuela</h1>
+            <h1 class="title" v-html="$page.vegetationCardsIndex.title"></h1>
           </div>
         </div>
       </section>
 
       <section class="section">
         <InteractiveMap
-          :legendItems="$page.homeData.vegetation"
+          :legendItems="$page.vegetationCardsIndex.legendItems"
           :geoJsonResources="geoJsonResources"
+          :mapTitle="$page.vegetationCardsIndex.mapTitle"
         >
       </InteractiveMap>
       </section>
@@ -56,9 +57,11 @@
     homeData: homeData (path: "/content/home") {
       title
       heroTitle
-      heroSubTitle
-      explanation
-    	vegetation {
+    }
+    vegetationCardsIndex: vegetationCardsIndex (path: "/content/vcards-index") {
+      title
+      mapTitle
+    	legendItems {
         name
         group
         color

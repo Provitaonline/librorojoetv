@@ -15,61 +15,21 @@
         <div class="box is-size-3 is-size-4-mobile has-text-weight-bold has-text-centered">Explora</div>
         <div class="tile is-ancestor">
           <div class="tile">
-            <div class="tile is-parent">
+            <div v-for="item in $page.homeData.indexCards" class="tile is-parent">
               <div class="card tile is-child">
                 <header class="card-header">
                   <p class="card-header-title is-centered">
-                    <g-link to="/vcards/">Riesgo de colapso</g-link>
+                    <g-link :to="item.link">{{item.title}}</g-link>
                   </p>
                 </header>
                 <div class="card-image">
                   <figure style="border-top: 1px solid rgba(20, 20, 20, 0.1); border-bottom: 1px solid rgba(20, 20, 20, 0.1);" class="image is-4by3">
-                    <g-link to="/vcards/"><g-image class="img-hover-effect" src="~/assets/images/riesgo.png"/></g-link>
+                    <g-link :to="item.link"><g-image class="img-hover-effect" :src="item.image"/></g-link>
                   </figure>
                 </div>
                 <div class="card-content">
                   <div class="content has-text-centered">
-                    Cambios temporales en distribución geográfica y riesgos de colapso and nivel nacional y estatal.
-                    <br>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="tile is-parent">
-              <div class="card tile is-child">
-                <header class="card-header">
-                  <p class="card-header-title is-centered">
-                    <g-link to="/cases/">Casos de estudio</g-link>
-                  </p>
-                </header>
-                <div class="card-image">
-                  <figure style="border-top: 1px solid rgba(20, 20, 20, 0.1); border-bottom: 1px solid rgba(20, 20, 20, 0.1);" class="image is-4by3">
-                    <g-link to="/cases/"><g-image class="img-hover-effect" src="~/assets/images/casos.png"/></g-link>
-                  </figure>
-                </div>
-                <div class="card-content">
-                  <div class="content has-text-centered">
-                    Aplicación de las categorías y criterios de las listas rojas de ecosistemas a diferentes escalas geográficas.
-                    <br>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="tile is-parent">
-              <div class="card tile is-child">
-                <header class="card-header">
-                  <p class="card-header-title is-centered">
-                    <g-link to="/units/">Unidades de paisaje</g-link>
-                  </p>
-                </header>
-                <div class="card-image">
-                  <figure class="image is-4by3">
-                    <g-link to="/units/"><g-image class="img-hover-effect" style="border-top: 1px solid rgba(20, 20, 20, 0.1); border-bottom: 1px solid rgba(20, 20, 20, 0.1);" src="~/assets/images/unidades.png"/></g-link>
-                  </figure>
-                </div>
-                <div class="card-content">
-                  <div class="content has-text-centered">
-                    Clasificación, descripción y distribución geográfica de los principales paisajes vegetales de Venezuela.
+                    {{item.text}}
                     <br>
                   </div>
                 </div>
@@ -88,8 +48,12 @@
     homeData: homeData (path: "/content/home") {
       title
       heroTitle
-      heroSubTitle
-      explanation
+      indexCards {
+        title
+        link
+        image
+        text
+      }
     }
   }
 </page-query>
