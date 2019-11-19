@@ -21,6 +21,7 @@
               <TextWithRefsAndPhotos class="tile is-child box is-size-5 is-size-6-mobile"
                 :text="$page.unitCard.content"
                 :refs="$page.unitCardReferences.references"
+                :photos="$page.unitCard.photos"
                 :isContent="true" />
               </TextWithRefsAndPhotos>
             </div>
@@ -37,6 +38,11 @@
       title
       cardimage
       cardimagecaption
+      photos {
+        photokey
+        photourl
+        photocaption
+      }
       content
     }
     unitCardReferences: unitCardReferences (path: "/content/units-references") {
@@ -57,6 +63,8 @@
 
   export default {
 
+    mounted () {
+    },
     components: {
       TextWithRefsAndPhotos
     }

@@ -48,7 +48,12 @@ module.exports = {
         path: 'content/units/**/*.md',
         typeName: 'UnitCard',
         remark:{
-          lazyLoadImages: false
+          autolinkHeadings: false,
+          lazyLoadImages: false,
+          slug: false,
+          plugins: [
+            'remark-attr'
+          ]
         }
       }
     },
