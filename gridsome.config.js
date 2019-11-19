@@ -60,6 +60,13 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
+        path: 'content/units-index.md',
+        typeName: 'UnitCardsIndex'
+      }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
         path: 'content/units-references.md',
         typeName: 'UnitCardReferences'
       }
