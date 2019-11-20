@@ -131,6 +131,7 @@
           {
             url: '/mapdata/UnidadesDePaisaje.topojson',
             legendTitleProperty: 'Sector_Leg',
+            isLegendLookUp: true,
             isTopoJson: true,
             topoJsonObject: 'Unidades_de_paisaje_2010'
           },

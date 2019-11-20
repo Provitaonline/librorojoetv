@@ -250,7 +250,7 @@
     t.isLoading = false
   }
 
-  function makeGeoJsonLayerOptions(makeLink, legendItems, geoJsonResource) {
+  function makeGeoJsonLayerOptions(makeLink, legendItems, geoJsonResource, makeMapPopupLabel) {
     let geoJsonLayerOptions = {}
     let a
     if (geoJsonResource.makePointsToCircles) {
@@ -281,7 +281,7 @@
     geoJsonLayerOptions.attribution = '| Provita, Huber y Oliveira-Miranda (2010)'
 
     geoJsonLayerOptions.onEachFeature = function onEachFeature(feature, layer) {
-      let link = '<a href=' + makeLink(feature.properties[geoJsonResource.legendTitleProperty]) + '>' + feature.properties[geoJsonResource.legendTitleProperty] + '</a>'
+      let link = '<a href=' + makeLink(feature.properties[geoJsonResource.legendTitleProperty]) + '>' + makeMapPopupLabel(feature.properties[geoJsonResource.legendTitleProperty], geoJsonResource.isLegendLookUp) + '</a>'
       layer.bindPopup(link)
     }
 
@@ -355,7 +355,7 @@
           if (r.geoJsonLayerOptions) {
             this.$options.geoJsonLayerOptions[i] = r.geoJsonLayerOptions
           } else {
-            this.$options.geoJsonLayerOptions[i] = makeGeoJsonLayerOptions(this.makeLink, this.legendItems, r)
+            this.$options.geoJsonLayerOptions[i] = makeGeoJsonLayerOptions(this.makeLink, this.legendItems, r, this.makeMapPopupLabel)
           }
         })
         getLayers(this, this.geoJsonResources)
@@ -392,6 +392,14 @@
       },
       makeId(t) {
         return(slugify(t, {lower: true}))
+      },
+      makeMapPopupLabel(name, isLegendLookUp) {
+        if (isLegendLookUp) {
+          let r = this.$options.propsData.legendItems.find(el => el.name === name)
+          return (r && r.label) ? r.label : name
+        } else {
+          return name
+        }
       },
       mapReady() {
 
