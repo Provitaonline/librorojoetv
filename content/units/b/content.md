@@ -123,7 +123,7 @@ Copernicia tectorum, ya encontrada en la Depresión de Maracaibo, el corozo (Acr
 puede ser consultada en Duno de Stefano y colaboradores (2007).
 
 ## Sector B.2.1. Llanos occidentales
-
+{id="b21"}
 Se extienden a todo lo largo del piedemonte oriental de la cordillera andina, por las llanuras coluvioaluviales
 de los estados Táchira, Apure, Barinas, Portuguesa y Cojedes. En la subunidad están presentes extensos
 bosques ribereños (bosques de galería), sabanas arbustivas de cerro con Curatella americana (chaparro) y
@@ -137,6 +137,7 @@ este tipo de vegetación en el sector se encuentra bastante reducida en comparac
 (1977) para la zona.
 
 ## Sector B.2.2. Llanos centrales altos
+{id="b22"}
 Se extienden por las llanuras coluvio-aluviales ubicadas al sur de la serranía del interior, en la porción
 septentrional de los estados Cojedes y Guárico, principalmente por encima de la curva de nivel de 100 msnm
 (Berroterán 1988). Son terrenos no inundables, cubiertos mayormente por sabanas arbustivas dominadas
@@ -150,14 +151,14 @@ densos dominados por Bourreria cumanensis (guatacaro).
 
 
 ## Sector B.2.3. Llanos centrales bajos
-
+{id="b23"}
 Este sector ocupa principalmente la porción meridional del estado Guárico y el extremo suroeste de
 Anzoátegui. Se caracteriza por terrenos inundables, especialmente en posición de vega del río Orinoco, y también
 médanos. La vegetación predominante está constituida por una gran variedad de tipos de sabana inundable con
 o sin arbustos esparcidos, así como por bosques ribereños (Berroterán 1985, Susach 1989).
 
 ## Sector B.2.4. Llanos suroccidentales o Llanos de Apure
-
+{id="b24"}
 Las extensas llanuras aluviales en los estados Apure, Barinas y, marginalmente, en Portuguesa y Cojedes,
 conforman el importante sector de los Llanos suroccidentales, conocidos como Llanos de Apure. En ellos se halla
 la mayor parte del paisaje de médanos, tan característicamente desarrollado en la zona de los cursos inferiores
@@ -167,7 +168,7 @@ En la zona noroccidental se encuentran sabanas inundables en la típica secuenci
 interrumpidos por bosques ribereños (Ramia 1967).
 
 ## Sector B.2.5. Depresión de Unare
-
+{id="b25"}
 La Depresión de Unare, que drena mayormente hacia el mar Caribe y no hacia la cuenca del río Orinoco,
 forma parte de la gran región llanera, primero por razones fisiográficas y climáticas, y segundo, por incluir
 ecosistemas transicionales entre los Llanos y aquellos premontanos y basimontanos de las dos secciones de la
@@ -178,7 +179,7 @@ bosques bajos impenetrables y son casi seguramente el producto de un largo proce
 causado por intensa intervención antrópica.
 
 ## Sector B.2.6. Mesas orientales
-
+{id="b26"}
 En el centro-norte del estado Anzoátegui se ubican las Mesas orientales, de origen sedimentario, cuya
 cobertura vegetal original se caracteriza por amplias sabanas ralas, sin árboles, sobre las superficies planas.
 Densos morichales y bosques deciduos crecen a lo largo del piedemonte meridional del macizo del Turimiquire,
@@ -190,7 +191,7 @@ especies de arbustos (por ejemplo, Humiria balsamifera) que anteriormente sólo 
 flora guayanesa, ubicada mucho más al sur.
 
 ## Sector B.2.7. Llanos orientales
-
+{id="b27"}
 Desciende paulatinamente desde las mesas hacia el océano Atlántico, hasta alcanzar la gran masa
 forestal del delta del Orinoco. Son llanuras coluvio-aluviales del estado Monagas y de la zona suroriental de
 Anzoátegui que llegan hasta la ribera norte del río Orinoco. Aunque nuevamente aquí predominan sabanas
