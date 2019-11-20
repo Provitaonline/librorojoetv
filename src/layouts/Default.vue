@@ -20,7 +20,7 @@
           <b-navbar-item>
               Casos de estudio
           </b-navbar-item>
-          <b-navbar-item>
+          <b-navbar-item tag="a" href="/units">
               Unidades de paisaje
           </b-navbar-item>
         </b-navbar-dropdown>
