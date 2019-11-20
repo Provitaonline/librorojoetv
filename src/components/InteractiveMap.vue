@@ -64,10 +64,16 @@
       <div class="columns">
         <div v-for="i in 3" class="column">
           <div v-for="item in columnItems(i)">
-            <div :id="makeId(item.name)" class="legend-box">
+            <div v-if="item.isUnlinked" class="legend-box">
+              <div class="legend-symbol-empty"><span class="legend-empty"></span></div>
+              <div v-if="item.isIndented" class="legend-symbol-empty"><span class="legend-empty"></span></div>
+              <span v-html="makeLabel(item)"></span>
+            </div>
+            <div v-else :id="makeId(item.name)" class="legend-box">
               <div title="Clic para sólo ver esto en el mapa" v-if="item.legend === 'colorkey'" @click="legendClick(item)" class="legend-symbol"><span class="legend-item" :style="'background:' + item.color + ';'"></span></div>
               <div title="Clic para sólo ver esto en el mapa" v-else-if="item.legend === 'dotkey'" @click="legendClick(item)" class="legend-symbol"><span class="dot" :style="'background:' + item.color + ';'"></span></div>
-              <g-link title="Clic para ir a los detalles" :to="makeLink(item)"> {{ item.label ? item.label : item.name }}</g-link>
+              <div v-if="item.isIndented" @click="legendClick(item)" class="legend-symbol"><span class="legend-empty"></span></div>
+              <g-link title="Clic para ir a los detalles" :to="makeLink(item)"><span v-html="makeLabel(item)"></span></g-link>
             </div>
           </div>
           <div v-if="i === 3" style="display: flex;">
@@ -116,6 +122,18 @@
   .legend-box {
     display: flex;
     box-sizing: border-box;
+  }
+
+  .legend-symbol-empty {
+    box-sizing:
+    border-box;
+    padding-right: 10px;
+  }
+
+  .legend-empty {
+    height: 12px;
+    width: 20px;
+    display: inline-block;
   }
 
   .lightstripe {
@@ -361,10 +379,16 @@
           it = t
         }
         if (it.cardPath) {
-          return this.$route.path.replace(/\/$/, "") + '/' + slugify(it.cardPath, {lower: true})
+          let target = it.cardPath.includes('#') ? it.cardPath : slugify(it.cardPath, {lower: true})
+          return this.$route.path.replace(/\/$/, "") + '/' + target
         } else {
           return this.$route.path.replace(/\/$/, "") + '/' + slugify(it.name, {lower: true})
         }
+      },
+      makeLabel(t) {
+        let label = t.label ? t.label : t.name
+        if (t.isHeading) label = '<b>' + label + '</b>'
+        return label
       },
       makeId(t) {
         return(slugify(t, {lower: true}))

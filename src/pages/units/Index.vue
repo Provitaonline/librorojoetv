@@ -42,6 +42,9 @@
       mapTitle
     	legendItems {
         name
+        isHeading
+        isIndented
+        isUnlinked
         label
         group
         color
