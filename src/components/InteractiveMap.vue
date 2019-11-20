@@ -62,7 +62,7 @@
     </div>
     <div class="legend is-size-6 has-text-left">
       <div class="columns">
-        <div v-for="i in 3" class="column">
+        <div v-for="i in numberOfLegendGroups" class="column">
           <div v-for="item in columnItems(i)">
             <div v-if="item.isUnlinked" class="legend-box">
               <div class="legend-symbol-empty"><span class="legend-empty"></span></div>
@@ -76,10 +76,10 @@
               <g-link title="Clic para ir a los detalles" :to="makeLink(item)"><span v-html="makeLabel(item)"></span></g-link>
             </div>
           </div>
-          <div v-if="i === 3" style="display: flex;">
+          <div v-if="i === numberOfLegendGroups" style="display: flex;">
             <div>&nbsp;</div>
           </div>
-          <div v-if="i === 3" style="display: flex;">
+          <div v-if="i === numberOfLegendGroups" style="display: flex;">
             <div title="Clic para ver todo en el mapa" @click="legendClick({name: 'all'})" class="legend-symbol"><span class="legend-item" :style="'background: #f8e7e8;'"></span></div>
             <div> <font-awesome size="sm" :icon="['fas', 'arrow-left']"/><i> Clic para ver todas</i></div>
           </div>
@@ -365,7 +365,9 @@
 
     },
     computed: {
-
+      numberOfLegendGroups() {
+        return Math.max.apply(Math, this.$options.propsData.legendItems.map(function(el) { return el.group; }))
+      }
     },
     methods: {
       columnItems(g) {
