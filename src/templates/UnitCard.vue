@@ -4,7 +4,7 @@
       <section class="hero is-small is-white">
         <div class="hero-body">
           <div class="container is-fullhd has-text-centered">
-            <p class="title is-uppercase is-size-6">Unidades de paisaje</p>
+            <g-link to="/units" class="is-uppercase is-size-6">Unidades de paisaje</g-link>
             <p class="title is-uppercase is-size-4-mobile">{{$page.unitCard.title}}</p>
           </div>
         </div>

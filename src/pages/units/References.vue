@@ -4,7 +4,7 @@
       <section class="hero is-small is-white">
         <div class="hero-body">
           <div class="container is-fullhd has-text-centered">
-            <h1 class="title is-uppercase ">Paisajes Vegetales de Venezuela</h1>
+            <h1 class="title is-uppercase "><g-link to="/units">Paisajes Vegetales de Venezuela</g-link></h1>
             <h2 class="title">Bibliografía</h2>
           </div>
         </div>
