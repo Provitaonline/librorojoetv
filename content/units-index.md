@@ -152,16 +152,19 @@ legendItems:
     group: 2
     color: "#9d81bb"
     legend: "colorkey"
+    cardPath: "d#d1"
   - name: "D2"
     label: "Subregión D.2. Cordillera de los Andes"
     group: 2
     color: "#2d56a7"
     legend: "colorkey"
+    cardPath: "d#d2"
   - name: "D3"
     label: "Subregión D.3. Sierra de San Luis y Cerro Santa Ana"
     group: 2
     color: "#3b62ad"
     legend: "colorkey"
+    cardPath: "d#d3"
   - name: "D4"
     label: "Subregión D.4. Cordillera de la Costa Central"
     group: 2
