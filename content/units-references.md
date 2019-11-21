@@ -1,5 +1,14 @@
 ---
 references:
+- referencekey: Nota 1
+  reference: >
+      Para la caracterización del nivel jerárquico de las diferentes masas montañosas se emplean, en orden creciente de complejidad orográfica, los términos cerro, sierra, serranía, macizo y cordillera.
+- referencekey: Nota 2
+  reference: >
+      La palabra “tepui” de la lengua indígena pemón se escribe con “i” latina cuando forma parte de un nombre autóctono, mientras que se escribe con “y” (i griega) cuando es utilizada en forma castellanizada (<i>Notificación de la Academia de Letras de Venezuela de 1984</i>).
+- referencekey: Nota 3
+  reference: >
+      Para mayores detalles se recomienda consultar a Huber (1995b). Adicionalmente, una recopilación bibliográfica exhaustiva sobre la flora y vegetación de los tepuyes guayaneses se encuentra en Berry et al. (1995a).
 - referencekey: Andressen 2007
   reference: >
       Andressen L., R. (2007). Circulación atmosférica y tipos de climas. Pp. 238-328. En: P. Cunill G. (ed.). Medio físico y recursos ambientales. Geo Venezuela 2. Fundación Empresas Polar: Caracas.

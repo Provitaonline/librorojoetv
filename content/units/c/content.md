@@ -30,9 +30,9 @@ en las colinas al sur del Orinoco, con una precipitación media anual entre 1.00
 En esta región se distinguen tres subregiones, de las cuales una se ubica al norte y las otras dos al sur
 del río Orinoco:
 
-* Subregión C.1. Sistema de colinas y sierras bajas Lara-Falcón
-* Subregión C.2. Sistema de colinas y sierras bajas piemontanas del Escudo Guayanés
-* Subregión C.3. Sistema de sierras bajas y colinas Imataca-Cuyuní del Escudo Guayanés nororiental
+* [Subregión C.1. Sistema de colinas y sierras bajas Lara-Falcón](#c1)
+* [Subregión C.2. Sistema de colinas y sierras bajas piemontanas del Escudo Guayanés](#c2)
+* [Subregión C.3. Sistema de sierras bajas y colinas Imataca-Cuyuní del Escudo Guayanés nororiental](#c3)
 
 # Subregión C.1. Sistema de colinas y sierras bajas Lara-Falcón
 {id="c1"}
