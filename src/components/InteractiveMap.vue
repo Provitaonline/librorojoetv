@@ -64,12 +64,7 @@
       <div class="columns">
         <div v-for="i in numberOfLegendGroups" class="column">
           <div v-for="item in columnItems(i)">
-            <div v-if="item.isUnlinked" :id="makeId(item.name)" class="legend-box">
-              <div class="legend-symbol-empty"><span class="legend-empty"></span></div>
-              <div v-if="item.isIndented" class="legend-symbol-empty"><span class="legend-empty"></span></div>
-              <span v-html="makeLabel(item)"></span>
-            </div>
-            <div v-else :id="makeId(item.name)" class="legend-box">
+            <div :id="makeId(item.name)" class="legend-box">
               <div title="Clic para sólo ver esto en el mapa" v-if="item.legend === 'colorkey'" @click="legendClick(item)" class="legend-symbol"><span class="legend-item" :style="'background:' + item.color + ';'"></span></div>
               <div title="Clic para sólo ver esto en el mapa" v-else-if="item.legend === 'dotkey'" @click="legendClick(item)" class="legend-symbol"><span class="dot" :style="'background:' + item.color + ';'"></span></div>
               <div v-if="item.isIndented" @click="legendClick(item)" class="legend-symbol"><span class="legend-empty"></span></div>
