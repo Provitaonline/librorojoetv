@@ -3,6 +3,10 @@ region: a
 title: "Región A: Costas e islas"
 cardimage: "./pancarta.jpg"
 cardimagecaption: "Falta esta foto"
+photos:
+- photokey: "Foto 21"
+  photourl: "./foto-21.jpg"
+  photocaption: "Foto 21: Paisaje vegetal de isla, Archipiélago Los Roques, Dependencias Federales. <i>Rodrigo Lazo</i>"
 ---
 Los paisajes asociados a la región están conformados en su mayoría por ambientes salinos, expuestos
 a la acción de las mareas y con inestabilidad de substrato. Se distinguen dos subregiones, una correspondiente
