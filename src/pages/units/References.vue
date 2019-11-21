@@ -47,7 +47,8 @@
           },
           {
             field: 'reference',
-            label: 'Referencia'
+            label: 'Referencia',
+            renderHtml: true
           }
         ]
       }
