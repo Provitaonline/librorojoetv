@@ -47,7 +47,7 @@
           </l-marker>
 
           <l-control position="topright" >
-            <div class="map-info is-size-4 is-size-7-mobile"><span>{{mapLabel}}</span></div>
+            <div class="map-info is-size-4 is-size-7-mobile"><div>{{mapLabel}}</div></div>
           </l-control>
 
           <l-control position="bottomleft" >
@@ -64,7 +64,7 @@
       <div class="columns">
         <div v-for="i in numberOfLegendGroups" class="column">
           <div v-for="item in columnItems(i)">
-            <div v-if="item.isUnlinked" class="legend-box">
+            <div v-if="item.isUnlinked" :id="makeId(item.name)" class="legend-box">
               <div class="legend-symbol-empty"><span class="legend-empty"></span></div>
               <div v-if="item.isIndented" class="legend-symbol-empty"><span class="legend-empty"></span></div>
               <span v-html="makeLabel(item)"></span>
@@ -157,14 +157,15 @@
   }
 
   .map-info {
+    max-width: 65vw;
     background: #f8e7e8;
   }
 
-  .map-info span {
+  .map-info div {
     margin: 10px;
   }
 
-  .map-info span:empty {
+  .map-info div:empty {
     display: none;
   }
 
@@ -198,9 +199,9 @@
 
 <style lang="scss">
   .legend-heading {
-    font-weight: 600;
-    text-decoration: underline;
-    text-decoration-color: #BE1421;
+    font-weight: 600 !important;
+    text-decoration: underline !important;
+    text-decoration-color: #BE1421 !important;
   }
 </style>
 
@@ -226,7 +227,7 @@
 
   function displaySelectedFeature(layerGroup, name, opacity, property) {
     layerGroup.eachLayer(function (layer) {
-      if (name === layer.feature.properties[property] || name === 'all') {
+      if (layer.feature.properties[property].includes(name) || name === 'all') {
         layer.setStyle({fillOpacity: opacity, opacity: opacity})
       } else {
         layer.setStyle({fillOpacity: 0, opacity: 0})
@@ -286,7 +287,7 @@
       }
     }
 
-    geoJsonLayerOptions.attribution = '| Provita, Huber y Oliveira-Miranda (2010)'
+    geoJsonLayerOptions.attribution = 'Provita, Huber y Oliveira-Miranda (2010)'
 
     geoJsonLayerOptions.onEachFeature = function onEachFeature(feature, layer) {
       let link = '<a href=' + makeLink(feature.properties[geoJsonResource.legendTitleProperty]) + '>' + makeMapPopupLabel(feature.properties[geoJsonResource.legendTitleProperty], geoJsonResource.isLegendLookUp) + '</a>'
@@ -427,8 +428,14 @@
         this.$refs.theMap.mapObject.fitBounds(this. initialBounds)
       },
       legendClick(item) {
+        let isLegendLookUp = false
         this.geoJsonResources.forEach((r, i) => {
           if (r.legendTitleProperty) {
+            if (!isLegendLookUp) {
+              if (r.isLegendLookUp) {
+                isLegendLookUp = true
+              }
+            }
             displaySelectedFeature(this.$refs.layerReference[i].mapObject, item.name, 1 - this.layerTransparency/100, r.legendTitleProperty)
           }
         })
@@ -438,7 +445,7 @@
         })
 
         if (item.name != 'all') {
-          this.mapLabel = item.name
+          this.mapLabel = this.makeMapPopupLabel(item.name, isLegendLookUp)
           document.getElementById(this.makeId(item.name)).setAttribute('style', 'background: #f8e7e8;')
         } else {
           this.mapLabel = ''

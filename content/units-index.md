@@ -2,7 +2,8 @@
 title: "Paisajes Vegetales de Venezuela"
 mapTitle: "Unidades de paisaje de Venezuela -  2010"
 legendItems:
-  - name: "Región A. Costas e islas. Paisajes vegetales de las costas e islas"
+  - name: "A"
+    label: "Región A. Costas e islas. Paisajes vegetales de las costas e islas"
     isHeading: true
     group: 1
     cardPath: "a"
@@ -28,7 +29,8 @@ legendItems:
     color: "#218942"
     legend: "colorkey"
     cardPath: "b#b1"
-  - name: "Subregión B.2. Llanos"
+  - name: "B2"
+    label: "Subregión B.2. Llanos"
     isIndented: true
     group: 1
     cardPath: "b#b2"
@@ -108,7 +110,8 @@ legendItems:
     group: 1
     color: "#feecd1"
     legend: "colorkey"
-  - name: "Subregión C.2. Sistema de colinas y sierras bajas piemontanas del Escudo Guayanés"
+  - name: "C2"
+    label: "Subregión C.2. Sistema de colinas y sierras bajas piemontanas del Escudo Guayanés"
     isIndented: true
     group: 1
     cardPath: "c#c2"
@@ -148,7 +151,8 @@ legendItems:
     group: 2
     color: "#3b62ad"
     legend: "colorkey"
-  - name: "Subregión D.4. Cordillera de la Costa Central"
+  - name: "D4"
+    label: "Subregión D.4. Cordillera de la Costa Central"
     group: 2
     isIndented: true
     cardPath: "d#d4"
@@ -170,7 +174,8 @@ legendItems:
     group: 2
     color: "#c0d0eb"
     legend: "colorkey"
-  - name: "Subregión D.5. Cordillera de la Costa Oriental"
+  - name: "D5"
+    label: "Subregión D.5. Cordillera de la Costa Oriental"
     isIndented: true
     group: 2
     cardPath: "d#d5"
@@ -191,7 +196,8 @@ legendItems:
     group: 2
     color: "#9fbdda"
     legend: "colorkey"
-  - name: "Subregión D.7. Macizo Guayanés"
+  - name: "D7"
+    label: "Subregión D.7. Macizo Guayanés"
     isIndented: true
     group: 2
     cardPath: "d#d7"
