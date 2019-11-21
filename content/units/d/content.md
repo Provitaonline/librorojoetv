@@ -126,10 +126,7 @@ a casi 3.000 msnm, puede observarse grandes colonias de pino aparrado (Podocarpu
 altitudinales inferiores también presentan una flora rica y variada, entre la cual destacan las colonias de yagrumos
 con hojas blancas (Cecropia telenitida).
 
-Recientemente se han realizado estudios botánicos y fitosociológicos detallados en los bosques y
-páramos de las montañas de Guaramacal, a menos de 3.200 msnm, en los estados Portuguesa y Trujillo, y se
-evidencia diferencias florísticas y ecológicas significativas con relación a los páramos de Mérida (Cuello & Cleef
-2009a; 2009b).
+Recientemente se han realizado estudios botánicos y fitosociológicos detallados en los bosques y páramos de las montañas de Guaramacal, a menos de 3.200 msnm, en los estados Portuguesa y Trujillo, y se evidencia diferencias florísticas y ecológicas significativas con relación a los páramos de Mérida (Cuello & Cleef 2009a, Cuello & Cleef 2009b).
 
 # Subregión D.3. Sierra de San Luis y cerro Santa Ana
 {id="d3"}
@@ -176,19 +173,7 @@ sobre la gran falla geológica de La Victoria, desarrollándose, inicialmente, a
 subir hasta más de 1.000 metros en el valle de Caracas. Las cumbres más altas de la serranía están
 alineadas en sentido oeste-este y varias de ellas superan la cota de 2.000 msnm.
 
-La vegetación natural predominante es boscosa con un discreto número de endemismos.
-En Aragua, en el Parque Nacional Henri Pittier, y en el Distrito Capital, en el Parque Nacional Guaraira
-Repano, se observa una secuencia de pisos altitudinales que en la base parte con bosques estacionales
-deciduos (tropófilos), seguidos por bosques semideciduos submontanos de transición, llamados
-bosques alisios por Vareschi (1992) y, finalmente termina en una franja bien desarrollada de bosques
-húmedos (ombrófilos) submontanos a montanos, conocidos como bosques nublados costeros. La
-flora y la vegetación de la selva nublada de Rancho Grande, ubicada en el Parque Nacional Henri
-Pittier, han sido estudiadas con cierto detalle, detectándose varias especies endémicas (Huber 1986,
-Cardozo 1999). Allí se encuentra también uno de los árboles más vistosos y posiblemente entre los
-más grandes de toda la flora venezolana, el cucharón (Gyranthera caribensis), descubierto y descrito
-por Pittier en los años veinte del siglo pasado. Este imponente gigante de la selva, que alcanza hasta 60
-m de altura, tiende a agruparse en pequeñas poblaciones, y llama la atención por sus muy llamativas
-raíces fulcrantes o tabulares, las que pueden llegar hasta la altura de 6 m sobre el tronco.
+La vegetación natural predominante es boscosa con un discreto número de endemismos. En Aragua, en el Parque Nacional Henri Pittier, y en el Distrito Capital, en el Parque Nacional Guaraira Repano, se observa una secuencia de pisos altitudinales que en la base parte con bosques estacionales deciduos (tropófilos), seguidos por bosques semideciduos submontanos de transición, llamados bosques alisios por Vareschi (1992) y, finalmente termina en una franja bien desarrollada de bosques húmedos (ombrófilos) submontanos a montanos, conocidos como bosques nublados costeros. La flora y la vegetación de la selva nublada de Rancho Grande, ubicada en el Parque Nacional Henri Pittier, han sido estudiadas con cierto detalle, detectándose varias especies endémicas (Huber 1986, Cardozo 1999). Allí se encuentra también uno de los árboles más vistosos y posiblemente entre los más grandes de toda la flora venezolana, el cucharón (Gyranthera caribensis), descubierto y descrito por Pittier en los años veinte del siglo pasado. Este imponente gigante de la selva, que alcanza hasta 60 m de altura, tiende a agruparse en pequeñas poblaciones, y llama la atención por sus muy llamativas raíces fulcrantes o tabulares, las que pueden llegar hasta la altura de 6 m sobre el tronco.
 
 Por su parte, las zonas abiertas que se desarrollan por encima del límite superior de los
 bosques, en el caso de la cordillera de la Costa comienzan a 2.200 y 2.300 msnm. Se trata de un
