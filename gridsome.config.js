@@ -43,6 +43,35 @@ module.exports = {
       }
     },
     {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'content/units/**/*.md',
+        typeName: 'UnitCard',
+        remark:{
+          autolinkHeadings: false,
+          lazyLoadImages: false,
+          slug: false,
+          plugins: [
+            'remark-attr'
+          ]
+        }
+      }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'content/units-index.md',
+        typeName: 'UnitCardsIndex'
+      }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'content/units-references.md',
+        typeName: 'UnitCardReferences'
+      }
+    },
+    {
       use: 'gridsome-plugin-svg',
       options: {
       // default options below
@@ -71,6 +100,7 @@ module.exports = {
     }
   ],
   templates: {
-    VegetationCard: '/vcards/:title'
+    VegetationCard: '/vcards/:title',
+    UnitCard: '/units/:region'
   }
 }

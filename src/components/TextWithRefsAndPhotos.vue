@@ -30,12 +30,12 @@ import VRuntimeTemplate from "v-runtime-template"
 
 function addPopovers(data, references, photos) {
   let r = data.replace(/\(.*?\)/g, function (match) {
-    let lookup = ((match.replace(/[{()}]/g, ''))).split(',');
+    let lookup = ((match.replace(/[{()}]/g, ''))).split(',')
     let dropDownItems = ''
     let photoItems = ''
     lookup.forEach(refItem => {
       refItem = refItem.replace(/\<i\>|\<\/i\>/g, '') // Get rid of italic markup
-      let re = references.find(function(r) { return r.referencekey === refItem.trim()})
+      let re = references.find(function(r) { return r.referencekey === refItem.replace('&#x26;', '&').trim()})
       if (re) {
         dropDownItems += `
           <div class="dropdown-item">
