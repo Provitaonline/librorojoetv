@@ -4,8 +4,8 @@ mapTitle: "Unidades de paisaje de Venezuela -  2010"
 legendItems:
   - name: "Región A. Costas e islas. Paisajes vegetales de las costas e islas"
     isHeading: true
-    isUnlinked: true
     group: 1
+    cardPath: "a"
   - name: "A1"
     label: "Subregión A.1 Insular costera"
     group: 1
@@ -20,8 +20,8 @@ legendItems:
     cardPath: "a"
   - name: "Región B. Llanuras bajas. Paisajes vegetales de las llanuras bajas"
     isHeading: true
-    isUnlinked: true
     group: 1
+    cardPath: "b"
   - name: "B1"
     label: "Subregión B.1. Depresión de Maracaibo"
     group: 1
@@ -29,8 +29,9 @@ legendItems:
     legend: "colorkey"
     cardPath: "b#b1"
   - name: "Subregión B.2. Llanos"
-    isUnlinked: true
+    isIndented: true
     group: 1
+    cardPath: "b#b2"
   - name: "B21"
     label: "Sector B.2.1. Llanos occidentales"
     isIndented: true
@@ -100,19 +101,17 @@ legendItems:
     cardPath: "b#b5"
   - name: "Región C. Colinas. Paisajes vegetales de las colinas"
     isHeading: true
-    isUnlinked: true
     group: 1
+    cardPath: "c"
   - name: "C1"
     label: "Subregión C.1. Sistema de colinas y sierras bajas Lara-Falcón"
     group: 1
     color: "#feecd1"
     legend: "colorkey"
   - name: "Subregión C.2. Sistema de colinas y sierras bajas piemontanas del Escudo Guayanés"
-    isUnlinked: true
+    isIndented: true
     group: 1
-    color: "#ffffff"
-    legend: "colorkey"
-    cardPath: "a"
+    cardPath: "c#c2"
   - name: "C21"
     label: "Sector C.2.1. Zona noroccidental"
     isIndented: true
@@ -132,11 +131,8 @@ legendItems:
     legend: "colorkey"
   - name: "Región D. Montañas. Paisajes vegetales de las montañas"
     isHeading: true
-    isUnlinked: true
     group: 2
-    color: "#ffffff"
-    legend: "colorkey"
-    cardPath: "a"
+    cardPath: "d"
   - name: "D1"
     label: "Subregión D.1. Serranía de Perijá"
     group: 2
@@ -153,11 +149,9 @@ legendItems:
     color: "#3b62ad"
     legend: "colorkey"
   - name: "Subregión D.4. Cordillera de la Costa Central"
-    isUnlinked: true
     group: 2
-    color: "#ffffff"
-    legend: "colorkey"
-    cardPath: "a"
+    isIndented: true
+    cardPath: "d#d4"
   - name: "D41"
     label: "Sector D.4.1. Sierra de Aroa"
     isIndented: true
@@ -177,11 +171,9 @@ legendItems:
     color: "#c0d0eb"
     legend: "colorkey"
   - name: "Subregión D.5. Cordillera de la Costa Oriental"
-    isUnlinked: true
+    isIndented: true
     group: 2
-    color: "#ffffff"
-    legend: "colorkey"
-    cardPath: "a"
+    cardPath: "d#d5"
   - name: "D51"
     label: "Sector D.5.1. Macizo del Turimiquire"
     isIndented: true
@@ -200,11 +192,9 @@ legendItems:
     color: "#9fbdda"
     legend: "colorkey"
   - name: "Subregión D.7. Macizo Guayanés"
-    isUnlinked: true
+    isIndented: true
     group: 2
-    color: "#ffffff"
-    legend: "colorkey"
-    cardPath: "a"
+    cardPath: "d#d7"
   - name: "D71"
     label: "Sector D.7.1. Zona suroriental"
     isIndented: true
