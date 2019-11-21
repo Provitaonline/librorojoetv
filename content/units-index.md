@@ -115,6 +115,7 @@ legendItems:
     group: 1
     color: "#feecd1"
     legend: "colorkey"
+    cardPath: "c#c1"
   - name: "C2"
     label: "Subregión C.2. Sistema de colinas y sierras bajas piemontanas del Escudo Guayanés"
     isIndented: true
@@ -126,17 +127,20 @@ legendItems:
     group: 1
     color: "#ffd380"
     legend: "colorkey"
+    cardPath: "c#c21"
   - name: "C22"
     label: "Sector C.2.2. Zona centro-norte"
     isIndented: true
     group: 1
     color: "#fca91c"
     legend: "colorkey"
+    cardPath: "c#c22"
   - name: "C3"
     label: "Subregión C.3. Sistema de sierras bajas y colinas Imataca-Cuyuní del Escudo Guayanés nororiental"
     group: 1
     color: "#a77129"
     legend: "colorkey"
+    cardPath: "c#c3"
   - name: "D"
     label: "Región D. Montañas. Paisajes vegetales de las montañas"
     isIndented: true
