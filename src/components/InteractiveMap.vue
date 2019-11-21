@@ -115,7 +115,7 @@
     padding-right: 10px;
   }
 
-  .legend-item:hover, .dot:hover {
+  .legend-item:hover, .dot:hover, .legend-empty:hover {
     border: 2px solid #BE1421;
   }
 
