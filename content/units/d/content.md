@@ -460,6 +460,7 @@ cimas, se encuentra toda la gama de ecosistemas tepuyanos y altotepuyanos herbá
 típicos de Pantepui, con varios géneros endémicos como Phelpsiella en el Parú, y Marahuacaea y Amphiphyllum
 en el Duida-Marahuaca, entre las herbáceas, y Duidaea, Duidania y Tateanthus entre las arbustivas (Foto 41).
 {Foto 41}
+
 ## Sector D.7.8. Sierra Parima
 {id="d78"}
 

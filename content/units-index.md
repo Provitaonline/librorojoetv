@@ -173,18 +173,21 @@ legendItems:
     group: 2
     color: "#3c6eb6"
     legend: "colorkey"
+    cardPath: "d#d41"
   - name: "D42"
     label: "Sector D.4.2. Serranía del Litoral"
     isIndented: true
     group: 2
     color: "#80afdd"
     legend: "colorkey"
+    cardPath: "d#d42"
   - name: "D43"
     label: "Sector D.4.3. Serranía del Interior"
     isIndented: true
     group: 2
     color: "#c0d0eb"
     legend: "colorkey"
+    cardPath: "d#d43"
   - name: "D5"
     label: "Subregión D.5. Cordillera de la Costa Oriental"
     isIndented: true
@@ -196,17 +199,20 @@ legendItems:
     group: 2
     color: "#42668a"
     legend: "colorkey"
+    cardPath: "d#d51"
   - name: "D52"
     label: "Sector D.5.2. Serranía de Paria"
     isIndented: true
     group: 2
     color: "#669acf"
     legend: "colorkey"
+    cardPath: "d#d52"
   - name: "D6"
     label: "Subregión D.6. Cerro Copey, Isla de Margarita"
     group: 2
     color: "#9fbdda"
     legend: "colorkey"
+    cardPath: "d#d6"
   - name: "D7"
     label: "Subregión D.7. Macizo Guayanés"
     isIndented: true
@@ -218,52 +224,61 @@ legendItems:
     group: 2
     color: "#3ca0ac"
     legend: "colorkey"
+    cardPath: "d#d71"
   - name: "D72"
     label: "Sector D.7.2. La Gran Sabana"
     isIndented: true
     group: 2
     color: "#c6e6da"
     legend: "colorkey"
+    cardPath: "d#d72"
   - name: "D73"
     label: "Sector D.7.3. Zona Caroní medio"
     isIndented: true
     group: 2
     color: "#80d4f3"
     legend: "colorkey"
+    cardPath: "d#d73"
   - name: "D74"
     label: "Sector D.7.4. Guaiquinima"
     isIndented: true
     group: 2
     color: "#bedff5"
     legend: "colorkey"
+    cardPath: "d#d74"
   - name: "D75"
     label: "Sector D.7.5. Jaua-Maigualida"
     isIndented: true
     group: 2
     color: "#70ccd6"
     legend: "colorkey"
+    cardPath: "d#d75"
   - name: "D76"
     label: "Sector D.7.6. Zona noroccidental"
     isIndented: true
     group: 2
     color: "#3b72b8"
     legend: "colorkey"
+    cardPath: "d#d76"
   - name: "D77"
     label: "Sector D.7.7. Zona centro-sur"
     isIndented: true
     group: 2
     color: "#99dbf3"
     legend: "colorkey"
+    cardPath: "d#d77"
   - name: "D78"
     label: "Sector D.7.8. Sierra Parima"
     isIndented: true
     group: 2
     color: "#6070b5"
     legend: "colorkey"
+    cardPath: "d#d78"
   - name: "D79"
     label: "Sector D.7.9. Zona sur"
     isIndented: true
     group: 2
     color: "#24316d"
     legend: "colorkey"
+    cardPath: "d#d79"
 ---
