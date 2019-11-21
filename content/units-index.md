@@ -101,33 +101,33 @@ legendItems:
   - name: "Región C. Colinas. Paisajes vegetales de las colinas"
     isHeading: true
     isUnlinked: true
-    group: 2
+    group: 1
   - name: "C1"
     label: "Subregión C.1. Sistema de colinas y sierras bajas Lara-Falcón"
-    group: 2
+    group: 1
     color: "#feecd1"
     legend: "colorkey"
   - name: "Subregión C.2. Sistema de colinas y sierras bajas piemontanas del Escudo Guayanés"
     isUnlinked: true
-    group: 2
+    group: 1
     color: "#ffffff"
     legend: "colorkey"
     cardPath: "a"
   - name: "C21"
     label: "Sector C.2.1. Zona noroccidental"
     isIndented: true
-    group: 2
+    group: 1
     color: "#ffd380"
     legend: "colorkey"
   - name: "C22"
     label: "Sector C.2.2. Zona centro-norte"
     isIndented: true
-    group: 2
+    group: 1
     color: "#fca91c"
     legend: "colorkey"
   - name: "C3"
     label: "Subregión C.3. Sistema de sierras bajas y colinas Imataca-Cuyuní del Escudo Guayanés nororiental"
-    group: 2
+    group: 1
     color: "#a77129"
     legend: "colorkey"
   - name: "Región D. Montañas. Paisajes vegetales de las montañas"
@@ -178,85 +178,85 @@ legendItems:
     legend: "colorkey"
   - name: "Subregión D.5. Cordillera de la Costa Oriental"
     isUnlinked: true
-    group: 3
+    group: 2
     color: "#ffffff"
     legend: "colorkey"
     cardPath: "a"
   - name: "D51"
     label: "Sector D.5.1. Macizo del Turimiquire"
     isIndented: true
-    group: 3
+    group: 2
     color: "#42668a"
     legend: "colorkey"
   - name: "D52"
     label: "Sector D.5.2. Serranía de Paria"
     isIndented: true
-    group: 3
+    group: 2
     color: "#669acf"
     legend: "colorkey"
   - name: "D6"
     label: "Subregión D.6. Cerro Copey, Isla de Margarita"
-    group: 3
+    group: 2
     color: "#9fbdda"
     legend: "colorkey"
   - name: "Subregión D.7. Macizo Guayanés"
     isUnlinked: true
-    group: 3
+    group: 2
     color: "#ffffff"
     legend: "colorkey"
     cardPath: "a"
   - name: "D71"
     label: "Sector D.7.1. Zona suroriental"
     isIndented: true
-    group: 3
+    group: 2
     color: "#3ca0ac"
     legend: "colorkey"
   - name: "D72"
     label: "Sector D.7.2. La Gran Sabana"
     isIndented: true
-    group: 3
+    group: 2
     color: "#c6e6da"
     legend: "colorkey"
   - name: "D73"
     label: "Sector D.7.3. Zona Caroní medio"
     isIndented: true
-    group: 3
+    group: 2
     color: "#80d4f3"
     legend: "colorkey"
   - name: "D74"
     label: "Sector D.7.4. Guaiquinima"
     isIndented: true
-    group: 3
+    group: 2
     color: "#bedff5"
     legend: "colorkey"
   - name: "D75"
     label: "Sector D.7.5. Jaua-Maigualida"
     isIndented: true
-    group: 3
+    group: 2
     color: "#70ccd6"
     legend: "colorkey"
   - name: "D76"
     label: "Sector D.7.6. Zona noroccidental"
     isIndented: true
-    group: 3
+    group: 2
     color: "#3b72b8"
     legend: "colorkey"
   - name: "D77"
     label: "Sector D.7.7. Zona centro-sur"
     isIndented: true
-    group: 3
+    group: 2
     color: "#99dbf3"
     legend: "colorkey"
   - name: "D78"
     label: "Sector D.7.8. Sierra Parima"
     isIndented: true
-    group: 3
+    group: 2
     color: "#6070b5"
     legend: "colorkey"
   - name: "D79"
     label: "Sector D.7.9. Zona sur"
     isIndented: true
-    group: 3
+    group: 2
     color: "#24316d"
     legend: "colorkey"
 ---
