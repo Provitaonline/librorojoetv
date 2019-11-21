@@ -196,6 +196,14 @@
 
 </style>
 
+<style lang="scss">
+  .legend-heading {
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: #BE1421;
+  }
+</style>
+
 <script>
   import axios from 'axios'
   import slugify from 'slugify'
@@ -389,7 +397,7 @@
       },
       makeLabel(t) {
         let label = t.label ? t.label : t.name
-        if (t.isHeading) label = '<b>' + label + '</b>'
+        if (t.isHeading) label = '<span class="legend-heading">' + label + '</span>'
         return label
       },
       makeId(t) {
