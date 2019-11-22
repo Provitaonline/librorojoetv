@@ -43,7 +43,7 @@
         </div>
         <div class="container is-size-4 has-text-centered">
           <hr>
-          <g-link to="/vcards/references"><p>Bibliografía</p></g-link>
+          <g-link to="/references/vcards"><p>Bibliografía</p></g-link>
         </div>
 
       </section>

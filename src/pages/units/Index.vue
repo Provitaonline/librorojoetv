@@ -22,7 +22,7 @@
         <br>
         <div class="container is-size-4 has-text-centered">
           <hr>
-          <g-link to="/units/references"><p>Bibliografía</p></g-link>
+          <g-link to="/references/units"><p>Bibliografía</p></g-link>
         </div>
 
       </section>

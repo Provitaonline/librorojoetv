@@ -13,12 +13,19 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        path: 'content/vcards/**/*.md',
+        path: 'content/vcards/**/content.md',
         typeName: 'VegetationCard',
         remark:{
           autolinkHeadings: false,
           lazyLoadImages: false
         }
+      }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'content/**/references.md',
+        typeName: 'References'
       }
     },
     {
@@ -38,14 +45,7 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        path: 'content/vcards-references.md',
-        typeName: 'VegetationCardReferences'
-      }
-    },
-    {
-      use: '@gridsome/source-filesystem',
-      options: {
-        path: 'content/units/**/*.md',
+        path: 'content/units/**/content.md',
         typeName: 'UnitCard',
         remark:{
           autolinkHeadings: false,
@@ -62,13 +62,6 @@ module.exports = {
       options: {
         path: 'content/units-index.md',
         typeName: 'UnitCardsIndex'
-      }
-    },
-    {
-      use: '@gridsome/source-filesystem',
-      options: {
-        path: 'content/units-references.md',
-        typeName: 'UnitCardReferences'
       }
     },
     {
@@ -101,6 +94,7 @@ module.exports = {
   ],
   templates: {
     VegetationCard: '/vcards/:title',
-    UnitCard: '/units/:region'
+    UnitCard: '/units/:region',
+    References: '/references/:id'
   }
 }

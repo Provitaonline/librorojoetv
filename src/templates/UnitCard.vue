@@ -20,7 +20,7 @@
               <!-- <div class="d-content tile is-child is-size-5" v-html="$page.vegetationCard.content"></div> -->
               <TextWithRefsAndPhotos class="tile is-child box is-size-5 is-size-6-mobile"
                 :text="$page.unitCard.content"
-                :refs="$page.unitCardReferences.references"
+                :refs="$page.references.references"
                 :photos="$page.unitCard.photos"
                 :isContent="true" />
               </TextWithRefsAndPhotos>
@@ -45,7 +45,7 @@
       }
       content
     }
-    unitCardReferences: unitCardReferences (path: "/content/units-references") {
+    references: references (id: "units") {
       references {
         referencekey
         reference

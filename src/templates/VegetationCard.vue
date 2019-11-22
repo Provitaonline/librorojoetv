@@ -79,7 +79,7 @@
                 <div class="tile is-child box is-size-5 is-size-6-mobile">
                   <TextWithRefsAndPhotos
                     :text="$page.vegetationCard.description"
-                    :refs="$page.vegetationCardReferences.references"
+                    :refs="$page.references.references"
                     :photos="$page.vegetationCard.photos">
                   </TextWithRefsAndPhotos>
                 </div>
@@ -95,7 +95,7 @@
                     </div>
                     <TextWithRefsAndPhotos
                       :text="$page.vegetationCard.distribution"
-                      :refs="$page.vegetationCardReferences.references"
+                      :refs="$page.references.references"
                       :photos="$page.vegetationCard.photos">
                     </TextWithRefsAndPhotos>
                   </div>
@@ -228,7 +228,7 @@
                 <!-- <div class="d-content tile is-child is-size-5" v-html="$page.vegetationCard.content"></div> -->
                 <TextWithRefsAndPhotos class="tile is-child box is-size-5 is-size-6-mobile"
                   :text="$page.vegetationCard.content"
-                  :refs="$page.vegetationCardReferences.references"
+                  :refs="$page.references.references"
                   :photos="$page.vegetationCard.photos"
                   :isContent="true" />
                 </TextWithRefsAndPhotos>
@@ -291,7 +291,7 @@
       }
       content
     }
-    vegetationCardReferences: vegetationCardReferences (path: "/content/vcards-references") {
+    references: references (id: "vcards") {
       references {
         referencekey
         reference
