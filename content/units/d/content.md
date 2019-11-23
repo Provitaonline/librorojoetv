@@ -476,6 +476,7 @@ herbáceo muy diversificado. Por otra parte, actualmente en el sur de la sierra 
 proceso de sabanización causado por intervención antrópica (Smole 1976, Huber et al. 1984).
 
 ## Sector D.7.9. Zona Sur
+{id="d79"}
 
 Este gran sector, ubicado en el extremo sur del país, ha sido muy poco explorado. La excepción la
 constituyen las serranías de la Neblina y Tapirapecó. Emplazado en la cuenca montañosa encerrada por las
