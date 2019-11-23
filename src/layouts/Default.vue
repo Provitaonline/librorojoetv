@@ -44,16 +44,18 @@
       </template>
     </b-navbar>
 
-    <main>
-      <ClientOnly>
-        <back-to-top bottom="25px" right="30px">
-          <button class="button">
-            <font-awesome :icon="['fas', 'angle-up']"/>
-          </button>
-        </back-to-top>
-      </ClientOnly>
-      <slot />
-    </main>
+    <transition name="fade" appear>
+      <main>
+        <ClientOnly>
+          <back-to-top bottom="25px" right="30px">
+            <button class="button">
+              <font-awesome :icon="['fas', 'angle-up']"/>
+            </button>
+          </back-to-top>
+        </ClientOnly>
+        <slot />
+      </main>
+    </transition>
 
     <section>
       <footer class="footer">
@@ -76,7 +78,7 @@
   $primary: #BE1421;
 
   .fade-enter-active {
-    transition: opacity 0.5s;
+    transition: opacity 0.8s;
   }
 
   .fade-enter {
@@ -95,7 +97,6 @@
 
   .logo:hover {
     fill: #990033;
-    /*stroke: gray; */
     stroke-opacity: 0;
   }
 
