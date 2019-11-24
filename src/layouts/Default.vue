@@ -100,6 +100,13 @@
     stroke-opacity: 0;
   }
 
+  /* This is a workaround for the MS Edge issue of not opening dropdowns */
+  @media only screen and (min-width: 1024px) {
+    ::v-deep .navbar-item.has-dropdown.is-active>.navbar-dropdown {
+      display: block;
+    }
+  }
+
 </style>
 
 <script>
