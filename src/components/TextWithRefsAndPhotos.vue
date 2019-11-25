@@ -34,7 +34,7 @@ function addPopovers(data, references, photos) {
     let dropDownItems = ''
     let photoItems = ''
     lookup.forEach(refItem => {
-      refItem = refItem.replace(/\<i\>|\<\/i\>/g, '') // Get rid of italic markup
+      refItem = refItem.replace(/\<i\>|\<\/i\>|\<em\>|\<\/em\>/g, '') // Get rid of italic markup
       let re = references.find(function(r) { return r.referencekey === refItem.replace('&#x26;', '&').trim()})
       if (re) {
         dropDownItems += `

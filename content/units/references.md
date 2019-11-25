@@ -32,7 +32,7 @@ references:
 - referencekey: Berry & Riina 2005
   reference: >
       Berry, P.E. & R. Riina (2005). Insights into de diversity of the Pantepui flora and the biogeographical complexity of the Guayana Shield. Pp. 145-167. En: I. Friis & H. Balslev (eds.). Plant diversity and complexity patterns: Local, regional and global dimensions. Biol. Skr. 55. Copenhagen.
-- referencekey: Berry et al. 1995a
+- referencekey: Berry et al. 1995
   reference: >
       Berry, P.E., B.K. Holst & K. Yatskievych (eds.) (1995a). Flora of the Venezuelan Guayana Vol. 1: Introduction. Missouri Botanical Garden: St. Louis, Missouri & Timber Press: Portland, Oregon. 320 pp.
 - referencekey: Berry et al. 1995b
@@ -252,7 +252,7 @@ references:
 - referencekey: Matteucci 1987
   reference: >
     Matteucci, S. (1987). The vegetation of Falcon State, Venezuela. Vegetatio 70: 67-91.
-- referencekey: Matteucci & Colma 1979
+- referencekey: Matteucci et al. 1979
   reference: >
     Matteucci, S., A. Colma & L. Pla (1979). La vegetación de Falcón. Instituto Universitario de Tecnología: Coro, Venezuela.
 - referencekey: Matteucci & Barboza 2006
