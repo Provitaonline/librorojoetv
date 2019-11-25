@@ -194,13 +194,31 @@
                       <tr>
                         <th v-if="$page.vegetationCard.formationColumn"></th>
                         <th></th>
-                        <th align="center" :colspan="$page.vegetationCard.criteriaused.length - 1"><b>Criterios</b></th>
+                        <th align="center" :colspan="$page.vegetationCard.criteriaused.length - 1">
+                          <!-- <b-tooltip position="is-top" type="is-warning" label="Versión v1.0, 2010"> -->
+                            <b>Criterios</b>
+                          <!-- </b-tooltip> -->
+                        </th>
                         <th></th>
                       </tr>
                       <tr>
                         <th v-if="$page.vegetationCard.formationColumn">Formación</th>
                         <th>{{$page.vegetationCard.zonelabel}}</th>
-                        <th v-for="value in $page.vegetationCard.criteriaused" align="center" v-html="value"></th>
+                        <th v-for="value in $page.vegetationCard.criteriaused" align="center">
+                          <b-dropdown v-if="criteria[value]" class="criteria-box" position="is-bottom-left">
+                            <a slot="trigger">
+                              <div v-html="value">
+                              </div>
+                            </a>
+                            <b-dropdown-item class="has-text-weight-normal has-text-left" custom>
+                              <div class="has-text-weight-bold has-text-centered">Criterio {{value}}<br><br></div>
+                              <span class="has-text-weight-medium">{{criteria[value.charAt(0)]}}</span>
+                              <span v-if="value.length>1"><br><br>{{criteria[value]}}</span>
+                              <small><br><br>Versión:v 1.0</small>
+                            </b-dropdown-item>
+                          </b-dropdown>
+                          <span v-else v-html="value"></span>
+                        </th>
                       </tr>
                     </thead>
                     <tbody>
@@ -452,11 +470,15 @@
     box-sizing: border-box;
   }
 
+  ::v-deep .criteria-box>.dropdown-menu {
+    min-width: 30em;
+  }
+
 </style>
 
 <script>
 
-  import {threatCategories} from '~/assets/js/siteConfig.js'
+  import {threatCategories, criteria} from '~/assets/js/siteConfig.js'
   import TextWithRefsAndPhotos from '~/components/TextWithRefsAndPhotos.vue'
   import NavSide from 'vue-nav-side/src/components/NavSide.vue'
   import slugify from 'slugify'
@@ -479,6 +501,7 @@
       return {
         threatCategories: threatCategories,
         threatCategoryIcons: threatCategoryIcons,
+        criteria: criteria,
         showMore: false,
         sidePanelState: -1,
         currentSlug: null,
