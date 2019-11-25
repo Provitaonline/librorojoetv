@@ -303,6 +303,7 @@
         isLoading: true,
         zoomAnimation: true,
         mapLabel: '',
+        mapLabelLookupKey: '',
         zoom: 7,
         minZoom: 5,
         initialBounds: [[13, -73], [0.6, -59]],
@@ -441,6 +442,7 @@
 
         if (item.name != 'all') {
           this.mapLabel = this.makeMapPopupLabel(item.name, isLegendLookUp)
+          if (isLegendLookUp) this.mapLabelLookupKey = item.name
           document.getElementById(this.makeId(item.name)).setAttribute('style', 'background: #f8e7e8;')
         } else {
           this.mapLabel = ''
@@ -455,7 +457,8 @@
           if (r.legendTitleProperty) {
             this.$refs.layerReference[i].mapObject.eachLayer((layer) => {
               if (this.mapLabel != '') {
-                if (this.mapLabel === layer.feature.properties[r.legendTitleProperty]) {
+                if (r.isLegendLookUp && layer.feature.properties[r.legendTitleProperty].includes(this.mapLabelLookupKey) ||
+                  this.mapLabel === layer.feature.properties[r.legendTitleProperty]) {
                   layer.setStyle({fillOpacity: opacity, opacity: opacity})
                 }
               } else {
