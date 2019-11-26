@@ -424,7 +424,7 @@
       zoomUpdated(zoom) {
         let elements = document.getElementsByClassName('map-label')
         Array.from(elements).forEach(function (element) {
-          element.setAttribute('style', 'font-size:' +  (zoom/8) * 1.25 + 'rem; margin-left: -2rem; + display: ' + element.style.display + ';')
+          element.setAttribute('style', 'font-size:' +  (zoom/8) * 1.25 + 'rem; margin-left: -2rem;' + ' display: '  + element.style.display + ';')
         })
       },
       resetView() {
