@@ -1,6 +1,6 @@
 ---
 title: "Casos de estudio"
-mapTitle: ""
+mapTitle: "Localización de las áreas de estudio"
 legendItems:
   - name: "1"
     label: "Conversión de los bosques en la cordillera central de Venezuela"
