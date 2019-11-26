@@ -223,12 +223,16 @@
 
   function displaySelectedFeature(layerGroup, name, opacity, property) {
     layerGroup.eachLayer(function (layer) {
-      if (layer.feature.properties[property].includes(name) || name === 'all') {
+      if (matchFeatureProperty(layer.feature.properties[property], name) || name === 'all') {
         layer.setStyle({fillOpacity: opacity, opacity: opacity})
       } else {
         layer.setStyle({fillOpacity: 0, opacity: 0})
       }
     })
+  }
+
+  function matchFeatureProperty(property, name) {
+    return isNaN(property) ? property.includes(name) : property === name
   }
 
   function displayLayer(layerGroup) {
@@ -464,7 +468,9 @@
           if (r.legendTitleProperty) {
             this.$refs.layerReference[i].mapObject.eachLayer((layer) => {
               if (this.mapLabel != '') {
-                if (r.isLegendLookUp && layer.feature.properties[r.legendTitleProperty].includes(this.mapLabelLookupKey) ||
+                if (r.isLegendLookUp && matchFeatureProperty(layer.feature.properties[r.legendTitleProperty], this.mapLabelLookupKey) ||
+
+                //if (r.isLegendLookUp && layer.feature.properties[r.legendTitleProperty].includes(this.mapLabelLookupKey) ||
                   this.mapLabel === layer.feature.properties[r.legendTitleProperty]) {
                   layer.setStyle({fillOpacity: opacity, opacity: opacity})
                 }
