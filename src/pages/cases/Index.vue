@@ -14,19 +14,10 @@
           :legendItems="$page.casesIndex.legendItems"
           :geoJsonResources="geoJsonResources"
           :mapTitle="$page.casesIndex.mapTitle"
-          :initialLayerTransparency=40
-          :initialTileProvider=1
+          :initialLayerTransparency="40"
+          :initialTileProvider="1"
         >
-      </InteractiveMap>
-      </section>
-
-      <section class="section">
-        <br>
-        <div class="container is-size-4 has-text-centered">
-          <hr>
-          <g-link to="/references/units"><p>Bibliografía</p></g-link>
-        </div>
-
+        </InteractiveMap>
       </section>
 
     </div>
