@@ -22,8 +22,9 @@
           </l-control>
           <l-control-layers position="topleft"  ></l-control-layers>
           <l-tile-layer
+            ref="tileLayerReference"
             v-for="tileProvider in tileProviders"
-            @load="tileLayerReady"
+            @add="tileLayerAdded"
             :key="tileProvider.name"
             :name="tileProvider.name"
             :visible="tileProvider.visible"
@@ -36,7 +37,7 @@
 
           <l-marker :options="{interactive: false}" :lat-lng="[10.5418, -66.9067]">
             <l-icon>
-              <div class="map-label map-city-label">Caracas</div>
+              <div v-show="!hideLabels" class="map-label map-city-label">Caracas</div>
             </l-icon>
           </l-marker>
 
@@ -307,6 +308,7 @@
         zoomAnimation: true,
         mapLabel: '',
         mapLabelLookupKey: '',
+        hideLabels: false,
         zoom: 7,
         minZoom: 5,
         initialBounds: [[13, -73], [0.6, -59]],
@@ -327,7 +329,8 @@
             name: 'Mapa base topográfico',
             visible: false,
             url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}',
-            attribution: 'Tiles © Esri — Source: <a href="https://www.arcgis.com/home/item.html?id=30e5fe3149c34df1ba922e6f5bbf808f">ArcGIS World Topographic Map</a>'
+            attribution: 'Tiles © Esri — Source: <a href="https://www.arcgis.com/home/item.html?id=30e5fe3149c34df1ba922e6f5bbf808f">ArcGIS World Topographic Map</a>',
+            hideLabels: true
           },
           {
             name: 'Imágenes aéreas/satelitales',
@@ -415,13 +418,13 @@
       mapReady() {
 
       },
-      tileLayerReady() {
-
+      tileLayerAdded(e) {
+        this.hideLabels = this.tileProviders.find(p => p.url === e.target._url).hideLabels ? true : false
       },
       zoomUpdated(zoom) {
         let elements = document.getElementsByClassName('map-label')
         Array.from(elements).forEach(function (element) {
-          element.setAttribute('style', 'font-size:' +  (zoom/8) * 1.25 + 'rem; margin-left: -2rem')
+          element.setAttribute('style', 'font-size:' +  (zoom/8) * 1.25 + 'rem; margin-left: -2rem; + display: ' + element.style.display + ';')
         })
       },
       resetView() {
