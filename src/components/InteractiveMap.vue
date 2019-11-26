@@ -340,6 +340,20 @@
             hideLabels: true
           },
           {
+            name: 'National Geographic',
+            visible: false,
+            url: 'https://services.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}',
+            attribution: 'Tiles © Esri — Source: <a href="https://www.arcgis.com/home/item.html?id=b9b1b422198944fbbd5250b3241691b6">National Geographic World Map</a>',
+            hideLabels: true
+          },
+          {
+            name: 'OpenStreetMap',
+            visible: false,
+            url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+            attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+            hideLabels: true
+          },
+          {
             name: 'Imágenes aéreas/satelitales',
             visible: false,
             url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
