@@ -39,7 +39,7 @@
         </div>
         <div class="container has-text-centered">
           <hr>
-          <a href="/files/libro_rojo_ecosistemas_terrestre.pdf"><p><font-awesome :icon="['fas', 'arrow-down']" /> Descarga el documento PDF</p></a>
+          <a href="/files/libro_rojo_ecosistemas_terrestre.pdf"><p><font-awesome :icon="['fas', 'arrow-down']" /> Descarga el documento PDF (63 MB)</p></a>
         </div>
       </section>
 
