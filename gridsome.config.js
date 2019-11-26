@@ -65,6 +65,13 @@ module.exports = {
       }
     },
     {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'content/cases-index.md',
+        typeName: 'CasesIndex'
+      }
+    },
+    {
       use: 'gridsome-plugin-svg',
       options: {
       // default options below

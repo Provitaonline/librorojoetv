@@ -254,16 +254,17 @@
     t.isLoading = false
   }
 
-  function makeGeoJsonLayerOptions(makeLink, legendItems, geoJsonResource, makeMapPopupLabel) {
+  function makeGeoJsonLayerOptions(makeLink, legendItems, geoJsonResource, makeMapPopupLabel, layerTransparency) {
     let geoJsonLayerOptions = {}
     let a
+    let opacity = 1 - layerTransparency/100
     if (geoJsonResource.makePointsToCircles) {
       geoJsonLayerOptions.pointToLayer = function(feature, latlng) {
         a = legendItems.find(function(v) { return v.name === feature.properties[geoJsonResource.legendTitleProperty]})
         return circleMarker(latlng, {
           radius: 2,
           fillColor: a.color,
-          fillOpacity: 1,
+          fillOpacity: opacity,
           color: a.color,
           weight: 1,
           opacity: 1
@@ -275,7 +276,7 @@
         if (a) {
           return {
             weight: 0,
-            fillOpacity: 1,
+            fillOpacity: opacity,
             color: a.color
           }
         }
@@ -296,7 +297,8 @@
     props: {
       legendItems: { type: Array, required: true },
       geoJsonResources: { type: Array, required: true },
-      mapTitle: { type: String, required: true }
+      mapTitle: { type: String, required: true },
+      initialLayerTransparency: { type: Number, required: false }
     },
     data() {
       return {
@@ -309,7 +311,7 @@
         initialBounds: [[13, -73], [0.6, -59]],
         maxBounds: [[13, -74], [0.5, -58]],
         center: [6.42, -66.59 ],
-        layerTransparency: 5,
+        layerTransparency: (this.initialLayerTransparency ? this.initialLayerTransparency : 5),
         tileProviders: [
           {
             name: 'Mapa base simple',
@@ -360,7 +362,7 @@
           if (r.geoJsonLayerOptions) {
             this.$options.geoJsonLayerOptions[i] = r.geoJsonLayerOptions
           } else {
-            this.$options.geoJsonLayerOptions[i] = makeGeoJsonLayerOptions(this.makeLink, this.legendItems, r, this.makeMapPopupLabel)
+            this.$options.geoJsonLayerOptions[i] = makeGeoJsonLayerOptions(this.makeLink, this.legendItems, r, this.makeMapPopupLabel, this.layerTransparency)
           }
         })
         getLayers(this, this.geoJsonResources)
