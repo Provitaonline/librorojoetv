@@ -298,7 +298,8 @@
       legendItems: { type: Array, required: true },
       geoJsonResources: { type: Array, required: true },
       mapTitle: { type: String, required: true },
-      initialLayerTransparency: { type: Number, required: false }
+      initialLayerTransparency: { type: Number, required: false },
+      initialTileProvider: { type: Number, required: false }
     },
     data() {
       return {
@@ -315,7 +316,7 @@
         tileProviders: [
           {
             name: 'Mapa base simple',
-            visible: true,
+            visible: false,
             attribution: 'Tiles © Esri — Source: <a href="https://www.arcgis.com/home/item.html?id=c61ad8ab017d49e1a82f580ee1298931">ArcGIS World Terrain Base</a>',
             options: {
               maxNativeZoom: 9
@@ -352,9 +353,10 @@
     beforeCreate() {
       this.$options.geoJsonLayers = (new Array(this.$options.propsData.geoJsonResources.length)).fill(null)
       this.$options.geoJsonLayerOptions = (new Array(this.$options.propsData.geoJsonResources.length)).fill(null)
+      //this.$options.propsData.tileProviders[1].visible = true
     },
     created() {
-
+      this.tileProviders[(this.initialTileProvider ? this.initialTileProvider : 0)].visible = true
     },
     mounted () {
       if (process.isClient) {

@@ -15,6 +15,7 @@
           :geoJsonResources="geoJsonResources"
           :mapTitle="$page.casesIndex.mapTitle"
           :initialLayerTransparency=40
+          :initialTileProvider=1
         >
       </InteractiveMap>
       </section>
