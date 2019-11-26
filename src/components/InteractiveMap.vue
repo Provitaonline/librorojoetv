@@ -280,9 +280,12 @@
         a = legendItems.find(function(v) { return v.name === feature.properties[geoJsonResource.legendTitleProperty]})
         if (a) {
           return {
-            weight: 0,
+            weight: geoJsonResource.showOutline ? 2 : 0,
             fillOpacity: opacity,
-            color: a.color
+            fillColor: a.color,
+            opacity: opacity,
+            dashArray: '6,4',
+            color: '#444444'
           }
         }
       }
@@ -469,8 +472,6 @@
             this.$refs.layerReference[i].mapObject.eachLayer((layer) => {
               if (this.mapLabel != '') {
                 if (r.isLegendLookUp && matchFeatureProperty(layer.feature.properties[r.legendTitleProperty], this.mapLabelLookupKey) ||
-
-                //if (r.isLegendLookUp && layer.feature.properties[r.legendTitleProperty].includes(this.mapLabelLookupKey) ||
                   this.mapLabel === layer.feature.properties[r.legendTitleProperty]) {
                   layer.setStyle({fillOpacity: opacity, opacity: opacity})
                 }

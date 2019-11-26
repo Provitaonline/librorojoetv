@@ -106,7 +106,8 @@
             legendTitleProperty: 'case',
             isLegendLookUp: true,
             isTopoJson: true,
-            topoJsonObject: 'cases'
+            topoJsonObject: 'cases',
+            showOutline: true
           },
           {
             url: '/mapdata/VenezuelaNoStates.topojson',
