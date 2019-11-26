@@ -33,10 +33,6 @@
 
 <page-query>
   query Home {
-    homeData: homeData (path: "/content/home") {
-      title
-      heroTitle
-    }
     unitCardsIndex: unitCardsIndex (path: "/content/units-index") {
       title
       mapTitle
@@ -49,19 +45,6 @@
         color
         legend
         cardPath
-      }
-    }
-    vcards: allVegetationCard (sortBy: "title", order: ASC) {
-      edges {
-        node {
-          title
-          formattedtitle
-          category
-          description
-          cardimage (width: 100, height: 100, quality: 90)
-          areain1988
-          areain2010
-        }
       }
     }
   }
