@@ -67,6 +67,17 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
+        path: 'content/cases/**/content.md',
+        typeName: 'CaseCard',
+        remark:{
+          autolinkHeadings: false,
+          lazyLoadImages: false
+        }
+      }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
         path: 'content/cases-index.md',
         typeName: 'CasesIndex'
       }
@@ -102,6 +113,7 @@ module.exports = {
   templates: {
     VegetationCard: '/vcards/:title',
     UnitCard: '/units/:region',
+    CaseCard: '/cases/:case',
     References: '/references/:id'
   }
 }
