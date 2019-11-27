@@ -22,8 +22,9 @@
           </l-control>
           <l-control-layers position="topleft"  ></l-control-layers>
           <l-tile-layer
+            ref="tileLayerReference"
             v-for="tileProvider in tileProviders"
-            @load="tileLayerReady"
+            @add="tileLayerAdded"
             :key="tileProvider.name"
             :name="tileProvider.name"
             :visible="tileProvider.visible"
@@ -36,7 +37,7 @@
 
           <l-marker :options="{interactive: false}" :lat-lng="[10.5418, -66.9067]">
             <l-icon>
-              <div class="map-label map-city-label">Caracas</div>
+              <div v-show="!hideLabels" class="map-label map-city-label">Caracas</div>
             </l-icon>
           </l-marker>
 
@@ -222,12 +223,16 @@
 
   function displaySelectedFeature(layerGroup, name, opacity, property) {
     layerGroup.eachLayer(function (layer) {
-      if (layer.feature.properties[property].includes(name) || name === 'all') {
+      if (matchFeatureProperty(layer.feature.properties[property], name) || name === 'all') {
         layer.setStyle({fillOpacity: opacity, opacity: opacity})
       } else {
         layer.setStyle({fillOpacity: 0, opacity: 0})
       }
     })
+  }
+
+  function matchFeatureProperty(property, name) {
+    return isNaN(property) ? property.includes(name) : property === name
   }
 
   function displayLayer(layerGroup) {
@@ -254,16 +259,17 @@
     t.isLoading = false
   }
 
-  function makeGeoJsonLayerOptions(makeLink, legendItems, geoJsonResource, makeMapPopupLabel) {
+  function makeGeoJsonLayerOptions(makeLink, legendItems, geoJsonResource, makeMapPopupLabel, layerTransparency) {
     let geoJsonLayerOptions = {}
     let a
+    let opacity = 1 - layerTransparency/100
     if (geoJsonResource.makePointsToCircles) {
       geoJsonLayerOptions.pointToLayer = function(feature, latlng) {
         a = legendItems.find(function(v) { return v.name === feature.properties[geoJsonResource.legendTitleProperty]})
         return circleMarker(latlng, {
           radius: 2,
           fillColor: a.color,
-          fillOpacity: 1,
+          fillOpacity: opacity,
           color: a.color,
           weight: 1,
           opacity: 1
@@ -274,9 +280,12 @@
         a = legendItems.find(function(v) { return v.name === feature.properties[geoJsonResource.legendTitleProperty]})
         if (a) {
           return {
-            weight: 0,
-            fillOpacity: 1,
-            color: a.color
+            weight: geoJsonResource.showOutline ? 2 : 0,
+            fillOpacity: opacity,
+            fillColor: a.color,
+            opacity: opacity,
+            dashArray: '6,4',
+            color: '#444444'
           }
         }
       }
@@ -296,7 +305,9 @@
     props: {
       legendItems: { type: Array, required: true },
       geoJsonResources: { type: Array, required: true },
-      mapTitle: { type: String, required: true }
+      mapTitle: { type: String, required: true },
+      initialLayerTransparency: { type: Number, required: false },
+      initialTileProvider: { type: Number, required: false }
     },
     data() {
       return {
@@ -304,16 +315,17 @@
         zoomAnimation: true,
         mapLabel: '',
         mapLabelLookupKey: '',
+        hideLabels: false,
         zoom: 7,
         minZoom: 5,
         initialBounds: [[13, -73], [0.6, -59]],
         maxBounds: [[13, -74], [0.5, -58]],
         center: [6.42, -66.59 ],
-        layerTransparency: 5,
+        layerTransparency: (this.initialLayerTransparency ? this.initialLayerTransparency : 5),
         tileProviders: [
           {
             name: 'Mapa base simple',
-            visible: true,
+            visible: false,
             attribution: 'Tiles © Esri — Source: <a href="https://www.arcgis.com/home/item.html?id=c61ad8ab017d49e1a82f580ee1298931">ArcGIS World Terrain Base</a>',
             options: {
               maxNativeZoom: 9
@@ -324,7 +336,22 @@
             name: 'Mapa base topográfico',
             visible: false,
             url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}',
-            attribution: 'Tiles © Esri — Source: <a href="https://www.arcgis.com/home/item.html?id=30e5fe3149c34df1ba922e6f5bbf808f">ArcGIS World Topographic Map</a>'
+            attribution: 'Tiles © Esri — Source: <a href="https://www.arcgis.com/home/item.html?id=30e5fe3149c34df1ba922e6f5bbf808f">ArcGIS World Topographic Map</a>',
+            hideLabels: true
+          },
+          {
+            name: 'National Geographic',
+            visible: false,
+            url: 'https://services.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}',
+            attribution: 'Tiles © Esri — Source: <a href="https://www.arcgis.com/home/item.html?id=b9b1b422198944fbbd5250b3241691b6">National Geographic World Map</a>',
+            hideLabels: true
+          },
+          {
+            name: 'OpenStreetMap',
+            visible: false,
+            url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+            attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+            hideLabels: true
           },
           {
             name: 'Imágenes aéreas/satelitales',
@@ -350,9 +377,10 @@
     beforeCreate() {
       this.$options.geoJsonLayers = (new Array(this.$options.propsData.geoJsonResources.length)).fill(null)
       this.$options.geoJsonLayerOptions = (new Array(this.$options.propsData.geoJsonResources.length)).fill(null)
+      //this.$options.propsData.tileProviders[1].visible = true
     },
     created() {
-
+      this.tileProviders[(this.initialTileProvider ? this.initialTileProvider : 0)].visible = true
     },
     mounted () {
       if (process.isClient) {
@@ -360,7 +388,7 @@
           if (r.geoJsonLayerOptions) {
             this.$options.geoJsonLayerOptions[i] = r.geoJsonLayerOptions
           } else {
-            this.$options.geoJsonLayerOptions[i] = makeGeoJsonLayerOptions(this.makeLink, this.legendItems, r, this.makeMapPopupLabel)
+            this.$options.geoJsonLayerOptions[i] = makeGeoJsonLayerOptions(this.makeLink, this.legendItems, r, this.makeMapPopupLabel, this.layerTransparency)
           }
         })
         getLayers(this, this.geoJsonResources)
@@ -411,13 +439,13 @@
       mapReady() {
 
       },
-      tileLayerReady() {
-
+      tileLayerAdded(e) {
+        this.hideLabels = this.tileProviders.find(p => p.url === e.target._url).hideLabels ? true : false
       },
       zoomUpdated(zoom) {
         let elements = document.getElementsByClassName('map-label')
         Array.from(elements).forEach(function (element) {
-          element.setAttribute('style', 'font-size:' +  (zoom/8) * 1.25 + 'rem; margin-left: -2rem')
+          element.setAttribute('style', 'font-size:' +  (zoom/8) * 1.25 + 'rem; margin-left: -2rem;' + ' display: '  + element.style.display + ';')
         })
       },
       resetView() {
@@ -457,7 +485,7 @@
           if (r.legendTitleProperty) {
             this.$refs.layerReference[i].mapObject.eachLayer((layer) => {
               if (this.mapLabel != '') {
-                if (r.isLegendLookUp && layer.feature.properties[r.legendTitleProperty].includes(this.mapLabelLookupKey) ||
+                if (r.isLegendLookUp && matchFeatureProperty(layer.feature.properties[r.legendTitleProperty], this.mapLabelLookupKey) ||
                   this.mapLabel === layer.feature.properties[r.legendTitleProperty]) {
                   layer.setStyle({fillOpacity: opacity, opacity: opacity})
                 }

@@ -4,27 +4,20 @@
       <section class="hero is-small is-white">
         <div class="hero-body">
           <div class="container is-fullhd is-uppercase has-text-centered">
-            <h1 class="title" v-html="$page.unitCardsIndex.title"></h1>
+            <h1 class="title" v-html="$page.casesIndex.title"></h1>
           </div>
         </div>
       </section>
 
       <section class="section">
         <InteractiveMap
-          :legendItems="$page.unitCardsIndex.legendItems"
+          :legendItems="$page.casesIndex.legendItems"
           :geoJsonResources="geoJsonResources"
-          :mapTitle="$page.unitCardsIndex.mapTitle"
+          :mapTitle="$page.casesIndex.mapTitle"
+          :initialLayerTransparency="40"
+          :initialTileProvider="1"
         >
-      </InteractiveMap>
-      </section>
-
-      <section class="section">
-        <br>
-        <div class="container is-size-4 has-text-centered">
-          <hr>
-          <g-link to="/references/units"><p>Bibliografía</p></g-link>
-        </div>
-
+        </InteractiveMap>
       </section>
 
     </div>
@@ -33,13 +26,11 @@
 
 <page-query>
   query Home {
-    unitCardsIndex: unitCardsIndex (path: "/content/units-index") {
+    casesIndex: casesIndex (path: "/content/cases-index") {
       title
       mapTitle
     	legendItems {
         name
-        isHeading
-        isIndented
         label
         group
         color
@@ -111,11 +102,12 @@
       return {
         geoJsonResources: [
           {
-            url: '/mapdata/UnidadesDePaisaje.topojson',
-            legendTitleProperty: 'Sector_Leg',
+            url: '/mapdata/Cases.topojson',
+            legendTitleProperty: 'case',
             isLegendLookUp: true,
             isTopoJson: true,
-            topoJsonObject: 'Unidades_de_paisaje_2010'
+            topoJsonObject: 'cases',
+            showOutline: true
           },
           {
             url: '/mapdata/VenezuelaNoStates.topojson',

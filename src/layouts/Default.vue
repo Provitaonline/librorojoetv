@@ -23,7 +23,7 @@
           <b-navbar-item tag="a" href="/vcards">
               Riesgo de colapso
           </b-navbar-item>
-          <b-navbar-item>
+          <b-navbar-item tag="a" href="/cases">
               Casos de estudio
           </b-navbar-item>
           <b-navbar-item tag="a" href="/units">
