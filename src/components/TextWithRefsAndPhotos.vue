@@ -33,26 +33,28 @@ function addPopovers(data, references, photos) {
     let lookup = ((match.replace(/[{()}]/g, ''))).split(',')
     let dropDownItems = ''
     let photoItems = ''
-    lookup.forEach(refItem => {
-      refItem = refItem.replace(/\<i\>|\<\/i\>|\<em\>|\<\/em\>/g, '') // Get rid of italic markup
-      let re = references.find(function(r) { return r.referencekey === refItem.replace('&#x26;', '&').trim()})
-      if (re) {
-        dropDownItems += `
-          <div class="dropdown-item">
-            <p>` + re.reference + `</p>
-          </div>
-        `
+    if (references) {
+      lookup.forEach(refItem => {
+        refItem = refItem.replace(/\<i\>|\<\/i\>|\<em\>|\<\/em\>/g, '') // Get rid of italic markup
+        let re = references.find(function(r) { return r.referencekey === refItem.replace('&#x26;', '&').trim()})
+        if (re) {
+          dropDownItems += `
+            <div class="dropdown-item">
+              <p>` + re.reference + `</p>
+            </div>
+          `
+        }
+      })
+      if (dropDownItems != '') {
+        let dropdown = `
+          <div style="margin-left: 0; display: inline;" class="dropdown reference-dropdown">
+            <a @click="dropDownClick" class="dropdown-trigger" href="">` + match + `</a>
+            <div class="dropdown-menu">
+              <div class="dropdown-content">` + dropDownItems + `</div>
+            </div>
+          </div>`
+        return (dropdown.trim())
       }
-    })
-    if (dropDownItems != '') {
-      let dropdown = `
-        <div style="margin-left: 0; display: inline;" class="dropdown reference-dropdown">
-          <a @click="dropDownClick" class="dropdown-trigger" href="">` + match + `</a>
-          <div class="dropdown-menu">
-            <div class="dropdown-content">` + dropDownItems + `</div>
-          </div>
-        </div>`
-      return (dropdown.trim())
     }
     if (photos) {
       let i = 0
@@ -139,7 +141,7 @@ export default {
   name: 'TextWithReferences',
   props: {
     text: { type: String, required: true },
-    refs: { type: Array, required: true },
+    refs: { type: Array, required: false },
     photos: {type: Array, required: false},
     isContent: {type: Boolean, required: false}
   },
