@@ -69,6 +69,9 @@ module.exports = {
       options: {
         path: 'content/cases/**/content.md',
         typeName: 'CaseCard',
+        refs: {
+          case: 'References'
+        },
         remark:{
           autolinkHeadings: false,
           lazyLoadImages: false

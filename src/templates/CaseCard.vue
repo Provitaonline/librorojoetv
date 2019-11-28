@@ -61,6 +61,7 @@
         <div class="tile is-vertical is-parent">
           <TextWithRefsAndPhotos class="tile is-child box is-size-5 is-size-6-mobile"
             :text="$page.caseCard.content"
+            :refs="$page.caseCard.case.references"
             :isContent="true" />
           </TextWithRefsAndPhotos>
         </div>
@@ -83,6 +84,12 @@
       area
       cardtablecolumns
       cardtablerows
+      case {
+        references {
+          referencekey
+          reference
+        }
+      }
     }
   }
 </page-query>
