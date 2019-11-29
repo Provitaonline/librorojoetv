@@ -135,8 +135,6 @@
     threatCategoryIcons[key] = require('~/assets/svgs/' + key + '-icon.svg')
   }
 
-  console.log(threatCategoryIcons)
-
   export default {
     data() {
       return {
