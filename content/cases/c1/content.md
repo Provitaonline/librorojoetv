@@ -50,15 +50,69 @@ INSERTAR FIGURA
 
 Estos datos evidencian que los bosques siempreverdes no lograron satisfacer los umbrales de ninguna categoría de riesgo, y califican para la designación Preocupación Menor (LC). Esta situación se debe en gran parte a que los bosques siempreverdes se encuentran mayormente protegidos por los parques nacionales Henri Pittier (Foto 1) y Macarao y el Monumento Natural Pico Codazzi, como se observa tanto en las figuras 1 y 2, así como en la tabla 1; destacando que todas estas áreas protegidas fueron declaradas mucho antes de la fecha inicial del análisis de cambios.
 
+<div style="text-align: center;">Tabla 1. Porcentaje de los bosques en áreas protegidas</div>
+<div class="table-container">
+
 | Tipo de bosque | PN Henri Pittier | MN Pico Codazzi | PN Macarao | Total |
 |----------------|:----------------:|:---------------:|:----------:|:-----:|
 | Siempreverdes  |       53,4%      |      16,7%      |    4,8%    | 74.9% |
 | Semideciduos   |       29,1%      |       4,2%      |    8,0%    | 41,3% |
 | Deciduos       |        4,6%      |       0,1%      |    1,4%    |  6,1% |
 
+</div>
+
 Por otra parte, los bosques semideciduos, que se encuentran en una franja altitudinal menor a 1.000 m, mostraron una reducción de 13% de su cobertura a una tasa de conversión de 10 km2/año entre 1986 y 2001, con una proyección de 30% de pérdida de cobertura para el año 2036 (Tabla 2). Esta proyección coloca a los bosques semideciduos de la cordillera de la Costa en la categoría Vulnerable (VU) bajo el criterio A3.
 
-INSERTAR TABLA
+<div style="text-align: center;">Tabla 1. Porcentaje de los bosques en áreas protegidas</div>
+<div class="table-container">
+  <table>
+    <thead>
+      <tr>
+        <th rowspan="3">Tipo de bosque</th>
+        <th align="center" colspan="2">Extensión (Km<sup>2</sup>)<br></th>
+        <th align="center"colspan="2">Conversión (1986-2001)</th>
+        <th align="center">Proyección (50 años)</th>
+      </tr>
+      <tr>
+        <th align="center" colspan="2">Años</th>
+        <th align="center">Pérdida</th>
+        <th align="center">Tasa</th>
+        <th align="center">Pérdida</th>
+      </tr>
+      <tr>
+        <th align="center">1986</th>
+        <th align="center">2001</th>
+        <th align="center">%</th>
+        <th align="center">km<sup>2</sup>/año</th>
+        <th align="center">%</th>
+      </tr>
+    </thead>
+    <tr>
+      <td>Siempreverdes</td>
+      <td align="center">397</td>
+      <td align="center">385</td>
+      <td align="center">3</td>
+      <td align="center">1</td>
+      <td align="center">6</td>
+    </tr>
+    <tr>
+      <td>Semideciduos</td>
+      <td align="center">1.190</td>
+      <td align="center">1.037</td>
+      <td align="center">13</td>
+      <td align="center">10</td>
+      <td align="center">30</td>
+    </tr>
+    <tr>
+      <td>Deciduos</td>
+      <td align="center">2.252</td>
+      <td align="center">1.585</td>
+      <td align="center">30</td>
+      <td align="center">44</td>
+      <td align="center">84</td>
+    </tr>
+  </table>
+</div>
 
 De igual forma, el análisis muestra que los bosques deciduos o bosques secos (generalmente por debajo de 600 m de altitud), asociados a las zonas bajas, valles y planicies de la región, son los ecosistemas de la región que han sufrido cambios mas importantes en los últimos años. Se observó una reducción de cobertura de 30% entre 1986 y 2001, y una pérdida de cobertura proyectada de 84% para el año 2036, lo que significa que les corresponde la categoría En Peligro Crítico (CR) bajo el criterio A3. Es importante resaltar que se trata del ecosistema con menor representación en el sistema de áreas protegidas de la región.
 

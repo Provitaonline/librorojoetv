@@ -76,7 +76,8 @@ module.exports = {
           autolinkHeadings: false,
           lazyLoadImages: false,
           plugins: [
-            'remark-attr'
+            'remark-attr',
+            'remark-grid-tables'
           ]
         }
       }
