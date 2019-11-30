@@ -63,8 +63,7 @@ Estos datos evidencian que los bosques siempreverdes no lograron satisfacer los 
 
 Por otra parte, los bosques semideciduos, que se encuentran en una franja altitudinal menor a 1.000 m, mostraron una reducción de 13% de su cobertura a una tasa de conversión de 10 km2/año entre 1986 y 2001, con una proyección de 30% de pérdida de cobertura para el año 2036 (Tabla 2). Esta proyección coloca a los bosques semideciduos de la cordillera de la Costa en la categoría Vulnerable (VU) bajo el criterio A3.
 
-<div style="text-align: center;"><b>Tabla 2.</b> Evaluación del riesgo de eliminación para los tres tipos de bosques en la zona
-de estudio de la cordillera de la Costa Central</div>
+<div style="text-align: center;"><b>Tabla 2.</b> Evaluación del riesgo de eliminación para los tres tipos de bosques en la zona de estudio de la cordillera de la Costa Central</div>
 <div class="table-container">
   <table>
     <thead>
