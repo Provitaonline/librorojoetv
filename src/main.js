@@ -13,10 +13,10 @@ import DefaultLayout from '~/layouts/Default.vue'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { config, library } from '@fortawesome/fontawesome-svg-core'
 import { faFacebook, faTwitter } from '@fortawesome/free-brands-svg-icons'
-import { faArrowDown, faArrowLeft, faAngleDoubleDown, faSyncAlt, faCaretRight, faBars, faListUl, faEllipsisH, faTimes, faAngleUp, faFileDownload } from '@fortawesome/free-solid-svg-icons'
+import { faArrowDown, faArrowLeft, faAngleDoubleDown, faSyncAlt, faCaretRight, faBars, faListUl, faEllipsisH, faTimes, faAngleUp, faAngleDown, faFileDownload, faLink, faCamera } from '@fortawesome/free-solid-svg-icons'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false;
-library.add(faFacebook, faTwitter, faArrowDown, faArrowLeft, faAngleDoubleDown, faSyncAlt, faCaretRight, faBars, faListUl, faEllipsisH, faTimes, faAngleUp, faFileDownload)
+library.add(faFacebook, faTwitter, faArrowDown, faArrowLeft, faAngleDoubleDown, faSyncAlt, faCaretRight, faBars, faListUl, faEllipsisH, faTimes, faAngleUp, faAngleDown, faFileDownload, faLink, faCamera)
 
 export default function (Vue, { router, head, isClient }) {
   head.htmlAttrs = { lang: 'es' }

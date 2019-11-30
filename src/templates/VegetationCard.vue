@@ -207,8 +207,7 @@
                         <th v-for="value in $page.vegetationCard.criteriaused" align="center">
                           <b-dropdown v-if="criteria[value]" class="criteria-box" position="is-bottom-left">
                             <a slot="trigger">
-                              <div v-html="value">
-                              </div>
+                              <span v-html="value"></span>&nbsp;<font-awesome size="xs" :icon="['fas', 'angle-down']"/>
                             </a>
                             <b-dropdown-item class="has-text-weight-normal has-text-left" custom>
                               <div class="has-text-weight-bold has-text-centered">Criterio {{value}}<br><br></div>
@@ -240,7 +239,7 @@
                 </div>
               </div>
               <div v-if="$page.vegetationCard.content != '\n'" v-show="!showMore" class="container is-size-5 has-text-centered">
-                <a @click="showMore = true"><p>LEER MÁS...</p></a>
+                <a @click="showMore = true"><p>LEER MÁS...<font-awesome :icon="['fas', 'angle-down']"/></p></a>
               </div>
               <div v-show="showMore" class="tile is-parent">
                 <!-- <div class="d-content tile is-child is-size-5" v-html="$page.vegetationCard.content"></div> -->

@@ -19,7 +19,7 @@
         <b-navbar-item>
           MÉTODOS
         </b-navbar-item>
-        <b-navbar-dropdown :arrowless="true" label="EXPLORAR">
+        <b-navbar-dropdown label="EXPLORAR">
           <b-navbar-item tag="a" href="/vcards">
               Riesgo de colapso
           </b-navbar-item>
@@ -33,7 +33,7 @@
         <b-navbar-item tag="a" href="/contact">
           CONTACTO
         </b-navbar-item>
-        <b-navbar-dropdown :arrowless="true" label="COMPARTIR">
+        <b-navbar-dropdown label="COMPARTIR">
             <b-navbar-item>
               <font-awesome :icon="['fab', 'facebook']"/>&nbsp;Facebook
             </b-navbar-item>

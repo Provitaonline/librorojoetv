@@ -48,7 +48,7 @@ function addPopovers(data, references, photos) {
       if (dropDownItems != '') {
         let dropdown = `
           <div style="margin-left: 0; display: inline;" class="dropdown reference-dropdown">
-            <a @click="dropDownClick" class="dropdown-trigger" href="">` + match + `</a>
+            <a @click="dropDownClick" class="dropdown-trigger" href="">` + match.substring(0, match.length-1) + `<font-awesome size="xs" :icon="['fas', 'angle-down']"/>` + match.substring(match.length-1) + `</a>
             <div class="dropdown-menu">
               <div class="dropdown-content">` + dropDownItems + `</div>
             </div>
@@ -62,7 +62,7 @@ function addPopovers(data, references, photos) {
         let pIdx = photos.findIndex(function(p) { return p.photokey === refItem.trim()})
         if (pIdx >= 0) {
           photoItems += `
-            <a @click="photoClick">` + (i++ > 0 ? ', ' :  '' ) + refItem.trim() + `</a><div class="modal photo-modal">
+            <a @click="photoClick" class='photo-link'>` + (i++ > 0 ? ', ' :  '' ) + photoItemLabel(refItem) + `</a><div class="modal photo-modal">
               <div @click="closePhotoModal" class="modal-background"></div>
               <div class="modal-content has-text-centered">
                 <figure style="padding: 2%;">
@@ -86,6 +86,10 @@ function addPopovers(data, references, photos) {
     return match
   })
   return '<div>' + r  + '</div>'
+}
+
+function photoItemLabel (item) {
+  return item.trim() + ` <small><font-awesome size="xs" :icon="['fas', 'camera']"/></small>`
 }
 
 function processContent(text, photos) {
@@ -190,7 +194,7 @@ export default {
       e.stopPropagation()
     },
     photoClick: function(e) {
-      e.target.nextElementSibling.classList.toggle('is-active')
+      e.target.closest('.photo-link').nextElementSibling.classList.toggle('is-active')
     },
     closePhotoModal: function(e) {
       e.target.closest('.photo-modal').classList.toggle('is-active')
