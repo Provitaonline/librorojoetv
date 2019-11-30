@@ -10,7 +10,7 @@
         </div>
       </section>
       <div class="section is-size-6 is-size-7-mobile">
-        <b-table :data="$page.references.references" :columns="columns" :mobile-cards="false"></b-table>
+        <b-table :data="sortedReferences" :columns="columns" :mobile-cards="false"></b-table>
       </div>
     </div>
   </Layout>
@@ -51,6 +51,11 @@
             renderHtml: true
           }
         ]
+      }
+    },
+    computed: {
+      sortedReferences: function() {
+        return this.$page.references.references.sort((a, b) => a.referencekey.localeCompare(b.referencekey))
       }
     }
   }
