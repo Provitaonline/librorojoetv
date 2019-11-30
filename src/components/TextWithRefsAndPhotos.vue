@@ -90,8 +90,6 @@ function addPopovers(data, references, photos) {
 
 function processContent(text, photos) {
 
-  console.log(text)
-
   // Replace mardownified content <p> with <div> so that <div> elements can be inserted
   // Add class to table elements
   let r = text
