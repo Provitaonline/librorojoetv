@@ -26,10 +26,10 @@ references:
 - referencekey: OCEI 1970-1997
   reference: >
     OCEI (1970-1997). Anuario Estadístico de Venezuela [Años revisados 1970-1997]. Oficina Central de Estadística e Informática (OCEI): Caracas, Venezuela.
-- referencekey: Rodriguez et al. 2008
+- referencekey: Rodríguez et al. 2008
   reference: >
     Rodríguez, J.P., J.M. Nassar, K.M. Rodríguez-Clark, I. Zager, C. Portillo-Quintero, F. Carrasquel & S. Zambrano (2008). Tropical Dry Forests in Venezuela: Assessing status, threats and future prospects. Environmental Conservation 35: 311-318.
-- referencekey: Rodriguez et al. 2011
+- referencekey: Rodríguez et al. 2011
   reference: >
     Rodríguez, J.P., K.M. Rodríguez-Clark, J.E.M. Baillie, N. Ash, J. Benson, T. Boucher, C. Brown, N. Burgess, B. Collen, M. Jennings, D.A. Keith, E. Nicholson, C. Revenga, B. Reyers, M. Rouget, T. Smith, M. Spalding, A. Taber, M. Walpole, I. Zager & T. Zamin (2011). Establishing IUCN Red List criteria for threatened ecosystems. Conservation Biology 25: [doi: 10.1111/j.1523 1739.2010.1598].
 - referencekey: Stattersfield et al. 1998
