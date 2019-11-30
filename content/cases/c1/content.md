@@ -50,7 +50,11 @@ INSERTAR FIGURA
 
 Estos datos evidencian que los bosques siempreverdes no lograron satisfacer los umbrales de ninguna categoría de riesgo, y califican para la designación Preocupación Menor (LC). Esta situación se debe en gran parte a que los bosques siempreverdes se encuentran mayormente protegidos por los parques nacionales Henri Pittier (Foto 1) y Macarao y el Monumento Natural Pico Codazzi, como se observa tanto en las figuras 1 y 2, así como en la tabla 1; destacando que todas estas áreas protegidas fueron declaradas mucho antes de la fecha inicial del análisis de cambios.
 
-INSERTAR TABLA
+| Tipo de bosque | PN Henri Pittier | MN Pico Codazzi | PN Macarao | Total |
+|----------------|:----------------:|:---------------:|:----------:|:-----:|
+| Siempreverdes  |       53,4%      |      16,7%      |    4,8%    | 74.9% |
+| Semideciduos   |       29,1%      |       4,2%      |    8,0%    | 41,3% |
+| Deciduos       |        4,6%      |       0,1%      |    1,4%    |  6,1% |
 
 Por otra parte, los bosques semideciduos, que se encuentran en una franja altitudinal menor a 1.000 m, mostraron una reducción de 13% de su cobertura a una tasa de conversión de 10 km2/año entre 1986 y 2001, con una proyección de 30% de pérdida de cobertura para el año 2036 (Tabla 2). Esta proyección coloca a los bosques semideciduos de la cordillera de la Costa en la categoría Vulnerable (VU) bajo el criterio A3.
 

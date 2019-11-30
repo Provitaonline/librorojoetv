@@ -91,7 +91,11 @@ function addPopovers(data, references, photos) {
 function processContent(text, photos) {
 
   // Replace mardownified content <p> with <div> so that <div> elements can be inserted
-  let r = text.replace(/<p>/g, '<div class="d-content">').replace(/<\/p>/g, '</div>')
+  // Add class to table elements
+  let r = text
+    .replace(/<p>/g, '<div class="d-content">')
+    .replace(/<\/p>/g, '</div>')
+    .replace(/<table>/g, '<table class="table table-in-content" align="center">')
 
   r = r.replace(/\{.*?\}/g, function (match, offset) {
     let item = ((match.replace(/[{\{\}}]/g, '')))

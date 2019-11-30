@@ -74,7 +74,10 @@ module.exports = {
         },
         remark:{
           autolinkHeadings: false,
-          lazyLoadImages: false
+          lazyLoadImages: false,
+          plugins: [
+            'remark-attr'
+          ]
         }
       }
     },

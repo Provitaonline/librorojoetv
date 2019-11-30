@@ -32,7 +32,7 @@
               </div>
               <table align="center" class="table is-size-6 is-size-7-mobile">
                 <thead>
-                  <tr style="background-color: #f8e7e8;">
+                  <tr>
                     <th v-for="value in $page.caseCard.cardtablecolumns" style="border: none;">{{value}}</th>
                   </tr>
                 </thead>
@@ -123,6 +123,15 @@
   .summary-box {
     box-shadow: none;
     border: solid $primary 2px;
+  }
+
+  ::v-deep thead {
+    background-color: #f8e7e8;
+  }
+
+  ::v-deep .table-in-content {
+    border: solid 2px $primary;
+    border-collapse: separate;
   }
 </style>
 
