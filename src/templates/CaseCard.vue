@@ -65,6 +65,10 @@
             :isContent="true" />
           </TextWithRefsAndPhotos>
         </div>
+        <h1>Bibliografía</h1>
+        <div class="box is-size-6 is-size-7-mobile">
+          <b-table :data="sortedReferences" :columns="columns" :mobile-cards="false"></b-table>
+        </div>
       </section>
     </div>
   </Layout>
@@ -148,13 +152,30 @@
     data() {
       return {
         threatCategories: threatCategories,
-        threatCategoryIcons: threatCategoryIcons
+        threatCategoryIcons: threatCategoryIcons,
+        columns: [
+          {
+            field: 'referencekey',
+            label: 'Abreviación',
+            width: '150'
+          },
+          {
+            field: 'reference',
+            label: 'Referencia',
+            renderHtml: true
+          }
+        ]
       }
     },
     mounted () {
     },
     components: {
       TextWithRefsAndPhotos
+    },
+    computed: {
+      sortedReferences: function() {
+        return this.$page.caseCard.case.references.sort((a, b) => a.referencekey.localeCompare(b.referencekey))
+      }
     }
   }
 
