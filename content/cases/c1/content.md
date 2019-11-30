@@ -68,7 +68,7 @@ Por otra parte, los bosques semideciduos, que se encuentran en una franja altitu
   <table>
     <thead>
       <tr>
-        <th rowspan="3">Tipo de bosque</th>
+        <th rowspan="2"></th>
         <th align="center" colspan="2">Extensión (Km<sup>2</sup>)<br></th>
         <th align="center"colspan="2">Conversión (1986-2001)</th>
         <th align="center">Proyección (50 años)</th>
@@ -80,6 +80,7 @@ Por otra parte, los bosques semideciduos, que se encuentran en una franja altitu
         <th align="center">Pérdida</th>
       </tr>
       <tr>
+        <th>Tipo de bosque</th>
         <th align="center">1986</th>
         <th align="center">2001</th>
         <th align="center">%</th>
