@@ -38,7 +38,17 @@ Se realizó una búsqueda exhaustiva de las imágenes satelitales Landsat dispon
 
 La selección de las imágenes estuvo basada en cuatro condiciones principales: a) la disponibilidad de al menos dos imágenes de satélite Landsat de suficiente calidad (poca nubosidad) y separadas por un mínimo de diez años; b) la presencia de vegetación contrastante; c) la presencia de áreas urbanas y áreas naturales; y d) la presencia de al menos un área protegida.
 
-INSERTAR TABLA
+<div style="text-align: center;"><b>Tabla 1.</b> Imágenes de satélite Landsat de la Depresión de Maracaibo (Norte y Sur)</div>
+<div class="table-container">
+
+| Localización | Path     | Fecha        | Satétite    | Formato |
+|--------------|:--------:|:------------:|:-----------:|:-------:|
+| Norte        | 007/053  | 31 Dic 1986  | Landsat TM  | GeoTIFF |
+|              | 007/053  | 03 Mar 200   | Landsat ETM+| GeoTIFF |
+| Sur          | 007/054  | 31 Dic 198   | Landsat TM  | GeoTIFF |
+|              | 004/057  | 09 Mar 2003  | Landsat ETM+|  BSQ    |
+
+</div>
 
 INSERTAR FIGURA
 
