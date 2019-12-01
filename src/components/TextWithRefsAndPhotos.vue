@@ -48,8 +48,7 @@ function addPopovers(data, references, photos) {
       if (dropDownItems != '') {
         let dropdown = `
           <div style="margin-left: 0; display: inline;" class="dropdown reference-dropdown">
-            <a @click="dropDownClick" class="dropdown-trigger" href="">` + match.substring(0, match.length-1) + `<font-awesome size="xs" :icon="['fas', 'angle-down']"/>` + match.substring(match.length-1) + `</a>
-            <div class="dropdown-menu">
+            <a @click="dropDownClick" class="dropdown-trigger" href="">` + match.substring(0, match.length-1) + `<font-awesome size="xs" :icon="['fas', 'angle-down']"/>` + match.substring(match.length-1) + `</a><div class="dropdown-menu">
               <div class="dropdown-content">` + dropDownItems + `</div>
             </div>
           </div>`
