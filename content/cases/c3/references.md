@@ -1,0 +1,45 @@
+---
+id: c3
+parent: cases
+title: Estado de amenaza de los ecosistemas al norte y sur del lago de Maracaibo, Estado Zulia
+references:
+- referencekey: Centeno 2008
+  reference: >
+    Centeno, J.C. (2008). Venezuela pierde sus bosques [en línea]. Consultado el 18 may. 2008 en www.veneconomia.com Fundación Polar (1997). Diccionario de Historia de Venezuela. Caracas. Venezuela.
+- referencekey: GLCF 2010
+  reference: >
+    Global Land Cover Facility (2010) Earth Science Data Interface (ESDI) [en línea]. Disponible en http://glcf.umiacs.umd.edu
+- referencekey: Hernández & Parra 1999
+  reference: >    
+    Hernández, L.G. & J.A. Parra (1999). Diccionario General del Zulia. Tomo I. BOD: Maracaibo.
+- referencekey: Huber & Alarcón 1988
+  reference: >
+    Huber, O. & C. Alarcón (1988). Mapa de Vegetación de Venezuela. Ministerio del Ambiente y los Recursos Naturales Renovables, The Nature Conservancy, Fundación Bioma: Caracas, Venezuela.
+- referencekey: Hueck 1960
+  reference: >
+    Hueck, K. (1960). Mapa de la Vegetación de la República de Venezuela. Instituto Forestal Latinoamericano de Investigación y Capacitación: Mérida, Venezuela.
+- referencekey: IUCN 2000
+  reference: >
+    IUCN (2000). Confirming the global extinction crisis: A call for international action as the most authoritative global assessment of species loss is released [en línea]. Consultado el 16 nov. 2002 en www.iucn.org/ redlist/2000/news.html
+- referencekey: IUCN 2004
+  reference: >
+    IUCN (2004). Guidelines for Using the IUCN Red List Categories and Criteria. Standards and Petitions Subcommittee of the IUCN Red List Committee. The World Conservation Union (IUCN): Gland, Switzerland.
+- referencekey: Kattan 2002
+  reference: >
+    Kattan, G.H. (2002). Fragmentación: Patrones y mecanismos de extinción de especies. Pp. 561-590. En: M.R. Guariguata & G.H. Kattan (eds.). Ecología y Conservación de Bosques Neotropicales. Ediciones LUR: Costa Rica.
+- referencekey: MARN 2000
+  reference: >
+    MARN (2000). Primer informe de Venezuela sobre Diversidad Biológica. Oficina Nacional de Diversidad Biológica, Ministerio del Ambiente y de los Recursos Naturales: Caracas, Venezuela.
+- referencekey: OCEI 1997
+  reference: >
+    OCEI (1997). Anuario estadístico de Venezuela 1996. Oficina Central de Estadística e Informática (OCEI): Caracas, Venezuela. Portillo, C. & M. Pietrangeli (2004). Directorio Ecológico y Natural EcoPortal [en línea]. Consultado el 8 abr. 2008 en www.ecoportal.net
+- referencekey: Rodríguez 2000
+  reference: >
+    Rodríguez, G. (ed.) (2000). El Sistema de Maracaibo Biología y Ambiente. 2a ed. Instituto Venezolano de Investigaciones Científicas: Caracas, Venezuela.
+- referencekey: Rodríguez et al. 2007
+  reference: >
+    Rodríguez, J.P., J. Balch & K.M. Rodríguez-Clark (2007). Assessing extinction risk in the absence of species-level data: quantitative criteria for terrestrial ecosystems. Biodiversity and Conservation, 16: 183-209.
+- referencekey: Rodríguez et al. 2011
+  reference: >
+    Rodríguez, J.P., K.M. Rodríguez-Clark, J.E.M. Baillie, N. Ash, J. Benson, T. Boucher, C. Brown, N. Burgess, B. Collen, M. Jennings, D.A. Keith, E. Nicholson, C. Revenga, B. Reyers, M. Rouget, T. Smith, M. Spalding, A. Taber, M. Walpole, I. Zager & T. Zamin (2011). Establishing red list criteria for threatened ecosystems. Conservation Biology 25: [doi: 10.1111/j.1523 1739.2010.1598].
+---
