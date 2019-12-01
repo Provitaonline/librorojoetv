@@ -1,5 +1,6 @@
 ---
 id: c2
+parent: cases
 title: Estado de amenaza de los ecosistemas terrestres de la isla de Margarita, estado Nueva Esparta
 references:
 - referencekey: Eastman 2003

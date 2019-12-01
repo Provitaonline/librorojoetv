@@ -1,5 +1,6 @@
 ---
 id: c1
+parent: cases
 title: Conversión de los bosques en la cordillera central de Venezuela
 references:
 - referencekey: Bonaccorso 2001
