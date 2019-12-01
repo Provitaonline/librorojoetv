@@ -329,7 +329,7 @@
 
 <style lang="scss" scoped>
 
-  $primary: #BE1421; /* Remove this after figuring out how to global scss vars */
+  @import "~/assets/style/_variables";
 
   @media only screen and (max-width: 1024px) {
     .statetable {
