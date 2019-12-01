@@ -61,7 +61,7 @@
                 </p>
               </div>
               <div class="categoryicon">
-                <img :src="threatCategoryIcons[$page.vegetationCard.category]" height="50" width="50" />
+                <img :src="threatCategories[$page.vegetationCard.category].img" height="50" width="50" />
                 <p style="display: block; font-size: small;"><b>{{threatCategories[$page.vegetationCard.category].text.toUpperCase()}}</b></p>
               </div>
             </div>
@@ -167,7 +167,7 @@
                 <div class="tile is-child is-5 box has-text-centered">
                   <b>Riesgo de colapso a nivel nacional: </b>
                   {{threatCategories[$page.vegetationCard.category].text.toUpperCase()}}
-                  <img :src="threatCategoryIcons[$page.vegetationCard.category]" height="30" width="30" style="margin-bottom: -5px;">
+                  <img :src="threatCategories[$page.vegetationCard.category].img" height="30" width="30" style="margin-bottom: -5px;">
                   <br><br>
                   <b>Grado de amenaza 2010: </b><br>
                   <span class="is-size-7"><b>(Figura 1c)</b></span>
@@ -228,7 +228,7 @@
                         <td align="center" v-for="value in item.threatcategories">
                           <b-tooltip v-if="value != '-' && value != '(*)'" :label="threatCategories[value] ? threatCategories[value].text : ''" position="is-top" type="is-warning">
                             <div class="iconInTable">
-                              <img :src="threatCategoryIcons[value]">
+                              <img :src="threatCategories[value].img">
                             </div>
                           </b-tooltip>
                           <div v-else>{{value}}</div>
@@ -484,14 +484,6 @@
 
   slugify.extend({'/': '-'})
 
-  //import OpenSidePanelIcon from '~/assets/svgs/opensidepanel.svg?inline'
-  // There is an issue with vue-svg-loader on MS Edge and older browsers
-
-  let threatCategoryIcons = {}
-  for (let key in threatCategories) {
-    threatCategoryIcons[key] = require('~/assets/svgs/' + key + '-icon.svg')
-  }
-
   export default {
     created() {
 
@@ -499,7 +491,6 @@
     data() {
       return {
         threatCategories: threatCategories,
-        threatCategoryIcons: threatCategoryIcons,
         criteria: criteria,
         showMore: false,
         sidePanelState: -1,

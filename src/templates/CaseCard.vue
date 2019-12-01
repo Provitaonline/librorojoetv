@@ -39,10 +39,10 @@
                 <tbody>
                   <tr v-for="value in $page.caseCard.cardtablerows">
                     <td v-for="item in value.split('|')">
-                      <div v-if="threatCategoryIcons[item]" style="text-align: center;">
+                      <div v-if="threatCategories[item]" style="text-align: center;">
                         <b-tooltip :label="threatCategories[item].text" position="is-top" type="is-warning">
                           <div class="iconInTable" style="display: inline-block">
-                            <img :src="threatCategoryIcons[item]">
+                            <img :src="threatCategories[item].img">
                           </div>
                         </b-tooltip>
                       </div>
@@ -143,16 +143,10 @@
   import {threatCategories} from '~/assets/js/siteConfig.js'
   import TextWithRefsAndPhotos from '~/components/TextWithRefsAndPhotos.vue'
 
-  let threatCategoryIcons = {}
-  for (let key in threatCategories) {
-    threatCategoryIcons[key] = require('~/assets/svgs/' + key + '-icon.svg')
-  }
-
   export default {
     data() {
       return {
         threatCategories: threatCategories,
-        threatCategoryIcons: threatCategoryIcons,
         columns: [
           {
             field: 'referencekey',
