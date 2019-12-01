@@ -6,6 +6,9 @@ references:
 - referencekey: Centeno 2008
   reference: >
     Centeno, J.C. (2008). Venezuela pierde sus bosques [en línea]. Consultado el 18 may. 2008 en www.veneconomia.com Fundación Polar (1997). Diccionario de Historia de Venezuela. Caracas. Venezuela.
+- referencekey: Fundación Polar 1997
+  reference: >
+    Fundación Polar (1997). Diccionario de Historia de Venezuela. Caracas. Venezuela.
 - referencekey: GLCF 2010
   reference: >
     Global Land Cover Facility (2010) Earth Science Data Interface (ESDI) [en línea]. Disponible en http://glcf.umiacs.umd.edu
