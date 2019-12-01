@@ -4,7 +4,7 @@
       <section class="hero is-small is-white">
         <div class="hero-body">
           <div class="container is-fullhd has-text-centered">
-            <h1 class="title is-uppercase"><g-link :to="'/' + $page.references.id"><span v-html="$page.references.title"></span></g-link></h1>
+            <h1 class="title is-uppercase"><g-link :to="'/' + linkToParent"><span v-html="$page.references.title"></span></g-link></h1>
             <h2 class="title">Bibliografía</h2>
           </div>
         </div>
@@ -20,6 +20,7 @@
   query ($id: ID!) {
     references: references (id: $id) {
       id
+      parent
       title
       references {
         referencekey
@@ -56,6 +57,9 @@
     computed: {
       sortedReferences: function() {
         return this.$page.references.references.sort((a, b) => a.referencekey.localeCompare(b.referencekey))
+      },
+      linkToParent: function() {
+        return this.$page.references.parent ? this.$page.references.parent + '/' + this.$page.references.id : this.$page.references.id
       }
     }
   }
