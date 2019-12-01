@@ -59,15 +59,15 @@
       </div>
       <section class="section">
         <div class="tile is-vertical is-parent">
-          <TextWithRefsAndPhotos class="tile is-child box is-size-5 is-size-6-mobile"
+          <TextWithRefsAndPhotos style="padding-bottom: 0px; margin-bottom: 0px !important;" class="tile is-child box is-size-5 is-size-6-mobile"
             :text="$page.caseCard.content"
             :refs="$page.caseCard.case.references"
-            :isContent="true" />
+            :isContent="true">
           </TextWithRefsAndPhotos>
-        </div>
-        <h1>Bibliografía</h1>
-        <div class="box is-size-6 is-size-7-mobile">
-          <b-table :data="sortedReferences" :columns="columns" :mobile-cards="false"></b-table>
+          <div style="padding-top: 0px;" class="tile is-child box is-size-6 is-size-7-mobile">
+            <h1 style="margin-top: 0px;">Bibliografía</h1>
+            <b-table :data="sortedReferences" :columns="columns" :mobile-cards="false"></b-table>
+          </div>
         </div>
       </section>
     </div>
