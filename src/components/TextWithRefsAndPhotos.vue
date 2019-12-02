@@ -26,7 +26,8 @@
 
 <script>
 
-import VRuntimeTemplate from "v-runtime-template"
+import VRuntimeTemplate from 'v-runtime-template'
+import {threatCategories} from '~/assets/js/siteConfig.js'
 
 function addPopovers(data, references, photos) {
   let r = data.replace(/\(.*?\)/g, function (match) {
@@ -100,10 +101,12 @@ function processContent(text, photos) {
     .replace(/<\/p>/g, '</div>')
     .replace(/<table>/g, '<table class="table table-in-content" align="center">')
 
-  r = r.replace(/\{.*?\}/g, function (match, offset) {
+  r = r.replace(/\{.*?\}/g, function (match) {
     let item = ((match.replace(/[{\{\}}]/g, '')))
-    let pIdx = photos.findIndex(function(p) { return p.photokey === item.trim()})
-
+    let pIdx = -1
+    if (photos) {
+      pIdx = photos.findIndex(function(p) { return p.photokey === item.trim()})
+    }
     if (pIdx >= 0) {
       return `
         <div class="inline-figure has-text-centered">
@@ -118,7 +121,17 @@ function processContent(text, photos) {
         </div>
       `
     } else {
-      return match
+      if (threatCategories[item]) {
+        return `
+          <b-tooltip label=" ` + threatCategories[item].text + `" position="is-top" type="is-warning">
+            <div style="width: 25px; height: 25px; display: inline-block">
+              <img src=` + threatCategories[item].img + `>
+            </div>
+          </b-tooltip>
+        `
+      } else {
+        return match
+      }
     }
   })
 
