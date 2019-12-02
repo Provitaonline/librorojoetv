@@ -68,16 +68,14 @@ Por otro lado, se identificaron bosques ribereños en los ríos Santa Ana, Río 
 
 Con base en la clasificación de las coberturas  identificadas, evaluadas mediante el sistema de categorías de riesgo de eliminación, se procedió a determinar el estatus de cada uno de los ecosistemas, tomando en cuenta los cambios de cobertura y el patrón de fragmentación (vid. supra, cap. II; Rodríguez et al. 2011). Se encontró que al aplicar los criterios A, B y C, el criterio B usualmente determinó un mayor riesgo de eliminación, aunque en casos especiales se aplicó el criterio D (referente a ecosistemas de distribución restringida). La Tabla 2 muestra los cambios detectados para coberturas vegetales, y la Tabla 3 los cambios de coberturas no vegetales, no contrastadas con el sistema de categorías de riesgo.
 
-INSERTAR TABLAS
-
 <div style="text-align: center;"><b>Tabla 2.</b> Cambios en los tipos de coberturas vegetales del norte del lago de Maracaibo (1986-2001).</div>
 <div class="table-container is-size-6">
   <table>
     <thead>
       <tr>
         <th rowspan="2">Tipo de cobertura</td>
-        <th align="center" colspan="2">1986 (km2)</th>
-        <th align="center" colspan="2">2001 (km2)</th>
+        <th align="center" colspan="2">1986 (km<sup>2</sup>)</th>
+        <th align="center" colspan="2">2001 (km<sup>2</sup>)</th>
         <th align="center" colspan="2">Observado</th>
         <th align="center" colspan="2">Proyectado</th>
         <th align="center" rowspan="2">Categoría</th>
@@ -152,6 +150,60 @@ INSERTAR TABLAS
       <td align="center">-12,90</td>
       <td align="center"></td>
       <td align="center">lc</td>
+    </tr>
+  </table>
+</div>
+
+<div style="text-align: center;"><b>Tabla 3.</b> Cambios en los tipos de coberturas no vegetales al norte del lago de Maracaibo (1986-2001).</div>
+<div class="table-container">
+  <table>
+    <thead>
+      <tr>
+        <th rowspan="2">Tipo de cobertura</td>
+        <th align="center" colspan="2">1986 (km<sup>2</sup>)</th>
+        <th align="center" colspan="2">2001 (km<sup>2</sup>)</th>
+      </tr>
+      <tr>
+        <th align="center">Norte</th>
+        <th align="center">Sur</th>
+        <th align="center">Norte</th>
+        <th align="center">Sur</th>
+      </tr>
+    </thead>
+    <tr>
+      <td>Plantaciones forestales</td>
+      <td align="center">1.069,46</td>
+      <td align="center">1.281,74</td>
+      <td align="center">437,54</td>
+      <td align="center">1.065,84</td>
+    </tr>
+    <tr>
+      <td>Suelos expuestos</td>
+      <td align="center">1.695,94</td>
+      <td align="center">476,32</td>
+      <td align="center">2.341,31</td>
+      <td align="center">420,40</td>
+    </tr>
+    <tr>
+      <td>Áreas intervenidas</td>
+      <td align="center">10.103,70</td>
+      <td align="center">4.346,13</td>
+      <td align="center">10.359,55</td>
+      <td align="center">4.550,91</td>
+    </tr>
+    <tr>
+      <td>Áreas urbanas</td>
+      <td align="center">830,92</td>
+      <td align="center">7,84</td>
+      <td align="center">918,81</td>
+      <td align="center">23,23</td>
+    </tr>
+    <tr>
+      <td>Áreas quemadas</td>
+      <td align="center">0</td>
+      <td align="center">55,03</td>
+      <td align="center">481,58</td>
+      <td align="center">519,47</td>
     </tr>
   </table>
 </div>
