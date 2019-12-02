@@ -226,7 +226,7 @@
                         <td>{{item.zone}}</td>
                         <td v-if="item.area" class="has-text-right">{{item.area | decimal(1)}}</td>
                         <td align="center" v-for="value in item.threatcategories">
-                          <b-tooltip v-if="value != '-' && value != '(*)'" :label="threatCategories[value] ? threatCategories[value].text : ''" position="is-top" type="is-warning">
+                          <b-tooltip v-if="threatCategories[value]" :label="threatCategories[value] ? threatCategories[value].text : ''" position="is-top" type="is-warning">
                             <div class="iconInTable">
                               <img :src="threatCategories[value].img">
                             </div>
