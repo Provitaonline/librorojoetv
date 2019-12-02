@@ -1,0 +1,66 @@
+---
+id: c4
+parent: cases
+title: Conversión de los bosques del norte de la sierra de Perijá, estado Zulia
+references:
+- referencekey: Alvarado 2008
+  reference: >
+    Alvarado, N. (2008). Cambios en la cobertura vegetal del Parque Nacional Sierra de Perijá del estado Zulia por medio de sensores remotos Landsat 7 TM+ (Período 1989-2002). Trabajo Especial de Grado, Departamento de Biología, Facultad Experimental de Ciencias, La Universidad del Zulia, Maracaibo. 38 pp.
+- referencekey: Ascanio & León 2004
+  reference: >
+    Ascanio, D. & J.G. León (2004). Rapid Assessment of the birds of the Perijá Mountains. Informe Técnico. 9 pp.
+- referencekey: Barrio-Amorós et al. 2010
+  reference: >
+    Barrio-Amorós, C.L., F. Rojas Runjaic & T. Barros (2010). Two new Pristimantis (Anura: Terrarana: Strabomantidae) from the sierra de Perijá, Venezuela. Zootaxa 2329: 1-21.
+- referencekey: Carchi & Viloria 1991
+  reference: >
+    Carchi, R. & A. Viloria (1991). Occurrence of the Andean Condor in the Perijá Mountains of Venezuela. Wilson Bulletin 103: 720-722.
+- referencekey: Ewel & Madriz 1976
+  reference: >
+    Ewel, J. & A. Madriz (1976). Zonas de Vida de Venezuela. Memoria Explicativa sobre el Mapa Ecológico. 2a. ed. Editorial Sucre: Caracas, Venezuela. 265 pp.
+- referencekey: Hernández-Montilla et al. 2007
+  reference: >
+    Hernández-Montilla, M.C., G.L. Zambrano & M. Pietrangeli (2007). Evaluación del impacto causado por el cultivo de X. sagittifolium (Malanga) en los suelos de comunidades forestales del sector Río Frío, estado Zulia. Resumen VII Congreso Venezolano de Ecología, Ciudad Guayana Venezuela. 395 pp.
+- referencekey: Hernández-Montilla 2010
+  reference: >
+    Hernández-Montilla, M.C. (2010). Estimación del riesgo de extinción de los hábitats terrestres de la cuenca de los ríos Lajas y Palmar del estado Zulia. Tesis de grado, Departamento de Biología, Facultad Experimental de Ciencias, La Universidad del Zulia, Maracaibo. 79 pp.
+- referencekey: Huber & Alarcón 1988
+  reference: >
+    Huber, O. & C. Alarcón (1988). Mapa de Vegetación de Venezuela. Escala 1:2.000.000. The Nature Conservancy, MARNR: Caracas.
+- referencekey: IESA 1997
+  reference: >
+    IESA (1997). Zulia: Competitividad para el desarrollo. Centro de Gerencia Estratégica y Competitividad. IESA (eds). Caracas, Venezuela. 524 pp.
+- referencekey: Kerr & Ostrovsky 2003
+  reference: >
+    Kerr, J.T. & M. Ostrovsky (2003). From space to species: ecological applications for remote sensing. Trends in Ecology & Evolution 18(6): 299-305.
+- referencekey: Linares 1998
+  reference: >
+    Linares, O. (1998). Mamíferos de Venezuela. Sociedad Conservacionista Audubon de Venezuela: Caracas, Venezuela. 691 pp.
+- referencekey: Llamozas et al. 2003
+  reference: >
+    Llamozas, S., R. de Stefano, W. Meier, R. Riina, F. Stauffer, G. Aymard, O. Huber & R. Ortiz (2003). Libro Rojo de la Flora Venezolana. Provita, Fundación Polar, Fundación Instituto Botánico de Venezuela Dr. Tobías Lasser: Caracas, Venezuela. 557 pp.
+- referencekey: Mondolfi 1989
+  reference: >
+    Mondolfi, E. (1989). Notes on the distribution, habitat, food habits, status and conservation of the spectacled bear (Tremarctos ornatus, Cuvier) in Venezuela. Mammalia 52 (49):525-544.
+- referencekey: Portillo 2004
+  reference: >
+    Portillo, C.A. (2004). Cuantificación del riesgo de extinción de los hábitats terretres de la Zona Protectora de la Cuenca Baja de los Ríos Socuy, Guasare y Cachirí. Trabajo Especial de Grado. La Universidad del Zulia, Maracaibo. 88+xi pp.
+- referencekey: Rodríguez et al. 2007
+  reference: >
+    Rodríguez, J.P., K.M. Balch & K.B. Rodríguez-Clark (2007). Assessing extinction risk in the absence of species-level data: quantitative criteria for terrestrial ecosystems. Biodiversity Conservation 16: 183-209.
+- referencekey: Rodríguez & Rojas-Suárez 2008
+  reference: >
+    Rodríguez, J.P. & F. Rojas-Suárez (eds.) (2008). Libro Rojo de la Fauna Venezolana. 3a. ed. Provita y Shell Venezuela, S.A.: Caracas, Venezuela. 364 pp.
+- referencekey: Rodríguez et al. 2011
+  reference: >
+    Rodríguez, J.P., K.M. Rodríguez-Clark, J.E.M. Baillie, N. Ash, J. Benson, T. Boucher, C. Brown, N. Burgess, B. Collen, M. Jennings, D.A. Keith, E. Nicholson, C. Revenga, B. Reyers, M. Rouget, T. Smith, M. Spalding, A. Taber, M. Walpole, I. Zager & T. Zamin (2011). Establishing red list criteria for threatened ecosystems. Conservation Biology 25: [doi: 10.1111/j.1523 1739.2010.1598].
+- referencekey: Rojas 2004
+  reference: >
+    Rojas, Y. (2004). La actividad carbonífera y su incidencia en la configuración del territorio zuliano (Venezuela): Propuestas parciales para un plan de ordenamiento territorial. Revista Geográfica Venezolana 45(2): 199-220.
+- referencekey: Steyermark 1979
+  reference: >
+    Steyermark, J.A. (1979). Plant refuge and dispersal centres in Venezuela: Their relict and endemic element. Pp. 185-221. En: K. Larsen & L.B. Holm-Nielsen (eds). Tropical Botany. Academic Press: Great Britain, London.
+- referencekey: Velásquez & Portillo 2006
+  reference: >
+    Velásquez, J. & C. Portillo (2006). Disponibilidad y estado del hábitat de tres especies de primates (Ateles hybridus, Cebus albifrons y Aotus trivirgatus) amenazadas de extinción en la sierra de Perijá: Generación de información biogeográfica base para el diseño de proyectos de investigación para la conservación. Informe Final IEA. 35 pp.
+---
