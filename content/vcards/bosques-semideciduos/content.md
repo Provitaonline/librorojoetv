@@ -142,7 +142,7 @@ riskofcolapsestatelevel:
 - zone: "Nueva Esparta"
   threatcategories: ["-", cr, en, cr]
 - zone: "Portuguesa"
-  threatcategories: [vr, cr, vu, cr]
+  threatcategories: [cr, cr, vu, cr]
 - zone: "Sucre"
   threatcategories: [vu, cr, nt, cr]
 - zone: "Táchira"
