@@ -26,7 +26,7 @@
             </header>
             <div class="card-content">
               <div class="content">
-                <b>Localidad:</b> {{$page.caseCard.locality}}<br>
+                <b>Localidad:</b>&nbsp;<span v-html="$page.caseCard.locality"></span><br>
                 <b>Estados:</b> {{$page.caseCard.states}}<br>
                 <b>Área aprox.:</b> {{$page.caseCard.area | number}} km<sup>2</sup><br>
               </div>
@@ -46,9 +46,7 @@
                           </div>
                         </b-tooltip>
                       </div>
-                      <div v-else>
-                        {{item}}
-                      </div>
+                      <div v-else v-html="item"></div>
                     </td>
                   </tr>
                 </tbody>
@@ -115,6 +113,7 @@
   @media only screen and (min-width: 769px) {
     .summary-box {
       margin-top: -12rem;
+      max-width: 450px;
     }
   }
 
