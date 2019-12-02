@@ -1,0 +1,47 @@
+---
+id: c5
+parent: cases
+title: Conversión de los bosques del norte de la sierra de Perijá, estado Zulia
+references:
+
+
+- referencekey: Ataroff & Sarmiento 2003
+  reference: >
+    Ataroff, M. & L. Sarmiento (2003). Diversidad en los Andes de Venezuela. I. Mapa de Unidades Ecológicas del estado Mérida. CD-ROM, Ediciones Instituto de Ciencias Ambientales y Ecológicas (ICAE), Universidad de los Andes: Mérida, Venezuela.
+- referencekey: Azócar & Fariñas 2003
+  reference: >
+    Azócar, A. & M. Fariñas (2003). Páramos. Pp. 716-733. En: M. Aguilera, A. Azócar & E. González (eds.). Biodiversidad en Venezuela. Fundación Polar, Ministerio de Ciencia y Tecnología: Caracas.
+- referencekey: Boyla & Estrada 2005
+  reference: >
+    Boyla K. & A. Estrada (eds.) (2005). Áreas Importantes para la Conservación de las Aves en los Andes Tropicales: Sitios prioritarios para la conservación de la biodiversidad. Serie de Conservación de BirdLife N° 14. BirdLife International, Conservation International: Quito, Ecuador. 769 pp.
+- referencekey: GLCF 2010
+  reference: >
+    GLCF (2010). Earth Science Data Interface (ESDI) [en línea]. Global Land Cover Facility (GLCF). Disponible en http://glcf. umiacs.umd.edu
+- referencekey: Huber & Alarcón 1988
+  reference: >
+    Huber, O. & C. Alarcón (1988). Mapa de Vegetación de Venezuela. Ministerio del Ambiente y los Recursos Naturales Renovables, The Nature Conservancy, Fundación Bioma: Caracas.
+- referencekey: Josse et al. 2009a
+  reference: >
+    Josse, C., F. Cuesta, G. Navarro, V. Barrena, E. Cabrera, E. Chacón-Moreno, W. Ferreira, M. Peralvo, J. Saito & A. Tovar (2009a). Ecosistemas de los Andes del Norte y Centro. Bolivia, Colombia, Ecuador, Perú y Venezuela. Secretaría General de la Comunidad Andina, Programa Regional ECOBONA-Intercooperation, CONDESAN-Proyecto Páramo Andino, Programa BioAndes, EcoCiencia, NatureServe, IAvH, LTA-UNALM, ICAE-ULA, CDC-UNALM, RUMBOL: Lima, Perú. 96 pp.
+- referencekey: Josse et al. 2009b
+  reference: >
+    Josse, C., F. Cuesta, G. Navarro, V. Barrena, E. Cabrera, E. Chacón-Moreno, W. Ferreira, M. Peralvo, J. Saito & A. Tovar (2009b). Mapa de Ecosistemas de los Andes del Norte y Centro. Bolivia, Colombia, Ecuador, Perú y Venezuela [en línea]. Secretaría General de la Comunidad Andina, Programa Regional ECOBONA, CONDESAN-Proyecto Páramo Andino, Programa BioAndes, EcoCiencia, NatureServe, LTA-UNALM, IAvH, ICAE-ULA, CDC-UNALM, RUMBOL: Lima, Perú. Disponible en www.infoandina.org
+- referencekey: MARN 2000
+  reference: >
+    MARN (2000). Primer Informe de Venezuela sobre Diversidad Biológica. Ministerio del Ambiente y los Recursos Naturales: Caracas, Venezuela. 227 pp.
+- referencekey: Myers et al. 2000
+  reference: >
+    Myers, N., R.A. Mittermeier, C.G. Mittermeier, G.A.B. Fonseca & J. Kent (2000). Biodiversity hotspots for conservation priorities. Nature 403: 853-858.
+- referencekey: PDVSA 1992
+  reference: >
+    PDVSA (1992). Imagen de Venezuela. Una Visión Espacial. Petróleos de Venezuela, S.A.: Caracas, Venezuela. 271 pp.
+- referencekey: Rodríguez et al. 2011
+  reference: >
+    Rodríguez, J.P., K.M. Rodríguez-Clark, J.E.M. Baillie, N. Ash, J. Benson, T. Boucher, C. Brown, N. Burgess, B. Collen, M. Jennings, D.A. Keith, E. Nicholson, C. Revenga, B. Reyers, M. Rouget, T. Smith, M. Spalding, A. Taber, M. Walpole, I. Zager & T. Zamin (2011). Establishing IUCN Red List criteria for threatened ecosystems. Conservation Biology 25: [doi: 10.1111/j.1523 1739.2010.1598].
+- referencekey: Rodríguez & Rojas-Suárez 2008
+  reference: >
+    Rodríguez, J.P. & F. Rojas-Suárez (eds.) (2008). Libro Rojo de la Fauna Venezolana. 3a. ed. Provita y Shell Venezuela, S.A.: Caracas, Venezuela. 364 pp.
+- referencekey: Vareschi 1970
+  reference: >
+    Vareschi, V. (1970). Flora de los Páramos de Venezuela. Ediciones del Rectorado, Universidad de los Andes: Mérida, Venezuela.
+---
