@@ -54,7 +54,7 @@ INSERTAR FIGURA
 
 La identificación y descripción de las coberturas vegetales fi nales se hizo tomando como base cinco de las unidades fisonómicas  identificadas en el mapa de vegetación por Huber y Alarcón (1988): bosques siempreverdes, bosques semideciduos, bosques ribereños, manglares y herbazales pantanosos (ciénagas). Adicionalmente, se  identificaron otras clases de coberturas no vegetales: plantaciones forestales, áreas intervenidas (agropecuarias y/o deforestadas), áreas urbanas, áreas quemadas, suelos expuestos, así como nubes, sombras de nubes y cuerpos de agua. Esta información fue corroborada en campo en mayo de 2008.
 
-Entre los resultados para la región del norte y sur del lago se tiene la construcción de dos series de mapas de cobertura: los mapas de cobertura terrestre de 1986, y los de 2001 y 2003 (Figura 2). En cuanto a la aplicación del sistema de categorías de riesgo, ésta se realizó mediante la clasifi cación de las coberturas vegetales  identificadas, a las cuales se les aplicó el método propuesto por Rodríguez y colaboradores (2011) [vid. supra, cap. II].
+Entre los resultados para la región del norte y sur del lago se tiene la construcción de dos series de mapas de cobertura: los mapas de cobertura terrestre de 1986, y los de 2001 y 2003 (Figura 2). En cuanto a la aplicación del sistema de categorías de riesgo, ésta se realizó mediante la clasificación de las coberturas vegetales  identificadas, a las cuales se les aplicó el método propuesto por Rodríguez y colaboradores (2011) [vid. supra, cap. II].
 
 # Resultados
 
@@ -101,7 +101,7 @@ Con base en la clasificación de las coberturas  identificadas, evaluadas median
       <td align="center"></td>
       <td align="center">-69,96</td>
       <td align="center"></td>
-      <td align="center">vu</td>
+      <td align="center">{vu}</td>
     </tr>
     <tr>
       <td>Bosques semideciduos</td>
@@ -113,7 +113,7 @@ Con base en la clasificación de las coberturas  identificadas, evaluadas median
       <td align="center"></td>
       <td align="center">-710,02</td>
       <td align="center"></td>
-      <td align="center">cr</td>
+      <td align="center">{cr}</td>
     </tr>
     <tr>
       <td>Bosques ribereños</td>
@@ -125,7 +125,7 @@ Con base en la clasificación de las coberturas  identificadas, evaluadas median
       <td align="center">-15,79</td>
       <td align="center">29,08</td>
       <td align="center">-50,47</td>
-      <td align="center">vu</td>
+      <td align="center">{vu}</td>
     </tr>
     <tr>
       <td>Ciénagas</td>
@@ -137,7 +137,7 @@ Con base en la clasificación de las coberturas  identificadas, evaluadas median
       <td align="center">-13.06</td>
       <td align="center">-1,02</td>
       <td align="center">-40,46</td>
-      <td align="center">vu</td>
+      <td align="center">{vu}</td>
     </tr>
     <tr>
       <td>Manglares</td>
@@ -149,7 +149,7 @@ Con base en la clasificación de las coberturas  identificadas, evaluadas median
       <td align="center"></td>
       <td align="center">-12,90</td>
       <td align="center"></td>
-      <td align="center">lc</td>
+      <td align="center">{lc}</td>
     </tr>
   </table>
 </div>
