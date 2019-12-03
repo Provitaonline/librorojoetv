@@ -1,0 +1,57 @@
+---
+id: c7
+parent: cases
+title: Conversión de bosques en la reserva forestal Sipapo, estado Amazonas
+references:
+- referencekey: Berry et al. 1995
+  reference: >
+    Berry, P.E., B.K. Holst & K. Yatskievych (1995). Introduction. Pp: xv-xx. En: J.A. Steyermark, P.E. Berry & B.K. Holst (eds.). Flora of the Venezuelan Guayana. Vol. 1: Introduction. Missouri Botanical Garden: Portland, Oregon, USA.
+- referencekey: Bevilacqua et al. 2002
+  reference: >
+    Bevilacqua, M., L. Cárdenas, A.L. Flores, L. Hernández, B.E. Lares, R.A. Mansutti, M. Miranda, J. Ochoa G., M. Rodríguez & E. Selig (2002). Situación de los Bosques en Venezuela: La Región Guayana como caso de estudio. Instituto de Recursos Naturales (WRI), Observatorio Mundial de Bosques (GFW), ACOANA, UNEG, PROVITA, FUDENA, Fundación Polar: Caracas, Venezuela. 132 pp.
+- referencekey: Bevilacqua & Ochoa 2001
+  reference: >
+    Bevilacqua, M. & J. Ochoa (2001). Conservación de las últimas fronteras forestales de la Guayana venezolana: Propuesta de lineamientos para la cuenca río Caura. Interciencia 26: 491-497.
+- referencekey: Catalán 1989
+  reference: >
+    Catalán, A. (1989). Inventario de los recursos forestales de la Reserva Forestal del Sopapo. TFA. MARNR, Serie Informes Científicos. DGIIA. Caracas.
+- referencekey: Lentino & Esclasans 2005
+  reference: >
+    Lentino, M. & D. Esclasans (2005). Áreas Importantes para la Conservación de las Aves en Venezuela. Pp: 621-730. En: K. Boyla & A. Estrada (eds.). Áreas Importantes para la Conservación de las Aves en los Andes Tropicales: Sitios prioritarios para la conservación de la biodiversidad. BirdlLife International, Conservation International: Quito, Ecuador.
+- referencekey: Eastman 2003
+  reference: >
+    Eastman, J.R. (2003). Idrisi Kilimanjaro: Guide to GIS and Image Proccessing. Manual Version 14.00. Clark Labs, Clark University: Worcester, Massachussets, EE.UU.
+- referencekey: Esteves & Dumith 1998
+  reference: >
+    Esteves, J. & D.A. Dumith (1998). Diversidad Biológica en Amazonas: Bases para una estrategia de gestión. Fundación Polar: Caracas, Venezuela.
+- referencekey: Funk & Kelloff 2009
+  reference: >
+    Funk, V.A. & C. Kelloff (2009). Introduction. Bulletin of the Biological Society of Washington 17: 1-6.
+- referencekey: Huber 1995a
+  reference: >
+    Huber, O. (1995a). Geographical and Physucal Features. Pp: 1-61. En: P.E. Berry, B.K. Holst, K. Yatskievych (eds.). Flora of the Venezuelan Guayana: Introduction. Vol. 1. Missouri Botanical Garden: Portland, Oregon, USA.
+- referencekey: Huber 1995b
+  reference: >
+    Huber, O. (1995b). Vegetation. Pp: 97-160. En: P.E. Berry, B.K. Holst, K. Yatskievych (eds.). Flora of the Venezuelan Guayana: Introduction. Vol. 1. Missouri Botanical Garden: Portland, Oregon, USA.
+- referencekey: Huber 1995c
+  reference: >
+    Huber, O. (1995c). Guayana Venezolana. Mapa de Vegetación Escala 1:2.000.000. República de Venezuela. CVG Edelca, Missouri Botanical Garden: Caracas.
+- referencekey: Huber 1995d
+  reference: >
+    Huber, O. (1995d). Conservation of the Venezuelan Guayana. Pp: 193-218. En: P.E. Berry, B.K. Holst, K. Yatskievych (eds.). Flora of the Venezuelan Guayana: Introduction. Vol. 1. Missouri Botanical Garden: Portland, Oregon, USA.
+- referencekey: Jensen 1996
+  reference: >
+    Jensen, J.R. (1996). Introductory Digital Image Processing: A remote sensing perspective. K.C. Clarke (ed.). Series in Geographic Information Science. Prentice Hall: USA.
+- referencekey: MARNR 2000
+  reference: >
+    MARNR (2000). Primer informe de Venezuela sobre Diversidad Biológica. Oficina Nacional de Diversidad Biológica, Ministerio del Ambiente y de los Recursos Naturales: Caracas, Venezuela.
+- referencekey: Rodríguez et al. 2011
+  reference: >
+    Rodríguez, J.P., K.M. Rodríguez-Clark, J.E.M. Baillie, N. Ash, J. Benson, T. Boucher, C. Brown, N. Burgess, B. Collen, M. Jennings, D.A. Keith, E. Nicholson, C. Revenga, B. Reyers, M. Rouget, T. Smith, M. Spalding, A. Taber, M. Walpole, I. Zager & T. Zamin (2011). Establishing red list criteria for threatened ecosystems. Conservation Biology: 25: [doi: 10.1111/j.1523-1739.2010.1598].
+- referencekey: Rodríguez & Rojas-Suárez 2008
+  reference: >
+    Rodríguez, J.P. & F. Rojas-Suárez (eds.) (2008). Libro Rojo de la Fauna Venezolana. 3a. ed. Provita y Shell Venezuela, S.A.: Caracas, Venezuela. 364 pp.
+- referencekey: Sánchez-Azofeifa et al. 2001
+  reference: >
+    Sánchez-Azofeifa, G.A., R.C. Harris & D.L. Skole. (2001). Deforestation in Costa Rica: A quantitative analysis using remote sensing imagery. Biotropica 33: 378-384.
+---
