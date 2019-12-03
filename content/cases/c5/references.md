@@ -1,10 +1,8 @@
 ---
 id: c5
 parent: cases
-title: Conversión de los bosques del norte de la sierra de Perijá, estado Zulia
+title: Estado de conservación de los ecosistemas del ramal oriental de la cordillera de los Andes venezolanos
 references:
-
-
 - referencekey: Ataroff & Sarmiento 2003
   reference: >
     Ataroff, M. & L. Sarmiento (2003). Diversidad en los Andes de Venezuela. I. Mapa de Unidades Ecológicas del estado Mérida. CD-ROM, Ediciones Instituto de Ciencias Ambientales y Ecológicas (ICAE), Universidad de los Andes: Mérida, Venezuela.
