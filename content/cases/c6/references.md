@@ -1,0 +1,48 @@
+---
+id: c6
+parent: cases
+title: Conversión de los bosques del norte de la sierra de Perijá, estado Zulia
+references:
+- referencekey: Adams et al. 1993
+  reference: >
+    Adams, J.B., M.O. Smith & A.R. Gillispie (1993). Imaging spectroscopy: Interpretations based on spectral mixture analysis. Pp. 145-166. En: C.M. Pieters & P.A. Englert (eds.). Remote Geochemical Analysis: Elemental and Mineralogical Compositio Cambridge University Press: Cambridge, UK.
+- referencekey: Cochrane & Souza 1998
+  reference: >
+    Cochrane, M.A. & C.M. Souza (1998). Linear mixture model classification of burned forests in the Eastern Amazon. International Journal of Remote Sensing 19: 3433-3440.
+- referencekey: Duno de Stefano et al. 2007
+  reference: >
+    Duno de Stefano, R., G. Aymard & O. Huber (eds.) (2007). Catálogo anotado e ilustrado de la flora vascular de los Llanos de Venezuela. FUDENA, Fundación Empresas Polar, FIBV: Caracas. 715 pp.
+- referencekey: ENVI 2008
+  reference: >
+    ENVI (2008). ENVI Tutorial: Atmospherically Correcting Multispectral Data Using FLAASH. ITT Visual Information Solutions: EE.UU.
+- referencekey: Fajardo et al. 2005
+  reference: >
+    Fajardo, L., V. González, J.M. Nassar, P. Lacabana, C.A. Portillo, F. Carrasquel & J.P. Rodríguez (2005). Tropical dry forests of Venezuela: Characterization and current conservation status. Biotropica 37: 531-546.
+- referencekey: Friedl & Brodley 1997
+  reference: >
+    Friedl, M.A. & C.E. Brodley (1997). Decision tree classification of land cover from remotely sensed data. Remote Sensing of Environment 61: 399-409.
+- referencekey: Janssen & Middelkoop 1992
+  reference: >
+    Janssen, L.L.F. & H. Middelkoop (1992). Knowledge-Based Crop Classification of a Landsat Thematic Mapper Image. International Journal of Remote Sensing 13: 2827-2837.
+- referencekey: Janzen 1988
+  reference: >
+    Janzen, D. (1988). Tropical dry forests: The most endangered major tropical ecosystem. Pp. 130-137. En: E.O. Wilson (ed.). Biodiversity. National Academy Press: Washington, D.C.
+- referencekey: MARNR 1983
+  reference: >
+    MARNR (1983). Sistemas Ambientales Venezolanos. Proyecto VEN/79/001. Región de Los Llanos. Estados Guárico y Apure. Ministerio del Ambiente y de los Recursos Naturales Renovables (MARNR): Caracas.
+- referencekey: Portillo-Quintero & Sánchez-Asofeifa 2010
+  reference: >
+    Portillo-Quintero, C.A. & G.A. Sánchez-Asofeifa (2010). Extent and conservation of tropical dry forests in the Americas. Biological Conservation 143: 144-155.
+- referencekey: Rodríguez et al. 2011
+  reference: >
+    Rodríguez, J.P., K.M. Rodríguez-Clark, J.E.M. Baillie, N. Ash, J. Benson, T. Boucher, C. Brown, N. Burgess, B. Collen, M. Jennings, D.A. Keith, E. Nicholson, C. Revenga, B. Reyers, M. Rouget, T. Smith, M. Spalding, A. Taber, M. Walpole, I. Zager & T. Zamin (2011). Establishing red list criteria for threatened ecosystems. Conservation Biology 25: [doi: 10.1111/j.1523-1739.2010.1598].
+- referencekey: Rodríguez & Rojas-Suárez 2008
+  reference: >    
+    Rodríguez, J.P. & F. Rojas-Suárez (eds.) (2008). Libro Rojo de la Fauna Venezolana. 3a. ed. PROVITA y Shell Venezuela, S.A.: Caracas, Venezuela. 364 pp.
+- referencekey: Sanchez-Azofeifa et al. 2003
+  reference: >
+    Sanchez-Azofeifa, G.A., K.L. Castro, B. Rivard, M.R. Kalascka & R.C. Harriss (2003). Remote sensing research priorities in tropical dry forest environments. Biotropica 35: 134-142.
+- referencekey: Souza et al. 2005
+  reference: >
+    Souza, C.M., D.A. Roberts & M.A. Cochrane (2005). Combining spectral and spatial information to map canopy damage from selective logging and forest fires. Remote Sensing of Environment 98: 329-343.
+---
