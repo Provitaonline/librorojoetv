@@ -1,7 +1,7 @@
 ---
 id: c6
 parent: cases
-title: Conversión de los bosques del norte de la sierra de Perijá, estado Zulia
+title: Conversión de los bosques deciduos en los llanos centrales de Venezuela
 references:
 - referencekey: Adams et al. 1993
   reference: >
