@@ -30,27 +30,34 @@
                 <b>Estados:</b> {{$page.caseCard.states}}<br>
                 <b>Área aprox.:</b> {{$page.caseCard.area | number}} km<sup>2</sup><br>
               </div>
-              <table align="center" class="table is-size-6 is-size-7-mobile">
-                <thead>
-                  <tr>
-                    <th v-for="value in $page.caseCard.cardtablecolumns" style="border: none;">{{value}}</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr v-for="value in $page.caseCard.cardtablerows">
-                    <td v-for="item in value.split('|')">
-                      <div v-if="threatCategories[item]" style="text-align: center;">
-                        <b-tooltip :label="threatCategories[item].text" position="is-top" type="is-warning">
-                          <div class="iconInTable" style="display: inline-block">
-                            <img :src="threatCategories[item].img">
+              <div :class='$page.caseCard.enableTableScroll ? "table-container" : ""'>
+                <table align="center" class="table is-size-6 is-size-7-mobile">
+                  <thead>
+                    <tr>
+                      <th v-for="value in $page.caseCard.cardtablecolumns" style="border: none;">{{value}}</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr v-for="value in $page.caseCard.cardtablerows">
+                      <td v-for="item in value.split('|')">
+                        <div v-if="xtractedIcon(item)" style="display: flex;">
+                          <div :style='$page.caseCard.leftJustifyIcons ? "" : "margin: auto;"'>
+                            <b-tooltip :label="xtractedIcon(item).text" position="is-top" type="is-warning">
+                              <div class="iconInTable" style="display: inline-block">
+                                <img :src="xtractedIcon(item).img">
+                              </div>
+                            </b-tooltip>
                           </div>
-                        </b-tooltip>
-                      </div>
-                      <div v-else v-html="item"></div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+                          <div style="margin-top: auto; margin-bottom: auto;">
+                            <span>&nbsp;{{iconText(item)}}</span>
+                          </div>
+                        </div>
+                        <div v-else v-html="item"></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         </div>
@@ -86,6 +93,8 @@
       area
       cardtablecolumns
       cardtablerows
+      leftJustifyIcons
+      enableTableScroll
       case {
         references {
           referencekey
@@ -146,6 +155,7 @@
     data() {
       return {
         threatCategories: threatCategories,
+        categoryIcon: null,
         columns: [
           {
             field: 'referencekey',
@@ -168,6 +178,18 @@
     computed: {
       sortedReferences: function() {
         return this.$page.caseCard.case.references.sort((a, b) => a.referencekey.localeCompare(b.referencekey))
+      }
+    },
+    methods: {
+      xtractedIcon: function(item) {
+        let iconKey = item
+        item.replace(/\{.*?\}/, function (match) {
+          iconKey = match.replace(/[{\{\}}]/g, '')
+        })
+        return threatCategories[iconKey]
+      },
+      iconText: function(item) {
+        return threatCategories[item] ? '' : item.replace(/\{.*?\}/, '')
       }
     }
   }
