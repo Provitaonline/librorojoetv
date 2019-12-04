@@ -1,0 +1,24 @@
+---
+id: c9
+parent: cases
+title: Transformación de los ecosistemas terrestres anegables del tramo central del bajo Orinoco
+references:
+- referencekey: Castelblanco-Martínez et al. 2009
+  reference: >
+    Castelblanco-Martínez, D.N., A.L. Bermúdez-Romero, I.V. Gómez-Camelo, F.C.W. Rosas, F. Trujillo & E. Zerda-Ordoñez (2009). Seasonality of habitat use, mortality and reproduction of the Vulnerable Antillean manatee Trichechus manatus manatus in the Orinoco River, Colombia: implications for conservation. Oryx 43(2): 235-242.
+- referencekey: Colonnello 1990
+  reference: >
+    Colonnello, G. (1990). Venezuelan floodplain study on the Orinoco river. Forest Ecology and Management 33: 103-124.
+- referencekey: Colonnello et al. 1986
+  reference: >
+    Colonnello, G., S. Castroviejo & G. López (1986). Comunidades vegetales asociadas al río Orinoco en el Sur de Anzoátegui y Monagas. Memoria de la Sociedad de Ciencias Naturales La Salle 151: 127-165.
+- referencekey: Díaz & Rosales 2006
+  reference: >
+    Díaz, W. & J. Rosales (2006). Análisis florístico y descripción de la vegetación inundable de várzeas orinoquenses en el bajo río Orinoco, Venezuela. Acta Botánica Venezuelica 29(1): 39-68.
+- referencekey: Rivas et al. en prensa
+  reference: >
+    Rivas, B., A. Ferrer & G. Colonnello (en prensa). Distribución, uso de hábitat y status poblacional del manatí (Trichechus manatus) en el tramo central del Bajo Orinoco. Memoria de la Fundación La Salle de Ciencias Naturales.
+- referencekey: Rodríguez et al. 2011
+  reference: >
+    Rodríguez, J.P., K.M. Rodríguez-Clark, J.E.M. Baillie, N. Ash, J. Benson, T. Boucher, C. Brown, N. Burgess, B. Collen, M. Jennings, D.A. Keith, E. Nicholson, C. Revenga, B. Reyers, M. Rouget, T. Smith, M. Spalding, A. Taber, M. Walpole, I. Zager & T. Zamin (2011) Establishing IUCN Red List criteria for threatened ecosystems. Conservation Biology 25: [doi: 10.1111/j.1523-1739.2010.1598].
+---
