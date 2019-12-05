@@ -429,7 +429,6 @@
         threatCategories: threatCategories,
         criteria: criteria,
         showMore: false,
-        sidePanelOpen: false,
         currentSlug: null,
         pathParent: null
       }
@@ -437,7 +436,12 @@
     mounted () {
       this.pathParent = this.$route.path.replace(/\/$/, '').replace(/\/[^\/]+$/,'')
     },
+    beforeRouteUpdate (to, from, next) {
+      this.currentSlug = to.path.replace(/\/$/, '').match(/\/[^\/]+$/)[0].substring(1)
+      next()
+    },
     updated() {
+      console.log('hola')
       this.currentSlug = this.$route.path.replace(/\/$/, '').match(/\/[^\/]+$/)[0].substring(1)
     },
     filters: {
@@ -470,9 +474,6 @@
       numbernobrackets: function (a) {
         a = (a === null ? '' : a)
         return Number(a.replace(/[\<\>]/g, ''))
-      },
-      toggleSidePanelState: function() {
-        this.sidePanelOpen = !this.sidePanelOpen
       },
       slugify: function(t) {
         return slugify(t, {lower: true})
