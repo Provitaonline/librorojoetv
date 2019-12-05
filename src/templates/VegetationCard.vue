@@ -15,7 +15,7 @@
                 <p class="side-panel-item-title" v-if="isTitle(index)">
                   <b>{{item.plantformation}}</b>
                 </p>
-                <div @click="sidePanelItemClicked()" class="side-panel-item-box side-panel-item">
+                <div class="side-panel-item-box side-panel-item">
                   <span v-if="item.plantformation">&nbsp;&nbsp;&nbsp;</span>
                   <g-link v-if="getTargetSlug(item) != currentSlug" :to="pathParent + '/' + getTargetSlug(item)">{{item.name}}</g-link>
                   <span v-else><b><i>{{item.name}}</i></b></span>
@@ -23,12 +23,6 @@
               </div>
             </div>
           </div>
-          <!-- <div class="box">
-            <p @click="sidePanelItemClicked()" class='side-panel-item' v-for="item in $page.vcards.edges">
-              <g-link v-if="slugify(item.node.title) != currentSlug" :to="pathParent + '/' + slugify(item.node.title)">{{item.node.title}}</g-link>
-              <span v-else><b><i>{{item.node.title}}</i></b></span>
-            </p>
-          </div> -->
         </div>
       </aside>
       <div class="column">
@@ -579,11 +573,6 @@
       },
       slugify: function(t) {
         return slugify(t, {lower: true})
-      },
-      sidePanelItemClicked: function() {
-        if (window.screen.width < 500) {
-          this.sidePanelState = -1
-        }
       },
       getTargetSlug: function(t) {
         return t.cardPath ? slugify(t.cardPath, {lower: true}) : slugify(t.name, {lower: true})
