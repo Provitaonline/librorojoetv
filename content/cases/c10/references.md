@@ -1,0 +1,48 @@
+---
+id: c10
+parent: cases
+title: Cambios en la cobertura de manglares en tres sitios de la costa Caribe de Venezuela
+references:
+- referencekey: Dávalos 2010
+  reference: >
+    Dávalos, A.L. (2010). Distribución geográfica contemporánea de los manglares en la costa caribe de Venezuela. Trabajo de Grado, Maestría en Ecología, Instituto Venezolano de Investigaciones Científicas: Caracas, Venezuela. 142 pp.
+- referencekey: Eastman 2006
+  reference: >
+    Eastman, J. (2006). IDRISI Andes Guide to GIS and Image Processing. Clark University.
+- referencekey: ESRI 1999-2008
+  reference: >
+    ESRI (1999-2008). ArcGIS. En: Environmental Systems Research Institute (ESRI), Redlands: California, USA.
+- referencekey: MARNR 1986
+  reference: >
+    MARNR (1986). Conservación y manejo de los manglares costeros en Venezuela y Trinidad & Tobago (Síntesis). Ministerio del Ambiente y de los Recursos Naturales Renovables (MARNR) y Programa de las Naciones Unidas para el Medio Ambiente, Serie Informes Técnicos DG11A/IT/259: Caracas.
+- referencekey: MARNR 1991a
+  reference: >
+    MARNR (1991a). Conservación y manejo de los manglares de Venezuela y Trinidad-Tobago. FP: 11-05-81-01 (2038) Sector: Laguna de Cocinetas. Estado Zulia. Ministerio del Ambiente y de los Recursos Naturales Renovables (MARNR) y Programa de las Naciones Unidas para el Medio Ambiente, Serie de Informes Técnicos DGSICASV/IT/308: Caracas.
+- referencekey: MARNR 1991b
+  reference: >
+    MARNR (1991b). Conservación y manejo de los manglares de Venezuela y Trinidad-Tobago. FP: 11-05-81-01 (2038) Sector: Laguna de Tacarigua. Estado Miranda. Ministerio del Ambiente y de los Recursos Naturales Renovables (MARNR) y Programa de las de las Naciones Unidas para el Medio Ambiente, Serie Informes Técnicos DGSICASV/ IT/308: Caracas.
+- referencekey: MARNR 1991c
+  reference: >
+    MARNR (1991c). Conservación y manejo de los manglares de Venezuela y Trinidad-Tobago. FP: 11-05-81-01 (2038) Sector: Los Olivitos. Estado Zulia. Ministerio del Ambiente y de los Recursos Naturales Renovables (MARNR) y Programa de las Naciones Unidas para el Medio Ambiente, Serie Informes Técnicos DGSICASV/IT/308: Caracas.
+- referencekey: Miloslavich et al. 2003
+  reference: >
+    Miloslavich, P., E. Klein, E. Yerena & A. Martin (2003). Marine biodiversity in Venezuela: Status and perspectives. Gayana 67(2): 275-301.
+- referencekey: Odum & Campbell 1994
+  reference: >
+    Odum, H.T. & D. Campbell (1994). El valor ecológico y ambiental de los manglares: El método EMergetic. FARO: Revista para la Administración de Zonas Costeras en América Latina.
+- referencekey: Rodríguez et al. 2011
+  reference: >
+    Rodríguez, J.P., K.M. Rodríguez-Clark, J.E.M. Baillie, N. Ash, J. Benson, T. Boucher, C. Brown, N. Burgess, B. Collen, M. Jennings, D.A. Keith, E. Nicholson, C. Revenga, B. Reyers, M. Rouget, T. Smith, M. Spalding, A. Taber, M. Walpole, I. Zager & T. Zamin (2011). Establishing IUCN Red List criteria for threatened ecosystems. Conservation Biology 25: [doi: 10.1111/j.1523 1739.2010.1598].
+- referencekey: Shashi & Hui 2008
+  reference: >
+    Shashi, S. & X. Hui (2008). Encyclopedia of GIS. Springer, New York.
+- referencekey: University of Maryland 2010
+  reference: >
+    University of Maryland (2010). Global Land Cover Facility: Landsat Imagery, College Park: Maryland.
+- referencekey: Valiela et al. 2001
+  reference: >
+    Valiela, I., J.L. Bowen & J.K. York (2001). Mangrove forests: One of the world’s threatened major tropical environments. BioScience 51(10): 807-815.
+- referencekey: Venezuela 1974
+  reference: >
+    Venezuela (1974). Decreto de Creación Parque Nacional Laguna de Tacarigua. Gaceta Oficial de la República de Venezuela N° 30.337, Caracas, 22 de febrero de 1974.
+---
