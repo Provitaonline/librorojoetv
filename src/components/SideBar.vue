@@ -6,9 +6,8 @@
           <a title="Cerrar panel" style="float: right; padding-right: 8px;" v-on:click="toggleSidePanelState()">
             <font-awesome size="sm" :icon="['fas', 'times']"/>
           </a>
-          <p class="is-size-4 has-text-weight-bold has-text-centered" style="padding: 20px;">Formaciones vegetales</p>
+          <slot name="title"></slot>
         </div>
-
         <slot name="sidebar"></slot>
       </div>
     </aside>

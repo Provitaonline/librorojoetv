@@ -1,7 +1,9 @@
 <template>
   <Layout>
     <SideBar>
-
+      <template v-slot:title>
+        <p class="is-size-4 has-text-weight-bold has-text-centered" style="padding: 20px;">Formaciones vegetales</p>
+      </template>
       <template v-slot:sidebar>
         <div class="box">
           <div v-for="item, index in $page.vegetationCardsIndex.legendItems">
@@ -18,7 +20,6 @@
           </div>
         </div>
       </template>
-
       <template v-slot:content>
         <section class="hero is-small is-white">
           <div class="hero-body">
@@ -229,7 +230,6 @@
           </div>
         </section>
       </template>
-
     </SideBar>
   </Layout>
 </template>
@@ -346,30 +346,6 @@
     border-collapse: separate;
   }
 
-  /*.risktable tbody > tr > td:nth-last-child(2), .risktable thead > tr > th:nth-last-child(2) {
-    border-right: solid $primary 2px;
-  }
-
-  .risktable tbody > tr > td:first-child, .risktable thead > tr > th:first-child {
-    border-left: solid $primary 2px;
-  }
-
-  .risktable tbody > tr:last-child > td {
-    border-bottom: solid $primary 2px;
-  }
-
-  .risktable thead > tr:first-child > th {
-    border-top: solid $primary 2px;
-  }
-
-  .risktable tbody > tr:last-child > td:last-child {
-    border-bottom: 0;
-  }
-
-  .risktable thead > tr:first-child > th:last-child {
-    border-top: 0;
-  } */
-
   .intervention-legend-item {
     height: 12px;
     width: 14px;
@@ -408,10 +384,6 @@
 
   ::v-deep .left-label, ::v-deep .right-label {
     font-weight: bold;
-  }
-
-  .nav-side {
-    background-color: white;
   }
 
   .page-wrapper {
