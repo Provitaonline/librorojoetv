@@ -32,16 +32,16 @@
         </div>
       </aside>
       <div class="column">
-        <div style="position: sticky; padding-top: 10px; top: 10px;">
-          <a v-if="!sidePanelOpen" style="color: #4A4A4A;" v-on:click="toggleSidePanelState()" role="button">
+        <div class="side-panel-open-button">
+          <a v-if="!sidePanelOpen" v-on:click="toggleSidePanelState()" role="button">
             <!-- <OpenSidePanelIcon class="open-side-panel-icon" ></OpenSidePanelIcon> -->
             <!-- <font-awesome :icon="['fas', 'ellipsis-h']"/> -->
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 278.571 275.714" class="open-side-panel-icon">
-              <g fill="#fff" stroke="#0a0a0a">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 278.571 275.714" class="open-side-panel-icon">
+              <g>
                 <title>Clic para abrir panel de fichas</title>
-                <path  stroke-width="27.857" stroke-linecap="round" stroke-linejoin="round" d="M10 10h258.57v255.714H10z"></path>
-                <path d="M77.143 10.714L78.57 265" fill-rule="evenodd" stroke-width="27.857"></path>
-                <path d="M582.857 733.79L210.906 945.68l2.474-428.064z" transform="matrix(.33171 0 0 .39595 48.089 -151.84)" stroke-width="76.866" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path  stroke-width="10" stroke-linecap="round" stroke-linejoin="round" d="M10 10h258.57v255.714H10z"></path>
+                <path d="M77.143 10.714L78.57 265" fill-rule="evenodd" stroke-width="10"></path>
+                <path d="M582.857 733.79L210.906 945.68l2.474-428.064z" fill-opacity="0" transform="matrix(.33171 0 0 .39595 48.089 -151.84)" stroke-width="50" stroke-linecap="round" stroke-linejoin="round"></path>
               </g>
             </svg>
           </a>
@@ -459,9 +459,22 @@
 
   .side-panel-content {
     height: 0;
+    transition: height .3s;
     overflow: auto;
     position: sticky;
     top: 0;
+  }
+
+  .side-panel-open-button {
+    position: absolute;
+    padding-top: 10px;
+  }
+
+  @media only screen and (min-width: 769px) {
+    .side-panel-open-button {
+      position: sticky;
+      top: 10px;
+    }
   }
 
   .side-panel-content.isopen {
@@ -481,7 +494,9 @@
   }
 
   .open-side-panel-icon>g {
-    stroke: #4a4a4a;
+    stroke: #5f5f5f;
+    fill: #ffffff;
+    fill-opacity: 0.5;
   }
 
   .open-side-panel-icon>g:hover {
