@@ -4,7 +4,8 @@
       <div class="side-panel-content" v-bind:class="{ isopen: sidePanelOpen }">
         <div class="side-panel-title">
           <a title="Cerrar panel" style="float: right; padding-right: 8px;" v-on:click="toggleSidePanelState()">
-            <font-awesome size="sm" :icon="['fas', 'times']"/>
+            <span class="close-side-panel-icon is-size-5">✕</span>
+            <!-- <font-awesome size="sm" :icon="['fas', 'times']"/> -->
           </a>
           <slot name="title"></slot>
         </div>
@@ -79,6 +80,14 @@
 
   .open-side-panel-icon>g:hover {
     stroke: $primary;
+  }
+
+  .close-side-panel-icon {
+    color: #5f5f5f;
+  }
+
+  .close-side-panel-icon:hover {
+    color: $primary;
   }
 </style>
 
