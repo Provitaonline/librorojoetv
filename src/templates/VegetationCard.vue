@@ -435,14 +435,11 @@
     },
     mounted () {
       this.pathParent = this.$route.path.replace(/\/$/, '').replace(/\/[^\/]+$/,'')
+      this.currentSlug = this.$route.path.replace(/\/$/, '').match(/\/[^\/]+$/)[0].substring(1)
     },
     beforeRouteUpdate (to, from, next) {
       this.currentSlug = to.path.replace(/\/$/, '').match(/\/[^\/]+$/)[0].substring(1)
       next()
-    },
-    updated() {
-      console.log('hola')
-      this.currentSlug = this.$route.path.replace(/\/$/, '').match(/\/[^\/]+$/)[0].substring(1)
     },
     filters: {
       decimal: function(value, decimals) {
