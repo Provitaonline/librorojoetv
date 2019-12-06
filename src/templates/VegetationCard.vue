@@ -1,46 +1,26 @@
 <template>
   <Layout>
-    <div class="columns is-gapless">
-      <aside class="side-panel column is-narrow" v-bind:class="{ isopen: sidePanelOpen }">
-        <div class="side-panel-content" v-bind:class="{ isopen: sidePanelOpen }">
-          <div class="side-panel-title">
-            <a title="Cerrar panel" style="float: right; padding-right: 8px;" v-on:click="toggleSidePanelState()">
-              <font-awesome size="sm" :icon="['fas', 'times']"/>
-            </a>
-            <p class="is-size-4 has-text-weight-bold has-text-centered" style="padding: 20px;">Formaciones vegetales</p>
-          </div>
-          <div class="box">
-            <div v-for="item, index in $page.vegetationCardsIndex.legendItems">
-              <div>
-                <p class="side-panel-item-title" v-if="isTitle(index)">
-                  <b>{{item.plantformation}}</b>
-                </p>
-                <div class="side-panel-item-box side-panel-item">
-                  <span v-if="item.plantformation">&nbsp;&nbsp;&nbsp;</span>
-                  <g-link v-if="getTargetSlug(item) != currentSlug" :to="pathParent + '/' + getTargetSlug(item)">{{item.name}}</g-link>
-                  <span v-else><b><i>{{item.name}}</i></b></span>
-                </div>
+    <SideBar>
+      <template v-slot:title>
+        <p class="is-size-4 has-text-weight-bold has-text-centered" style="padding: 20px;">Formaciones vegetales</p>
+      </template>
+      <template v-slot:sidebar>
+        <div class="box">
+          <div v-for="item, index in $page.vegetationCardsIndex.legendItems">
+            <div>
+              <p class="side-panel-item-title" v-if="isTitle(index)">
+                <b>{{item.plantformation}}</b>
+              </p>
+              <div class="side-panel-item-box side-panel-item">
+                <span v-if="item.plantformation">&nbsp;&nbsp;&nbsp;</span>
+                <g-link v-if="getTargetSlug(item) != currentSlug" :to="pathParent + '/' + getTargetSlug(item)">{{item.name}}</g-link>
+                <span v-else><b><i>{{item.name}}</i></b></span>
               </div>
             </div>
           </div>
         </div>
-      </aside>
-      <div class="column">
-        <div class="side-panel-open-button">
-          <a v-if="!sidePanelOpen" v-on:click="toggleSidePanelState()" role="button">
-            <!-- <OpenSidePanelIcon class="open-side-panel-icon" ></OpenSidePanelIcon> -->
-            <!-- <font-awesome :icon="['fas', 'ellipsis-h']"/> -->
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 278.571 275.714" class="open-side-panel-icon">
-              <g>
-                <title>Clic para abrir panel de fichas</title>
-                <path  stroke-width="10" stroke-linecap="round" stroke-linejoin="round" d="M10 10h258.57v255.714H10z"></path>
-                <path d="M77.143 10.714L78.57 265" fill-rule="evenodd" stroke-width="10"></path>
-                <path d="M582.857 733.79L210.906 945.68l2.474-428.064z" fill-opacity="0" transform="matrix(.33171 0 0 .39595 48.089 -151.84)" stroke-width="50" stroke-linecap="round" stroke-linejoin="round"></path>
-              </g>
-            </svg>
-          </a>
-        </div>
-
+      </template>
+      <template v-slot:content>
         <section class="hero is-small is-white">
           <div class="hero-body">
             <div class="container is-fullhd has-text-centered">
@@ -249,8 +229,8 @@
             </div>
           </div>
         </section>
-      </div>
-    </div>
+      </template>
+    </SideBar>
   </Layout>
 </template>
 
@@ -366,30 +346,6 @@
     border-collapse: separate;
   }
 
-  /*.risktable tbody > tr > td:nth-last-child(2), .risktable thead > tr > th:nth-last-child(2) {
-    border-right: solid $primary 2px;
-  }
-
-  .risktable tbody > tr > td:first-child, .risktable thead > tr > th:first-child {
-    border-left: solid $primary 2px;
-  }
-
-  .risktable tbody > tr:last-child > td {
-    border-bottom: solid $primary 2px;
-  }
-
-  .risktable thead > tr:first-child > th {
-    border-top: solid $primary 2px;
-  }
-
-  .risktable tbody > tr:last-child > td:last-child {
-    border-bottom: 0;
-  }
-
-  .risktable thead > tr:first-child > th:last-child {
-    border-top: 0;
-  } */
-
   .intervention-legend-item {
     height: 12px;
     width: 14px;
@@ -430,53 +386,10 @@
     font-weight: bold;
   }
 
-  .nav-side {
-    background-color: white;
-  }
-
   .page-wrapper {
     display: flex;
     /*padding-left: 0px;
     padding-right: 0px;*/
-  }
-
-  .side-panel {
-    min-width: 20rem;
-    margin-left: -20rem !important;
-    transition: margin-left .3s;
-    border-right: 1px solid #e0e0e0;
-  }
-
-  .side-panel.isopen {
-    margin-left: 0 !important;
-  }
-
-  .side-panel-content {
-    height: 0;
-    transition: height .3s;
-    overflow: auto;
-    position: sticky;
-    top: 0;
-  }
-
-  .side-panel-open-button {
-    position: absolute;
-    padding-top: 10px;
-  }
-
-  @media only screen and (min-width: 769px) {
-    .side-panel-open-button {
-      position: sticky;
-      top: 10px;
-    }
-  }
-
-  .side-panel-content.isopen {
-    height: 100vh;
-  }
-
-  .side-panel-title {
-    background-color: #f8e7e8;
   }
 
   .side-panel-item, .side-panel-item-title {
@@ -485,16 +398,6 @@
 
   .side-panel-item:hover {
     background-color: #fafafa;
-  }
-
-  .open-side-panel-icon>g {
-    stroke: #5f5f5f;
-    fill: #ffffff;
-    fill-opacity: 0.5;
-  }
-
-  .open-side-panel-icon>g:hover {
-    stroke: $primary;
   }
 
   .side-panel-item-box {
@@ -512,6 +415,7 @@
 
   import {threatCategories, criteria} from '~/assets/js/siteConfig.js'
   import TextWithRefsAndPhotos from '~/components/TextWithRefsAndPhotos.vue'
+  import SideBar from '~/components/SideBar.vue'
   import slugify from 'slugify'
 
   slugify.extend({'/': '-'})
@@ -525,16 +429,17 @@
         threatCategories: threatCategories,
         criteria: criteria,
         showMore: false,
-        sidePanelOpen: false,
         currentSlug: null,
         pathParent: null
       }
     },
     mounted () {
       this.pathParent = this.$route.path.replace(/\/$/, '').replace(/\/[^\/]+$/,'')
-    },
-    updated() {
       this.currentSlug = this.$route.path.replace(/\/$/, '').match(/\/[^\/]+$/)[0].substring(1)
+    },
+    beforeRouteUpdate (to, from, next) {
+      this.currentSlug = to.path.replace(/\/$/, '').match(/\/[^\/]+$/)[0].substring(1)
+      next()
     },
     filters: {
       decimal: function(value, decimals) {
@@ -550,9 +455,8 @@
     },
     components: {
       VueCompareImage: () => import ('vue-compare-image').then(m => m),
-      //vuIcon
-      TextWithRefsAndPhotos
-      //OpenSidePanelIcon
+      TextWithRefsAndPhotos,
+      SideBar
     },
     methods: {
       redOrGreen: function(value) {
@@ -567,9 +471,6 @@
       numbernobrackets: function (a) {
         a = (a === null ? '' : a)
         return Number(a.replace(/[\<\>]/g, ''))
-      },
-      toggleSidePanelState: function() {
-        this.sidePanelOpen = !this.sidePanelOpen
       },
       slugify: function(t) {
         return slugify(t, {lower: true})
