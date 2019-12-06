@@ -2,17 +2,17 @@
   <Layout>
     <SideBar>
       <template v-slot:title>
-        <p class="is-size-4 has-text-weight-bold has-text-centered" style="padding: 20px;">Regiones</p>
+        <p class="is-size-4 has-text-weight-bold has-text-centered" style="padding: 20px;">Unidades de paisaje</p>
       </template>
       <template v-slot:sidebar>
         <div class="box">
           <div v-for="item, index in $page.unitCardsIndex.legendItems">
-            <div v-if="item.isHeading">
+            <div>
               <div class="side-panel-item-box side-panel-item">
+                <span>{{'&nbsp;&nbsp;'.repeat(item.name.length-1)}}</span>
                 <!-- <g-link v-if="getTargetSlug(item) != currentSlug" :to="pathParent + '/' + getTargetSlug(item)">{{item.name}}</g-link> -->
-                <g-link v-if="item.cardPath != $route.path.replace(/\/$/, '').match(/\/[^\/]+$/)[0].substring(1)" :to="'/units/' + item.cardPath">{{item.label}}</g-link>
-                <span v-else><b><i>{{item.label}}</i></b></span>
-                <br><br>
+                <g-link :to="'/units/' + item.cardPath" :class="(isCurrentItem(item)) ? '' : 'current-item'">{{item.label}}</g-link>
+                <br>
               </div>
             </div>
           </div>
@@ -92,6 +92,11 @@
 
 <style lang="scss" scoped>
 
+  .current-item {
+    font-style: italic;
+    font-weight: bold;
+  }
+
 </style>
 
 <script>
@@ -105,6 +110,11 @@
     components: {
       TextWithRefsAndPhotos,
       SideBar
+    },
+    methods: {
+      isCurrentItem: function(item) {
+        return item.cardPath != this.$route.path.replace(/\/$/, '').match(/\/[^\/]+$/)[0].substring(1) + this.$route.hash
+      }
     }
   }
 
