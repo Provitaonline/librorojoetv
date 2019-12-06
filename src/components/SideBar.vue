@@ -5,7 +5,6 @@
         <div class="side-panel-title">
           <a title="Cerrar panel" style="float: right; padding-right: 8px;" v-on:click="toggleSidePanelState()">
             <span class="close-side-panel-icon is-size-5">✕</span>
-            <!-- <font-awesome size="sm" :icon="['fas', 'times']"/> -->
           </a>
           <slot name="title"></slot>
         </div>
@@ -38,6 +37,13 @@
     margin-left: -20rem !important;
     transition: margin-left .3s;
     border-right: 1px solid #e0e0e0;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .side-panel {
+      border-right: 0;
+      border-bottom: 1px solid #e0e0e0;
+    }
   }
 
   .side-panel.isopen {
