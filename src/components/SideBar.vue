@@ -33,14 +33,20 @@
   @import "~/assets/style/_variables";
 
   .side-panel {
-    min-width: 20rem;
-    margin-left: -20rem !important;
-    transition: margin-left .3s;
     border-right: 1px solid #e0e0e0;
+  }
+
+  @media only screen and (min-width: 769px) {
+    .side-panel {
+      width: 20rem;
+      margin-left: -20rem !important;
+      transition: margin-left .3s;
+    }
   }
 
   @media only screen and (max-width: 768px) {
     .side-panel {
+      min-width: 20rem;
       border-right: 0;
       border-bottom: 1px solid #e0e0e0;
     }
@@ -74,8 +80,16 @@
     background-color: #f8e7e8;
   }
 
-  .side-panel-content.isopen {
-    height: 100vh;
+  @media only screen and (min-width: 769px) {
+    .side-panel-content.isopen {
+      height: 100vh;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .side-panel-content.isopen {
+      height: 100%;
+    }
   }
 
   .open-side-panel-icon>g {
