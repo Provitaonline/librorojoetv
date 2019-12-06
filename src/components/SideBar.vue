@@ -84,6 +84,7 @@
 
 <script>
   export default {
+    name: 'SideBar',
     data() {
       return {
         sidePanelOpen: false
