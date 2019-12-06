@@ -74,3 +74,16 @@ h2 {
   margin-left: -32px;
   margin-right: -32px;
 }
+
+.side-panel-item, .side-panel-item-title {
+  padding: 8px;
+}
+
+.side-panel-item:hover {
+  background-color: #fafafa;
+}
+
+.side-panel-item-box {
+  display: flex;
+  box-sizing: border-box;
+}

@@ -91,18 +91,7 @@
 </page-query>
 
 <style lang="scss" scoped>
-  .side-panel-item, .side-panel-item-title {
-    padding: 8px;
-  }
 
-  .side-panel-item:hover {
-    background-color: #fafafa;
-  }
-
-  .side-panel-item-box {
-    display: flex;
-    box-sizing: border-box;
-  }
 </style>
 
 <script>

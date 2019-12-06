@@ -386,25 +386,6 @@
     font-weight: bold;
   }
 
-  .page-wrapper {
-    display: flex;
-    /*padding-left: 0px;
-    padding-right: 0px;*/
-  }
-
-  .side-panel-item, .side-panel-item-title {
-    padding: 8px;
-  }
-
-  .side-panel-item:hover {
-    background-color: #fafafa;
-  }
-
-  .side-panel-item-box {
-    display: flex;
-    box-sizing: border-box;
-  }
-
   ::v-deep .criteria-box>.dropdown-menu {
     min-width: 30em;
   }

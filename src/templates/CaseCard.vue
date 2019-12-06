@@ -1,6 +1,5 @@
 <template>
   <Layout>
-
     <SideBar>
       <template v-slot:title>
         <p class="is-size-4 has-text-weight-bold has-text-centered" style="padding: 20px;">Casos de estudio</p>
@@ -17,7 +16,6 @@
           </div>
         </div>
       </template>
-
       <template v-slot:content>
         <section class="hero is-small is-white">
           <div class="hero-body">
@@ -95,13 +93,7 @@
             </div>
           </div>
         </section>
-
-
-
-
       </template>
-
-
     </SideBar>
   </Layout>
 </template>
@@ -147,19 +139,6 @@
 
 <style lang="scss" scoped>
   @import "~/assets/style/_variables";
-
-  .side-panel-item, .side-panel-item-title {
-    padding: 8px;
-  }
-
-  .side-panel-item:hover {
-    background-color: #fafafa;
-  }
-
-  .side-panel-item-box {
-    display: flex;
-    box-sizing: border-box;
-  }
 
   .iconInTable {
     width: 30px;
