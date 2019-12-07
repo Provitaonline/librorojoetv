@@ -13,8 +13,8 @@ cardtablecolumns:
   - "Categoría"
   - "Criterio"
 cardtablerows:
-  - "Bosques siempreverdes<sup>1</sup>|cr|A2"
-  - "Bosques siempreverdes<sup>2</sup>|cr|A2"
+  - "Bosques siempreverdes<sup>(1)</sup>|cr|A2"
+  - "Bosques siempreverdes<sup>(2)</sup>|cr|A2"
 ---
 # Contexto
 

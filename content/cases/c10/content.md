@@ -8,15 +8,15 @@ landscapeunits: "Bosques de manglar (<a href='/units/a'>A2</a>)"
 locality: "Costa Central, costa Oriental del lago, península de La Guajira"
 states: "Miranda, Zulia"
 area: 1746
-areatext: 1113.126 ha (laguna de Tacarigua<sup>1</sup>), 89.165 ha (ciénaga de Los Olivitos<sup>2</sup>) y 2.433 ha (laguna de Cocinetas<sup>3</sup>)
+areatext: 113.126 ha (laguna de Tacarigua<sup>(1)</sup>), 89.165 ha (ciénaga de Los Olivitos<sup>(2)</sup>) y 2.433 ha (laguna de Cocinetas<sup>(3)</sup>)
 cardtablecolumns:
   - "Formación Vegetal"
   - "Categoría"
   - "Criterio"
 cardtablerows:
-  - "Bosques de manglar<sup>1</sup>|lc|--"
-  - "Bosques de manglar<sup>2</sup>|en|A2"
-  - "Bosques de manglar<sup>3</sup>|en|A2"
+  - "Bosques de manglar<sup>(1)</sup>|lc|--"
+  - "Bosques de manglar<sup>(2)</sup>|en|A2"
+  - "Bosques de manglar<sup>(3)</sup>|en|A2"
 ---
 # Contexto
 
