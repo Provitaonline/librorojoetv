@@ -187,9 +187,13 @@
 
   ::v-deep .transparency-control {
     background: rgba(255, 255, 255, 1);
-    padding: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
     border-radius: 4px;
     box-shadow: 0 1px 5px rgba(0,0,0,0.65);
+    margin-bottom: 0px;
   }
 
   ::v-deep .b-slider {
@@ -201,7 +205,7 @@
     color: black;
     font-size: 0.8rem;
     font-weight: 400;
-    margin-bottom: 0;
+    margin-bottom: 0px;
   }
 
 </style>
