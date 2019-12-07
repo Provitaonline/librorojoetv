@@ -29,7 +29,7 @@
             <div class="media-content">
               <div class="content">
                 <p>
-                  <img style="margin-bottom: -0.5rem;" :src="$options.threatCategoryIcons[item.node.category]" height="30" width="30">&nbsp;</img>
+                  <img style="margin-bottom: -0.5rem;" :src="$options.threatCategories[item.node.category].img" height="30" width="30">&nbsp;</img>
                   <g-link :to="'/vcards/' + makeLink(item.node.title)"><strong v-html="item.node.title"></strong> ({{$options.threatCategories[item.node.category].text}}) </g-link>
                   <br>
                   <span v-if="item.node.areain2010">
@@ -133,14 +133,8 @@
 
   slugify.extend({'/': '-'})
 
-  let threatCategoryIcons = {}
-  for (let key in threatCategories) {
-    threatCategoryIcons[key] = require('~/assets/svgs/' + key + '-icon.svg')
-  }
-
   export default {
     threatCategories: threatCategories,
-    threatCategoryIcons: threatCategoryIcons,
     data() {
       let self = this
       return {

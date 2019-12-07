@@ -98,14 +98,8 @@
 
   slugify.extend({'/': '-'})
 
-  let threatCategoryIcons = {}
-  for (let key in threatCategories) {
-    threatCategoryIcons[key] = require('~/assets/svgs/' + key + '-icon.svg')
-  }
-
   export default {
     threatCategories: threatCategories,
-    threatCategoryIcons: threatCategoryIcons,
     data() {
       let self = this
       return {
