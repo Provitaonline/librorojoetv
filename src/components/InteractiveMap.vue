@@ -296,6 +296,14 @@
     geoJsonLayerOptions.onEachFeature = function onEachFeature(feature, layer) {
       let link = '<a href=' + makeLink(feature.properties[geoJsonResource.legendTitleProperty]) + '>' + makeMapPopupLabel(feature.properties[geoJsonResource.legendTitleProperty], geoJsonResource.isLegendLookUp) + '</a>'
       layer.bindPopup(link)
+      if (geoJsonResource.showOutline) {
+        layer.on('mouseover', function(e) {
+          layer.setStyle({weight: 3, color: '#000', dashArray: ''})
+        })
+        layer.on('mouseout', function(e) {
+          layer.setStyle({weight: 2, color: '#444444', dashArray: '6,4'})
+        })
+      }
     }
 
     return geoJsonLayerOptions
