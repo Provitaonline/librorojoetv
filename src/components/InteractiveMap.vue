@@ -16,6 +16,11 @@
           style="height: 100%"
           @update:zoom="zoomUpdated"
         >
+          <l-control position="topleft" >
+            <b-field class="transparency-control" label="Ajuste de transparencia">
+              <b-slider v-model="layerTransparency" :custom-formatter="val => val + '%'" type="is-light" rounded></b-slider>
+            </b-field>
+          </l-control>
           <l-control-zoom zoomInTitle="Acercarse" zoomOutTitle="Alejarse" position="topleft"></l-control-zoom>
           <l-control class="leaflet-control leaflet-bar" position="topleft" >
             <a @click="resetView" href="#" title="Vista inicial"><font-awesome size="lg" :icon="['fas', 'sync-alt']"/></a>
@@ -49,12 +54,6 @@
 
           <l-control position="topright" >
             <div class="map-info is-size-4 is-size-7-mobile"><div>{{mapLabel}}</div></div>
-          </l-control>
-
-          <l-control position="bottomleft" >
-            <b-field class="transparency-control" label="Ajuste de transparencia">
-              <b-slider v-model="layerTransparency" :custom-formatter="val => val + '%'" type="is-light" rounded></b-slider>
-            </b-field>
           </l-control>
 
           <b-loading :is-full-page="false" :active.sync="isLoading"></b-loading>
@@ -186,9 +185,23 @@
     }
   }
 
+  ::v-deep .transparency-control {
+    background: rgba(255, 255, 255, 1);
+    padding: 4px;
+    border-radius: 4px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.65);
+  }
+
+  ::v-deep .b-slider {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
   ::v-deep .transparency-control label {
-    font-size: 0.9rem;
+    color: black;
+    font-size: 0.8rem;
     font-weight: 400;
+    margin-bottom: 0;
   }
 
 </style>
