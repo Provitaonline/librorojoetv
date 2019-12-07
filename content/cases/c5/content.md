@@ -29,9 +29,9 @@ En esta región se desarrollan importantes actividades económicas, entre las qu
 
 # Métodos
 
-El presente análisis se realizó a dos escalas espaciales y temporales diferentes. En una primera aproximación, se examinaron los cambios históricos de vegetación en el ramal oriental de la cordillera de los Andes venezolanos. Utilizando el Mapa de Ecosistemas de los Andes del Norte y Centro elaborado por Josse y colaboradores, se extrajo el subconjunto de datos referidos a Venezuela para cuantificar la pérdida total de vegetación no intervenida (Josse *et al.* 2009b). El análisis se restringió a los municipios donde al menos 50% de la superficie estuviese incluida en el mapa citado. Los 57 municipios seleccionados ocuparon 28.604 km2 ubicados en los estados Barinas (1), Lara (3), Mérida (19), Portuguesa (3), Táchira (22) y Trujillo (9). Esta primera aproximación histórica se fundamenta en que los cambios de cobertura de vegetación observados corresponden a una escala temporal de cientos de años, lo que permitiría la aplicación del criterio B1 del sistema de clasificación para estimar el riesgo de eliminación de ecosistemas (Rodríguez *et al.* 2011; vid. supra, cap. II).
+El presente análisis se realizó a dos escalas espaciales y temporales diferentes. En una primera aproximación, se examinaron los cambios históricos de vegetación en el ramal oriental de la cordillera de los Andes venezolanos. Utilizando el Mapa de Ecosistemas de los Andes del Norte y Centro elaborado por Josse y colaboradores, se extrajo el subconjunto de datos referidos a Venezuela para cuantificar la pérdida total de vegetación no intervenida (Josse *et al.* 2009b). El análisis se restringió a los municipios donde al menos 50% de la superficie estuviese incluida en el mapa citado. Los 57 municipios seleccionados ocuparon 28.604 km<sup>2</sup> ubicados en los estados Barinas (1), Lara (3), Mérida (19), Portuguesa (3), Táchira (22) y Trujillo (9). Esta primera aproximación histórica se fundamenta en que los cambios de cobertura de vegetación observados corresponden a una escala temporal de cientos de años, lo que permitiría la aplicación del criterio B1 del sistema de clasificación para estimar el riesgo de eliminación de ecosistemas (Rodríguez *et al.* 2011; vid. supra, cap. II).
 
-En una segunda aproximación se emplearon imágenes de satélite para examinar los cambios de cobertura recientes de la vegetación en una ventana restringida a la cordillera de Mérida, que representa 41% del estado Trujillo, 24% de Mérida y 15% de Barinas (Figura 1). Si bien el estado Barinas corresponde estrictamente a la región los Llanos, este segmento se incorpora al análisis debido a su localización en las imágenes de satélite empleadas y en virtud del valor que representan los ecosistemas del piedemonte barinés. Este segundo análisis evaluó una región de aproximadamente 12.864 km2.
+En una segunda aproximación se emplearon imágenes de satélite para examinar los cambios de cobertura recientes de la vegetación en una ventana restringida a la cordillera de Mérida, que representa 41% del estado Trujillo, 24% de Mérida y 15% de Barinas (Figura 1). Si bien el estado Barinas corresponde estrictamente a la región los Llanos, este segmento se incorpora al análisis debido a su localización en las imágenes de satélite empleadas y en virtud del valor que representan los ecosistemas del piedemonte barinés. Este segundo análisis evaluó una región de aproximadamente 12.864 km<sup>2</sup>.
 
 Las imágenes satelitales Landsat para la cordillera de los Andes fueron obtenidas del servicio Earth Science Data Interface (ESDI) perteneciente al proyecto Global Land Cover Facility (GLCF) de la Universidad de Maryland. Para la selección de imágenes se empleó tres criterios: 1) cobertura de nubes baja o nula, 2) un mínimo de dos imágenes con al menos diez años de separación entre sí, y 3) imágenes tomadas en fechas similares. Sólo dos imágenes cumplieron con estos requisitos: una Landsat TM del 20 de enero de 1988 y otra Landsat ETM+ del 31 de enero de 2001 (GLCF 2010).
 
@@ -153,8 +153,8 @@ La tabla 2 resume la información de la extensión ocupada por cada uno de los t
       </tr>
       <tr>
         <th>Cobertura</th>
-        <th align="center">1988 (km2)</th>
-        <th align="center">2001 (km2)</th>
+        <th align="center">1988 (km<sup>2</sup>)</th>
+        <th align="center">2001 (km<sup>2</sup>)</th>
         <th align="center">Observado</th>
         <th align="center">Proyectado</th>
         <th align="center">Categoría</th>

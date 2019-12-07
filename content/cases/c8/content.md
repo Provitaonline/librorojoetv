@@ -32,7 +32,7 @@ En cuanto a las principales actividades antrópicas, en el estado Falcón no se 
 
 # Métodos
 
-Para definir el estatus de riesgo de eliminación de los ecosistemas del área seleccionada, se cubrió aproximadamente 10.000 km2 de la zona centro-norte, lo que corresponde a 40% de la superficie total del estado Falcón (Figura 1). La península de Paraguaná no fue incluida en el área de estudio debido a la gran nubosidad en las imágenes de satélite disponibles, lo que limitaba notablemente el área efectiva de análisis dentro de la península.
+Para definir el estatus de riesgo de eliminación de los ecosistemas del área seleccionada, se cubrió aproximadamente 10.000 km<sup>2</sup> de la zona centro-norte, lo que corresponde a 40% de la superficie total del estado Falcón (Figura 1). La península de Paraguaná no fue incluida en el área de estudio debido a la gran nubosidad en las imágenes de satélite disponibles, lo que limitaba notablemente el área efectiva de análisis dentro de la península.
 
 INSERTAR FIGURA
 
@@ -48,7 +48,7 @@ En los dos mapas de cobertura finales se aplicaron filtros con el fin de extraer
 
 # Resultados
 
-Como se muestra en la tabla 1, durante el período de diez años que abarcó el estudio, los principales cambios absolutos en cuanto a la pérdida de cobertura detectados para la zona centro-norte del estado Falcón se presentaron en los bosques deciduos, los cuales se redujeron en 535 km2 (28,43%), mientras que los cardonales y espinares disminuyeron en 276 km2 (16,58%). Contrastando con la pérdida de estos ecosistemas naturales, durante este mismo período las áreas intervenidas y áreas urbanas se duplicaron, pasando de 425 km2 a 850 km2 de extensión, lo cual pone de manifiesto la alta presión antrópica a la que está sometida la biodiversidad del área de estudio.
+Como se muestra en la tabla 1, durante el período de diez años que abarcó el estudio, los principales cambios absolutos en cuanto a la pérdida de cobertura detectados para la zona centro-norte del estado Falcón se presentaron en los bosques deciduos, los cuales se redujeron en 535 km<sup>2</sup> (28,43%), mientras que los cardonales y espinares disminuyeron en 276 km<sup>2</sup> (16,58%). Contrastando con la pérdida de estos ecosistemas naturales, durante este mismo período las áreas intervenidas y áreas urbanas se duplicaron, pasando de 425 km<sup>2</sup> a 850 km<sup>2</sup> de extensión, lo cual pone de manifiesto la alta presión antrópica a la que está sometida la biodiversidad del área de estudio.
 
 <div style="text-align: center;">
   <b>Tabla 1.</b> Cambios de los diferentes tipos de cobertura terrestre de la zona centro-norte del estado Falcón (1991–2001).
