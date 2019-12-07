@@ -85,6 +85,22 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
+        path: 'content/methods/**/content.md',
+        typeName: 'MethodCard',
+        remark:{
+          autolinkHeadings: false,
+          lazyLoadImages: false,
+          slug: false,
+          plugins: [
+            'remark-attr',
+            'remark-grid-tables'
+          ]
+        }
+      }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
         path: 'content/cases-index.md',
         typeName: 'CasesIndex'
       }
@@ -121,6 +137,7 @@ module.exports = {
     VegetationCard: '/vcards/:title',
     UnitCard: '/units/:region',
     CaseCard: '/cases/:case',
+    MethodCard: '/methods/:method',
     References: '/references/:id'
   }
 }

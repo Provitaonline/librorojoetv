@@ -16,9 +16,14 @@
         <b-navbar-item tag="a" href="/about">
           ACERCA DE
         </b-navbar-item>
-        <b-navbar-item>
-          MÉTODOS
-        </b-navbar-item>
+        <b-navbar-dropdown label="MÉTODOS">
+          <b-navbar-item tag="a" href="/methods/class">
+              Clasificación del riesgo
+          </b-navbar-item>
+          <b-navbar-item>
+              Evaluación del riesgo
+          </b-navbar-item>
+        </b-navbar-dropdown>
         <b-navbar-dropdown label="EXPLORAR">
           <b-navbar-item tag="a" href="/vcards">
               Riesgo de colapso
