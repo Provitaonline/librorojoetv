@@ -21,22 +21,27 @@
       <section class="section">
         <br>
         <div class="section-header box is-size-3 is-size-4-mobile has-text-weight-bold has-text-centered">Lista alfabética de fichas</div>
-        <div style="width: 85%;" class="container is-size-5 is-size-6-mobile">
-          <div v-for="item in $page.vcards.edges" class="media">
-            <figure class="media-left is-hidden-mobile">
-              <g-link :to="'/vcards/' + makeLink(item.node.title)"><g-image :src="item.node.cardimage"></g-image></g-link>
-            </figure>
-            <div class="media-content">
-              <div class="content">
-                <p>
-                  <img style="margin-bottom: -0.5rem;" :src="$options.threatCategories[item.node.category].img" height="30" width="30">&nbsp;</img>
-                  <g-link :to="'/vcards/' + makeLink(item.node.title)"><strong v-html="item.node.title"></strong> ({{$options.threatCategories[item.node.category].text}}) </g-link>
-                  <br>
-                  <span v-if="item.node.areain2010">
-                    {{item.node.areain1988 | number}} km<sup>2</sup> en 1988<br>
-                    {{item.node.areain2010 | number}} km<sup>2</sup> en 2010<br>
-                  </span>
-                </p>
+        <div class="columns">
+          <div class="column is-four-fifths is-offset-one-fifth is-size-5 is-size-6-mobile">
+            <div v-for="item in $page.vcards.edges" class="media">
+              <figure class="media-left is-hidden-mobile">
+                <g-link :to="'/vcards/' + makeLink(item.node.title)"><g-image :src="item.node.cardimage"></g-image></g-link>
+              </figure>
+              <div>
+                <div style="display: flex;">
+                  <b-tooltip :label="$options.threatCategories[item.node.category].text" position="is-top" type="is-warning">
+                    <div class="iconInTable">
+                      <img :src="$options.threatCategories[item.node.category].img"></img>
+                    </div>
+                  </b-tooltip>
+                  &nbsp;&nbsp;<g-link :to="'/vcards/' + makeLink(item.node.title)"><strong v-html="item.node.title"></strong></g-link>
+                </div>
+                <div v-if="item.node.areain2010">
+                  <span style="display: inline-block; width: 35px;"></span>
+                  {{item.node.areain1988 | number}} km<sup>2</sup> en 1988<br>
+                  <span style="display: inline-block; width: 35px;"></span>
+                  {{item.node.areain2010 | number}} km<sup>2</sup> en 2010<br>
+                </div>
               </div>
             </div>
           </div>
@@ -122,6 +127,11 @@
 
   .explore:hover {
     color: #BE1421;
+  }
+
+  .iconInTable {
+    width: 30px;
+    height: 30px;
   }
 
 </style>
