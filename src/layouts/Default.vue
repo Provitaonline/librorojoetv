@@ -29,7 +29,7 @@
               Riesgo de colapso
           </b-navbar-item>
           <b-navbar-item tag="a" href="/cases">
-              Casos de estudio
+              Estudios de caso
           </b-navbar-item>
           <b-navbar-item tag="a" href="/units">
               Unidades de paisaje

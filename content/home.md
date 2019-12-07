@@ -6,7 +6,7 @@ indexCards:
     link: "/vcards/"
     image: "./images/riesgo.png"
     text: "Cambios temporales en distribución geográfica y riesgos de colapso and nivel nacional y estatal."
-  - title: "Casos de estudio"
+  - title: "Estudios de caso"
     link: "/cases/"
     image: "./images/casos.png"
     text: "Aplicación de las categorías y criterios de las listas rojas de ecosistemas a diferentes escalas geográficas."

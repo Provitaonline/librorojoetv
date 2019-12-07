@@ -2,7 +2,7 @@
   <Layout>
     <SideBar>
       <template v-slot:title>
-        <p class="is-size-4 has-text-weight-bold has-text-centered" style="padding: 20px;">Casos de estudio</p>
+        <p class="is-size-4 has-text-weight-bold has-text-centered" style="padding: 20px;">Estudios de caso</p>
       </template>
       <template v-slot:sidebar>
         <div class="box">
@@ -20,7 +20,7 @@
         <section class="hero is-small is-white">
           <div class="hero-body">
             <div class="container is-fullhd has-text-centered">
-              <g-link to="/cases" class="is-uppercase is-size-6">Casos de estudio</g-link>
+              <g-link to="/cases" class="is-uppercase is-size-6">Estudios de caso</g-link>
             </div>
           </div>
         </section>

@@ -1,5 +1,5 @@
 ---
-title: "Casos de estudio"
+title: "Estudios de caso"
 mapTitle: "Localización de las áreas de estudio"
 legendItems:
   - name: "1"
