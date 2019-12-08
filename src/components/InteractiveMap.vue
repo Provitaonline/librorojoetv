@@ -21,9 +21,11 @@
             <a @click="resetView" href="#" title="Vista inicial"><font-awesome size="lg" :icon="['fas', 'sync-alt']"/></a>
           </l-control>
           <l-control @ready="tcReady" position="topleft" >
-            <div class="transparency-control" title="Ajuste de transparencia">
-              <input id="transparencySlider" class="slider has-output-tooltip" step="1" min="0" max="100" :value="layerTransparency" type="range" orient="vertical">
-            </div>
+            <b-tooltip class="tc-tooltip" type="is-white" :style="ttStyle" :label="layerTransparency + '%'" position="is-right">
+              <div class="transparency-control" title="Ajuste de transparencia">
+                <input id="transparencySlider" class="slider" step="1" min="0" max="100" :value="layerTransparency" type="range" orient="vertical">
+              </div>
+            </b-tooltip>
             <!-- <b-field class="transparency-control" label="Ajuste de transparencia">
               <b-slider v-model="layerTransparency" :custom-formatter="val => val + '%'" type="is-light" rounded></b-slider>
             </b-field> -->
@@ -217,6 +219,13 @@
     margin-bottom: 0px;
   }
 
+
+  ::v-deep .tc-tooltip {
+    &::after, &::before {
+      top: var(--ttpos);
+    }
+  }
+
 </style>
 
 <style lang="scss">
@@ -232,7 +241,7 @@
   import slugify from 'slugify'
   import * as topojson from 'topojson-client'
 
-  import bulmaSlider from 'bulma-slider/dist/js/bulma-slider.min.js'
+  //import bulmaSlider from 'bulma-slider/dist/js/bulma-slider.min.js'
 
   slugify.extend({'/': '-'})
 
@@ -358,6 +367,9 @@
         maxBounds: [[13, -74], [0.5, -58]],
         center: [6.42, -66.59 ],
         layerTransparency: (this.initialLayerTransparency ? this.initialLayerTransparency : 5),
+        ttStyle: {
+          '--ttpos': '90%'
+        },
         tileProviders: [
           {
             name: 'Mapa base simple',
@@ -475,10 +487,11 @@
       mapReady() {
       },
       tcReady() {
-        console.log(this.layerTransparency)
         let self = this
+        this.ttStyle['--ttpos'] = 0.8*(110 - this.layerTransparency) + '%'
         document.getElementById('transparencySlider').addEventListener('input', function(e) {
           self.layerTransparency = e.target.value
+          self.ttStyle['--ttpos'] = 0.8*(110 - e.target.value) + '%'
         })
       },
       tileLayerAdded(e) {
