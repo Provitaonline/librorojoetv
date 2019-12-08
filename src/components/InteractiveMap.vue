@@ -194,15 +194,15 @@
     background: rgba(255, 255, 255, 1);
     padding-top: 4px;
     padding-bottom: 4px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 9px;
+    padding-right: 8px;
     border-radius: 4px;
     box-shadow: 0 1px 5px rgba(0,0,0,0.65);
     margin-bottom: 0px;
   }
 
   .transparency-control>.slider {
-    width: 6px;
+    width: 8px;
     margin-top: 4px;
     margin-bottom: 4px;
   }
