@@ -16,14 +16,17 @@
           style="height: 100%"
           @update:zoom="zoomUpdated"
         >
-          <l-control position="topleft" >
-            <b-field class="transparency-control" label="Ajuste de transparencia">
-              <b-slider v-model="layerTransparency" :custom-formatter="val => val + '%'" type="is-light" rounded></b-slider>
-            </b-field>
-          </l-control>
           <l-control-zoom zoomInTitle="Acercarse" zoomOutTitle="Alejarse" position="topleft"></l-control-zoom>
           <l-control class="leaflet-control leaflet-bar" position="topleft" >
             <a @click="resetView" href="#" title="Vista inicial"><font-awesome size="lg" :icon="['fas', 'sync-alt']"/></a>
+          </l-control>
+          <l-control @ready="tcReady" position="topleft" >
+            <div class="transparency-control" title="Ajuste de transparencia">
+              <input id="transparencySlider" class="slider has-output-tooltip" step="1" min="0" max="100" :value="layerTransparency" type="range" orient="vertical">
+            </div>
+            <!-- <b-field class="transparency-control" label="Ajuste de transparencia">
+              <b-slider v-model="layerTransparency" :custom-formatter="val => val + '%'" type="is-light" rounded></b-slider>
+            </b-field> -->
           </l-control>
           <l-control-layers position="topleft"  ></l-control-layers>
           <l-tile-layer
@@ -185,7 +188,7 @@
     }
   }
 
-  ::v-deep .transparency-control {
+  .transparency-control {
     background: rgba(255, 255, 255, 1);
     padding-top: 4px;
     padding-bottom: 4px;
@@ -194,6 +197,12 @@
     border-radius: 4px;
     box-shadow: 0 1px 5px rgba(0,0,0,0.65);
     margin-bottom: 0px;
+  }
+
+  .transparency-control>.slider {
+    width: 6px;
+    margin-top: 4px;
+    margin-bottom: 4px;
   }
 
   ::v-deep .b-slider {
@@ -222,6 +231,8 @@
   import axios from 'axios'
   import slugify from 'slugify'
   import * as topojson from 'topojson-client'
+
+  import bulmaSlider from 'bulma-slider/dist/js/bulma-slider.min.js'
 
   slugify.extend({'/': '-'})
 
@@ -462,7 +473,13 @@
         }
       },
       mapReady() {
-
+      },
+      tcReady() {
+        console.log(this.layerTransparency)
+        let self = this
+        document.getElementById('transparencySlider').addEventListener('input', function(e) {
+          self.layerTransparency = e.target.value
+        })
       },
       tileLayerAdded(e) {
         this.hideLabels = this.tileProviders.find(p => p.url === e.target._url).hideLabels ? true : false
