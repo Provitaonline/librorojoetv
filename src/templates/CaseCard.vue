@@ -44,7 +44,7 @@
                 <div class="content">
                   <b>Localidad:</b>&nbsp;<span v-html="$page.caseCard.locality"></span><br>
                   <b>Estados:</b> {{$page.caseCard.states}}<br>
-                  <b>Área aprox.:</b>
+                  <b>Área aprox.: </b>
                     <span v-if="$page.caseCard.areatext" v-html="$page.caseCard.areatext"><br></span>
                     <span v-else>{{$page.caseCard.area | number}} km<sup>2</sup><br></span>
                 </div>
