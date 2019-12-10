@@ -89,7 +89,13 @@
             </TextWithRefsAndPhotos>
             <div style="padding-top: 0px;" class="tile is-child box is-size-6 is-size-7-mobile">
               <h1 style="margin-top: 0px;">Bibliografía</h1>
-              <b-table :data="sortedReferences" :columns="columns" :mobile-cards="false"></b-table>
+              <table class="table">
+                <tbody>
+                  <tr v-for="value in sortedReferences">
+                    <td>{{value.reference}}</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </section>
@@ -188,19 +194,7 @@
     data() {
       return {
         threatCategories: threatCategories,
-        categoryIcon: null,
-        columns: [
-          {
-            field: 'referencekey',
-            label: 'Abreviación',
-            width: '150'
-          },
-          {
-            field: 'reference',
-            label: 'Referencia',
-            renderHtml: true
-          }
-        ]
+        categoryIcon: null
       }
     },
     mounted () {
@@ -211,7 +205,7 @@
     },
     computed: {
       sortedReferences: function() {
-        return this.$page.caseCard.case.references.sort((a, b) => a.referencekey.localeCompare(b.referencekey))
+        return this.$page.caseCard.case.references.sort((a, b) => a.reference.localeCompare(b.reference))
       }
     },
     methods: {
