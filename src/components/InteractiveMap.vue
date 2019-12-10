@@ -16,14 +16,19 @@
           style="height: 100%"
           @update:zoom="zoomUpdated"
         >
-          <l-control position="topleft" >
-            <b-field class="transparency-control" label="Ajuste de transparencia">
-              <b-slider v-model="layerTransparency" :custom-formatter="val => val + '%'" type="is-light" rounded></b-slider>
-            </b-field>
-          </l-control>
           <l-control-zoom zoomInTitle="Acercarse" zoomOutTitle="Alejarse" position="topleft"></l-control-zoom>
           <l-control class="leaflet-control leaflet-bar" position="topleft" >
             <a @click="resetView" href="#" title="Vista inicial"><font-awesome size="lg" :icon="['fas', 'sync-alt']"/></a>
+          </l-control>
+          <l-control class="leaflet-control transparency-control" v-bind:class="{'is-touch': isTouch}" @ready="tcReady" position="topleft" >
+              <div title="Ajuste de transparencia">
+                <b-tooltip class="tc-tooltip" type="is-white" :style="ttStyle" :label="layerTransparency + '%'" position="is-right">
+                  <input id="transparencySlider" class="slider" step="1" min="0" max="100" :value="layerTransparency" type="range" orient="vertical">
+                </b-tooltip>
+              </div>
+            <!-- <b-field class="transparency-control" label="Ajuste de transparencia">
+              <b-slider v-model="layerTransparency" :custom-formatter="val => val + '%'" type="is-light" rounded></b-slider>
+            </b-field> -->
           </l-control>
           <l-control-layers position="topleft"  ></l-control-layers>
           <l-tile-layer
@@ -185,27 +190,40 @@
     }
   }
 
-  ::v-deep .transparency-control {
+  .transparency-control {
     background: rgba(255, 255, 255, 1);
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 10px;
-    padding-right: 10px;
     border-radius: 4px;
     box-shadow: 0 1px 5px rgba(0,0,0,0.65);
+    width: 26px;
     margin-bottom: 0px;
   }
 
-  ::v-deep .b-slider {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+  .transparency-control .slider {
+    height: 80px;
+    width: 20px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 3px;
   }
 
-  ::v-deep .transparency-control label {
-    color: black;
-    font-size: 0.8rem;
-    font-weight: 400;
-    margin-bottom: 0px;
+  .transparency-control.is-touch {
+    border: 2px solid rgba(0,0,0,0.2);
+    box-sizing: border-box;
+    box-shadow: none;
+    background-clip: padding-box;
+    width: 34px;
+  }
+
+  .transparency-control.is-touch .slider {
+    margin-left: 5px;
+  }
+
+  ::v-deep .tc-tooltip {
+    &::after, &::before {
+      top: var(--ttpos);
+      margin-left: 5px;
+      font-size: .75rem;
+    }
   }
 
 </style>
@@ -223,12 +241,15 @@
   import slugify from 'slugify'
   import * as topojson from 'topojson-client'
 
+  //import bulmaSlider from 'bulma-slider/dist/js/bulma-slider.min.js'
+
   slugify.extend({'/': '-'})
 
-  var latLng, icon, circleMarker;
+  var latLng, icon, circleMarker, lBrowser;
   if (process.isClient) {
     icon = require('leaflet').Icon
     circleMarker = require('leaflet').circleMarker
+    lBrowser = require('leaflet').Browser
     delete icon.Default.prototype._getIconUrl;
     icon.Default.mergeOptions({
       iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
@@ -347,6 +368,10 @@
         maxBounds: [[13, -74], [0.5, -58]],
         center: [6.42, -66.59 ],
         layerTransparency: (this.initialLayerTransparency ? this.initialLayerTransparency : 5),
+        ttStyle: {
+          '--ttpos': '90%'
+        },
+        isTouch: true,
         tileProviders: [
           {
             name: 'Mapa base simple',
@@ -462,7 +487,15 @@
         }
       },
       mapReady() {
-
+      },
+      tcReady() {
+        this.isTouch = lBrowser.touch
+        let self = this
+        this.ttStyle['--ttpos'] = 0.8*(110 - this.layerTransparency) + '%'
+        document.getElementById('transparencySlider').addEventListener('input', function(e) {
+          self.layerTransparency = e.target.value
+          self.ttStyle['--ttpos'] = 0.8*(110 - e.target.value) + '%'
+        })
       },
       tileLayerAdded(e) {
         this.hideLabels = this.tileProviders.find(p => p.url === e.target._url).hideLabels ? true : false
