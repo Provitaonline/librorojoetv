@@ -214,10 +214,13 @@
                   </table>
                 </div>
               </div>
-              <div v-if="$page.vegetationCard.content != '\n'" v-show="!showMore" class="container is-size-5 has-text-centered">
-                <a @click="showMore = true"><p>LEER MÁS...<font-awesome :icon="['fas', 'angle-down']"/></p></a>
+              <div v-if="$page.vegetationCard.content != '\n'" class="container is-size-5 has-text-centered">
+                <a @click="showMore = !showMore">
+                  <p v-if="!showMore">LEER MÁS...<font-awesome :icon="['fas', 'angle-down']"/></p>
+                  <p v-else>LEER MENOS...<font-awesome :icon="['fas', 'angle-up']"/></p>
+                </a>
               </div>
-              <div v-show="showMore" class="tile is-parent">
+              <div v-if="showMore" class="tile is-parent">
                 <!-- <div class="d-content tile is-child is-size-5" v-html="$page.vegetationCard.content"></div> -->
                 <TextWithRefsAndPhotos class="tile is-child box is-size-5 is-size-6-mobile"
                   :text="$page.vegetationCard.content"
@@ -418,8 +421,11 @@
       this.pathParent = this.$route.path.replace(/\/$/, '').replace(/\/[^\/]+$/,'')
       this.currentSlug = this.$route.path.replace(/\/$/, '').match(/\/[^\/]+$/)[0].substring(1)
     },
+    updated () {
+    },
     beforeRouteUpdate (to, from, next) {
       this.currentSlug = to.path.replace(/\/$/, '').match(/\/[^\/]+$/)[0].substring(1)
+      this.showMore = false
       next()
     },
     filters: {
