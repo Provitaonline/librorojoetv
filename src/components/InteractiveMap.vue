@@ -199,7 +199,10 @@
   }
 
   .transparency-control .slider {
+    height: 80px;
     width: 20px;
+    margin-top: 8px;
+    margin-bottom: 8px;
     margin-left: 3px;
   }
 
@@ -219,6 +222,7 @@
     &::after, &::before {
       top: var(--ttpos);
       margin-left: 5px;
+      font-size: .75rem;
     }
   }
 
