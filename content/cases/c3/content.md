@@ -155,7 +155,7 @@ Con base en la clasificación de las coberturas  identificadas, evaluadas median
 </div>
 
 <div style="text-align: center;"><b>Tabla 3.</b> Cambios en los tipos de coberturas no vegetales al norte del lago de Maracaibo (1986-2001).</div>
-<div class="table-container">
+<div class="table-container is-size-6"">
   <table>
     <thead>
       <tr>
