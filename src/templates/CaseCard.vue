@@ -87,7 +87,14 @@
               :refs="$page.caseCard.case.references"
               :isContent="true">
             </TextWithRefsAndPhotos>
-            <div style="padding-top: 0px;" class="tile is-child box is-size-6 is-size-7-mobile">
+            <div class="container is-size-5 has-text-centered">
+              <a @click="showMore = !showMore">
+                <p v-if="!showMore">VER BIBLIOGRAFÍA...<font-awesome :icon="['fas', 'angle-down']"/></p>
+                <p v-else>OCULTAR BIBLIOGRAFÍA...<font-awesome :icon="['fas', 'angle-up']"/></p>
+                <br>
+              </a>
+            </div>
+            <div v-if="showMore" style="padding-top: 0px;" class="tile is-child box is-size-6 is-size-7-mobile">
               <h1 style="margin-top: 0px;">Bibliografía</h1>
               <table class="table">
                 <tbody>
@@ -194,10 +201,15 @@
     data() {
       return {
         threatCategories: threatCategories,
-        categoryIcon: null
+        categoryIcon: null,
+        showMore: false
       }
     },
     mounted () {
+    },
+    beforeRouteUpdate (to, from, next) {
+      this.showMore = false
+      next()
     },
     components: {
       TextWithRefsAndPhotos,
