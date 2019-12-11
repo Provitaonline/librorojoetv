@@ -29,9 +29,7 @@ import slugify from 'slugify'
 import VRuntimeTemplate from 'v-runtime-template'
 import {threatCategories} from '~/assets/js/siteConfig.js'
 
-let inlineFigs = []
-
-function addPopovers(data, references, photos) {
+function addPopovers(data, references, photos, inlineFigs) {
   let r = data.replace(/\(.*?\)/g, function (match) {
     let lookup = ((match.replace(/[{()}]/g, ''))).split(',')
     let dropDownItems = ''
@@ -63,7 +61,6 @@ function addPopovers(data, references, photos) {
       lookup.forEach(refItem => {
         let pIdx = photos.findIndex(function(p) { return p.photokey === refItem.trim()})
         if (pIdx >= 0) {
-          console.log (inlineFigs.includes(photos[pIdx].photokey))
           if (inlineFigs.includes(photos[pIdx].photokey)) {
             photoItems += `
               <a href="#` +  slugify(photos[pIdx].photokey, {lower: true}) + `">` + (i++ > 0 ? ', ' :  '' ) + photoItemLabel(refItem) + `</a>
@@ -101,7 +98,7 @@ function photoItemLabel (item) {
   return item.trim() + ` <small><font-awesome size="xs" :icon="['fas', 'camera']"/></small>`
 }
 
-function processContent(text, photos) {
+function processContent(text, photos, inlineFigs) {
 
   // Replace mardownified content <p> with <div> so that <div> elements can be inserted
   // Add class to table elements
@@ -198,13 +195,14 @@ export default {
   },
   methods: {
     injectReferencesAndModalPhotos: function() {
+      let inlineFigs = []
       let text
       if (this.isContent) {
-        text = processContent(this.text, this.photos)
+        text = processContent(this.text, this.photos, inlineFigs)
       } else {
         text = this.text
       }
-      return addPopovers(text, this.refs, this.photos)
+      return addPopovers(text, this.refs, this.photos, inlineFigs)
     },
     dropDownClick: function(e) {
       let referenceDropdownElement = e.target.closest('.reference-dropdown')
