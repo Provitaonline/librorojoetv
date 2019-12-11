@@ -80,6 +80,7 @@
               <br>
               <div v-if="$page.vegetationCard.areain2010" class="section-header box is-size-3 is-size-4-mobile has-text-weight-bold has-text-centered">Cambios en la distribución</div>
               <div v-if="$page.vegetationCard.areain2010" class="tile is-parent">
+                <div v-if="!$page.vegetationCard.stateleveltable.length" class="tile is-child is-4"></div>
                 <div class="tile is-child is-5 box is-size-6 has-text-centered">
                   <b>Superficie en 1988 (km<sup>2</sup>): </b>{{$page.vegetationCard.areain1988 | number}}<br>
                   <b>Superficie en 2010 (km<sup>2</sup>): </b>{{$page.vegetationCard.areain2010 | number}}<br>
@@ -140,6 +141,7 @@
               </div>
               <div class="section-header box is-size-3 is-size-4-mobile has-text-weight-bold has-text-centered">Situación a 2010</div>
               <div class="tile is-parent">
+                <div v-if="!$page.vegetationCard.riskofcolapsestatelevel.length" class="tile is-child is-4"></div>
                 <div class="tile is-child is-5 box has-text-centered">
                   <b>Riesgo de colapso a nivel nacional: </b>
                   {{threatCategories[$page.vegetationCard.category].text.toUpperCase()}}
