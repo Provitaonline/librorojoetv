@@ -63,7 +63,7 @@ function addPopovers(data, references, photos, inlineFigs) {
         if (pIdx >= 0) {
           if (inlineFigs.includes(photos[pIdx].photokey)) {
             photoItems += `
-              <a href="#` +  slugify(photos[pIdx].photokey, {lower: true}) + `">` + (i++ > 0 ? ', ' :  '' ) + photoItemLabel(refItem) + `</a>
+              <a href="#" v-scroll-to="'#` +  slugify(photos[pIdx].photokey, {lower: true}) + `'">` + (i++ > 0 ? ', ' :  '' ) + photoItemLabel(refItem) + `</a>
             `
           } else {
             photoItems += `
