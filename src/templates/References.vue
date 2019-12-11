@@ -10,7 +10,13 @@
         </div>
       </section>
       <div class="section is-size-6 is-size-7-mobile">
-        <b-table :data="sortedReferences" :columns="columns" :mobile-cards="false"></b-table>
+        <table class="table">
+          <tbody>
+            <tr v-for="value in sortedReferences">
+              <td>{{value.reference}}</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </Layout>
@@ -31,7 +37,7 @@
 </page-query>
 
 <style lang="scss" scoped>
-  ::v-deep .table {
+  .table {
     word-break: break-word;
   }
 </style>
@@ -40,23 +46,11 @@
   export default {
     data() {
       return {
-        columns: [
-          {
-            field: 'referencekey',
-            label: 'Abreviación',
-            width: '150'
-          },
-          {
-            field: 'reference',
-            label: 'Referencia',
-            renderHtml: true
-          }
-        ]
       }
     },
     computed: {
       sortedReferences: function() {
-        return this.$page.references.references.sort((a, b) => a.referencekey.localeCompare(b.referencekey))
+        return this.$page.references.references.sort((a, b) => a.reference.localeCompare(b.reference))
       },
       linkToParent: function() {
         return this.$page.references.parent ? this.$page.references.parent + '/' + this.$page.references.id : this.$page.references.id
