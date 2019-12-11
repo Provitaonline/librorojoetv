@@ -79,16 +79,7 @@
 </template>
 
 <style lang="scss" scoped>
-
-  $primary: #BE1421;
-
-  .fade-enter-active {
-    transition: opacity 0.8s;
-  }
-
-  .fade-enter {
-    opacity: 0;
-  }
+  @import "~/assets/style/_variables";
 
   .button {
     border-radius: 0px;

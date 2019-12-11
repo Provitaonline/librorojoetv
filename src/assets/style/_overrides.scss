@@ -91,3 +91,11 @@ h2 {
 html {
   scroll-behavior: smooth;
 }
+
+.fade-enter-active {
+  transition: opacity 0.8s;
+}
+
+.fade-enter {
+  opacity: 0;
+}
