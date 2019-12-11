@@ -25,9 +25,11 @@
 </style>
 
 <script>
-
+import slugify from 'slugify'
 import VRuntimeTemplate from 'v-runtime-template'
 import {threatCategories} from '~/assets/js/siteConfig.js'
+
+let inlineFigs = []
 
 function addPopovers(data, references, photos) {
   let r = data.replace(/\(.*?\)/g, function (match) {
@@ -61,21 +63,28 @@ function addPopovers(data, references, photos) {
       lookup.forEach(refItem => {
         let pIdx = photos.findIndex(function(p) { return p.photokey === refItem.trim()})
         if (pIdx >= 0) {
-          photoItems += `
-            <a @click="photoClick" class='photo-link'>` + (i++ > 0 ? ', ' :  '' ) + photoItemLabel(refItem) + `</a><div class="modal photo-modal">
-              <div @click="closePhotoModal" class="modal-background"></div>
-              <div class="modal-content has-text-centered">
-                <figure style="padding: 2%;">
-                  <g-image style="max-height: calc(100vh - 120px); width: auto;" :src="photos[` + pIdx + `].photourl"></g-image>
-                </figure>
-                <figcaption class="has-text-centered">
-                  <div class="is-size-6 is-size-7-mobile has-text-white" v-html="photos[` + pIdx + `].photocaption">
-                  </div>
-                </figcaption>
+          console.log (inlineFigs.includes(photos[pIdx].photokey))
+          if (inlineFigs.includes(photos[pIdx].photokey)) {
+            photoItems += `
+              <a href="#` +  slugify(photos[pIdx].photokey, {lower: true}) + `">` + (i++ > 0 ? ', ' :  '' ) + photoItemLabel(refItem) + `</a>
+            `
+          } else {
+            photoItems += `
+              <a @click="photoClick" class='photo-link'>` + (i++ > 0 ? ', ' :  '' ) + photoItemLabel(refItem) + `</a><div class="modal photo-modal">
+                <div @click="closePhotoModal" class="modal-background"></div>
+                <div class="modal-content has-text-centered">
+                  <figure style="padding: 2%;">
+                    <g-image style="max-height: calc(100vh - 120px); width: auto;" :src="photos[` + pIdx + `].photourl"></g-image>
+                  </figure>
+                  <figcaption class="has-text-centered">
+                    <div class="is-size-6 is-size-7-mobile has-text-white" v-html="photos[` + pIdx + `].photocaption">
+                    </div>
+                  </figcaption>
+                </div>
+                <button @click="closePhotoModal" class="modal-close is-large" aria-label="close"></button>
               </div>
-              <button @click="closePhotoModal" class="modal-close is-large" aria-label="close"></button>
-            </div>
-          `
+            `
+          }
         }
       })
       if (photoItems != '') {
@@ -108,8 +117,9 @@ function processContent(text, photos) {
       pIdx = photos.findIndex(function(p) { return p.photokey === item.trim()})
     }
     if (pIdx >= 0) {
+      inlineFigs.push(item.trim())
       return `
-        <div class="inline-figure has-text-centered">
+        <div id="` + slugify(item, {lower: true}) + `" class="inline-figure has-text-centered">
           <br>
           <figure style="padding: 2%;">
             <g-image :src="photos[` + pIdx + `].photourl"></g-image>

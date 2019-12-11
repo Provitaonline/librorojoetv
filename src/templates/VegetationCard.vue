@@ -427,7 +427,9 @@
     },
     beforeRouteUpdate (to, from, next) {
       this.currentSlug = to.path.replace(/\/$/, '').match(/\/[^\/]+$/)[0].substring(1)
-      this.showMore = false
+      if (to.path != from.path) {
+        this.showMore = false
+      }
       next()
     },
     filters: {
