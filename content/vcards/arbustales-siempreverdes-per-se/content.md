@@ -10,6 +10,9 @@ distribution: "A la escala del análisis de esta investigación, los arbustales 
 distributionmap: "./dist.png"
 areain1988: "25173"
 areain2010: "20297"
+mapcompare:
+  - in2010: "./figura-1b.jpg"
+    in1988: "./figura-1a.jpg"
 formationColumn: false
 stateleveltable:
   - state: "Amazonas"
@@ -18,6 +21,8 @@ stateleveltable:
   - state: "Bolívar"
     areain1988: "1670"
     areain2010: "5738"
+threatlevelmaps:
+  - map: "./figura-1c.jpg"
 zonelabel: "Estado"
 criteriaused: [A4, C2, "Situación por estado"]
 riskofcolapsestatelevel:
