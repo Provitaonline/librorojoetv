@@ -33,27 +33,6 @@ threatlevelmaps:
   - map: "./figura-1c-2.jpg"
     caption: "Cordillera de la Costa"
     threatcategories: ["cr", "en"]
-zonelabel: "Estado"
-criteriaused: [A4, "Situación por estado"]
-riskofcolapsestatelevel:
-  - zone: "Aragua"
-    threatcategories: [en, en]
-  - zone: "Distrito Capital"
-    threatcategories: [cr, cr]
-  - zone: "Mérida"
-    threatcategories: [en, en]
-  - zone: "Miranda"
-    threatcategories: [en, en]
-  - zone: "Táchira"
-    threatcategories: [en, en]
-  - zone: "Trujillo"
-    threatcategories: [en, en]
-  - zone: "Vargas"
-    threatcategories: [cr, cr]
-  - zone: "Yaracuy"
-    threatcategories: [en, en]
-  - zone: "Zulia"
-    threatcategories: [en, en]
 photos:
 - photokey: "Foto 1"
   photourl: "./foto-1.jpg"
