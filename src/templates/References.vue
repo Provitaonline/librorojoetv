@@ -3,7 +3,7 @@
     <div class="page-wrapper">
       <section class="hero is-small is-white">
         <div class="hero-body">
-          <div class="container is-fullhd has-text-centered">
+          <div class="has-text-centered">
             <h1 class="title is-uppercase"><g-link :to="'/' + linkToParent"><span v-html="$page.references.title"></span></g-link></h1>
             <h2 class="title">Bibliografía</h2>
           </div>
