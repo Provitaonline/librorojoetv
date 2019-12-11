@@ -13,7 +13,47 @@ Desde el punto de vista de paisaje, esta formación se encuentra restringida a l
 distributionmap: "./dist.png"
 areain1988: "2420"
 areain2010: "4117"
-criteriaused: [C2, "Situación por estado"]
+mapcompare:
+  - in2010: "./figura-1b-1-2010.jpg"
+    in1988: "./figura-1a-1-88.jpg"
+    caption: "Cordillera de los Andes"
+    interventionlegend:
+    - image: "./intervenidas.png"
+      text: "Áreas intervenidas"
+  - in2010: "./figura-1b-2-2010.jpg"
+    in1988: "./figura-1a-2-88.jpg"
+    caption: "Cordillera de la Costa"
+    interventionlegend:
+    - image: "./intervenidas.png"
+      text: "Áreas intervenidas"
+threatlevelmaps:
+  - map: "./figura-1c-1.jpg"
+    caption: "Cordillera de los Andes"
+    threatcategories: ["cr", "en", "vu"]
+  - map: "./figura-1c-2.jpg"
+    caption: "Cordillera de la Costa"
+    threatcategories: ["cr", "en"]
+zonelabel: "Estado"
+criteriaused: [A4, "Situación por estado"]
+riskofcolapsestatelevel:
+  - zone: "Aragua"
+    threatcategories: [en, en]
+  - zone: "Distrito Capital"
+    threatcategories: [cr, cr]
+  - zone: "Mérida"
+    threatcategories: [en, en]
+  - zone: "Miranda"
+    threatcategories: [en, en]
+  - zone: "Táchira"
+    threatcategories: [en, en]
+  - zone: "Trujillo"
+    threatcategories: [en, en]
+  - zone: "Vargas"
+    threatcategories: [cr, cr]
+  - zone: "Yaracuy"
+    threatcategories: [en, en]
+  - zone: "Zulia"
+    threatcategories: [en, en]
 photos:
 - photokey: "Foto 1"
   photourl: "./foto-1.jpg"

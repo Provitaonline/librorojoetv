@@ -69,8 +69,8 @@ riskofcolapsestatelevel:
     threatcategories: [nt, nt]
 photos:
 - photokey: "Foto 1"
-  photourl: "./foto-1.png"
-  photocaption: "Foto 1: Falta esta foto"
+  photourl: "./foto-1.jpg"
+  photocaption: "Foto 1: Arbustal Tepuyano sobre el cerro Sipapo, estado Amazonas. <i>Gustavo Romero</i>"
 - photokey: "Foto 2"
   photourl: "./foto-2.jpg"
   photocaption: "Foto 2: Arbustales tepuyanos, cerro Duida, estado Amazonas. <i>Otto Huber</i>"
