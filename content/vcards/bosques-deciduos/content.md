@@ -156,5 +156,5 @@ photos:
   photocaption: "Foto 6: Bosque deciduo transformado para cultivos, con pastizales y cocotales en el piedemonte, entre Bejuma y Morón, estado Carabobo. <i>Giuseppe Colonnello</i>"
 - photokey: "Foto 7"
   photourl: "./foto-7.jpg"
-  photocaption: "Foto 7: Bosque deciduo transformado para pastizales, con obras de nivelación (camellones) e inundación artifi cial, estado Zulia. <i>Giuseppe Colonnello</i>"
+  photocaption: "Foto 7: Bosque deciduo transformado para pastizales, con obras de nivelación (camellones) e inundación artificial, estado Zulia. <i>Giuseppe Colonnello</i>"
 ---
