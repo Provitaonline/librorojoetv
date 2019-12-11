@@ -94,16 +94,18 @@
                 <br>
               </a>
             </div>
-            <div v-if="showMore" style="padding-top: 0px;" class="tile is-child box is-size-6 is-size-7-mobile">
-              <h1 style="margin-top: 0px;">Bibliografía</h1>
-              <table class="table">
-                <tbody>
-                  <tr v-for="value in sortedReferences">
-                    <td>{{value.reference}}</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+            <transition name="fade" appear>
+              <div v-if="showMore" style="padding-top: 0px;" class="tile is-child box is-size-6 is-size-7-mobile">
+                <h1 style="margin-top: 0px;">Bibliografía</h1>
+                <table class="table">
+                  <tbody>
+                    <tr v-for="value in sortedReferences">
+                      <td>{{value.reference}}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </transition>
           </div>
         </section>
       </template>

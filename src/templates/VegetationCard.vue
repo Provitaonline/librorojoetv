@@ -222,12 +222,14 @@
               </div>
               <div v-if="showMore" class="tile is-parent">
                 <!-- <div class="d-content tile is-child is-size-5" v-html="$page.vegetationCard.content"></div> -->
-                <TextWithRefsAndPhotos class="tile is-child box is-size-5 is-size-6-mobile"
-                  :text="$page.vegetationCard.content"
-                  :refs="$page.references.references"
-                  :photos="$page.vegetationCard.photos"
-                  :isContent="true" />
-                </TextWithRefsAndPhotos>
+                <transition name="fade" appear>
+                  <TextWithRefsAndPhotos class="tile is-child box is-size-5 is-size-6-mobile"
+                    :text="$page.vegetationCard.content"
+                    :refs="$page.references.references"
+                    :photos="$page.vegetationCard.photos"
+                    :isContent="true" />
+                  </TextWithRefsAndPhotos>
+                </transition>
               </div>
             </div>
           </div>
