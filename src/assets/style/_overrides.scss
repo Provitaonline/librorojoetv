@@ -88,9 +88,11 @@ h2 {
   box-sizing: border-box;
 }
 
+/* Comment this until conflict with vue-backtotop is resolved
 html {
   scroll-behavior: smooth;
 }
+*/
 
 .fade-enter-active {
   transition: opacity 0.8s;
