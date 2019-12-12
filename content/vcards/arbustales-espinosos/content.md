@@ -164,7 +164,7 @@ Con respecto al grado de intervención, para 2010 se reconoce que alrededor de 9
 
 En la Tabla 2 se observan las diferencias y en la Figura 1c el grado de amenaza síntesis que corresponde a cada estado. En esta evaluación se aplicó el principio precautorio del Convenio sobre Diversidad Biológica y se seleccionó aquél que reflejara el mayor riesgo. Como se aprecia en la Figura 1c, los arbustales espinosos se encuentran bajo amenaza en todos los estados del país. En algunos casos, como en Lara, la tasa de cambio es tan elevada que a pesar de su extensión, el ecosistema califica En Peligro Crítico (CR).
 
-Para 1986, Matteucci reportaba que las zonas áridas y semiáridas venezolanas ocupaban 41.023 km2, lo que representa 5% del territorio nacional. Sin embargo, este dato se refiere a áreas definidas por su régimen climático, no así a la formación vegetal específica de los arbustales espinosos. Es decir, en las zonas áridas y semiáridas están presentes diferentes tipos de formaciones vegetales, no sólo los arbustales espinosos.
+Para 1986, Matteucci reportaba que las zonas áridas y semiáridas venezolanas ocupaban 41.023 km<sup>2</sup>, lo que representa 5% del territorio nacional. Sin embargo, este dato se refiere a áreas definidas por su régimen climático, no así a la formación vegetal específica de los arbustales espinosos. Es decir, en las zonas áridas y semiáridas están presentes diferentes tipos de formaciones vegetales, no sólo los arbustales espinosos.
 
 # Amenazas
 
