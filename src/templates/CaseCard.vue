@@ -85,6 +85,7 @@
             <TextWithRefsAndPhotos style="padding-bottom: 0px; margin-bottom: 0px !important;" class="tile is-child box is-size-5 is-size-6-mobile"
               :text="$page.caseCard.content"
               :refs="$page.caseCard.case.references"
+              :photos="$page.caseCard.photos"
               :isContent="true">
             </TextWithRefsAndPhotos>
             <div class="container is-size-5 has-text-centered">
@@ -135,6 +136,11 @@
           referencekey
           reference
         }
+      }
+      photos {
+        photokey
+        photourl
+        photocaption
       }
     }
     casesIndex: casesIndex (path: "/content/cases-index") {
