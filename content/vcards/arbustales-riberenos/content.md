@@ -37,4 +37,23 @@ photos:
 - photokey: "Figura 2"
   photourl: "./figura-2.jpg"
   photocaption: "Figura 2: Arbustales ribereños (líneas en color) detectados gracias al patrón blanquecino encontrado en las imágenes de radar."
+- photokey: "Foto 2"
+  photourl: "./foto-2.jpg"
+  photocaption: "Foto 2: Arbustal ribereño creciendo en aguas negras naturales, cuenca del Casiquiare, estado Amazonas. <i>Pedro Uviedo</i>"
+- photokey: "Foto 3"
+  photourl: "./foto-3.jpg"
+  photocaption: "Foto 3: Flor de <i>Wallacea insignis</i> (Ochnaceae). <i>Gustavo Romero</i>"
+- photokey: "Foto 4"
+  photourl: "./foto-4.jpg"
+  photocaption: "Foto 4: Arbustal ribereño del alto Temi, durante la época de máxima inundación, estado Amazonas. <i>Otto Huber</i>"
 ---
+De acuerdo al criterio C2, tanto a escala nacional como estadal califican en Preocupación Menor (LC). Aunque los análisis realizados en 1988 no detectaron ninguna perturbación (lo cual podría deberse a limitaciones metodológicas), en 2010 se estima que aproximadamente 40% presenta intervenciones bajas, medias o de intensidad mayor. Este nivel de perturbación relativamente bajo ofrece la oportunidad de iniciar observaciones de campo y con sensores remotos, para identificar posibles modificaciones antrópicas y tomar las medidas correctivas antes de que alcancen los umbrales de ecosistemas amenazados.
+
+# Amenazas
+
+En el mediano y largo plazo, una amenaza regional potencial es el cambio climático, que es de suponer altere los patrones globales de precipitación y, por ende, los regímenes de inundación en las zonas tropicales (Dore 2005). Una consecuencia posible sería la prolongación de los meses secos y con ello el aumento del riesgo de incendios recurrentes. Sin embargo, la incertidumbre sobre la magnitud y variabilidad de los impactos es muy alta. A nivel local la principal amenaza es la eliminación de arbustales por sobreexplotación de *Malouetia glandulifera* (palo de boya), cuya madera muy liviana es empleada para la elaboración de tallas ornamentales y otras artesanías (Huber & Foster 2003). Sin embargo, la intensidad de esta práctica aún no conduce a altos riesgos de eliminación a nivel estadal o nacional.
+
+# Conservación
+
+Afortunadamente, 45% de los arbustales ribereños se encuentran en áreas protegidas con fines primarios de conservación, como la reserva de biosfera Alto Orinoco y el monumento natural Tepuyes (Figura 1c). Por su carácter ecológico muy particular y su limitada extensión en el país, se ha recomendado la creación de un área protegida que resguarde una unidad funcional completa como la cuenca del río Atacavi, afluente superior del río Atabapo (Huber & Foster 2003). Esto complementaría el resguardo “oportunista” brindado por las áreas protegidas existentes, que si bien no fueron diseñadas para la conservación de los arbustales ribereños en particular, son herramientas relativamente efectivas para la protección de la biodiversidad (Bruner et al. 2001). Es fundamental observar y medir el impacto de las actividades humanas, así como avanzar en la implementación de planes de aprovechamiento sustentable de los arbustales ribereños antes de que se encuentren amenazados. Las estrategias de conservación preventivas tienden a ser más efectivas y menos costosas que la rehabilitación o restauración (Orians 1993, Scott et al. 1993, Noss 1996).
+{Foto 4}
