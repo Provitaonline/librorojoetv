@@ -317,7 +317,7 @@ references:
 - referencekey: Riina & Huber 2003
   reference: >
       Riina, R. & O. Huber (2003). Ecosistemas exclusivos de la Guayana. Pp. 828-861. En: M. Aguilera, A. Azócar & E. González Jiménez (eds.). Biodiversidad de Venezuela. Tomo II. Fundación Polar, Ministerio de Ciencia y Tecnología, Fondo Nacional para la Ciencia, Tecnología e Innovación (FONACIT). Editorial ExLibris: Caracas.
-- referencekey: Riveros Caballero et al. 2007
+- referencekey: Riveros-Caballero et al. 2007
   reference: >
       Riveros Caballero, M., L.E. Sánchez & J. Paolini (eds.) (2007). Memoria Taller Binacional y Regional Sobre Desertificación. Ediciones IVIC (Instituto Venezolano de Investigaciones Científicas): Caracas, Venezuela. 150 pp.
 - referencekey: Roa 2007
