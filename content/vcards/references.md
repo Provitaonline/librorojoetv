@@ -242,9 +242,9 @@ references:
 - referencekey: Maguire et al. 1972
   reference: >
       Maguire, B., D.B. Lellinger, G. Agostini, T. Koyama, J.G. Wessels-Boer, G. Harling, R.C. Barneby, J.J. Wurdack, G.T. Prance, A. Aubréville & J.A. Steyermark (1972). The Botany of the Guayana Highland [IX]. Memoirs of the New York Botanical Garden 23: 1-832.
-- referencekey: MARN 2002
+- referencekey: MARN 2000
   reference: >
-      MARN (2000). Primer informa de Venezuela sobre Diversidad Biológica. Ministerio del Ambiente y de los Recursos Naturales: Caracas.
+      MARN (2000). Primer informe de Venezuela sobre Diversidad Biológica. Ministerio del Ambiente y de los Recursos Naturales: Caracas.
 - referencekey: MARNR 1982
   reference: >
       MARNR (1982). Mapa de la vegetación actual de Venezuela. En: Sistemas Ambientales Venezolanos. Proyecto VEN/79/001, Serie II: Los Recursos Naturales Renovables y las Regiones Naturales. Ministerio del Ambiente y de los Recursos Naturales Renovables (MARNR): Caracas. 231 pp.

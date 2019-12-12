@@ -53,3 +53,16 @@ photos:
   photourl: "./foto-6.jpg"
   photocaption: "Foto 6: Linderos del Parque Nacional General Juan Pablo Peñaloza (páramos Batallón y La Negra). <i>Sergio Zambrano-Martínez</i>"
 ---
+A nivel nacional los arbustales y herbazales parameros se encuentran bajo la categoría Preocupación Menor (LC), según el criterio C2. No obstante, el nivel de intervención de la formación permite inferir que ésta ha sido transformada muy severamente en más de 30% de su distribución, por lo que de acuerdo al criterio A4 califica Vulnerable (VU) en el ámbito nacional. A nivel estadal, la vegetación paramera se encuentra bajo condiciones de amenaza que van desde Vulnerable (VU) hasta En Peligro Crítico (CR), en todos los estados del territorio (Figura 1c).
+
+# Amenazas
+
+Los herbazales y arbustales parameros están sometidos a colonización de sus vertientes, deforestación, monocultivos de papa (Foto 4, Foto 5), ganadería de doble propósito (carne y leche), extracción de plantas silvestres, cacería, disposición inadecuada de residuos, introducción de especies exóticas, turismo sin control e incendios (MARN 2000, Durán & Castaño 2002). El crecimiento poblacional y urbanístico representa una de las mayores amenazas por su acelerado ritmo y debido a que generalmente no es proyectado tomando en cuenta los ecosistemas de la zona (Vivas 1992). Esto cobra particular importancia cuando se reconoce que sólo una pequeña fracción puede ser utilizada de forma sostenible, debido a su fragilidad intrínseca (Ataroff & Sarmiento 2004).
+{Foto 4}
+{Foto 5}
+En el caso particular del ganado y los rebaños, su impacto sobre el ambiente de páramo está relacionado con el hecho de que los animales introducidos no consumen el forraje ofrecido por la vegetación natural dominante, y adicionalmente, la cobertura vegetal tiene poca capacidad de soportar altos niveles de herbivoría. Estas condiciones han motivado una baja eficiencia en el uso del espacio pastoral, en comparación con el que logran los rebaños de camélidos (Molinillo & Monasterio 2002).
+
+# Conservación
+
+Alrededor de 77% de la vegetación de páramo se encuentra en áreas protegidas de conservación, específicamente en parques nacionales (Figura 1c), y 10% adicional está incluido en áreas protegidas de usos permitidos limitados. Por ejemplo, la superficie del páramo El Tamá está protegida a ambos lados de la frontera colombo-venezolana en un “parque binacional”. No obstante, no ha sido suficiente para detener el proceso de transformación del ecosistema de páramo (Foto 6), dado que las actividades agrícolas y ganaderas ocurren regularmente dentro de estas áreas protegidas. Es necesario establecer medidas adicionales para el mantenimiento de este ecosistema a mediano y largo plazo.
+{Foto 6}
