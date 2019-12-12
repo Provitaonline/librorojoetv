@@ -140,3 +140,20 @@ photos:
   photourl: "./foto-6.jpg"
   photocaption: "Foto 6: Sabanas arbustivas y/o arboladas con actividad ganadera y poliductos petroleros, estado Anzoátegui. <i>Mariana Hernández Montilla</i>"
 ---
+Las sabanas arbustivas y/o arboladas experimentaron una reducción de aproximadam ente 22% de su superfi cie entre 1988 y 2010 (Tabla 1, Figura 1). Esto quiere decir que de continuar la misma tendencia, en el año 2040 las sabanas arbustivas y/o arboladas podrían haber disminuido en 42%, lo que situaría a esta formación en la categoría Vulnerable (VU), según el criterio A3. Aproximadamente 88% de estas sabanas tiene algún nivel de intervención y de ese total, 98% acusa una modifi cación de media a alta. De acuerdo al criterio A4(c2), las sabanas arbustivas y/o arboladas a escala nacional se encuentran en la categoría Vulnerable (VU).
+
+Los análisis en los diferentes estados muestran variabilidad en la condición de amenaza para las sabanas arbus tivas y/o arboladas (Tabla 2). En la Figura 1c se presenta la síntesis de esta evaluación. Resalta que para Táchira, Trujillo y Zulia ya no se detectaron fragmentos de esta formación, es decir, califica como Eliminada (EL).
+
+# Amenazas
+
+En el norte del Orinoco, las sabanas arbustivas y/o arboladas y no han escapado a las presiones antrópicas asociadas al sistema de producción agrícola del país. Una significativa porción de estos ecosistemas es sometida anualmente a quemas inducidas que afectan la dinámica de los nutrientes en el sistema y favorecen el reemplazo de la vegetación nativa por gramíneas y leguminosas forrajeras (Foto 5), especialmente valoradas por la industria ganadera ya que aumentan el rendimiento de la producción en 25%, al solventar el déficit nutricional vinculado a la vegetación nativa en época seca (Tejos *et al.* 1990, Thomas *et al.* 1990).
+{Foto 5}
+Principalmente se trata de una ganadería extensiva, caracterizada por la baja capacidad de carga del sistema, con menos de una unidad animal por cada diez hectáreas (Foto 6), y es la principal causa de que en los últimos años las sabanas naturales hayan sido sustituidas por sabanas secundarias formadas por pastizales de especies introducidas (Schargel 2007). Las quemas han sido prácticas comunes durante varias décadas en este tipo de ecosistemas, y han ocasionado no sólo la pérdida de nutrientes, sino también el establecimiento de especies invasoras altamente agresivas como *Hyparrhenia rufa* (yaraguá) en Cojedes y Guárico (Ramia 1993, Schargel 2007).
+{Foto 6}
+La actividad petrolera ha requerido la instalación de corredores de servicio para el transporte de insumos y de productos de la explotación, así como la construcción de estaciones industriales, constituyéndose así en otra de las causas del deterioro de este ecosistema (Foto 6).
+
+# Conservación
+
+Las áreas protegidas de conservación resguardan 21% del territorio ocupado por las sabanas arbustivas y/o arboladas (Figura 1c) y un 3,2% adicional se asienta en áreas protegidas de usos permitidos limitados. Los parques nacionales donde están mejor representadas son Aguaro-Guariquito, Canaima (morichales del valle del río Kukenán), Guatopo (sabanas arbustivas de cerro en la vertiente meridional de la serranía del Interior) y Henri Pittier (sabanas arbustivas del valle de El Limón), y algunos monumentos naturales de Amazonas (sabanas de Picatón) (Schargel 2007).
+
+Al sur del Orinoco sería necesario reforzar las figuras legales de protección para los chaparrales, especialmente al sur de Caicara y en la vía hacia Puerto Ayacucho. También debería protegerse sectores representativos de los diferentes tipos de sabana arbolada en Amazonas, que corren el peligro de ser eliminados por ignorancia o por expansión de actividades que implican deforestaciones a escala mayor.
