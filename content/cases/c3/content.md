@@ -2,8 +2,7 @@
 case: c3
 title: "Estado de amenaza de los ecosistemas al norte y sur del lago de Maracaibo, Estado Zulia"
 authors: "María Idalí Tachack-García, Fabián Carrasquel, Sergio Zambrano-Martínez"
-cardimage: "./pancartac3.jpg"
-cardimagecaption: "Falta esta foto"
+cardimage: "./pancarta.jpg"
 landscapeunits: "Depresión de Maracaibo (<a href='/units/b#b1'>B1</a>)"
 locality: "Norte y sur cuenca del lago de Maracaibo"
 states: "Zulia"
@@ -18,15 +17,22 @@ cardtablerows:
   - "Bosques de ribereños|vu|D"
   - "Ciénagas|vu|D"
   - "Manglares|lc|"
-
+photos:
+- photokey: "Figura 1"
+  photourl: "./figura-1.jpg"
+  photocaption: "Figura 1: Área delimitada para el caso de estudio."
+- photokey: "Figura 2"
+  photourl: "./figura-2.jpg"
+  photocaption: "Figura 2: Cambio de cobertura de los ecosistemas terrestres al norte y sur del lago de Maracaibo en 1986 y 2001-2003."
+- photokey: "Foto 1"
+  photourl: "./foto-1.jpg"
+  photocaption: "Foto 1: Ciénaga de Juan Manuel, estado Zulia. <i>Sergio Zambrano-Martínez</i>"
 ---
 # Contexto
 
-La biorregión Depresión de Maracaibo está ubicada en el estado Zulia, en el sector noroccidental de Venezuela (Figura 1). El estado Zulia abarca unos 63.100 km², incluyendo tierra fi rme, el lago de Maracaibo y parte del golfo de Venezuela, lo que representa aproximadamente 6,90% de todo el territorio venezolano, siendo la quinta entidad de mayor superfi cie en Venezuela, luego de los estados Bolívar, Amazonas, Apure y Guárico. Por su parte el lago de Maracaibo, el mayor de América del Sur, cubre 12.013 km² de superfi cie, con un largo máximo de 155 km y un ancho máximo de 120 km. En su porción sur la profundidad máxima observada es 34 m. Desde el punto de vista climático, el estado Zulia pertenece a la zona cálida, aunque la sierra de Perijá, área poco poblada que se extiende en la parte occidental, corresponde a la zona templada (Hernández & Parra 1999).
-
-INSERTAR FIGURA
-
-Los vientos alisios del Noroeste penetran libremente en la depresión zuliana y aportan alta humedad, que se condensa al contacto con las altas laderas de las serranías, y permite que los ríos transporten considerables caudales que mantienen dulces las aguas del sur del lago. Los materiales aluviales aportados por los ríos Santa Ana, Catatumbo y Escalante, entre otros, defi nen un delta lacustre al sur del lago, y crean suelos pantanosos con lagunas y ciénagas que imposibilitan el desarrollo de actividades humanas. Esta confluencia parece determinar un fenómeno meteorológico muy interesante, el relámpago del Catatumbo. En esta zona destacan los ecosistemas de bosques deciduos, bosques semideciduos y bosques siempreverdes (Hernández & Parra 1999).
+La biorregión Depresión de Maracaibo está ubicada en el estado Zulia, en el sector noroccidental de Venezuela (Figura 1). El estado Zulia abarca unos 63.100 km², incluyendo tierra firme, el lago de Maracaibo y parte del golfo de Venezuela, lo que representa aproximadamente 6,90% de todo el territorio venezolano, siendo la quinta entidad de mayor superficie en Venezuela, luego de los estados Bolívar, Amazonas, Apure y Guárico. Por su parte el lago de Maracaibo, el mayor de América del Sur, cubre 12.013 km² de superficie, con un largo máximo de 155 km y un ancho máximo de 120 km. En su porción sur la profundidad máxima observada es 34 m. Desde el punto de vista climático, el estado Zulia pertenece a la zona cálida, aunque la sierra de Perijá, área poco poblada que se extiende en la parte occidental, corresponde a la zona templada (Hernández & Parra 1999).
+{Figura 1}
+Los vientos alisios del Noroeste penetran libremente en la depresión zuliana y aportan alta humedad, que se condensa al contacto con las altas laderas de las serranías, y permite que los ríos transporten considerables caudales que mantienen dulces las aguas del sur del lago. Los materiales aluviales aportados por los ríos Santa Ana, Catatumbo y Escalante, entre otros, definen un delta lacustre al sur del lago, y crean suelos pantanosos con lagunas y ciénagas que imposibilitan el desarrollo de actividades humanas. Esta confluencia parece determinar un fenómeno meteorológico muy interesante, el relámpago del Catatumbo. En esta zona destacan los ecosistemas de bosques deciduos, bosques semideciduos y bosques siempreverdes (Hernández & Parra 1999).
 
 De acuerdo con Hueck (1960), la vegetación predominante en la región eran las selvas hidrófilas y siempreverdes periódicamente inundables, bosques deciduos mesófilos periódicamente húmedos, que incluyen pantanos y ciénagas, bosques deciduos semisecos, bosques secos, estepas de gramíneas cenagosas periódicamente inundables, y bosques de galería y manglares. Posterior a lo descrito por Huek, el mapa de vegetación de Huber y Alarcón (1988) señala que en la subregión Depresión de Maracaibo predominan áreas intervenidas con parches de bosques deciduos, bosques siempreverdes, y sabanas y herbazales (e.g. Parque Nacional Ciénagas de Juan Manuel). Este mapa refleja una dramática transformación de los paisajes de la región, cuyo remanente son áreas altamente intervenidas por las distintas presiones de uso, que en gran medida han reducido la vegetación original allí presente. Adicionalmente, Portillo y Pietrangeli (2004) indican que más de 90% de los bosques ha desaparecido desde 1982 hasta 2003, lo que ubica a la región zuliana en los índices de deforestación más altos del país.
 
@@ -50,9 +56,8 @@ La selección de las imágenes estuvo basada en cuatro condiciones principales: 
 
 </div>
 
-INSERTAR FIGURA
-
-La identificación y descripción de las coberturas vegetales fi nales se hizo tomando como base cinco de las unidades fisonómicas  identificadas en el mapa de vegetación por Huber y Alarcón (1988): bosques siempreverdes, bosques semideciduos, bosques ribereños, manglares y herbazales pantanosos (ciénagas). Adicionalmente, se  identificaron otras clases de coberturas no vegetales: plantaciones forestales, áreas intervenidas (agropecuarias y/o deforestadas), áreas urbanas, áreas quemadas, suelos expuestos, así como nubes, sombras de nubes y cuerpos de agua. Esta información fue corroborada en campo en mayo de 2008.
+{Figura 2}
+La identificación y descripción de las coberturas vegetales finales se hizo tomando como base cinco de las unidades fisonómicas  identificadas en el mapa de vegetación por Huber y Alarcón (1988): bosques siempreverdes, bosques semideciduos, bosques ribereños, manglares y herbazales pantanosos (ciénagas). Adicionalmente, se  identificaron otras clases de coberturas no vegetales: plantaciones forestales, áreas intervenidas (agropecuarias y/o deforestadas), áreas urbanas, áreas quemadas, suelos expuestos, así como nubes, sombras de nubes y cuerpos de agua. Esta información fue corroborada en campo en mayo de 2008.
 
 Entre los resultados para la región del norte y sur del lago se tiene la construcción de dos series de mapas de cobertura: los mapas de cobertura terrestre de 1986, y los de 2001 y 2003 (Figura 2). En cuanto a la aplicación del sistema de categorías de riesgo, ésta se realizó mediante la clasificación de las coberturas vegetales  identificadas, a las cuales se les aplicó el método propuesto por Rodríguez y colaboradores (2011) [vid. supra, cap. II].
 
@@ -62,11 +67,11 @@ El estado Zulia ha enfrentado una intensa actividad antrópica, y el área de es
 
 En la parte oriental de la Depresión de Maracaibo, zona tradicional de la actividad petrolera del estado Zulia, levantan los campos emblemáticos de las empresas y contratistas: La Rosa (Cabimas), Punta Benítez (Punta Gorda), Tía Juana Tierra, Lagunillas Tierra (Ciudad Ojeda y Lagunillas), Bachaquero Tierra (Bachaquero), Mene Grande (Mene Grande), Barúa (El Tigre), Motatán (Santa Isabel), Tomoporo (Tomoporo), son algunos de los ubicados en el interior del lago. En la costa oriental del lago también destaca la Planta de Fraccionamiento de Gas Licuado Ulé (municipio Simón Bolívar) y el Complejo Petroquímico El Tablazo (municipio Miranda), además de numerosas empresas de servicios, y puertos para buques tanqueros.
 
-En las imágenes evaluadas se identificó una importante actividad ganadera, así como un área altamente intervenida, principalmente en los lugares donde se emplazan las actividades petroleras. Igualmente fueron detectadas grandes zonas de pastizales, donde deberían existir bosques deciduos y semideciduos. Al Occidente destacan zonas con mayor actividad agropecuaria, con grandes extensiones de pastizales o potreros. La presencia de lotes de terrenos con altos niveles de clorofi la sugiere la posibilidad de que se trate de cultivos de palma aceitera africana (*Elaeis guineensis*), especie introducida desde 1992 que ha dado lugar a una actividad económica importante, desplazando la actividad ganadera. En la imagen de 1986, los lugares donde se encuentran los extensos cultivos de esta palma eran interpretados como bosque natural, pero la imagen de 2003 revela que la vegetación original fue reemplazada por la palma en cuestión. Aún en la imagen de 2003 esta especie genera confusión, debido a que en su estado de madurez se asemeja a la vegetación natural (Fundación Polar 1997).
+En las imágenes evaluadas se identificó una importante actividad ganadera, así como un área altamente intervenida, principalmente en los lugares donde se emplazan las actividades petroleras. Igualmente fueron detectadas grandes zonas de pastizales, donde deberían existir bosques deciduos y semideciduos. Al Occidente destacan zonas con mayor actividad agropecuaria, con grandes extensiones de pastizales o potreros. La presencia de lotes de terrenos con altos niveles de clorofila sugiere la posibilidad de que se trate de cultivos de palma aceitera africana (*Elaeis guineensis*), especie introducida desde 1992 que ha dado lugar a una actividad económica importante, desplazando la actividad ganadera. En la imagen de 1986, los lugares donde se encuentran los extensos cultivos de esta palma eran interpretados como bosque natural, pero la imagen de 2003 revela que la vegetación original fue reemplazada por la palma en cuestión. Aún en la imagen de 2003 esta especie genera confusión, debido a que en su estado de madurez se asemeja a la vegetación natural (Fundación Polar 1997).
 
 Por otro lado, se identificaron bosques ribereños en los ríos Santa Ana, Río Negro y Catatumbo, los cuales presentan en la actualidad una fuerte reducción de los bosques ribereños, en comparación con la imagen de 1986. Este tipo de vegetación que se encuentra dentro del Parque Nacional Ciénagas de Juan Manuel se mantiene relativamente estable, a diferencia de los bosques en los alrededores sometidos a fuertes presiones de uso. Los bosques siempreverdes y las sabanas y herbazales en el parque nacional se muestran en buen estado de conservación.
 
-Con base en la clasificación de las coberturas  identificadas, evaluadas mediante el sistema de categorías de riesgo de eliminación, se procedió a determinar el estatus de cada uno de los ecosistemas, tomando en cuenta los cambios de cobertura y el patrón de fragmentación (vid. supra, cap. II; Rodríguez et al. 2011). Se encontró que al aplicar los criterios A, B y C, el criterio B usualmente determinó un mayor riesgo de eliminación, aunque en casos especiales se aplicó el criterio D (referente a ecosistemas de distribución restringida). La Tabla 2 muestra los cambios detectados para coberturas vegetales, y la Tabla 3 los cambios de coberturas no vegetales, no contrastadas con el sistema de categorías de riesgo.
+Con base en la clasificación de las coberturas  identificadas, evaluadas mediante el sistema de categorías de riesgo de eliminación, se procedió a determinar el estatus de cada uno de los ecosistemas, tomando en cuenta los cambios de cobertura y el patrón de fragmentación (vid. supra, cap. II; Rodríguez *et al.* 2011). Se encontró que al aplicar los criterios A, B y C, el criterio B usualmente determinó un mayor riesgo de eliminación, aunque en casos especiales se aplicó el criterio D (referente a ecosistemas de distribución restringida). La Tabla 2 muestra los cambios detectados para coberturas vegetales, y la Tabla 3 los cambios de coberturas no vegetales, no contrastadas con el sistema de categorías de riesgo.
 
 <div style="text-align: center;"><b>Tabla 2.</b> Cambios en los tipos de coberturas vegetales del norte del lago de Maracaibo (1986-2001).</div>
 <div class="table-container is-size-6">
@@ -233,5 +238,4 @@ La aplicación del sistema de categorías de riesgo en la Depresión de Maracaib
 El sistema de categorías constituye una herramienta útil y relativamente fácil de aplicar, que por primera vez permite evaluar de forma objetiva, repetible y transparente el riesgo de eliminación de los ecosistemas terrestres. Esto hace del sistema un valioso aporte para detectar rápidamente la pérdida de ecosistemas terrestres, y alertar a los entes gubernamentales y privados, sobre las implicaciones de la pérdida de servicios ambientales (agua, clima, suelos).
 
 Una de las principales bondades de este sistema, es que al enfocarse sólo en el riesgo de eliminación separado del establecimiento de prioridades de conservación, permitirá que los diseñadores de políticas públicas sean explícitamente conscientes de la escala espacial en que éstas deben ser implementadas, así como la forma en que estas políticas podrían afectar la situación de los ecosistemas más allá de su área de influencia.
-
-INSERTAR FOTO
+{Foto 1}
