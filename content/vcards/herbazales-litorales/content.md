@@ -69,3 +69,23 @@ photos:
   photourl: "./foto-5.jpg"
   photocaption: "Foto 5: Herbazal litoral con desechos arrastrados por las corrientes, costa de isla de Coche. <i>César Molina</i>"
 ---
+Por lo reducido de su superficie estimada, los herbazales litorales califican Vulnerable (VU) según el criterio C2. Con respecto a la detección de su grado de intervención, el proceso es muy complejo mediante el uso de imágenes de satélite, a menos que sólo se considere la eliminación directa del hábitat por el desarrollo de proyectos de infraestructura, como complejos habitacionales, turísticos, industriales, actividades agropecuarias, e instalación de camaroneras, entre otros.
+
+Por las características inherentes a esta formación y por las limitaciones mencionadas, asociadas con la escala de trabajo, en Huber y Alarcón (1988) los herbazales litorales fueron mayormente considerados en forma conjunta con los arbustales xerófilos litorales y de manera esquemática se asoció prácticamente a toda la costa venezolana en una franja mayor a su superficie real (vid. supra, cap. I: Figura 6).
+
+En este momento, dada la disponibilidad de imágenes de satélite de una resolución espacial superior, se pudo hacer una mejor distinción entre ellas, pero aún se requieren esfuerzos adicionales. Tomando en cuenta estos retos se procuró distinguir, con la información cualitativa contenida en el mapa de Huber y Alarcón (1988), la formación de herbazales de ese momento para realizar comparaciones generales con los datos de 2010 (Figura 1 y Tabla 1). En algunas localidades como de Falcón y otros estados, los valores para el herbazal en 1988 fueron subestimados, porque se tomó la decisión de asociar la superficie que se encontraba bajo el término vegetación litoral en Huber y Alarcón (1988) a los arbustales, cuando no era factible lograr la separación entre la formación arbustal y el herbazal litoral. (Figura 1 y Tabla 1).
+
+En el ámbito de los estados, tanto en 1988 como en 2010, los herbazales litorales están amenazados según el criterio C2 (Figura 1c). Las Dependencias Federales califican En Peligro Crítico (CR), Falcón se ubica en Vulnerable (VU) y todos los demás estados califican En Peligro (EN).
+
+# Amenazas
+
+Estas comunidades son afectadas principalmente por los desarrollos urbanos, turísticos, agropecuarios (incluyendo la instalación de camaroneras) e industriales (Foto 2, Foto 3) que se dan en las costas de nuestro país, en especial cuando éstas implican la modificación de la franja litoral. Adicionalmente, su composición específica en muchos casos se ve afectada por la presencia de contaminantes en el agua o cambios en la concentración de sales, debidos a diferentes actividades humanas. Otra de las amenazas más comunes es la instalación de vertederos de desechos sólidos (basureros) sin los respectivos controles, así como el paso de vehículos (motos y automóviles) por áreas sin rutas predefinidas (Foto 4). Sin embargo, es importante acotar que la gran mayoría de estas plantas parecen ser muy resistentes y poseer una alta resiliencia, de manera que, al finalizar una perturbación, se recuperan con relativa facilidad.
+{Foto 2}
+{Foto 3}
+{Foto 4}
+Un nuevo problema que afecta a las costas venezolanas y por ello a los herbazales litorales es la acumulación de desechos transportados por la deriva y las corrientes de mar, generando en muchos casos grandes perturbaciones sobre el sistema (Foto 5).
+{Foto 5}
+
+# Conservación
+
+El porcentaje de esta formación que se encuentra en áreas protegidas con fines de conservación corresponde a 13 % de su superficie (Figura 1c) y un 0,8% adicional se encuentra bajo figuras de conservación con usos permitidos limitados. La Ley de zonas costeras protege la franja terrestre de la costa hasta 500 m medidos perpendicularmente desde la proyección vertical de la línea de más alta marea, hacia la costa (Venezuela 2001). La misma regula y limita los desarrollos sobre esta franja, así como en el área acuática adyacente, lo que contribuye al resguardo de los herbazales costeros y la diversidad asociada a ellos.
