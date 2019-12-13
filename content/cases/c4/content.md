@@ -2,8 +2,7 @@
 case: c4
 title: "Conversión de los bosques del norte de la sierra de Perijá, estado Zulia"
 authors: "Mariana C. Hernández-Montilla, Carlos Portillo-Quintero"
-cardimage: "./pancartac4.jpg"
-cardimagecaption: "Falta esta foto"
+cardimage: "./pancarta.jpg"
 landscapeunits: "Serranía de Perijá (<a href='/units/d#d1'>D1</a>)"
 locality: "Cuencas altas de los ríos El Palmar, Lajas, Guasare y Apón<sup>(1)</sup>. Cuencas bajas de los ríos Guasare, Socuy y Cachirí<sup>(2)</sup>"
 states: "Zulia"
@@ -15,6 +14,19 @@ cardtablecolumns:
 cardtablerows:
   - "Bosques siempreverdes<sup>(1)</sup>|cr|A2"
   - "Bosques siempreverdes<sup>(2)</sup>|cr|A2"
+photos:
+- photokey: "Figura 1"
+  photourl: "./figura-1.png"
+  photocaption: "Figura 1: Localización geográfica de las áreas de estudio al norte de la sierra de Perijá, estado Zulia."
+- photokey: "Foto 1"
+  photourl: "./foto-1.jpg"
+  photocaption: "Foto 1: Bosques muy intervenidos de la Sierra de Perijá, estado Zulia. Mariana Hernández-Montilla"
+- photokey: "Figura 2"
+  photourl: "./figura-2.jpg"
+  photocaption: "Figura 2: Reducción de la cobertura boscosa en las cuencas altas de los ríos El Palmar, Lajas, Guasare y Apón entre 1989 y 2007."
+- photokey: "Figura 3"
+  photourl: "./figura-3.jpg"
+  photocaption: "Figura 3: Reducción de la cobertura boscosa en las cuencas bajas de los ríos Guasare, Socuy y Cachirí entre 1986 y 2001."
 ---
 # Contexto
 
@@ -31,9 +43,7 @@ La vegetación natural de la sierra de Perijá ha sufrido fuertes intervenciones
 En este estudio se realizó un análisis de cambio de cobertura boscosa, mediante el uso de series temporales de imágenes satelitales del norte de la sierra de Perijá, cuya extensión se encuentra mayormente amenazada por el avance de la frontera agrícola.
 
 Para realizar el estudio en la sierra de Perijá, se trabajó en dos áreas que cubren cinco municipios del estado Zulia: Rosario de Perijá, Villa del Rosario, Jesús Enrique Lossada, Mara y Páez. Una de las áreas abarca las cuencas altas de los ríos El Palmar, Lajas, Guasare y Apón; y la otra incluye las cuencas bajas de los ríos Guasare, Socuy y Cachirí (Figura 1). Para el estudio fue localizada y delimitada la zona más afectada por deforestación, empleando como criterio principal la conservación de cuencas y ríos de gran cauce, donde el recurso hídrico está severamente afectado, demostrado en la reducción del flujo de agua en detrimento de las comunidades humanas y de la biodiversidad local (Portillo 2004, Alvarado 2008, Hernández-Montilla 2010).
-
-INSERTAR FIGURA
-
+{Figura 1}
 Los cambios de cobertura en la cuenca alta fueron cuantificados mediante el procesamiento de tres imágenes: dos imágenes del satélite Landsat TM 5 del 30 de diciembre de 1989 y del 11 de noviembre de 2002, y una imagen del satélite Aster del 17 de julio de 2007. Para la cuenca baja se utilizaron dos imágenes de la serie Landsat TM 5 de los años 1986, y dos imágenes Landsat ETM 7 del 03 de marzo de 2001.
 
 El procesamiento digital y análisis de las imágenes satelitales se efectuó mediante varios programas, principalmente ArcView 3.2, Idrisi Kilimanjaro, Sextante y Grass. El primer paso consistió en la estandarización digital de las tres imágenes satelitales, donde todas las zonas ocupadas por nubes, sombras y cuerpos de agua fueron eliminadas mediante la creación de una “máscara”. El área restante fue objeto de la cuantificación de cambio de cobertura.
@@ -43,8 +53,7 @@ La identificación de las diferentes coberturas boscosas de las cuencas altas se
 Para aplicar los criterios cuantitativos de riesgo de eliminación de ecosistemas, se calculó la proporción de bosque original remanente en 2002 y 2007 para las cuencas altas, y en 2001 para las cuencas bajas, utilizando los criterios propuestos por Rodríguez y colaboradores (2007, 2011; vid. supra, cap. II). Para abarcar la ventana de 50 años requerida por el criterio A, se proyectó la futura conversión de los bosques.
 
 Finalmente, los cambios de cobertura observados y proyectados en el área de estudio fueron contrastados con los umbrales establecidos para los criterios A, B y C, y se asignó la categoría respectiva. El criterio D no aplicó en este caso de estudio. Aunque los datos permitieron asignar las categorías empleando más de un criterio, la categoría final seleccionada corresponde a la de mayor riesgo relativo, de acuerdo con el principio de precaución (vid. supra, cap. II). En virtud de la ausencia de información cuantitativa relacionada con la pérdida de función ecológica, todas las asignaciones se hicieron con datos de cambio de cobertura (Foto 1).
-
-INSERTAR FOTO
+{Foto 1}
 
 # Resultados
 
@@ -94,11 +103,9 @@ En el año 1989, el área de las cuencas altas presentaba 1.418 km<sup>2</sup> d
     </tr>
   </table>
 </div>
-
-INSERTAR FIGURA
-
+{Figura 2}
 En el área de las cuencas bajas, para el año 1986 se identificaron 328 km<sup>2</sup> de cobertura de bosques. Para el año 2001, el análisis mostró una reducción de 39% del ecosistema a una tasa de deforestación de 9 km<sup>2</sup>/año (Figura 3). La tabla 2 sintetiza los resultados relevantes para la asignación de una categoría. Para ambos casos, la proyección a 50 años de las tasas de deforestación, predice que el total de la cobertura boscosa (100%) será reemplazada por vegetación intervenida u otros usos de la tierra. Los bosques de las cuencas bajas de los ríos Guasare, Socuy y Cachirí fueron clasificados CR A2 y EN C2(a). Igual que en las cuencas altas, no se contó con sufi ciente información histórica para satisfacer el criterio B, mientras que el criterio D no aplica.
-
+<br><br>
 <div style="text-align: center;"><b>Tabla 2.</b> Evaluación del riesgo de eliminación de los bosques de las cuencas bajas de los ríos Guasare, Socuy y Cachirí.</div>
 <div class="table-container is-size-6">
   <table>
@@ -141,8 +148,7 @@ En el área de las cuencas bajas, para el año 1986 se identificaron 328 km<sup>
     </tr>
   </table>
 </div>
-
-INSERTAR FIGURA
+{Figura 3}
 
 En general, la principal amenaza es la expansión de cultivos comerciales extensivos en terrenos previamente ocupados por bosques maduros o en etapa sucesional tardía. Entre 1989 y 2007, en las cuencas altas el área ocupada por cultivos pasó de 0,58 ha a 7,25 ha; sin embargo, el área de suelos expuestos podría estar relacionada con suelos abandonados por cultivos, lo cual incrementaría el área afectada. Las áreas de bosques intervenidos también podrían ser estados sucesionales avanzados de zonas anteriormente ocupadas por cultivos, y actualmente en descanso o en abandono por el desplazamiento de las fronteras agrícolas. Así mismo, se observa que el crecimiento de los cultivos ocurrió de manera dispersa y fragmentada, y penetró incluso en lotes boscosos originalmente extensos y relativamente remotos. El cultivo más frecuente fue el ocumo (*Xanthosoma saggittifolium*), un cormo perteneciente a la familia Aracea y, en menor medida, cultivos de subsistencia relacionados con árboles frutales de noni (*Morinda citrifolia*), lechoza (*Carica papaya*), limón (*Citrus limon*), musáceas como plátano y cambur o banano (*Musa paradisiaca*), y café (*Coffea arabiga*), entre otros frutos (Hernández-Montilla 2010).
 
