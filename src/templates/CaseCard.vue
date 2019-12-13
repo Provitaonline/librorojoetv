@@ -121,7 +121,6 @@
       authors
       content
       cardimage
-      cardimagecaption
       landscapeunits
       locality
       states
