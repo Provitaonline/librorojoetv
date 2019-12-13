@@ -51,7 +51,7 @@ Tomando como referencia las unidades fisionómicas identificadas por Huber y Ala
 
 Con el fin de validar las coberturas vegetales identificadas, los resultados fueron comparados con otros mapas de vegetación disponibles para la región (Ataroff & Sarmiento 2003, Josse *et al.* 2009b). Estos mapas son compatibles a grandes rasgos y las diferencias se deben a detalles en las denominaciones, como por ejemplo, la unidad clasificada como “páramos”, es dividida por Ataroff y Sarmiento (2003) en páramo andino o altiandino, dependiendo de su altitud, mientras que Josse y colaboradores (2009b) proponen una clasificación aun más detallada.
 
-Una vez clasificadas las dos imágenes satelitales (Figuras 2), se utilizó la información de los cambios detectados en 13 años (1986-2001), para proyectar la cobertura que tendrían los ecosistemas en 2036 y así abarcar los 50 años requeridos para aplicar el criterio A3 (Rodríguez *et al.* 2011, vid. supra, cap. II).
+Una vez clasificadas las dos imágenes satelitales (Figura 2), se utilizó la información de los cambios detectados en 13 años (1986-2001), para proyectar la cobertura que tendrían los ecosistemas en 2036 y así abarcar los 50 años requeridos para aplicar el criterio A3 (Rodríguez *et al.* 2011, vid. supra, cap. II).
 
 INSERTAR FIGURA
 
