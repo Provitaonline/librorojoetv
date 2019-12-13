@@ -2,8 +2,7 @@
 case: c8
 title: "Conversión de los bosques y zonas áridas del centro-norte del estado Falcón"
 authors: "Irene Zager, Fabián Carrasquel"
-cardimage: "./pancartac8.jpg"
-cardimagecaption: "Falta esta foto"
+cardimage: "./pancarta.jpg"
 landscapeunits: "Sistema de colinas y sierras bajas Lara-Falcón (<a href='/units/c#c1'>C1</a>)<br>Sierra de San Luis y Cerro Santa Ana (<a href='/units/d#d3'>D3</a>)"
 locality: "Zona centro-norte del estado Falcón"
 states: "Falcón"
@@ -17,6 +16,16 @@ cardtablerows:
   - "Bosques semideciduos|en|A2"
   - "Bosques deciduos|cr|A2, A3"
   - "Cardonales y espinares|cr|A2"
+photos:
+- photokey: "Figura 1"
+  photourl: "./figura-1.png"
+  photocaption: "Figura 1: Localización del área de estudio en el estado Falcón."
+- photokey: "Figura 2"
+  photourl: "./figura-2.jpg"
+  photocaption: "Figura 1: Cobertura de los ecosistemas terrestre de la zona centro-norte del estado Falcón en 1991-2001."
+- photokey: "Foto 1"
+  photourl: "./foto-1.jpg"
+  photocaption: "Foto 1: Cardonales y espinares, estado Falcón. <i>Archivo Provita</i>"
 ---
 # Contexto
 
@@ -33,17 +42,13 @@ En cuanto a las principales actividades antrópicas, en el estado Falcón no se 
 # Métodos
 
 Para definir el estatus de riesgo de eliminación de los ecosistemas del área seleccionada, se cubrió aproximadamente 10.000 km<sup>2</sup> de la zona centro-norte, lo que corresponde a 40% de la superficie total del estado Falcón (Figura 1). La península de Paraguaná no fue incluida en el área de estudio debido a la gran nubosidad en las imágenes de satélite disponibles, lo que limitaba notablemente el área efectiva de análisis dentro de la península.
-
-INSERTAR FIGURA
-
+{Figura 1}
 La comparación de los cambios de cobertura ocurridos en la zona centro-norte del estado Falcón, se llevó a cabo mediante el uso de dos imágenes satelitales, una imagen Landsat TM del 16 de agosto de 1991, y una imagen Landsat ETM+ del 2 de julio de 2001. Para el procesamiento digital y él análisis de las imágenes satelitales se utilizaron los programas ArcView 3.2, Idrisi Kilimanjaro y Fragstats. En un procesamiento inicial, los valores radiométricos y atmosféricos de las imágenes satelitales fueron corregidos con el programa Idrisi Kilimanjaro, con el fin de calibrar las inconsistencias derivadas del uso de diferentes sensores y de los efectos atmosféricos (Eastman 2003). Previo al análisis se eliminaron todas las zonas ocupadas por nubes, sombras y cuerpos de agua.
 
-Seguidamente se procedió a la identificación de los principales tipos de cobertura vegetal presentes en el área y sus respectivas fi rmas espectrales. Los puntos de referencia para cada una de las coberturas terrestres se obtuvieron en campo utilizando un posicionador satelital (GPS). Los puntos de referencia se superpusieron en la composición en falso color de las imágenes satelitales para defi nir áreas de entrenamiento y así realizar una clasifi cación supervisada de las imágenes mediante el algoritmo de clasifi cación de *Distancia Mínima a la Media* (MINDIST) (Jensen 1996, Eastman 2003).
+Seguidamente se procedió a la identificación de los principales tipos de cobertura vegetal presentes en el área y sus respectivas firmas espectrales. Los puntos de referencia para cada una de las coberturas terrestres se obtuvieron en campo utilizando un posicionador satelital (GPS). Los puntos de referencia se superpusieron en la composición en falso color de las imágenes satelitales para definir áreas de entrenamiento y así realizar una clasificación supervisada de las imágenes mediante el algoritmo de clasificación de *Distancia Mínima a la Media* (MINDIST) (Jensen 1996, Eastman 2003).
 
-De acuerdo con la refl ectancia encontrada en el área y la época en que fueron tomadas las imágenes, en la clasifi cación supervisada se reconocieron diez tipos de coberturas diferentes: 1) bosques siempreverdes, 2) bosques semideciduos, 3) bosques deciduos, 4) cardonales y espinares, 5) arbustales y matorrales, 6) vegetación litoral, 7) áreas anegadizas, 8) arenas y suelos expuestos, 9) áreas intervenidas, y 10) áreas urbanas. Sin embargo, en algunas zonas fue muy difícil diferenciar entre los distintos tipos de vegetación debido a las características predominantemente áridas y semiáridas del área de estudio, lo que pudo afectar las estimaciones de cobertura. Una vez obtenidos los mapas de cobertura preliminares para los años 1991 y 2001, estos fueron superpuestos con el fi n de detectar polígonos o coberturas falsas, siguiendo el método de procesamiento en pares mediante el módulo CROSSTAB del programa Idrisi Kilimanjaro (Sánchez-Azofeifa *et al.* 2001, Eastman 2003). Estas inconsistencias fueron revisadas junto con los ortofotomapas y corregidas en los mapas de cobertura correspondientes.
-
-INSERTAR FIGURA
-
+De acuerdo con la refl ectancia encontrada en el área y la época en que fueron tomadas las imágenes, en la clasificación supervisada se reconocieron diez tipos de coberturas diferentes: 1) bosques siempreverdes, 2) bosques semideciduos, 3) bosques deciduos, 4) cardonales y espinares, 5) arbustales y matorrales, 6) vegetación litoral, 7) áreas anegadizas, 8) arenas y suelos expuestos, 9) áreas intervenidas, y 10) áreas urbanas. Sin embargo, en algunas zonas fue muy difícil diferenciar entre los distintos tipos de vegetación debido a las características predominantemente áridas y semiáridas del área de estudio, lo que pudo afectar las estimaciones de cobertura. Una vez obtenidos los mapas de cobertura preliminares para los años 1991 y 2001, estos fueron superpuestos con el fin de detectar polígonos o coberturas falsas, siguiendo el método de procesamiento en pares mediante el módulo CROSSTAB del programa Idrisi Kilimanjaro (Sánchez-Azofeifa *et al.* 2001, Eastman 2003). Estas inconsistencias fueron revisadas junto con los ortofotomapas y corregidas en los mapas de cobertura correspondientes.
+{Figura 2}
 En los dos mapas de cobertura finales se aplicaron filtros con el fin de extraer la cobertura original de 1991 y la cobertura reciente de 2001 (Figura 2) de las siguientes unidades de vegetación: i) bosques siempreverdes, ii) bosques semideciduos, iii) bosques deciduos y iv) cardonales y espinares. Posteriormente se calculó la proporción original y remanente de cada una de estas unidades, y se proyectó su conversión hacia el futuro considerando una ventana de 50 años, esto último con el fin de aplicar los criterios cuantitativos de riesgo de eliminación de ecosistemas propuestos por Rodríguez y colaboradores (2011) [vid. supra, cap. II]. Los cambios de cobertura observados y proyectados para cada unidad de vegetación fueron contrastados con los umbrales establecidos para el criterio A, asignando como categoría final aquella que correspondiera al mayor riesgo relativo, de conformidad con el principio de precaución [vid. supra, cap. II]. La asignación de categorías de riesgo de eliminación se basó únicamente en la información de los cambios de cobertura, dado que no se disponía de datos cuantitativos sobre la pérdida de función ecológica.
 
 # Resultados
@@ -190,9 +195,7 @@ Al proyectar hacia el futuro las tasas de cambio de cobertura estimadas para el 
 <div style="text-align: center;">
   Coberturas: Bsv: bosques siempreverdes, Bsd: bosques Semideciduos, Bd: bosques deciduos, Car-Esp: cardonales y espinares; Arb Mat: arbustales y matorrales, VLit: vegetación litoral
 </div>
-
-
-INSERTAR FOTO
+{Foto 1}
 
 # Conclusiones
 
