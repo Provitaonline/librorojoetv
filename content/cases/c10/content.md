@@ -2,8 +2,7 @@
 case: c10
 title: "Cambios en la cobertura de manglares en tres sitios de la costa Caribe de Venezuela"
 authors: "Ana Lucía Dávalos"
-cardimage: "./pancartac10.jpg"
-cardimagecaption: "Falta esta foto"
+cardimage: "./pancarta.jpg"
 landscapeunits: "Bosques de manglar (<a href='/units/a'>A2</a>)"
 locality: "Costa Central, costa Oriental del lago, península de La Guajira"
 states: "Miranda, Zulia"
@@ -17,6 +16,40 @@ cardtablerows:
   - "Bosques de manglar<sup>(1)</sup>|lc|--"
   - "Bosques de manglar<sup>(2)</sup>|en|A2"
   - "Bosques de manglar<sup>(3)</sup>|en|A2"
+photos:
+- photokey: "Figura 1"
+  photourl: "./figura-1.jpg"
+  photocaption: "Figura 1: Ubicación relativa del Parque Nacional Laguna de Tacarigua, estado Miranda (a), Refugio de Fauna Silvestre Ciénaga de Los Olivitos y laguna de Cocinetas, estado Zulia (b)."
+- photokey: "Figura 2"
+  photourl: "./figura-2a.jpg"
+  photocaption: "Figura 2a: Cobertura de manglares para el sector de laguna de Tacarigua. 1991."
+- photokey: "Figura 2b"
+  photourl: "./figura-2b.jpg"
+  photocaption: "Figura 2b: Cobertura de manglares para el sector de laguna de Tacarigua. 2001."
+- photokey: "Figura 2c"
+  photourl: "./figura-2c.jpg"
+  photocaption: "Figura 2c: Cobertura de manglares para el sector de laguna de Tacarigua. Cambios 1991-2001."
+- photokey: "Figura 3"
+  photourl: "./figura-3a.jpg"
+  photocaption: "Figura 3a: Cobertura de manglares para el sector ciénaga de Los Olivitos. 1986."
+- photokey: "Figura 3b"
+  photourl: "./figura-3b.jpg"
+  photocaption: "Figura 3b: Cobertura de manglares para el sector ciénaga de Los Olivitos. 2001."
+- photokey: "Figura 3c"
+  photourl: "./figura-3c.jpg"
+  photocaption: "Figura 3c: Cobertura de manglares para el sector ciénaga de Los Olivitos. Cambios 1986-2001."
+- photokey: "Figura 4"
+  photourl: "./figura-4a.jpg"
+  photocaption: "Figura 4a: Cobertura de manglares para el sector laguna de Cocinetas. 1986."
+- photokey: "Figura 4b"
+  photourl: "./figura-4b.jpg"
+  photocaption: "Figura 4b: Cobertura de manglares para el sector laguna de Cocinetas. 2001."
+- photokey: "Figura 4c"
+  photourl: "./figura-4c.jpg"
+  photocaption: "Figura 4c: Cobertura de manglares para el sector laguna de Cocinetas. Cambios 1986-2001."
+- photokey: "Foto 1"
+  photourl: "./foto-1.jpg"
+  photocaption: "Foto 1: Mangle rojo (<i>Rhizophora mangle</i>), Parque Nacional Laguna de Tacarigua, Estado Miranda. <i>Ana Lucía Dávalos</i>"
 ---
 # Contexto
 
@@ -28,11 +61,10 @@ El uso de sistemas de información geográfica y de sensores remotos para evalua
 
 La laguna de Tacarigua se sitúa en la parte oriental de la costa Caribe, en el estado Miranda. Su declaración como parque nacional data de 1974, y su designación como Sitio Ramsar fue hecha en 1996. Ocupa una extensión de 18.400 ha, de las cuales 7.800 ha corresponden solamente a la laguna (Figura 1a). El sector de los manglares se ubica dentro de la llanura costera de Barlovento, bordeando los islotes de la laguna litoral de Tacarigua, de los que forma parte (Venezuela 1974, MARNR 1986, MARNR 1991b).
 
-Por su parte, la ciénaga de Los Olivitos, ubicada en la costa noreste del lago de Maracaibo, en el estado de Zulia (Figura 1b), además de ser uno de los cinco sitios Ramsar de Venezuela, también se cuenta entre las Áreas Bajo Régimen de Administración Especial (ABRAE). Desde 1986 se encuentra bajo la figura de protección Refugio de Fauna Silvestre y Reserva de Pesca. Ocupa una extensión aproximada de 24.208 hectáreas. La ciénaga representa el área de transición entre la zona de influencia mareal del lago de Maracaibo-golfo de Venezuela y la planicie costera del estado Falcón (MARNR 1986).
+Por su parte, la ciénaga de Los Olivitos, ubicada en la costa noreste del lago de Maracaibo, en el estado de Zulia (Figura 1)(a), además de ser uno de los cinco sitios Ramsar de Venezuela, también se cuenta entre las Áreas Bajo Régimen de Administración Especial (ABRAE). Desde 1986 se encuentra bajo la figura de protección Refugio de Fauna Silvestre y Reserva de Pesca. Ocupa una extensión aproximada de 24.208 hectáreas. La ciénaga representa el área de transición entre la zona de influencia mareal del lago de Maracaibo-golfo de Venezuela y la planicie costera del estado Falcón (MARNR 1986).
 
-El tercer lugar de estudio, laguna de Cocinetas, se ubica en el extremo norte de la península de La Guajira (Figura 1b ), al norte del estado Zulia, y tiene una extensión de 1.000 hectáreas. Aunque de importancia estratégica por su ubicación en Castilletes, y de gran riqueza faunística, el área no está protegida por alguna figura legal. El sector de los manglares de Cocinetas ocupa la costa nororiental, el sistema de canales de la parte central y una delgada franja de la parte noroccidental (MARNR 1986, MARNR 1991a).
-
-INSERTAR FIGURA
+El tercer lugar de estudio, laguna de Cocinetas, se ubica en el extremo norte de la península de La Guajira (Figura 1)(b), al norte del estado Zulia, y tiene una extensión de 1.000 hectáreas. Aunque de importancia estratégica por su ubicación en Castilletes, y de gran riqueza faunística, el área no está protegida por alguna figura legal. El sector de los manglares de Cocinetas ocupa la costa nororiental, el sistema de canales de la parte central y una delgada franja de la parte noroccidental (MARNR 1986, MARNR 1991a).
+{Figura 1}
 
 # Métodos
 
@@ -54,23 +86,22 @@ Teniendo en cuenta que el sector de laguna de Tacarigua y el de ciénaga de Los 
 
 # Resultados
 
-Según los análisis para laguna de Tacarigua, en 1991 los manglares tenían una cobertura de 4.236 ha, mientras que en 2001 cubrían 4.457 ha, lo que representa un aumento neto de 221 ha. Sin embargo, este incremento es sólo aparente, ya que durante los 10 años de análisis el sector, perdió 540 ha y recuperó 761 ha de manglares (Figura 2) [Foto 1].
-
-INSERTAR FIGURA
-
-Para la ciénaga de Los Olivitos, en 1986 la cobertura de m anglares era de 5.100 ha y en 2001 sólo permanecían 3.600 ha, lo que expresa una pérdida neta de 1.499 ha que representa 29% del área original de cobertura de manglares. Durante los 15 años de análisis, la pérdida de manglares para este sector fue de 1.951 ha y la recuperación en 452 ha (Figura 3).
-
-INSERTAR FIGURA
-
+Según los análisis para laguna de Tacarigua, en 1991 los manglares tenían una cobertura de 4.236 ha, mientras que en 2001 cubrían 4.457 ha, lo que representa un aumento neto de 221 ha. Sin embargo, este incremento es sólo aparente, ya que durante los 10 años de análisis el sector, perdió 540 ha y recuperó 761 ha de manglares (Figura 2) (Foto 1).
+{Figura 2}
+{Figura 2b}
+{Figura 2c}
+Para la ciénaga de Los Olivitos, en 1986 la cobertura de manglares era de 5.100 ha y en 2001 sólo permanecían 3.600 ha, lo que expresa una pérdida neta de 1.499 ha que representa 29% del área original de cobertura de manglares. Durante los 15 años de análisis, la pérdida de manglares para este sector fue de 1.951 ha y la recuperación en 452 ha (Figura 3).
+{Figura 3}
+{Figura 3b}
+{Figura 3c}
 El sector laguna de Cocinetas en 1986 tenía una cobertura de 409 ha y en 2001 los manglares apenas cubrían 291 ha. Esta pérdida de 118 ha representa 29% de la original cobertura de manglares. Durante los 15 años analizados la pérdida se calcula en 145 ha y la recuperación en 27 ha (Figura 4).
-
-INSERTAR FIGURA
-
+{Figura 4}
+{Figura 4b}
+{Figura 4c}
 El análisis de probabilidades de cadenas de Markov con una proyección de 50 años, tomado en cuenta que los factores que interactúan se mantienen sin cambios en el tiempo, proyecta que de 1991 a 2041 laguna de Tacarigua perdería 38 ha de manglares, lo que no califica para la asignación de categoría de riesgo. En ciénaga de Los Olivitos, se proyecta para 2036 una pérdida de cobertura de 2.033 ha de manglares, que representa una disminución de 60% con respecto a la cobertura de 1986. En laguna de Cocinetas se predice que en 50 años permanecerán 192 ha de manglares, para una pérdida neta de 53% de la cobertura presente en 1986. Por lo tanto, los manglares de Los Olivitos y los de Cocinetas califican en la categoría En Peligro (EN) según el criterio A2.
 
 En cuanto al efecto de la pérdida de manglares en áreas protegidas, en la ciénaga de Los Olivitos para 2036 se proyecta una pérdida neta de 2.438 ha (53%) dentro del refugio de fauna y de 125 ha (58%) fuera de éste. Por lo tanto, los manglares del refugio y los que están fuera del área protegida se consideran En Peligro (EN) según el criterio A2. En cuanto a laguna de Tacarigua, para 2041 se proyecta pérdidas menores a 10% dentro del parque nacional y fuera de éste.
-
-INSERTAR FOTO
+{Foto 1}
 
 # Conclusiones
 
