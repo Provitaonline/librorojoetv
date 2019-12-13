@@ -2,8 +2,7 @@
 case: c5
 title: "Estado de conservación de los ecosistemas del ramal oriental de la cordillera de los Andes venezolanos"
 authors: "María Idalí Tachack-García, Fabián Carrasquel"
-cardimage: "./pancartac5.jpg"
-cardimagecaption: "Falta esta foto"
+cardimage: "./pancarta.jpg"
 landscapeunits: "Cordillera de los Andes (<a href='/units/d#d2'>D2</a>)"
 locality: "Ramal oriental cordillera de los Andes venezolanos"
 states: "Táchira, Mérida*, Trujillo*, Lara, Portuguesa*, Barinas"
@@ -18,6 +17,19 @@ cardtablerows:
   - "Bosques semideciduos|cr|A2"
   - "Bosques ribereños|cr|A2"
   - "Bosques Páramos|lc|--"
+photos:
+- photokey: "Figura 1"
+  photourl: "./figura-1.jpg"
+  photocaption: "Figura 1: Ubicación de la cordillera de Mérida y el área de estudio."
+- photokey: "Figura 2"
+  photourl: "./figura-2.jpg"
+  photocaption: "Figura 2: Cambios de la cobertura de los ecosistemas terrestres de la cordillera de Mérida (Barinas, Mérida,  Trujillo) en 1986-2001."
+- photokey: "Figura 3"
+  photourl: "./figura-3.jpg"
+  photocaption: "Figura 3: Grado de amenaza de las formaciones vegetales en los municipios del ramal oriental de la cordillera de los Andes venezolanos. Las abreviaciones de las categorías son las mismas que en la Tabla 1. Las áreas en blanco son los municipios clasificados en las categorías Preocupación Menor (LC), Datos Insuficientes (DD) y No Evaluado (NE)."
+- photokey: "Foto 1"
+  photourl: "./foto-1.jpg"
+  photocaption: "Foto 1: Caja Seca y Torondoy, estado Mérida. <i>Fernando Rojas-Runjaic</i>"
 ---
 # Contexto
 
@@ -34,9 +46,7 @@ El presente análisis se realizó a dos escalas espaciales y temporales diferent
 En una segunda aproximación se emplearon imágenes de satélite para examinar los cambios de cobertura recientes de la vegetación en una ventana restringida a la cordillera de Mérida, que representa 41% del estado Trujillo, 24% de Mérida y 15% de Barinas (Figura 1). Si bien el estado Barinas corresponde estrictamente a la región los Llanos, este segmento se incorpora al análisis debido a su localización en las imágenes de satélite empleadas y en virtud del valor que representan los ecosistemas del piedemonte barinés. Este segundo análisis evaluó una región de aproximadamente 12.864 km<sup>2</sup>.
 
 Las imágenes satelitales Landsat para la cordillera de los Andes fueron obtenidas del servicio Earth Science Data Interface (ESDI) perteneciente al proyecto Global Land Cover Facility (GLCF) de la Universidad de Maryland. Para la selección de imágenes se empleó tres criterios: 1) cobertura de nubes baja o nula, 2) un mínimo de dos imágenes con al menos diez años de separación entre sí, y 3) imágenes tomadas en fechas similares. Sólo dos imágenes cumplieron con estos requisitos: una Landsat TM del 20 de enero de 1988 y otra Landsat ETM+ del 31 de enero de 2001 (GLCF 2010).
-
-INSERTAR FIGURA
-
+{Figura 1}
 Tomando como referencia las unidades fisionómicas identificadas por Huber y Alarcón (1988), se realizó una clasificación supervisada de las imágenes que permitió distinguir diez tipos de coberturas diferentes: 1) páramos, 2) bosques nublados (bosques ombrófilos montanos siempreverdes), 3) bosques ribereños (bosques ribereños semideciduos), 4) bosques siempreverdes (bosques ombrófilos basimontanos/submontanos, subsiempreverdes, ombrófilos submontanos/montanos, siempreverdes), 5) bosques semideciduos (bosques ombrófilos basimontanos semideciduos estacionales), 6) áreas anegadizas, 7) áreas intervenidas (que incluyen las zonas de actividad agrícola, plantaciones forestales y pastizales), 8) áreas urbanas, 9) suelos expuestos, y 10) nieve.
 
 Con el fin de validar las coberturas vegetales identificadas, los resultados fueron comparados con otros mapas de vegetación disponibles para la región (Ataroff & Sarmiento 2003, Josse *et al.* 2009b). Estos mapas son compatibles a grandes rasgos y las diferencias se deben a detalles en las denominaciones, como por ejemplo, la unidad clasificada como “páramos”, es dividida por Ataroff y Sarmiento (2003) en páramo andino o altiandino, dependiendo de su altitud, mientras que Josse y colaboradores (2009b) proponen una clasificación aun más detallada.
@@ -47,7 +57,7 @@ INSERTAR FIGURA
 
 # Resultados
 
-En el ramal oriental de la cordillera de los Andes venezolanos, la vegetación no intervenida ha sido eliminada en 5% de los municipios estudiados, en 7% califi ca como En Peligro Crítico (CR), en 32% está En Peligro (EN), en 25% Vulnerable (VU), en10% Casi Amenazada (NT) y en 21% puede ser considerada como Preocupación Menor (LC) [Tabla 1]. Los mejor representados en la muestra son los estados Mérida, Táchira y Trujillo. En el estado Mérida la vegetación no intervenida se encuentra en buen estado relativamente, ya que de sus 19 municipios 11 califi can como LC, 5 están amenazados (CR, EN o VU), y en 1 la vegetación ha sido eliminada (E). En contraste, la vegetación de Táchira ha sido altamente modifi cada: en 2 municipios ya fue eliminada (E), en 18 está amenazada y en 2 califi ca como NT. La situación de los municipios de Trujillo es intermedia, con una predominancia de vegetación en situación Vulnerable (VU). Es concluyente que la vegetación de la porción central de la cordillera de Mérida está mejor conservada que los extremos de ésta (Figura 3).
+En el ramal oriental de la cordillera de los Andes venezolanos, la vegetación no intervenida ha sido eliminada en 5% de los municipios estudiados, en 7% califica como En Peligro Crítico (CR), en 32% está En Peligro (EN), en 25% Vulnerable (VU), en10% Casi Amenazada (NT) y en 21% puede ser considerada como Preocupación Menor (LC) [Tabla 1]. Los mejor representados en la muestra son los estados Mérida, Táchira y Trujillo. En el estado Mérida la vegetación no intervenida se encuentra en buen estado relativamente, ya que de sus 19 municipios 11 califican como LC, 5 están amenazados (CR, EN o VU), y en 1 la vegetación ha sido eliminada (E). En contraste, la vegetación de Táchira ha sido altamente modificada: en 2 municipios ya fue eliminada (E), en 18 está amenazada y en 2 califica como NT. La situación de los municipios de Trujillo es intermedia, con una predominancia de vegetación en situación Vulnerable (VU). Es concluyente que la vegetación de la porción central de la cordillera de Mérida está mejor conservada que los extremos de ésta (Figura 3).
 
 La tabla 2 resume la información de la extensión ocupada por cada uno de los tipos de cobertura en 1988 y 2001, así como los cambios ocurridos durante los 13 años cubiertos por el estudio. Estos datos sirvieron de base para obtener unidades métricas, necesarias en la aplicación del sistema de categorías de riesgo de eliminación de ecosistemas.
 
@@ -243,15 +253,12 @@ La tabla 2 resume la información de la extensión ocupada por cada uno de los t
   </table>
 </div>
 
-INSERTAR FIGURA
+{Figura 2}
 
 La mayor reducción de cobertura se observó en los bosques siempreverdes, semideciduos y ribereños, aunque su extensión es relativamente pequeña en el área de estudio (Tabla 2). La mayor amenaza corresponde a los bosques ubicados en el piedemonte barinés, probablemente por la expansión de las plantaciones forestales en la zona (Azócar & Fariñas 2003). Igualmente, entre 1988 y 2001 el área cubierta por nieve se redujo a casi la mitad. De continuar las tendencias observadas, se estima que los bosques siempreverdes, semideciduos y nieve desaparecerán, mientras que los bosques ribereños se reducirían a una pequeña proporción de su cobertura original. Por lo tanto, estos cuatro tipos de cobertura se consideran En Peligro Crítico (CR). En contraste, para el año 2038 se predice el crecimiento de las áreas anegadizas, suelos expuestos, y un crecimiento apreciable de las áreas urbanas. Actualmente las principales causas de amenaza de estos ecosistemas son la expansión de las actividades agrícolas, asociada al establecimiento de cultivos de papa y ajo, las actividades ganaderas de altura y los desarrollos turísticos (Azócar & Fariñas 2003).
-
-INSERTAR FIGURA
-
+{Figura 3}
 En el caso de los bosques nublados, la aplicación del sistema de categorías los coloca en la categoría Preocupación Menor (LC) en toda el área de estudio. Según los resultados de los análisis, los bosques nublados se encuentran aparentemente en buen estado, y esto se debe principalmente al efecto amortiguador que desempeñan las áreas protegidas en la cor dillera de Mérida, lo que sugiere que éstas cumplen efectivamente con su objetivo de creación (Foto 1).
-
-INSERTAR FOTO
+{Foto 1}
 
 # Conclusiones
 
