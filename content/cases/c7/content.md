@@ -2,8 +2,7 @@
 case: c7
 title: "Conversión de bosques en la reserva forestal Sipapo, estado Amazonas"
 authors: "Irene Zager, Fabián Carrasquel"
-cardimage: "./pancartac7.jpg"
-cardimagecaption: "Falta esta foto"
+cardimage: "./pancarta.jpg"
 landscapeunits: "Sistema de colinas y sierras bajas piemontanas del Escudo Guayanés (<a href='/units/c#c2'>C2</a>)"
 locality: "Reserva Forestal Sipapo, noroccidente estado Amazonas"
 states: "Amazonas"
@@ -14,6 +13,16 @@ cardtablecolumns:
   - "Criterio"
 cardtablerows:
   - "Bosques siempreverdes|lc|A1, A2, A3"
+photos:
+- photokey: "Figura 1"
+  photourl: "./figura-1.png"
+  photocaption: "Figura 1: Localización de la Reserva Forestal Sipapo, zona noroccidental del estado Amazonas."
+- photokey: "Figura 2"
+  photourl: "./figura-2.jpg"
+  photocaption: "Figura 2: Cobertura de bosques siempreverdes (verde oscuro) para los años 1986 y 2001 en la zona noroccidental del estado Amazonas."
+- photokey: "Figura 3"
+  photourl: "./figura-3.jpg"
+  photocaption: "Figura 3: Mapa del riesgo de eliminación de los bosques siempreverdes de la zona noroccidental del estado Amazonas por grillas de 100 Km2. A) Bosques siempreverdes B) Arbustales y herbazales"
 ---
 # Contexto
 
@@ -22,9 +31,7 @@ El estado Amazonas conforma junto con el estado Bolívar la biorregión Guayana,
 El estado Amazonas concentra aproximadamente 53% de los bosques venezolanos, lo que equivale a una superficie de 16.404.187 ha, de las cuales 2.612.304 ha están ocupadas por bosques de alto interés comercial. Adicionalmente al valor natural y comercial de sus bosques, el estado Amazonas concentra recursos hídricos indispensables, siendo el lugar donde nace la cuenca del Orinoco, que constituye la principal fuente de agua para el consumo humano y de vital importancia en la producción de energía hidroeléctrica para Venezuela. De igual manera, por su ubicación, conformación y abundancia florística, la diversidad ecosistémica de la entidad representa un recurso de gran significación para el aprovechamiento de materias primas y de especies promisorias para mercados potenciales (Esteves & Dumith 1998).
 
 La mayor parte de esta vasta zona se caracteriza por una baja densidad de habitantes, pero concentra la mayor proporción de territorios indígenas del país (Berry *et al.* 1995). Las comunidades asentadas en el estado Amazonas desarrollan actividades artesanales, agrícolas, pesqueras, de caza y de recolección, con el fin de enfrentar la pobreza extrema y la falta de fuentes de trabajo que caracterizan a esta zona. En virtud de la baja calidad de sus suelos, la actividad agrícola es muy limitada y se efectúa mediante “conucos”. La producción se concentra mayormente en rubros como cambur y plátano (*Musa × paradisiaca*), yuca (*Manihot esculenta*), mapuey (*Dioscorea trifida*) y maíz (*Zea mayz*), entre otros cultivos. En cuanto a la producción animal, la actividad ganadera es de tipo extensivo, y por tanto económicamente ineficiente; la actividad pesquera comercial es muy escasa y predomina más bien una intensa pesca artesanal de subsistencia, cuyos excedentes son comercializados diariamente en los alrededores de los centros poblados más importantes (Esteves & Dumith 1998).
-
-INSERTAR FIGURA
-
+{Figura 1}
 En el estado Amazonas se han decretado importantes Áreas Bajo Régimen de Administración Especial entre las cuales se incluyen cuatro parques nacionales (Serranía de La Neblina, Yapacana, Duida Marahuaca y Parima-Tarimapecó), catorce monumentos naturales, una reserva de biosfera (Alto Orinoco-Casiquiare), una zona protectora (río Cataniapo) y una reserva forestal (Sipapo).
 
 La Reserva Forestal Sipapo, área de estudio seleccionada, se creó el 7 de enero de 1963 mediante la Resolución N° 16 publicada en Gaceta Oficial N° 27.044 (08/01/1963), con el fin de proteger y racionalizar el manejo de la región boscosa comprendida entre los ríos Orinoco, Ventuari, Manapiare y la sierra de Guampi, así como propiciar la conservación de las aguas de los ríos Autana, Sipapo, Guayabo y otros tributarios del Orinoco. Ancestralmente, la Reserva Forestal Sipapo ha sido ocupada por comunidades indígenas asentadas en las riberas de los ríos Cuao, Autana, Sipapo y Guayabo, y en las márgenes del Orinoco.
@@ -37,14 +44,12 @@ Con respecto a sus potencialidades faunísticas, la Reserva Forestal Sipapo fue 
 
 # Métodos
 
-El área de estudio correspondió a 5% del área total del estado Amazonas, cubriendo aproximadamente 9.000 km<sup>2</sup> de la zona noroccidental (Figura 1). Esta extensión abarca parcialmente tres entidades municipales (Atures, Atabapo y Autana), y cubre casi en su totalidad a la Reserva Forestal Sipapo. Con el fi n de analizar los cambios de cobertura ocurridos en la zona noroccidental del estado Amazonas, se llevó a cabo el procesamiento y análisis de dos imágenes satelitales, una imagen Landsat TM del 26 de diciembre de 1986 y una imagen Landsat ETM+ del 9 de enero de 2001.
+El área de estudio correspondió a 5% del área total del estado Amazonas, cubriendo aproximadamente 9.000 km<sup>2</sup> de la zona noroccidental (Figura 1). Esta extensión abarca parcialmente tres entidades municipales (Atures, Atabapo y Autana), y cubre casi en su totalidad a la Reserva Forestal Sipapo. Con el fin de analizar los cambios de cobertura ocurridos en la zona noroccidental del estado Amazonas, se llevó a cabo el procesamiento y análisis de dos imágenes satelitales, una imagen Landsat TM del 26 de diciembre de 1986 y una imagen Landsat ETM+ del 9 de enero de 2001.
 
-Para el procesamiento de las imágenes se utilizó el programa Idrisi Kilimanjaro, que facilitó la corrección radiométrica y atmosférica de sus bandas, y así calibrar las discrepancias derivadas del uso de sensores diferentes y de los efectos atmosféricos (Eastman 2003). Previo al análisis, las zonas ocupadas por nubes, sombras y cuerpos de agua fueron eliminadas mediante la creación de una “máscara”. Después de esta corrección, se procedió a identificar los principales tipos de cobertura presentes en el área y sus respectivas fi rmas espectrales.
+Para el procesamiento de las imágenes se utilizó el programa Idrisi Kilimanjaro, que facilitó la corrección radiométrica y atmosférica de sus bandas, y así calibrar las discrepancias derivadas del uso de sensores diferentes y de los efectos atmosféricos (Eastman 2003). Previo al análisis, las zonas ocupadas por nubes, sombras y cuerpos de agua fueron eliminadas mediante la creación de una “máscara”. Después de esta corrección, se procedió a identificar los principales tipos de cobertura presentes en el área y sus respectivas firmas espectrales.
 
-Para ello, se superpusieron puntos de referencia para cada una de las coberturas terrestres identifi cadas sobre una composición en falso color de las imágenes satelitales. Esto permitió defi nir las áreas de entrenamiento para realizar una clasifi cación supervisada de las imágenes utilizando el algoritmo de clasifi cación de Distancia Mínima a la Media (MINDIST) y así mejorar la confi abilidad de los resultados (Jensen 1996, Eastman 2003). Los   puntos de referencia incluyeron cada una de las coberturas obtenidas durante una salida de campo, así como las coberturas terrestres señaladas en los mapas de vegetación elaborados para la zona por Huber (1995c), y en los ortofotomapas (1:50.000) correspondientes al Proyecto CartoSur I.
-
-INSERTAR FIGURA
-
+Para ello, se superpusieron puntos de referencia para cada una de las coberturas terrestres identificadas sobre una composición en falso color de las imágenes satelitales. Esto permitió definir las áreas de entrenamiento para realizar una clasificación supervisada de las imágenes utilizando el algoritmo de clasificación de Distancia Mínima a la Media (MINDIST) y así mejorar la confiabilidad de los resultados (Jensen 1996, Eastman 2003). Los   puntos de referencia incluyeron cada una de las coberturas obtenidas durante una salida de campo, así como las coberturas terrestres señaladas en los mapas de vegetación elaborados para la zona por Huber (1995c), y en los ortofotomapas (1:50.000) correspondientes al Proyecto CartoSur I.
+{Figura 2}
 Dadas las características de reflectancia de las imágenes sujetas a análisis, al momento de realizar las clasificaciones supervisadas sólo se logró diferenciar cuatro clases de cobertura: i) bosques siempreverdes (incluyendo bosques ribereños), ii) arbustales y herbazales, iii) áreas anegadizas, áreas intervenidas y suelos expuestos, y iv) formaciones rocosas.
 
 Una vez obtenidos los mapas de cobertura preliminares para 1986 y 2001, estos fueron superpuestos con el fin de detectar polígonos o coberturas falsas, siguiendo el método de procesamiento en pares utilizando el módulo CROSSTAB del programa Idrisi Kilimajaro (Sánchez-Azofeifa *et al.* 2001, Eastman 2003). Es preciso aclarar que los denominados “polígonos falsos” son los que representaban transiciones improbables (e.g. clasificados como “áreas intervenidas” en 1986 y luego como “bosques siempreverdes” en 2001). Estas inconsistencias fueron identificadas utilizando el modulo CROSSTAB de Idrisi Kilimanjaro, revisadas junto con los ortofotomapas y corregidas en los mapas de cobertura correspondientes.
@@ -95,7 +100,7 @@ estado Amazonas. Escala espacial 1:500.000.
 
 Sin embargo, si se modifica la escala espacial a una con mayor resolución (celdas de 100 km<sup>2</sup>), se observan áreas donde la conversión de los ecosistemas durante 1986 y 2001 fue lo suficientemente marcada como para que el sistema de categorías reconozca amenazadas a varias unidades de bosques siempreverdes de la Reserva Forestal (Tabla 2).
 
-Al estudiar el mapa temático del riesgo de eliminación por grillas (Figura 3), se hace evidente que la mayor parte de las celdas amenazadas coincide con la ubicación de algunas de las principales comunidades indígenas de la zona, lo que pone de manifi esto el impacto de su desarrollo sobre los ecosistemas naturales que las circundan.
+Al estudiar el mapa temático del riesgo de eliminación por grillas (Figura 3), se hace evidente que la mayor parte de las celdas amenazadas coincide con la ubicación de algunas de las principales comunidades indígenas de la zona, lo que pone de manifiesto el impacto de su desarrollo sobre los ecosistemas naturales que las circundan.
 
 <div style="text-align: center;">
   <b>Tabla 2.</b> Evaluación del riesgo de eliminación de los bosques siempreverdes en la zona noroccidental del estado Amazonas (Reserva Forestal Sipapo). Escala espacial 100 Km<sup>2</sup>.
@@ -148,8 +153,7 @@ Al estudiar el mapa temático del riesgo de eliminación por grillas (Figura 3),
     </tr>
   </table>
 </div>
-
-INSERTAR FIGURA
+{Figura 3}
 
 # Conclusiones
 
