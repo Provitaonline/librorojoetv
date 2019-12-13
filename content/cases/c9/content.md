@@ -2,8 +2,7 @@
 case: c9
 title: "Transformación de los ecosistemas terrestres anegables del tramo central del bajo Orinoco"
 authors: "Giuseppe Colonnello, María Idalí Tachack-García, Fabián Carrasquel"
-cardimage: "./pancartac9.jpg"
-cardimagecaption: "Falta esta foto"
+cardimage: "./pancarta.jpg"
 landscapeunits: "Los llanos (<a href='/units/b#b23'>B23</a>), (<a href='/units/b#b27'>B27</a>), Sistema de
 colinas y sierras bajas piemontanas del Escudo Guayanés (<a href='/units/c#c21'>C21</a>), (<a href='/units/c#c22'>C22</a>)"
 locality: "Tramo central del bajo Orinoco"
@@ -23,6 +22,16 @@ cardtablerows:
   - "Sabanas abiertas|lc|lc|{cr}A3"
 leftJustifyIcons: true
 enableTableScroll: true
+photos:
+- photokey: "Figura 1"
+  photourl: "./figura-1.jpg"
+  photocaption: "Figura 1: Situación relativa del área de estudio."
+- photokey: "Foto 1"
+  photourl: "./foto-1.jpg"
+  photocaption: "Foto 1: Rebalse anegado, Requena, estado Guárico. <i>Giuseppe Colonnello</i>"
+- photokey: "Figura 2"
+  photourl: "./figura-2.jpg"
+  photocaption: "Figura 2: Mosaico de imágenes Landsat (combinación en falso color 453). Sectores estudiados antes (A) y después (D): Requena (R), Mapire (M), y Soledad (S). Coberturas observables (colores): Vegetación anegable y bosques tropófilos y ribereños (rojo-naranja ladrillo), áreas quemadas (verde oscuronegro), agua (azul), sabanas (verde-azul), centros poblados (morado)."
 ---
 # Contexto
 
@@ -37,9 +46,7 @@ En la ribera sur del río no se encuentra la formación Mesa, pero las colinas q
 La región de estudio se ubicó en el tramo central del bajo Orinoco, entre las poblaciones de Caicara del Orinoco y Ciudad Guayana, lo que incluye porciones de los estados Guárico, Bolívar y Anzoátegui (Figura 1). Se consideró una franja de 10 km a cada lado del eje longitudinal del curso principal del río, que se dividió en 5 sectores de acuerdo con la disponibilidad de las imágenes de satélite.
 
 En la primera fase del análisis, se recopiló toda la información documental y cartográfica del área de estudio. Se realizaron tanto entrevistas con investigadores como contactos con organismos públicos y privados, además de la revisión exhaustiva de la bibliografía relacionada.
-
-INSERTAR FIGURA
-
+{Figura 1}
 Para cuantificar los cambios de cobertura se procesaron imágenes satelitales que estuviesen separadas en el tiempo por al menos 10 años. Concretamente, para cada sector se emplearon dos imágenes Landsat, una de la década de 1980 (Landsat TM) y una de la década de 2000 (Landsat ETM+) [Tabla 1]. Mediante el uso de programas para el procesamiento digital y el análisis de las imágenes satelitales, principalmente Idrisi y ArcView 3.3, se realizó una clasificación no supervisada de las imágenes, lo que permitió una identificación preliminar de la cobertura de la tierra. Luego se llevó a cabo una verificación de campo con el fin de confrontar los tipos de cobertura vegetal presentes en el sitio, con sus correspondientes firmas espectrales en las imágenes de satélite. De manera general, los diferentes tipos de vegetación se agruparon en vegetación anegable leñosa y herbácea, y vegetación no anegable, sabana, sabana arbolada y arbustales. Por su parte, los bosques ribereños conectan ambos ambientes y tienen un componente anegable durante las crecientes estacionales. De manera adicional, se identificaron otras coberturas no vegetales como áreas intervenidas (agropecuarias y/o deforestadas), áreas urbanas, áreas quemadas, y suelos expuestos, así como nubes, sombra de nubes y cuerpos de agua.
 
 <div style="text-align: center;">
@@ -236,7 +243,7 @@ En el sector de Requena clasificarían En Peligro (EN) las comunidades leñosas 
 <div style="text-align: center;">
   <b>Tabla 3.</b> Cambios de las coberturas no vegetales observados (1985-2001) en los sectores de Requena, Mapire y Soledad.
 </div>
-<div class="table-container">
+<div class="table-container is-size-6">
   <table>
     <thead>
       <tr>
@@ -281,11 +288,8 @@ En el sector de Requena clasificarían En Peligro (EN) las comunidades leñosas 
     </tr>
   </table>
 </div>
-
-INSERTAR FOTO
-
-INSERTAR FIGURA
-
+{Foto 1}
+{Figura 2}
 Una de las dificultades principales para determinar con más precisión las áreas que habían sufrido cambios en el período considerado, fue la calidad de las imágenes disponibles. Por ejemplo, en el sector de Mapire la clasificación indicó reducciones de la vegetación herbácea mas no en la vegetación leñosa, sin embargo, en un recorrido en bote se documentó quemas extensas de áreas boscosas de la orilla del río y hacia el interior, en la laguna de Anache. Actualmente los troncos secos están cubiertos por trepadoras que enmascaran esta perturbación. De manera similar, en la orilla derecha del Orinoco, al oeste de la desembocadura del río Caura, amplias áreas del plano de anegación fueron clareadas para introducir ganado durante el estiaje, y aunque las imágenes satelitales no indicaron cambios, las fotos in situ muestran una cobertura muy rala de matorral, con arbustos y palmas con los cogollos quemados y rebrotando. El incremento de las quemas en este sector fue mayor a 200%. Cuando la quema ha ocurrido algunos años antes de la captura de la imagen, los procesos de recolonización vegetal borran parcialmente los efectos del factor perturbador. Igualmente, en el sector Soledad, el más poblado de las tres localidades, se observan reducciones de 20% en los herbazales anegables, probablemente destinados a la agricultura o al pastoreo. Así mismo, las comunidades leñosas, aunque no presentan una disminución en la clasificación de la imagen, han sido fuertemente afectadas por talas selectivas (Díaz & Rosales 2006).
 
 Para los rebalses del Orinoco, son pocos los estudios acerca del uso de la fauna de estos hábitats, con la única excepción de la ictiofauna. Sin embargo, la reducción de la cobertura de herbazales y bosques anegables tendría un marcado efecto negativo en la conservación del manatí (*Trichechus manatus*), una de las especies que utiliza estos ambientes para su alimentación y refugio (Rivas *et al.* en prensa).
