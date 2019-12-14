@@ -285,7 +285,7 @@ INSERTAR FOTOS 1 A 5
     </tr>
     <tr>
       <td>PN-28</td>
-      <td>Juan Crisóstomo Falcón (Sierra de San Luis)</td>
+      <td>Juan Crisóstomo Falcón<br>(Sierra de San Luis)</td>
       <td>Falcón</td>
       <td>MN-16.13</td>
       <td>Sierra Maigualida</td>
@@ -317,7 +317,7 @@ INSERTAR FOTOS 1 A 5
     </tr>
     <tr>
       <td>PN-32</td>
-      <td>Gral. Juan Pablo Peñaloza en los Páramos Batallón y La Negra Mérida</td>
+      <td>Gral. Juan Pablo Peñaloza en los<br>Páramos Batallón y La Negra Mérida</td>
       <td>Táchira</td>
       <td>MN-18</td>
       <td>Abra Río Frío</td>
