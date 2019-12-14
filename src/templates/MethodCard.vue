@@ -54,8 +54,16 @@
 </page-query>
 
 <style lang="scss" scoped>
+  @import "~/assets/style/_variables";
 
+  ::v-deep thead {
+    background-color: #f8e7e8;
+  }
 
+  ::v-deep .table-in-content {
+    border: solid 2px $primary;
+    border-collapse: separate;
+  }
 
 </style>
 
