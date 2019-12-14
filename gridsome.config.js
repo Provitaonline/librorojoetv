@@ -87,6 +87,9 @@ module.exports = {
       options: {
         path: 'content/methods/**/content.md',
         typeName: 'MethodCard',
+        refs: {
+          method: 'References'
+        },
         remark:{
           autolinkHeadings: false,
           lazyLoadImages: false,

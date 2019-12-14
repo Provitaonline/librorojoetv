@@ -14,17 +14,32 @@
         </div>
         <figcaption class="has-text-centered"><div class="is-size-6 is-size-7-mobile" v-html="$page.methodCard.cardimagecaption"></div></figcaption>
         <section class="section">
-          <div class="tile is-ancestor">
-            <div class="tile is-vertical is-parent">
-              <div class="tile is-parent">
-                <!-- <div class="d-content tile is-child is-size-5" v-html="$page.vegetationCard.content"></div> -->
-                <TextWithRefsAndPhotos class="tile is-child box is-size-5 is-size-6-mobile"
-                  :text="$page.methodCard.content"
-                  :photos="$page.methodCard.photos"
-                  :isContent="true" />
-                </TextWithRefsAndPhotos>
-              </div>
+          <div class="tile is-vertical is-parent">
+            <TextWithRefsAndPhotos class="tile is-child box is-size-5 is-size-6-mobile"
+              :text="$page.methodCard.content"
+              :photos="$page.methodCard.photos"
+              :refs="$page.methodCard.method.references"
+              :isContent="true" />
+            </TextWithRefsAndPhotos>
+            <div class="container is-size-5 has-text-centered">
+              <a @click="showMore = !showMore">
+                <p v-if="!showMore">VER BIBLIOGRAFÍA...<font-awesome :icon="['fas', 'angle-down']"/></p>
+                <p v-else>OCULTAR BIBLIOGRAFÍA...<font-awesome :icon="['fas', 'angle-up']"/></p>
+                <br>
+              </a>
             </div>
+            <transition name="fade" appear>
+              <div v-if="showMore" style="padding-top: 0px;" class="tile is-child box is-size-6 is-size-7-mobile">
+                <h1 style="margin-top: 0px;">Bibliografía</h1>
+                <table class="table">
+                  <tbody>
+                    <tr v-for="value in sortedReferences">
+                      <td>{{value.reference}}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </transition>
           </div>
         </section>
       </div>
@@ -37,6 +52,12 @@
       title
       cardimage
       cardimagecaption
+      method {
+        references {
+          referencekey
+          reference
+        }
+      }
       photos {
         photokey
         photourl
@@ -72,12 +93,25 @@
   import SideBar from '~/components/SideBar.vue'
 
   export default {
-
+    data() {
+      return {
+        showMore: false
+      }
+    },
     mounted () {
+    },
+    beforeRouteUpdate (to, from, next) {
+      this.showMore = false
+      next()
     },
     components: {
       TextWithRefsAndPhotos,
       SideBar
+    },
+    computed: {
+      sortedReferences: function() {
+        return this.$page.methodCard.method.references.sort((a, b) => a.reference.localeCompare(b.reference))
+      }
     },
     methods: {
       isCurrentItem: function(item) {
