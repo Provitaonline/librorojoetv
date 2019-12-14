@@ -130,4 +130,3 @@ Existen dos alternativas para medir la distribución geográfica de un ecosistem
 
 Una vez hecha la evaluación de un ecosistema, se asigna la categoría correspondiente. Como fue mencionado, aunque se haga lo posible por aplicar todos los criterios, sólo hace falta que se cumpla un solo criterio para atribuirle una categoría de ecosistema amenazado, y en el caso de que exista información para más de un criterio, se escoge el que refleje el mayor riesgo. Al reportar la categoría seleccionada, se debe también indicar en un superíndice los criterios empleados para la designación.
 {Figura 3}
-INSERTAR BIBLIOGRAFÍA
