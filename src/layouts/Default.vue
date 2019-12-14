@@ -20,7 +20,7 @@
           <b-navbar-item tag="a" href="/methods/class">
               Clasificación del riesgo
           </b-navbar-item>
-          <b-navbar-item>
+          <b-navbar-item tag="a" href="/methods/eval">
               Evaluación del riesgo
           </b-navbar-item>
         </b-navbar-dropdown>
