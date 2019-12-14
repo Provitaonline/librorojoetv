@@ -66,7 +66,7 @@ references:
 - referencekey: IUCN 2008
   reference: >
     IUCN/Species Survival Commission (2008). Strategic Planning for Species Conservation: A Handbook. Version 1.0. IUCN: Gland, Switzerland. 108 pp.
-- referencekey: IUCN 2010
+- referencekey: IUCN Standards and Petitions Subcommittee 2010
   reference: >
     IUCN Standards and Petitions Subcommittee (2010). Guidelines for Using the IUCN Red List Categories and Criteria. Version 8.0. Prepared by the IUCN Standards and Petitions Subcommittee of the Species Survival Commission [en línea]. Disponible en http://intranet.iucn.org/webfiles/doc/SSC/RedList/RedListGuidelines.pdf
 - referencekey: IV Congreso Mundial de la Naturaleza 2008
