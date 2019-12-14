@@ -2,7 +2,7 @@
 id: eval
 title: Método para la evaluación del riesgo de colapso<br> de los ecosistemas terrestres de Venezuela
 references:
-- referencekey: Bevilacqua et al. 2006a
+- referencekey: Bevilacqua et al. 2006
   reference: >
       Bevilacqua, M., L. Cárdenas & D.A. Medina (2006a). Las Áreas Protegidas de Venezuela: Diagnóstico de su Condición, 1993-2004. Asociación Venezolana para la Conservación de Áreas Naturales (ACOANA), Conservación Internacional Venezuela (CI), Fundación Empresas Polar, Comité Venezolano de la Unión Mundial para la Naturaleza Venezuela (UICN): Caracas. 165 pp.
 - referencekey: Bevilacqua et al. 2006b
@@ -20,6 +20,9 @@ references:
 - referencekey: PDVSA 1992
   reference: >
       PDVSA (1992). Imagen de Venezuela. Una Visión Espacial. Petróleos de Venezuela, S.A.: Caracas, Venezuela. 271 pp.
+- referencekey: Plonczak 1998
+  reference: >
+      Plonczak, M. (1998). Tipos de bosque y su presión de uso en Venezuela. Quebracho 6: 69-74.
 - referencekey: Riveros-Caballero et al. 2007
   reference: >
       Riveros Caballero, M., L.E. Sánchez & J. Paolini (eds.) (2007). Memoria Taller Binacional y Regional Sobre Desertificación. Ediciones IVIC (Instituto Venezolano de Investigaciones Científicas): Caracas, Venezuela. 150 pp.
