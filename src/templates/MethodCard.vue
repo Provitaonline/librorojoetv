@@ -86,6 +86,10 @@
     border-collapse: separate;
   }
 
+  .table {
+    word-break: break-word;
+  }
+
 </style>
 
 <script>
