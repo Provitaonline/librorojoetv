@@ -14,7 +14,7 @@
           <br><font-awesome size="2x" :icon="['fas', 'phone']"/>
           <p>{{$page.homeData.contact.phone}}</p><br>
           <br><font-awesome size="2x" :icon="['fas', 'envelope']"/>
-          <p><a :href="'mailto:' + $page.homeData.contact.email">{{$page.homeData.contact.email}}</a></p>
+          <p><a :href="'mailto:' + $page.homeData.contact.email">{{$page.homeData.contact.email}}</a></p><br>
           <br><font-awesome size="2x" :icon="['fas', 'globe-americas']"/>
           <p><a :href="$page.homeData.contact.web">{{$page.homeData.contact.web}}</a></p>
         </div>
