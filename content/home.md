@@ -14,4 +14,9 @@ indexCards:
     link: "/units/"
     image: "./images/unidades.png"
     text: "Clasificación, descripción y distribución geográfica de los principales paisajes vegetales de Venezuela."
+contact:
+  address: "Provita<br>Calle La Joya con Avenida Libertador, Unidad Técnica del Este, piso 10, oficina 29-30<br>Chacao ZP 1060<br>Caracas, Venezuela<br><br>"
+  phone: "(58) (212) 2637240, 2656996, 2670897"
+  email: "informacion@provitaonline.org"
+  web: "https://provita.org.ve"
 ---
