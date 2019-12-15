@@ -534,7 +534,7 @@ INSERTAR FOTOS 1 A 5
     <tr>
       <td>AB-13</td>
       <td>Piedemonte Portuguesa</td>
-      <td>Barinas- ortuguesa</td>
+      <td>Barinas-Portuguesa</td>
       <td>RF-8</td>
       <td>Sipapo</td>
       <td>Amazonas</td>
