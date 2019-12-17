@@ -32,7 +32,12 @@ module.exports = {
       use: '@gridsome/source-filesystem',
       options: {
         path: 'content/home.md',
-        typeName: 'HomeData'
+        typeName: 'HomeData',
+        remark:{
+          plugins: [
+            'remark-attr'
+          ]
+        }
       }
     },
     {
