@@ -36,12 +36,12 @@ collections:
     folder: "content/units"
     path: "{{region}}/{{slug}}"
     create: false
-    slug: content"
+    slug: "content"
     media_folder: ''
     fields:
       - {label: "Región", name: "region", widget: "string", required: true}
       - {label: "Título", name: "title", widget: "string", required: true}
-      - {label: "Imagen de portada", name: "cardimage", widget: "string", required: true}
+      - {label: "Imagen de portada", name: "cardimage", widget: "image", allow_multiple: false, required: true}
       - {label: "Subtítulo de la imagen de portada", name: "cardimagecaption", widget: "string", required: true}
       - {label: "Imagenes", name: "photos", widget: "list", fields: [
           {label: "Etiqueta", name: "photokey", widget: "string", required: true},
