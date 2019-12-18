@@ -2,8 +2,7 @@ backend:
   name: git-gateway
   branch: cms # Branch to update (optional; defaults to master)
 
-media_folder: "static/images/uploads"
-public_folder: "/images/uploads"
+media_folder_relative: true
 
 collections:
   - name: "pages"
@@ -33,6 +32,7 @@ collections:
     path: "{{slug}}/content.md"
     create: false
     slug: "{{region}}"
+    media_folder: ''
     fields:
       - {label: "Región", name: "region", widget: "string", required: true}
       - {label: "Título", name: "title", widget: "string", required: true}
