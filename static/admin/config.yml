@@ -34,9 +34,9 @@ collections:
        preview: false
     identifier_field: region
     folder: "content/units"
-    path: "{{region}}/{{slug}}"
+    path: "{{slug}}/content"
     create: false
-    slug: "content"
+    slug: "{{region}}"
     media_folder: ''
     fields:
       - {label: "Región", name: "region", widget: "string", required: true}
