@@ -4,7 +4,6 @@ backend:
 
 media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
-media_folder_relative: true
 
 collections:
   - name: "home"
@@ -35,9 +34,9 @@ collections:
        preview: false
     identifier_field: region
     folder: "content/units"
-    path: "{{slug}}/content.md"
+    path: "{{region}}/{{slug}}"
     create: false
-    slug: "{{region}}"
+    slug: content"
     media_folder: ''
     fields:
       - {label: "Región", name: "region", widget: "string", required: true}
