@@ -29,7 +29,8 @@ collections:
   - name: "units" #
     label: "Unidades de paisaje"
     identifier_field: region
-    folder: "content/units/{slug}"
+    folder: "content/units"
+    path: "{{slug}}/content.md"
     create: false
     slug: "{{region}}"
     fields:
