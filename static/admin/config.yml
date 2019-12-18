@@ -2,11 +2,15 @@ backend:
   name: git-gateway
   branch: cms # Branch to update (optional; defaults to master)
 
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
 media_folder_relative: true
 
 collections:
-  - name: "pages"
-    label: "pages"
+  - name: "home"
+    label: "Principal"
+    editor:
+       preview: false
     files:
       - file: content/home.md
         label: "Página principal, acerca de y contacto"
@@ -27,6 +31,8 @@ collections:
           - {label: "Acerca de", name: "body", widget: "markdown"}
   - name: "units" #
     label: "Unidades de paisaje"
+    editor:
+       preview: false
     identifier_field: region
     folder: "content/units"
     path: "{{slug}}/content.md"
