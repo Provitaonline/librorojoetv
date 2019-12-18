@@ -24,7 +24,7 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        path: 'content/**/references.md',
+        path: 'content/references/*.md',
         typeName: 'References'
       }
     },
