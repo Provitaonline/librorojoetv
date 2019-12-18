@@ -14,3 +14,16 @@ collections:
         name: "home"
         fields:
           - {label: "Título", name: "title", widget: "string"}
+          - {label: "Banner", name: "heroTitle", widget: "string"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Tarjetas de la página principal", name: "indexCards", widget: "list", fields: [
+              {label: "Título", name: "title", widget: "string"},
+              {label: "Enlace", name: "link", widget: "string"},
+              {label: "Imagen", name: "image", widget: "string"},
+              {label: "Texto", name: "text", widget: "string"}]}
+          - {label: "Contacto", name: "contact", widget: "object", fields: [
+            - {label: "Dirección", name: "address", widget: "string"}
+            - {label: "Teléfonos", name: "phone", widget: "string"}
+            - {label: "email", name: "email", widget: "string"}
+            - {label: "Sitio web", name: "web", widget: "string"}]}
+          - {label: "Acerca de", name: "body", widget: "markdown"}
