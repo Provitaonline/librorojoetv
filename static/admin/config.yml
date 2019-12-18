@@ -14,8 +14,7 @@ collections:
         name: "home"
         fields:
           - {label: "Título", name: "title", widget: "string"}
-          - {label: "Banner", name: "heroTitle", widget: "string"}
-          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Texto del banner", name: "heroTitle", widget: "string"}
           - {label: "Tarjetas de la página principal", name: "indexCards", widget: "list", fields: [
               {label: "Título", name: "title", widget: "string"},
               {label: "Enlace", name: "link", widget: "string"},
@@ -27,3 +26,19 @@ collections:
               {label: "email", name: "email", widget: "string"},
               {label: "Sitio web", name: "web", widget: "string"}]}
           - {label: "Acerca de", name: "body", widget: "markdown"}
+  - name: "units" #
+    label: "Unidades de paisaje"
+    identifier_field: region
+    folder: "content/units/{slug}"
+    create: false
+    slug: "{{region}}"
+    fields:
+      - {label: "Región", name: "region", widget: "string", required: true}
+      - {label: "Título", name: "title", widget: "string", required: true}
+      - {label: "Imagen de portada", name: "cardimage", widget: "string", required: true}
+      - {label: "Subtítulo de la imagen de portada", name: "cardimagecaption", widget: "string", required: true}
+      - {label: "Imagenes", name: "photos", widget: "list", fields: [
+          {label: "Etiqueta", name: "photokey", widget: "string", required: true},
+          {label: "Url", name: "photourl", widget: "string", required: true},
+          {label: "Subtítulo", name: "photocaption", widget: "string", required: true}]}
+      - {label: "Texto", name: "body", widget: "markdown"}
