@@ -34,7 +34,6 @@ collections:
     label: "Unidades de paisaje"
     editor:
        preview: false
-    identifier_field: region
     folder: "content/units"
     path: "{{slug}}/content"
     create: false
