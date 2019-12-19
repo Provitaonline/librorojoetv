@@ -94,9 +94,9 @@ collections:
           {label: "En 2010", name: "in2010", widget: "image", allow_multiple: false, required: true},
           {label: "En 1988", name: "in1988", widget: "image", allow_multiple: false, required: true},
           {label: "Subtítulo", name: "caption", widget: "string", required: true},
-            {label: "Leyenda", name: "interventionlegend", widget: "list", required: false, fields: [
-              {label: "Imagen", name: "image", widget: "image", allow_multiple: false, required: true},
-              {label: "Leyenda", name: "text", widget: "string", required: true}]}}]}
+          {label: "Leyenda", name: "interventionlegend", widget: "list", required: false, fields: [
+            {label: "Imagen", name: "image", widget: "image", allow_multiple: false, required: true},
+            {label: "Leyenda", name: "text", widget: "string", required: true}]}}]}
       - {label: "¿Incluir columna de formación?", name: "formationColumn", widget: "boolean", required: true, default: false}
       - {label: "Distribución por estado", name: "stateleveltable", widget: "list", fields: [
           {label: "Formación", name: "formation", widget: "string", required: false},
