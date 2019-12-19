@@ -57,7 +57,7 @@ collections:
       - {label: "Caso", name: "case", widget: "hidden", required: true}
       - {label: "Título", name: "title", widget: "string", required: true}
       - {label: "Autores", name: "authors", widget: "string", required: true}
-      - {label: "Imagen de portada", name: "cardimage", widget: "image", allow_multiple: false, required: true}
+      - {label: "Imagen de portada", name: "cardimage", widget: "file", allow_multiple: false, required: true}
       - {label: "Unidades de paisaje", name: "landscapeunits", widget: "string", required: true}
       - {label: "Localidad", name: "locality", widget: "string", required: true}
       - {label: "Estados", name: "states", widget: "string", required: true}
@@ -69,7 +69,7 @@ collections:
       - {label: "Habilitar desplazamiento de la tabla?", name: "enableTableScroll", widget: "boolean", required: false}
       - {label: "Imagenes", name: "photos", widget: "list", fields: [
           {label: "Etiqueta", name: "photokey", widget: "string", required: true},
-          {label: "Url", name: "photourl", widget: "image", allow_multiple: false, required: true},
+          {label: "Url", name: "photourl", widget: "file", allow_multiple: false, required: true},
           {label: "Subtítulo", name: "photocaption", widget: "string", required: true}]}
       - {label: "Texto", name: "body", widget: "text"}
   - name: "vcards"
@@ -82,12 +82,12 @@ collections:
     media_folder: ''
     fields:
       - {label: "Formación vegetal", name: "title", widget: "string", required: true}
-      - {label: "Imagen de portada", name: "cardimage", widget: "image", allow_multiple: false, required: true}
+      - {label: "Imagen de portada", name: "cardimage", widget: "file", allow_multiple: false, required: true}
       - {label: "Subtítulo de la imagen de portada", name: "cardimagecaption", widget: "string", required: true}
       - {label: "Categoría", name: "category", widget: "select", required: true, options: ["el", "cr", "en", "vu", "nt", "lc", "dd", "ne"]}
       - {label: "Descripción", name: "description", widget: "text", required: true}
       - {label: "Distribución", name: "distribution", widget: "text", required: true}
-      - {label: "Mapa de distribución", name: "distributionmap", widget: "image", allow_multiple: false, required: true}
+      - {label: "Mapa de distribución", name: "distributionmap", widget: "file", allow_multiple: false, required: true}
       - {label: "Área en 1988", name: "areain1988", widget: "string", required: true}
       - {label: "Área en 2010", name: "areain2010", widget: "string", required: true}
       - label: "Comparación de mapas"
@@ -96,12 +96,12 @@ collections:
         fields:
           - label: "En 2010"
             name: "in2010"
-            widget: "image"
+            widget: "file"
             allow_multiple: false
             required: true
           - label: "En 1988"
             name: "in1988"
-            widget: "image"
+            widget: "file"
             allow_multiple: false
             required: true
           - label: "Subtítulo"
@@ -115,7 +115,7 @@ collections:
             fields:
               - label: "Imagen"
                 name: "image"
-                widget: "image"
+                widget: "file"
                 allow_multiple: false
                 required: true
               - label: "Leyenda"
@@ -148,12 +148,12 @@ collections:
             widget: "string"
             required: true
       - {label: "Mapas de amenazas", name: "threatlevelmaps", widget: "list", fields: [
-          {label: "Mapa", name: "map", widget: "image", allow_multiple: false, required: true},
+          {label: "Mapa", name: "map", widget: "file" , allow_multiple: false, required: true},
           {label: "Subtítulo", name: "caption", widget: "string", required: true},
           {label: "Categorías", name: "threatcategories", widget: "list", required: true}]}
       - {label: "Fotos", name: "photos", widget: "list", fields: [
           {label: "Etiqueta", name: "photokey", widget: "string", required: true},
-          {label: "Url", name: "photourl", widget: "image", allow_multiple: false, required: true},
+          {label: "Url", name: "photourl", widget: "file" , allow_multiple: false, required: true},
           {label: "Subtítulo", name: "photocaption", widget: "string", required: true}]}
       - {label: "Detalles", name: "body", widget: "text"}
   - name: "units"
@@ -168,10 +168,10 @@ collections:
     fields:
       - {label: "Región", name: "region", widget: "hidden", required: true}
       - {label: "Título", name: "title", widget: "string", required: true}
-      - {label: "Imagen de portada", name: "cardimage", widget: "image", allow_multiple: false, required: true}
+      - {label: "Imagen de portada", name: "cardimage", widget: "file" , allow_multiple: false, required: true}
       - {label: "Subtítulo de la imagen de portada", name: "cardimagecaption", widget: "string", required: true}
       - {label: "Imagenes", name: "photos", widget: "list", fields: [
           {label: "Etiqueta", name: "photokey", widget: "string", required: true},
-          {label: "Url", name: "photourl", widget: "image", allow_multiple: false, required: true},
+          {label: "Url", name: "photourl", widget: "file" , allow_multiple: false, required: true},
           {label: "Subtítulo", name: "photocaption", widget: "string", required: true}]}
       - {label: "Texto", name: "body", widget: "text"}
