@@ -83,8 +83,8 @@ collections:
     fields:
       - {label: "Título de ficha", name: "title", widget: "string", required: true}
       - {label: "Título (con formato)", name: "formattedtitle", widget: "string", required: false}
-      - {label: "Formación vegetal", name: "plantformation", widget: "string", required: true}
-      - {label: "Imagen de portada", name: "cardimage", widget: "file", allow_multiple: false, required: true}
+      - {label: "Formación vegetal", name: "plantformation", widget: "string", required: false}
+      - {label: "Imagen de portada", name: "cardimage", widget: "image", allow_multiple: false, required: true}
       - {label: "Subtítulo de la imagen de portada", name: "cardimagecaption", widget: "string", required: true}
       - {label: "Categoría", name: "category", widget: "select", required: true, options: ["el", "cr", "en", "vu", "nt", "lc", "dd", "ne"]}
       - {label: "Descripción", name: "description", widget: "text", required: true}
