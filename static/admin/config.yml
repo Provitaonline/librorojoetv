@@ -90,19 +90,63 @@ collections:
       - {label: "Mapa de distribución", name: "distributionmap", widget: "image", allow_multiple: false, required: true}
       - {label: "Área en 1988", name: "areain1988", widget: "string", required: true}
       - {label: "Área en 2010", name: "areain2010", widget: "string", required: true}
-      - {label: "Comparación de mapas", name: "mapcompare", widget: "list", fields: [
-          {label: "En 2010", name: "in2010", widget: "image", allow_multiple: false, required: true},
-          {label: "En 1988", name: "in1988", widget: "image", allow_multiple: false, required: true},
-          {label: "Subtítulo", name: "caption", widget: "string", required: true},
-          {label: "Leyenda", name: "interventionlegend", widget: "list", required: false, fields: [
-            {label: "Imagen", name: "image", widget: "image", allow_multiple: false, required: true},
-            {label: "Leyenda", name: "text", widget: "string", required: true}]}}]}
-      - {label: "¿Incluir columna de formación?", name: "formationColumn", widget: "boolean", required: true, default: false}
-      - {label: "Distribución por estado", name: "stateleveltable", widget: "list", fields: [
-          {label: "Formación", name: "formation", widget: "string", required: false},
-          {label: "Estado", name: "state", widget: "string", required: true},
-          {label: "En 1988", name: "areain1988", widget: "string", required: true},
-          {label: "En 2010", name: "areain2010", widget: "string", required: true}]}
+      - label: "Comparación de mapas"
+        name: "mapcompare"
+        widget: "list"
+        fields:
+          - label: "En 2010"
+            name: "in2010"
+            widget: "image"
+            allow_multiple: false
+            required: true
+          - label: "En 1988"
+            name: "in1988"
+            widget: "image"
+            allow_multiple: false
+            required: true
+          - label: "Subtítulo"
+            name: "caption"
+            widget: "string"
+            required: true
+          - label: "Leyenda"
+            name: "interventionlegend"
+            widget: "list"
+            required: false
+            fields:
+              - label: "Imagen"
+                name: "image"
+                widget: "image"
+                allow_multiple: false
+                required: true
+              - label: "Leyenda"
+                name: "text"
+                widget: "string"
+                required: true
+      - label: "¿Incluir columna de formación?"
+        name: "formationColumn"
+        widget: "boolean"
+        required: true
+        default: false
+      - label: "Distribución por estado"
+        name: "stateleveltable"
+        widget: "list"
+        fields:
+          - label: "Formación"
+            name: "formation"
+            widget: "string"
+            required: false
+          - label: "Estado"
+            name: "state"
+            widget: "string"
+            required: true
+          - label: "En 1988"
+            name: "areain1988"
+            widget: "string"
+            required: true
+          - label: "En 2010"
+            name: "areain2010"
+            widget: "string"
+            required: true
       - {label: "Mapas de amenazas", name: "threatlevelmaps", widget: "list", fields: [
           {label: "Mapa", name: "map", widget: "image", allow_multiple: false, required: true},
           {label: "Subtítulo", name: "caption", widget: "string", required: true},
