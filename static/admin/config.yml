@@ -43,7 +43,35 @@ collections:
       - {label: "Título", name: "title", widget: "string", required: true}
       - {label: "Lista de referencias", name: "references", widget: "list", fields: [
           {label: "Abreviación", name: "referencekey", widget: "string", required: true},
-          {label: "Referencia", name: "reference", widget: "string", required: true}]}
+          {label: "Referencia", name: "reference", widget: "text", required: true}]}
+  - name: "cases"
+    label: "Estudios de caso"
+    editor:
+       preview: false
+    folder: "content/cases"
+    path: "{{slug}}/content"
+    create: false
+    slug: "{{case}}"
+    media_folder: ''
+    fields:
+      - {label: "Caso", name: "case", widget: "hidden", required: true}
+      - {label: "Título", name: "title", widget: "string", required: true}
+      - {label: "Autores", name: "title", widget: "string", required: true}
+      - {label: "Imagen de portada", name: "cardimage", widget: "image", allow_multiple: false, required: true}
+      - {label: "Unidades de paisaje", name: "landscapeunits", widget: "string", required: true}
+      - {label: "Localidad", name: "locality", widget: "string", required: true}
+      - {label: "Estados", name: "states", widget: "string", required: true}
+      - {label: "Área", name: "area", widget: "string", required: true}
+      - {label: "Área (en formato texto opcional)", name: "areatext", widget: "string", required: false}
+      - {label: "Columnas de la tabla de ficha", name: "cardtablecolumns", widget: "list", required: true}
+      - {label: "Filas de la tabla de ficha", name: "cardtablerows", widget: "list", required: true}
+      - {label: "¿Íconos alineados a la izquierda?", name: "leftJustifyIcons", widget: "boolean", required: false}
+      - {label: "Habilitar desplazamiento de la tabla?", name: "enableTableScroll", widget: "boolean", required: false}
+      - {label: "Imagenes", name: "photos", widget: "list", fields: [
+          {label: "Etiqueta", name: "photokey", widget: "string", required: true},
+          {label: "Url", name: "photourl", widget: "image", allow_multiple: false, required: true},
+          {label: "Subtítulo", name: "photocaption", widget: "string", required: true}]}
+      - {label: "Texto", name: "body", widget: "markdown"}
   - name: "units"
     label: "Unidades de paisaje"
     editor:
