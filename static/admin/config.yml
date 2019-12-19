@@ -81,7 +81,9 @@ collections:
     create: false
     media_folder: ''
     fields:
-      - {label: "Formación vegetal", name: "title", widget: "string", required: true}
+      - {label: "Título de ficha", name: "title", widget: "string", required: true}
+      - {label: "Título (con formato)", name: "formattedtitle", widget: "string", required: false}
+      - {label: "Formación vegetal", name: "plantformation", widget: "string", required: true}
       - {label: "Imagen de portada", name: "cardimage", widget: "file", allow_multiple: false, required: true}
       - {label: "Subtítulo de la imagen de portada", name: "cardimagecaption", widget: "string", required: true}
       - {label: "Categoría", name: "category", widget: "select", required: true, options: ["el", "cr", "en", "vu", "nt", "lc", "dd", "ne"]}
@@ -93,6 +95,7 @@ collections:
       - label: "Comparación de mapas"
         name: "mapcompare"
         widget: "list"
+        allow_add: false
         fields:
           - label: "En 2010"
             name: "in2010"
@@ -131,10 +134,6 @@ collections:
         name: "stateleveltable"
         widget: "list"
         fields:
-          - label: "Formación"
-            name: "formation"
-            widget: "string"
-            required: false
           - label: "Estado"
             name: "state"
             widget: "string"
@@ -147,10 +146,21 @@ collections:
             name: "areain2010"
             widget: "string"
             required: true
+          - label: "Formación"
+            name: "formation"
+            widget: "string"
+            required: false
       - {label: "Mapas de amenazas", name: "threatlevelmaps", widget: "list", fields: [
           {label: "Mapa", name: "map", widget: "file" , allow_multiple: false, required: true},
           {label: "Subtítulo", name: "caption", widget: "string", required: true},
-          {label: "Categorías", name: "threatcategories", widget: "list", required: true}]}
+          {label: "Categorías para leyenda", name: "threatcategories", widget: "list", required: true}]}
+      - {label: "Etiqueta de zona", name: "zonelabel", widget: "select", options: ["Estado", "Localidad"], required: true}
+      - {label: "Criterios empleados", name: "criteriaused", widget: "list", required: true}
+      - {label: "Tabla de riesgos de colapso", name: "riskofcolapsestatelevel", widget: "list", fields: [
+          {label: "Estado o localidad", name: "zone", widget: "string", required: true},
+          {label: "Formación", name: "formation", widget: "string", required: true},
+          {label: "Área", name: "area", widget: "string", required: true},
+          {label: "Categorías de riesgo", name: "threatcategories", widget: "list", required: true}]}
       - {label: "Fotos", name: "photos", widget: "list", fields: [
           {label: "Etiqueta", name: "photokey", widget: "string", required: true},
           {label: "Url", name: "photourl", widget: "file" , allow_multiple: false, required: true},
