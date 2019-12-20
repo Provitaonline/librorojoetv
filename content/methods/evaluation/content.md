@@ -25,6 +25,21 @@ photos:
 - photokey: "Figura 7"
   photourl: "./figura-7.jpg"
   photocaption: "<b>Figura 7:</b> Representación de las áreas de protección con fines de uso potencial, elaborado por Zambrano-Martínez y Oliveira-Miranda 2010"
+- photokey: "Foto 1"
+  photourl: "./foto-1.jpg"
+  photocaption: "Foto 1: Extracción de arena para actividades de construcción en la Isla de Margarita, estado Nueva Esparta. <i>Franklin Rojas-Suárez</i>"
+- photokey: "Foto 2"
+  photourl: "./foto-2.jpg"
+  photocaption: "Foto 2: Ganadería y actividad petrolera en el estado Anzoátegui. <i>Mariana Hernández-Montilla</i>"
+- photokey: "Foto 3"
+  photourl: "./foto-3.jpg"
+  photocaption: "Foto 3: Eliminación de bosques con fines agropecuarios en las inmediaciones de Piedra Cachimbo, cerca del Monumento Nacional Pico Codazzi. <i>Giuseppe Colonnel</i>"
+- photokey: "Foto 4"
+  photourl: "./foto-4.jpg"
+  photocaption: "Foto 4: Plantaciones de palma africana al sur Lago de Maracaibo, estado Zulia. <i>Giuseppe Colonnello</i>"
+- photokey: "Foto 5"
+  photourl: "./foto-5.jpg"
+  photocaption: "Foto 4: Extracción de oro sin eliminación del dosel, estado Bolívar. <i>Sergio Zambrano-Martínez</i>"
 ---
 El presente análisis se centra en las formaciones vegetales presentes en Venezuela para 2010, identificadas por Huber y Oliveira-Miranda (vid. supra, cap. I: Figura 8). Su clasificación corresponde a las principales formas de crecimiento de la vegetación: arbórea, arbustiva y herbácea divididas a su vez en tipos, de acuerdo con sus características fisiológicas, topográficas y geográficas. Las formaciones arbóreas ocupan más de la mitad de la superficie terrestre de Venezuela (54%), mientras que las herbáceas abarcan 18% y las arbustivas 6%. Las áreas intervenidas alcanzan alrededor de 22% del territorio nacional.
 
