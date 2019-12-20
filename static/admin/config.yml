@@ -166,6 +166,25 @@ collections:
           {label: "Url", name: "photourl", widget: "file" , allow_multiple: false, required: true},
           {label: "Subtítulo", name: "photocaption", widget: "string", required: true}]}
       - {label: "Detalles", name: "body", widget: "text"}
+  - name: "methods"
+    label: "Métodos"
+    editor:
+       preview: false
+    folder: "content/methods"
+    path: "{{slug}}/content"
+    create: false
+    slug: "{{method}}"
+    media_folder: ''
+    fields:
+      - {label: "Método", name: "method", widget: "hidden", required: true}
+      - {label: "Título", name: "title", widget: "string", required: true}
+      - {label: "Imagen de portada", name: "cardimage", widget: "file" , allow_multiple: false, required: true}
+      - {label: "Subtítulo de la imagen de portada", name: "cardimagecaption", widget: "string", required: true}
+      - {label: "Imagenes", name: "photos", widget: "list", fields: [
+          {label: "Etiqueta", name: "photokey", widget: "string", required: true},
+          {label: "Url", name: "photourl", widget: "file" , allow_multiple: false, required: true},
+          {label: "Subtítulo", name: "photocaption", widget: "string", required: true}]}
+      - {label: "Texto", name: "body", widget: "text"}
   - name: "units"
     label: "Unidades de paisaje"
     editor:
