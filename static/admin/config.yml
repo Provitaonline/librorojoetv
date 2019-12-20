@@ -1,0 +1,206 @@
+backend:
+  name: git-gateway
+  branch: cms # Branch to update (optional; defaults to master)
+
+publish_mode: editorial_workflow
+
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "home"
+    label: "Principal"
+    editor:
+       preview: false
+    files:
+      - file: content/home.md
+        label: "Página principal, acerca de y contacto"
+        name: "home"
+        fields:
+          - {label: "Título", name: "title", widget: "string"}
+          - {label: "Texto del banner", name: "heroTitle", widget: "string"}
+          - {label: "Tarjetas de la página principal", name: "indexCards", widget: "list", allow_add: false, fields: [
+              {label: "Título", name: "title", widget: "string"},
+              {label: "Enlace", name: "link", widget: "string"},
+              {label: "Imagen", name: "image", widget: "string"},
+              {label: "Texto", name: "text", widget: "string"}]}
+          - {label: "Contacto", name: "contact", widget: "object", fields: [
+              {label: "Dirección", name: "address", widget: "string"},
+              {label: "Teléfonos", name: "phone", widget: "string"},
+              {label: "email", name: "email", widget: "string"},
+              {label: "Sitio web", name: "web", widget: "string"}]}
+          - {label: "Acerca de", name: "body", widget: "markdown"}
+  - name: "references"
+    label: "Bibliografías"
+    editor:
+       preview: false
+    folder: "content/references"
+    create: false
+    slug: "{{id}}"
+    fields:
+      - {label: "Id", name: "id", widget: "hidden", required: true}
+      - {label: "Ancestro", name: "parent", widget: "hidden", required: false}
+      - {label: "Título", name: "title", widget: "string", required: true}
+      - {label: "Lista de referencias", name: "references", widget: "list", fields: [
+          {label: "Abreviación", name: "referencekey", widget: "string", required: true},
+          {label: "Referencia", name: "reference", widget: "text", required: true}]}
+  - name: "cases"
+    label: "Estudios de caso"
+    editor:
+       preview: false
+    folder: "content/cases"
+    path: "{{slug}}/content"
+    create: false
+    slug: "{{case}}"
+    media_folder: ''
+    fields:
+      - {label: "Caso", name: "case", widget: "hidden", required: true}
+      - {label: "Título", name: "title", widget: "string", required: true}
+      - {label: "Autores", name: "authors", widget: "string", required: true}
+      - {label: "Imagen de portada", name: "cardimage", widget: "file", allow_multiple: false, required: true}
+      - {label: "Unidades de paisaje", name: "landscapeunits", widget: "string", required: true}
+      - {label: "Localidad", name: "locality", widget: "string", required: true}
+      - {label: "Estados", name: "states", widget: "string", required: true}
+      - {label: "Área", name: "area", widget: "string", required: true}
+      - {label: "Área (en formato texto opcional)", name: "areatext", widget: "string", required: false}
+      - {label: "Columnas de la tabla de ficha", name: "cardtablecolumns", widget: "list", required: true}
+      - {label: "Filas de la tabla de ficha", name: "cardtablerows", widget: "list", required: true}
+      - {label: "¿Íconos alineados a la izquierda?", name: "leftJustifyIcons", widget: "boolean", required: false}
+      - {label: "Habilitar desplazamiento de la tabla?", name: "enableTableScroll", widget: "boolean", required: false}
+      - {label: "Imagenes", name: "photos", widget: "list", fields: [
+          {label: "Etiqueta", name: "photokey", widget: "string", required: true},
+          {label: "Url", name: "photourl", widget: "file", allow_multiple: false, required: true},
+          {label: "Subtítulo", name: "photocaption", widget: "string", required: true}]}
+      - {label: "Texto", name: "body", widget: "text"}
+  - name: "vcards"
+    label: "Riesgo de colapso"
+    editor:
+       preview: false
+    folder: "content/vcards"
+    path: "{{slug}}/content"
+    create: false
+    media_folder: ''
+    fields:
+      - {label: "Título de ficha", name: "title", widget: "string", required: true}
+      - {label: "Título (con formato)", name: "formattedtitle", widget: "string", required: false}
+      - {label: "Formación vegetal", name: "plantformation", widget: "string", required: false}
+      - {label: "Imagen de portada", name: "cardimage", widget: "image", allow_multiple: false, required: true}
+      - {label: "Subtítulo de la imagen de portada", name: "cardimagecaption", widget: "string", required: true}
+      - {label: "Categoría", name: "category", widget: "select", required: true, options: ["el", "cr", "en", "vu", "nt", "lc", "dd", "ne"]}
+      - {label: "Descripción", name: "description", widget: "text", required: true}
+      - {label: "Distribución", name: "distribution", widget: "text", required: true}
+      - {label: "Mapa de distribución", name: "distributionmap", widget: "file", allow_multiple: false, required: true}
+      - {label: "Área en 1988", name: "areain1988", widget: "string", required: true}
+      - {label: "Área en 2010", name: "areain2010", widget: "string", required: true}
+      - label: "Comparación de mapas"
+        name: "mapcompare"
+        widget: "list"
+        allow_add: false
+        fields:
+          - label: "En 2010"
+            name: "in2010"
+            widget: "file"
+            allow_multiple: false
+            required: true
+          - label: "En 1988"
+            name: "in1988"
+            widget: "file"
+            allow_multiple: false
+            required: true
+          - label: "Subtítulo"
+            name: "caption"
+            widget: "string"
+            required: true
+          - label: "Leyenda"
+            name: "interventionlegend"
+            widget: "list"
+            required: false
+            fields:
+              - label: "Imagen"
+                name: "image"
+                widget: "file"
+                allow_multiple: false
+                required: true
+              - label: "Leyenda"
+                name: "text"
+                widget: "string"
+                required: true
+      - label: "¿Incluir columna de formación?"
+        name: "formationColumn"
+        widget: "boolean"
+        required: true
+        default: false
+      - label: "Distribución por estado"
+        name: "stateleveltable"
+        widget: "list"
+        fields:
+          - label: "Estado"
+            name: "state"
+            widget: "string"
+            required: true
+          - label: "En 1988"
+            name: "areain1988"
+            widget: "string"
+            required: true
+          - label: "En 2010"
+            name: "areain2010"
+            widget: "string"
+            required: true
+          - label: "Formación"
+            name: "formation"
+            widget: "string"
+            required: false
+      - {label: "Mapas de amenazas", name: "threatlevelmaps", widget: "list", fields: [
+          {label: "Mapa", name: "map", widget: "file" , allow_multiple: false, required: true},
+          {label: "Subtítulo", name: "caption", widget: "string", required: true},
+          {label: "Categorías para leyenda", name: "threatcategories", widget: "list", required: true}]}
+      - {label: "Etiqueta de zona", name: "zonelabel", widget: "select", options: ["Estado", "Localidad"], required: true}
+      - {label: "Criterios empleados", name: "criteriaused", widget: "list", required: true}
+      - {label: "Tabla de riesgos de colapso", name: "riskofcolapsestatelevel", widget: "list", fields: [
+          {label: "Estado o localidad", name: "zone", widget: "string", required: true},
+          {label: "Formación", name: "formation", widget: "string", required: true},
+          {label: "Área", name: "area", widget: "string", required: true},
+          {label: "Categorías de riesgo", name: "threatcategories", widget: "list", required: true}]}
+      - {label: "Fotos", name: "photos", widget: "list", fields: [
+          {label: "Etiqueta", name: "photokey", widget: "string", required: true},
+          {label: "Url", name: "photourl", widget: "file" , allow_multiple: false, required: true},
+          {label: "Subtítulo", name: "photocaption", widget: "string", required: true}]}
+      - {label: "Detalles", name: "body", widget: "text"}
+  - name: "methods"
+    label: "Métodos"
+    editor:
+       preview: false
+    folder: "content/methods"
+    path: "{{slug}}/content"
+    create: false
+    slug: "{{method}}"
+    media_folder: ''
+    fields:
+      - {label: "Método", name: "method", widget: "hidden", required: true}
+      - {label: "Título", name: "title", widget: "string", required: true}
+      - {label: "Imagen de portada", name: "cardimage", widget: "file" , allow_multiple: false, required: true}
+      - {label: "Subtítulo de la imagen de portada", name: "cardimagecaption", widget: "string", required: true}
+      - {label: "Imagenes", name: "photos", widget: "list", fields: [
+          {label: "Etiqueta", name: "photokey", widget: "string", required: true},
+          {label: "Url", name: "photourl", widget: "file" , allow_multiple: false, required: true},
+          {label: "Subtítulo", name: "photocaption", widget: "string", required: true}]}
+      - {label: "Texto", name: "body", widget: "text"}
+  - name: "units"
+    label: "Unidades de paisaje"
+    editor:
+       preview: false
+    folder: "content/units"
+    path: "{{slug}}/content"
+    create: false
+    slug: "{{region}}"
+    media_folder: ''
+    fields:
+      - {label: "Región", name: "region", widget: "hidden", required: true}
+      - {label: "Título", name: "title", widget: "string", required: true}
+      - {label: "Imagen de portada", name: "cardimage", widget: "file" , allow_multiple: false, required: true}
+      - {label: "Subtítulo de la imagen de portada", name: "cardimagecaption", widget: "string", required: true}
+      - {label: "Imagenes", name: "photos", widget: "list", fields: [
+          {label: "Etiqueta", name: "photokey", widget: "string", required: true},
+          {label: "Url", name: "photourl", widget: "file" , allow_multiple: false, required: true},
+          {label: "Subtítulo", name: "photocaption", widget: "string", required: true}]}
+      - {label: "Texto", name: "body", widget: "text"}
