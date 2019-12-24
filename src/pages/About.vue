@@ -2,11 +2,21 @@
   <Layout>
       <section class="hero is-small is-white">
         <div class="hero-body">
-          <div class="is-uppercase has-text-centered">
-            <h1 class="title">ACERCA DE</h1>
+          <div class="container is-fullhd has-text-centered">
+            <p class="title is-uppercase is-size-4-mobile">Acerca de</p>
           </div>
         </div>
-        <div class="section" v-html="$page.homeData.content">
+      </section>
+      <div class="has-text-centered">
+        <g-image v-if="$page.homeData.about.cardimage" :src="$page.homeData.about.cardimage" fit="inside" />
+      </div>
+      <figcaption class="has-text-centered"><div class="is-size-6 is-size-7-mobile" v-html="$page.homeData.about.cardimagecaption"></div></figcaption>
+      <section class="section">
+        <div class="tile is-vertical is-parent">
+          <TextWithRefsAndPhotos class="tile is-child box is-size-5 is-size-6-mobile"
+            :text="$page.homeData.content"
+            :isContent="true" />
+          </TextWithRefsAndPhotos>
         </div>
       </section>
   </Layout>
@@ -15,6 +25,10 @@
 <page-query>
   query Home {
     homeData: homeData (path: "/content/home") {
+      about {
+        cardimage
+        cardimagecaption
+      }
       content
     }
   }
@@ -26,3 +40,19 @@
     margin: auto;
   }
 </style>
+
+<script>
+  import TextWithRefsAndPhotos from '~/components/TextWithRefsAndPhotos.vue'
+
+  export default {
+    data() {
+      return {
+      }
+    },
+    mounted () {
+    },
+    components: {
+      TextWithRefsAndPhotos
+    }
+  }
+</script>
