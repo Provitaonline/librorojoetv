@@ -1,8 +1,10 @@
 backend:
   name: git-gateway
-  branch: master # Branch to update (optional; defaults to master)
+  branch: master
+  squash_merges: true
 
 publish_mode: editorial_workflow
+show_preview_links: false
 
 media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
