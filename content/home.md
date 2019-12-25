@@ -26,7 +26,7 @@ contact:
     piso 10, oficina 29-30<br>Chacao ZP 1060<br>Caracas, Venezuela<br><br>
   email: informacion@provitaonline.org
   phone: '(58) (212) 2637240, 2656996, 2670897'
-  web: 'example.com'
+  web: 'https://example.com'
 about:
   cardimage: "./images/foto-1.jpg"
   cardimagecaption: "Cotorra cabeciamarilla (<i>Amazona barbadensis</i>). <i>Thea Segall</i>"
