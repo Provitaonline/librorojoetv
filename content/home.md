@@ -26,11 +26,33 @@ contact:
     piso 10, oficina 29-30<br>Chacao ZP 1060<br>Caracas, Venezuela<br><br>
   email: informacion@provitaonline.org
   phone: '(58) (212) 2637240, 2656996, 2670897'
-  web: 'https://provita.org.ve'
+  web: 'example.com'
 about:
   cardimage: "./images/foto-1.jpg"
   cardimagecaption: "Cotorra cabeciamarilla (<i>Amazona barbadensis</i>). <i>Thea Segall</i>"
 ---
+
+| Equipo de trabajo | Fotografías  | |
+|----------------|----------------|--|
+| Ana Lucía Dávalos	| Alexis Bermúdez	| Lucía Pizzani |
+| Bibiana Sucre	| Ana Lucía Dávalos	| María Gabriela Montiel-Villalobos
+| Carlos Portillo-Quintero |	Andreas Gröger | María José Chávez
+| Diego Giraldo Hernández|	Ángela Martino |Mariana Hernández-Montilla
+| Fabián Carrasquel	 | César Molina	| Mario Fariñas
+| Franklin Rojas-Suárez	| Christian Ceccarelli Navarro | Natalia Ceballos
+| Giuseppe Colonnello	| David Southall |Oscar Lasso-Alcalá
+| Irene Zager	Fernando | Rojas-Runjaic | Otto Huber
+| Jon Paul Rodríguez | Franklin Rojas-Suárez | Pedro Uviedo
+| Kathryn M. Rodríguez-Clark | Gilson Rivas	| Rebecca Miller
+| María A. Oliveira-Miranda	| Giuseppe Colonnello	| Roderic Mast
+| María Idalí Tachack-García | Gustavo Romero	| Rodrigo Lazo
+| Mariana Hernández-Montilla | José Antonio González-Carcacía	| Román Rangel
+| Marianne Assmüssen	| Karl Weidmann	| Rosa De Oliveira-Miranda
+| Otto Huber	| Kenyer Domínguez | Sergio Zambrano-Martínez
+| Pablo Lacabana |	Laurie Fajardo |	Susanne Renner
+| Rosa De Oliveira-Miranda | Leonardo Ruíz-Díaz | Thea Segall
+| Sergio Zambrano-Martínez | |
+
 # A modo de introducción
 
 La crisis global de pérdida de biodiversidad exige el desarrollo de técnicas, tanto de investigación como de planificación, que permitan la identificación de especies y ambientes prioritarios para la conservación (Dinerstein et al. 1995, Miller & Lanou 1995, Myers et al. 2000, Boyla & Estrada 2005, Wilson et al. 2009, Funk & Fa 2010). El Convenio sobre la Diversidad Biológica, ratificado por el gobierno venezolano en 1994, establece que cada nación “procederá, mediante muestreo y otras técnicas, al seguimiento de los componentes de la diversidad (…) prestando especial atención a los que requieran la adopción de medidas urgentes de conservación” (CDB 1992).
