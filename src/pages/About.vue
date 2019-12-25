@@ -39,6 +39,16 @@
     display: block;
     margin: auto;
   }
+
+  ::v-deep .table-in-content {
+    font-size: 1rem !important;
+  }
+
+  @media screen and (max-width: 768px) {
+    ::v-deep .table-in-content {
+      font-size: 0.7rem !important;
+    }
+  }
 </style>
 
 <script>
