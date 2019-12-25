@@ -35,22 +35,22 @@ about:
 | Equipo de trabajo | Fotografías  | |
 |----------------|----------------|--|
 | Ana Lucía Dávalos	| Alexis Bermúdez	| Lucía Pizzani |
-| Bibiana Sucre	| Ana Lucía Dávalos	| María Gabriela Montiel-Villalobos
-| Carlos Portillo-Quintero |	Andreas Gröger | María José Chávez
-| Diego Giraldo Hernández|	Ángela Martino |Mariana Hernández-Montilla
-| Fabián Carrasquel	 | César Molina	| Mario Fariñas
-| Franklin Rojas-Suárez	| Christian Ceccarelli Navarro | Natalia Ceballos
-| Giuseppe Colonnello	| David Southall |Oscar Lasso-Alcalá
-| Irene Zager	Fernando | Rojas-Runjaic | Otto Huber
-| Jon Paul Rodríguez | Franklin Rojas-Suárez | Pedro Uviedo
-| Kathryn M. Rodríguez-Clark | Gilson Rivas	| Rebecca Miller
-| María A. Oliveira-Miranda	| Giuseppe Colonnello	| Roderic Mast
-| María Idalí Tachack-García | Gustavo Romero	| Rodrigo Lazo
-| Mariana Hernández-Montilla | José Antonio González-Carcacía	| Román Rangel
-| Marianne Assmüssen	| Karl Weidmann	| Rosa De Oliveira-Miranda
-| Otto Huber	| Kenyer Domínguez | Sergio Zambrano-Martínez
-| Pablo Lacabana |	Laurie Fajardo |	Susanne Renner
-| Rosa De Oliveira-Miranda | Leonardo Ruíz-Díaz | Thea Segall
+| Bibiana Sucre	| Ana Lucía Dávalos	| María Gabriela Montiel-Villalobos |
+| Carlos Portillo-Quintero |	Andreas Gröger | María José Chávez |
+| Diego Giraldo Hernández|	Ángela Martino |Mariana Hernández-Montilla |
+| Fabián Carrasquel	 | César Molina	| Mario Fariñas |
+| Franklin Rojas-Suárez	| Christian Ceccarelli Navarro | Natalia Ceballos |
+| Giuseppe Colonnello	| David Southall |Oscar Lasso-Alcalá |
+| Irene Zager	Fernando | Rojas-Runjaic | Otto Huber |
+| Jon Paul Rodríguez | Franklin Rojas-Suárez | Pedro Uviedo |
+| Kathryn M. Rodríguez-Clark | Gilson Rivas	| Rebecca Miller |
+| María A. Oliveira-Miranda	| Giuseppe Colonnello	| Roderic Mast |
+| María Idalí Tachack-García | Gustavo Romero	| Rodrigo Lazo |
+| Mariana Hernández-Montilla | José Antonio González-Carcacía	| Román Rangel |
+| Marianne Assmüssen	| Karl Weidmann	| Rosa De Oliveira-Miranda |
+| Otto Huber	| Kenyer Domínguez | Sergio Zambrano-Martínez |
+| Pablo Lacabana |	Laurie Fajardo |	Susanne Renner |
+| Rosa De Oliveira-Miranda | Leonardo Ruíz-Díaz | Thea Segall |
 | Sergio Zambrano-Martínez | |
 
 # A modo de introducción
