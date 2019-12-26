@@ -31,6 +31,7 @@ about:
   cardimage: "./images/foto-1.jpg"
   cardimagecaption: "Cotorra cabeciamarilla (<i>Amazona barbadensis</i>). <i>Thea Segall</i>"
 ---
+# Equipo
 
 | Equipo de trabajo | Fotografías  | |
 |----------------|----------------|--|
