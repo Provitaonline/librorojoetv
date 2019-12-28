@@ -31,6 +31,15 @@ about:
   cardimage: "./images/foto-1.jpg"
   cardimagecaption: "Cotorra cabeciamarilla (<i>Amazona barbadensis</i>). <i>Thea Segall</i>"
 ---
+# Producción
+**EL LIBRO ROJO DE LOS ECOSISTEMAS TERRESTRES DE VENEZUELA (2010) ES UNA PRODUCCION CONJUNTA DE:**
+
+Provita, Compañías Shell en Venezuela y Lenovo Venezuela, en el marco de la Ley Orgánica de Ciencia, Tecnología e Innovación (LOCTI)
+
+**CON LA COLABORACIÓN DE:**
+
+![Colaboración](./images/colaboracion.png){class="colab"}
+
 # Equipo
 
 | Equipo de trabajo | Fotografías  | |

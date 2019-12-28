@@ -35,9 +35,10 @@
 </page-query>
 
 <style lang="scss" scoped>
-  ::v-deep .centerme {
-    display: block;
-    margin: auto;
+
+  ::v-deep .colab {
+    width: 400px;
+    max-width: 80%;
   }
 
   ::v-deep .table-in-content {

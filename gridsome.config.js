@@ -34,6 +34,7 @@ module.exports = {
         path: 'content/home.md',
         typeName: 'HomeData',
         remark:{
+          lazyLoadImages: false,
           plugins: [
             'remark-attr'
           ]
