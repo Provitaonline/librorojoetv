@@ -65,12 +65,6 @@
       }
       content
     }
-    references: references (id: "units") {
-      references {
-        referencekey
-        reference
-      }
-    }
   }
 </page-query>
 
