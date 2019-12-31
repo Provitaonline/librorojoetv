@@ -53,7 +53,7 @@ Para una correcta interpretación y clasificación de las imágenes se utilizó 
 # Resultados
 
 La figura 3 muestra los mapas de cobertura de cada tipo de bosque para cada año. En 1986, los bosques siempreverdes de la región centro-norte se extendían en 397 km<sup>2</sup> en las partes altas e intermedias (> 1.000 m) de la cordillera de la Costa. Para 2001, este ecosistema sólo se redujo 3% (1 km<sup>2</sup>/año), por lo que no reflejó una tendencia de riesgo significativa.
-{Figura 3}}
+{Figura 3}
 Estos datos evidencian que los bosques siempreverdes no lograron satisfacer los umbrales de ninguna categoría de riesgo, y califican para la designación Preocupación Menor (LC). Esta situación se debe en gran parte a que los bosques siempreverdes se encuentran mayormente protegidos por los parques nacionales Henri Pittier (Foto 1) y Macarao y el Monumento Natural Pico Codazzi, como se observa tanto en las figuras 1 y 2, así como en la tabla 1; destacando que todas estas áreas protegidas fueron declaradas mucho antes de la fecha inicial del análisis de cambios.
 
 <div style="text-align: center;"><b>Tabla 1.</b> Porcentaje de los bosques en áreas protegidas</div>
