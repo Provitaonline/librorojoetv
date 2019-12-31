@@ -23,6 +23,9 @@
           <b-navbar-item tag="a" href="/methods/eval">
               Evaluación del riesgo
           </b-navbar-item>
+          <b-navbar-item tag="a" href="/methods/priorities">
+              Estableciendo prioridades
+          </b-navbar-item>
         </b-navbar-dropdown>
         <b-navbar-dropdown label="EXPLORAR">
           <b-navbar-item tag="a" href="/vcards">
