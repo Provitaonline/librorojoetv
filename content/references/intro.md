@@ -58,7 +58,10 @@ references:
     Hoekstra, J.M., T.M. Boucher, T.H. Ricketts & C. Roberts (2005). Confronting a biome crisis: global disparities of habitat loss and protection. Ecology Letters 8(1): 23-29.
 - referencekey: Huber &  Alarcón 1988
   reference: >
-    Huber, O. & C. Alarcón (1988). Mapa de Vegetación de Venezuela. Ministerio del Ambiente y los Recursos Naturales Renovables, The Nature Conservancy, Fundación Bioma: Caracas. IV Congreso Mundial de la Naturaleza (2008). Resolución 4.020: Umbrales cuantitativos para las categorías y los criterios de ecosistemas amenazados [en línea]. Disponible en www.iucn.org/es/congreso_esp asamblea_miembros/mociones/
+    Huber, O. & C. Alarcón (1988). Mapa de Vegetación de Venezuela. Ministerio del Ambiente y los Recursos Naturales Renovables, The Nature Conservancy, Fundación Bioma: Caracas.
+- referencekey: IV Congreso Mundial de la Naturaleza 2008
+  reference: >
+    IV Congreso Mundial de la Naturaleza (2008). Resolución 4.020: Umbrales cuantitativos para las categorías y los criterios de ecosistemas amenazados [en línea]. Disponible en www.iucn.org/es/congreso_esp asamblea_miembros/mociones/
 - referencekey: Llamozas et al. 2003
   reference: >
     Llamozas, S., R. Duno de Stefano, W. Meier, R. Riina, F. Stauffer, G. Aymard, O. Huber & R. Ortiz (2003). Libro Rojo de la Flora Venezolana. PROVITA, Fundación Polar, Fundación Instituto Botánico de Venezuela Dr. Tobías Lasser: Caracas, Venezuela. 555 pp.
