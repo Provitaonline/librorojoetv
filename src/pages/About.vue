@@ -16,6 +16,7 @@
           <TextWithRefsAndPhotos class="tile is-child box is-size-5 is-size-6-mobile"
             :text="$page.homeData.content"
             :refs="$page.references.references"
+            :photos="$page.homeData.about.photos"
             :isContent="true" />
           </TextWithRefsAndPhotos>
           <div class="container is-size-5 has-text-centered">
@@ -48,6 +49,11 @@
       about {
         cardimage
         cardimagecaption
+        photos {
+          photokey
+          photourl
+          photocaption
+        }
       }
       content
     }
