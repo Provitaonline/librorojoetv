@@ -3,6 +3,9 @@ method: priorities
 title: "Estableciendo prioridades<br>para la conservación de los<br>ecosistemas terrestres de Venezuela"
 cardimage: "./pancarta-priorities.jpg"
 cardimagecaption: "Recorrido entre Puerto Ayacucho y Autana, estado Amazonas. <i>Rebecca Miller</i>"
+photos:
+- photokey: "Formula 1"
+  photourl: "./formula.svg"
 ---
 Las evaluaciones de riesgo objetivas, transparentes y basadas en información científica son un requisito previo para la planificación y definición de políticas efectivas de conservación (Mace *et al.* 2008, Rodríguez *et al.* 2011). Sin embargo, aunque las evaluaciones son necesarias y muy valiosas en cualquier ecuación para establecer prioridades no son suficientes por sí solas, y en la planificación para la conservación de ecosistemas se requiere contar con herramientas adicionales que faciliten la toma de decisiones.
 
@@ -39,10 +42,8 @@ La aplicación de estos criterios, expresada por la línea azul en la figura 1, 
 El grado de endemismo de la biota de un ecosistema, o la proporción de sus organismos que no se encuentra en alguna otra parte del mundo, constituye un aspecto cualitativo importante de su diversidad biológica. El endemismo puede ser expresado en diferentes niveles, como especies, géneros, familias u órdenes, con respecto a una región determinada. El endemismo también puede ser expresado en función de formas de vida particulares, como los desiertos de Namibia o de México, donde las suculentas y otras plantas inusuales son predominantes (Dirzo & Raven 2003).
 
 A este respecto, se propone cuantificar el grado de singularidad de un ecosistema en función de la proporción de sus especies endémicas. La lógica es que mientras mayor sea la singularidad de un ecosistema mayor sería su prioridad, ya que también sería mayor la probabilidad de que la conservación de las especies que contiene y las interacciones entre éstas y su ambiente físico, sólo sean posibles en este ecosistema y no en otro. Una de las fórmulas más utilizadas para cuantificar el grado de endemismo es la siguiente:
-
-<img style="display: block; margin: auto; width: 150px;" src="https://math.now.sh?from=Ie=\sum^n_{i=1}\frac{Gi_{(e)}}{Gi_{(t)}}"/><br>
-
-En esta fórmula, Ie es el índice de riqueza de cada región ecológica (e); n es el número total de especies en la región ecológica (e); Gi(e) es el número de especies en el grupo i por ecorregión; y Gi(t) es el número total de especies del grupo i (Lamoreux *et al.* 2006). Esta fórmula puede ser aplicada a la información obtenida sobre uno o más grupos taxonómicos, cuyo grado de endemismo sea conocido en los ecosistemas presentes en el área de estudio.
+{Formula 1}
+En esta fórmula, Ie es el índice de riqueza de cada región ecológica (e); n es el número total de especies en la región ecológica (e); Gi<sub>(e)</sub> es el número de especies en el grupo i por ecorregión; y Gi<sub>(t)</sub> es el número total de especies del grupo i (Lamoreux *et al.* 2006). Esta fórmula puede ser aplicada a la información obtenida sobre uno o más grupos taxonómicos, cuyo grado de endemismo sea conocido en los ecosistemas presentes en el área de estudio.
 
 La presente utilización del criterio de endemismo sigue la doctrina de la responsabilidad final postulada por McNeeley y otros autores (1990) y adoptada por la UICN (Unión Internacional para la Conservación de la Naturaleza), según la cual cualquier nación que posea especies o ecosistemas únicos tiene la responsabilidad final de garantizar su supervivencia (Mittermeier *et al.* 1998). Empleando valores de referencia obtenidos de la literatura científica, a los ecosistemas con índice de endemismo mayor a 2% se asigna el valor de tres (3) puntos, de acuerdo con la propuesta de Mittermeier y colaboradores (1997) para países megadiversos; mientras que a aquellos que presenten valores entre 1% y 2% les corresponde el valor de dos (2) puntos, en función de los valores usados para determinar un hotspot de biodiversidad (Mittermeier *et al.* 1998, Myers *et al.* 2000). Finalmente, para los ecosistemas cuyo índice sea menor que 1%, el valor empleado es un (1) punto.
 
