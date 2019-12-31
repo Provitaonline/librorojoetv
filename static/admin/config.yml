@@ -38,7 +38,7 @@ collections:
                   {label: "Etiqueta", name: "photokey", widget: "string", required: true},
                   {label: "Url", name: "photourl", widget: "file", allow_multiple: false, required: true},
                   {label: "Subtítulo", name: "photocaption", widget: "string", required: true}]}]}
-          - {label: "Acerca de", name: "body", widget: "markdown"}
+          - {label: "Acerca de", name: "body", widget: "text"}
   - name: "references"
     label: "Bibliografías"
     editor:
