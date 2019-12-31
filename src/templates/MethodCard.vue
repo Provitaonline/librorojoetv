@@ -5,7 +5,7 @@
           <div class="hero-body">
             <div class="container is-fullhd has-text-centered">
               <p class="is-uppercase is-size-6">Métodos</p>
-              <p class="title is-uppercase is-size-4-mobile">{{$page.methodCard.title}}</p>
+              <p class="title is-uppercase is-size-4-mobile" v-html="$page.methodCard.title"></p>
             </div>
           </div>
         </section>
