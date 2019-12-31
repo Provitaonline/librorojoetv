@@ -31,6 +31,13 @@ collections:
               {label: "Teléfonos", name: "phone", widget: "string"},
               {label: "email", name: "email", widget: "string"},
               {label: "Sitio web", name: "web", widget: "string"}]}
+          - {label: "Acerca de (imágenes)", name: "about", widget: "object", fields: [
+              {label: "Imagen de portada", name: "cardimage", widget: "file", allow_multiple: false, required: true},
+              {label: "Subtítulo de la imagen de portada", name: "cardimagecaption", widget: "string", required: true},
+              {label: "Imagenes", name: "photos", widget: "list", fields: [
+                  {label: "Etiqueta", name: "photokey", widget: "string", required: true},
+                  {label: "Url", name: "photourl", widget: "file", allow_multiple: false, required: true},
+                  {label: "Subtítulo", name: "photocaption", widget: "string", required: true}]}]}
           - {label: "Acerca de", name: "body", widget: "markdown"}
   - name: "references"
     label: "Bibliografías"
