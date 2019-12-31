@@ -104,7 +104,7 @@ Para cuantificar los cambios de cobertura se procesaron imágenes satelitales qu
   </table>
 </div>
 
-La integración de la información de las imágenes de satélite con las observaciones de campo permitió elaborar dos mapas de cobertura vegetal del área de estudio, uno “base” y otro “reciente”, ambos correspondientes a las décadas de 1980 y 2000, respectivamente. Se calculó el cambio observado entre las dos imágenes (aproximadamente 15 años) y la información derivada se utilizó para proyectar hacia el futuro, cubriendo un intervalo total de cambio de 50 años. Estos datos permitieron la aplicación del criterio A3, que incluye una porción observada en el pasado y una proyectada en el futuro, para un lapso combinado de 50 años (vid. supra, cap. II, Rodríguez *et al.* 2011). Es importante notar que las proyecciones futuras sólo se hicieron para las coberturas vegetales naturales.
+La integración de la información de las imágenes de satélite con las observaciones de campo permitió elaborar dos mapas de cobertura vegetal del área de estudio, uno “base” y otro “reciente”, ambos correspondientes a las décadas de 1980 y 2000, respectivamente. Se calculó el cambio observado entre las dos imágenes (aproximadamente 15 años) y la información derivada se utilizó para proyectar hacia el futuro, cubriendo un intervalo total de cambio de 50 años. Estos datos permitieron la aplicación del criterio A3, que incluye una porción observada en el pasado y una proyectada en el futuro, para un lapso combinado de 50 años (vid. supra cap. II, Rodríguez *et al.* 2011). Es importante notar que las proyecciones futuras sólo se hicieron para las coberturas vegetales naturales.
 
 # Resultados
 

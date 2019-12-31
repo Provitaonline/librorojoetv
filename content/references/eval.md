@@ -29,4 +29,10 @@ references:
 - referencekey: Rodríguez et al. 2011
   reference: >
       Rodríguez, J.P., K. Rodríguez-Clark, J.E. M. Baillie, N. Ash, J. Benson, T. Boucher, C. Brown, N.D. Burgess, B. Collen, M. Jennings, D.A. Keith, E. Nicholson, C. Revenga, B. Reyers, M. Rouget, T. Smith, M. Spalding, A. Taber, M. Walpole, I. Zager & T. Zamin (2011). Definición de Categorías de UICN para Ecosistemas Amenazados. Conservation Biology 25: [doi: 10.1111/j.1523-1739.2010.1598].
+- referencekey: vid. supra cap. I
+  reference: >
+    Huber, O. & M.A. Oliveira-Miranda (2010). Ambientes terrestres de Venezuela. Pp: 29-89. En: J.P. Rodríguez, F. Rojas-Suárez & D. Giraldo Hernández (eds.). Libro Rojo de los Ecosistemas Terrestres de Venezuela. Provita, Shell Venezuela, Lenovo (Venezuela). Caracas: Venezuela.
+- referencekey: vid. supra cap. II
+  reference: >
+    Rodríguez, J.P., K.M. Rodríguez-Clark & M. Assmüssen (2010). Categorías y criterios de las listas rojas de ecosistemas. Pp: 93-105. En: J.P. Rodríguez, F. Rojas-Suárez & D. Giraldo Hernández (eds.). Libro Rojo de los Ecosistemas Terrestres de Venezuela. Provita, Shell Venezuela, Lenovo (Venezuela). Caracas: Venezuela.
 ---
