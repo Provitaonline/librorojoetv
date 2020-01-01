@@ -80,6 +80,7 @@ Se propone un procedimiento que tiene dos pasos. En el primero, se elabora una m
 
 </div>
 {Foto 2}
+
 Una vez finalizada la evaluación, al multiplicar los valores de los cuatro criterios, se calcula el índice de prioridad de cada ecosistema. Este cálculo puede llevarse a cabo en cualquier escala espacial, como nacional, estadal o municipal. La información recopilada durante el cálculo del índice, más los valores del índice calculado serían un insumo clave para informar y apoyar propuestas concretas de conservación de los ecosistemas de la región de interés.
 
 Con el propósito de ilustrar la aplicación de este modelo, se aprovechó la evaluación realizada en los bosques de la cordillera de la Costa Central, uno de los casos de estudio presentados en este libro (vid. supra cap. IV). Los resultados de ese análisis indican que los bosques siempreverdes de la región no están amenazados, mientras que los semideciduos calificarían Vulnerable (VU) y los deciduos En Peligro Crítico (CR). Por lo tanto, según la variable de riesgo de eliminación, los bosques semideciduos tienen un valor de un (1) punto y a los deciduos les corresponde tres (3) puntos.
