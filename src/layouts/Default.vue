@@ -136,7 +136,6 @@
     },
     methods: {
       getCurrentUrl: function() {
-        console.log(this.$page)
         return window.location.href
       }
     }
