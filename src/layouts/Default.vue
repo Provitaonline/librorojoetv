@@ -42,12 +42,20 @@
           CONTACTO
         </b-navbar-item>
         <b-navbar-dropdown label="COMPARTIR">
-            <b-navbar-item>
-              <font-awesome :icon="['fab', 'facebook']"/>&nbsp;Facebook
-            </b-navbar-item>
-            <b-navbar-item>
-              <font-awesome :icon="['fab', 'twitter']"/>&nbsp;Twitter
-            </b-navbar-item>
+          <social-sharing :url="getCurrentUrl()" inline-template>
+            <div>
+              <b-navbar-item>
+                <network network="facebook">
+                  <font-awesome :icon="['fab', 'facebook']"/>&nbsp;Facebook
+                </network>
+              </b-navbar-item>
+              <b-navbar-item>
+                <network network="twitter">
+                  <font-awesome :icon="['fab', 'twitter']"/>&nbsp;Twitter
+                </network>
+              </b-navbar-item>
+            </div>
+          </social-sharing>
         </b-navbar-dropdown>
       </template>
     </b-navbar>
@@ -112,6 +120,7 @@
 
   import {version} from '../../package.json'
   import BackToTop from 'vue-backtotop'
+  import SocialSharing from 'vue-social-sharing'
 
   export default {
     data() {
@@ -120,13 +129,16 @@
       }
     },
     components: {
-      BackToTop
+      BackToTop,
+      SocialSharing
     },
     mounted () {
-
     },
     methods: {
-
+      getCurrentUrl: function() {
+        console.log(this.$page)
+        return window.location.href
+      }
     }
   }
 </script>
