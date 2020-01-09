@@ -18,6 +18,7 @@ collections:
       - file: content/home.md
         label: "Página principal, acerca de y contacto"
         name: "home"
+        media_folder: "images"
         fields:
           - {label: "Título", name: "title", widget: "string"}
           - {label: "Texto del banner", name: "heroTitle", widget: "string"}
