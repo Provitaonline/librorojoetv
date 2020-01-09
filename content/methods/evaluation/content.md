@@ -2,7 +2,7 @@
 method: eval
 title: "Método para la evaluación del riesgo de colapso de los ecosistemas terrestres de Venezuela"
 cardimage: "./pancarta-eval.jpg"
-cardimagecaption: "Falta esta foto"
+cardimagecaption: "Vista panorámica de Lagunillas, estado Mérida. <i>Leonardo Ruíz-Díaz</i>"
 photos:
 - photokey: "Figura 1"
   photourl: "./figura-1.jpg"
@@ -41,7 +41,7 @@ photos:
   photourl: "./foto-5.jpg"
   photocaption: "Foto 4: Extracción de oro sin eliminación del dosel, estado Bolívar. <i>Sergio Zambrano-Martínez</i>"
 ---
-El presente análisis se centra en las formaciones vegetales presentes en Venezuela para 2010, identificadas por Huber y Oliveira-Miranda (vid. supra cap. I, Figura 8). Su clasificación corresponde a las principales formas de crecimiento de la vegetación: arbórea, arbustiva y herbácea divididas a su vez en tipos, de acuerdo con sus características fisiológicas, topográficas y geográficas. Las formaciones arbóreas ocupan más de la mitad de la superficie terrestre de Venezuela (54%), mientras que las herbáceas abarcan 18% y las arbustivas 6%. Las áreas intervenidas alcanzan alrededor de 22% del territorio nacional.
+El presente análisis se centra en las [formaciones vegetales presentes en Venezuela para 2010](/vcards), identificadas por Huber y Oliveira-Miranda (vid. supra cap. I, Figura 8). Su clasificación corresponde a las principales formas de crecimiento de la vegetación: arbórea, arbustiva y herbácea divididas a su vez en tipos, de acuerdo con sus características fisiológicas, topográficas y geográficas. Las formaciones arbóreas ocupan más de la mitad de la superficie terrestre de Venezuela (54%), mientras que las herbáceas abarcan 18% y las arbustivas 6%. Las áreas intervenidas alcanzan alrededor de 22% del territorio nacional.
 
 Las formaciones vegetales de Venezuela tienen patrones de distribución diferentes a las unidades de paisaje (vid. supra, cap. I: Figura 9) y varias de ellas se encuentran en diversas áreas geográficas, algunas en forma continua y otras de manera claramente fragmentada. Estas dos condiciones, presencia en diferentes áreas geográficas y grado de continuidad, generan diferencias cualitativas y cuantitativas en términos de la composición de especies. Es por esto que una misma formación puede estar integrada por varios tipos específicos de vegetación o fitocenosis, en algunos con diferentes niveles de endemismo o de riqueza de especies, y muy particularmente, con diferencias en cuanto al grado de intervención que acusan.
 

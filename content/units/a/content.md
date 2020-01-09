@@ -2,7 +2,7 @@
 region: a
 title: "Región A: Costas e islas"
 cardimage: "./pancarta.jpg"
-cardimagecaption: "Falta esta foto"
+cardimagecaption: "Paisaje vegetal de la costa, litoral central, estado Vargas. <i>Giuseppe Colonnello</i>"
 photos:
 - photokey: "Foto 21"
   photourl: "./foto-21.jpg"
