@@ -16,32 +16,33 @@ collections:
     label: "Principal"
     editor:
        preview: false
-    files:
-      - file: content/home.md
-        label: "Página principal, acerca de y contacto"
-        name: "home"
-        media_folder: "images"
-        fields:
-          - {label: "Título", name: "title", widget: "string"}
-          - {label: "Texto del banner", name: "heroTitle", widget: "string"}
-          - {label: "Tarjetas de la página principal", name: "indexCards", widget: "list", allow_add: false, fields: [
-              {label: "Título", name: "title", widget: "string"},
-              {label: "Enlace", name: "link", widget: "string"},
-              {label: "Imagen", name: "image", widget: "string"},
-              {label: "Texto", name: "text", widget: "string"}]}
-          - {label: "Contacto", name: "contact", widget: "object", fields: [
-              {label: "Dirección", name: "address", widget: "string"},
-              {label: "Teléfonos", name: "phone", widget: "string"},
-              {label: "email", name: "email", widget: "string"},
-              {label: "Sitio web", name: "web", widget: "string"}]}
-          - {label: "Acerca de (imágenes)", name: "about", widget: "object", fields: [
-              {label: "Imagen de portada", name: "cardimage", widget: "file", allow_multiple: false, required: true},
-              {label: "Subtítulo de la imagen de portada", name: "cardimagecaption", widget: "string", required: true},
-              {label: "Imagenes", name: "photos", widget: "list", fields: [
-                  {label: "Etiqueta", name: "photokey", widget: "string", required: true},
-                  {label: "Url", name: "photourl", widget: "file", allow_multiple: false, required: true},
-                  {label: "Subtítulo", name: "photocaption", widget: "string", required: true}]}]}
-          - {label: "Acerca de", name: "body", widget: "text"}
+    folder: "content"
+    path: "{{slug}}/content"
+    create: false
+    slug: "{{id}}"
+    media_folder: ""
+    fields:
+      - {label: "Id", name: "id", widget: "hidden", required: true}
+      - {label: "Título", name: "title", widget: "string"}
+      - {label: "Texto del banner", name: "heroTitle", widget: "string"}
+      - {label: "Tarjetas de la página principal", name: "indexCards", widget: "list", allow_add: false, fields: [
+          {label: "Título", name: "title", widget: "string"},
+          {label: "Enlace", name: "link", widget: "string"},
+          {label: "Imagen", name: "image", widget: "string"},
+          {label: "Texto", name: "text", widget: "string"}]}
+      - {label: "Contacto", name: "contact", widget: "object", fields: [
+          {label: "Dirección", name: "address", widget: "string"},
+          {label: "Teléfonos", name: "phone", widget: "string"},
+          {label: "email", name: "email", widget: "string"},
+          {label: "Sitio web", name: "web", widget: "string"}]}
+      - {label: "Acerca de (imágenes)", name: "about", widget: "object", fields: [
+          {label: "Imagen de portada", name: "cardimage", widget: "file", allow_multiple: false, required: true},
+          {label: "Subtítulo de la imagen de portada", name: "cardimagecaption", widget: "string", required: true},
+          {label: "Imagenes", name: "photos", widget: "list", fields: [
+              {label: "Etiqueta", name: "photokey", widget: "string", required: true},
+              {label: "Url", name: "photourl", widget: "file", allow_multiple: false, required: true},
+              {label: "Subtítulo", name: "photocaption", widget: "string", required: true}]}]}
+      - {label: "Acerca de", name: "body", widget: "text"}
   - name: "references"
     label: "Bibliografías"
     editor:
