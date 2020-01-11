@@ -16,8 +16,8 @@ collections:
     label: "Principal"
     editor:
        preview: false
-    folder: "content"
-    path: "home/content"
+    folder: "content/home"
+    path: "content"
     create: false
     media_folder: ""
     fields:
