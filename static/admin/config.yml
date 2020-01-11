@@ -19,6 +19,7 @@ collections:
     folder: "content/home"
     path: "content"
     create: false
+    delete: false
     media_folder: ""
     fields:
       - {label: "Id", name: "id", widget: "hidden", required: true}
@@ -49,6 +50,7 @@ collections:
     folder: "content/methods"
     path: "{{slug}}/content"
     create: false
+    delete: false
     slug: "{{method}}"
     media_folder: ''
     fields:
@@ -68,6 +70,7 @@ collections:
     folder: "content/vcards"
     path: "{{slug}}/content"
     create: false
+    delete: false
     media_folder: ''
     fields:
       - {label: "Título de ficha", name: "title", widget: "string", required: true}
@@ -162,6 +165,7 @@ collections:
     folder: "content/cases"
     path: "{{slug}}/content"
     create: false
+    delete: false
     slug: "{{case}}"
     media_folder: ''
     fields:
@@ -190,6 +194,7 @@ collections:
     folder: "content/units"
     path: "{{slug}}/content"
     create: false
+    delete: false
     slug: "{{region}}"
     media_folder: ''
     fields:
@@ -208,6 +213,7 @@ collections:
        preview: false
     folder: "content/references"
     create: false
+    delete: false
     slug: "{{id}}"
     fields:
       - {label: "Id", name: "id", widget: "hidden", required: true}
