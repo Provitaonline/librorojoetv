@@ -1,6 +1,6 @@
 ---
 id: home
-title: Página principal, acerca de y contacto
+title: 'Página principal, acerca de y contacto'
 heroTitle: Libro rojo de los ecosistemas terrestres de Venezuela
 indexCards:
   - image: ./riesgo.png
@@ -29,26 +29,29 @@ contact:
   phone: '(58) (212) 2637240, 2656996, 2670897'
   web: 'https://example.com'
 about:
-  cardimage: "./foto-1.jpg"
-  cardimagecaption: "Cotorra cabeciamarilla (<i>Amazona barbadensis</i>). <i>Thea Segall</i>"
+  cardimage: ./foto-1.jpg
+  cardimagecaption: Cotorra cabeciamarilla (<i>Amazona barbadensis</i>). <i>Thea Segall</i>
   photos:
-  - photokey: "Foto 2"
-    photourl: "./foto-2.jpg"
-    photocaption: "Rio en cima del Auyantepuy, estado Bolívar. <i>Román Rangel</i>"
-  - photokey: "Foto 3"
-    photourl: "./foto-3.jpg"
-    photocaption: "Laguna de Canaima, estado Bolívar. <i>Román Rangel</i>"
-  - photokey: "Foto 4"
-    photourl: "./foto-4.jpg"
-    photocaption: "Danta (<i>Tapirus terrestris</i>). <i>Karl Weidmann</i>"
-  - photokey: "Foto 5"
-    photourl: "./foto-5.jpg"
-    photocaption: "Río Sipapo, estado Amazonas. <i>Lucía Pizzani</i>"
-  - photokey: "Foto 6"
-    photourl: "./foto-6.jpg"
-    photocaption: "Valle del río Chama, sector Lagunillas, estado Mérida. <i>José Antonio González-Carcacía</i>"
+    - photocaption: 'Rio en cima del Auyantepuy, estado Bolívar. <i>Román Rangel</i>'
+      photokey: Foto 2
+      photourl: ./foto-2.jpg
+    - photocaption: 'Laguna de Canaima, estado Bolívar. <i>Román Rangel</i>'
+      photokey: Foto 3
+      photourl: ./foto-3.jpg
+    - photocaption: Danta (<i>Tapirus terrestris</i>). <i>Karl Weidmann</i>
+      photokey: Foto 4
+      photourl: ./foto-4.jpg
+    - photocaption: 'Río Sipapo, estado Amazonas. <i>Lucía Pizzani</i>'
+      photokey: Foto 5
+      photourl: ./foto-5.jpg
+    - photocaption: >-
+        Valle del río Chama, sector Lagunillas, estado Mérida. <i>José Antonio
+        González-Carcacía</i>
+      photokey: Foto 6
+      photourl: ./foto-6.jpg
 ---
 # Producción
+
 **EL LIBRO ROJO DE LOS ECOSISTEMAS TERRESTRES DE VENEZUELA (2010) ES UNA PRODUCCION CONJUNTA DE:**
 
 Provita, Compañías Shell en Venezuela y Lenovo Venezuela, en el marco de la Ley Orgánica de Ciencia, Tecnología e Innovación (LOCTI)
@@ -59,26 +62,26 @@ Provita, Compañías Shell en Venezuela y Lenovo Venezuela, en el marco de la Le
 
 # Equipo
 
-| Equipo de trabajo | Fotografías  | |
-|----------------|----------------|--|
-| Ana Lucía Dávalos	| Alexis Bermúdez	| Lucía Pizzani |
-| Bibiana Sucre	| Ana Lucía Dávalos	| María Gabriela Montiel-Villalobos |
-| Carlos Portillo-Quintero |	Andreas Gröger | María José Chávez |
-| Diego Giraldo Hernández|	Ángela Martino |Mariana Hernández-Montilla |
-| Fabián Carrasquel	 | César Molina	| Mario Fariñas |
-| Franklin Rojas-Suárez	| Christian Ceccarelli Navarro | Natalia Ceballos |
-| Giuseppe Colonnello	| David Southall |Oscar Lasso-Alcalá |
-| Irene Zager	Fernando | Rojas-Runjaic | Otto Huber |
-| Jon Paul Rodríguez | Franklin Rojas-Suárez | Pedro Uviedo |
-| Kathryn M. Rodríguez-Clark | Gilson Rivas	| Rebecca Miller |
-| María A. Oliveira-Miranda	| Giuseppe Colonnello	| Roderic Mast |
-| María Idalí Tachack-García | Gustavo Romero	| Rodrigo Lazo |
-| Mariana Hernández-Montilla | José Antonio González-Carcacía	| Román Rangel |
-| Marianne Assmüssen	| Karl Weidmann	| Rosa De Oliveira-Miranda |
-| Otto Huber	| Kenyer Domínguez | Sergio Zambrano-Martínez |
-| Pablo Lacabana |	Laurie Fajardo |	Susanne Renner |
-| Rosa De Oliveira-Miranda | Leonardo Ruíz-Díaz | Thea Segall |
-| Sergio Zambrano-Martínez | |
+| Equipo de trabajo          | Fotografías                    |                                   |
+| -------------------------- | ------------------------------ | --------------------------------- |
+| Ana Lucía Dávalos          | Alexis Bermúdez                | Lucía Pizzani                     |
+| Bibiana Sucre              | Ana Lucía Dávalos              | María Gabriela Montiel-Villalobos |
+| Carlos Portillo-Quintero   | Andreas Gröger                 | María José Chávez                 |
+| Diego Giraldo Hernández    | Ángela Martino                 | Mariana Hernández-Montilla        |
+| Fabián Carrasquel          | César Molina                   | Mario Fariñas                     |
+| Franklin Rojas-Suárez      | Christian Ceccarelli Navarro   | Natalia Ceballos                  |
+| Giuseppe Colonnello        | David Southall                 | Oscar Lasso-Alcalá                |
+| Irene Zager	Fernando       | Rojas-Runjaic                  | Otto Huber                        |
+| Jon Paul Rodríguez         | Franklin Rojas-Suárez          | Pedro Uviedo                      |
+| Kathryn M. Rodríguez-Clark | Gilson Rivas                   | Rebecca Miller                    |
+| María A. Oliveira-Miranda  | Giuseppe Colonnello            | Roderic Mast                      |
+| María Idalí Tachack-García | Gustavo Romero                 | Rodrigo Lazo                      |
+| Mariana Hernández-Montilla | José Antonio González-Carcacía | Román Rangel                      |
+| Marianne Assmüssen        | Karl Weidmann                  | Rosa De Oliveira-Miranda          |
+| Otto Huber                 | Kenyer Domínguez               | Sergio Zambrano-Martínez          |
+| Pablo Lacabana             | Laurie Fajardo                 | Susanne Renner                    |
+| Rosa De Oliveira-Miranda   | Leonardo Ruíz-Díaz             | Thea Segall                       |
+| Sergio Zambrano-Martínez   |                                |                                   |
 
 {Foto 2}
 
@@ -88,9 +91,7 @@ La crisis global de pérdida de biodiversidad exige el desarrollo de técnicas, 
 
 Entre las herramientas más efectivas para determinar la situación de conservación de la biodiversidad están los llamados “Libros y Listas Rojas”, una serie de catálogos de especies amenazadas del mundo, donde se resume la situación actual de cada una y se le asigna una categoría que refleja su riesgo de extinción. Las categorías de los libros rojos fueron usadas por primera vez a mediados de los años sesenta y desde entonces se han aplicado a las especies amenazadas no sólo en un ámbito global, sino también en numerosos países y regiones (Scott et al. 1987, Collar 1996, Smith & Darwall 2006, Rodríguez & Rojas-Suárez 2008, Zamin et al. 2010).
 
-Los Libros y Listas Rojas son una iniciativa que hace más de 40 años se originó en la Unión Internacional para la Conservación de la Naturaleza (UICN). La asignación de categorías de riesgo de extinción está fundamentada en un conjunto de criterios cuantitativos, mediante los cuales un evaluador puede clasificar cualquier especie o población de plantas o animales de manera objetiva, repetible y transparente (UICN 2001, Mace et al. 2008).
-{Foto 3}
-Sin embargo, el enfoque en el nivel de especies presenta varias limitaciones. Primero, brinda una visión restringida sobre el estatus de la biodiversidad, ya que las especies individuales pueden estar más o menos amenazadas que los hábitats que utilizan (Bodmer & Robinson 2004, Brashares et al. 2004, Blom et al. 2005, Nijman 2005). Segundo, dada la elevada tasa de pérdida de biodiversidad actual, es posible que las evaluaciones de especies individuales no se realicen a la misma velocidad con que suceden los cambios globales (May et al. 1995, Baillie et al. 2004, Vié et al. 2009). Tercero, los análisis individuales frecuentemente requieren información detallada de distribución y abundancia que no está disponible para la gran mayoría de las especies (Stuart et al. 2010). Finalmente, el enfoque en el nivel de especies no se traduce necesariamente en estrategias de conservación en el nivel de paisaje, que podrían resultar más eficientes y efectivas, en especial en las regiones del mundo para las cuales los datos son escasos (Noss 1996, Ward et al. 1999, Ferrier 2002, Cowling et al. 2004).
+Los Libros y Listas Rojas son una iniciativa que hace más de 40 años se originó en la Unión Internacional para la Conservación de la Naturaleza (UICN). La asignación de categorías de riesgo de extinción está fundamentada en un conjunto de criterios cuantitativos, mediante los cuales un evaluador puede clasificar cualquier especie o población de plantas o animales de manera objetiva, repetible y transparente (UICN 2001, Mace et al. 2008). {Foto 3} Sin embargo, el enfoque en el nivel de especies presenta varias limitaciones. Primero, brinda una visión restringida sobre el estatus de la biodiversidad, ya que las especies individuales pueden estar más o menos amenazadas que los hábitats que utilizan (Bodmer & Robinson 2004, Brashares et al. 2004, Blom et al. 2005, Nijman 2005). Segundo, dada la elevada tasa de pérdida de biodiversidad actual, es posible que las evaluaciones de especies individuales no se realicen a la misma velocidad con que suceden los cambios globales (May et al. 1995, Baillie et al. 2004, Vié et al. 2009). Tercero, los análisis individuales frecuentemente requieren información detallada de distribución y abundancia que no está disponible para la gran mayoría de las especies (Stuart et al. 2010). Finalmente, el enfoque en el nivel de especies no se traduce necesariamente en estrategias de conservación en el nivel de paisaje, que podrían resultar más eficientes y efectivas, en especial en las regiones del mundo para las cuales los datos son escasos (Noss 1996, Ward et al. 1999, Ferrier 2002, Cowling et al. 2004).
 
 Para superar estas limitaciones, una alternativa es establecer criterios de conservación en un nivel biológico superior, como el de los ecosistemas, que podría complementar las evaluaciones de riesgo de especies, o proveer una alternativa útil cuando sólo se dispone de datos en el nivel de paisaje. Así mismo, las evaluaciones en el nivel de ecosistema, en principio, requerirían menor tiempo de análisis, permitiendo la implementación de estrategias de conservación preventivas en lugar de medidas correctivas (como la restauración), las cuales suelen ser mucho más costosas (Orians 1993, Scott et al. 1993, Noss 1996).
 
@@ -108,13 +109,9 @@ Este proyecto se desarrolló entre 2002 y 2007, y fue seguido por una iniciativa
 
 A nivel internacional, se conformó un grupo de trabajo ad hoc para el desarrollo de categorías y criterios de las listas rojas de ecosistemas. Reunidos por primera vez en Londres, en marzo de 2008, el grupo elaboró una resolución a ser considerada por el IV Congreso Mundial para la Naturaleza de UICN, realizado en Barcelona, España, en octubre de ese mismo año. Al ser adoptada la resolución se inició “un proceso de consultas para el desarrollo, implementación y monitoreo de un estándar mundial para la evaluación del estado de los ecosistemas, aplicable a nivel local, regional y mundial, con la perspectiva de que sea presentado en una futura sesión del Congreso Mundial de la Naturaleza para su aprobación” (IV Congreso Mundial de la Naturaleza 2008).
 
-Bajo el auspicio de la Comisión de Manejo Ecosistémico de UICN (CEM/IUCN) y con la participación activa de la Comisión para la Sobrevivencia de Especies de UICN (SSC/IUCN), se conformó un grupo de trabajo más amplio, que identificó los principales retos científicos que habría que resolver, a la vez que presentó una propuesta actualizada de categorías de UICN para ecosistemas amenazados, actualmente bajo consideración de la comunidad científica internacional a través de un artículo publicado en la revista Conservation Biology (Rodríguez et al. 2011). Paralelamente, con la conceptualización de las categorías y criterios de UICN para ecosistemas, se dio inicio a un proceso de aplicación de la metodología en Venezuela a varias escalas, desde local hasta nacional.
-{Foto 5}
-Uno de los principales retos a resolver, para la aplicación efectiva de las categorías propuestas, era la definición de la unidad básica de análisis. Las definiciones clásicas de “ecosistema” proponen que se trata de “un complejo dinámico de comunidades vegetales, animales y de microorganismos y su medio no viviente que interactúan como una unidad funcional” (CDB 1992). Desde el punto de vista de la conservación de la diversidad biológica, la atención de los gestores tiende a centrarse principalmente en sus componentes bióticos. Por lo tanto, y por razones prácticas, en este libro se utiliza “ecosistema” como un término equivalente a comunidad o formación vegetal, o incluso a tipo de cobertura terrestre. Esto es una simplificación extrema, pero permite un enfoque específico en los cambios de las coberturas vegetales originales, en la misma medida en que éstas son reemplazadas por los diferentes usos de la tierra dados por los humanos. Así mismo, este tipo de enfoque también permite aprovechar la abundante información disponible en series temporales de imágenes de satélite.
+Bajo el auspicio de la Comisión de Manejo Ecosistémico de UICN (CEM/IUCN) y con la participación activa de la Comisión para la Sobrevivencia de Especies de UICN (SSC/IUCN), se conformó un grupo de trabajo más amplio, que identificó los principales retos científicos que habría que resolver, a la vez que presentó una propuesta actualizada de categorías de UICN para ecosistemas amenazados, actualmente bajo consideración de la comunidad científica internacional a través de un artículo publicado en la revista Conservation Biology (Rodríguez et al. 2011). Paralelamente, con la conceptualización de las categorías y criterios de UICN para ecosistemas, se dio inicio a un proceso de aplicación de la metodología en Venezuela a varias escalas, desde local hasta nacional. {Foto 5} Uno de los principales retos a resolver, para la aplicación efectiva de las categorías propuestas, era la definición de la unidad básica de análisis. Las definiciones clásicas de “ecosistema” proponen que se trata de “un complejo dinámico de comunidades vegetales, animales y de microorganismos y su medio no viviente que interactúan como una unidad funcional” (CDB 1992). Desde el punto de vista de la conservación de la diversidad biológica, la atención de los gestores tiende a centrarse principalmente en sus componentes bióticos. Por lo tanto, y por razones prácticas, en este libro se utiliza “ecosistema” como un término equivalente a comunidad o formación vegetal, o incluso a tipo de cobertura terrestre. Esto es una simplificación extrema, pero permite un enfoque específico en los cambios de las coberturas vegetales originales, en la misma medida en que éstas son reemplazadas por los diferentes usos de la tierra dados por los humanos. Así mismo, este tipo de enfoque también permite aprovechar la abundante información disponible en series temporales de imágenes de satélite.
 
-A nivel de todo el país, la escala del análisis requiere el uso de mapas relativamente generales, que expresen los cambios de cobertura de las principales formaciones vegetales. Sin embargo, para hacer comparaciones, es necesario que las leyendas de los mapas sean las mismas o al menos exista una equivalencia entre ellas. Al no disponer de mapas (dos o más) de períodos diferentes que emplearan la misma leyenda, el análisis a nivel nacional se basó en una nueva representación actualizada de las formaciones vegetales de Venezuela durante la última década. Este invalorable aporte, desarrollado por Huber y Oliveira-Miranda (vid. infra cap. I), está basado parcialmente en los mapas disponibles para Venezuela, en especial los elaborados por el MARNR (1982), y Huber y Alarcón (1988), así como en la experiencia de campo e investigaciones específicas realizadas por los autores. Éste es el producto de un esfuerzo de varios años patrocinado por The Nature Conservancy y Conservation International, con apoyo reciente de PROVITA y las Compañías Shell en Venezuela, bajo la Ley Orgánica de Ciencia, Tecnología e Innovación (LOCTI). Este trabajo es de especial interés y de gran relevancia para el conocimiento y la conservación de la biodiversidad venezolana, y es publicado por primera vez aquí, en el Libro Rojo de los Ecosistemas Terrestres de Venezuela.
-{Foto 6}
-Para realizar análisis comparativos se generó una representación de la vegetación “original”, elaborada a partir de la integración de varios productos cartográficos disponibles y de fuentes documentales históricas, cuya leyenda fue homologada con la del mapa “actual”, aunque con las coberturas simplificadas debido a lo general de la información existente. Luego de un importante esfuerzo, esta representación logra ofrecer un panorama de las grandes formaciones vegetales de Venezuela antes de la expansión industrial asociada a la explotación petrolera. Ciertamente, la transformación del paisaje por actividades humanas ya era detectable en algunas regiones el país, pero su extensión e intensidad eran relativamente moderadas. El plan de obra de la presente publicación recoge e integra las investigaciones mencionadas en los párrafos anteriores.
+A nivel de todo el país, la escala del análisis requiere el uso de mapas relativamente generales, que expresen los cambios de cobertura de las principales formaciones vegetales. Sin embargo, para hacer comparaciones, es necesario que las leyendas de los mapas sean las mismas o al menos exista una equivalencia entre ellas. Al no disponer de mapas (dos o más) de períodos diferentes que emplearan la misma leyenda, el análisis a nivel nacional se basó en una nueva representación actualizada de las formaciones vegetales de Venezuela durante la última década. Este invalorable aporte, desarrollado por Huber y Oliveira-Miranda (vid. infra cap. I), está basado parcialmente en los mapas disponibles para Venezuela, en especial los elaborados por el MARNR (1982), y Huber y Alarcón (1988), así como en la experiencia de campo e investigaciones específicas realizadas por los autores. Éste es el producto de un esfuerzo de varios años patrocinado por The Nature Conservancy y Conservation International, con apoyo reciente de PROVITA y las Compañías Shell en Venezuela, bajo la Ley Orgánica de Ciencia, Tecnología e Innovación (LOCTI). Este trabajo es de especial interés y de gran relevancia para el conocimiento y la conservación de la biodiversidad venezolana, y es publicado por primera vez aquí, en el Libro Rojo de los Ecosistemas Terrestres de Venezuela. {Foto 6} Para realizar análisis comparativos se generó una representación de la vegetación “original”, elaborada a partir de la integración de varios productos cartográficos disponibles y de fuentes documentales históricas, cuya leyenda fue homologada con la del mapa “actual”, aunque con las coberturas simplificadas debido a lo general de la información existente. Luego de un importante esfuerzo, esta representación logra ofrecer un panorama de las grandes formaciones vegetales de Venezuela antes de la expansión industrial asociada a la explotación petrolera. Ciertamente, la transformación del paisaje por actividades humanas ya era detectable en algunas regiones el país, pero su extensión e intensidad eran relativamente moderadas. El plan de obra de la presente publicación recoge e integra las investigaciones mencionadas en los párrafos anteriores.
 
 La primera parte es desarrollada por Otto Huber y María Oliveira-Miranda, quienes sintetizan siglos de investigaciones botánicas del país. Partiendo de una extensa revisión y análisis histórico de la cartografía sistemática de la vegetación venezolana, logran una nueva representación de las formaciones vegetales, así como la actualización de los paisajes vegetales de Venezuela y sus subdivisiones fitoecológicas.
 
@@ -126,5 +123,4 @@ La tercera parte del libro tiende a simplificar los detalles de los cambios de e
 
 Por último, en la quinta parte de la publicación, se enfatiza que la evaluación de riesgo de amenaza es sólo uno de los componentes de la determinación de prioridades de conservación. Mediante una propuesta ilustrativa que integra cuatro variables, se ofrece un marco conceptual flexible y aplicable a la sistematización de la definición de prioridades de conservación de ecosistemas.
 
-La implementación ideal del sistema de categorías aquí propuesto sería de manera constante e iterativa, llevándose a cabo antes, durante o después de una intervención en una región geográfica determinada, o a intervalos de tiempo regulares (e.g. cada 10 años). A medida que las condiciones cambien, el riesgo y las prioridades lo harán también, especialmente en un país como Venezuela, que además de destacarse por sus altos valores de biodiversidad se caracteriza por una economía petrolera dinámica, con una gran capacidad de transformación del ambiente. Al ser potencialmente aplicable en cualquier región del mundo, el sistema representa un aporte original para la conservación de la biodiversidad de la Tierra.
-{Foto 4}
+La implementación ideal del sistema de categorías aquí propuesto sería de manera constante e iterativa, llevándose a cabo antes, durante o después de una intervención en una región geográfica determinada, o a intervalos de tiempo regulares (e.g. cada 10 años). A medida que las condiciones cambien, el riesgo y las prioridades lo harán también, especialmente en un país como Venezuela, que además de destacarse por sus altos valores de biodiversidad se caracteriza por una economía petrolera dinámica, con una gran capacidad de transformación del ambiente. Al ser potencialmente aplicable en cualquier región del mundo, el sistema representa un aporte original para la conservación de la biodiversidad de la Tierra. {Foto 4}
