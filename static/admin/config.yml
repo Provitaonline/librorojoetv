@@ -17,9 +17,8 @@ collections:
     editor:
        preview: false
     folder: "content"
-    path: "{{slug}}/content"
+    path: "home/content"
     create: false
-    slug: "{{id}}"
     media_folder: ""
     fields:
       - {label: "Id", name: "id", widget: "hidden", required: true}
