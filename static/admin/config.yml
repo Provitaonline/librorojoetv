@@ -3,6 +3,8 @@ backend:
   branch: master
   squash_merges: true
 
+locale: "es"
+
 publish_mode: editorial_workflow
 show_preview_links: false
 
