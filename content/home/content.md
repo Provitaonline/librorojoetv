@@ -1,20 +1,21 @@
 ---
-title: Home Page
+id: home
+title: Página principal, acerca de y contacto
 heroTitle: Libro rojo de los ecosistemas terrestres de Venezuela
 indexCards:
-  - image: ./images/riesgo.png
+  - image: ./riesgo.png
     link: /vcards/
     text: >-
       Cambios temporales en distribución geográfica y riesgos de colapso and
       nivel nacional y estatal.
     title: Riesgo de colapso
-  - image: ./images/casos.png
+  - image: ./casos.png
     link: /cases/
     text: >-
       Aplicación de las categorías y criterios de las listas rojas de
       ecosistemas a diferentes escalas geográficas.
     title: Estudios de caso
-  - image: ./images/unidades.png
+  - image: ./unidades.png
     link: /units/
     text: >-
       Clasificación, descripción y distribución geográfica de los principales
@@ -28,23 +29,23 @@ contact:
   phone: '(58) (212) 2637240, 2656996, 2670897'
   web: 'https://example.com'
 about:
-  cardimage: "./images/foto-1.jpg"
+  cardimage: "./foto-1.jpg"
   cardimagecaption: "Cotorra cabeciamarilla (<i>Amazona barbadensis</i>). <i>Thea Segall</i>"
   photos:
   - photokey: "Foto 2"
-    photourl: "./images/foto-2.jpg"
+    photourl: "./foto-2.jpg"
     photocaption: "Rio en cima del Auyantepuy, estado Bolívar. <i>Román Rangel</i>"
   - photokey: "Foto 3"
-    photourl: "./images/foto-3.jpg"
+    photourl: "./foto-3.jpg"
     photocaption: "Laguna de Canaima, estado Bolívar. <i>Román Rangel</i>"
   - photokey: "Foto 4"
-    photourl: "./images/foto-4.jpg"
+    photourl: "./foto-4.jpg"
     photocaption: "Danta (<i>Tapirus terrestris</i>). <i>Karl Weidmann</i>"
   - photokey: "Foto 5"
-    photourl: "./images/foto-5.jpg"
+    photourl: "./foto-5.jpg"
     photocaption: "Río Sipapo, estado Amazonas. <i>Lucía Pizzani</i>"
   - photokey: "Foto 6"
-    photourl: "./images/foto-6.jpg"
+    photourl: "./foto-6.jpg"
     photocaption: "Valle del río Chama, sector Lagunillas, estado Mérida. <i>José Antonio González-Carcacía</i>"
 ---
 # Producción
@@ -54,7 +55,7 @@ Provita, Compañías Shell en Venezuela y Lenovo Venezuela, en el marco de la Le
 
 **CON LA COLABORACIÓN DE:**
 
-![Colaboración](./images/colaboracion.png){class="colab"}
+![Colaboración](./colaboracion.png){class="colab"}
 
 # Equipo
 

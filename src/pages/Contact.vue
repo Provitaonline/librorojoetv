@@ -25,7 +25,7 @@
 
 <page-query>
   query Home {
-    homeData: homeData (path: "/content/home") {
+    homeData: homeData (id: "home") {
       contact {
         address
         phone

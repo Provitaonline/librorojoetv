@@ -49,7 +49,7 @@
 
 <page-query>
   query Home {
-    homeData: homeData (path: "/content/home") {
+    homeData: homeData (id: "home") {
       title
       heroTitle
       indexCards {

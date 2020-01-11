@@ -31,7 +31,7 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        path: 'content/home.md',
+        path: 'content/home/content.md',
         typeName: 'HomeData',
         remark:{
           lazyLoadImages: false,
