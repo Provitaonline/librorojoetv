@@ -63,7 +63,7 @@
       title
       heroTitle
     }
-    vegetationCardsIndex: vegetationCardsIndex (path: "/content/vcards-index") {
+    vegetationCardsIndex: vegetationCardsIndex (path: "/content/explore/vcards-index") {
       title
       mapTitle
     	legendItems {

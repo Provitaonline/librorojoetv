@@ -297,7 +297,7 @@
         reference
       }
     }
-    vegetationCardsIndex: vegetationCardsIndex (path: "/content/vcards-index") {
+    vegetationCardsIndex: vegetationCardsIndex (path: "/content/explore/vcards-index") {
     	legendItems {
         name
         group

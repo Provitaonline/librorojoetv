@@ -142,7 +142,7 @@
         photocaption
       }
     }
-    casesIndex: casesIndex (path: "/content/cases-index") {
+    casesIndex: casesIndex (path: "/content/explore/cases-index") {
       title
       mapTitle
       legendItems {

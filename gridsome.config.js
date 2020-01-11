@@ -44,7 +44,7 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        path: 'content/vcards-index.md',
+        path: 'content/explore/vcards-index.md',
         typeName: 'VegetationCardsIndex'
       }
     },
@@ -66,7 +66,7 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        path: 'content/units-index.md',
+        path: 'content/explore/units-index.md',
         typeName: 'UnitCardsIndex'
       }
     },
@@ -110,7 +110,7 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        path: 'content/cases-index.md',
+        path: 'content/explore/cases-index.md',
         typeName: 'CasesIndex'
       }
     },

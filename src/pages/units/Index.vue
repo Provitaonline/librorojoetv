@@ -33,7 +33,7 @@
 
 <page-query>
   query Home {
-    unitCardsIndex: unitCardsIndex (path: "/content/units-index") {
+    unitCardsIndex: unitCardsIndex (path: "/content/explore/units-index") {
       title
       mapTitle
     	legendItems {
