@@ -127,4 +127,3 @@ Por último, en la quinta parte de la publicación, se enfatiza que la evaluaci�
 
 La implementación ideal del sistema de categorías aquí propuesto sería de manera constante e iterativa, llevándose a cabo antes, durante o después de una intervención en una región geográfica determinada, o a intervalos de tiempo regulares (e.g. cada 10 años). A medida que las condiciones cambien, el riesgo y las prioridades lo harán también, especialmente en un país como Venezuela, que además de destacarse por sus altos valores de biodiversidad se caracteriza por una economía petrolera dinámica, con una gran capacidad de transformación del ambiente. Al ser potencialmente aplicable en cualquier región del mundo, el sistema representa un aporte original para la conservación de la biodiversidad de la Tierra. 
 {Foto 4}
-Probando
