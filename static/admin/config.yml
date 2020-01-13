@@ -11,6 +11,8 @@ show_preview_links: false
 media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
 
+site_url: https://librorojoetv.netlify.com
+
 collections:
   - name: "home"
     label: "Principal"
