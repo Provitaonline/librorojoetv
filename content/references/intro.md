@@ -152,7 +152,7 @@ references:
 - referencekey: Ward et al. 1999
   reference: >
     Ward, T.J., M.A. Vanderklift, A.O. Nicholls & R.A. Kenchington (1999). Selecting marine reserves using habitats and species assemblages as surrogates for biological diversity. Ecological Applications 9(2): 691-698.
-- referencekey: vid. infra cap. I
+- referencekey: Huber & Oliveira-Miranda 2010
   reference: >
     Huber, O. & M.A. Oliveira-Miranda (2010). Ambientes terrestres de Venezuela. Pp: 29-89. En: J.P. Rodríguez, F. Rojas-Suárez & D. Giraldo Hernández (eds.). Libro Rojo de los Ecosistemas Terrestres de Venezuela. Provita, Shell Venezuela, Lenovo (Venezuela). Caracas: Venezuela.
 - referencekey: Wilson et al. 2009

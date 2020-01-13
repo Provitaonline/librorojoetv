@@ -8,7 +8,7 @@ photos:
   photourl: "./formula.svg"
 - photokey: "Figura 1"
   photourl: "./figura-1.jpg"
-  photocaption: "<b>Figura 1.</b> Relación entre la prioridad relativa de los ecosistemas, según el área que ocupan, su proporción protegida y las metas de representatividad propuestas. Figura tomada y modificada de Rodrigues et al. (2004a)."
+  photocaption: "<b>Figura 1.</b> Relación entre la prioridad relativa de los ecosistemas, según el área que ocupan, su proporción protegida y las metas de representatividad propuestas. Figura tomada y modificada de Rodrigues *et al.* (2004a)."
 - photokey: "Foto 1"
   photourl: "./foto-1.jpg"
   photocaption: "Auyan-tepui, estado Bolívar. <i>Rebecca Miller</i>"
@@ -31,7 +31,7 @@ De manera análoga, la propuesta para ecosistemas consta de cuatro variables: el
 
 # Riesgo de eliminación
 
-Esta variable es una medida objetiva, científicamente estimada, de la probabilidad de eliminación de un ecosistema empleando las categorías y criterios aplicados en este libro (vid. supra cap. II, Rodríguez *et al.* 2011). Los ecosistemas clasificados en la categoría En Peligro Crítico (CR), reciben tres (3) puntos (la mayor calificación). A aquellos clasificados En Peligro (EN) se les asigna dos (2) puntos, y los considerados Vulnerable (VU) tienen un valor de uno (1). Sólo se toman en cuenta los ecosistemas considerados amenazados de eliminación (CR, EN y VU). Aquellos que se determinen como Eliminados (EL) o en otra categoría distinta a las mencionadas no son incluidos en la priorización.
+Esta variable es una medida objetiva, científicamente estimada, de la probabilidad de eliminación de un ecosistema empleando las categorías y criterios aplicados en este libro (Rodríguez *et al.* 2010, Rodríguez *et al.* 2011). Los ecosistemas clasificados en la categoría En Peligro Crítico (CR), reciben tres (3) puntos (la mayor calificación). A aquellos clasificados En Peligro (EN) se les asigna dos (2) puntos, y los considerados Vulnerable (VU) tienen un valor de uno (1). Sólo se toman en cuenta los ecosistemas considerados amenazados de eliminación (CR, EN y VU). Aquellos que se determinen como Eliminados (EL) o en otra categoría distinta a las mencionadas no son incluidos en la priorización.
 
 # Proporción de ecosistema protegido
 
@@ -83,7 +83,7 @@ Se propone un procedimiento que tiene dos pasos. En el primero, se elabora una m
 
 Una vez finalizada la evaluación, al multiplicar los valores de los cuatro criterios, se calcula el índice de prioridad de cada ecosistema. Este cálculo puede llevarse a cabo en cualquier escala espacial, como nacional, estadal o municipal. La información recopilada durante el cálculo del índice, más los valores del índice calculado serían un insumo clave para informar y apoyar propuestas concretas de conservación de los ecosistemas de la región de interés.
 
-Con el propósito de ilustrar la aplicación de este modelo, se aprovechó la evaluación realizada en los bosques de la cordillera de la Costa Central, uno de los casos de estudio presentados en este libro (vid. supra cap. IV). Los resultados de ese análisis indican que los bosques siempreverdes de la región no están amenazados, mientras que los semideciduos calificarían Vulnerable (VU) y los deciduos En Peligro Crítico (CR). Por lo tanto, según la variable de riesgo de eliminación, los bosques semideciduos tienen un valor de un (1) punto y a los deciduos les corresponde tres (3) puntos.
+Con el propósito de ilustrar la aplicación de este modelo, se aprovechó la evaluación realizada en los bosques de la cordillera de la Costa Central, uno de los casos de estudio presentados en este libro (Portillo-Quintero *et al.* 2010). Los resultados de ese análisis indican que los bosques siempreverdes de la región no están amenazados, mientras que los semideciduos calificarían Vulnerable (VU) y los deciduos En Peligro Crítico (CR). Por lo tanto, según la variable de riesgo de eliminación, los bosques semideciduos tienen un valor de un (1) punto y a los deciduos les corresponde tres (3) puntos.
 
 En 2001, la fecha más reciente que se tiene de datos cuantitativos, el área ocupada por los bosques semideciduos y deciduos era aproximadamente entre 1.040 y 1.560 km<sup>2</sup> respectivamente. Sólo estaban protegidos 41% de los bosques semideciduos y 6% de los bosques deciduos. Aplicando la Figura 1, de acuerdo con la proporción de ecosistema protegido, ambos tienen un valor de tres (3) puntos. Los bosques semideciduos están muy cerca de la línea roja, pero por debajo de ella, por lo que un aumento relativamente pequeño en su grado de protección podría resultar en la disminución del valor de esta variable. Los bosques deciduos sí están muy por debajo de la línea roja.
 

@@ -48,7 +48,7 @@ Para cuantificar los cambios de cobertura de los ecosistemas de la región, se p
 {Figura 2}
 Las imágenes fueron clasificadas para mostrar la extensión y distribución espacial de los siguientes tipos de cobertura: bosques siempreverdes, bosques semideciduos, bosques deciduos, áreas intervenidas (quemadas o suelo descubierto), pastizales, áreas urbanas y cultivos.
 
-Para una correcta interpretación y clasificación de las imágenes se utilizó como material de apoyo 110 ortofotomapas oficiales a escala 1:25.000. Se determinó la proporción de cobertura de bosques convertida a otros usos, su tasa de conversión y la cobertura de bosques proyectada para el año 2036, suponiendo que la tasa de conversión observada entre 1986 y 2001 continuaría sin alteración durante los siguientes 35 años, y así poder aplicar el criterio A3 del sistema de clasificación de riesgos de ecosistemas entre 1986 y 2036 (Fajardo *et al.* 2005, Rodríguez *et al.* 2008, Rodríguez *et al.* 2011) (vid. supra cap. II).
+Para una correcta interpretación y clasificación de las imágenes se utilizó como material de apoyo 110 ortofotomapas oficiales a escala 1:25.000. Se determinó la proporción de cobertura de bosques convertida a otros usos, su tasa de conversión y la cobertura de bosques proyectada para el año 2036, suponiendo que la tasa de conversión observada entre 1986 y 2001 continuaría sin alteración durante los siguientes 35 años, y así poder aplicar el criterio A3 del sistema de clasificación de riesgos de ecosistemas entre 1986 y 2036 (Fajardo *et al.* 2005, Rodríguez *et al.* 2008, Rodríguez *et al.* 2011) (Rodríguez *et al.* 2010).
 
 # Resultados
 

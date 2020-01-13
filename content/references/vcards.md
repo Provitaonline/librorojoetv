@@ -470,10 +470,10 @@ references:
 - referencekey: Walter & Ataroff 2002
   reference: >
       Walter, R. & M. Ataroff (2002). Biomasa epifita y su contenido de nutrientes en una selva nublada andina, Venezuela. Sociedad Venezolana de Ecología Ecotrópicos 15(2): 203-210.
-- referencekey: vid. supra cap. I
+- referencekey: Huber & Oliveira-Miranda 2010
   reference: >
     Huber, O. & M.A. Oliveira-Miranda (2010). Ambientes terrestres de Venezuela. Pp: 29-89. En: J.P. Rodríguez, F. Rojas-Suárez & D. Giraldo Hernández (eds.). Libro Rojo de los Ecosistemas Terrestres de Venezuela. Provita, Shell Venezuela, Lenovo (Venezuela). Caracas: Venezuela.
-- referencekey: vid. supra cap. II
+- referencekey: Rodríguez et al. 2010
   reference: >
     Rodríguez, J.P., K.M. Rodríguez-Clark & M. Assmüssen (2010). Categorías y criterios de las listas rojas de ecosistemas. Pp: 93-105. En: J.P. Rodríguez, F. Rojas-Suárez & D. Giraldo Hernández (eds.). Libro Rojo de los Ecosistemas Terrestres de Venezuela. Provita, Shell Venezuela, Lenovo (Venezuela). Caracas: Venezuela.
 - referencekey: Yerena et al. 2008

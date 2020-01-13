@@ -72,13 +72,13 @@ references:
   reference: >
     Wilson, K.A., M.F. McBride, M. Bode & H.P. Possingham (2006). Prioritizing global conservation efforts. Nature 440(7082):
     337-340.
-- referencekey: vid. supra cap. I
+- referencekey: Huber & Oliveira-Miranda 2010
   reference: >
     Huber, O. & M.A. Oliveira-Miranda (2010). Ambientes terrestres de Venezuela. Pp: 29-89. En: J.P. Rodríguez, F. Rojas-Suárez & D. Giraldo Hernández (eds.). Libro Rojo de los Ecosistemas Terrestres de Venezuela. Provita, Shell Venezuela, Lenovo (Venezuela). Caracas: Venezuela.
-- referencekey: vid. supra cap. II
+- referencekey: Rodríguez et al. 2010
   reference: >
     Rodríguez, J.P., K.M. Rodríguez-Clark & M. Assmüssen (2010). Categorías y criterios de las listas rojas de ecosistemas. Pp: 93-105. En: J.P. Rodríguez, F. Rojas-Suárez & D. Giraldo Hernández (eds.). Libro Rojo de los Ecosistemas Terrestres de Venezuela. Provita, Shell Venezuela, Lenovo (Venezuela). Caracas: Venezuela.
-- referencekey: vid. supra cap. IV
+- referencekey: Portillo-Quintero et al. 2010
   reference: >
     Portillo-Quintero C, P. Lacabana & Carrasquel F. (2010). Conversión de los bosques en la cordillera de la Costa Central de Venezuela.. Pp: 239-243. En: J.P. Rodríguez, F. Rojas-Suárez & D. Giraldo Hernández (eds.). Libro Rojo de los Ecosistemas Terrestres de Venezuela. Provita, Shell Venezuela, Lenovo (Venezuela). Caracas: Venezuela.
 ---
