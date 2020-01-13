@@ -147,6 +147,6 @@ module.exports = {
     UnitCard: '/units/:region',
     CaseCard: '/cases/:case',
     MethodCard: '/methods/:method',
-    References: '/references/:id'
+    References: '/bibliografia/:id'
   }
 }
