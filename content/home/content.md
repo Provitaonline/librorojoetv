@@ -16,7 +16,7 @@ indexCards:
       ecosistemas a diferentes escalas geográficas.
     title: Estudios de caso
   - image: ./unidades.png
-    link: /units/
+    link: /unidades/
     text: >-
       Clasificación, descripción y distribución geográfica de los principales
       paisajes vegetales de Venezuela.

@@ -3,7 +3,7 @@ case: c2
 title: "Estado de amenaza de los ecosistemas terrestres de la isla de Margarita, estado Nueva Esparta"
 authors: "Irene Zager, Fabián Carrasquel"
 cardimage: "./pancarta.jpg"
-landscapeunits: "Insular costera (<a href='/units/a'>A1</a>)"
+landscapeunits: "Insular costera (<a href='/unidades/a'>A1</a>)"
 locality: "Isla de Margarita"
 states: "Nueva Esparta"
 area: 934

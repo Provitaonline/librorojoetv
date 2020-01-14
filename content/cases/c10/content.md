@@ -3,7 +3,7 @@ case: c10
 title: "Cambios en la cobertura de manglares en tres sitios de la costa Caribe de Venezuela"
 authors: "Ana Lucía Dávalos"
 cardimage: "./pancarta.jpg"
-landscapeunits: "Bosques de manglar (<a href='/units/a'>A2</a>)"
+landscapeunits: "Bosques de manglar (<a href='/unidades/a'>A2</a>)"
 locality: "Costa Central, costa Oriental del lago, península de La Guajira"
 states: "Miranda, Zulia"
 area: 1746

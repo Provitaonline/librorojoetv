@@ -3,7 +3,7 @@ case: c6
 title: "Conversión de los bosques deciduos en los llanos centrales de Venezuela"
 authors: "Sergio Zambrano-Martínez, Jon Paul Rodríguez"
 cardimage: "./pancarta.jpg"
-landscapeunits: "Llanos (<a href='/units/b#b2'>B2</a>)"
+landscapeunits: "Llanos (<a href='/unidades/b#b2'>B2</a>)"
 locality: "Llanos centrales"
 states: "Cojedes, Guárico"
 area: 2316.14

@@ -3,7 +3,7 @@ case: c3
 title: "Estado de amenaza de los ecosistemas al norte y sur del lago de Maracaibo, Estado Zulia"
 authors: "María Idalí Tachack-García, Fabián Carrasquel, Sergio Zambrano-Martínez"
 cardimage: "./pancarta.jpg"
-landscapeunits: "Depresión de Maracaibo (<a href='/units/b#b1'>B1</a>)"
+landscapeunits: "Depresión de Maracaibo (<a href='/unidades/b#b1'>B1</a>)"
 locality: "Norte y sur cuenca del lago de Maracaibo"
 states: "Zulia"
 area: 934

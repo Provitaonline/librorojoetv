@@ -34,7 +34,7 @@
           <b-navbar-item tag="a" href="/casos">
               Estudios de caso
           </b-navbar-item>
-          <b-navbar-item tag="a" href="/units">
+          <b-navbar-item tag="a" href="/unidades">
               Unidades de paisaje
           </b-navbar-item>
         </b-navbar-dropdown>

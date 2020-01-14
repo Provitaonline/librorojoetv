@@ -3,7 +3,7 @@ case: c4
 title: "Conversión de los bosques del norte de la sierra de Perijá, estado Zulia"
 authors: "Mariana C. Hernández-Montilla, Carlos Portillo-Quintero"
 cardimage: "./pancarta.jpg"
-landscapeunits: "Serranía de Perijá (<a href='/units/d#d1'>D1</a>)"
+landscapeunits: "Serranía de Perijá (<a href='/unidades/d#d1'>D1</a>)"
 locality: "Cuencas altas de los ríos El Palmar, Lajas, Guasare y Apón<sup>(1)</sup>. Cuencas bajas de los ríos Guasare, Socuy y Cachirí<sup>(2)</sup>"
 states: "Zulia"
 area: 1746

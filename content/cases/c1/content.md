@@ -3,7 +3,7 @@ case: c1
 title: "Conversión de los bosques en la cordillera central de Venezuela"
 authors: "Carlos Portillo-Quintero, Pablo Lacabana, Fabián Carrasquel"
 cardimage: "./pancarta.jpg"
-landscapeunits: "Cordillera de la costa (<a href='/units/d#d42'>D42</a>, <a href='/units/d#d43'>D43</a>)"
+landscapeunits: "Cordillera de la costa (<a href='/unidades/d#d42'>D42</a>, <a href='/unidades/d#d43'>D43</a>)"
 locality: "Tramo medio de la costa central"
 states: "Aragua, Carabobo, Guárico, Miranda, Vargas"
 area: 6500

@@ -11,7 +11,7 @@
               <div class="side-panel-item-box side-panel-item">
                 <span>{{'&nbsp;&nbsp;'.repeat(item.name.length-1)}}</span>
                 <!-- <g-link v-if="getTargetSlug(item) != currentSlug" :to="pathParent + '/' + getTargetSlug(item)">{{item.name}}</g-link> -->
-                <g-link :to="'/units/' + item.cardPath" :class="(isCurrentItem(item)) ? '' : 'current-item'">{{item.label}}</g-link>
+                <g-link :to="'/unidades/' + item.cardPath" :class="(isCurrentItem(item)) ? '' : 'current-item'">{{item.label}}</g-link>
                 <br>
               </div>
             </div>
@@ -23,7 +23,7 @@
         <section class="hero is-small is-white">
           <div class="hero-body">
             <div class="container is-fullhd has-text-centered">
-              <g-link to="/units" class="is-uppercase is-size-6">Unidades de paisaje</g-link>
+              <g-link to="/unidades" class="is-uppercase is-size-6">Unidades de paisaje</g-link>
               <p class="title is-uppercase is-size-4-mobile">{{$page.unitCard.title}}</p>
             </div>
           </div>

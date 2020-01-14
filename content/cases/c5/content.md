@@ -3,7 +3,7 @@ case: c5
 title: "Estado de conservación de los ecosistemas del ramal oriental de la cordillera de los Andes venezolanos"
 authors: "María Idalí Tachack-García, Fabián Carrasquel"
 cardimage: "./pancarta.jpg"
-landscapeunits: "Cordillera de los Andes (<a href='/units/d#d2'>D2</a>)"
+landscapeunits: "Cordillera de los Andes (<a href='/unidades/d#d2'>D2</a>)"
 locality: "Ramal oriental cordillera de los Andes venezolanos"
 states: "Táchira, Mérida*, Trujillo*, Lara, Portuguesa*, Barinas"
 area: 28604
