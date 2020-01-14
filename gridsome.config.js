@@ -146,7 +146,7 @@ module.exports = {
     VegetationCard: '/vcards/:title',
     UnitCard: '/unidades/:region',
     CaseCard: '/casos/:case',
-    MethodCard: '/methods/:method',
+    MethodCard: '/metodos/:id',
     References: '/bibliografia/:id'
   }
 }

@@ -47,8 +47,8 @@
 </template>
 
 <page-query>
-  query MethodCard ($path: String!) {
-    methodCard: methodCard (path: $path) {
+  query MethodCard ($id: ID!) {
+    methodCard: methodCard (id: $id) {
       title
       cardimage
       cardimagecaption

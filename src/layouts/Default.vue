@@ -17,13 +17,13 @@
           ACERCA DE
         </b-navbar-item>
         <b-navbar-dropdown label="MÉTODOS">
-          <b-navbar-item tag="a" href="/methods/class">
+          <b-navbar-item tag="a" href="/metodos/clasificacion">
               Clasificación del riesgo
           </b-navbar-item>
-          <b-navbar-item tag="a" href="/methods/eval">
+          <b-navbar-item tag="a" href="/metodos/evaluacion">
               Evaluación del riesgo
           </b-navbar-item>
-          <b-navbar-item tag="a" href="/methods/priorities">
+          <b-navbar-item tag="a" href="/metodos/prioridades">
               Estableciendo prioridades
           </b-navbar-item>
         </b-navbar-dropdown>

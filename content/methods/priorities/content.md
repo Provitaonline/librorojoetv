@@ -1,4 +1,5 @@
 ---
+id: prioridades
 method: priorities
 title: "Estableciendo prioridades<br>para la conservación de los<br>ecosistemas terrestres de Venezuela"
 cardimage: "./pancarta-priorities.jpg"

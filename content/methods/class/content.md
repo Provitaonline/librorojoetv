@@ -1,4 +1,5 @@
 ---
+id: clasificacion
 method: class
 title: "Clasificación del riesgo de colapso de ecosistemas terrestres"
 cardimage: "./pancarta-class.jpg"
