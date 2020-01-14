@@ -205,6 +205,9 @@
   import SideBar from '~/components/SideBar.vue'
 
   export default {
+    metaInfo: {
+      title: 'Caso'
+    },
     data() {
       return {
         threatCategories: threatCategories,

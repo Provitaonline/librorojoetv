@@ -99,6 +99,9 @@
   slugify.extend({'/': '-'})
 
   export default {
+    metaInfo: {
+      title: 'Unidades'
+    },
     threatCategories: threatCategories,
     data() {
       let self = this

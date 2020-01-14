@@ -88,6 +88,9 @@
   import TextWithRefsAndPhotos from '~/components/TextWithRefsAndPhotos.vue'
 
   export default {
+    metaInfo: {
+      title: 'Acerca de'
+    },
     data() {
       return {
         showMore: false

@@ -409,6 +409,9 @@
   slugify.extend({'/': '-'})
 
   export default {
+    metaInfo: {
+      title: 'Ficha'
+    },
     created() {
 
     },

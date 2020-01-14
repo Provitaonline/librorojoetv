@@ -128,6 +128,9 @@
   import InteractiveMap from '~/components/InteractiveMap.vue'
 
   export default {
+    metaInfo: {
+      title: 'Página principal'
+    },
     data() {
       let self = this
       return {

@@ -144,6 +144,9 @@
   slugify.extend({'/': '-'})
 
   export default {
+    metaInfo: {
+      title: 'Fichas'
+    },
     threatCategories: threatCategories,
     data() {
       let self = this

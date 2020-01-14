@@ -44,6 +44,9 @@
 
 <script>
   export default {
+    metaInfo: {
+      title: 'Bibliografía'
+    },
     data() {
       return {
       }

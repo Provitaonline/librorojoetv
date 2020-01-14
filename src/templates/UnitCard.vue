@@ -104,7 +104,9 @@
   import SideBar from '~/components/SideBar.vue'
 
   export default {
-
+    metaInfo: {
+      title: 'Región'
+    },
     mounted () {
     },
     components: {

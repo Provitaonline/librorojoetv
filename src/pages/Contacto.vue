@@ -35,3 +35,11 @@
     }
   }
 </page-query>
+
+<script>
+  export default {
+    metaInfo: {
+      title: 'Contacto'
+    }
+  }
+</script>
