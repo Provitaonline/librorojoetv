@@ -1,5 +1,5 @@
 ---
-id: vcards
+id: fichas
 title: Riesgo de colapso de los<br>ecosistemas terrestres de Venezuela
 references:
 - referencekey: Aburto-Oropeza et al. 2008

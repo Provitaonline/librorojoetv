@@ -4,7 +4,7 @@ title: 'Página principal, acerca de y contacto'
 heroTitle: Libro rojo de los ecosistemas terrestres de Venezuela
 indexCards:
   - image: ./riesgo.png
-    link: /vcards/
+    link: /fichas/
     text: >-
       Cambios temporales en distribución geográfica y riesgos de colapso and
       nivel nacional y estatal.

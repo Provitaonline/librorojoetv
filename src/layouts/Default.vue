@@ -28,7 +28,7 @@
           </b-navbar-item>
         </b-navbar-dropdown>
         <b-navbar-dropdown label="EXPLORAR">
-          <b-navbar-item tag="a" href="/vcards">
+          <b-navbar-item tag="a" href="/fichas">
               Riesgo de colapso
           </b-navbar-item>
           <b-navbar-item tag="a" href="/casos">

@@ -25,7 +25,7 @@
           <div class="hero-body">
             <div class="container is-fullhd has-text-centered">
               <div class="container" style="width: 78%;">
-                <g-link to="/vcards" class="is-uppercase is-size-6">Riesgo de colapso</g-link>
+                <g-link to="/fichas" class="is-uppercase is-size-6">Riesgo de colapso</g-link>
                 <p v-if="$page.vegetationCard.plantformation" style="margin-bottom: 0;" class="title is-uppercase is-size-4-mobile">{{$page.vegetationCard.plantformation}}</p>
                 <p v-else class="title is-uppercase is-size-4-mobile">
                   <span v-if="$page.vegetationCard.formattedtitle" v-html="$page.vegetationCard.formattedtitle"></span>
@@ -291,7 +291,7 @@
       }
       content
     }
-    references: references (id: "vcards") {
+    references: references (id: "fichas") {
       references {
         referencekey
         reference

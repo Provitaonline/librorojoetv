@@ -25,7 +25,7 @@
           <div class="column is-four-fifths is-offset-one-fifth is-size-5 is-size-6-mobile">
             <div v-for="item in $page.vcards.edges" class="media">
               <figure class="media-left is-hidden-mobile">
-                <g-link :to="'/vcards/' + makeLink(item.node.title)"><g-image :src="item.node.cardimage"></g-image></g-link>
+                <g-link :to="'/fichas/' + makeLink(item.node.title)"><g-image :src="item.node.cardimage"></g-image></g-link>
               </figure>
               <div>
                 <div style="display: flex;">
@@ -34,7 +34,7 @@
                       <img :src="$options.threatCategories[item.node.category].img"></img>
                     </div>
                   </b-tooltip>
-                  &nbsp;&nbsp;<g-link :to="'/vcards/' + makeLink(item.node.title)"><strong v-html="item.node.title"></strong></g-link>
+                  &nbsp;&nbsp;<g-link :to="'/fichas/' + makeLink(item.node.title)"><strong v-html="item.node.title"></strong></g-link>
                 </div>
                 <div v-if="item.node.areain2010">
                   <span style="display: inline-block; width: 35px;"></span>
@@ -48,7 +48,7 @@
         </div>
         <div class="container is-size-4 has-text-centered">
           <hr>
-          <g-link to="/bibliografia/vcards"><p>Bibliografía <small><font-awesome size="xs" :icon="['fas', 'link']"/></small></p></g-link>
+          <g-link to="/bibliografia/fichas"><p>Bibliografía <small><font-awesome size="xs" :icon="['fas', 'link']"/></small></p></g-link>
         </div>
 
       </section>

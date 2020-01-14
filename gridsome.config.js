@@ -143,7 +143,7 @@ module.exports = {
     }
   ],
   templates: {
-    VegetationCard: '/vcards/:title',
+    VegetationCard: '/fichas/:title',
     UnitCard: '/unidades/:region',
     CaseCard: '/casos/:case',
     MethodCard: '/metodos/:id',
