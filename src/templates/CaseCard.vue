@@ -9,7 +9,7 @@
           <div v-for="item, index in $page.casesIndex.legendItems">
             <div>
               <div class="side-panel-item-box side-panel-item">
-                <g-link v-if="item.cardPath != $route.path.replace(/\/$/, '').match(/\/[^\/]+$/)[0].substring(1)" :to="'/cases/' + item.cardPath">{{item.label}}</g-link>
+                <g-link v-if="item.cardPath != $route.path.replace(/\/$/, '').match(/\/[^\/]+$/)[0].substring(1)" :to="'/casos/' + item.cardPath">{{item.label}}</g-link>
                 <span v-else><b><i>{{item.label}}</i></b></span>
               </div>
             </div>
@@ -20,7 +20,7 @@
         <section class="hero is-small is-white">
           <div class="hero-body">
             <div class="container is-fullhd has-text-centered">
-              <g-link to="/cases" class="is-uppercase is-size-6">Estudios de caso</g-link>
+              <g-link to="/casos" class="is-uppercase is-size-6">Estudios de caso</g-link>
             </div>
           </div>
         </section>

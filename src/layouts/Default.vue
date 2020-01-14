@@ -13,7 +13,7 @@
         </b-navbar-item>
       </template>
       <template slot="end">
-        <b-navbar-item tag="a" href="/about">
+        <b-navbar-item tag="a" href="/acerca-de">
           ACERCA DE
         </b-navbar-item>
         <b-navbar-dropdown label="MÉTODOS">
@@ -31,14 +31,14 @@
           <b-navbar-item tag="a" href="/vcards">
               Riesgo de colapso
           </b-navbar-item>
-          <b-navbar-item tag="a" href="/cases">
+          <b-navbar-item tag="a" href="/casos">
               Estudios de caso
           </b-navbar-item>
           <b-navbar-item tag="a" href="/units">
               Unidades de paisaje
           </b-navbar-item>
         </b-navbar-dropdown>
-        <b-navbar-item tag="a" href="/contact">
+        <b-navbar-item tag="a" href="/contacto">
           CONTACTO
         </b-navbar-item>
         <b-navbar-dropdown label="COMPARTIR">

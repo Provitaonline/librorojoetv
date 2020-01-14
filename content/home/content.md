@@ -10,7 +10,7 @@ indexCards:
       nivel nacional y estatal.
     title: Riesgo de colapso
   - image: ./casos.png
-    link: /cases/
+    link: /casos/
     text: >-
       Aplicación de las categorías y criterios de las listas rojas de
       ecosistemas a diferentes escalas geográficas.

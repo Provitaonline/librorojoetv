@@ -145,7 +145,7 @@ module.exports = {
   templates: {
     VegetationCard: '/vcards/:title',
     UnitCard: '/units/:region',
-    CaseCard: '/cases/:case',
+    CaseCard: '/casos/:case',
     MethodCard: '/methods/:method',
     References: '/bibliografia/:id'
   }
