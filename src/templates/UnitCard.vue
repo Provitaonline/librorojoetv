@@ -67,7 +67,7 @@
       }
       content
     }
-    references: references (id: "units") {
+    references: references (id: "unidades") {
       references {
         referencekey
         reference
