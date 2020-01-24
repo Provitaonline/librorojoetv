@@ -12,7 +12,7 @@
       </div>
     </aside>
     <div class="column">
-      <div class="side-panel-open-button">
+      <div class="side-panel-open-button red-line">
         <a v-if="!sidePanelOpen" v-on:click="toggleSidePanelState()" role="button">
           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 278.571 275.714" class="open-side-panel-icon">
             <g>

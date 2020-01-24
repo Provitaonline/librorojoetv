@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div class="page-wrapper">
+    <div class="page-wrapper red-line">
       <section class="hero is-small is-white">
         <div class="hero-body">
           <div class="is-uppercase has-text-centered">

@@ -1,5 +1,6 @@
 <template>
   <Layout>
+    <div class="red-line">
       <section class="hero is-small is-white">
         <div class="hero-body">
           <div class="container is-fullhd has-text-centered">
@@ -40,6 +41,7 @@
           </transition>
         </div>
       </section>
+    </div>
   </Layout>
 </template>
 

@@ -35,7 +35,7 @@
 }
 
 .navbar {
-  border-bottom: 6px solid #BE1421;
+  @extend .red-line;
 }
 
 a.navbar-item {
@@ -100,4 +100,8 @@ html {
 
 .fade-enter {
   opacity: 0;
+}
+
+.red-line {
+  border-left: 10px solid $primary;
 }
