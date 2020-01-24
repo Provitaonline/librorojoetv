@@ -1,6 +1,6 @@
 <template>
   <Layout>
-      <div>
+      <div class="red-line">
         <section class="hero is-small is-white">
           <div class="hero-body">
             <div class="container is-fullhd has-text-centered">
