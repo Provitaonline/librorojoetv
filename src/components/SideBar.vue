@@ -3,8 +3,13 @@
     <aside class="side-panel column is-narrow" v-bind:class="{ isopen: sidePanelOpen }">
       <div class="side-panel-content" v-bind:class="{ isopen: sidePanelOpen }">
         <div class="side-panel-title">
-          <a title="Cerrar panel" style="float: right; padding-right: 8px;" v-on:click="toggleSidePanelState()">
+          <!-- <a title="Cerrar panel" style="float: right; padding-right: 8px;" v-on:click="toggleSidePanelState()">
             <span class="close-side-panel-icon is-size-5">✕</span>
+          </a> -->
+          <a v-if="sidePanelOpen" v-on:click="toggleSidePanelState()" role="button">
+            <div class="side-panel-triangle-left">
+              <div class="side-panel-times"><font-awesome :icon="['fas', 'times']"/></div>
+            </div>
           </a>
           <slot name="title"></slot>
         </div>
@@ -14,8 +19,8 @@
     <div class="column">
       <div class="side-panel-open-button red-line">
         <a v-if="!sidePanelOpen" v-on:click="toggleSidePanelState()" role="button">
-          <div class="side-panel-triangle">
-            <div style="position: relative; left: -28px; top: -12px; color: white;"><font-awesome :icon="['fas', 'bars']"/></div>
+          <div class="side-panel-triangle-right">
+            <div class="side-panel-bars"><font-awesome :icon="['fas', 'bars']"/></div>
           </div>
           <!-- <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 278.571 275.714" class="open-side-panel-icon">
             <g>
@@ -36,7 +41,7 @@
   @import "~/assets/style/_variables";
 
   .side-panel {
-    border-right: 1px solid #e0e0e0;
+    /*border-right: 1px solid #e0e0e0; */
   }
 
   @media only screen and (min-width: 769px) {
@@ -113,12 +118,43 @@
     color: $primary;
   }
 
-  .side-panel-triangle {
+  .side-panel-triangle-right {
     width: 0;
     height: 0;
     border-top: 20px solid transparent;
     border-left: 25px solid $primary;
     border-bottom: 20px solid transparent;
+  }
+
+  .side-panel-triangle-left {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-right: 25px solid $primary;
+    border-bottom: 20px solid transparent;
+    float: right;
+  }
+
+  .side-panel-bars {
+    position: relative;
+    left: -28px;
+    top: -12px;
+    color: white;
+  }
+
+  .side-panel-bars:hover {
+    color: #d3d3d3;
+  }
+
+  .side-panel-times:hover {
+    color: #d3d3d3;
+  }
+
+  .side-panel-times {
+    position: relative;
+    right: -12px;
+    top: -12px;
+    color: white;
   }
 </style>
 
