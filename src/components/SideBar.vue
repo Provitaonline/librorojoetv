@@ -14,14 +14,17 @@
     <div class="column">
       <div class="side-panel-open-button red-line">
         <a v-if="!sidePanelOpen" v-on:click="toggleSidePanelState()" role="button">
-          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 278.571 275.714" class="open-side-panel-icon">
+          <div class="side-panel-triangle">
+            <div style="position: relative; left: -28px; top: -12px; color: white;"><font-awesome :icon="['fas', 'bars']"/></div>
+          </div>
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 278.571 275.714" class="open-side-panel-icon">
             <g>
               <title>Clic para abrir panel de fichas</title>
               <path  stroke-width="10" stroke-linecap="round" stroke-linejoin="round" d="M10 10h258.57v255.714H10z"></path>
               <path d="M77.143 10.714L78.57 265" fill-rule="evenodd" stroke-width="10"></path>
               <path d="M582.857 733.79L210.906 945.68l2.474-428.064z" fill-opacity="0" transform="matrix(.33171 0 0 .39595 48.089 -151.84)" stroke-width="50" stroke-linecap="round" stroke-linejoin="round"></path>
             </g>
-          </svg>
+          </svg> -->
         </a>
       </div>
       <slot name="content"></slot>
@@ -108,6 +111,14 @@
 
   .close-side-panel-icon:hover {
     color: $primary;
+  }
+
+  .side-panel-triangle {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-left: 25px solid $primary;
+    border-bottom: 20px solid transparent;
   }
 </style>
 
