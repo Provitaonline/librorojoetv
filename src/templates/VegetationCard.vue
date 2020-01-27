@@ -22,22 +22,23 @@
       </template>
       <template v-slot:content>
         <div class="red-line">
-          <section style="position: relative; height: 300px; color: white; z-index: -1;">
-            <g-image style="height: 300px; object-fit: cover;" class="hero-bg-img" v-if="$page.vegetationCard.cardimage" :src="$page.vegetationCard.cardimage" />
-            <div style="position: absolute; bottom: 0; padding-left: 10px;">
-              <g-link to="/fichas" style="color: white;" class="is-size-4">Riesgo de colapso</g-link>
-              <p class="is-size-2 is-uppercase has-text-weight-bold is-size-4-mobile" v-if="$page.vegetationCard.plantformation">
+          <section class="hero">
+            <g-image class="hero-bg-img" v-if="$page.vegetationCard.cardimage" :src="$page.vegetationCard.cardimage" />
+            <div class="hero-body">
+              <g-link to="/fichas" class="hero-text is-size-4">Riesgo de colapso</g-link>
+              <p class="hero-text is-size-2 is-uppercase has-text-weight-bold is-size-4-mobile" v-if="$page.vegetationCard.plantformation">
                 <span v-if="$page.vegetationCard.formattedtitle" v-html="$page.vegetationCard.formattedtitle"></span>
                 <span v-else v-html="$page.vegetationCard.title"></span>
               </p>
-              <p v-if="$page.vegetationCard.plantformation" style="margin-bottom: 0;" class="is-size-4-mobile">({{$page.vegetationCard.plantformation}})</p>
-              <p v-else class="is-size-2 is-uppercase has-text-weight-bold is-size-4-mobile">
+              <p v-if="$page.vegetationCard.plantformation" class="hero-text is-size-4-mobile">({{$page.vegetationCard.plantformation}})</p>
+              <p v-else class="hero-text is-size-2 is-uppercase has-text-weight-bold is-size-4-mobile">
                 <span v-if="$page.vegetationCard.formattedtitle" v-html="$page.vegetationCard.formattedtitle"></span>
                 <span v-else v-html="$page.vegetationCard.title"></span>
               </p>
-              <div>
+              <hr align="left" width="50%" style="margin: 1rem 0">
+              <div style="display: flex;" class= "hero-text">
                 <img :src="threatCategories[$page.vegetationCard.category].img" height="50" width="50" />
-                <span style="font-size: small;"><b>{{threatCategories[$page.vegetationCard.category].text}}</b></span>
+                <span style="font-size: small; margin-top: auto; margin-bottom: auto; padding-left: 10px;"><b>{{threatCategories[$page.vegetationCard.category].text}}</b></span>
               </div>
             </div>
           </section>
@@ -311,20 +312,27 @@
   @import "~/assets/style/_variables";
 
   .hero {
-    background-size: cover !important;
-    background-position: center;
-    text-align: center;
-    overflow: hidden;
+    z-index: -1; /* To enable side-pane open */
     position: relative;
+    height: 300px;
+    color: white;
   }
 
   .hero-body {
-    /* padding-bottom: 2rem !important;*/
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    background: rgba(0, 0, 0, .2);
   }
 
   .hero-bg-img {
-    position: absolute;
-    z-index: -1;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .hero-text {
+    line-height: 1.2;
+    color: white;
   }
 
   .title {
