@@ -22,31 +22,25 @@
       </template>
       <template v-slot:content>
         <div class="red-line">
-          <section class="hero is-small is-white">
-            <div class="hero-body">
-              <div class="container is-fullhd has-text-centered">
-                <div class="container" style="width: 78%;">
-                  <g-link to="/fichas" class="is-uppercase is-size-6">Riesgo de colapso</g-link>
-                  <p v-if="$page.vegetationCard.plantformation" style="margin-bottom: 0;" class="title is-uppercase is-size-4-mobile">{{$page.vegetationCard.plantformation}}</p>
-                  <p v-else class="title is-uppercase is-size-4-mobile">
-                    <span v-if="$page.vegetationCard.formattedtitle" v-html="$page.vegetationCard.formattedtitle"></span>
-                    <span v-else v-html="$page.vegetationCard.title"></span>
-                  </p>
-                  <p style="margin-bottom: 0px;" class="is-size-3 is-size-4-mobile" v-if="$page.vegetationCard.plantformation">
-                    (<span v-if="$page.vegetationCard.formattedtitle" v-html="$page.vegetationCard.formattedtitle"></span>
-                    <span v-else v-html="$page.vegetationCard.title"></span>)
-                  </p>
-                </div>
-                <div class="categoryicon">
-                  <img :src="threatCategories[$page.vegetationCard.category].img" height="50" width="50" />
-                  <p style="display: block; font-size: small;"><b>{{threatCategories[$page.vegetationCard.category].text.toUpperCase()}}</b></p>
-                </div>
+          <section style="position: relative; height: 300px; color: white; z-index: -1;">
+            <g-image style="height: 300px; object-fit: cover;" class="hero-bg-img" v-if="$page.vegetationCard.cardimage" :src="$page.vegetationCard.cardimage" />
+            <div style="position: absolute; bottom: 0; padding-left: 10px;">
+              <g-link to="/fichas" style="color: white;" class="is-size-4">Riesgo de colapso</g-link>
+              <p class="is-size-2 is-uppercase has-text-weight-bold is-size-4-mobile" v-if="$page.vegetationCard.plantformation">
+                <span v-if="$page.vegetationCard.formattedtitle" v-html="$page.vegetationCard.formattedtitle"></span>
+                <span v-else v-html="$page.vegetationCard.title"></span>
+              </p>
+              <p v-if="$page.vegetationCard.plantformation" style="margin-bottom: 0;" class="is-size-4-mobile">({{$page.vegetationCard.plantformation}})</p>
+              <p v-else class="is-size-2 is-uppercase has-text-weight-bold is-size-4-mobile">
+                <span v-if="$page.vegetationCard.formattedtitle" v-html="$page.vegetationCard.formattedtitle"></span>
+                <span v-else v-html="$page.vegetationCard.title"></span>
+              </p>
+              <div>
+                <img :src="threatCategories[$page.vegetationCard.category].img" height="50" width="50" />
+                <span style="font-size: small;"><b>{{threatCategories[$page.vegetationCard.category].text}}</b></span>
               </div>
             </div>
           </section>
-          <div class="has-text-centered">
-            <g-image v-if="$page.vegetationCard.cardimage" :src="$page.vegetationCard.cardimage" fit="inside" />
-          </div>
           <figcaption class="has-text-centered"><div class="is-size-6 is-size-7-mobile" v-html="$page.vegetationCard.cardimagecaption"></div></figcaption>
           <section class="section">
             <div class="tile is-ancestor">
@@ -315,6 +309,27 @@
 <style lang="scss" scoped>
 
   @import "~/assets/style/_variables";
+
+  .hero {
+    background-size: cover !important;
+    background-position: center;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .hero-body {
+    /* padding-bottom: 2rem !important;*/
+  }
+
+  .hero-bg-img {
+    position: absolute;
+    z-index: -1;
+  }
+
+  .title {
+    color: white;
+  }
 
   @media only screen and (max-width: 1024px) {
     .statetable {

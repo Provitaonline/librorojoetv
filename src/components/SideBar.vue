@@ -56,7 +56,7 @@
     .side-panel {
       min-width: 20rem;
       border-right: 0;
-      border-bottom: 1px solid #e0e0e0;
+      /*border-bottom: 1px solid #e0e0e0; */
     }
   }
 
@@ -74,7 +74,7 @@
 
   .side-panel-open-button {
     position: absolute;
-    padding-top: 10px;
+    /* padding-top: 10px; */
   }
 
   @media only screen and (min-width: 769px) {
@@ -119,6 +119,7 @@
   }
 
   .side-panel-triangle-right {
+    position: absolute;
     width: 0;
     height: 0;
     border-top: 20px solid transparent;
