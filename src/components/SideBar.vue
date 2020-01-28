@@ -73,6 +73,7 @@
   }
 
   .side-panel-open-button {
+    z-index: 1; /* This button must stay on top of content */
     position: absolute;
     /* padding-top: 10px; */
   }

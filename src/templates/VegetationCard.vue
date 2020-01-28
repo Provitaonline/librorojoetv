@@ -28,12 +28,12 @@
           <section class="hero">
             <g-image class="hero-bg-img" v-if="$page.vegetationCard.cardimage" :src="$page.vegetationCard.cardimage" />
             <div class="hero-body">
-              <g-link to="/fichas" class="hero-text is-size-4">Riesgo de colapso</g-link>
+              <g-link to="/fichas" class="hero-link is-size-4 is-size-5-mobile">Riesgo de colapso</g-link>
               <p class="hero-text is-size-2 is-uppercase has-text-weight-bold is-size-4-mobile" v-if="$page.vegetationCard.plantformation">
                 <span v-if="$page.vegetationCard.formattedtitle" v-html="$page.vegetationCard.formattedtitle"></span>
                 <span v-else v-html="$page.vegetationCard.title"></span>
               </p>
-              <p v-if="$page.vegetationCard.plantformation" class="hero-text is-size-4-mobile">({{$page.vegetationCard.plantformation}})</p>
+              <p v-if="$page.vegetationCard.plantformation" class="hero-text is-size-4 is-size-6-mobile">({{$page.vegetationCard.plantformation}})</p>
               <p v-else class="hero-text is-size-2 is-uppercase has-text-weight-bold is-size-4-mobile">
                 <span v-if="$page.vegetationCard.formattedtitle" v-html="$page.vegetationCard.formattedtitle"></span>
                 <span v-else v-html="$page.vegetationCard.title"></span>
@@ -314,7 +314,6 @@
   @import "~/assets/style/_variables";
 
   .hero {
-    z-index: -1; /* To enable side-pane open */
     position: relative;
     height: 300px;
     color: white;
@@ -335,6 +334,14 @@
   .hero-text {
     line-height: 1.2;
     color: white;
+  }
+
+  .hero-link {
+    color: white;
+  }
+
+  .hero-link:hover {
+    color: $primary;
   }
 
   .with-margin {
