@@ -2,6 +2,7 @@
 title: "Herbazales litorales"
 cardimage: "./foto-2.jpg"
 cardimagecaption: "Herbazal litoral interrumpido por salinas, extremo occidental de la península de Araya, estado Sucre. <i>José Antonio González-Carcacía</i>"
+plantformation: "Herbazales"
 category: "vu"
 description: "Los herbazales litorales son comunidades vegetales asociadas a las costas marinas, cuya cobertura varía desde abierta hasta densa (Foto 1). En aquellos casos donde ocupan depresiones salinas de la costa, son denominados herbazales litorales halófitos, mientras que cuando cubren dunas arenosas de las playas, normalmente no inundadas por el agua marina, reciben el nombre de herbazales litorales psamófilos. Las especies más frecuentes en estas comunidades de baja diversidad son vidrio (<i>Batis maritima</i>), hierba de vidrio (<i>Salicornia fruticosa, Sesuvium portulacastrum</i>), saladillo (<i>Sporobolus virginicus</i>), bicho (<i>Blutaparon vermiculare</i>), cadillo (<i>Cenchrus echinatus</i>), verdolaga (<i>Portulaca oleracea</i>), campanilla de playa (<i>Sesuvium portulacastrum</i>), batatilla de playa (<i>Ipomoea pes-caprae</i>), rabo de alacrán (<i>Heliotropium curassavicum</i>) y margarita de playa (<i>Egletes prostrata</i>) (Huber & Alarcón 1988, Steyermark 1994, Huber & Riina 1997).<br><br>
 En las zonas litorales se han encontrado también plantas parásitas como guatepajarito (<i>Phthirusa</i> sp.) y amor seco (<i>Cuscuta</i> sp.) (Steyermark 1994)."
