@@ -45,24 +45,29 @@ legendItems:
     group: 2
     color: "#cba865"
     legend: "colorkey"
+    plantformation: "Arbustales"
   - name: "Arbustales tepuyanos"
     group: 2
     color: "#a83b23"
     legend: "colorkey"
     cardPath: "Arbustales y herbazales tepuyanos"
+    plantformation: "Arbustales"
   - name: "Arbustales espinosos"
     group: 2
     color: "#f2633e"
     legend: "colorkey"
+    plantformation: "Arbustales"
   - name: "Arbustales litorales"
     group: 2
     color: "#f8a67f"
     legend: "colorkey"
     cardPath: "Arbustales espinosos"
+    plantformation: "Arbustales"
   - name: "Arbustales ribereños"
     group: 2
     color: "#a77129"
     legend: "colorkey"
+    plantformation: "Arbustales"
   - name: "Arbustales y herbazales parameros"
     group: 2
     color: "#e6b620"
