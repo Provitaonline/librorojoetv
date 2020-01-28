@@ -85,7 +85,8 @@
   }
 
   .side-panel-title {
-    background-color: #f8e7e8;
+    background-color: #fafafa;
+    color: $primary;
   }
 
   @media only screen and (min-width: 769px) {

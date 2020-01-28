@@ -79,13 +79,29 @@ h2 {
   padding: 8px;
 }
 
-.side-panel-item:hover {
-  background-color: #fafafa;
+.side-panel-item-title {
+  background-color: $primary;
+  color: white;
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
 }
+
+/*.side-panel-item:hover {
+  background-color: #fafafa;
+}*/
 
 .side-panel-item-box {
   display: flex;
   box-sizing: border-box;
+}
+
+.side-panel-item-title-link {
+  color: white;
+}
+
+.side-panel-item-title-link:hover {
+  color: black;
 }
 
 /* Comment this until conflict with vue-backtotop is resolved

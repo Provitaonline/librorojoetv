@@ -8,13 +8,18 @@
         <div class="box">
           <div v-for="item, index in $page.vegetationCardsIndex.legendItems">
             <div>
+              <hr style="margin: 0.2rem 0" v-if="isTitle(index)">
               <p class="side-panel-item-title" v-if="isTitle(index)">
                 <b>{{item.plantformation}}</b>
               </p>
-              <div class="side-panel-item-box side-panel-item">
-                <span v-if="item.plantformation">&nbsp;&nbsp;&nbsp;</span>
-                <g-link v-if="getTargetSlug(item) != currentSlug" :to="pathParent + '/' + getTargetSlug(item)">{{item.name}}</g-link>
-                <span v-else><b><i>{{item.name}}</i></b></span>
+              <hr style="margin: 0.2rem 0" v-if="!item.plantformation">
+              <div class="side-panel-item" v-bind:class="item.plantformation ? 'side-panel-item' : 'side-panel-item-title'">
+                <!--<span v-if="item.plantformation">&nbsp;&nbsp;&nbsp;</span> -->
+
+                <div v-bind:class="{'with-margin': item.plantformation}">
+                  <g-link v-bind:class="{'side-panel-item-title-link': !item.plantformation}" v-if="getTargetSlug(item) != currentSlug" :to="pathParent + '/' + getTargetSlug(item)">{{item.name}}</g-link>
+                  <span v-else><b><i>{{item.name}}</i></b></span>
+                </div>
               </div>
             </div>
           </div>
@@ -335,8 +340,8 @@
     color: white;
   }
 
-  .title {
-    color: white;
+  .with-margin {
+    margin-left: 1rem;
   }
 
   @media only screen and (max-width: 1024px) {
