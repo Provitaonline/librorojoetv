@@ -1,6 +1,6 @@
 ---
 title: "Sabanas abiertas"
-cardimage: "./pancarta.jpg"
+cardimage: "./foto-1.jpg"
 cardimagecaption: "Sabana abierta de Huachamacari, estado Amazonas. <i>Leonardo Ruiz-Díaz</i>"
 plantformation: "Herbazales"
 category: "en"

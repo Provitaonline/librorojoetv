@@ -1,6 +1,6 @@
 ---
 title: "Arbustales espinosos"
-cardimage: "./pancarta.jpg"
+cardimage: "./foto-1.jpg"
 cardimagecaption: "Cardonal en Tierra Negra, estado Mérida. <i>Mariana Hernández-Montilla</i>"
 plantformation: "Arbustales"
 category: "en"

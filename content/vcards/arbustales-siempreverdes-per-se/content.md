@@ -1,7 +1,7 @@
 ---
 title: "Arbustales siempreverdes per se"
 formattedtitle: "Arbustales siempreverdes <i>per se</i>"
-cardimage: "./pancarta.jpg"
+cardimage: "./foto-1.jpg"
 cardimagecaption: "Arbustales siempreverdes esclerófilos, Parque Nacional Yapacana, estado Amazonas. <i>Otto Huber</i>"
 plantformation: "Arbustales"
 category: "lc"

@@ -1,6 +1,6 @@
 ---
 title: "Vegetación saxícola"
-cardimage: "./pancarta.jpg"
+cardimage: "./foto-1.jpg"
 cardimagecaption: "Vegetación saxícola pionera en superficies rocosas, tepuy Roraima, estado Bolívar. <i>Christian Ceccarelli Navarro</i>"
 category: "vu"
 description: "Esta formación se encuentra constituida por comunidades vegetales altamente especializadas que crecen sobre substratos rocosos en el sur de Venezuela. Comprende dos ambientes rocosos muy diferentes: 1) las comunidades vegetales que crecen sobre los afloramientos rocosos graníticos en las tierras bajas macrotérmicas (>24°C), y 2) las comunidades vegetales adheridas a las paredes y superficies rocosas de las cimas de los tepuyes en regímenes desde mesotérmico (12-24°C) hasta submicrotérmico (9-12°C) (Riina & Huber 2003).<br><br>

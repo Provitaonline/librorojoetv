@@ -1,6 +1,6 @@
 ---
 title: "Bosques de palmas y bosques de pantano"
-cardimage: "./pancarta.jpg"
+cardimage: "./foto-1.jpg"
 cardimagecaption: "Bosque de palmas denso (chaguaramos), en las inmediaciones del Parque Nacional Turuépano. <i>Giuseppe Colonnello</i>"
 plantformation: "Bosques siempreverdes"
 category: "lc"

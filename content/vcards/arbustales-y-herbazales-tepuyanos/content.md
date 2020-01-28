@@ -1,6 +1,6 @@
 ---
 title: "Arbustales y herbazales tepuyanos"
-cardimage: "./pancarta.jpg"
+cardimage: "./foto-2.jpg"
 cardimagecaption: "Arbustales tepuyanos, cerro Duida, estado Amazonas. <i>Otto Huber</i>"
 plantformation: "Arbustales siempreverdes y herbazales no graminosos"
 category: "nt"

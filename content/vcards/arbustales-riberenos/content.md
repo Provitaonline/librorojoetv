@@ -1,6 +1,6 @@
 ---
 title: "Arbustales ribereños"
-cardimage: "./pancarta.jpg"
+cardimage: "./foto-1.jpg"
 cardimagecaption: "Arbustales ribereños asociados a ríos de aguas negras naturales, estado Amazonas. <i>Pedro Uviedo</i>"
 plantformation: "Arbustales"
 category: "lc"

@@ -1,6 +1,6 @@
 ---
 title: "Sabanas arbustivas y/o arboladas"
-cardimage: "./pancarta.jpg"
+cardimage: "./foto-1.jpg"
 cardimagecaption: "Sabana arbolada sobre la formación Mesa, muy próxima al río Orinoco, estado Anzoátegui. <i>Giuseppe Colonnello</i>"
 plantformation: "Herbazales"
 category: "vu"
