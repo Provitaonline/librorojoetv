@@ -311,7 +311,6 @@
 </page-query>
 
 <style lang="scss" scoped>
-
   @import "~/assets/style/_variables";
 
   .hero {
