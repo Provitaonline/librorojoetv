@@ -76,12 +76,10 @@ legendItems:
     group: 2
     color: "#ffd27f"
     legend: "colorkey"
-    plantformation: "Herbazales"
   - name: "Sabanas arbustivas y/o arboladas"
     group: 2
     color: "#fca91c"
     legend: "colorkey"
-    plantformation: "Herbazales"
   - name: "Herbazales de pantano"
     group: 3
     color: "#d5e9b9"
@@ -98,10 +96,12 @@ legendItems:
     color: "#fbeabd"
     legend: "colorkey"
     cardPath: "Arbustales y herbazales tepuyanos"
+    plantformation: "Herbazales"
   - name: "Herbazales litorales"
     group: 3
     color: "#f7f175"
     legend: "colorkey"
+    plantformation: "Herbazales"
   - name: "Vegetación saxícola"
     group: 3
     color: "#333333"
