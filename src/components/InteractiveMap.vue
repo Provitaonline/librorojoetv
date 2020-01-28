@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div id="mapSection" class="section-header map-title box">
+    <div id="mapSection" class="map-header map-title box">
       <div class="is-size-3 is-size-4-mobile has-text-weight-bold has-text-centered" v-html="mapTitle"></div>
       <div class="has-text-centered">[Haz clic en una de las áreas para ver la ficha de información]</div>
     </div>

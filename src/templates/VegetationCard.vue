@@ -49,7 +49,7 @@
           <section class="section">
             <div class="tile is-ancestor">
               <div class="tile is-vertical is-parent">
-                <div class="section-header box is-size-3 is-size-4-mobile has-text-weight-bold has-text-centered">Descripción</div>
+                <div class="section-header box is-size-3 is-size-4-mobile has-text-weight-bold">Descripción</div>
                 <div class="tile is-parent">
                   <div class="tile is-child box is-size-5 is-size-6-mobile">
                     <TextWithRefsAndPhotos
@@ -59,7 +59,7 @@
                     </TextWithRefsAndPhotos>
                   </div>
                 </div>
-                <div class="section-header box is-size-3 is-size-4-mobile has-text-weight-bold has-text-centered">Distribución</div>
+                <div class="section-header box is-size-3 is-size-4-mobile has-text-weight-bold">Distribución</div>
                 <div class="tile is-parent">
                   <div class="tile is-child box is-size-5 is-size-6-mobile">
                     <div>
@@ -77,7 +77,7 @@
                   </div>
                 </div>
                 <br>
-                <div v-if="$page.vegetationCard.areain2010" class="section-header box is-size-3 is-size-4-mobile has-text-weight-bold has-text-centered">Cambios en la distribución</div>
+                <div v-if="$page.vegetationCard.areain2010" class="section-header box is-size-3 is-size-4-mobile has-text-weight-bold">Cambios en la distribución</div>
                 <div v-if="$page.vegetationCard.areain2010" class="tile is-parent">
                   <div v-if="!$page.vegetationCard.stateleveltable.length" class="tile is-child is-3"></div>
                   <div :class="'tile is-child box is-size-6 has-text-centered ' + (($page.vegetationCard.stateleveltable.length) ? 'is-5' : 'is-6')">
@@ -138,7 +138,7 @@
                     </table>
                   </div>
                 </div>
-                <div class="section-header box is-size-3 is-size-4-mobile has-text-weight-bold has-text-centered">Situación a 2010</div>
+                <div class="section-header box is-size-3 is-size-4-mobile has-text-weight-bold">Situación a 2010</div>
                 <div class="tile is-parent">
                   <div v-if="!$page.vegetationCard.riskofcolapsestatelevel.length" class="tile is-child is-3"></div>
                   <div :class="'tile is-child box has-text-centered ' + (($page.vegetationCard.riskofcolapsestatelevel.length) ? 'is-5' : 'is-6')">

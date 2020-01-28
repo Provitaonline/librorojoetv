@@ -48,11 +48,15 @@ a.navbar-item {
 }
 
 .section-header {
+  color: $primary;
+  /* background-color: #f8e7e8; */
+}
+
+.map-header {
   background-color: #f8e7e8;
 }
 
 h1 {
-  @extend .has-text-centered;
   @extend .section-header;
   @extend .box;
   @extend .is-size-3;
@@ -64,7 +68,6 @@ h1 {
 }
 
 h2 {
-  @extend .has-text-centered;
   @extend .section-header;
   @extend .box;
   @extend .is-size-4;
