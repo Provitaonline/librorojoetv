@@ -39,7 +39,7 @@
                 <span v-else v-html="$page.vegetationCard.title"></span>
               </p>
               <hr align="left" width="50%" style="margin: 1rem 0">
-              <div style="display: flex;" class= "hero-text">
+              <div style="display: flex; height: 50px;" class= "hero-text">
                 <img :src="threatCategories[$page.vegetationCard.category].img" height="50" width="50" />
                 <span style="font-size: small; margin-top: auto; margin-bottom: auto; padding-left: 10px;"><b>{{threatCategories[$page.vegetationCard.category].text}}</b></span>
               </div>
