@@ -80,16 +80,20 @@
       </main>
     </transition>
 
-    <section>
-      <footer class="footer red-line">
-        <div class="content has-text-centered">
-          <g-link to="https://www.facebook.com/ProvitaONG/"><g-image src="~/assets/svgs/facebook.svg" /></g-link>&nbsp;
-          <g-link to="https://www.instagram.com/provita_ong/"><g-image src="~/assets/svgs/instagram.svg" /></g-link>&nbsp;
-          <g-link to="https://twitter.com/provita_ong"><g-image src="~/assets/svgs/twitter.svg" /></g-link>
-          <p>Este sitio está en desarrollo (v{{version}})</p>
-          <p>
-            Derechos reservados, copyright © 2019 Provita, licencia <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>.
-          </p>
+    <section class="red-line">
+      <footer class="footer">
+        <div class="has-text-centered">
+          <div>
+            <div class="social">
+              &nbsp;
+              <g-link to="https://www.instagram.com/provita_ong/"><font-awesome size="lg" :icon="['fab', 'instagram']"/></g-link>&nbsp;
+              <g-link to="https://www.facebook.com/ProvitaONG/"><font-awesome size="lg" :icon="['fab', 'facebook-f']"/></g-link>&nbsp;
+              <g-link to="https://twitter.com/provita_ong"><font-awesome size="lg" :icon="['fab', 'twitter']"/></g-link>
+              &nbsp;
+            </div>
+            <span> Derechos reservados, copyright © 2019 Provita, licencia <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>.</span>
+            <span> | Este sitio está en desarrollo (v{{version}})</span>
+          </div>
         </div>
       </footer>
     </section>
@@ -112,6 +116,16 @@
   .logo:hover {
     fill: #990033;
     stroke-opacity: 0;
+  }
+
+  .footer {
+    border-top: 2px solid #4a4a4a;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .social {
+      display: inline-block;
+    }
   }
 
   /* This is a workaround for the MS Edge issue of not opening dropdowns */
