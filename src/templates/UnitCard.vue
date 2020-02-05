@@ -21,17 +21,13 @@
 
       <template v-slot:content>
         <div class="red-line">
-          <section class="hero is-small is-white">
+          <section class="hero">
+            <g-image class="hero-bg-img" v-if="$page.unitCard.cardimage" :src="$page.unitCard.cardimage" />
             <div class="hero-body">
-              <div class="container is-fullhd has-text-centered">
-                <g-link to="/unidades" class="is-uppercase is-size-6">Unidades de paisaje</g-link>
-                <p class="title is-uppercase is-size-4-mobile">{{$page.unitCard.title}}</p>
-              </div>
+              <g-link to="/unidades" class="hero-link is-size-4 is-size-5-mobile">Unidades de paisaje</g-link>
+              <p class="hero-text is-size-2 is-uppercase has-text-weight-bold is-size-4-mobile">{{$page.unitCard.title}}</p>
             </div>
           </section>
-          <div class="has-text-centered">
-            <g-image v-if="$page.unitCard.cardimage" :src="$page.unitCard.cardimage" fit="inside" />
-          </div>
           <figcaption class="has-text-centered"><div class="is-size-6 is-size-7-mobile" v-html="$page.unitCard.cardimagecaption"></div></figcaption>
           <section class="section">
             <div class="tile is-ancestor">
@@ -93,11 +89,45 @@
 </page-query>
 
 <style lang="scss" scoped>
+  @import "~/assets/style/_variables";
 
   .current-item {
     font-style: italic;
     font-weight: bold;
   }
+
+  .hero {
+    position: relative;
+    height: 300px;
+    color: white;
+  }
+
+  .hero-body {
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    background: rgba(0, 0, 0, .2);
+  }
+
+  .hero-bg-img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .hero-text {
+    line-height: 1.2;
+    color: white;
+  }
+
+  .hero-link {
+    color: white;
+  }
+
+  .hero-link:hover {
+    color: $primary;
+  }
+
 
 </style>
 
