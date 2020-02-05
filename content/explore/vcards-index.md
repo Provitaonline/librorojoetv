@@ -1,6 +1,6 @@
 ---
 title: "Riesgo de colapso de los<br>ecosistemas terrestres de Venezuela"
-mapTitle: "Formaciones Vegetales de Venezuela - 2010"
+mapTitle: "Formaciones Vegetales<br>de Venezuela - 2010"
 banner: "./vcards-pancarta.jpg"
 bannerCaption: "Vista panorámica de Lagunillas, estado Mérida. <i>Leonardo Ruíz-Díaz</i>"
 legendItems:
