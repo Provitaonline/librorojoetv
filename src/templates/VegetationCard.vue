@@ -309,38 +309,6 @@
 <style lang="scss" scoped>
   @import "~/assets/style/_variables";
 
-  .hero {
-    position: relative;
-    height: 300px;
-    color: white;
-  }
-
-  .hero-body {
-    position: absolute;
-    bottom: 0;
-    padding: 10px;
-    background: rgba(0, 0, 0, .2);
-  }
-
-  .hero-bg-img {
-    height: 300px;
-    width: 100%;
-    object-fit: cover;
-  }
-
-  .hero-text {
-    line-height: 1.2;
-    color: white;
-  }
-
-  .hero-link {
-    color: white;
-  }
-
-  .hero-link:hover {
-    color: $primary;
-  }
-
   .with-margin {
     margin-left: 1rem;
   }
