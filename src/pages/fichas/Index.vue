@@ -1,13 +1,14 @@
 <template>
   <Layout>
     <div class="page-wrapper red-line">
-      <section class="hero is-small is-white">
-        <div class="hero-body">
-          <div class="is-uppercase has-text-centered">
-            <h1 class="title" v-html="$page.vegetationCardsIndex.title"></h1>
-          </div>
-        </div>
-      </section>
+
+      <PageBanner
+        :banner="$page.vegetationCardsIndex.banner"
+        :caption="$page.vegetationCardsIndex.bannerCaption"
+        :lead="$page.vegetationCardsIndex.title"
+        :title="$page.vegetationCardsIndex.mapTitle"
+        />
+      </PageBanner>
 
       <section class="section">
         <InteractiveMap
@@ -66,6 +67,8 @@
     vegetationCardsIndex: vegetationCardsIndex (path: "/content/explore/vcards-index") {
       title
       mapTitle
+      banner
+      bannerCaption
     	legendItems {
         name
         group
@@ -139,6 +142,7 @@
 <script>
   import slugify from 'slugify';
   import InteractiveMap from '~/components/InteractiveMap.vue'
+  import PageBanner from '~/components/PageBanner.vue'
   import {threatCategories} from '~/assets/js/siteConfig.js'
 
   slugify.extend({'/': '-'})
@@ -196,6 +200,7 @@
       }
     },
     components: {
+      PageBanner,
       InteractiveMap
     },
     created() {
