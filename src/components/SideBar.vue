@@ -11,7 +11,9 @@
               <div class="side-panel-times"><font-awesome :icon="['fas', 'times']"/></div>
             </div>
           </a>
-          <slot name="title"></slot>
+          <p class="side-panel-title-text is-size-4 has-text-weight-bold">
+            <slot name="title"></slot>
+          </p>
         </div>
         <slot name="sidebar"></slot>
       </div>
@@ -88,6 +90,12 @@
   .side-panel-title {
     background-color: #fafafa;
     color: $primary;
+  }
+
+  .side-panel-title-text {
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 10px;
   }
 
   @media only screen and (min-width: 769px) {

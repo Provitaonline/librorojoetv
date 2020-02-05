@@ -2,7 +2,7 @@
   <Layout>
     <SideBar>
       <template v-slot:title>
-        <p class="is-size-4 has-text-weight-bold" style="padding: 20px;">Estudios de caso</p>
+        Estudios de caso
       </template>
       <template v-slot:sidebar>
         <div class="box">
