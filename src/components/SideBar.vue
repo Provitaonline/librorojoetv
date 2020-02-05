@@ -7,7 +7,7 @@
             <span class="close-side-panel-icon is-size-5">✕</span>
           </a> -->
           <a v-if="sidePanelOpen" v-on:click="toggleSidePanelState()" role="button">
-            <div class="side-panel-triangle-left">
+            <div title="Cerrar panel lateral" class="side-panel-triangle-left">
               <div class="side-panel-times"><font-awesome :icon="['fas', 'times']"/></div>
             </div>
           </a>
@@ -21,7 +21,7 @@
     <div class="column">
       <div class="side-panel-open-button red-line">
         <a v-if="!sidePanelOpen" v-on:click="toggleSidePanelState()" role="button">
-          <div class="side-panel-triangle-right">
+          <div title="Abrir panel lateral" class="side-panel-triangle-right">
             <div class="side-panel-bars"><font-awesome :icon="['fas', 'bars']"/></div>
           </div>
           <!-- <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 278.571 275.714" class="open-side-panel-icon">
