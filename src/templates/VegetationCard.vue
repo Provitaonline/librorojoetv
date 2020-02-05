@@ -25,27 +25,23 @@
       </template>
       <template v-slot:content>
         <div class="red-line">
-          <section class="hero">
-            <g-image class="hero-bg-img" v-if="$page.vegetationCard.cardimage" :src="$page.vegetationCard.cardimage" />
-            <div class="hero-body">
-              <g-link to="/fichas" class="hero-link is-size-4 is-size-5-mobile">Riesgo de colapso</g-link>
-              <p class="hero-text is-size-2 is-uppercase has-text-weight-bold is-size-4-mobile" v-if="$page.vegetationCard.plantformation">
-                <span v-if="$page.vegetationCard.formattedtitle" v-html="$page.vegetationCard.formattedtitle"></span>
-                <span v-else v-html="$page.vegetationCard.title"></span>
-              </p>
-              <p v-if="$page.vegetationCard.plantformation" class="hero-text is-size-4 is-size-6-mobile">({{$page.vegetationCard.plantformation}})</p>
-              <p v-else class="hero-text is-size-2 is-uppercase has-text-weight-bold is-size-4-mobile">
-                <span v-if="$page.vegetationCard.formattedtitle" v-html="$page.vegetationCard.formattedtitle"></span>
-                <span v-else v-html="$page.vegetationCard.title"></span>
-              </p>
+
+          <PageBanner
+            :banner="$page.vegetationCard.cardimage"
+            :caption="$page.vegetationCard.cardimagecaption"
+            lead="Riesgo de colapso"
+            link="/fichas"
+            :title="$page.vegetationCard.formattedtitle ? $page.vegetationCard.formattedtitle : $page.vegetationCard.title"
+            :subtitle="$page.vegetationCard.plantformation ? `(${$page.vegetationCard.plantformation})` : null">
+            <template v-slot:follow>
               <hr align="left" width="50%" style="margin: 1rem 0">
               <div style="display: flex; height: 50px;" class= "hero-text">
                 <img :src="threatCategories[$page.vegetationCard.category].img" height="50" width="50" />
                 <span style="font-size: small; margin-top: auto; margin-bottom: auto; padding-left: 10px;"><b>{{threatCategories[$page.vegetationCard.category].text}}</b></span>
               </div>
-            </div>
-          </section>
-          <figcaption class="has-text-centered"><div class="is-size-6 is-size-7-mobile" v-html="$page.vegetationCard.cardimagecaption"></div></figcaption>
+            </template>
+          </PageBanner>
+
           <section class="section">
             <div class="tile is-ancestor">
               <div class="tile is-vertical is-parent">
@@ -437,6 +433,7 @@
 <script>
 
   import {threatCategories, criteria} from '~/assets/js/siteConfig.js'
+  import PageBanner from '~/components/PageBanner.vue'
   import TextWithRefsAndPhotos from '~/components/TextWithRefsAndPhotos.vue'
   import SideBar from '~/components/SideBar.vue'
   import slugify from 'slugify'
@@ -485,6 +482,7 @@
       }
     },
     components: {
+      PageBanner,
       VueCompareImage: () => import ('vue-compare-image').then(m => m),
       TextWithRefsAndPhotos,
       SideBar

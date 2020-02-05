@@ -21,14 +21,16 @@
 
       <template v-slot:content>
         <div class="red-line">
-          <section class="hero">
-            <g-image class="hero-bg-img" v-if="$page.unitCard.cardimage" :src="$page.unitCard.cardimage" />
-            <div class="hero-body">
-              <g-link to="/unidades" class="hero-link is-size-4 is-size-5-mobile">Unidades de paisaje</g-link>
-              <p class="hero-text is-size-2 is-uppercase has-text-weight-bold is-size-4-mobile">{{$page.unitCard.title}}</p>
-            </div>
-          </section>
-          <figcaption class="has-text-centered"><div class="is-size-6 is-size-7-mobile" v-html="$page.unitCard.cardimagecaption"></div></figcaption>
+
+          <PageBanner
+            :banner="$page.unitCard.cardimage"
+            :caption="$page.unitCard.cardimagecaption"
+            lead="Unidades de paisaje"
+            link="/unidades"
+            :title="$page.unitCard.title"
+            />
+          </PageBanner>
+
           <section class="section">
             <div class="tile is-ancestor">
               <div class="tile is-vertical is-parent">
@@ -96,42 +98,10 @@
     font-weight: bold;
   }
 
-  .hero {
-    position: relative;
-    height: 300px;
-    color: white;
-  }
-
-  .hero-body {
-    position: absolute;
-    bottom: 0;
-    padding: 10px;
-    background: rgba(0, 0, 0, .2);
-  }
-
-  .hero-bg-img {
-    height: 300px;
-    width: 100%;
-    object-fit: cover;
-  }
-
-  .hero-text {
-    line-height: 1.2;
-    color: white;
-  }
-
-  .hero-link {
-    color: white;
-  }
-
-  .hero-link:hover {
-    color: $primary;
-  }
-
-
 </style>
 
 <script>
+  import PageBanner from '~/components/PageBanner.vue'
   import TextWithRefsAndPhotos from '~/components/TextWithRefsAndPhotos.vue'
   import SideBar from '~/components/SideBar.vue'
 
@@ -142,6 +112,7 @@
     mounted () {
     },
     components: {
+      PageBanner,
       TextWithRefsAndPhotos,
       SideBar
     },
