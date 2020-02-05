@@ -1,7 +1,7 @@
 ---
 region: b
 title: "Región B: Llanuras bajas"
-cardimage: "./pancarta.jpg"
+cardimage: "./foto-22.jpg"
 cardimagecaption: "Llanos, estado Apure. <i>Román Rangel</i>"
 photos:
 - photokey: "Foto 22"

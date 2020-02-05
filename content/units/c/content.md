@@ -1,7 +1,7 @@
 ---
 region: c
 title: "Región C. Colinas"
-cardimage: "./pancarta.jpg"
+cardimage: "./foto-27.jpg"
 cardimagecaption: "Sistema de colinas y sierras bajas piemontanas del Escudo Guayanés, Canaima, estado Bolívar. <i>Rebecca Miller</i>"
 photos:
 - photokey: "Foto 26"
