@@ -1,18 +1,15 @@
 <template>
   <Layout>
       <div class="red-line">
-        <section class="hero is-small is-white">
-          <div class="hero-body">
-            <div class="container is-fullhd has-text-centered">
-              <p class="is-uppercase is-size-6">Métodos</p>
-              <p class="title is-uppercase is-size-4-mobile" v-html="$page.methodCard.title"></p>
-            </div>
-          </div>
-        </section>
-        <div class="has-text-centered">
-          <g-image v-if="$page.methodCard.cardimage" :src="$page.methodCard.cardimage" fit="inside" />
-        </div>
-        <figcaption class="has-text-centered"><div class="is-size-6 is-size-7-mobile" v-html="$page.methodCard.cardimagecaption"></div></figcaption>
+
+        <PageBanner
+          :banner="$page.methodCard.cardimage"
+          :caption="$page.methodCard.cardimagecaption"
+          lead="Métodos"
+          :title="$page.methodCard.title"
+          />
+        </PageBanner>
+
         <section class="section">
           <div class="tile is-vertical is-parent">
             <TextWithRefsAndPhotos class="tile is-child box is-size-5 is-size-6-mobile"
@@ -87,6 +84,7 @@
 </style>
 
 <script>
+  import PageBanner from '~/components/PageBanner.vue'
   import TextWithRefsAndPhotos from '~/components/TextWithRefsAndPhotos.vue'
   import SideBar from '~/components/SideBar.vue'
 
@@ -106,6 +104,7 @@
       next()
     },
     components: {
+      PageBanner,
       TextWithRefsAndPhotos,
       SideBar
     },

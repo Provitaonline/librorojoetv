@@ -1,7 +1,7 @@
 ---
 id: evaluacion
 method: eval
-title: "Método para la evaluación del riesgo de colapso de los ecosistemas terrestres de Venezuela"
+title: "Método para la evaluación del<br>riesgo de colapso de los<br>ecosistemas terrestres de Venezuela"
 cardimage: "./pancarta-eval.jpg"
 cardimagecaption: "Vista panorámica de Lagunillas, estado Mérida. <i>Leonardo Ruíz-Díaz</i>"
 photos:
