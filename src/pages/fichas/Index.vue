@@ -95,43 +95,6 @@
 
 <style lang="scss" scoped>
 
-  .hero {
-    background-size: cover !important;
-    background-position: center;
-    text-align: center;
-    overflow: hidden;
-    position: relative;
-  }
-
-  .hero-bg-img {
-    position: absolute;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    /* opacity: 0.8; */
-  }
-
-  .hero-text {
-    color: white;
-    text-shadow:
-      -1px -1px 0 black,
-      1px -1px 0 black,
-      -1px 1px 0 black,
-      1px 1px 0 black;
-  }
-
-  .explore {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    color: white;
-    transform: translate(-50%, 0);
-  }
-
-  .explore:hover {
-    color: #BE1421;
-  }
-
   .iconInTable {
     width: 30px;
     height: 30px;
