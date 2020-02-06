@@ -1,16 +1,14 @@
 <template>
   <Layout>
     <div class="red-line">
-      <section class="hero is-small is-white">
+      <section class="hero">
+        <g-image class="hero-bg-img" v-if="$page.homeData.about.cardimage" :src="$page.homeData.about.cardimage" />
+
         <div class="hero-body">
-          <div class="container is-fullhd has-text-centered">
-            <p class="title is-uppercase is-size-4-mobile">Acerca de</p>
-          </div>
+          <p class="hero-text is-size-2 is-uppercase has-text-weight-bold is-size-4-mobile">Acerca del libro rojo<br>de los ecosistemas terrestres<br>de Venezuela</p>
         </div>
       </section>
-      <div class="has-text-centered">
-        <g-image v-if="$page.homeData.about.cardimage" :src="$page.homeData.about.cardimage" fit="inside" />
-      </div>
+
       <figcaption class="has-text-centered"><div class="is-size-6 is-size-7-mobile" v-html="$page.homeData.about.cardimagecaption"></div></figcaption>
       <section class="section">
         <div class="tile is-vertical is-parent">
@@ -69,6 +67,36 @@
 </page-query>
 
 <style lang="scss" scoped>
+
+  .hero {
+    position: relative;
+    color: white;
+  }
+
+  .hero-body {
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    padding-left: 40px;
+    background: rgba(0, 0, 0, .2);
+  }
+
+    .hero-bg-img {
+      height: 650px;
+      width: 100%;
+      object-fit: cover;
+    }
+
+  @media screen and (max-width: 768px) {
+    .hero-bg-img {
+      height: 300px;
+    }
+  }
+
+  .hero-text {
+    line-height: 1.2;
+    color: white;
+  }
 
   ::v-deep .colab {
     width: 400px;
