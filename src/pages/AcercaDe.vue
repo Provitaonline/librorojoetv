@@ -81,11 +81,11 @@
     background: rgba(0, 0, 0, .2);
   }
 
-    .hero-bg-img {
-      height: 650px;
-      width: 100%;
-      object-fit: cover;
-    }
+  .hero-bg-img {
+    height: 650px;
+    width: 100%;
+    object-fit: cover;
+  }
 
   @media screen and (max-width: 768px) {
     .hero-bg-img {
