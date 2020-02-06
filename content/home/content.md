@@ -6,8 +6,8 @@ indexCards:
   - image: ./riesgo.png
     link: /fichas/
     text: >-
-      Cambios temporales en distribución geográfica y riesgos de colapso and
-      nivel nacional y estatal.
+      Cambios temporales en distribución geográfica y riesgos de colapso a
+      nivel nacional y estadal.
     title: Riesgo de colapso
   - image: ./casos.png
     link: /casos/
@@ -121,7 +121,7 @@ La segunda parte del libro resume la historia y alcances de los libros rojos, a 
 
 Ya establecidas las formaciones vegetales a evaluar, así como el sistema de categorías y criterios a ser empleado, la tercera parte del libro examina en detalle el estado de los ecosistemas terrestres de Venezuela. Siguiendo una metodología objetiva, transparente y replicable, se clasifica el riesgo de amenaza de las principales formaciones vegetales venezolanas. Esta sección equivale a las fichas del Libro Rojo de los Ecosistemas Terrestres de Venezuela.
 
-La tercera parte del libro tiende a simplificar los detalles de los cambios de estructura del paisaje que ocurren a la escala de las actividades humanas. Es allí donde la metodología desarrollada ofrece su mayor potencial: ser aplicable a escalas regionales, estatales, municipales, de áreas protegidas, cuencas y microcuencas, o prácticamente a cualquier escala que se desee explorar. La cuarta parte del libro refuerza el conocimiento más preciso sobre la situación de riesgo de los ecosistemas en Venezuela, y valida la aplicación del método a múltiples escalas. Los casos de estudio incluyen desde el análisis a escala nacional de la conversión de bosques, hasta la evaluación de la situación de los ecosistemas terrestres de la isla de Margarita. Diversos autores, con algunas variaciones metodológicas, brindan información especialmente valiosa que permite ampliar la visión sobre la situación ambiental nacional. Estos casos de estudio primordialmente hacen uso de secuencias temporales de imágenes de satélite, por lo que ofrecen un acercamiento metodológico relativamente sencillo y accesible a cualquiera con un entrenamiento básico en el uso de sistemas de información geográfica e información percibida remotamente.
+La tercera parte del libro tiende a simplificar los detalles de los cambios de estructura del paisaje que ocurren a la escala de las actividades humanas. Es allí donde la metodología desarrollada ofrece su mayor potencial: ser aplicable a escalas regionales, estadales, municipales, de áreas protegidas, cuencas y microcuencas, o prácticamente a cualquier escala que se desee explorar. La cuarta parte del libro refuerza el conocimiento más preciso sobre la situación de riesgo de los ecosistemas en Venezuela, y valida la aplicación del método a múltiples escalas. Los casos de estudio incluyen desde el análisis a escala nacional de la conversión de bosques, hasta la evaluación de la situación de los ecosistemas terrestres de la isla de Margarita. Diversos autores, con algunas variaciones metodológicas, brindan información especialmente valiosa que permite ampliar la visión sobre la situación ambiental nacional. Estos casos de estudio primordialmente hacen uso de secuencias temporales de imágenes de satélite, por lo que ofrecen un acercamiento metodológico relativamente sencillo y accesible a cualquiera con un entrenamiento básico en el uso de sistemas de información geográfica e información percibida remotamente.
 
 Por último, en la quinta parte de la publicación, se enfatiza que la evaluación de riesgo de amenaza es sólo uno de los componentes de la determinación de prioridades de conservación. Mediante una propuesta ilustrativa que integra cuatro variables, se ofrece un marco conceptual flexible y aplicable a la sistematización de la definición de prioridades de conservación de ecosistemas.
 
