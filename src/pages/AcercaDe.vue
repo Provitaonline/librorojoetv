@@ -1,15 +1,15 @@
 <template>
   <Layout>
     <div class="red-line">
-      <section class="hero">
-        <g-image class="hero-bg-img" v-if="$page.homeData.about.cardimage" :src="$page.homeData.about.cardimage" />
 
-        <div class="hero-body">
-          <p class="hero-text is-size-2 is-uppercase has-text-weight-bold is-size-4-mobile">Acerca del libro rojo<br>de los ecosistemas terrestres<br>de Venezuela</p>
-        </div>
-      </section>
+      <PageBanner
+        :banner="$page.homeData.about.cardimage"
+        :caption="$page.homeData.about.cardimagecaption"
+        title="Acerca del libro rojo<br>de los ecosistemas terrestres<br>de Venezuela"
+        bannerHeight="600px"
+        />
+      </PageBanner>
 
-      <figcaption class="has-text-centered"><div class="is-size-6 is-size-7-mobile" v-html="$page.homeData.about.cardimagecaption"></div></figcaption>
       <section class="section">
         <div class="tile is-vertical is-parent">
           <TextWithRefsAndPhotos class="tile is-child box is-size-5 is-size-6-mobile"
@@ -68,36 +68,6 @@
 
 <style lang="scss" scoped>
 
-  .hero {
-    position: relative;
-    color: white;
-  }
-
-  .hero-body {
-    position: absolute;
-    bottom: 0;
-    padding: 10px;
-    padding-left: 40px;
-    background: rgba(0, 0, 0, .2);
-  }
-
-  .hero-bg-img {
-    height: 650px;
-    width: 100%;
-    object-fit: cover;
-  }
-
-  @media screen and (max-width: 768px) {
-    .hero-bg-img {
-      height: 300px;
-    }
-  }
-
-  .hero-text {
-    line-height: 1.2;
-    color: white;
-  }
-
   ::v-deep .colab {
     width: 400px;
     max-width: 80%;
@@ -115,6 +85,7 @@
 </style>
 
 <script>
+  import PageBanner from '~/components/PageBanner.vue'
   import TextWithRefsAndPhotos from '~/components/TextWithRefsAndPhotos.vue'
 
   export default {
@@ -134,6 +105,7 @@
       }
     },
     components: {
+      PageBanner,
       TextWithRefsAndPhotos
     }
   }
