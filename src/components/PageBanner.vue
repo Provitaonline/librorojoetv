@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="hero">
+    <section class="hero" :style="cssVars">
       <g-image class="hero-bg-img" :src="banner" />
       <div class="hero-body">
         <g-link v-if="link" :to="link" class="hero-link is-size-4 is-size-5-mobile">{{lead}}</g-link>
@@ -21,7 +21,6 @@
 
   .hero {
     position: relative;
-    height: 300px;
     color: white;
   }
 
@@ -34,9 +33,15 @@
   }
 
   .hero-bg-img {
-    height: 300px;
+    height: var(--banner-height);
     width: 100%;
     object-fit: cover;
+  }
+
+  @media screen and (max-width: 768px) {
+    .hero-bg-img {
+      height: var(--default-banner-height);
+    }
   }
 
   .hero-text {
@@ -54,16 +59,26 @@
 </style>
 
 <script>
+  const defaultBannerHeight = '300px'
 
   export default {
     name: 'PageBanner',
     props: {
       banner: { type: Object, required: true },
       caption: { type: String, required: true },
-      lead: { type: String, required: true },
+      lead: { type: String, required: false },
       link: { type: String, required: false },
       title: { type: String, required: true },
-      subtitle: {type: String, required: false}
+      subtitle: {type: String, required: false},
+      bannerHeight: {type: String, required: false, default: defaultBannerHeight}
+    },
+    data() {
+      return {
+        cssVars: {
+          '--banner-height': this.bannerHeight,
+          '--default-banner-height': defaultBannerHeight
+        }
+      }
     }
   }
 </script>
