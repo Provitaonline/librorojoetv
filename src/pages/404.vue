@@ -1,9 +1,9 @@
 <template>
   <Layout>
-    <div class="page-wrapper">
+    <div class="page-wrapper red-line">
       <section class="hero is-small is-white">
         <div class="hero-body">
-          <div class="container is-fullhd has-text-centered">
+          <div class="container is-fullhd has-text-centered red-line">
             <h1 class="title">NO ENCUENTRO LA PÁGINA (404)...</h1>
           </div>
         </div>

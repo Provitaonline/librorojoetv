@@ -1,8 +1,9 @@
 ---
 title: "Arbustales siempreverdes per se"
 formattedtitle: "Arbustales siempreverdes <i>per se</i>"
-cardimage: "./pancarta.jpg"
+cardimage: "./foto-1.jpg"
 cardimagecaption: "Arbustales siempreverdes esclerófilos, Parque Nacional Yapacana, estado Amazonas. <i>Otto Huber</i>"
+plantformation: "Arbustales"
 category: "lc"
 description: "Los arbustales siempreverdes <i>per se</i> son un subtipo de la categoría arbustales siempreverdes. Se trata de una comunidad vegetal con predominio de plantas arbustivas que no exceden los 5 m de altura, asociadas a ambientes húmedos (precipitación anual > 1.400 mm), macrotérmicos (> 24°C) y submesotérmicos (18-24°C). Sus elementos arbustivos se caracterizan porque la sustitución de la masa foliar ocurre gradualmente a lo largo del año, de manera que los arbustos nunca están desprovistos de hojas y sólo una fracción las pierde durante los meses más secos. Su existencia como comunidad natural fue reconocida recientemente en la cartografía vegetal (Huber 1995c, Riina & Huber 2003).<br><br>
 En las tierras bajas y medias de Guayana son comunidades conformadas por plantas con hojas predominantemente coriáceas (gruesas y rígidas), por lo que reciben el nombre de arbustales esclerófilos siempreverdes (Foto 1) (Huber & Alarcón 1988, Huber 1995c). Entre sus especies más comunes se encuentran: <i>Humiria balsamifera, Illex divaricata, Emmotum glabrum, Pradosia schomburgkiana, Ormosia macrophylla, Calliandra tsugoides, Biophytum</i> sp., <i>Euphronia guianensis, Bonyunia minor, Ternstroemia pungens, T. crassifolia, Thibaudia nutans</i> y <i>Gongylolepis benthamiana</i>. La composición florística y los endemismos de esta unidad vegetal varían entre las diferentes localidades, e incluyen un género endémico (<i>Pentamerista</i>) de una familia (Tetrameristaceae) considerada originalmente como exclusiva del sureste asiático (Foto 2) (Maguire <i>et al.</i> 1972, Huber & Alarcón 1988)."

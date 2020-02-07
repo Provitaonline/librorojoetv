@@ -1,7 +1,8 @@
 ---
 title: "Arbustales ribereños"
-cardimage: "./pancarta.jpg"
+cardimage: "./foto-1.jpg"
 cardimagecaption: "Arbustales ribereños asociados a ríos de aguas negras naturales, estado Amazonas. <i>Pedro Uviedo</i>"
+plantformation: "Arbustales"
 category: "lc"
 description: "Por su estrecha relación ecológica, en esta formación se incluyen dos tipos de vegetación: los arbustales ribereños <i>sensu lato</i> y los bosques bajos inundables, conocidos en Brasil como “igapó”. Están integrados por arbustos de medios a altos y árboles bajos siempreverdes, inundados de seis a ocho meses al año. Se restringen a las tierras bajas del estado Amazonas, a menos de 400 m y en asociación con cursos de aguas negras naturales (Foto 1). En la penillanura del Casiquiare se distingue un tipo particular de arbustal ribereño, dominado por agrupaciones de palo de boya (<i>Malouetia</i> spp.) (Foto 2), conocido localmente como “boyal” (Huber 1995a, 1995c).<br><br>
 Los arbustales ribereños están integrados por un elevado número de plantas adaptadas a los regímenes de inundación prolongada y registran una alta proporción de endemismos. Destacan especies de las familias Ochnaceae, Melastamotaceae, Myrtaceae y Apocynaceae (Huber 1995b) (Foto 3). En algunas localidades los arbustales ribereños están prácticamente sumergidos bajo agua, sobresaliendo sólo las ramas más altas de las copas (Foto 4). La variación en altura del nivel de agua durante el año puede ser de hasta 4 m (Huber 1995c)."

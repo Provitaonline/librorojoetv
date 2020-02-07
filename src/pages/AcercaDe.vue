@@ -1,16 +1,15 @@
 <template>
   <Layout>
-      <section class="hero is-small is-white">
-        <div class="hero-body">
-          <div class="container is-fullhd has-text-centered">
-            <p class="title is-uppercase is-size-4-mobile">Acerca de</p>
-          </div>
-        </div>
-      </section>
-      <div class="has-text-centered">
-        <g-image v-if="$page.homeData.about.cardimage" :src="$page.homeData.about.cardimage" fit="inside" />
-      </div>
-      <figcaption class="has-text-centered"><div class="is-size-6 is-size-7-mobile" v-html="$page.homeData.about.cardimagecaption"></div></figcaption>
+    <div class="red-line">
+
+      <PageBanner
+        :banner="$page.homeData.about.cardimage"
+        :caption="$page.homeData.about.cardimagecaption"
+        title="Acerca del libro rojo<br>de los ecosistemas terrestres<br>de Venezuela"
+        bannerHeight="600px"
+        />
+      </PageBanner>
+
       <section class="section">
         <div class="tile is-vertical is-parent">
           <TextWithRefsAndPhotos class="tile is-child box is-size-5 is-size-6-mobile"
@@ -40,6 +39,7 @@
           </transition>
         </div>
       </section>
+    </div>
   </Layout>
 </template>
 
@@ -85,6 +85,7 @@
 </style>
 
 <script>
+  import PageBanner from '~/components/PageBanner.vue'
   import TextWithRefsAndPhotos from '~/components/TextWithRefsAndPhotos.vue'
 
   export default {
@@ -104,6 +105,7 @@
       }
     },
     components: {
+      PageBanner,
       TextWithRefsAndPhotos
     }
   }

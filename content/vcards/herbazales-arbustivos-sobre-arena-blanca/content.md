@@ -1,6 +1,6 @@
 ---
 title: "Herbazales arbustivos sobre arena blanca"
-cardimage: "./pancarta.jpg"
+cardimage: "./foto-1.jpg"
 cardimagecaption: "Patrón de drenaje laberíntico frecuente en herbazales sobre arena blanca, Alto Yagua, estado Amazonas. <i>Otto Huber</i>"
 plantformation: "Herbazales"
 category: "lc"

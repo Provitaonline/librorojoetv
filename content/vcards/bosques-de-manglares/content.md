@@ -1,6 +1,6 @@
 ---
 title: "Bosques de manglares"
-cardimage: "./pancarta.jpg"
+cardimage: "./foto-1.jpg"
 cardimagecaption: "Bosque de manglares de <i>Avicennia germinans</i> y <i>Rhizophora mangle</i>, Parque Nacional Turuépano, estado Sucre. <i>Giuseppe Colonnello</i>"
 plantformation: "Bosques siempreverdes"
 category: "lc"

@@ -1,6 +1,8 @@
 ---
 title: "Estudios de caso"
-mapTitle: "Localización de las áreas de estudio"
+mapTitle: "Localización<br>de las áreas de estudio"
+banner: "./cases-pancarta.jpg"
+bannerCaption: "Salinas de Araya, estado Sucre. <i>José Antonio González-Carcacía</i>"
 legendItems:
   - name: "1"
     label: "Conversión de los bosques en la cordillera central de Venezuela"

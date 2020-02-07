@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div class="page-wrapper">
+    <div class="page-wrapper red-line">
       <section class="hero is-large">
         <g-image class="hero-bg-img" src="~/assets/images/home-hero-image.jpg"/>
         <div class="hero-body">

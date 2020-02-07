@@ -12,7 +12,7 @@ import VueScrollTo from 'vue-scrollto'
 
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { config, library } from '@fortawesome/fontawesome-svg-core'
-import { faFacebook, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook, faFacebookF, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import {
     faArrowDown, faArrowLeft, faAngleDoubleDown, faSyncAlt, faCaretRight, faBars,
     faListUl, faEllipsisH, faTimes, faAngleUp, faAngleDown,
@@ -23,7 +23,7 @@ import {
 import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false;
 library.add(
-  faFacebook, faTwitter, faArrowDown, faArrowLeft, faAngleDoubleDown, faSyncAlt,
+  faFacebook, faFacebookF, faTwitter, faInstagram, faArrowDown, faArrowLeft, faAngleDoubleDown, faSyncAlt,
   faCaretRight, faBars, faListUl, faEllipsisH, faTimes, faAngleUp, faAngleDown,
   faFileDownload, faLink, faCamera, faMapMarkerAlt, faEnvelope, faPhone, faGlobeAmericas)
 

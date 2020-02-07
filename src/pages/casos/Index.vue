@@ -1,13 +1,14 @@
 <template>
   <Layout>
-    <div class="page-wrapper">
-      <section class="hero is-small is-white">
-        <div class="hero-body">
-          <div class="is-uppercase has-text-centered">
-            <h1 class="title" v-html="$page.casesIndex.title"></h1>
-          </div>
-        </div>
-      </section>
+    <div class="page-wrapper red-line">
+
+      <PageBanner
+        :banner="$page.casesIndex.banner"
+        :caption="$page.casesIndex.bannerCaption"
+        :lead="$page.casesIndex.title"
+        :title="$page.casesIndex.mapTitle"
+        />
+      </PageBanner>
 
       <section class="section">
         <InteractiveMap
@@ -29,6 +30,8 @@
     casesIndex: casesIndex (path: "/content/explore/cases-index") {
       title
       mapTitle
+      banner
+      bannerCaption
     	legendItems {
         name
         label
@@ -43,48 +46,13 @@
 
 <style lang="scss" scoped>
 
-  .hero {
-    background-size: cover !important;
-    background-position: center;
-    text-align: center;
-    overflow: hidden;
-    position: relative;
-  }
-
-  .hero-bg-img {
-    position: absolute;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    /* opacity: 0.8; */
-  }
-
-  .hero-text {
-    color: white;
-    text-shadow:
-      -1px -1px 0 black,
-      1px -1px 0 black,
-      -1px 1px 0 black,
-      1px 1px 0 black;
-  }
-
-  .explore {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    color: white;
-    transform: translate(-50%, 0);
-  }
-
-  .explore:hover {
-    color: #BE1421;
-  }
 
 </style>
 
 <script>
   import slugify from 'slugify';
   import InteractiveMap from '~/components/InteractiveMap.vue'
+  import PageBanner from '~/components/PageBanner.vue'
   import {threatCategories} from '~/assets/js/siteConfig.js'
 
   slugify.extend({'/': '-'})
@@ -125,6 +93,7 @@
       }
     },
     components: {
+      PageBanner,
       InteractiveMap
     },
     created() {

@@ -35,7 +35,7 @@
 }
 
 .navbar {
-  border-bottom: 6px solid #BE1421;
+  @extend .red-line;
 }
 
 a.navbar-item {
@@ -48,11 +48,15 @@ a.navbar-item {
 }
 
 .section-header {
+  color: $primary;
+  /* background-color: #f8e7e8; */
+}
+
+.map-header {
   background-color: #f8e7e8;
 }
 
 h1 {
-  @extend .has-text-centered;
   @extend .section-header;
   @extend .box;
   @extend .is-size-3;
@@ -64,7 +68,6 @@ h1 {
 }
 
 h2 {
-  @extend .has-text-centered;
   @extend .section-header;
   @extend .box;
   @extend .is-size-4;
@@ -79,13 +82,29 @@ h2 {
   padding: 8px;
 }
 
-.side-panel-item:hover {
-  background-color: #fafafa;
+.side-panel-item-title {
+  background-color: $primary;
+  color: white;
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
 }
+
+/*.side-panel-item:hover {
+  background-color: #fafafa;
+}*/
 
 .side-panel-item-box {
   display: flex;
   box-sizing: border-box;
+}
+
+.side-panel-item-title-link {
+  color: white;
+}
+
+.side-panel-item-title-link:hover {
+  color: black;
 }
 
 /* Comment this until conflict with vue-backtotop is resolved
@@ -100,4 +119,16 @@ html {
 
 .fade-enter {
   opacity: 0;
+}
+
+.red-line {
+  border-left: 10px solid $primary;
+}
+
+.two-columns {
+  columns: 2 300px;
+}
+
+.inline-figure {
+  break-inside: avoid-column;
 }

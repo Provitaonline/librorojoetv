@@ -1,6 +1,6 @@
 ---
 title: "Bosques ribereños"
-cardimage: "./pancarta.jpg"
+cardimage: "./foto-1.jpg"
 cardimagecaption: "Bosque ribereño de montaña, río Cuyagua, estado Aragua. <i>César Molina</i>"
 category: "vu"
 description: "Los bosques ribereños se ubican en las orillas de ríos, normalmente sobre bancos y albardones fluviales. Están asociados a climas macrotérmicos (>24 °C), con un régimen de precipitación que puede ser húmedo (ombrófilos), estacional (tropófilos) o incluso seco (xerófilo). Factor determinante de la presencia de un bosque ribereño es una mayor humedad del suelo, regulada por la dinámica del cuerpo de agua que drena los terrenos adyacentes. En algunos casos, generalmente debido a variaciones bioclimáticas, este tipo de bosque traza mosaicos con formaciones de sabanas, como ocurre a lo largo de los ríos Caura, Cuchivero y Suapure (Rosales 2003).<br><br>

@@ -2,7 +2,7 @@
   <Layout>
     <SideBar>
       <template v-slot:title>
-        <p class="is-size-4 has-text-weight-bold has-text-centered" style="padding: 20px;">Unidades de paisaje</p>
+        Unidades de paisaje
       </template>
       <template v-slot:sidebar>
         <div class="box">
@@ -20,33 +20,33 @@
       </template>
 
       <template v-slot:content>
-        <section class="hero is-small is-white">
-          <div class="hero-body">
-            <div class="container is-fullhd has-text-centered">
-              <g-link to="/unidades" class="is-uppercase is-size-6">Unidades de paisaje</g-link>
-              <p class="title is-uppercase is-size-4-mobile">{{$page.unitCard.title}}</p>
-            </div>
-          </div>
-        </section>
-        <div class="has-text-centered">
-          <g-image v-if="$page.unitCard.cardimage" :src="$page.unitCard.cardimage" fit="inside" />
-        </div>
-        <figcaption class="has-text-centered"><div class="is-size-6 is-size-7-mobile" v-html="$page.unitCard.cardimagecaption"></div></figcaption>
-        <section class="section">
-          <div class="tile is-ancestor">
-            <div class="tile is-vertical is-parent">
-              <div class="tile is-parent">
-                <!-- <div class="d-content tile is-child is-size-5" v-html="$page.vegetationCard.content"></div> -->
-                <TextWithRefsAndPhotos class="tile is-child box is-size-5 is-size-6-mobile"
-                  :text="$page.unitCard.content"
-                  :refs="$page.references.references"
-                  :photos="$page.unitCard.photos"
-                  :isContent="true" />
-                </TextWithRefsAndPhotos>
+        <div class="red-line">
+
+          <PageBanner
+            :banner="$page.unitCard.cardimage"
+            :caption="$page.unitCard.cardimagecaption"
+            lead="Unidades de paisaje"
+            link="/unidades"
+            :title="$page.unitCard.title"
+            />
+          </PageBanner>
+
+          <section class="section">
+            <div class="tile is-ancestor">
+              <div class="tile is-vertical is-parent">
+                <div class="tile is-parent">
+                  <!-- <div class="d-content tile is-child is-size-5" v-html="$page.vegetationCard.content"></div> -->
+                  <TextWithRefsAndPhotos class="tile is-child box is-size-5 is-size-6-mobile"
+                    :text="$page.unitCard.content"
+                    :refs="$page.references.references"
+                    :photos="$page.unitCard.photos"
+                    :isContent="true" />
+                  </TextWithRefsAndPhotos>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </div>
       </template>
 
 
@@ -91,6 +91,7 @@
 </page-query>
 
 <style lang="scss" scoped>
+  @import "~/assets/style/_variables";
 
   .current-item {
     font-style: italic;
@@ -100,6 +101,7 @@
 </style>
 
 <script>
+  import PageBanner from '~/components/PageBanner.vue'
   import TextWithRefsAndPhotos from '~/components/TextWithRefsAndPhotos.vue'
   import SideBar from '~/components/SideBar.vue'
 
@@ -110,6 +112,7 @@
     mounted () {
     },
     components: {
+      PageBanner,
       TextWithRefsAndPhotos,
       SideBar
     },

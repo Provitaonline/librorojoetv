@@ -1,6 +1,6 @@
 ---
 title: "Arbustales y herbazales parameros"
-cardimage: "./pancarta.jpg"
+cardimage: "./foto-1.jpg"
 cardimagecaption: "Páramo a 3.500 msnm cerca de Piedras Blancas, ruta de Torondoy hacia La Lagunita, estado Mérida. <i>Giuseppe Colonnello</i>"
 category: "vu"
 description: "Los arbustales y herbazales parameros son comunidades vegetales típicas de las zonas altoandinas por encima del límite de los bosques y el límite entre ambos depende de las condiciones locales de temperatura, la longitud de la estación seca y la masa relativa de las cadenas montañosas (Azócar & Fariñas 2003). Por ejemplo, para la cordillera de Mérida, Monasterio y Reyes (1980) reportan vegetación de páramo a 2.500 m. Por su parte, Azócar y Fariña (2003) definen el límite inferior de la formación en 3.000 m para las vertientes secas y 3.400 m para las húmedas. Es posible observar algunos parches reconocidos como vegetación paramoide a elevaciones menores que las señaladas para la cordillera de los Andes, tanto en las zonas más altas de la cordillera de la Costa como en el macizo de Chimantá, en Guayana (Huber & Alarcón 1988). Esta formación se desarrolla en ambientes microtérmicos (< 9°C) que pueden ser secos o húmedos dependiendo de la vertiente de la montaña donde se encuentren, es decir, si están en sombra de lluvia o no.<br><br>

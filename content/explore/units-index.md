@@ -1,6 +1,8 @@
 ---
 title: "Paisajes Vegetales de Venezuela"
-mapTitle: "Unidades de paisaje de Venezuela -  2010"
+mapTitle: "Unidades de paisaje<br>de Venezuela -  2010"
+banner: "./units-pancarta.jpg"
+bannerCaption: "Bosque de manglar, Parque Nacional Laguna de La Restinga, estado Nueva Esparta. <i>Román Rangel</i>"
 legendItems:
   - name: "A"
     label: "Región A. Costas e islas. Paisajes vegetales de las costas e islas"

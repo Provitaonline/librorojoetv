@@ -1,7 +1,7 @@
 ---
 title: "Bosques siempreverdes per se"
 formattedtitle: "Bosques siempreverdes <i>per se</i>"
-cardimage: "./pancarta.jpg"
+cardimage: "./foto-1.jpg"
 cardimagecaption: "Bosque siempreverde <i>per se</i>, Sierra de Perijá, estado Zulia. <i>Mariana Hernández-Montilla</i>"
 plantformation: "Bosques siempreverdes"
 category: "vu"

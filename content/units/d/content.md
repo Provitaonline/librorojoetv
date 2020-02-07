@@ -1,7 +1,7 @@
 ---
 region: d
 title: "Región D. Montañas"
-cardimage: "./pancarta.jpg"
+cardimage: "./foto-30.jpg"
 cardimagecaption: "Cordillera de los Andes, páramos andinos, estado Mérida. <i>David Southall</i>"
 photos:
 - photokey: "Foto 29"
