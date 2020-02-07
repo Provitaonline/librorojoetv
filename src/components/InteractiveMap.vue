@@ -1,9 +1,5 @@
 <template>
   <div>
-    <div id="mapSection" class="map-header map-title box">
-      <!-- <div class="is-size-3 is-size-4-mobile has-text-weight-bold has-text-centered" v-html="mapTitle"></div> -->
-      <div class="has-text-centered">[Haz clic en una de las áreas para ver la ficha de información]</div>
-    </div>
     <div style="height: 800px;">
       <ClientOnly>
         <l-map @leaflet:load="mapReady"
@@ -65,28 +61,35 @@
         </l-map>
       </ClientOnly>
     </div>
-    <div class="legend is-size-6 has-text-left">
+    <div class="legend-block is-size-6 has-text-left">
       <div class="columns">
-        <div v-for="i in numberOfLegendGroups" class="column">
-          <div v-for="item in columnItems(i)">
-            <div :id="makeId(item.name)" class="legend-box">
-              <div title="Clic para sólo ver esto en el mapa" v-if="item.legend === 'colorkey'" @click="legendClick(item)" class="legend-symbol"><span class="legend-item" :style="'background:' + item.color + ';'"></span></div>
-              <div title="Clic para sólo ver esto en el mapa" v-else-if="item.legend === 'dotkey'" @click="legendClick(item)" class="legend-symbol"><span class="dot" :style="'background:' + item.color + ';'"></span></div>
-              <div v-if="item.isIndented" @click="legendClick(item)" class="legend-symbol"><span class="legend-empty"></span></div>
-              <g-link title="Clic para ir a los detalles" :to="makeLink(item)"><span v-html="makeLabel(item)"></span></g-link>
+        <div class="column is-one-quarter">
+          <p class="is-size-5 has-text-weight-bold">Instrucciones</p>
+          <div v-for="instruction in mapInstructions" class="legend-box">
+            <g-image src="~/assets/svgs/map-instructions.svg"></g-image>
+            <span style="margin-top: 6px; margin-bottom: 6px; margin-left: 10px; margin-right: 10px;">{{instruction}}</span>
+          </div>
+        </div>
+        <div class="legend column columns">
+          <div v-for="i in numberOfLegendGroups" class="column">
+            <div v-for="item in columnItems(i)">
+              <div :id="makeId(item.name)" class="legend-box">
+                <div title="Clic para sólo ver esto en el mapa" v-if="item.legend === 'colorkey'" @click="legendClick(item)" class="legend-symbol"><span class="legend-item" :style="'background:' + item.color + ';'"></span></div>
+                <div title="Clic para sólo ver esto en el mapa" v-else-if="item.legend === 'dotkey'" @click="legendClick(item)" class="legend-symbol"><span class="dot" :style="'background:' + item.color + ';'"></span></div>
+                <div v-if="item.isIndented" @click="legendClick(item)" class="legend-symbol"><span class="legend-empty"></span></div>
+                <g-link title="Clic para ir a los detalles" :to="makeLink(item)"><span v-html="makeLabel(item)"></span></g-link>
+              </div>
             </div>
-          </div>
-          <div v-if="i === numberOfLegendGroups" style="display: flex;">
-            <div>&nbsp;</div>
-          </div>
-          <div v-if="i === numberOfLegendGroups" style="display: flex;">
-            <div title="Clic para ver todo en el mapa" @click="legendClick({name: 'all'})" class="legend-symbol"><span class="legend-item" :style="'background: #f8e7e8;'"></span></div>
-            <div> <font-awesome size="sm" :icon="['fas', 'arrow-left']"/><i> Clic para ver todas</i></div>
+            <div v-if="i === numberOfLegendGroups" style="display: flex;">
+              <div>&nbsp;</div>
+            </div>
+            <div v-if="i === numberOfLegendGroups" style="display: flex;">
+              <div title="Clic para ver todo en el mapa" @click="legendClick({name: 'all'})" class="legend-symbol"><span class="legend-item" :style="'background: #f8e7e8;'"></span></div>
+              <div> <font-awesome size="sm" :icon="['fas', 'arrow-left']"/><i> Clic para ver todas</i></div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="has-text-centered">[Haz clic en uno de los títulos de la leyenda para ver la ficha de información]</div>
-      <div class="has-text-centered">[Haz clic en uno de los elementos de color para ver sólo ese en el mapa]</div>
     </div>
   </div>
 </template>
@@ -98,13 +101,16 @@
 <style lang="scss" scoped>
 
   .legend {
-    padding: 14px;
-    border: 2px solid #BE1421;
+    border: 2px solid #626262;
+  }
+
+  .legend-block {
+    padding: 24px;
   }
 
   .legend-item {
-    height: 12px;
-    width: 20px;
+    height: 24px;
+    width: 38px;
     display: inline-block;
   }
 
@@ -131,8 +137,8 @@
   }
 
   .legend-empty {
-    height: 12px;
-    width: 20px;
+    height: 24px;
+    width: 38px;
     display: inline-block;
   }
 
@@ -142,8 +148,8 @@
   }
 
   .dot {
-    margin-left: 6px;
-    margin-right: 2px;
+    margin-left: 14px;
+    margin-right: 12px;
     height: 12px;
     width: 12px;
     background-color: black;
@@ -240,6 +246,7 @@
   import axios from 'axios'
   import slugify from 'slugify'
   import * as topojson from 'topojson-client'
+  import {mapInstructions} from '~/assets/js/siteConfig.js'
 
   //import bulmaSlider from 'bulma-slider/dist/js/bulma-slider.min.js'
 
@@ -431,6 +438,7 @@
     },
     created() {
       this.tileProviders[(this.initialTileProvider ? this.initialTileProvider : 0)].visible = true
+      this.mapInstructions = mapInstructions
     },
     mounted () {
       if (process.isClient) {
