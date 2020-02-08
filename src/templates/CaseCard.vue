@@ -26,15 +26,12 @@
             link="/casos"
             :title="$page.caseCard.title"
             :authors="$page.caseCard.authors"
-            heroBottom="12rem"
+            heroBottom="72px"
             />
           </PageBanner>
 
           <div class="columns section is-size-6 is-size-7-mobile" style="margin-bottom: -96px;">
-            <div class="column card-title">
-
-            </div>
-            <div class="column is-narrow">
+            <div class="column is-three-fifths is-offset-one-fifth">
               <div class="card summary-box" style="box-shadow: none; border-style: solid;">
                 <header class="card-header">
                   <p class="card-header-title">
@@ -175,8 +172,8 @@
 
   @media only screen and (min-width: 769px) {
     .summary-box {
-      margin-top: -12rem;
-      max-width: 450px;
+      margin-top: -99px;
+      /* max-width: 450px; */
     }
   }
 
