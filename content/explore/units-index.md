@@ -7,7 +7,6 @@ legendItems:
   - name: "A"
     label: "Región A. Costas e islas. Paisajes vegetales de las costas e islas"
     isHeading: true
-    isIndented: true
     group: 1
     cardPath: "a"
   - name: "A1"
@@ -24,7 +23,6 @@ legendItems:
     cardPath: "a"
   - name: "B"
     label: "Región B. Llanuras bajas. Paisajes vegetales de las llanuras bajas"
-    isIndented: true
     isHeading: true
     group: 1
     cardPath: "b"
@@ -109,7 +107,6 @@ legendItems:
   - name: "C"
     label: "Región C. Colinas. Paisajes vegetales de las colinas"
     isHeading: true
-    isIndented: true
     group: 1
     cardPath: "c"
   - name: "C1"
@@ -145,7 +142,6 @@ legendItems:
     cardPath: "c#c3"
   - name: "D"
     label: "Región D. Montañas. Paisajes vegetales de las montañas"
-    isIndented: true
     isHeading: true
     group: 2
     cardPath: "d"

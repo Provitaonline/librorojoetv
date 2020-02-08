@@ -18,23 +18,20 @@
       </template>
       <template v-slot:content>
         <div class="red-line">
-          <section class="hero is-small is-white">
-            <div class="hero-body">
-              <div class="container is-fullhd has-text-centered">
-                <g-link to="/casos" class="is-uppercase is-size-6">Estudios de caso</g-link>
-              </div>
-            </div>
-          </section>
-          <div>
-            <g-image v-if="$page.caseCard.cardimage" :src="$page.caseCard.cardimage" fit="inside" />
-          </div>
-          <figcaption style="padding-left: 12px;"><div class="is-size-6 is-size-7-mobile" v-html="$page.caseCard.cardimagecaption"></div></figcaption>
+          <PageBanner
+            :banner="$page.caseCard.cardimage"
+            bannerHeight="500px"
+            :caption="$page.caseCard.cardimagecaption"
+            lead="Estudios de caso"
+            link="/casos"
+            :title="$page.caseCard.title"
+            :authors="$page.caseCard.authors"
+            heroBottom="72px"
+            />
+          </PageBanner>
+
           <div class="columns section is-size-6 is-size-7-mobile" style="margin-bottom: -96px;">
-            <div class="column card-title">
-              <p class="title is-uppercase is-size-4-mobile">{{$page.caseCard.title}}</p>
-              <p>{{$page.caseCard.authors}}</p>
-            </div>
-            <div class="column is-narrow">
+            <div class="column is-three-fifths is-offset-one-fifth">
               <div class="card summary-box" style="box-shadow: none; border-style: solid;">
                 <header class="card-header">
                   <p class="card-header-title">
@@ -175,8 +172,8 @@
 
   @media only screen and (min-width: 769px) {
     .summary-box {
-      margin-top: -12rem;
-      max-width: 450px;
+      margin-top: -99px;
+      /* max-width: 450px; */
     }
   }
 
@@ -203,6 +200,7 @@
 
 <script>
   import {threatCategories} from '~/assets/js/siteConfig.js'
+  import PageBanner from '~/components/PageBanner.vue'
   import TextWithRefsAndPhotos from '~/components/TextWithRefsAndPhotos.vue'
   import SideBar from '~/components/SideBar.vue'
 
@@ -224,6 +222,7 @@
       next()
     },
     components: {
+      PageBanner,
       TextWithRefsAndPhotos,
       SideBar
     },

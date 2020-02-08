@@ -7,6 +7,7 @@
         <span class="is-size-4 is-size-5-mobile" v-else v-html="lead"></span>
         <p class="hero-text is-size-2 is-uppercase has-text-weight-bold is-size-4-mobile" v-html="title"></p>
         <p v-if="subtitle" class="hero-text is-size-4 is-size-6-mobile">{{subtitle}}</p>
+        <p v-if="authors" class="hero-text is-size-5 is-size-6-mobile">{{authors}}</p>
         <slot name="follow"></slot>
       </div>
     </section>
@@ -26,7 +27,7 @@
 
   .hero-body {
     position: absolute;
-    bottom: 0;
+    bottom: var(--hero-bottom);
     padding: 10px;
     padding-left: 40px;
     background: rgba(0, 0, 0, .2);
@@ -41,6 +42,9 @@
   @media screen and (max-width: 768px) {
     .hero-bg-img {
       height: var(--default-banner-height);
+    }
+    .hero-body {
+      bottom: 0;
     }
   }
 
@@ -65,18 +69,21 @@
     name: 'PageBanner',
     props: {
       banner: { type: Object, required: true },
-      caption: { type: String, required: true },
+      caption: { type: String, required: false },
       lead: { type: String, required: false },
       link: { type: String, required: false },
       title: { type: String, required: true },
       subtitle: {type: String, required: false},
-      bannerHeight: {type: String, required: false, default: defaultBannerHeight}
+      authors: {type: String, required: false},
+      bannerHeight: {type: String, required: false, default: defaultBannerHeight},
+      heroBottom: {type: String, required: false, default: '0'}
     },
     data() {
       return {
         cssVars: {
           '--banner-height': this.bannerHeight,
-          '--default-banner-height': defaultBannerHeight
+          '--default-banner-height': defaultBannerHeight,
+          '--hero-bottom': this.heroBottom
         }
       }
     }

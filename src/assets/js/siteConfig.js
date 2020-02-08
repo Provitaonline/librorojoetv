@@ -57,3 +57,9 @@ export const criteria = {
   C2: 'Área de ocupación estimada en ≤ 10 km² (CR), ≤ 500 km² (EN), o ≤ 2.000 km² (VU) con reducción persistente o severa observada, estimada, inferida o sospechada en distribución o en al menos un proceso ecológico fundamental; o una restricción del ecosistema a una localidad (CR), 5 o menos localidades (EN), o 10 o menos localidades (VU)',
   D: 'Distribución actual muy pequeña, con posibles amenazas serias, con o sin evidencia de reducciones pasadas (en distribución o en función ecológica), estimada en ≤ 5 km² (CR), ≤ 50 km² (EN), ≤ 100 km² (VU)'
 }
+
+export const mapInstructions = [
+  'Haz click en una de las áreas para ver la ficha de información',
+  'Haz clic en uno de los títulos de la leyenda para ver la ficha de información',
+  'Haz clic en uno de los elementos de color para ver sólo ese en el mapa'
+]
