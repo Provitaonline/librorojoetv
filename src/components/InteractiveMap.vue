@@ -116,9 +116,9 @@
 
   .legend-symbol {
     cursor: pointer;
-    box-sizing:
-    border-box;
+    box-sizing: border-box;
     padding-right: 10px;
+    padding-top: 2px;
   }
 
   .legend-item:hover, .dot:hover {
@@ -129,12 +129,6 @@
     display: flex;
     box-sizing: border-box;
     margin-bottom: 6px;
-  }
-
-  .legend-symbol-empty {
-    box-sizing:
-    border-box;
-    padding-right: 10px;
   }
 
   .legend-empty {
