@@ -6,6 +6,9 @@
       </template>
       <template v-slot:sidebar>
         <div class="box">
+
+          <CollapsibleList v-if="pathParent" :list="collapsibleList" />
+
           <div v-for="item, index in $page.vegetationCardsIndex.legendItems">
             <div>
               <hr style="margin: 0.2rem 0" v-if="isTitle(index)">
@@ -402,6 +405,7 @@
 
   import {threatCategories, criteria} from '~/assets/js/siteConfig.js'
   import PageBanner from '~/components/PageBanner.vue'
+  import CollapsibleList from '~/components/CollapsibleList.vue'
   import TextWithRefsAndPhotos from '~/components/TextWithRefsAndPhotos.vue'
   import SideBar from '~/components/SideBar.vue'
   import slugify from 'slugify'
@@ -451,6 +455,7 @@
     },
     components: {
       PageBanner,
+      CollapsibleList,
       VueCompareImage: () => import ('vue-compare-image').then(m => m),
       TextWithRefsAndPhotos,
       SideBar
@@ -485,6 +490,43 @@
           }
         }
         return false
+      }
+    },
+    computed: {
+      collapsibleList: function() {
+        let cl = []
+        let p = null
+        this.$page.vegetationCardsIndex.legendItems.forEach((item, index) => {
+          if (this.isTitle(index)) {
+            cl.push({
+              parentLabel: item.plantformation,
+              children: [
+                {
+                  childLabel: item.name,
+                  childLink: this.pathParent + '/' + this.getTargetSlug(item)
+                }
+              ]
+            })
+          } else {
+            if (item.plantformation) {
+              index = cl.findIndex((currentValue) => {
+                return currentValue.parentLabel === item.plantformation
+              })
+              if (index >=0) {
+                cl[index].children.push({
+                  childLabel: item.name,
+                  childLink: this.pathParent + '/' + this.getTargetSlug(item)
+                })
+              }
+            } else {
+              cl.push({
+                parentLabel: item.name,
+                parentLink: this.pathParent + '/' + this.getTargetSlug(item)
+              })
+            }
+          }
+        })
+        return cl
       }
     }
   }
