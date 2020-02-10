@@ -116,15 +116,29 @@ function processContent(text, photos, inlineFigs) {
     if (pIdx >= 0) {
       inlineFigs.push(item.trim())
       return `
-        <div id="` + slugify(item, {lower: true}) + `" class="inline-figure has-text-centered">
-          <br>
-          <figure style="padding: 2%;">
-            <g-image :src="photos[` + pIdx + `].photourl"></g-image>
-          </figure>
-          <figcaption style="max-width: 80%; margin: 0 auto;">
-            <div class="is-size-6 is-size-7-mobile" v-html="photos[` + pIdx + `].photocaption"></div>
-          </figcaption>
-          <br>
+        <a @click="photoClick" class='photo-link'>
+          <div id="` + slugify(item, {lower: true}) + `" class="inline-figure has-text-centered">
+            <br>
+            <figure style="padding: 2%;">
+              <g-image :src="photos[` + pIdx + `].photourl"></g-image>
+            </figure>
+            <figcaption style="max-width: 80%; margin: 0 auto;">
+              <div class="is-size-6 is-size-7-mobile" v-html="photos[` + pIdx + `].photocaption"></div>
+            </figcaption>
+            <br>
+          </div>
+        </a><div class="modal photo-modal">
+          <div @click="closePhotoModal" class="modal-background"></div>
+          <div class="modal-content has-text-centered">
+            <figure style="padding: 2%;">
+              <g-image style="max-height: calc(100vh - 120px); width: auto;" :src="photos[` + pIdx + `].photourl"></g-image>
+            </figure>
+            <figcaption class="has-text-centered">
+              <div class="is-size-6 is-size-7-mobile has-text-white" v-html="photos[` + pIdx + `].photocaption">
+              </div>
+            </figcaption>
+          </div>
+          <button @click="closePhotoModal" class="modal-close is-large" aria-label="close"></button>
         </div>
       `
     } else {
