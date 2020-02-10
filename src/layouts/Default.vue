@@ -112,6 +112,7 @@
   .logo:hover {
     fill: #990033;
     stroke-opacity: 0;
+    background-color: rgba(0, 0, 0, 0.05);
   }
 
   .footer {
