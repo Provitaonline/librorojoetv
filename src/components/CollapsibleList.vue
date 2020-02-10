@@ -9,7 +9,7 @@
         </button>
       </div>
       <b-collapse :open="isOpen[index]">
-        <div class="side-panel-item" style="margin-left: 16px;" v-for="(child, index) in parent.children" :key="index">
+        <div class="side-panel-item child" v-bind:class="{'child-indented': (child.isIndented)}" v-for="(child, index) in parent.children" :key="index">
           <g-link v-bind:class="{current: ($route.path === child.childLink)}" :to="child.childLink">{{child.childLabel}}</g-link>
         </div>
       </b-collapse>
@@ -21,6 +21,14 @@
 
   .current {
     font-style: italic;
+  }
+
+  .child {
+    margin-left: 16px;
+  }
+
+  .child-indented {
+    margin-left: 24px;
   }
 
 </style>
