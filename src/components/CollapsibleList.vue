@@ -67,9 +67,6 @@
     methods: {
       toggle: function(index) {
         this.isOpen[index] = !this.isOpen[index]
-      },
-      hasSeparator: function(index) {
-
       }
     },
     created() {
