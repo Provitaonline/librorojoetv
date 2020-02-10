@@ -6,14 +6,7 @@
       </template>
       <template v-slot:sidebar>
         <div class="box">
-          <div v-for="item, index in $page.casesIndex.legendItems">
-            <div>
-              <div class="side-panel-item-box side-panel-item">
-                <g-link v-if="item.cardPath != $route.path.replace(/\/$/, '').match(/\/[^\/]+$/)[0].substring(1)" :to="'/casos/' + item.cardPath">{{item.label}}</g-link>
-                <span v-else><b><i>{{item.label}}</i></b></span>
-              </div>
-            </div>
-          </div>
+          <CollapsibleList :list="collapsibleList" />
         </div>
       </template>
       <template v-slot:content>
@@ -201,6 +194,7 @@
 <script>
   import {threatCategories} from '~/assets/js/siteConfig.js'
   import PageBanner from '~/components/PageBanner.vue'
+  import CollapsibleList from '~/components/CollapsibleList.vue'
   import TextWithRefsAndPhotos from '~/components/TextWithRefsAndPhotos.vue'
   import SideBar from '~/components/SideBar.vue'
 
@@ -223,6 +217,7 @@
     },
     components: {
       PageBanner,
+      CollapsibleList,
       TextWithRefsAndPhotos,
       SideBar
     },
@@ -241,6 +236,18 @@
       },
       iconText: function(item) {
         return threatCategories[item] ? '' : item.replace(/\{.*?\}/, '')
+      }
+    },
+    computed: {
+      collapsibleList: function() {
+        let cl = []
+        this.$page.casesIndex.legendItems.forEach((item) => {
+          cl.push({
+            parentLabel: item.label,
+            parentLink: '/casos/c' + item.name
+          })
+        })
+        return cl
       }
     }
   }
