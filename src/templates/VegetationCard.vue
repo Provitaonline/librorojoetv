@@ -6,24 +6,7 @@
       </template>
       <template v-slot:sidebar>
         <div class="box">
-
           <CollapsibleList v-if="pathParent" :list="collapsibleList" :allOpen="true" />
-
-          <div v-for="item, index in $page.vegetationCardsIndex.legendItems">
-            <div>
-              <hr style="margin: 0.2rem 0" v-if="isTitle(index)">
-              <p class="side-panel-item-title" v-if="isTitle(index)">
-                <b>{{item.plantformation}}</b>
-              </p>
-              <hr style="margin: 0.2rem 0" v-if="!item.plantformation">
-              <div class="side-panel-item" v-bind:class="item.plantformation ? 'side-panel-item' : 'side-panel-item-title'">
-                <div v-bind:class="{'with-margin': item.plantformation}">
-                  <g-link v-bind:class="{'side-panel-item-title-link': !item.plantformation}" v-if="getTargetSlug(item) != currentSlug" :to="pathParent + '/' + getTargetSlug(item)">{{item.name}}</g-link>
-                  <span v-else><b><i>{{item.name}}</i></b></span>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </template>
       <template v-slot:content>
