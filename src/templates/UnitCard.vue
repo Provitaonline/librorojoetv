@@ -71,6 +71,7 @@
         name
         isHeading
         isIndented
+        hasSeparator
         label
         group
         color
@@ -130,7 +131,8 @@
             cl[pIdx].children.push({
               childLabel: item.label,
               childLink: '/unidades/' + item.cardPath,
-              isIndented: item.name.length > 2
+              isIndented: item.name.length > 2,
+              hasSeparator: item.hasSeparator
             })
           }
         })
