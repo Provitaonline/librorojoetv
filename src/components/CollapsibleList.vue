@@ -2,7 +2,7 @@
   <div>
     <div v-for="(parent, index) in list" :key="index">
       <div class="side-panel-item" style="display: flex; align-items: center; justify-content: space-between;">
-        <g-link v-bind:class="{current: ($route.path === parent.parentLink)}" v-if="parent.parentLink" :to="parent.parentLink">{{parent.parentLabel}}</g-link>
+        <g-link v-bind:class="{current: ($route.path === parent.parentLink)}" v-if="parent.parentLink" :to="parent.parentLink"><span v-html="parent.parentLabel"></span></g-link>
         <div v-else>{{parent.parentLabel}}</div>
         <button class="button is-white" v-if="parent.children" @click="toggle(index)">
           <font-awesome size="lg" :icon="['fas', !isOpen[index] ? 'angle-down' : 'angle-up']" />
@@ -10,7 +10,7 @@
       </div>
       <b-collapse :open="isOpen[index]">
         <div class="side-panel-item child" v-bind:class="{'child-indented': (child.isIndented)}" v-for="(child, index) in parent.children" :key="index">
-          <g-link v-bind:class="{current: ($route.path === child.childLink)}" :to="child.childLink">{{child.childLabel}}</g-link>
+          <g-link v-bind:class="{current: ($route.path === child.childLink)}" :to="child.childLink"><span v-html="child.childLabel"></span></g-link>
         </div>
       </b-collapse>
     </div>
