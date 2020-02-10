@@ -474,7 +474,7 @@
         }
       },
       makeLabel(t) {
-        let label = t.label ? t.label : t.name
+        let label = (t.label ? t.label : t.name).replace(/<\/?[^>]+(>|$)/g, '')
         if (t.isHeading) label = '<span class="legend-heading">' + label + '</span>'
         return label
       },
