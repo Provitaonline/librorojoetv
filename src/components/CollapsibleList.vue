@@ -1,7 +1,9 @@
 <template>
   <div>
     <div v-for="(parent, index) in list" :key="index">
-      <div class="side-panel-item" style="display: flex; align-items: center; justify-content: space-between;">
+      <div class="side-panel-item"
+            v-bind:class="{'red-separator': (parent.children), 'top-line': (!index)}"
+            style="display: flex; align-items: center; justify-content: space-between;">
         <g-link v-bind:class="{current: ($route.path === parent.parentLink)}" v-if="parent.parentLink" :to="parent.parentLink"><span v-html="parent.parentLabel"></span></g-link>
         <div v-else>{{parent.parentLabel}}</div>
         <button class="button is-white" v-if="parent.children" @click="toggle(index)">
@@ -9,7 +11,10 @@
         </button>
       </div>
       <b-collapse :open="isOpen[index]">
-        <div class="side-panel-item child" v-bind:class="{'child-indented': (child.isIndented)}" v-for="(child, index) in parent.children" :key="index">
+        <div
+          class="side-panel-item child"
+          v-bind:class="{'child-indented': (child.isIndented), 'gray-separator': (child.hasSeparator)}"
+          v-for="(child, index) in parent.children" :key="index">
           <g-link v-bind:class="{current: ($route.path === child.childLink)}" :to="child.childLink"><span v-html="child.childLabel"></span></g-link>
         </div>
       </b-collapse>
@@ -18,6 +23,7 @@
 </template>
 
 <style lang="scss" scoped>
+  @import "~/assets/style/_variables";
 
   .current {
     font-style: italic;
@@ -29,6 +35,18 @@
 
   .child-indented {
     margin-left: 24px;
+  }
+
+  .red-separator {
+    border-bottom: 2px solid $primary
+  }
+
+  .gray-separator {
+    border-bottom: 1px solid #dddddd
+  }
+
+  .top-line {
+    border-top: 2px solid #dddddd
   }
 
 </style>
@@ -49,6 +67,9 @@
     methods: {
       toggle: function(index) {
         this.isOpen[index] = !this.isOpen[index]
+      },
+      hasSeparator: function(index) {
+
       }
     },
     created() {
