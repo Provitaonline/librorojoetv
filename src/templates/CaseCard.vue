@@ -221,11 +221,6 @@
       TextWithRefsAndPhotos,
       SideBar
     },
-    computed: {
-      sortedReferences: function() {
-        return this.$page.caseCard.case.references.sort((a, b) => a.reference.localeCompare(b.reference))
-      }
-    },
     methods: {
       xtractedIcon: function(item) {
         let iconKey = item
@@ -239,6 +234,9 @@
       }
     },
     computed: {
+      sortedReferences: function() {
+        return this.$page.caseCard.case.references.sort((a, b) => a.reference.localeCompare(b.reference))
+      },
       collapsibleList: function() {
         let cl = []
         this.$page.casesIndex.legendItems.forEach((item) => {
