@@ -21,6 +21,7 @@ legendItems:
     color: "#f4ec18"
     legend: "colorkey"
     cardPath: "a"
+    hasSeparator: true
   - name: "B"
     label: "<b>Región B. Llanuras bajas.</b> <br>Paisajes vegetales de las llanuras bajas"
     isHeading: true
@@ -32,6 +33,7 @@ legendItems:
     color: "#218942"
     legend: "colorkey"
     cardPath: "b#b1"
+    hasSeparator: true
   - name: "B2"
     label: "<b>Subregión B.2.</b> <br>Llanos"
     isIndented: true
@@ -86,24 +88,28 @@ legendItems:
     color: "#cde07a"
     legend: "colorkey"
     cardPath: "b#b27"
+    hasSeparator: true
   - name: "B3"
     label: "<b>Subregión B.3. Planicie deltaica del río Orinoco y cenagosa costera del río San Juan"
     group: 1
     color: "#93cb6d"
     legend: "colorkey"
     cardPath: "b#b3"
+    hasSeparator: true
   - name: "B4"
     label: "<b>Subregión B.4.</b> <br>Penillanura de los ríos Caura y Paragua"
     group: 1
     color: "#737531"
     legend: "colorkey"
     cardPath: "b#b4"
+    hasSeparator: true
   - name: "B5"
     group: 1
     label: "<b>Subregión B.5.</b> <br>Penillanura del río Casiquiare, Alto Orinoco"
     color: "#a9aa37"
     legend: "colorkey"
     cardPath: "b#b5"
+    hasSeparator: true
   - name: "C"
     label: "<b>Región C. Colinas.</b> <br>Paisajes vegetales de las colinas"
     isHeading: true
@@ -115,6 +121,7 @@ legendItems:
     color: "#feecd1"
     legend: "colorkey"
     cardPath: "c#c1"
+    hasSeparator: true
   - name: "C2"
     label: "<b>Subregión C.2.</b> <br>Sistema de colinas y sierras bajas piemontanas del Escudo Guayanés"
     isIndented: true
@@ -134,12 +141,14 @@ legendItems:
     color: "#fca91c"
     legend: "colorkey"
     cardPath: "c#c22"
+    hasSeparator: true
   - name: "C3"
     label: "<b>Subregión C.3.</b> <br>Sistema de sierras bajas y colinas Imataca-Cuyuní del Escudo Guayanés nororiental"
     group: 1
     color: "#a77129"
     legend: "colorkey"
     cardPath: "c#c3"
+    hasSeparator: true
   - name: "D"
     label: "<b>Región D. Montañas.</b> <br>Paisajes vegetales de las montañas"
     isHeading: true
@@ -151,18 +160,21 @@ legendItems:
     color: "#9d81bb"
     legend: "colorkey"
     cardPath: "d#d1"
+    hasSeparator: true
   - name: "D2"
     label: "<b>Subregión D.2.</b> <br>Cordillera de los Andes"
     group: 2
     color: "#2d56a7"
     legend: "colorkey"
     cardPath: "d#d2"
+    hasSeparator: true
   - name: "D3"
     label: "<b>Subregión D.3.</b> <br>Sierra de San Luis y Cerro Santa Ana"
     group: 2
     color: "#3b62ad"
     legend: "colorkey"
     cardPath: "d#d3"
+    hasSeparator: true
   - name: "D4"
     label: "<b>Subregión D.4.</b> <br>Cordillera de la Costa Central"
     group: 2
@@ -189,6 +201,7 @@ legendItems:
     color: "#c0d0eb"
     legend: "colorkey"
     cardPath: "d#d43"
+    hasSeparator: true
   - name: "D5"
     label: "<b>Subregión D.5.</b> <br>Cordillera de la Costa Oriental"
     isIndented: true
@@ -208,12 +221,14 @@ legendItems:
     color: "#669acf"
     legend: "colorkey"
     cardPath: "d#d52"
+    hasSeparator: true
   - name: "D6"
     label: "<b>Subregión D.6.</b> <br>Cerro Copey, Isla de Margarita"
     group: 2
     color: "#9fbdda"
     legend: "colorkey"
     cardPath: "d#d6"
+    hasSeparator: true
   - name: "D7"
     label: "<b>Subregión D.7.</b> <br>Macizo Guayanés"
     isIndented: true
