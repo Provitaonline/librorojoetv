@@ -1,18 +1,19 @@
 <template>
   <div>
     <div v-for="(parent, index) in list" :key="index">
-      <b-collapse :open="false">
-        <div style="display: flex; justify-content: space-between;" slot="trigger" slot-scope="props">
-          <g-link v-bind:class="{current: ($route.path === parent.parentLink)}" v-if="parent.parentLink" :to="parent.parentLink">{{parent.parentLabel}}</g-link>
-          <div v-else>{{parent.parentLabel}}</div>
-          <div v-if="parent.children"><font-awesome size="lg" :icon="['fas', !props.open ? 'angle-down' : 'angle-up']" /></div>
-        </div>
-        <div style="margin-left: 16px;" v-for="(child, index) in parent.children" :key="index">
+      <div class="side-panel-item" style="display: flex; align-items: center; justify-content: space-between;">
+        <g-link v-bind:class="{current: ($route.path === parent.parentLink)}" v-if="parent.parentLink" :to="parent.parentLink">{{parent.parentLabel}}</g-link>
+        <div v-else>{{parent.parentLabel}}</div>
+        <button class="button is-white" v-if="parent.children" @click="toggle(index)">
+          <font-awesome size="lg" :icon="['fas', !isOpen[index] ? 'angle-down' : 'angle-up']" />
+        </button>
+      </div>
+      <b-collapse :open="isOpen[index]">
+        <div class="side-panel-item" style="margin-left: 16px;" v-for="(child, index) in parent.children" :key="index">
           <g-link v-bind:class="{current: ($route.path === child.childLink)}" :to="child.childLink">{{child.childLabel}}</g-link>
         </div>
       </b-collapse>
     </div>
-    {{$route.path}}
   </div>
 </template>
 
@@ -29,7 +30,25 @@
   export default {
     name: 'CollapsibleList',
     props: {
-      list: {type: Array, required: true}
+      list: {type: Array, required: true},
+      allOpen: {type: Boolean, required: false, default: false}
+    },
+    data() {
+      return {
+          isOpen: {}
+      }
+    },
+    methods: {
+      toggle: function(index) {
+        this.isOpen[index] = !this.isOpen[index]
+      }
+    },
+    created() {
+      this.list.forEach((item, index) => {
+        if (item.children) {
+          this.$set(this.isOpen, index, this.allOpen) // Make properties reactive
+        }
+      })
     }
   }
 

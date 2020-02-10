@@ -7,7 +7,7 @@
       <template v-slot:sidebar>
         <div class="box">
 
-          <CollapsibleList v-if="pathParent" :list="collapsibleList" />
+          <CollapsibleList v-if="pathParent" :list="collapsibleList" :allOpen="true" />
 
           <div v-for="item, index in $page.vegetationCardsIndex.legendItems">
             <div>
