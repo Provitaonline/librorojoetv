@@ -57,7 +57,7 @@
       }
       content
     }
-    references: references (id: "intro") {
+    references: references (id: "acerca-de") {
       references {
         referencekey
         reference

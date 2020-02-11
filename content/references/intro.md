@@ -1,5 +1,5 @@
 ---
-id: intro
+id: acerca-de
 title: Introducción
 references:
 - referencekey: Baillie et al, 2004

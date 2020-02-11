@@ -1,6 +1,6 @@
 ---
 id: clasificacion
-method: class
+method: clasificacion
 title: "Clasificación del riesgo<br>de colapso de ecosistemas<br>terrestres"
 cardimage: "./pancarta-class.jpg"
 cardimagecaption: "Atardecer en el Llano, estado Apure. <i>Rebecca Miller</i>"
