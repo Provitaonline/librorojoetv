@@ -11,35 +11,48 @@
         </div>
       </section>
 
-      <section class="section">
-        <div class="box is-size-3 is-size-4-mobile has-text-weight-bold has-text-centered">Explora</div>
+      <section class="section" style="max-width: 1200px; margin: 0 auto;">
         <div class="tile is-ancestor">
           <div class="tile">
-            <div v-for="item in $page.homeData.indexCards" class="tile is-parent">
-              <div class="card tile is-child">
-                <header class="card-header">
-                  <p class="card-header-title is-centered">
-                    <g-link :to="item.link">{{item.title}}</g-link>
-                  </p>
-                </header>
-                <div class="card-image">
-                  <figure style="border-top: 1px solid rgba(20, 20, 20, 0.1); border-bottom: 1px solid rgba(20, 20, 20, 0.1);" class="image is-4by3">
-                    <g-link :to="item.link"><g-image class="img-hover-effect" :src="item.image"/></g-link>
-                  </figure>
-                </div>
-                <div class="card-content">
-                  <div class="content has-text-centered">
-                    {{item.text}}
-                    <br>
+            <div v-for="item in $page.homeData.indexCards" class="tile is-parent" style="flex-direction: column;">
+              <div class="menu-card">
+                <g-link :to="item.link">
+                  <div class="card tile is-child">
+                    <div class="card-image" style="padding: 20px;">
+                      <figure class="image is-4by3">
+                        <g-image class="img-hover-effect" :src="item.image"/>
+                      </figure>
+                    </div>
+                    <div class="card-content has-text-centered">
+                      <div class="content">
+                        <div class="box is-size-4 is-size-5-mobile has-text-weight-bold explore-title">{{item.title}}</div>
+                        {{item.text}}
+                        <br><br>
+                      </div>
+                    </div>
                   </div>
-                </div>
+                  <div style="display: flex; justify-content: center;" >
+                    <button class="button is-primary">Explorar</button>
+                  </div>
+                </g-link>
               </div>
             </div>
           </div>
         </div>
-        <div class="container has-text-centered">
-          <hr>
-          <a href="/files/libro_rojo_ecosistemas_terrestre.pdf" download><p><font-awesome :icon="['fas', 'arrow-down']" /> Descarga el documento PDF (63 MB)</p></a>
+      </section>
+
+      <section class="hero">
+        <g-image class="hero-bg-img" src="~/assets/images/download-background.jpg"/>
+
+        <div class="hero-body has-text-centered">
+
+          <div style="max-width: 450px;" class="container">
+            <a href="/files/libro_rojo_ecosistemas_terrestre.pdf" download>
+              <p class="download-text is-size-6 is-size-7-mobile">Descarga el documento PDF (63 MB)&nbsp;&nbsp;
+                <span class="is-size-3">&#10515;</span>
+              </p>
+            </a>
+          </div>
         </div>
       </section>
 
@@ -63,6 +76,8 @@
 </page-query>
 
 <style lang="scss" scoped>
+
+  @import "~/assets/style/_variables";
 
   .hero {
     background-size: cover !important;
@@ -95,31 +110,41 @@
       1px 1px 0 black;*/
   }
 
-  .explore {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    color: white;
-    transform: translate(-50%, 0);
-  }
-
-  .explore:hover {
-    color: #BE1421;
-  }
-
-  .card-header-title {
-    background-color: #f8e7e8;
-  }
-
   .img-hover-effect {
     transition: all ease 0.2s;
     //filter: grayscale(90%);
-    opacity: 0.9;
+    opacity: 0.8;
   }
 
   .img-hover-effect:hover {
     //filter: grayscale(0%);
     opacity: 1;
+  }
+
+  .card {
+    box-shadow: none;
+  }
+
+  .menu-card:hover {
+    box-shadow: 0 2px 44px 0 rgba(0, 0, 0, 0.14);
+  }
+
+  .menu-card {
+    box-shadow: none;
+  }
+
+  .explore-title {
+    color: $primary;
+  }
+
+  .download-text {
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    border: solid 2px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
 </style>
