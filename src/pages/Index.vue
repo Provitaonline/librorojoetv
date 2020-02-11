@@ -1,13 +1,10 @@
 <template>
   <Layout>
     <div class="page-wrapper red-line">
-      <section class="hero is-large">
+      <section class="hero">
         <g-image class="hero-bg-img" src="~/assets/images/home-hero-image.jpg"/>
         <div class="hero-body">
-          <div style="max-width: 80%;" class="container is-fullhd">
-            <h1 class="hero-text title is-uppercase is-size-2 is-size-4-mobile" v-html="$page.homeData.heroTitle" />
-          </div>
-
+          <g-image src="~/assets/svgs/librorojo-banner.svg"/>
         </div>
       </section>
 
@@ -18,7 +15,7 @@
 
                 <g-link :to="item.link">
                   <div class="card tile is-child menu-card">
-                    <div class="card-image" style="padding: 20px;">
+                    <div class="card-image">
                       <figure class="image is-4by3">
                         <g-image class="img-hover-effect" :src="item.image"/>
                       </figure>
@@ -42,11 +39,11 @@
       </section>
 
       <section class="hero">
-        <g-image class="hero-bg-img" src="~/assets/images/download-background.jpg"/>
+        <g-image class="bottom-bg-img" src="~/assets/images/download-background.jpg"/>
 
-        <div class="hero-body has-text-centered">
+        <div class="bottom-body has-text-centered">
 
-          <div style="max-width: 450px;" class="container">
+          <div class="container">
             <a href="/files/libro_rojo_ecosistemas_terrestre.pdf" download>
               <p class="download-text is-size-6 is-size-7-mobile">Descarga el documento PDF (63 MB)&nbsp;&nbsp;
                 <span class="is-size-3">&#10515;</span>
@@ -88,15 +85,50 @@
   }
 
   .hero-body {
-    padding-bottom: 2rem !important;
+    position: absolute;
+    width: 300px;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    padding: 10px;
   }
 
   .hero-bg-img {
-    position: absolute;
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .bottom-bg-img {
     object-fit: cover;
     width: 100%;
-    height: 100%;
+    height: 200px;
     /* opacity: 0.8; */
+  }
+
+  .bottom-body {
+    position: absolute;
+    width: 400px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .hero-bg-img {
+      height: 200px;
+    }
+    .hero-body {
+      bottom: 0;
+    }
+    .bottom-body {
+      width: 320px;
+    }
+  }
+
+  .button {
+    border-radius: 0px;
   }
 
   .hero-text {
@@ -129,6 +161,10 @@
     height: 280px;
   }
 
+  .card-image {
+    padding: 10%;
+  }
+
   .menu-card:hover {
     box-shadow: 0 2px 44px 0 rgba(0, 0, 0, 0.14);
   }
@@ -149,7 +185,11 @@
 
   .download-text {
     color: white;
-    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+
     /* border-radius: 10px; */
     border: solid 2px white;
     display: flex;
