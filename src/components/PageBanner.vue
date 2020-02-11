@@ -58,7 +58,7 @@
   }
 
   .hero-link:hover {
-    color: $primary;
+    text-decoration: underline;
   }
 </style>
 
