@@ -1,6 +1,7 @@
 ---
 id: unidades
 title: Paisajes vegetales de Venezuela
+banner: "./units-ref-banner.jpg"
 references:
 - referencekey: Andressen 2007
   reference: >
