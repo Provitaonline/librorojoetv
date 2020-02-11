@@ -54,7 +54,7 @@
           </l-marker>
 
           <l-control position="topright" >
-            <div class="map-info is-size-4 is-size-7-mobile"><div>{{mapLabel}}</div></div>
+            <div class="map-info is-size-4 is-size-7-mobile"><div v-html="mapLabel"></div></div>
           </l-control>
 
           <b-loading :is-full-page="false" :active.sync="isLoading"></b-loading>
@@ -474,7 +474,7 @@
         }
       },
       makeLabel(t) {
-        let label = t.label ? t.label : t.name
+        let label = (t.label ? t.label : t.name).replace(/<\/?[^>]+(>|$)/g, '')
         if (t.isHeading) label = '<span class="legend-heading">' + label + '</span>'
         return label
       },

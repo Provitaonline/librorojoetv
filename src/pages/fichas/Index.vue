@@ -19,34 +19,39 @@
       </InteractiveMap>
       </section>
 
-      <section class="section">
+      <section class="section" style="max-width: 1000px; margin: 0 auto;">
         <br>
-        <div class="section-header box is-size-3 is-size-4-mobile has-text-weight-bold has-text-centered">Lista alfabética de fichas</div>
-        <div class="columns">
-          <div class="column is-four-fifths is-offset-one-fifth is-size-5 is-size-6-mobile">
-            <div v-for="item in $page.vcards.edges" class="media">
-              <figure class="media-left is-hidden-mobile">
-                <g-link :to="'/fichas/' + makeLink(item.node.title)"><g-image :src="item.node.cardimage"></g-image></g-link>
-              </figure>
-              <div>
-                <div style="display: flex;">
-                  <b-tooltip :label="$options.threatCategories[item.node.category].text" position="is-top" type="is-warning">
-                    <div class="iconInTable">
-                      <img :src="$options.threatCategories[item.node.category].img"></img>
+        <div class="section-header box is-size-3 is-size-4-mobile has-text-weight-bold">Lista alfabética de fichas</div>
+
+        <div class="tile box is-ancestor is-size-6 is-size-7-mobile">
+          <div class="tile is-parent" style="flex-wrap: wrap;">
+            <div v-for="item in $page.vcards.edges" class="tile is-child is-6">
+              <div class="vcard-frame">
+                <div class="media">
+                  <figure class="media-left is-hidden-mobile">
+                    <g-link :to="'/fichas/' + makeLink(item.node.title)"><g-image :src="item.node.cardimage"></g-image></g-link>
+                  </figure>
+                  <div>
+                    <div style="display: flex;">
+                      <b-tooltip :label="$options.threatCategories[item.node.category].text" position="is-top" type="is-warning">
+                        <div class="iconInTable">
+                          <img :src="$options.threatCategories[item.node.category].img"></img>
+                        </div>
+                      </b-tooltip>
+                      &nbsp;&nbsp;<g-link :to="'/fichas/' + makeLink(item.node.title)"><strong v-html="item.node.title"></strong></g-link>
                     </div>
-                  </b-tooltip>
-                  &nbsp;&nbsp;<g-link :to="'/fichas/' + makeLink(item.node.title)"><strong v-html="item.node.title"></strong></g-link>
-                </div>
-                <div v-if="item.node.areain2010">
-                  <span style="display: inline-block; width: 35px;"></span>
-                  {{item.node.areain1988 | number}} km<sup>2</sup> en 1988<br>
-                  <span style="display: inline-block; width: 35px;"></span>
-                  {{item.node.areain2010 | number}} km<sup>2</sup> en 2010<br>
+                    <div is-size-7 style="margin-left: 38px;" v-if="item.node.areain2010">
+                      {{item.node.areain1988 | number}} km<sup>2</sup> en 1988<br>
+                      <hr class="skinny">
+                      {{item.node.areain2010 | number}} km<sup>2</sup> en 2010<br>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
         <div class="container is-size-4 has-text-centered">
           <hr>
           <g-link to="/bibliografia/fichas"><p>Bibliografía <small><font-awesome size="xs" :icon="['fas', 'link']"/></small></p></g-link>
@@ -98,6 +103,18 @@
   .iconInTable {
     width: 30px;
     height: 30px;
+  }
+
+  .vcard-frame {
+    height: calc(100% - 20px);
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid lightgray;
+  }
+
+  .skinny {
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 
 </style>

@@ -6,16 +6,7 @@
       </template>
       <template v-slot:sidebar>
         <div class="box">
-          <div v-for="item, index in $page.unitCardsIndex.legendItems">
-            <div>
-              <div class="side-panel-item-box side-panel-item">
-                <span>{{'&nbsp;&nbsp;'.repeat(item.name.length-1)}}</span>
-                <!-- <g-link v-if="getTargetSlug(item) != currentSlug" :to="pathParent + '/' + getTargetSlug(item)">{{item.name}}</g-link> -->
-                <g-link :to="'/unidades/' + item.cardPath" :class="(isCurrentItem(item)) ? '' : 'current-item'">{{item.label}}</g-link>
-                <br>
-              </div>
-            </div>
-          </div>
+          <CollapsibleList :list="collapsibleList" />
         </div>
       </template>
 
@@ -80,6 +71,7 @@
         name
         isHeading
         isIndented
+        hasSeparator
         label
         group
         color
@@ -102,6 +94,7 @@
 
 <script>
   import PageBanner from '~/components/PageBanner.vue'
+  import CollapsibleList from '~/components/CollapsibleList.vue'
   import TextWithRefsAndPhotos from '~/components/TextWithRefsAndPhotos.vue'
   import SideBar from '~/components/SideBar.vue'
 
@@ -113,12 +106,37 @@
     },
     components: {
       PageBanner,
+      CollapsibleList,
       TextWithRefsAndPhotos,
       SideBar
     },
     methods: {
       isCurrentItem: function(item) {
         return item.cardPath != this.$route.path.replace(/\/$/, '').match(/\/[^\/]+$/)[0].substring(1) + this.$route.hash
+      }
+    },
+    computed: {
+      collapsibleList: function() {
+        let cl = []
+        let pIdx = -1
+        this.$page.unitCardsIndex.legendItems.forEach((item, index) => {
+          if (item.isHeading) {
+            pIdx++
+            cl.push({
+              parentLabel: item.label,
+              parentLink: '/unidades/' + item.cardPath,
+              children: []
+            })
+          } else {
+            cl[pIdx].children.push({
+              childLabel: item.label,
+              childLink: '/unidades/' + item.cardPath,
+              isIndented: item.name.length > 2,
+              hasSeparator: item.hasSeparator
+            })
+          }
+        })
+        return cl
       }
     }
   }
