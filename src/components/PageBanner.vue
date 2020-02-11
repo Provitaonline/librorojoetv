@@ -1,7 +1,8 @@
 <template>
   <div>
     <section class="hero" :style="cssVars">
-      <g-image class="hero-bg-img" :src="banner" />
+      <g-image v-if="banner" class="hero-bg-img" :src="banner" />
+      <g-image v-else class="hero-bg-img" src="~/assets/images/default-banner.jpg" />
       <div class="hero-body">
         <g-link v-if="link" :to="link" class="hero-link is-size-4 is-size-5-mobile"><span v-html="lead"></span></g-link>
         <span class="is-size-4 is-size-5-mobile" v-else v-html="lead"></span>
@@ -64,11 +65,12 @@
 
 <script>
   const defaultBannerHeight = '300px'
+  let defaultBanner = require('~/assets/images/default-banner.jpg')
 
   export default {
     name: 'PageBanner',
     props: {
-      banner: { type: Object, required: true },
+      banner: { type: Object, required: false },
       caption: { type: String, required: false },
       lead: { type: String, required: false },
       link: { type: String, required: false },
