@@ -1,14 +1,15 @@
 <template>
   <Layout>
-    <div class="page-wrapper">
-      <section class="hero is-small is-white">
-        <div class="hero-body">
-          <div class="has-text-centered">
-            <h1 class="title is-uppercase"><g-link :to="'/' + linkToParent"><span v-html="$page.references.title"></span></g-link></h1>
-            <h2 class="title">Bibliografía</h2>
-          </div>
-        </div>
-      </section>
+    <div class="page-wrapper red-line">
+
+      <PageBanner
+        :banner="$page.references.banner"
+        :lead="$page.references.title"
+        :link="'/' + linkToParent"
+        title="Bibliografía"
+        />
+      </PageBanner>
+
       <div class="section is-size-6 is-size-7-mobile">
         <table class="table">
           <tbody>
@@ -28,6 +29,7 @@
       id
       parent
       title
+      banner
       references {
         referencekey
         reference
@@ -43,6 +45,8 @@
 </style>
 
 <script>
+  import PageBanner from '~/components/PageBanner.vue'
+
   export default {
     metaInfo: {
       title: 'Bibliografía'
@@ -50,6 +54,9 @@
     data() {
       return {
       }
+    },
+    components: {
+      PageBanner
     },
     computed: {
       sortedReferences: function() {
