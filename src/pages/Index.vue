@@ -15,9 +15,9 @@
         <div class="tile is-ancestor">
           <div class="tile">
             <div v-for="item in $page.homeData.indexCards" class="tile is-parent" style="flex-direction: column;">
-              <div class="menu-card">
+
                 <g-link :to="item.link">
-                  <div class="card tile is-child">
+                  <div class="card tile is-child menu-card">
                     <div class="card-image" style="padding: 20px;">
                       <figure class="image is-4by3">
                         <g-image class="img-hover-effect" :src="item.image"/>
@@ -30,12 +30,12 @@
                         <br><br>
                       </div>
                     </div>
-                  </div>
-                  <div style="display: flex; justify-content: center;" >
-                    <button class="button is-primary">Explorar</button>
+                    <div class="menu-card-button" >
+                      <button class="button is-primary">Explorar</button>
+                    </div>
                   </div>
                 </g-link>
-              </div>
+
             </div>
           </div>
         </div>
@@ -125,12 +125,22 @@
     box-shadow: none;
   }
 
+  .card-content {
+    height: 280px;
+  }
+
   .menu-card:hover {
     box-shadow: 0 2px 44px 0 rgba(0, 0, 0, 0.14);
   }
 
   .menu-card {
     box-shadow: none;
+  }
+
+  .menu-card-button {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
   }
 
   .explore-title {
@@ -140,7 +150,7 @@
   .download-text {
     color: white;
     padding: 5px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     border: solid 2px white;
     display: flex;
     justify-content: center;
