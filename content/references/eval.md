@@ -1,5 +1,6 @@
 ---
-id: eval
+id: evaluacion
+parent: metodos
 title: Método para la evaluación del riesgo de colapso<br> de los ecosistemas terrestres de Venezuela
 references:
 - referencekey: Bevilacqua et al. 2006

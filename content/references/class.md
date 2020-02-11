@@ -1,6 +1,6 @@
 ---
-id: class
-parent: methods
+id: clasificacion
+parent: metodos
 title: Clasificación del riesgo de colapso de ecosistemas terrestres
 references:
 - referencekey: Baillie et al. 2004

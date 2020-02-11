@@ -3,19 +3,19 @@ id: home
 title: 'Página principal, acerca de y contacto'
 heroTitle: Libro rojo de los ecosistemas terrestres de Venezuela
 indexCards:
-  - image: ./riesgo.png
+  - image: ./riesgo.svg
     link: /fichas/
     text: >-
       Cambios temporales en distribución geográfica y riesgos de colapso a
       nivel nacional y estadal.
     title: Riesgo de colapso
-  - image: ./casos.png
+  - image: ./casos.svg
     link: /casos/
     text: >-
       Aplicación de las categorías y criterios de las listas rojas de
       ecosistemas a diferentes escalas geográficas.
     title: Estudios de caso
-  - image: ./unidades.png
+  - image: ./unidades.svg
     link: /unidades/
     text: >-
       Clasificación, descripción y distribución geográfica de los principales
