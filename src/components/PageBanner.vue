@@ -40,7 +40,7 @@
     object-fit: cover;
   }
 
-  @media screen and (max-width: 1330px) {
+  @media screen and (max-width: 1330px) { /* This needs to be dynamic based on side panel */
     .hero-body {
       left: 0;
     }
