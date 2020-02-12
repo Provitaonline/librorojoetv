@@ -3,13 +3,15 @@
     <section class="hero" :style="cssVars">
       <g-image v-if="banner" class="hero-bg-img" :src="banner" />
       <g-image v-else class="hero-bg-img" src="~/assets/images/default-banner.jpg" />
-      <div class="hero-body">
-        <g-link v-if="link" :to="link" class="hero-link is-size-4 is-size-5-mobile"><span v-html="lead"></span></g-link>
-        <span class="is-size-4 is-size-5-mobile" v-else v-html="lead"></span>
-        <p class="hero-text is-size-2 is-uppercase has-text-weight-bold is-size-4-mobile" v-html="title"></p>
-        <p v-if="subtitle" class="hero-text is-size-4 is-size-6-mobile">{{subtitle}}</p>
-        <p v-if="authors" class="hero-text is-size-5 is-size-6-mobile">{{authors}}</p>
-        <slot name="follow"></slot>
+      <div class="hero-body-container">
+        <div class="hero-body">
+          <g-link v-if="link" :to="link" class="hero-link is-size-4 is-size-5-touch"><span v-html="lead"></span></g-link>
+          <span class="is-size-4 is-size-5-touch" v-else v-html="lead"></span>
+          <p class="hero-text is-size-2 is-uppercase has-text-weight-bold is-size-4-touch" v-html="title"></p>
+          <p v-if="subtitle" class="hero-text is-size-4 is-size-6-touch">{{subtitle}}</p>
+          <p v-if="authors" class="hero-text is-size-5 is-size-6-touch">{{authors}}</p>
+          <slot name="follow"></slot>
+        </div>
       </div>
     </section>
     <figcaption class="has-text-centered">
@@ -34,14 +36,24 @@
     background: rgba(0, 0, 0, .2);
   }*/
 
+  .hero-body-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    justify-content: flex-end;
+    margin-top: var(--minus-banner-height);
+    height: var(--banner-height);
+  }
+
   .hero-body {
-    margin-top: -270px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
     width: 1000px;
-    padding: 44px;
-    padding-bottom: 30px;
-    height: 270px;;
+    /*height: var(--banner-height); */
     margin-left: auto;
     margin-right: auto;
+    padding: 44px;;
   }
 
   .hero-bg-img {
@@ -53,7 +65,6 @@
   @media screen and (max-width: 1000px) { /* This needs to be dynamic based on side panel */
     .hero-body {
       width: 100%;
-      left: 0;
     }
   }
 
@@ -101,6 +112,7 @@
       return {
         cssVars: {
           '--banner-height': this.bannerHeight,
+          '--minus-banner-height': '-' + this.bannerHeight,
           '--default-banner-height': defaultBannerHeight,
           '--hero-bottom': this.heroBottom
         }
