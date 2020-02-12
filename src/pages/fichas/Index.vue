@@ -10,7 +10,7 @@
         />
       </PageBanner>
 
-      <section class="section">
+      <section class="section" style="max-width: 1000px; margin: 0 auto;">
         <InteractiveMap
           :legendItems="$page.vegetationCardsIndex.legendItems"
           :geoJsonResources="geoJsonResources"

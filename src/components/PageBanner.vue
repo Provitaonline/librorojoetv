@@ -29,8 +29,8 @@
   .hero-body {
     position: absolute;
     bottom: var(--hero-bottom);
-    padding: 10px;
-    padding-left: 40px;
+    padding: 44px;
+    left: calc(50% - 500px);
     background: rgba(0, 0, 0, .2);
   }
 
@@ -38,6 +38,12 @@
     height: var(--banner-height);
     width: 100%;
     object-fit: cover;
+  }
+
+  @media screen and (max-width: 1330px) {
+    .hero-body {
+      left: 0;
+    }
   }
 
   @media screen and (max-width: 768px) {
@@ -88,6 +94,12 @@
           '--hero-bottom': this.heroBottom
         }
       }
+    },
+    created() {
+      console.log('hereee', this.$store)
+    },
+    methods: {
+
     }
   }
 </script>
