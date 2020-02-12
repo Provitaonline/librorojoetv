@@ -22,16 +22,26 @@
   @import "~/assets/style/_variables";
 
   .hero {
-    position: relative;
+    /*position: relative;*/
     color: white;
   }
 
-  .hero-body {
+  /*.hero-body {
     position: absolute;
     bottom: var(--hero-bottom);
     padding: 44px;
     left: calc(50% - 500px);
     background: rgba(0, 0, 0, .2);
+  }*/
+
+  .hero-body {
+    margin-top: -270px;
+    width: 1000px;
+    padding: 44px;
+    padding-bottom: 30px;
+    height: 270px;;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .hero-bg-img {
@@ -40,8 +50,9 @@
     object-fit: cover;
   }
 
-  @media screen and (max-width: 1330px) { /* This needs to be dynamic based on side panel */
+  @media screen and (max-width: 1000px) { /* This needs to be dynamic based on side panel */
     .hero-body {
+      width: 100%;
       left: 0;
     }
   }
