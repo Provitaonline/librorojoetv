@@ -8,7 +8,7 @@
         </div>
       </section>
 
-      <section class="section is-center-narrow">
+      <section class="section not-as-narrow">
         <div class="tile is-ancestor">
           <div class="tile">
             <div v-for="item in $page.homeData.indexCards" class="tile is-parent" style="flex-direction: column;">

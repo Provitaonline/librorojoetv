@@ -139,3 +139,8 @@ html {
   max-width: $narrow-text-width;
   margin: 0 auto;
 }
+
+.not-as-narrow {
+  max-width: $not-as-narrow-text-width;
+  margin: 0 auto;
+}
