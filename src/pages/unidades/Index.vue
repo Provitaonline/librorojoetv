@@ -105,24 +105,10 @@
       InteractiveMap,
       References
     },
-    created() {
-
-    },
-    mounted () {
-
-    },
-    updated() {
-
-    },
-    computed: {
-
-    },
     methods: {
       makeLink(t) {
         return slugify(t, {lower: true})
       }
-    },
-    watch: {
     }
   }
 </script>
