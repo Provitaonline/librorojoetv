@@ -52,36 +52,40 @@ about:
 ---
 # Producción
 
-**EL LIBRO ROJO DE LOS ECOSISTEMAS TERRESTRES DE VENEZUELA (2010) ES UNA PRODUCCIÓN CONJUNTA DE:**
+EL LIBRO ROJO DE LOS ECOSISTEMAS TERRESTRES DE VENEZUELA (2010) ES UNA PRODUCCIÓN CONJUNTA DE:
 
 Provita, Compañías Shell en Venezuela y Lenovo Venezuela, en el marco de la Ley Orgánica de Ciencia, Tecnología e Innovación (LOCTI)
 
-**CON LA COLABORACIÓN DE:**
+CON LA COLABORACIÓN DE:
 
 ![Colaboración](./colaboracion.png){class="colab"}
 
 # Equipo
 
-| Equipo de trabajo          | Fotografías                    |                                   |
-| -------------------------- | ------------------------------ | --------------------------------- |
-| Ana Lucía Dávalos          | Alexis Bermúdez                | Lucía Pizzani                     |
-| Bibiana Sucre              | Ana Lucía Dávalos              | María Gabriela Montiel-Villalobos |
-| Carlos Portillo-Quintero   | Andreas Gröger                 | María José Chávez                 |
-| Diego Giraldo Hernández    | Ángela Martino                 | Mariana Hernández-Montilla        |
-| Fabián Carrasquel          | César Molina                   | Mario Fariñas                     |
-| Franklin Rojas-Suárez      | Christian Ceccarelli Navarro   | Natalia Ceballos                  |
-| Giuseppe Colonnello        | David Southall                 | Oscar Lasso-Alcalá                |
-| Irene Zager	Fernando       | Rojas-Runjaic                  | Otto Huber                        |
-| Jon Paul Rodríguez         | Franklin Rojas-Suárez          | Pedro Uviedo                      |
-| Kathryn M. Rodríguez-Clark | Gilson Rivas                   | Rebecca Miller                    |
-| María A. Oliveira-Miranda  | Giuseppe Colonnello            | Roderic Mast                      |
-| María Idalí Tachack-García | Gustavo Romero                 | Rodrigo Lazo                      |
-| Mariana Hernández-Montilla | José Antonio González-Carcacía | Román Rangel                      |
-| Marianne Assmüssen        | Karl Weidmann                  | Rosa De Oliveira-Miranda          |
-| Otto Huber                 | Kenyer Domínguez               | Sergio Zambrano-Martínez          |
-| Pablo Lacabana             | Laurie Fajardo                 | Susanne Renner                    |
-| Rosa De Oliveira-Miranda   | Leonardo Ruíz-Díaz             | Thea Segall                       |
-| Sergio Zambrano-Martínez   |                                |                                   |
+| Equipo de trabajo          |
+| -------------------------- | -------------------------- | -------------------------- |
+| Ana Lucía Dávalos          | Giuseppe Colonnello        | Mariana Hernández-Montilla |
+| Bibiana Sucre              | Irene ZagerFernando        | Marianne Assmüssen         |
+| Carlos Portillo-Quintero   | Jon Paul Rodríguez         | Otto Huber                 |
+| Diego Giraldo Hernández    | Kathryn M. Rodríguez-Clark | Pablo Lacabana             |
+| Fabián Carrasquel          | María A. Oliveira-Miranda  | Rosa De Oliveira-Miranda   |
+| Franklin Rojas-Suárez      | María Idalí Tachack-García | Sergio Zambrano-Martínez   |
+
+
+| Fotografías                    |
+| ------------------------------ | --------------------------------- | ------------------------ |
+| Alexis Bermúdez                | José Antonio González-Carcacía    | Otto Huber               |
+| Ana Lucía Dávalos              | Karl Weidmann                     | Pedro Uviedo             |
+| Andreas Gröger                 | Kenyer Domínguez                  | Rebecca Miller           |
+| Ángela Martino                 | Laurie Fajardo                    | Roderic Mast             |
+| César Molina                   | Leonardo Ruíz-Díaz                | Rodrigo Lazo             |
+| Christian Ceccarelli Navarro   | Lucía Pizzani                     | Román Rangel             |
+| David Southall                 | María Gabriela Montiel-Villalobos | Rosa De Oliveira-Miranda |
+| Rojas-Runjaic                  | María José Chávez                 | Sergio Zambrano-Martínez |
+| Franklin Rojas-Suárez          | Mariana Hernández-Montilla        | Susanne Renner           |
+| Gilson Rivas                   | Mario Fariñas                     | Thea Segall              |
+| Giuseppe Colonnello            | Natalia Ceballos                  |                          |
+| Gustavo Romero                 | Oscar Lasso-Alcalá                |                          |
 
 {Foto 2}
 

@@ -52,17 +52,29 @@
 <style lang="scss" scoped>
 
   ::v-deep .colab {
-    width: 400px;
-    max-width: 80%;
+    width: 100%;
   }
 
   ::v-deep .table-in-content {
     font-size: 1rem !important;
+    width: 100%;
+  }
+
+  ::v-deep thead {
+    font-size: 1.5rem !important;
+    background-color: #f0d4a6;
+  }
+
+  ::v-deep td {
+    border: none;
   }
 
   @media screen and (max-width: 768px) {
     ::v-deep .table-in-content {
-      font-size: 0.7rem !important;
+      font-size: 0.6rem !important;
+    }
+    ::v-deep thead {
+      font-size: 0.8rem !important;
     }
   }
 </style>
