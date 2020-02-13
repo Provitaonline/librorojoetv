@@ -3,13 +3,15 @@
     <section class="hero" :style="cssVars">
       <g-image v-if="banner" class="hero-bg-img" :src="banner" />
       <g-image v-else class="hero-bg-img" src="~/assets/images/default-banner.jpg" />
-      <div class="hero-body">
-        <g-link v-if="link" :to="link" class="hero-link is-size-4 is-size-5-mobile"><span v-html="lead"></span></g-link>
-        <span class="is-size-4 is-size-5-mobile" v-else v-html="lead"></span>
-        <p class="hero-text is-size-2 is-uppercase has-text-weight-bold is-size-4-mobile" v-html="title"></p>
-        <p v-if="subtitle" class="hero-text is-size-4 is-size-6-mobile">{{subtitle}}</p>
-        <p v-if="authors" class="hero-text is-size-5 is-size-6-mobile">{{authors}}</p>
-        <slot name="follow"></slot>
+      <div class="hero-body-container">
+        <div class="hero-body">
+          <g-link v-if="link" :to="link" class="hero-link is-size-4 is-size-5-touch"><span v-html="lead"></span></g-link>
+          <span class="is-size-4 is-size-5-touch" v-else v-html="lead"></span>
+          <p class="hero-text is-size-2 is-uppercase has-text-weight-bold is-size-4-touch" v-html="title"></p>
+          <p v-if="subtitle" class="hero-text is-size-4 is-size-6-touch">{{subtitle}}</p>
+          <p v-if="authors" class="hero-text is-size-5 is-size-6-touch">{{authors}}</p>
+          <slot name="follow"></slot>
+        </div>
       </div>
     </section>
     <figcaption class="has-text-centered">
@@ -22,16 +24,28 @@
   @import "~/assets/style/_variables";
 
   .hero {
-    position: relative;
+    /*position: relative;*/
     color: white;
   }
 
+  .hero-body-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    justify-content: flex-end;
+    margin-top: var(--minus-banner-height);
+    height: var(--banner-height);
+  }
+
   .hero-body {
-    position: absolute;
-    bottom: var(--hero-bottom);
-    padding: 10px;
-    padding-left: 40px;
-    background: rgba(0, 0, 0, .2);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    width: $narrow-text-width;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 60px;
+    padding-bottom: var(--hero-padding-bottom);
   }
 
   .hero-bg-img {
@@ -40,12 +54,19 @@
     object-fit: cover;
   }
 
+  @media screen and (max-width: $narrow-text-width) {
+    .hero-body {
+      width: 100%;
+    }
+  }
+
   @media screen and (max-width: 768px) {
     .hero-bg-img {
       height: var(--default-banner-height);
     }
     .hero-body {
       bottom: 0;
+      padding-bottom: 10px;;
     }
   }
 
@@ -78,14 +99,15 @@
       subtitle: {type: String, required: false},
       authors: {type: String, required: false},
       bannerHeight: {type: String, required: false, default: defaultBannerHeight},
-      heroBottom: {type: String, required: false, default: '0'}
+      heroPaddingBottom: {type: String, required: false, default: '44px'}
     },
     data() {
       return {
         cssVars: {
           '--banner-height': this.bannerHeight,
+          '--minus-banner-height': '-' + this.bannerHeight,
           '--default-banner-height': defaultBannerHeight,
-          '--hero-bottom': this.heroBottom
+          '--hero-padding-bottom': this.heroPaddingBottom
         }
       }
     }

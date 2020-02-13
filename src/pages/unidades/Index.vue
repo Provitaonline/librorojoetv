@@ -10,7 +10,7 @@
         />
       </PageBanner>
 
-      <section class="section">
+      <section class="section is-center-narrow">
         <InteractiveMap
           :legendItems="$page.unitCardsIndex.legendItems"
           :geoJsonResources="geoJsonResources"

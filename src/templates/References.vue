@@ -10,7 +10,7 @@
         />
       </PageBanner>
 
-      <div class="section is-size-6 is-size-7-mobile">
+      <div class="section is-size-6 is-size-7-mobile is-center-narrow">
         <table class="table">
           <tbody>
             <tr v-for="value in sortedReferences">

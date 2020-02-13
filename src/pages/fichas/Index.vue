@@ -10,7 +10,7 @@
         />
       </PageBanner>
 
-      <section class="section">
+      <section class="section" style="max-width: 1000px; margin: 0 auto;">
         <InteractiveMap
           :legendItems="$page.vegetationCardsIndex.legendItems"
           :geoJsonResources="geoJsonResources"
@@ -19,7 +19,7 @@
       </InteractiveMap>
       </section>
 
-      <section class="section" style="max-width: 1000px; margin: 0 auto;">
+      <section class="section is-center-narrow">
         <br>
         <div class="section-header box is-size-3 is-size-4-mobile has-text-weight-bold">Lista alfabética de fichas</div>
 
