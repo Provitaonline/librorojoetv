@@ -44,7 +44,7 @@
     width: $narrow-text-width;
     margin-left: auto;
     margin-right: auto;
-    padding: 44px;
+    padding: 60px;
     padding-bottom: var(--hero-padding-bottom);
   }
 
