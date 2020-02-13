@@ -51,11 +51,8 @@
             </div>
           </div>
         </div>
-
-        <div class="container is-size-4 has-text-centered">
-          <hr>
-          <g-link to="/bibliografia/fichas"><p>Bibliografía <small><font-awesome size="xs" :icon="['fas', 'link']"/></small></p></g-link>
-        </div>
+        <References class="box" :references="$page.references.references">
+        </References>
 
       </section>
 
@@ -95,6 +92,17 @@
         }
       }
     }
+
+    references: references (id: "fichas") {
+      id
+      parent
+      title
+      banner
+      references {
+        referencekey
+        reference
+      }
+    }
   }
 </page-query>
 
@@ -123,6 +131,7 @@
   import slugify from 'slugify';
   import InteractiveMap from '~/components/InteractiveMap.vue'
   import PageBanner from '~/components/PageBanner.vue'
+  import References from '~/components/References.vue'
   import {threatCategories} from '~/assets/js/siteConfig.js'
 
   slugify.extend({'/': '-'})
@@ -181,7 +190,8 @@
     },
     components: {
       PageBanner,
-      InteractiveMap
+      InteractiveMap,
+      References
     },
     created() {
 
