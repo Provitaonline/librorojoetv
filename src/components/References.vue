@@ -40,6 +40,10 @@
     margin-bottom: 20px;
   }
 
+  .table {
+    word-break: break-word;
+  }
+
   tr:nth-child(odd) {
     background-color: #F8F8F8;
   }
@@ -47,6 +51,8 @@
   td {
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-left: 0;
+    padding-right: 0;
     border: none;
   }
 </style>
