@@ -45,10 +45,6 @@
     }
 
     references: references (id: "unidades") {
-      id
-      parent
-      title
-      banner
       references {
         referencekey
         reference

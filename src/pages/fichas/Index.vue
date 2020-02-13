@@ -94,10 +94,6 @@
     }
 
     references: references (id: "fichas") {
-      id
-      parent
-      title
-      banner
       references {
         referencekey
         reference
