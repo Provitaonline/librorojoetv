@@ -34,9 +34,7 @@
 </page-query>
 
 <style lang="scss" scoped>
-  .table {
-    word-break: break-word;
-  }
+
 </style>
 
 <script>
@@ -56,9 +54,6 @@
       References
     },
     computed: {
-      sortedReferences: function() {
-        return this.$page.references.references.sort((a, b) => a.reference.localeCompare(b.reference))
-      },
       linkToParent: function() {
         return this.$page.references.parent ? this.$page.references.parent + '/' + this.$page.references.id : this.$page.references.id
       }
