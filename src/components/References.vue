@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="is-size-5 has-text-centered">
+    <div v-if="hasHeading" class="is-size-5 has-text-centered">
       <div class="ref-header">
         <h1 class="ref-header-text">Bibliografía</h1>
         <a @click="showMore = !showMore">
@@ -11,7 +11,7 @@
       </div>
     </div>
     <transition name="fade" appear>
-      <div v-if="showMore" style="padding-top: 0px;" class="tile is-child box is-size-6 is-size-7-mobile">
+      <div v-if="showMore || !hasHeading" style="padding-top: 0px;" class="tile is-child box is-size-6 is-size-7-mobile">
         <table class="table">
           <tbody>
             <tr v-for="value in sortedReferences">
@@ -62,7 +62,8 @@
   export default {
     name: 'References',
     props: {
-      references: { type: Array, required: true }
+      references: { type: Array, required: true },
+      hasHeading: {type: Boolean, required: false, default: true}
     },
     data() {
       return {
