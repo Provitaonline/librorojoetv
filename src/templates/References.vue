@@ -10,15 +10,10 @@
         />
       </PageBanner>
 
-      <div class="section is-size-6 is-size-7-mobile is-center-narrow">
-        <table class="table">
-          <tbody>
-            <tr v-for="value in sortedReferences">
-              <td>{{value.reference}}</td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="section is-center-narrow">
+        <References class="box" :references="$page.references.references" :hasHeading="false"></References>
       </div>
+
     </div>
   </Layout>
 </template>
@@ -46,6 +41,7 @@
 
 <script>
   import PageBanner from '~/components/PageBanner.vue'
+  import References from '~/components/References.vue'
 
   export default {
     metaInfo: {
@@ -56,7 +52,8 @@
       }
     },
     components: {
-      PageBanner
+      PageBanner,
+      References
     },
     computed: {
       sortedReferences: function() {
