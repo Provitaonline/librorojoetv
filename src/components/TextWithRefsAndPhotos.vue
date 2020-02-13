@@ -13,7 +13,7 @@
 
   @media only screen and (min-width: 769px) {
     .inline-figure > figure, .inline-figure > fig-caption {
-      max-width: 80%;
+      /* max-width: 80%; */
       margin: 0 auto;
     }
   }
@@ -119,7 +119,7 @@ function processContent(text, photos, inlineFigs) {
         <a @click="photoClick" class='photo-link'>
           <div id="` + slugify(item, {lower: true}) + `" class="inline-figure has-text-centered">
             <br>
-            <figure style="padding: 2%;">
+            <figure>
               <g-image :src="photos[` + pIdx + `].photourl"></g-image>
             </figure>
             <figcaption style="max-width: 80%; margin: 0 auto;">
