@@ -18,25 +18,8 @@
             :photos="$page.homeData.about.photos"
             :isContent="true" />
           </TextWithRefsAndPhotos>
-          <div class="container is-size-5 has-text-centered">
-            <a @click="showMore = !showMore">
-              <p v-if="!showMore">VER BIBLIOGRAFÍA...<font-awesome :icon="['fas', 'angle-down']"/></p>
-              <p v-else>OCULTAR BIBLIOGRAFÍA...<font-awesome :icon="['fas', 'angle-up']"/></p>
-              <br>
-            </a>
-          </div>
-          <transition name="fade" appear>
-            <div v-if="showMore" style="padding-top: 0px;" class="tile is-child box is-size-6 is-size-7-mobile">
-              <h1 style="margin-top: 0px;">Bibliografía</h1>
-              <table class="table">
-                <tbody>
-                  <tr v-for="value in sortedReferences">
-                    <td>{{value.reference}}</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </transition>
+          <References class="box" :references="$page.references.references">
+          </References>
         </div>
       </section>
     </div>
@@ -87,6 +70,7 @@
 <script>
   import PageBanner from '~/components/PageBanner.vue'
   import TextWithRefsAndPhotos from '~/components/TextWithRefsAndPhotos.vue'
+  import References from '~/components/References.vue'
 
   export default {
     metaInfo: {
@@ -97,16 +81,10 @@
         showMore: false
       }
     },
-    mounted () {
-    },
-    computed: {
-      sortedReferences: function() {
-        return this.$page.references.references.sort((a, b) => a.reference.localeCompare(b.reference))
-      }
-    },
     components: {
       PageBanner,
-      TextWithRefsAndPhotos
+      TextWithRefsAndPhotos,
+      References
     }
   }
 </script>
