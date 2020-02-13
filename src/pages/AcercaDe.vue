@@ -10,7 +10,7 @@
         />
       </PageBanner>
 
-      <section class="section">
+      <section class="section is-center-narrow">
         <div class="tile is-vertical is-parent">
           <TextWithRefsAndPhotos class="tile is-child box is-size-5 is-size-6-mobile"
             :text="$page.homeData.content"

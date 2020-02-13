@@ -28,14 +28,6 @@
     color: white;
   }
 
-  /*.hero-body {
-    position: absolute;
-    bottom: var(--hero-bottom);
-    padding: 44px;
-    left: calc(50% - 500px);
-    background: rgba(0, 0, 0, .2);
-  }*/
-
   .hero-body-container {
     display: flex;
     flex-direction: column;
@@ -49,11 +41,11 @@
     display: flex;
     flex-direction: column;
     flex-grow: 0;
-    width: 1000px;
-    /*height: var(--banner-height); */
+    width: $narrow-text-width;
     margin-left: auto;
     margin-right: auto;
-    padding: 44px;;
+    padding: 44px;
+    padding-bottom: var(--hero-padding-bottom);
   }
 
   .hero-bg-img {
@@ -62,7 +54,7 @@
     object-fit: cover;
   }
 
-  @media screen and (max-width: 1000px) { /* This needs to be dynamic based on side panel */
+  @media screen and (max-width: $narrow-text-width) {
     .hero-body {
       width: 100%;
     }
@@ -74,6 +66,7 @@
     }
     .hero-body {
       bottom: 0;
+      padding-bottom: 10px;;
     }
   }
 
@@ -106,7 +99,7 @@
       subtitle: {type: String, required: false},
       authors: {type: String, required: false},
       bannerHeight: {type: String, required: false, default: defaultBannerHeight},
-      heroBottom: {type: String, required: false, default: '0'}
+      heroPaddingBottom: {type: String, required: false, default: '44px'}
     },
     data() {
       return {
@@ -114,15 +107,9 @@
           '--banner-height': this.bannerHeight,
           '--minus-banner-height': '-' + this.bannerHeight,
           '--default-banner-height': defaultBannerHeight,
-          '--hero-bottom': this.heroBottom
+          '--hero-padding-bottom': this.heroPaddingBottom
         }
       }
-    },
-    created() {
-      console.log('hereee', this.$store)
-    },
-    methods: {
-
     }
   }
 </script>

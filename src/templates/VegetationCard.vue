@@ -28,7 +28,7 @@
             </template>
           </PageBanner>
 
-          <section class="section" style="max-width: 1000px; margin: 0 auto;">
+          <section class="section is-center-narrow">
             <div class="tile is-ancestor">
               <div class="tile is-vertical is-parent">
                 <div class="section-header box is-size-3 is-size-4-mobile has-text-weight-bold">Descripción</div>

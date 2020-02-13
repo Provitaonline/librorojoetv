@@ -19,7 +19,7 @@
             link="/casos"
             :title="$page.caseCard.title"
             :authors="$page.caseCard.authors"
-            heroBottom="72px"
+            heroPaddingBottom="72px"
             />
           </PageBanner>
 
@@ -71,7 +71,7 @@
               </div>
             </div>
           </div>
-          <section class="section">
+          <section class="section is-center-narrow">
             <div class="tile is-vertical is-parent">
               <TextWithRefsAndPhotos style="padding-bottom: 0px; margin-bottom: 0px !important;" class="tile is-child box is-size-5 is-size-6-mobile"
                 :text="$page.caseCard.content"

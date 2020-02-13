@@ -134,3 +134,8 @@ html {
 .inline-figure {
   break-inside: avoid-column;
 }
+
+.is-center-narrow {
+  max-width: $narrow-text-width;
+  margin: 0 auto;
+}

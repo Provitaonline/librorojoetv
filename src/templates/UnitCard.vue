@@ -22,7 +22,7 @@
             />
           </PageBanner>
 
-          <section class="section">
+          <section class="section is-center-narrow">
             <div class="tile is-ancestor">
               <div class="tile is-vertical is-parent">
                 <div class="tile is-parent">
