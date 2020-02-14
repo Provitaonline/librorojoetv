@@ -143,12 +143,12 @@
   .card-header-title {
     padding-left: 24px;
     padding-rigth: 24px;
-    background-color: #f8e7e8;
+    background-color: #f0d4a6;
   }
 
   @media only screen and (min-width: 769px) {
     .summary-box {
-      margin-top: -99px;
+      margin-top: -96px;
       /* max-width: 450px; */
     }
   }
@@ -160,17 +160,35 @@
   }
 
   .summary-box {
-    box-shadow: none;
-    border: solid $primary 2px;
+    box-shadow: 0 3px 10px 4px rgba(0, 0, 0, 0.12) !important;
   }
 
-  ::v-deep thead {
-    background-color: #f8e7e8;
+  ::v-deep thead th {
+    background-color: #f0d4a6;
+    border: solid 1px white;
   }
 
   ::v-deep .table-in-content {
-    border: solid 2px $primary;
     border-collapse: separate;
+  }
+
+  /*::v-deep  table>tr:nth-child(odd) {
+    background-color: #F8F8F8;
+  }*/
+
+  ::v-deep table>tr:nth-child(odd), ::v-deep table>tbody>tr:nth-child(odd) {
+    background-color: #F8F8F8;
+  }
+
+  ::v-deep  table>tr>td, ::v-deep table>tbody>tr>td {
+    border: solid 1px #F8F8F8;
+  }
+
+  ::v-deep table {
+    border-collapse: collapse !important;
+    border-spacing: 0px;
+    width: 100%;
+    border-bottom: solid 3px #f0d4a6;
   }
 </style>
 
