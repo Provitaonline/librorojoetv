@@ -144,3 +144,10 @@ html {
   max-width: $not-as-narrow-text-width;
   margin: 0 auto;
 }
+
+@media only screen and (min-width: ($narrow-text-width + 400px)) {
+  .is-oversized {
+    width: 120%;
+    margin-left: -10%;
+  }
+}
