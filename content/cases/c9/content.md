@@ -46,7 +46,9 @@ En la ribera sur del río no se encuentra la formación Mesa, pero las colinas q
 La región de estudio se ubicó en el tramo central del bajo Orinoco, entre las poblaciones de Caicara del Orinoco y Ciudad Guayana, lo que incluye porciones de los estados Guárico, Bolívar y Anzoátegui (Figura 1). Se consideró una franja de 10 km a cada lado del eje longitudinal del curso principal del río, que se dividió en 5 sectores de acuerdo con la disponibilidad de las imágenes de satélite.
 
 En la primera fase del análisis, se recopiló toda la información documental y cartográfica del área de estudio. Se realizaron tanto entrevistas con investigadores como contactos con organismos públicos y privados, además de la revisión exhaustiva de la bibliografía relacionada.
+<div class="is-oversized">
 {Figura 1}
+</div>
 Para cuantificar los cambios de cobertura se procesaron imágenes satelitales que estuviesen separadas en el tiempo por al menos 10 años. Concretamente, para cada sector se emplearon dos imágenes Landsat, una de la década de 1980 (Landsat TM) y una de la década de 2000 (Landsat ETM+) [Tabla 1]. Mediante el uso de programas para el procesamiento digital y el análisis de las imágenes satelitales, principalmente Idrisi y ArcView 3.3, se realizó una clasificación no supervisada de las imágenes, lo que permitió una identificación preliminar de la cobertura de la tierra. Luego se llevó a cabo una verificación de campo con el fin de confrontar los tipos de cobertura vegetal presentes en el sitio, con sus correspondientes firmas espectrales en las imágenes de satélite. De manera general, los diferentes tipos de vegetación se agruparon en vegetación anegable leñosa y herbácea, y vegetación no anegable, sabana, sabana arbolada y arbustales. Por su parte, los bosques ribereños conectan ambos ambientes y tienen un componente anegable durante las crecientes estacionales. De manera adicional, se identificaron otras coberturas no vegetales como áreas intervenidas (agropecuarias y/o deforestadas), áreas urbanas, áreas quemadas, y suelos expuestos, así como nubes, sombra de nubes y cuerpos de agua.
 
 <div style="text-align: center;">
@@ -115,127 +117,129 @@ En el sector de Requena clasificarían En Peligro (EN) las comunidades leñosas 
 <div style="text-align: center;">
   <b>Tabla 2.</b> Cambios de las coberturas vegetales observados (1985-2001) y proyectados (1985-2035) en los sectores de Requena, Mapire y Soledad. Incluye categorías y criterios de riesgo de eliminación.
 </div>
-<div class="table-container is-size-6">
-  <table>
-    <thead>
+<div class="is-oversized">
+  <div class="table-container is-size-6">
+    <table>
+      <thead>
+        <tr>
+          <th rowspan="3">Coberturas vegetales</th>
+          <th align="center" colspan="12">Cambio de cobertura</th>
+        </tr>
+        <tr>
+          <th align="center" colspan="3">Área total</th>
+          <th align="center" colspan="3">Requena</th>
+          <th align="center" colspan="3">Mapire</th>
+          <th align="center" colspan="3">Soledad</th>
+        </tr>
+        <tr>
+          <th align="center" >Obs</th>
+          <th align="center" >Pro</th>
+          <th align="center" >Cat</th>
+          <th align="center" >Obs</th>
+          <th align="center" >Pro</th>
+          <th align="center" >Cat</th>
+          <th align="center" >Obs</th>
+          <th align="center" >Pro</th>
+          <th align="center" >Cat</th>
+          <th align="center" >Obs</th>
+          <th align="center" >Pro</th>
+          <th align="center" >Cat</th>
+        </tr>
+      </thead>
       <tr>
-        <th rowspan="3">Coberturas vegetales</th>
-        <th align="center" colspan="12">Cambio de cobertura</th>
+        <td>Vegetación leñosa anegable</td>
+        <td align="center">-5</td>
+        <td align="center">11</td>
+        <td>{lc}</td>
+        <td align="center">-22</td>
+        <td align="center">-61</td>
+        <td><div style="display: flex;">{en}&nbsp;A3</div></td>
+        <td align="center">2</td>
+        <td align="center">10</td>
+        <td>{lc}</td>
+        <td align="center">7</td>
+        <td align="center">31</td>
+        <td>{lc}</td>
       </tr>
       <tr>
-        <th align="center" colspan="3">Área total</th>
-        <th align="center" colspan="3">Requena</th>
-        <th align="center" colspan="3">Mapire</th>
-        <th align="center" colspan="3">Soledad</th>
+        <td>Herbazales anegables</td>
+        <td align="center">-1</td>
+        <td align="center">-3</td>
+        <td>{lc}</td>
+        <td align="center">24</td>
+        <td align="center">43</td>
+        <td>{lc}</td>
+        <td align="center">-29</td>
+        <td align="center">-100</td>
+        <td><div style="display: flex;">{cr}&nbsp;A3</div></td>
+        <td align="center">-20</td>
+        <td align="center">-100</td>
+        <td><div style="display: flex;">{cr}&nbsp;A3</div></td>
       </tr>
       <tr>
-        <th align="center" >Obs</th>
-        <th align="center" >Pro</th>
-        <th align="center" >Cat</th>
-        <th align="center" >Obs</th>
-        <th align="center" >Pro</th>
-        <th align="center" >Cat</th>
-        <th align="center" >Obs</th>
-        <th align="center" >Pro</th>
-        <th align="center" >Cat</th>
-        <th align="center" >Obs</th>
-        <th align="center" >Pro</th>
-        <th align="center" >Cat</th>
+        <td>Bosques ribereños</td>
+        <td align="center">-4</td>
+        <td align="center">-10</td>
+        <td>{lc}</td>
+        <td align="center">-56</td>
+        <td align="center">-278</td>
+        <td><div style="display: flex;">{cr}&nbsp;A3</div></td>
+        <td align="center">5</td>
+        <td align="center">24</td>
+        <td>{lc}</td>
+        <td align="center">-18</td>
+        <td align="center">-100</td>
+        <td><div style="display: flex;">{cr}&nbsp;A3</div></td>
       </tr>
-    </thead>
-    <tr>
-      <td>Vegetación leñosa anegable</td>
-      <td align="center">-5</td>
-      <td align="center">11</td>
-      <td>{lc}</td>
-      <td align="center">-22</td>
-      <td align="center">-61</td>
-      <td><div style="display: flex;">{en}&nbsp;A3</div></td>
-      <td align="center">2</td>
-      <td align="center">10</td>
-      <td>{lc}</td>
-      <td align="center">7</td>
-      <td align="center">31</td>
-      <td>{lc}</td>
-    </tr>
-    <tr>
-      <td>Herbazales anegables</td>
-      <td align="center">-1</td>
-      <td align="center">-3</td>
-      <td>{lc}</td>
-      <td align="center">24</td>
-      <td align="center">43</td>
-      <td>{lc}</td>
-      <td align="center">-29</td>
-      <td align="center">-100</td>
-      <td><div style="display: flex;">{cr}&nbsp;A3</div></td>
-      <td align="center">-20</td>
-      <td align="center">-100</td>
-      <td><div style="display: flex;">{cr}&nbsp;A3</div></td>
-    </tr>
-    <tr>
-      <td>Bosques ribereños</td>
-      <td align="center">-4</td>
-      <td align="center">-10</td>
-      <td>{lc}</td>
-      <td align="center">-56</td>
-      <td align="center">-278</td>
-      <td><div style="display: flex;">{cr}&nbsp;A3</div></td>
-      <td align="center">5</td>
-      <td align="center">24</td>
-      <td>{lc}</td>
-      <td align="center">-18</td>
-      <td align="center">-100</td>
-      <td><div style="display: flex;">{cr}&nbsp;A3</div></td>
-    </tr>
-    <tr>
-      <td>Arbustales</td>
-      <td align="center">10</td>
-      <td align="center">21</td>
-      <td>{lc}</td>
-      <td align="center">-14</td>
-      <td align="center">-35</td>
-      <td><div style="display: flex;">{vu}&nbsp;A3</div></td>
-      <td align="center">-15</td>
-      <td align="center">-89</td>
-      <td><div style="display: flex;">{cr}&nbsp;A3</div></td>
-      <td align="center">49</td>
-      <td align="center">165</td>
-      <td>{lc}</td>
-    </tr>
-    <tr>
-      <td>Sabanas arboladas</td>
-      <td align="center">13</td>
-      <td align="center">26</td>
-      <td>{lc}</td>
-      <td align="center">-13</td>
-      <td align="center">-34</td>
-      <td><div style="display: flex;">{vu}&nbsp;A3</div></td>
-      <td align="center">-36</td>
-      <td align="center">-100</td>
-      <td><div style="display: flex;">{cr}&nbsp;A3</div></td>
-      <td align="center">-3</td>
-      <td align="center">-14</td>
-      <td>{vu}</td>
-    </tr>
-    <tr>
-      <td>Sabanas abiertas</td>
-      <td align="center">-3</td>
-      <td align="center">-8</td>
-      <td>{lc}</td>
-      <td align="center">53</td>
-      <td align="center">75</td>
-      <td>{lc}</td>
-      <td align="center">73</td>
-      <td align="center">212</td>
-      <td>{lc}</td>
-      <td align="center">-23</td>
-      <td align="center">-100</td>
-      <td><div style="display: flex;">{cr}&nbsp;A3</div></td>
-    </tr>
-  </table>
-  <div style="text-align: center;">
-    Obs: cambio observado; Pro: cambio proyectado; Cat: categoría de riesgo
+      <tr>
+        <td>Arbustales</td>
+        <td align="center">10</td>
+        <td align="center">21</td>
+        <td>{lc}</td>
+        <td align="center">-14</td>
+        <td align="center">-35</td>
+        <td><div style="display: flex;">{vu}&nbsp;A3</div></td>
+        <td align="center">-15</td>
+        <td align="center">-89</td>
+        <td><div style="display: flex;">{cr}&nbsp;A3</div></td>
+        <td align="center">49</td>
+        <td align="center">165</td>
+        <td>{lc}</td>
+      </tr>
+      <tr>
+        <td>Sabanas arboladas</td>
+        <td align="center">13</td>
+        <td align="center">26</td>
+        <td>{lc}</td>
+        <td align="center">-13</td>
+        <td align="center">-34</td>
+        <td><div style="display: flex;">{vu}&nbsp;A3</div></td>
+        <td align="center">-36</td>
+        <td align="center">-100</td>
+        <td><div style="display: flex;">{cr}&nbsp;A3</div></td>
+        <td align="center">-3</td>
+        <td align="center">-14</td>
+        <td>{vu}</td>
+      </tr>
+      <tr>
+        <td>Sabanas abiertas</td>
+        <td align="center">-3</td>
+        <td align="center">-8</td>
+        <td>{lc}</td>
+        <td align="center">53</td>
+        <td align="center">75</td>
+        <td>{lc}</td>
+        <td align="center">73</td>
+        <td align="center">212</td>
+        <td>{lc}</td>
+        <td align="center">-23</td>
+        <td align="center">-100</td>
+        <td><div style="display: flex;">{cr}&nbsp;A3</div></td>
+      </tr>
+    </table>
+    <div style="text-align: center;">
+      Obs: cambio observado; Pro: cambio proyectado; Cat: categoría de riesgo
+    </div>
   </div>
 </div>
 
