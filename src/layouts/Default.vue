@@ -15,10 +15,10 @@
           ACERCA DE
         </b-navbar-item>
         <b-navbar-dropdown label="VEGETACIÓN">
-          <b-navbar-item>
+          <b-navbar-item tag="a" href="/vegetacion/cartografia">
               Cartografía histórica
           </b-navbar-item>
-          <b-navbar-item>
+          <b-navbar-item tag="a" href="/vegetacion/formaciones">
               Formaciones vegetales
           </b-navbar-item>
           <b-navbar-item tag="a" href="/unidades">

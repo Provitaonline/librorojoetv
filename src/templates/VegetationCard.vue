@@ -3,23 +3,20 @@
       <div class="red-line">
 
         <PageBanner
-          :banner="$page.methodCard.cardimage"
-          :caption="$page.methodCard.cardimagecaption"
-          lead="Métodos"
-          :title="$page.methodCard.title"
+          :banner="$page.vegetationCard.cardimage"
+          :caption="$page.vegetationCard.cardimagecaption"
+          lead="Vegetación"
+          :title="$page.vegetationCard.title"
           />
         </PageBanner>
 
         <section class="section is-center-narrow">
           <div class="tile is-vertical is-parent">
             <TextWithRefsAndPhotos class="tile is-child box is-size-5 is-size-6-mobile"
-              :text="$page.methodCard.content"
-              :photos="$page.methodCard.photos"
-              :refs="$page.methodCard.method.references"
+              :text="$page.vegetationCard.content"
+              :photos="$page.vegetationCard.photos"
               :isContent="true" />
             </TextWithRefsAndPhotos>
-            <References class="box" :references="$page.methodCard.method.references">
-            </References>
           </div>
         </section>
       </div>
@@ -27,17 +24,11 @@
 </template>
 
 <page-query>
-  query MethodCard ($id: ID!) {
-    methodCard: methodCard (id: $id) {
+  query VegetationCard ($id: ID!) {
+    vegetationCard: vegetationCard (id: $id) {
       title
       cardimage
       cardimagecaption
-      method {
-        references {
-          referencekey
-          reference
-        }
-      }
       photos {
         photokey
         photourl
@@ -49,31 +40,17 @@
 </page-query>
 
 <style lang="scss" scoped>
-  @import "~/assets/style/_variables";
 
-  ::v-deep thead {
-    background-color: #f8e7e8;
-  }
-
-  ::v-deep .table-in-content {
-    border: solid 2px $primary;
-    border-collapse: separate;
-  }
-
-  .table {
-    word-break: break-word;
-  }
 
 </style>
 
 <script>
   import PageBanner from '~/components/PageBanner.vue'
   import TextWithRefsAndPhotos from '~/components/TextWithRefsAndPhotos.vue'
-  import References from '~/components/References.vue'
 
   export default {
     metaInfo: {
-      title: 'Método'
+      title: 'Vegetación'
     },
     data() {
       return {
@@ -83,8 +60,7 @@
     },
     components: {
       PageBanner,
-      TextWithRefsAndPhotos,
-      References
+      TextWithRefsAndPhotos
     }
   }
 
