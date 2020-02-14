@@ -14,7 +14,7 @@ module.exports = {
       use: '@gridsome/source-filesystem',
       options: {
         path: 'content/vcards/**/content.md',
-        typeName: 'VegetationCard',
+        typeName: 'RiskCard',
         remark:{
           autolinkHeadings: false,
           lazyLoadImages: false
@@ -46,7 +46,7 @@ module.exports = {
       use: '@gridsome/source-filesystem',
       options: {
         path: 'content/explore/vcards-index.md',
-        typeName: 'VegetationCardsIndex'
+        typeName: 'RiskCardsIndex'
       }
     },
     {
@@ -144,7 +144,7 @@ module.exports = {
     }
   ],
   templates: {
-    VegetationCard: '/fichas/:title',
+    RiskCard: '/fichas/:title',
     UnitCard: '/unidades/:region',
     CaseCard: '/casos/:case',
     MethodCard: '/metodos/:id',

@@ -13,17 +13,17 @@
         <div class="red-line">
 
           <PageBanner
-            :banner="$page.vegetationCard.cardimage"
-            :caption="$page.vegetationCard.cardimagecaption"
+            :banner="$page.riskCard.cardimage"
+            :caption="$page.riskCard.cardimagecaption"
             lead="Riesgo de colapso"
             link="/fichas"
-            :title="$page.vegetationCard.formattedtitle ? $page.vegetationCard.formattedtitle : $page.vegetationCard.title"
-            :subtitle="$page.vegetationCard.plantformation ? `(${$page.vegetationCard.plantformation})` : null">
+            :title="$page.riskCard.formattedtitle ? $page.riskCard.formattedtitle : $page.riskCard.title"
+            :subtitle="$page.riskCard.plantformation ? `(${$page.riskCard.plantformation})` : null">
             <template v-slot:follow>
               <hr align="left" width="50%" style="margin: 1rem 0">
               <div style="display: flex; height: 50px;" class= "hero-text">
-                <img :src="threatCategories[$page.vegetationCard.category].img" height="50" width="50" />
-                <span style="font-size: small; margin-top: auto; margin-bottom: auto; padding-left: 10px;"><b>{{threatCategories[$page.vegetationCard.category].text}}</b></span>
+                <img :src="threatCategories[$page.riskCard.category].img" height="50" width="50" />
+                <span style="font-size: small; margin-top: auto; margin-bottom: auto; padding-left: 10px;"><b>{{threatCategories[$page.riskCard.category].text}}</b></span>
               </div>
             </template>
           </PageBanner>
@@ -35,9 +35,9 @@
                 <div class="tile is-parent">
                   <div class="tile is-child box is-size-5 is-size-6-mobile">
                     <TextWithRefsAndPhotos
-                      :text="$page.vegetationCard.description"
+                      :text="$page.riskCard.description"
                       :refs="$page.references.references"
-                      :photos="$page.vegetationCard.photos">
+                      :photos="$page.riskCard.photos">
                     </TextWithRefsAndPhotos>
                   </div>
                 </div>
@@ -46,28 +46,28 @@
                   <div class="tile is-child box is-size-5 is-size-6-mobile">
                     <div>
                       <div class="distribution-map">
-                        <p class="is-size-7 has-text-centered has-text-weight-bold">{{$page.vegetationCard.title}}<br>Distribución en 2010</p>
-                        <g-image v-if="$page.vegetationCard.distributionmap" :src="$page.vegetationCard.distributionmap" />
+                        <p class="is-size-7 has-text-centered has-text-weight-bold">{{$page.riskCard.title}}<br>Distribución en 2010</p>
+                        <g-image v-if="$page.riskCard.distributionmap" :src="$page.riskCard.distributionmap" />
                         <p class="is-size-7 has-text-right"><i>Huber y Oliveira-Miranda (2010)</i></p>
                       </div>
                       <TextWithRefsAndPhotos
-                        :text="$page.vegetationCard.distribution"
+                        :text="$page.riskCard.distribution"
                         :refs="$page.references.references"
-                        :photos="$page.vegetationCard.photos">
+                        :photos="$page.riskCard.photos">
                       </TextWithRefsAndPhotos>
                     </div>
                   </div>
                 </div>
                 <br>
-                <div v-if="$page.vegetationCard.areain2010" class="section-header box is-size-3 is-size-4-mobile has-text-weight-bold">Cambios en la distribución</div>
-                <div v-if="$page.vegetationCard.areain2010" class="tile is-parent">
-                  <div v-if="!$page.vegetationCard.stateleveltable.length" class="tile is-child is-3"></div>
-                  <div :class="'tile is-child box is-size-6 has-text-centered ' + (($page.vegetationCard.stateleveltable.length) ? 'is-5' : 'is-6')">
-                    <b>Superficie en 1988 (km<sup>2</sup>): </b>{{$page.vegetationCard.areain1988 | number}}<br>
-                    <b>Superficie en 2010 (km<sup>2</sup>): </b>{{$page.vegetationCard.areain2010 | number}}<br>
+                <div v-if="$page.riskCard.areain2010" class="section-header box is-size-3 is-size-4-mobile has-text-weight-bold">Cambios en la distribución</div>
+                <div v-if="$page.riskCard.areain2010" class="tile is-parent">
+                  <div v-if="!$page.riskCard.stateleveltable.length" class="tile is-child is-3"></div>
+                  <div :class="'tile is-child box is-size-6 has-text-centered ' + (($page.riskCard.stateleveltable.length) ? 'is-5' : 'is-6')">
+                    <b>Superficie en 1988 (km<sup>2</sup>): </b>{{$page.riskCard.areain1988 | number}}<br>
+                    <b>Superficie en 2010 (km<sup>2</sup>): </b>{{$page.riskCard.areain2010 | number}}<br>
                     <span class="is-size-7"><b>(Figuras 1a y 1b)</b></span>
                     <ClientOnly>
-                      <div v-for="item in $page.vegetationCard.mapcompare">
+                      <div v-for="item in $page.riskCard.mapcompare">
                         <br>
                         <div class="has-text-centered is-size-7 has-text-weight-bold" >{{item.caption}}</div>
                         <VueCompareImage v-if="item.in2010" style="border-style: solid; border-color: dimgrey;" :leftImage="item.in1988.src" leftLabel="1988" :rightImage="item.in2010.src" rightLabel="2010" />
@@ -81,7 +81,7 @@
                       </div>
                     </ClientOnly>
                   </div>
-                  <div v-if="$page.vegetationCard.stateleveltable.length" class="tile is-child is-7 box">
+                  <div v-if="$page.riskCard.stateleveltable.length" class="tile is-child is-7 box">
                     <div class="has-text-centered is-size-6 has-text-weight-bold">Superficie estimada (km<sup>2</sup>) por estado:<br>
                       <span class="is-size-7"><b>(Tabla 1)</b></span>
                       <br><br>
@@ -89,7 +89,7 @@
                     <table align="center" class="statetable table is-size-6 is-size-7-mobile">
                       <thead>
                         <tr>
-                          <th v-if="$page.vegetationCard.formationColumn">Formación</th>
+                          <th v-if="$page.riskCard.formationColumn">Formación</th>
                           <th>Estado</th>
                           <th class="has-text-right">1988</th>
                           <th class="has-text-right">2010</th>
@@ -98,8 +98,8 @@
                         </tr>
                       </thead>
                       <tbody>
-                        <tr v-for="item in $page.vegetationCard.stateleveltable">
-                          <td v-if="$page.vegetationCard.formationColumn"><b>{{item.formation}}</b></td>
+                        <tr v-for="item in $page.riskCard.stateleveltable">
+                          <td v-if="$page.riskCard.formationColumn"><b>{{item.formation}}</b></td>
                           <td>{{item.state}}</td>
                           <td class="has-text-right">{{item.areain1988 | number}}</td>
                           <td class="has-text-right">{{item.areain2010 | number}}</td>
@@ -109,11 +109,11 @@
                       </tbody>
                       <tfoot>
                         <tr>
-                          <td v-if="$page.vegetationCard.formationColumn"></td>
+                          <td v-if="$page.riskCard.formationColumn"></td>
                           <th>Total</th>
-                          <th class="has-text-right">{{($page.vegetationCard.stateleveltable.reduce((a, b) => +a + +numbernobrackets(b.areain1988), 0)) | number}}</th>
-                          <th class="has-text-right">{{($page.vegetationCard.stateleveltable.reduce((a, b) => +a + +numbernobrackets(b.areain2010), 0)) | number}}</th>
-                          <th class="has-text-right">{{($page.vegetationCard.stateleveltable.reduce((a, b) => +a + +numbernobrackets(b.areain2010), 0)) - ($page.vegetationCard.stateleveltable.reduce((a, b) => +a + +numbernobrackets(b.areain1988), 0)) | number}}</th>
+                          <th class="has-text-right">{{($page.riskCard.stateleveltable.reduce((a, b) => +a + +numbernobrackets(b.areain1988), 0)) | number}}</th>
+                          <th class="has-text-right">{{($page.riskCard.stateleveltable.reduce((a, b) => +a + +numbernobrackets(b.areain2010), 0)) | number}}</th>
+                          <th class="has-text-right">{{($page.riskCard.stateleveltable.reduce((a, b) => +a + +numbernobrackets(b.areain2010), 0)) - ($page.riskCard.stateleveltable.reduce((a, b) => +a + +numbernobrackets(b.areain1988), 0)) | number}}</th>
                           <th></th>
                         </tr>
                       </tfoot>
@@ -122,15 +122,15 @@
                 </div>
                 <div class="section-header box is-size-3 is-size-4-mobile has-text-weight-bold">Situación a 2010</div>
                 <div class="tile is-parent">
-                  <div v-if="!$page.vegetationCard.riskofcolapsestatelevel.length" class="tile is-child is-3"></div>
-                  <div :class="'tile is-child box has-text-centered ' + (($page.vegetationCard.riskofcolapsestatelevel.length) ? 'is-5' : 'is-6')">
+                  <div v-if="!$page.riskCard.riskofcolapsestatelevel.length" class="tile is-child is-3"></div>
+                  <div :class="'tile is-child box has-text-centered ' + (($page.riskCard.riskofcolapsestatelevel.length) ? 'is-5' : 'is-6')">
                     <b>Riesgo de colapso a nivel nacional: </b>
-                    {{threatCategories[$page.vegetationCard.category].text.toUpperCase()}}
-                    <img :src="threatCategories[$page.vegetationCard.category].img" height="30" width="30" style="margin-bottom: -5px;">
+                    {{threatCategories[$page.riskCard.category].text.toUpperCase()}}
+                    <img :src="threatCategories[$page.riskCard.category].img" height="30" width="30" style="margin-bottom: -5px;">
                     <br><br>
                     <b>Grado de amenaza 2010: </b><br>
                     <span class="is-size-7"><b>(Figura 1c)</b></span>
-                    <div v-for="item in $page.vegetationCard.threatlevelmaps">
+                    <div v-for="item in $page.riskCard.threatlevelmaps">
                       <br>
                       <div class="has-text-centered is-size-7 has-text-weight-bold" >{{item.caption}}</div>
                       <g-image v-if="item" style="border-style: solid; border-color: dimgrey;" :src="item.map"></g-image>
@@ -143,17 +143,17 @@
                       </div>
                     </div>
                   </div>
-                  <div v-if="$page.vegetationCard.riskofcolapsestatelevel.length" class="tile is-child is-7 box">
-                    <div class="has-text-centered"><b>Riesgo de colapso por {{($page.vegetationCard.zonelabel).toLowerCase()}}:</b><br>
+                  <div v-if="$page.riskCard.riskofcolapsestatelevel.length" class="tile is-child is-7 box">
+                    <div class="has-text-centered"><b>Riesgo de colapso por {{($page.riskCard.zonelabel).toLowerCase()}}:</b><br>
                       <span class="is-size-7"><b>(Tabla 2)</b></span>
                       <br><br>
                     </div>
                     <table align="center" class="risktable table is-size-6 is-size-7-mobile">
                       <thead>
                         <tr>
-                          <th v-if="$page.vegetationCard.formationColumn"></th>
+                          <th v-if="$page.riskCard.formationColumn"></th>
                           <th></th>
-                          <th align="center" :colspan="$page.vegetationCard.criteriaused.length - 1">
+                          <th align="center" :colspan="$page.riskCard.criteriaused.length - 1">
                             <!-- <b-tooltip position="is-top" type="is-warning" label="Versión v1.0, 2010"> -->
                               <b>Criterios</b>
                             <!-- </b-tooltip> -->
@@ -161,9 +161,9 @@
                           <th></th>
                         </tr>
                         <tr>
-                          <th v-if="$page.vegetationCard.formationColumn">Formación</th>
-                          <th>{{$page.vegetationCard.zonelabel}}</th>
-                          <th v-for="value in $page.vegetationCard.criteriaused" align="center">
+                          <th v-if="$page.riskCard.formationColumn">Formación</th>
+                          <th>{{$page.riskCard.zonelabel}}</th>
+                          <th v-for="value in $page.riskCard.criteriaused" align="center">
                             <b-dropdown v-if="criteria[value]" class="criteria-box" position="is-bottom-left">
                               <a slot="trigger">
                                 <span v-html="value"></span>&nbsp;<font-awesome size="xs" :icon="['fas', 'angle-down']"/>
@@ -180,8 +180,8 @@
                         </tr>
                       </thead>
                       <tbody>
-                        <tr v-for="item in $page.vegetationCard.riskofcolapsestatelevel">
-                          <td v-if="$page.vegetationCard.formationColumn"><b>{{item.formation}}</b></td>
+                        <tr v-for="item in $page.riskCard.riskofcolapsestatelevel">
+                          <td v-if="$page.riskCard.formationColumn"><b>{{item.formation}}</b></td>
                           <td>{{item.zone}}</td>
                           <td v-if="item.area" class="has-text-right">{{item.area | decimal(1)}}</td>
                           <td align="center" v-for="value in item.threatcategories">
@@ -197,19 +197,19 @@
                     </table>
                   </div>
                 </div>
-                <div v-if="$page.vegetationCard.content != '\n'" class="container is-size-5 has-text-centered">
+                <div v-if="$page.riskCard.content != '\n'" class="container is-size-5 has-text-centered">
                   <a @click="showMore = !showMore">
                     <p v-if="!showMore">LEER MÁS...<font-awesome :icon="['fas', 'angle-down']"/></p>
                     <p v-else>LEER MENOS...<font-awesome :icon="['fas', 'angle-up']"/></p>
                   </a>
                 </div>
                 <div v-if="showMore" class="tile is-parent">
-                  <!-- <div class="d-content tile is-child is-size-5" v-html="$page.vegetationCard.content"></div> -->
+                  <!-- <div class="d-content tile is-child is-size-5" v-html="$page.riskCard.content"></div> -->
                   <transition name="fade" appear>
                     <TextWithRefsAndPhotos class="tile is-child box is-size-5 is-size-6-mobile"
-                      :text="$page.vegetationCard.content"
+                      :text="$page.riskCard.content"
                       :refs="$page.references.references"
-                      :photos="$page.vegetationCard.photos"
+                      :photos="$page.riskCard.photos"
                       :isContent="true" />
                     </TextWithRefsAndPhotos>
                   </transition>
@@ -224,8 +224,8 @@
 </template>
 
 <page-query>
-  query VegetationCard ($path: String!) {
-    vegetationCard: vegetationCard (path: $path) {
+  query RiskCard ($path: String!) {
+    riskCard: riskCard (path: $path) {
       title
       formattedtitle
       plantformation
@@ -279,7 +279,7 @@
         reference
       }
     }
-    vegetationCardsIndex: vegetationCardsIndex (path: "/content/explore/vcards-index") {
+    riskCardsIndex: riskCardsIndex (path: "/content/explore/vcards-index") {
     	legendItems {
         name
         group
@@ -464,10 +464,10 @@
         return t.cardPath ? slugify(t.cardPath, {lower: true}) : slugify(t.name, {lower: true})
       },
       isTitle: function(i) {
-        let pf = this.$page.vegetationCardsIndex.legendItems[i].plantformation
+        let pf = this.$page.riskCardsIndex.legendItems[i].plantformation
         if (pf) {
           if (i > 0) {
-            return (pf === this.$page.vegetationCardsIndex.legendItems[i-1].plantformation) ? false : true
+            return (pf === this.$page.riskCardsIndex.legendItems[i-1].plantformation) ? false : true
           } else {
             return true
           }
@@ -479,7 +479,7 @@
       collapsibleList: function() {
         let cl = []
         let p = null
-        this.$page.vegetationCardsIndex.legendItems.forEach((item, index) => {
+        this.$page.riskCardsIndex.legendItems.forEach((item, index) => {
           if (this.isTitle(index)) {
             cl.push({
               parentLabel: item.plantformation,

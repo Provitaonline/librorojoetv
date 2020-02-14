@@ -3,18 +3,18 @@
     <div class="page-wrapper red-line">
 
       <PageBanner
-        :banner="$page.vegetationCardsIndex.banner"
-        :caption="$page.vegetationCardsIndex.bannerCaption"
-        :lead="$page.vegetationCardsIndex.title"
-        :title="$page.vegetationCardsIndex.mapTitle"
+        :banner="$page.riskCardsIndex.banner"
+        :caption="$page.riskCardsIndex.bannerCaption"
+        :lead="$page.riskCardsIndex.title"
+        :title="$page.riskCardsIndex.mapTitle"
         />
       </PageBanner>
 
       <section class="section is-center-narrow">
         <InteractiveMap
-          :legendItems="$page.vegetationCardsIndex.legendItems"
+          :legendItems="$page.riskCardsIndex.legendItems"
           :geoJsonResources="geoJsonResources"
-          :mapTitle="$page.vegetationCardsIndex.mapTitle"
+          :mapTitle="$page.riskCardsIndex.mapTitle"
         >
       </InteractiveMap>
       </section>
@@ -66,7 +66,7 @@
       title
       heroTitle
     }
-    vegetationCardsIndex: vegetationCardsIndex (path: "/content/explore/vcards-index") {
+    riskCardsIndex: riskCardsIndex (path: "/content/explore/vcards-index") {
       title
       mapTitle
       banner
@@ -79,7 +79,7 @@
         cardPath
       }
     }
-    vcards: allVegetationCard (sortBy: "title", order: ASC) {
+    vcards: allRiskCard (sortBy: "title", order: ASC) {
       edges {
         node {
           title
