@@ -161,6 +161,7 @@
 
   .summary-box {
     box-shadow: 0 3px 10px 4px rgba(0, 0, 0, 0.12) !important;
+    border: none !important;
   }
 
   ::v-deep thead th {
