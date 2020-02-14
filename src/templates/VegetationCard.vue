@@ -14,6 +14,7 @@
           <div class="tile is-vertical is-parent">
             <TextWithRefsAndPhotos class="tile is-child box is-size-5 is-size-6-mobile"
               :text="$page.vegetationCard.content"
+              :refs="$page.references.references"
               :photos="$page.vegetationCard.photos"
               :isContent="true" />
             </TextWithRefsAndPhotos>
@@ -35,6 +36,13 @@
         photocaption
       }
       content
+    }
+
+    references: references (id: "unidades") {
+      references {
+        referencekey
+        reference
+      }
     }
   }
 </page-query>
