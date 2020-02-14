@@ -47,7 +47,7 @@
         </b-navbar-dropdown>
         <b-navbar-dropdown label="RIESGO DE COLAPSO">
           <b-navbar-item tag="a" href="/fichas">
-              Nacional (paisajes vegetales)
+              Nacional (formaciones vegetales)
           </b-navbar-item>
           <b-navbar-item tag="a" href="/casos">
               Local (estudios de caso)
