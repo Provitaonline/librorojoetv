@@ -29,20 +29,17 @@
           </b-navbar-item>
         </b-navbar-dropdown>
         <b-navbar-dropdown label="MÉTODOS">
+          <b-navbar-item tag="a" href="/metodos/librosrojos">
+              Libros rojos
+          </b-navbar-item>
           <b-navbar-item tag="a" href="/metodos/clasificacion">
               Clasificación del riesgo
           </b-navbar-item>
           <b-navbar-item tag="a" href="/metodos/evaluacion">
               Evaluación del riesgo
           </b-navbar-item>
-          <b-navbar-item>
-              Libros rojos
-          </b-navbar-item>
           <b-navbar-item tag="a" href="/metodos/prioridades">
               Prioridades de conservación
-          </b-navbar-item>
-          <b-navbar-item>
-              Bibliografía
           </b-navbar-item>
         </b-navbar-dropdown>
         <b-navbar-dropdown label="RIESGO DE COLAPSO">
