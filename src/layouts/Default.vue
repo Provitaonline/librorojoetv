@@ -14,7 +14,24 @@
         <b-navbar-item tag="a" href="/acerca-de">
           ACERCA DE
         </b-navbar-item>
+        <b-navbar-dropdown label="VEGETACIÓN">
+          <b-navbar-item tag="a" href="/vegetacion/cartografia">
+              Cartografía histórica
+          </b-navbar-item>
+          <b-navbar-item tag="a" href="/vegetacion/formaciones">
+              Formaciones vegetales
+          </b-navbar-item>
+          <b-navbar-item tag="a" href="/unidades">
+              Unidades de paisaje
+          </b-navbar-item>
+          <b-navbar-item tag="a" href="/bibliografia/unidades">
+              Bibliografía
+          </b-navbar-item>
+        </b-navbar-dropdown>
         <b-navbar-dropdown label="MÉTODOS">
+          <b-navbar-item tag="a" href="/metodos/librosrojos">
+              Libros rojos
+          </b-navbar-item>
           <b-navbar-item tag="a" href="/metodos/clasificacion">
               Clasificación del riesgo
           </b-navbar-item>
@@ -22,18 +39,15 @@
               Evaluación del riesgo
           </b-navbar-item>
           <b-navbar-item tag="a" href="/metodos/prioridades">
-              Estableciendo prioridades
+              Prioridades de conservación
           </b-navbar-item>
         </b-navbar-dropdown>
-        <b-navbar-dropdown label="EXPLORAR">
+        <b-navbar-dropdown label="RIESGO DE COLAPSO">
           <b-navbar-item tag="a" href="/fichas">
-              Riesgo de colapso
+              Nacional (formaciones vegetales)
           </b-navbar-item>
           <b-navbar-item tag="a" href="/casos">
-              Estudios de caso
-          </b-navbar-item>
-          <b-navbar-item tag="a" href="/unidades">
-              Unidades de paisaje
+              Local (estudios de caso)
           </b-navbar-item>
         </b-navbar-dropdown>
         <b-navbar-item tag="a" href="/contacto">

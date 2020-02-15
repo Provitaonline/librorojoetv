@@ -26,7 +26,7 @@
             <div class="tile is-ancestor">
               <div class="tile is-vertical is-parent">
                 <div class="tile is-parent">
-                  <!-- <div class="d-content tile is-child is-size-5" v-html="$page.vegetationCard.content"></div> -->
+                  <!-- <div class="d-content tile is-child is-size-5" v-html="$page.riskCard.content"></div> -->
                   <TextWithRefsAndPhotos class="tile is-child box is-size-5 is-size-6-mobile"
                     :text="$page.unitCard.content"
                     :refs="$page.references.references"

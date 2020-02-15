@@ -69,7 +69,6 @@
 <script>
   import PageBanner from '~/components/PageBanner.vue'
   import TextWithRefsAndPhotos from '~/components/TextWithRefsAndPhotos.vue'
-  import SideBar from '~/components/SideBar.vue'
   import References from '~/components/References.vue'
 
   export default {
@@ -78,25 +77,14 @@
     },
     data() {
       return {
-        showMore: false
       }
     },
     mounted () {
     },
-    beforeRouteUpdate (to, from, next) {
-      this.showMore = false
-      next()
-    },
     components: {
       PageBanner,
       TextWithRefsAndPhotos,
-      References,
-      SideBar
-    },
-    methods: {
-      isCurrentItem: function(item) {
-        return item.cardPath != this.$route.path.replace(/\/$/, '').match(/\/[^\/]+$/)[0].substring(1) + this.$route.hash
-      }
+      References
     }
   }
 
