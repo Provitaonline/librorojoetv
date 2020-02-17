@@ -53,7 +53,10 @@
         <b-navbar-item tag="a" href="/contacto">
           CONTACTO
         </b-navbar-item>
-        <b-navbar-dropdown label="COMPARTIR">
+        <b-navbar-dropdown arrowless right>
+          <template slot="label">
+            <font-awesome :icon="['fas', 'share-alt']" />
+          </template>
           <b-navbar-item>
             <font-awesome :icon="['fab', 'facebook']"/>&nbsp;Facebook
           </b-navbar-item>
@@ -138,6 +141,8 @@
       display: inline-block;
     }
   }
+
+
 
   /* This is a workaround for the MS Edge issue of not opening dropdowns */
   @media only screen and (min-width: 1024px) {
