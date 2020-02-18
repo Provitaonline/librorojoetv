@@ -298,3 +298,16 @@ legendItems:
     legend: "colorkey"
     cardPath: "d#d79"
 ---
+# Actualización de los paisajes vegetales de Venezuela y sus subdivisiones fitoecológicas
+
+Los paisajes vegetales, observados a una determinada escala, son el resultado de una confluencia de parámetros abióticos y bióticos, que interactúan a lo largo de épocas geológicas recientes y subrecientes. Entre los parámetros abióticos, los aspectos climáticos, fisiográficos, geológicos, hidrológicos y edáficos son claves (Huber 2007b). Por su parte, entre los bióticos desempeñan una función decisiva los aspectos florísticos y vegetales, así como su historia evolutiva.
+
+En la clasificación de los paisajes vegetales de Venezuela, para definir la secuencia altitudinal se aplicaron los siguientes criterios macroclimáticos:
+
+a) Tierras bajas, macrotérmicas (tierra caliente), en las cuales predomina el paisaje fisiográfico de llanura y de peniplanicie.
+
+b) Tierras medias, colinares a submontanas, macrotérmicas a submesotérmicas (tierra templada inferior), en las cuales predominan paisajes fisiográficos de colinas, lomeríos y montañas o mesetas bajas.
+
+c) Tierras altas, montanas y montano-altas, mesotérmicas a microtérmicas (tierra templada y tierra fría), en las cuales predominan los paisajes de montaña media a alta (cordillerana) y de meseta alta (tepuyana).
+
+Por razones geográficas, en Venezuela esta secuencia es precedida por el paisaje fisiográfico de costas e islas, las cuales caen enteramente en el piso macrotérmico (tierra caliente). Los diferentes paisajes identificados son presentados en el mapa arriba.

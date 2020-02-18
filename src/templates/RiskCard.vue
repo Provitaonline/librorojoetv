@@ -31,7 +31,9 @@
           <section class="section is-center-narrow">
             <div class="tile is-ancestor">
               <div class="tile is-vertical is-parent">
-                <div class="section-header box is-size-3 is-size-4-mobile has-text-weight-bold">Descripción</div>
+                <div class="box">
+                  <h1>Descripción</h1>
+                </div>
                 <div class="tile is-parent">
                   <div class="tile is-child box is-size-5 is-size-6-mobile">
                     <TextWithRefsAndPhotos
@@ -41,7 +43,9 @@
                     </TextWithRefsAndPhotos>
                   </div>
                 </div>
-                <div class="section-header box is-size-3 is-size-4-mobile has-text-weight-bold">Distribución</div>
+                <div class="box">
+                  <h1>Distribución</h1>
+                </div>
                 <div class="tile is-parent">
                   <div class="tile is-child box is-size-5 is-size-6-mobile">
                     <div>
@@ -59,7 +63,9 @@
                   </div>
                 </div>
                 <br>
-                <div v-if="$page.riskCard.areain2010" class="section-header box is-size-3 is-size-4-mobile has-text-weight-bold">Cambios en la distribución</div>
+                <div v-if="$page.riskCard.areain2010" class="box">
+                  <h1>Cambios en la distribución</h1>
+                </div>
                 <div v-if="$page.riskCard.areain2010" class="tile is-parent">
                   <div v-if="!$page.riskCard.stateleveltable.length" class="tile is-child is-3"></div>
                   <div :class="'tile is-child box is-size-6 has-text-centered ' + (($page.riskCard.stateleveltable.length) ? 'is-5' : 'is-6')">
@@ -120,7 +126,9 @@
                     </table>
                   </div>
                 </div>
-                <div class="section-header box is-size-3 is-size-4-mobile has-text-weight-bold">Situación a 2010</div>
+                <div class="box">
+                  <h1>Situación a 2010</h1>
+                </div>
                 <div class="tile is-parent">
                   <div v-if="!$page.riskCard.riskofcolapsestatelevel.length" class="tile is-child is-3"></div>
                   <div :class="'tile is-child box has-text-centered ' + (($page.riskCard.riskofcolapsestatelevel.length) ? 'is-5' : 'is-6')">

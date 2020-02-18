@@ -181,6 +181,7 @@
 
   .explore-title {
     color: $primary;
+    font-family: $family-serif;
   }
 
   .download-text {
