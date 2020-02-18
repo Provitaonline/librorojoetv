@@ -20,8 +20,10 @@
       </section>
 
       <section class="section is-center-narrow">
-        <br>
-        <div class="section-header box is-size-3 is-size-4-mobile has-text-weight-bold">Lista alfabética de fichas</div>
+        <!-- <div class="section-header box is-size-3 is-size-4-mobile has-text-weight-bold">Lista alfabética de fichas</div> -->
+        <div class="box">
+          <h1>Lista alfabética de fichas</h1>
+        </div>
 
         <div class="tile box is-ancestor is-size-6 is-size-7-mobile">
           <div class="tile is-parent" style="flex-wrap: wrap;">
