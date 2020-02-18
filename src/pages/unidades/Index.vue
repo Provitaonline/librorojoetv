@@ -17,8 +17,17 @@
           :mapTitle="$page.unitCardsIndex.mapTitle"
         >
         </InteractiveMap>
-        <References class="box" :references="$page.references.references">
-        </References>
+
+        <div class="tile is-vertical is-parent">
+          <TextWithRefsAndPhotos class="tile is-child box is-size-5 is-size-6-mobile"
+            :text="$page.unitCardsIndex.content"
+            :refs="$page.references.references"
+            :isContent="true" />
+          </TextWithRefsAndPhotos>
+          <References :references="$page.references.references">
+          </References>
+        </div>
+
       </section>
 
     </div>
@@ -42,6 +51,7 @@
         legend
         cardPath
       }
+      content
     }
 
     references: references (id: "unidades") {
@@ -61,6 +71,7 @@
   import slugify from 'slugify';
   import InteractiveMap from '~/components/InteractiveMap.vue'
   import PageBanner from '~/components/PageBanner.vue'
+  import TextWithRefsAndPhotos from '~/components/TextWithRefsAndPhotos.vue'
   import References from '~/components/References.vue'
   import {threatCategories} from '~/assets/js/siteConfig.js'
 
@@ -103,6 +114,7 @@
     components: {
       PageBanner,
       InteractiveMap,
+      TextWithRefsAndPhotos,
       References
     },
     methods: {

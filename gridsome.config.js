@@ -68,7 +68,14 @@ module.exports = {
       use: '@gridsome/source-filesystem',
       options: {
         path: 'content/explore/units-index.md',
-        typeName: 'UnitCardsIndex'
+        typeName: 'UnitCardsIndex',
+        remark:{
+          autolinkHeadings: false,
+          lazyLoadImages: false,
+          plugins: [
+            'remark-attr'
+          ]
+        }
       }
     },
     {
