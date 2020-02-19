@@ -25,13 +25,13 @@
 
           <div class="section is-size-6 is-size-7-mobile" style="margin-bottom: -96px;">
             <div class="is-center-narrow summary-box-container">
-              <div class="card summary-box" style="box-shadow: none; border-style: solid;">
+              <div class="card summary-box">
                 <header>
                   <p class="card-header-title has-text-centered is-inline-block">
                     <b>Paisaje vegetal:</b>&nbsp;<span v-html="$page.caseCard.landscapeunits"></span>
                   </p>
                 </header>
-                <div class="card-content" style="padding-top: 0; padding-left: 0; padding-right: 0;">
+                <div class="card-content">
                   <div class="content has-text-centered">
                     <div class="columns" style="margin-left: 0; margin-right: 0;">
                       <div class="column card-info-column">
@@ -177,7 +177,13 @@
   }
 
   .card-info-content {
-    padding-top: 12px;
+    padding: 12px;
+  }
+
+  .card-content {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   @media only screen and (min-width: 769px) {
