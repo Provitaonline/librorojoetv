@@ -23,23 +23,39 @@
             />
           </PageBanner>
 
-          <div class="columns section is-size-6 is-size-7-mobile" style="margin-bottom: -96px;">
-            <div class="column is-center-narrow summary-box-container">
+          <div class="section is-size-6 is-size-7-mobile" style="margin-bottom: -96px;">
+            <div class="is-center-narrow summary-box-container">
               <div class="card summary-box" style="box-shadow: none; border-style: solid;">
                 <header>
                   <p class="card-header-title has-text-centered is-inline-block">
                     <b>Paisaje vegetal:</b>&nbsp;<span v-html="$page.caseCard.landscapeunits"></span>
                   </p>
                 </header>
-                <div class="card-content">
-                  <div class="content">
-                    <b>Localidad:</b>&nbsp;<span v-html="$page.caseCard.locality"></span><br>
-                    <b>Estados:</b> {{$page.caseCard.states}}<br>
-                    <b>Área aprox.: </b>
-                      <span v-if="$page.caseCard.areatext" v-html="$page.caseCard.areatext"><br></span>
-                      <span v-else>{{$page.caseCard.area | number}} km<sup>2</sup><br></span>
+                <div class="card-content" style="padding-top: 0; padding-left: 0; padding-right: 0;">
+                  <div class="content has-text-centered">
+                    <div class="columns" style="margin-left: 0; margin-right: 0;">
+                      <div class="column card-info-column">
+                        <div class="card-info-title">
+                          <b>Localidad:</b>
+                        </div>
+                        <div class="card-info-content" v-html="$page.caseCard.locality"></div>
+                      </div>
+                      <div class="column card-info-column">
+                        <div class="card-info-title">
+                          <b>Estados:</b>
+                        </div>
+                        <div class="card-info-content">{{$page.caseCard.states}}</div>
+                      </div>
+                      <div class="column card-info-column">
+                        <div class="card-info-title">
+                          <b>Área aprox.:</b>
+                        </div>
+                        <div class="card-info-content" v-if="$page.caseCard.areatext" v-html="$page.caseCard.areatext"><br></div>
+                        <div class="card-info-content" v-else>{{$page.caseCard.area | number}} km<sup>2</sup><br></div>
+                      </div>
+                    </div>
                   </div>
-                  <div :class='$page.caseCard.enableTableScroll ? "table-container" : ""'>
+                  <div :class='$page.caseCard.enableTableScroll ? "table-container" : ""' class="summary-box-table">
                     <table class="table is-size-6 is-size-7-mobile">
                       <thead>
                         <tr>
@@ -148,6 +164,22 @@
     background-color: #f0d4a6;
   }
 
+  .card-info-title {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #FAF2E4;
+  }
+
+  .card-info-column {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+
+  .card-info-content {
+    padding-top: 12px;
+  }
+
   @media only screen and (min-width: 769px) {
     .summary-box {
       margin-top: -96px;
@@ -156,6 +188,10 @@
     .summary-box-container {
       padding-left: 56px;
       padding-right: 56px;
+    }
+    .summary-box-table {
+      padding-left: 40px;
+      padding-right: 40px;
     }
   }
 
