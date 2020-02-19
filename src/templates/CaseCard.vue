@@ -24,11 +24,11 @@
           </PageBanner>
 
           <div class="columns section is-size-6 is-size-7-mobile" style="margin-bottom: -96px;">
-            <div class="column is-three-fifths is-offset-one-fifth">
+            <div class="column is-center-narrow summary-box-container">
               <div class="card summary-box" style="box-shadow: none; border-style: solid;">
-                <header class="card-header">
-                  <p class="card-header-title">
-                    Paisaje vegetal:&nbsp;<span v-html="$page.caseCard.landscapeunits"></span>
+                <header>
+                  <p class="card-header-title has-text-centered is-inline-block">
+                    <b>Paisaje vegetal:</b>&nbsp;<span v-html="$page.caseCard.landscapeunits"></span>
                   </p>
                 </header>
                 <div class="card-content">
@@ -40,10 +40,10 @@
                       <span v-else>{{$page.caseCard.area | number}} km<sup>2</sup><br></span>
                   </div>
                   <div :class='$page.caseCard.enableTableScroll ? "table-container" : ""'>
-                    <table align="center" class="table is-size-6 is-size-7-mobile">
+                    <table class="table is-size-6 is-size-7-mobile">
                       <thead>
                         <tr>
-                          <th v-for="value in $page.caseCard.cardtablecolumns" style="border: none;">{{value}}</th>
+                          <th v-for="value in $page.caseCard.cardtablecolumns" v-bind:class="{'has-text-centered' : value === 'Categoría'}" style="border: none;">{{value}}</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -143,6 +143,8 @@
   .card-header-title {
     padding-left: 24px;
     padding-rigth: 24px;
+    font-weight: normal;
+    width: 100%;
     background-color: #f0d4a6;
   }
 
@@ -151,11 +153,9 @@
       margin-top: -96px;
       /* max-width: 450px; */
     }
-  }
-
-  @media only screen and (max-width: 768px) {
-    .card-title {
-      text-align: center;
+    .summary-box-container {
+      padding-left: 56px;
+      padding-right: 56px;
     }
   }
 
