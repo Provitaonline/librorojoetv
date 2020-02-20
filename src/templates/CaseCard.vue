@@ -206,33 +206,6 @@
     border: none !important;
   }
 
-  ::v-deep thead th {
-    background-color: #f0d4a6;
-    border: solid 1px white;
-  }
-
-  ::v-deep .table-in-content {
-    border-collapse: separate;
-  }
-
-  /*::v-deep  table>tr:nth-child(odd) {
-    background-color: #F8F8F8;
-  }*/
-
-  ::v-deep table>tr:nth-child(odd), ::v-deep table>tbody>tr:nth-child(odd) {
-    background-color: #F8F8F8;
-  }
-
-  ::v-deep  table>tr>td, ::v-deep table>tbody>tr>td {
-    border: solid 1px #F8F8F8;
-  }
-
-  ::v-deep table {
-    border-collapse: collapse !important;
-    border-spacing: 0px;
-    width: 100%;
-    border-bottom: solid 3px #f0d4a6;
-  }
 </style>
 
 <script>

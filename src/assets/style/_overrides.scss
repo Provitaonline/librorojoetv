@@ -155,20 +155,20 @@ html {
 }
 
 thead th {
-  background-color: #f0d4a6;
-  border: solid 1px white;
+  background-color: #f0d4a6 !important;
+  border: solid 1px white !important;;
 }
 
 .table-in-content {
   border-collapse: separate;
 }
 
-table>tr:nth-child(odd), ::v-deep table>tbody>tr:nth-child(odd) {
+table>tr:nth-child(odd), table>tbody>tr:nth-child(odd) {
   background-color: #F8F8F8;
 }
 
-table>tr>td, ::v-deep table>tbody>tr>td {
-  border: solid 1px #F8F8F8;
+table>tr>td, table>tbody>tr>td {
+  border: solid 1px #F8F8F8 !important;
 }
 
 table {
