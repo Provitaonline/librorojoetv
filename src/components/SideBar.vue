@@ -88,14 +88,14 @@
   }
 
   .side-panel-title {
-    background-color: #fafafa;
+    /* background-color: #fafafa; */
     color: $primary;
   }
 
   .side-panel-title-text {
     padding-left: 20px;
     padding-top: 30px;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
   }
 
   @media only screen and (min-width: 769px) {
