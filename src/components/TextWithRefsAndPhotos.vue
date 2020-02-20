@@ -229,6 +229,7 @@ export default {
       }
     },
     injectReferencesAndModalPhotos: function() {
+      if (!this.isContent && !this.pText) return // No data to process yet
       let inlineFigs = []
       return addPopovers(
         processContent((this.isContent ? this.text : this.pText), this.photos, inlineFigs),
