@@ -27,7 +27,12 @@
 <script>
 import slugify from 'slugify'
 import VRuntimeTemplate from 'v-runtime-template'
+
 import {threatCategories} from '~/assets/js/siteConfig.js'
+
+var unified = require('unified')
+var html = require('remark-html')
+var markdown = require('remark-parse')
 
 function addPopovers(data, references, photos, inlineFigs) {
   let r = data.replace(/\(.*?\)/g, function (match) {
@@ -188,12 +193,22 @@ export default {
   },
   data () {
     return {
-      isImageModalActive: false
+      isImageModalActive: false,
+      pText: this.text
     }
   },
   mounted() {
     document.addEventListener('click', documentClickHandler)
     document.addEventListener('keyup', documentKeyHandler)
+
+    console.log(this.text)
+    unified()
+      .use(markdown)
+      .use(html)
+      .process(this.text, (err, result) => {
+        this.pText = String(result)
+        console.log(String(result))
+      })
   },
   beforeDestroy() {
     document.removeEventListener('click', documentClickHandler)
@@ -210,13 +225,9 @@ export default {
   methods: {
     injectReferencesAndModalPhotos: function() {
       let inlineFigs = []
-      let text
-      if (this.isContent) {
-        text = processContent(this.text, this.photos, inlineFigs)
-      } else {
-        text = this.text
-      }
-      return addPopovers(text, this.refs, this.photos, inlineFigs)
+      return addPopovers(
+        processContent((this.isContent ? this.text : this.pText), this.photos, inlineFigs),
+        this.refs, this.photos, inlineFigs)
     },
     dropDownClick: function(e) {
       let referenceDropdownElement = e.target.closest('.reference-dropdown')
