@@ -23,27 +23,43 @@
             />
           </PageBanner>
 
-          <div class="columns section is-size-6 is-size-7-mobile" style="margin-bottom: -96px;">
-            <div class="column is-three-fifths is-offset-one-fifth">
-              <div class="card summary-box" style="box-shadow: none; border-style: solid;">
-                <header class="card-header">
-                  <p class="card-header-title">
-                    Paisaje vegetal:&nbsp;<span v-html="$page.caseCard.landscapeunits"></span>
+          <div class="section is-size-6 is-size-7-mobile" style="margin-bottom: -96px;">
+            <div class="is-center-narrow summary-box-container">
+              <div class="card summary-box">
+                <header>
+                  <p class="card-header-title has-text-centered is-inline-block">
+                    <b>Paisaje vegetal:</b>&nbsp;<span v-html="$page.caseCard.landscapeunits"></span>
                   </p>
                 </header>
                 <div class="card-content">
-                  <div class="content">
-                    <b>Localidad:</b>&nbsp;<span v-html="$page.caseCard.locality"></span><br>
-                    <b>Estados:</b> {{$page.caseCard.states}}<br>
-                    <b>Área aprox.: </b>
-                      <span v-if="$page.caseCard.areatext" v-html="$page.caseCard.areatext"><br></span>
-                      <span v-else>{{$page.caseCard.area | number}} km<sup>2</sup><br></span>
+                  <div class="content has-text-centered">
+                    <div class="columns" style="margin-left: 0; margin-right: 0;">
+                      <div class="column card-info-column">
+                        <div class="card-info-title">
+                          <b>Localidad:</b>
+                        </div>
+                        <div class="card-info-content" v-html="$page.caseCard.locality"></div>
+                      </div>
+                      <div class="column card-info-column">
+                        <div class="card-info-title">
+                          <b>Estados:</b>
+                        </div>
+                        <div class="card-info-content">{{$page.caseCard.states}}</div>
+                      </div>
+                      <div class="column card-info-column">
+                        <div class="card-info-title">
+                          <b>Área aprox.:</b>
+                        </div>
+                        <div class="card-info-content" v-if="$page.caseCard.areatext" v-html="$page.caseCard.areatext"><br></div>
+                        <div class="card-info-content" v-else>{{$page.caseCard.area | number}} km<sup>2</sup><br></div>
+                      </div>
+                    </div>
                   </div>
-                  <div :class='$page.caseCard.enableTableScroll ? "table-container" : ""'>
-                    <table align="center" class="table is-size-6 is-size-7-mobile">
+                  <div :class='$page.caseCard.enableTableScroll ? "table-container" : ""' class="summary-box-table">
+                    <table class="table is-size-6 is-size-7-mobile">
                       <thead>
                         <tr>
-                          <th v-for="value in $page.caseCard.cardtablecolumns" style="border: none;">{{value}}</th>
+                          <th v-for="value in $page.caseCard.cardtablecolumns" v-bind:class="{'has-text-centered' : value === 'Categoría'}" style="border: none;">{{value}}</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -143,7 +159,31 @@
   .card-header-title {
     padding-left: 24px;
     padding-rigth: 24px;
+    font-weight: normal;
+    width: 100%;
     background-color: #f0d4a6;
+  }
+
+  .card-info-title {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #FAF2E4;
+  }
+
+  .card-info-column {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+
+  .card-info-content {
+    padding: 12px;
+  }
+
+  .card-content {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   @media only screen and (min-width: 769px) {
@@ -151,11 +191,13 @@
       margin-top: -96px;
       /* max-width: 450px; */
     }
-  }
-
-  @media only screen and (max-width: 768px) {
-    .card-title {
-      text-align: center;
+    .summary-box-container {
+      padding-left: 56px;
+      padding-right: 56px;
+    }
+    .summary-box-table {
+      padding-left: 40px;
+      padding-right: 40px;
     }
   }
 
@@ -164,33 +206,6 @@
     border: none !important;
   }
 
-  ::v-deep thead th {
-    background-color: #f0d4a6;
-    border: solid 1px white;
-  }
-
-  ::v-deep .table-in-content {
-    border-collapse: separate;
-  }
-
-  /*::v-deep  table>tr:nth-child(odd) {
-    background-color: #F8F8F8;
-  }*/
-
-  ::v-deep table>tr:nth-child(odd), ::v-deep table>tbody>tr:nth-child(odd) {
-    background-color: #F8F8F8;
-  }
-
-  ::v-deep  table>tr>td, ::v-deep table>tbody>tr>td {
-    border: solid 1px #F8F8F8;
-  }
-
-  ::v-deep table {
-    border-collapse: collapse !important;
-    border-spacing: 0px;
-    width: 100%;
-    border-bottom: solid 3px #f0d4a6;
-  }
 </style>
 
 <script>

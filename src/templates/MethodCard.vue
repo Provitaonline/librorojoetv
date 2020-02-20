@@ -51,17 +51,13 @@
 <style lang="scss" scoped>
   @import "~/assets/style/_variables";
 
-  ::v-deep thead {
-    background-color: #f8e7e8;
+  ::v-deep .no-row-shading table>tr {
+    background: none;
   }
 
-  ::v-deep .table-in-content {
-    border: solid 2px $primary;
-    border-collapse: separate;
-  }
-
-  .table {
-    word-break: break-word;
+  ::v-deep .table-container {
+    box-shadow: 0 3px 10px 4px rgba(0, 0, 0, 0.12) !important;
+    border: none !important;
   }
 
 </style>

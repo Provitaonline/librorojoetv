@@ -16,7 +16,7 @@ cardtablecolumns:
 cardtablerows:
   - "Vegetación leñosa anegable|{en}A3|lc|lc"
   - "Herbazales anegables|lc|{cr}A3|{cr}A3"
-  - "Bosques ribereños|{cr}A3|lc|{cr}A3|"
+  - "Bosques ribereños|{cr}A3|lc|{cr}A3"
   - "Arbustales|{vu}A3|{cr}A3|lc"
   - "Sabanas arboladas|{vu}A3|{cr}A3|lc"
   - "Sabanas abiertas|lc|lc|{cr}A3"
