@@ -194,21 +194,16 @@ export default {
   data () {
     return {
       isImageModalActive: false,
-      pText: this.text
+      pText: null
     }
   },
   mounted() {
     document.addEventListener('click', documentClickHandler)
     document.addEventListener('keyup', documentKeyHandler)
-
-    console.log(this.text)
-    unified()
-      .use(markdown)
-      .use(html)
-      .process(this.text, (err, result) => {
-        this.pText = String(result)
-        console.log(String(result))
-      })
+    this.processMarkdown() // The first time
+  },
+  beforeUpdate() {
+    this.processMarkdown() // Every time the data changes
   },
   beforeDestroy() {
     document.removeEventListener('click', documentClickHandler)
@@ -223,6 +218,16 @@ export default {
     }
   },
   methods: {
+    processMarkdown: function() {
+      if (!this.isContent) { // Do not process if markdown content (which is already precessed by Gridsome)
+        unified()
+          .use(markdown)
+          .use(html)
+          .process(this.text, (err, result) => {
+            this.pText = String(result)
+          })
+      }
+    },
     injectReferencesAndModalPhotos: function() {
       let inlineFigs = []
       return addPopovers(
