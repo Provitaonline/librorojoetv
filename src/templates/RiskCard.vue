@@ -31,63 +31,14 @@
           <section class="section is-center-narrow">
             <div class="tile is-ancestor">
               <div class="tile is-vertical is-parent">
-                <div class="box">
-                  <h1>Descripción</h1>
-                </div>
-                <div class="tile is-parent">
-                  <div class="tile is-child box is-size-5 is-size-6-mobile">
-                    <TextWithRefsAndPhotos
-                      :text="$page.riskCard.description"
-                      :refs="$page.references.references"
-                      :photos="$page.riskCard.photos">
-                    </TextWithRefsAndPhotos>
-                  </div>
-                </div>
-                <div class="box">
-                  <h1>Distribución</h1>
-                </div>
-                <div class="tile is-parent">
-                  <div class="tile is-child box is-size-5 is-size-6-mobile">
-                    <div>
-                      <div class="distribution-map">
-                        <p class="is-size-7 has-text-centered has-text-weight-bold">{{$page.riskCard.title}}<br>Distribución en 2010</p>
-                        <g-image v-if="$page.riskCard.distributionmap" :src="$page.riskCard.distributionmap" />
-                        <p class="is-size-7 has-text-right"><i>Huber y Oliveira-Miranda (2010)</i></p>
-                      </div>
-                      <TextWithRefsAndPhotos
-                        :text="$page.riskCard.distribution"
-                        :refs="$page.references.references"
-                        :photos="$page.riskCard.photos">
-                      </TextWithRefsAndPhotos>
-                    </div>
-                  </div>
-                </div>
-                <br>
-                <div v-if="$page.riskCard.areain2010" class="box">
-                  <h1>Cambios en la distribución</h1>
-                </div>
+                <TextWithRefsAndPhotos class="text-block tile is-child box is-size-5 is-size-6-mobile"
+                  :text="$page.riskCard.description"
+                  :refs="$page.references.references"
+                  :photos="$page.riskCard.photos">
+                </TextWithRefsAndPhotos>
                 <div v-if="$page.riskCard.areain2010" class="tile is-parent">
-                  <div v-if="!$page.riskCard.stateleveltable.length" class="tile is-child is-3"></div>
-                  <div :class="'tile is-child box is-size-6 has-text-centered ' + (($page.riskCard.stateleveltable.length) ? 'is-5' : 'is-6')">
-                    <b>Superficie en 1988 (km<sup>2</sup>): </b>{{$page.riskCard.areain1988 | number}}<br>
-                    <b>Superficie en 2010 (km<sup>2</sup>): </b>{{$page.riskCard.areain2010 | number}}<br>
-                    <span class="is-size-7"><b>(Figuras 1a y 1b)</b></span>
-                    <ClientOnly>
-                      <div v-for="item in $page.riskCard.mapcompare">
-                        <br>
-                        <div class="has-text-centered is-size-7 has-text-weight-bold" >{{item.caption}}</div>
-                        <VueCompareImage v-if="item.in2010" style="border-style: solid; border-color: dimgrey;" :leftImage="item.in1988.src" leftLabel="1988" :rightImage="item.in2010.src" rightLabel="2010" />
-                        <div style="padding-top: 8px;">
-                          <div v-for="il in item.interventionlegend" style="float: left;" class="has-text-left is-size-7">
-                            <span class="intervention-legend-item" :style="'background-image: url(' + il.image.src + ');'"></span>
-                            <span style="padding-left: 4px; padding-right: 4px;">{{il.text}}</span>
-                          </div>
-                          <br>
-                        </div>
-                      </div>
-                    </ClientOnly>
-                  </div>
-                  <div v-if="$page.riskCard.stateleveltable.length" class="tile is-child is-7 box">
+                  <div v-if="$page.riskCard.stateleveltable.length" class="tile is-child is-2"></div>
+                  <div v-if="$page.riskCard.stateleveltable.length" class="tile is-child is-8 box">
                     <div class="has-text-centered is-size-6 has-text-weight-bold">Superficie estimada (km<sup>2</sup>) por estado:<br>
                       <span class="is-size-7"><b>(Tabla 1)</b></span>
                       <br><br>
@@ -126,16 +77,45 @@
                     </table>
                   </div>
                 </div>
-                <div class="box">
-                  <h1>Situación a 2010</h1>
+                <TextWithRefsAndPhotos class="text-block tile is-child box is-size-5 is-size-6-mobile"
+                  :text="$page.riskCard.distributionchanges"
+                  :refs="$page.references.references"
+                  :photos="$page.riskCard.photos">
+                </TextWithRefsAndPhotos>
+                <div v-if="$page.riskCard.areain2010" class="tile is-parent">
+                  <div class="tile is-child box is-size-6 has-text-centered">
+                    <b>Superficie en 1988 (km<sup>2</sup>): </b>{{$page.riskCard.areain1988 | number}}<br>
+                    <b>Superficie en 2010 (km<sup>2</sup>): </b>{{$page.riskCard.areain2010 | number}}<br>
+                    <span class="is-size-7"><b>(Figuras 1a y 1b)</b></span>
+                    <ClientOnly>
+                      <div v-for="item in $page.riskCard.mapcompare">
+                        <br>
+                        <div class="has-text-centered is-size-7 has-text-weight-bold" >{{item.caption}}</div>
+                        <VueCompareImage v-if="item.in2010" style="border-style: solid; border-color: dimgrey;" :leftImage="item.in1988.src" leftLabel="1988" :rightImage="item.in2010.src" rightLabel="2010" />
+                        <div style="padding-top: 8px;">
+                          <div v-for="il in item.interventionlegend" style="float: left;" class="has-text-left is-size-7">
+                            <span class="intervention-legend-item" :style="'background-image: url(' + il.image.src + ');'"></span>
+                            <span style="padding-left: 4px; padding-right: 4px;">{{il.text}}</span>
+                          </div>
+                          <br>
+                        </div>
+                      </div>
+                    </ClientOnly>
+                  </div>
                 </div>
+                <div class="text-block tile is-child box is-size-5 is-size-6-mobile">
+                  <h1>Situación a 2010</h1>
+                  <b>Riesgo de colapso a nivel nacional: </b>
+                  {{threatCategories[$page.riskCard.category].text.toUpperCase()}}
+                  <img :src="threatCategories[$page.riskCard.category].img" height="30" width="30" style="margin-bottom: -5px;">
+                </div>
+                <TextWithRefsAndPhotos class="text-block tile is-child box is-size-5 is-size-6-mobile"
+                  :text="$page.riskCard.situationstart"
+                  :refs="$page.references.references"
+                  :photos="$page.riskCard.photos">
+                </TextWithRefsAndPhotos>
                 <div class="tile is-parent">
-                  <div v-if="!$page.riskCard.riskofcolapsestatelevel.length" class="tile is-child is-3"></div>
-                  <div :class="'tile is-child box has-text-centered ' + (($page.riskCard.riskofcolapsestatelevel.length) ? 'is-5' : 'is-6')">
-                    <b>Riesgo de colapso a nivel nacional: </b>
-                    {{threatCategories[$page.riskCard.category].text.toUpperCase()}}
-                    <img :src="threatCategories[$page.riskCard.category].img" height="30" width="30" style="margin-bottom: -5px;">
-                    <br><br>
+                  <div class="tile is-child box is-size-6 has-text-centered">
                     <b>Grado de amenaza 2010: </b><br>
                     <span class="is-size-7"><b>(Figura 1c)</b></span>
                     <div v-for="item in $page.riskCard.threatlevelmaps">
@@ -151,7 +131,15 @@
                       </div>
                     </div>
                   </div>
-                  <div v-if="$page.riskCard.riskofcolapsestatelevel.length" class="tile is-child is-7 box">
+                </div>
+                <TextWithRefsAndPhotos class="text-block tile is-child box is-size-5 is-size-6-mobile"
+                  :text="$page.riskCard.situationend"
+                  :refs="$page.references.references"
+                  :photos="$page.riskCard.photos">
+                </TextWithRefsAndPhotos>
+                <div class="tile is-parent">
+                  <div v-if="$page.riskCard.riskofcolapsestatelevel.length" class="tile is-child is-2"></div>
+                  <div v-if="$page.riskCard.riskofcolapsestatelevel.length" class="tile is-child is-8 box">
                     <div class="has-text-centered"><b>Riesgo de colapso por {{($page.riskCard.zonelabel).toLowerCase()}}:</b><br>
                       <span class="is-size-7"><b>(Tabla 2)</b></span>
                       <br><br>
@@ -205,23 +193,12 @@
                     </table>
                   </div>
                 </div>
-                <div v-if="$page.riskCard.content != '\n'" class="container is-size-5 has-text-centered">
-                  <a @click="showMore = !showMore">
-                    <p v-if="!showMore">LEER MÁS...<font-awesome :icon="['fas', 'angle-down']"/></p>
-                    <p v-else>LEER MENOS...<font-awesome :icon="['fas', 'angle-up']"/></p>
-                  </a>
-                </div>
-                <div v-if="showMore" class="tile is-parent">
-                  <!-- <div class="d-content tile is-child is-size-5" v-html="$page.riskCard.content"></div> -->
-                  <transition name="fade" appear>
-                    <TextWithRefsAndPhotos class="tile is-child box is-size-5 is-size-6-mobile"
-                      :text="$page.riskCard.content"
-                      :refs="$page.references.references"
-                      :photos="$page.riskCard.photos"
-                      :isContent="true" />
-                    </TextWithRefsAndPhotos>
-                  </transition>
-                </div>
+                <TextWithRefsAndPhotos class="tile is-child box is-size-5 is-size-6-mobile"
+                  :text="$page.riskCard.content"
+                  :refs="$page.references.references"
+                  :photos="$page.riskCard.photos"
+                  :isContent="true" />
+                </TextWithRefsAndPhotos>
               </div>
             </div>
           </section>
@@ -239,6 +216,9 @@
       plantformation
       category
       description
+      distributionchanges
+      situationstart
+      situationend
       cardimage
       cardimagecaption
       distribution
@@ -357,6 +337,11 @@
       width: 50%;
       float: right;
     }
+  }
+
+  .text-block {
+    padding-bottom: 0px !important;
+    margin-bottom: 0px !important;
   }
 
   .legend-item {
