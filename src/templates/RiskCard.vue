@@ -221,13 +221,10 @@
       situationend
       cardimage
       cardimagecaption
-      distribution
-      distributionmap
       areain1988
       areain2010
       formationColumn
       stateleveltable {
-        formation
         state
         areain1988
         areain2010
@@ -249,9 +246,7 @@
       zonelabel
       criteriaused
       riskofcolapsestatelevel {
-        formation
         zone
-        area
         threatcategories
       }
       photos {
