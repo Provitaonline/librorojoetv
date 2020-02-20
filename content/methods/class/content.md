@@ -20,105 +20,110 @@ Dado que la medición directa del nivel de amenaza de los ecosistemas y las espe
 Como en las listas rojas de especies (IUCN 2010a), y en concordancia con el principio precautorio del Convenio sobre la Diversidad Biológica (CDB 1992, Cooney 2005), la evaluación de los ecosistemas debería efectuarse con todos los criterios disponibles, pero sólo tendría que satisfacer los umbrales de uno de los criterios para que se incluya en una de las categorías de “amenaza”. La Lista Roja de Especies Amenazadas de UICN (2010) es un punto de partida lógico para definir los valores umbrales de los criterios para ecosistemas, y que ya han sido incorporados a muchos de los protocolos de evaluación ecosistémica (Nicholson *et al.* 2009). Un elemento fundamental en la composición de los ecosistemas son las especies que lo conforman, por lo tanto, los criterios que se aplican a las especies podrían aplicarse a los ecosistemas.
 
 El sistema diseñado combina medidas de distribución geográfica, función ecológica y sus tendencias temporales en períodos cortos y largos, y está conformado por cuatro criterios (Figura 1) (Tabla 1). Para evaluar el riesgo de los ecosistemas el primer paso es definir el área de estudio y recopilar toda la información posible sobre los cambios de extensión y calidad ecológica de sus ecosistemas. Las definiciones clásicas de ecosistema (e.g. Whittaker 1975) y las empleadas en el Convenio sobre la Diversidad Biológica incluyen componentes bióticos y abióticos que interactúan como una “unidad funcional” (CDB 1992). Sin embargo, dado que típicamente los esfuerzos de conservación se enfocan en los componentes bióticos de los ecosistemas, en esta ocasión ecosistema es utilizado como un término genérico para comunidades ecológicas o conjuntos de especies relativamente diferentes que coexisten en espacio, en tiempo y en asociación con rasgos bióticos particulares (Huber & Alarcón 1988, Christensen *et al.* 1996, Jennings *et al.* 2009, Josse *et al.* 2009, Sayre *et al.* 2010). Para muchos ecosistemas terrestres, al igual que para algunos acuáticos, las clasificaciones de cobertura del terreno podrían ofrecer el método más práctico para delinear las unidades de evaluación (Benson 2006, Rodríguez *et al.* 2007). Una vez definida el área de estudio, el siguiente paso es cuantificar la extensión actual y pasada de los ecosistemas y su tasa de cambio, para luego proyectar estos datos hacia el futuro. Las principales fuentes de información empleadas aquí para documentar los cambios de cobertura son mapas actuales y pasados, series temporales de imágenes de satélite, fotografías aéreas y relatos históricos. Esta información luego es contrastada con los umbrales correspondientes a cada criterio y se toma la decisión sobre cuál categoría es la adecuada (Figura 1) (Tabla 1).
-
-Existen ocho categorías posibles para la clasificación de los ecosistemas (Figura 2). Para facilitar las comparaciones entre listas rojas de diferentes partes del mundo, la UICN acordó estandarizar a las siglas en inglés la abreviación empleada para indicar cada categoría. La primera, Eliminado (EL), se refiere a ecosistemas que han experimentado una transformación tan pronunciada que no es posible distinguir elementos fundamentales de su composición o estructura. La eliminación puede ocurrir por sustitución absoluta de la cobertura o por la pérdida de una o más funciones ecológicas clave en la totalidad de su distribución conocida. Las tres categorías siguientes, En Peligro Crítico (CR), En Peligro (EN) y Vulnerable (VU), se asignan sobre la base de criterios cuantitativos diseñados para reflejar diferentes grados de riesgo de eliminación (Tabla 1). Los ecosistemas clasificados en estas tres categorías conforman el grupo de los ecosistemas amenazados. La categoría Casi Amenazado (NT) se aplica a casos que no califiquen como amenazados en el presente, pero que están muy cerca de los valores umbrales y podrían calificar en el futuro cercano. Preocupación Menor (LC) se debe asignar a ecosistemas que no califiquen (ni estén cerca de calificar) como amenazados o casi amenazados. La categoría Datos Insuficientes (DD) es asignada en casos donde no se dispone de suficiente información como para hacer una evaluación confiable del riesgo de eliminación. Antes de clasificar un ecosistema como Datos Insuficientes, se recomienda agotar todas las fuentes de información existentes y aprovechar cualquier dato del que se disponga, esto para evitar que ecosistemas realmente amenazados sean eliminados, ignorados o subestimados al momento de definir acciones de conservación. La categoría No Evaluado (NE) se refiere a ecosistemas cuya valoración no ha sido contrastada con los criterios. Las categorías LC y NE no reflejan riesgo de eliminación (Figura 2).
+<div class="is-oversized">
 {Figura 1}
-<div style="text-align: center;"><b>Tabla 1.</b> Sistema de categorías y criterios para ecosistemas amenazados propuesto por Rodríguez *et al.* (2011). Basado en la Lista Roja de IUCN (2001) y en el sistema presentado por Nicholson *et al.* (2009)</div>
-<div class="table-container is-size-6">
-  <table>
-    <thead>
-      <tr>
-        <th>Criterio</th>
-        <th>Subcriterio</th>
-        <th colspan="2">Estatus</th>
-      </tr>
-    </thead>
-    <tr>
-      <td rowspan="4">A: Disminución en el corto plazo (en distribución o en función ecológica) basada en cualquiera de los siguientes subcriterios:</td>
-      <td>1. Una reducción observada, estimada, inferida o sospechada en su distribución, durante los últimos 50 años, en alguno de los siguientes porcentajes:</td>
-      <td>&ge;80%<br>&ge;50%<br>&ge;30%</td>
-      <td>CR<br>EN<br>VU</td>
-    </tr>
-    <tr>
-      <td>2. Una reducción proyectada o sospechada en su distribución, ≥ 80% CR en los próximos 50 años, en alguno de los siguientes porcentajes:</td>
-      <td>&ge;80%<br>&ge;50%<br>&ge;30%</td>
-      <td>CR<br>EN<br>VU</td>
-    </tr>
-    <tr>
-      <td>3. Una reducción observada, estimada, inferida, proyectada o sospechada en su distribución pasada o futura, en un intervalo de 50 años, que incluye el pasado y el futuro, en alguno de los siguientes porcentajes:</td>
-      <td>&ge;80%<br>&ge;50%<br>&ge;30%</td>
-      <td>CR<br>EN<br>VU</td>
-    </tr>
-    <tr>
-      <td>4. Una reducción o posible reducción en su función ecológica, en al menos un proceso ecológico fundamental (en relación con un estado de referencia apropiado para el ecosistema), que es:<br>
-      (a) muy severa, en ≥80% de su distribución durante los últimos o próximos 50 años<br>
-      (b1) muy severa, en ≥50% de su distribución durante los últimos o próximos 50 años<br>
-      (b2) severa, en ≥80% de su distribución durante los últimos o próximos 50 años<br>
-      (c1) muy severa, en ≥30% de su distribución durante los últimos o próximos 50 años<br>
-      (c2) severa, en ≥50% de su distribución durante los últimos o próximos 50 años<br>
-      (c3) moderadamente severa, en ≥80% de su distribución durante los últimos o próximos 50 años</td>
-      <td>(a)<br>(b1)<br>(b2)<br>(c1)<br>(c2)<br>(c3)</td>
-      <td>CR<br>EN<br>EN<br>VU<br>VU<br>VU</td>
-    </tr>
-    <tr>
-      <td rowspan="2">B: Disminución histórica (en distribución o en función ecológica) basada en cualquiera de los siguientes subcriterios:</td>
-      <td>1. Una reducción estimada, inferida o sospechada en su de los siguientes porcentajes:</td>
-      <td>&ge;90%<br>&ge;70%<br>&ge;50%</td>
-      <td>CR<br>EN<br>VU</td>
-    </tr>
-    <tr>
-      <td>2. Una reducción muy severa en al menos un proceso ecológico fundamental de su distribución, durante los últimos 500 años (en relación con un estado de referencia apropiado para el ecosistema), en cualquiera de los siguientes porcentajes:</td>
-      <td>&ge;90%<br>&ge;70%<br>&ge;50%</td>
-      <td>CR<br>EN<br>VU</td>
-    </tr>
-    <tr>
-      <td rowspan="6">C: Distribución actual pequeña y en disminución o en muy pocas localidades (en distribución o en función ecológica), basada en cualquiera de los siguientes subcriterios:</td>
-      <td style="border: none;">1. Extensión de la presencia estimada en:</td>
-      <td>&le;100&nbsp;km<sup>2</sup><br>&le;5.000&nbsp;km<sup>2</sup><br>&le;20.000&nbsp;km<sup>2</sup></td>
-      <td>CR<br>EN<br>VU</td>
-    </tr>
-    <tr>
-      <td style="border: none;">y en al menos uno de los siguientes subcriterios:<br>
-      (a) una reducción persistente observada, estimada, inferida o sospechada en distribución, en:<br>
-      (b) una reducción severa observada, estimada, inferida o sospechada en al menos un proceso ecológico fundamental, en:<br>
-      (c) una restricción del ecosistema a:</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td class="has-text-right">1 localidad<br>5 o menos localidades<br>10 o menos localidades</td>
-      <td></td>
-      <td>CR<br>EN<br>VU</td>
-    </tr>
-    <tr>
-      <td style="border: none;">2. Área de ocupación estimada en:</td>
-      <td>&le;10&nbsp;km<sup>2</sup><br>&le;500&nbsp;km<sup>2</sup><br>&le;2000&nbsp;km<sup>2</sup></td>
-      <td>CR<br>EN<br>VU</td>
-    </tr>
-    <tr>
-      <td style="border: none;">y al menos uno de los siguientes subcriterios:<br>
-      (a) una reducción persistente observada, estimada, inferida o sospechada en distribución, en:<br>
-      (b) una reducción severa observada, estimada, inferida o sospechada en al menos un proceso ecológico fundamental, en:<br>
-      (c) una restricción del ecosistema a:</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td class="has-text-right">1 localidad<br>5 o menos localidades<br>10 o menos localidades</td>
-      <td></td>
-      <td>CR<br>EN<br>VU</td>
-    </tr>
-    <tr>
-      <td>D: Distribución actual muy pequeña, con posibles amenazas serias, con o sin evidencia de reduccionespasadas (en distribución o en función ecológica), estimada en:</td>
-      <td></td>
-      <td>&le;5&nbsp;km<sup>2</sup><br>&le;50&nbsp;km<sup>2</sup><br>&le;100&nbsp;km<sup>2</sup></td>
-      <td>CR<br>EN<br>VU</td>
-    </tr>
-  </table>
 </div>
-Abreviaciones: CR=En Peligro Crítico, EN=En Peligro, VU=Vulnerable.
-
+<div style="text-align: center;"><b>Tabla 1.</b> Sistema de categorías y criterios para ecosistemas amenazados propuesto por Rodríguez <i>et al.</i> (2011). Basado en la Lista Roja de IUCN (2001) y en el sistema presentado por Nicholson <i>et al.</i> (2009)</div>
+<div class="is-oversized">
+  <div class="table-container is-size-6">
+    <table>
+      <thead>
+        <tr>
+          <th>Criterio</th>
+          <th>Subcriterio</th>
+          <th colspan="2">Estatus</th>
+        </tr>
+      </thead>
+      <tr>
+        <td rowspan="4">A: Disminución en el corto plazo (en distribución o en función ecológica) basada en cualquiera de los siguientes subcriterios:</td>
+        <td>1. Una reducción observada, estimada, inferida o sospechada en su distribución, durante los últimos 50 años, en alguno de los siguientes porcentajes:</td>
+        <td>&ge;80%<br>&ge;50%<br>&ge;30%</td>
+        <td>CR<br>EN<br>VU</td>
+      </tr>
+      <tr>
+        <td>2. Una reducción proyectada o sospechada en su distribución, ≥ 80% CR en los próximos 50 años, en alguno de los siguientes porcentajes:</td>
+        <td>&ge;80%<br>&ge;50%<br>&ge;30%</td>
+        <td>CR<br>EN<br>VU</td>
+      </tr>
+      <tr>
+        <td>3. Una reducción observada, estimada, inferida, proyectada o sospechada en su distribución pasada o futura, en un intervalo de 50 años, que incluye el pasado y el futuro, en alguno de los siguientes porcentajes:</td>
+        <td>&ge;80%<br>&ge;50%<br>&ge;30%</td>
+        <td>CR<br>EN<br>VU</td>
+      </tr>
+      <tr>
+        <td>4. Una reducción o posible reducción en su función ecológica, en al menos un proceso ecológico fundamental (en relación con un estado de referencia apropiado para el ecosistema), que es:<br>
+        (a) muy severa, en ≥80% de su distribución durante los últimos o próximos 50 años<br>
+        (b1) muy severa, en ≥50% de su distribución durante los últimos o próximos 50 años<br>
+        (b2) severa, en ≥80% de su distribución durante los últimos o próximos 50 años<br>
+        (c1) muy severa, en ≥30% de su distribución durante los últimos o próximos 50 años<br>
+        (c2) severa, en ≥50% de su distribución durante los últimos o próximos 50 años<br>
+        (c3) moderadamente severa, en ≥80% de su distribución durante los últimos o próximos 50 años</td>
+        <td>(a)<br>(b1)<br>(b2)<br>(c1)<br>(c2)<br>(c3)</td>
+        <td>CR<br>EN<br>EN<br>VU<br>VU<br>VU</td>
+      </tr>
+      <tr>
+        <td rowspan="2">B: Disminución histórica (en distribución o en función ecológica) basada en cualquiera de los siguientes subcriterios:</td>
+        <td>1. Una reducción estimada, inferida o sospechada en su de los siguientes porcentajes:</td>
+        <td>&ge;90%<br>&ge;70%<br>&ge;50%</td>
+        <td>CR<br>EN<br>VU</td>
+      </tr>
+      <tr>
+        <td>2. Una reducción muy severa en al menos un proceso ecológico fundamental de su distribución, durante los últimos 500 años (en relación con un estado de referencia apropiado para el ecosistema), en cualquiera de los siguientes porcentajes:</td>
+        <td>&ge;90%<br>&ge;70%<br>&ge;50%</td>
+        <td>CR<br>EN<br>VU</td>
+      </tr>
+      <tr>
+        <td rowspan="6">C: Distribución actual pequeña y en disminución o en muy pocas localidades (en distribución o en función ecológica), basada en cualquiera de los siguientes subcriterios:</td>
+        <td style="border: none;">1. Extensión de la presencia estimada en:</td>
+        <td>&le;100&nbsp;km<sup>2</sup><br>&le;5.000&nbsp;km<sup>2</sup><br>&le;20.000&nbsp;km<sup>2</sup></td>
+        <td>CR<br>EN<br>VU</td>
+      </tr>
+      <tr>
+        <td style="border: none;">y en al menos uno de los siguientes subcriterios:<br>
+        (a) una reducción persistente observada, estimada, inferida o sospechada en distribución, en:<br>
+        (b) una reducción severa observada, estimada, inferida o sospechada en al menos un proceso ecológico fundamental, en:<br>
+        (c) una restricción del ecosistema a:</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="has-text-right">1 localidad<br>5 o menos localidades<br>10 o menos localidades</td>
+        <td></td>
+        <td>CR<br>EN<br>VU</td>
+      </tr>
+      <tr>
+        <td style="border: none;">2. Área de ocupación estimada en:</td>
+        <td>&le;10&nbsp;km<sup>2</sup><br>&le;500&nbsp;km<sup>2</sup><br>&le;2000&nbsp;km<sup>2</sup></td>
+        <td>CR<br>EN<br>VU</td>
+      </tr>
+      <tr>
+        <td style="border: none;">y al menos uno de los siguientes subcriterios:<br>
+        (a) una reducción persistente observada, estimada, inferida o sospechada en distribución, en:<br>
+        (b) una reducción severa observada, estimada, inferida o sospechada en al menos un proceso ecológico fundamental, en:<br>
+        (c) una restricción del ecosistema a:</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="has-text-right">1 localidad<br>5 o menos localidades<br>10 o menos localidades</td>
+        <td></td>
+        <td>CR<br>EN<br>VU</td>
+      </tr>
+      <tr>
+        <td>D: Distribución actual muy pequeña, con posibles amenazas serias, con o sin evidencia de reduccionespasadas (en distribución o en función ecológica), estimada en:</td>
+        <td></td>
+        <td>&le;5&nbsp;km<sup>2</sup><br>&le;50&nbsp;km<sup>2</sup><br>&le;100&nbsp;km<sup>2</sup></td>
+        <td>CR<br>EN<br>VU</td>
+      </tr>
+    </table>
+  </div>
+  Abreviaciones: CR=En Peligro Crítico, EN=En Peligro, VU=Vulnerable.
+</div>
+<br>
+Existen ocho categorías posibles para la clasificación de los ecosistemas (Figura 2). Para facilitar las comparaciones entre listas rojas de diferentes partes del mundo, la UICN acordó estandarizar a las siglas en inglés la abreviación empleada para indicar cada categoría. La primera, Eliminado (EL), se refiere a ecosistemas que han experimentado una transformación tan pronunciada que no es posible distinguir elementos fundamentales de su composición o estructura. La eliminación puede ocurrir por sustitución absoluta de la cobertura o por la pérdida de una o más funciones ecológicas clave en la totalidad de su distribución conocida. Las tres categorías siguientes, En Peligro Crítico (CR), En Peligro (EN) y Vulnerable (VU), se asignan sobre la base de criterios cuantitativos diseñados para reflejar diferentes grados de riesgo de eliminación (Tabla 1). Los ecosistemas clasificados en estas tres categorías conforman el grupo de los ecosistemas amenazados. La categoría Casi Amenazado (NT) se aplica a casos que no califiquen como amenazados en el presente, pero que están muy cerca de los valores umbrales y podrían calificar en el futuro cercano. Preocupación Menor (LC) se debe asignar a ecosistemas que no califiquen (ni estén cerca de calificar) como amenazados o casi amenazados. La categoría Datos Insuficientes (DD) es asignada en casos donde no se dispone de suficiente información como para hacer una evaluación confiable del riesgo de eliminación. Antes de clasificar un ecosistema como Datos Insuficientes, se recomienda agotar todas las fuentes de información existentes y aprovechar cualquier dato del que se disponga, esto para evitar que ecosistemas realmente amenazados sean eliminados, ignorados o subestimados al momento de definir acciones de conservación. La categoría No Evaluado (NE) se refiere a ecosistemas cuya valoración no ha sido contrastada con los criterios. Las categorías LC y NE no reflejan riesgo de eliminación (Figura 2).
+<div class="is-oversized">
 {Figura 2}
+</div>
 La clasificación de los ecosistemas se sustenta en cuatro criterios: A) disminución del área o pérdida de función recientes, B) disminución histórica total, C) distribución actual pequeña y en disminución, y D) distribución muy pequeña sin disminuciones conocidas (Rodríguez *et al.* 2011). El Criterio A (Tabla 1) evalúa el estatus de ecosistemas que hayan disminuido sustancialmente en su distribución o en su función ecológica en el pasado cercano o se estime vayan a hacerlo en el futuro próximo. Este criterio se enfoca en amenazas cuyo impacto sea perceptible en la actualidad y que sean susceptibles a intervenciones de conservación capaces de mitigarlas. Este lapso también representa la escala temporal sobre la que a su vez podrían tomarse decisiones e implementar políticas públicas de conservación. Los subcriterios A1, A2 y A3 se refieren a cambios absolutos en la distribución de un ecosistema y se diferencian entre sí por la fecha de inicio y cierre de la ventana de 50 años: A1 se usa para clasificar cambios pasados, A2 para cambios futuros y A3 para combinar cambios pasados con proyecciones futuras. El lapso que abarque la información disponible para hacer la evaluación, determinaría cuál de los tres criterios es el más adecuado.
 
 El subcriterio A4 se concentra en reducciones o posibles reducciones de la función ecológica, y la categoría se asigna según la inmediatez, alcance y severidad de la amenaza (Master *et al.* 2009). Por ejemplo, un ecosistema podría ser considerado En Peligro Crítico (CR) si estuviese experimentando una pérdida muy severa de su función sobre una gran proporción de su distribución (> 80%) y con amenazas actuando en el presente, o que se espera actúen en el futuro cercano (± 50 años). Este lapso de 50 años se debe a que las pérdidas de función pueden ser más difíciles de detectar que una disminución de distribución, y por tanto el impacto podría ser más difícil de controlar. Los niveles de riesgo menores, como EN o VU, serían adecuados si la pérdida de función fuese igualmente severa pero su alcance menor, o si fuese menos severa con un alcance reducido. Lo más probable es que el subcriterio A4 se aplique principalmente en sistemas acuáticos como ríos, donde a pesar de no observarse cambios en el tamaño del ecosistema, amenazas como la contaminación podrían haber generado transformaciones a gran escala de integridad ecológica (Rodríguez *et al.* 2011).
