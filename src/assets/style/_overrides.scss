@@ -10,6 +10,14 @@
   color: $primary !important;
 }
 
+.leaflet-container a.leaflet-popup-close-button {
+  color: #c3c3c3 !important;
+}
+
+.leaflet-container a.leaflet-popup-close-button:hover {
+  color: #939393 !important;
+}
+
 .leaflet-control-layers-toggle {
 	 width: 26px !important;
 	 height: 26px !important;
