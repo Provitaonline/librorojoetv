@@ -51,6 +51,10 @@
 <style lang="scss" scoped>
   @import "~/assets/style/_variables";
 
+  ::v-deep .no-row-shading table>tr {
+    background: none;
+  }
+
   ::v-deep .table-container {
     box-shadow: 0 3px 10px 4px rgba(0, 0, 0, 0.12) !important;
     border: none !important;
