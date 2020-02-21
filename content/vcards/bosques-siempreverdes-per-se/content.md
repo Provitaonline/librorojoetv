@@ -51,7 +51,6 @@ mapcompare:
     - image: "./intervenidas.png"
       text: "Áreas intervenidas"
 formationColumn: false
-formation: null
 stateleveltable:
   - state: "Amazonas"
     areain1988: "145555"
