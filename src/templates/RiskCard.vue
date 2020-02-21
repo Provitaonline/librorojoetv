@@ -121,14 +121,16 @@
                     <div v-for="item in $page.riskCard.threatlevelmaps">
                       <br>
                       <div class="has-text-centered is-size-7 has-text-weight-bold" >{{item.caption}}</div>
-                      <g-image v-if="item" style="border-style: solid; border-color: dimgrey;" :src="item.map"></g-image>
-                      <div>
-                        <div v-for="tl in item.threatcategories" style="float: left;" class="has-text-left is-size-7">
-                          <span class="legend-item" :style="'background:' + threatCategories[tl].color"></span>
-                          <span style="padding-left: 4px; padding-right: 4px;"> {{threatCategories[tl].text}}</span>
-                        </div>
-                        <br>
-                      </div>
+                      <figure style="display: inline-block;">
+                        <g-image v-if="item" style="border-style: solid; border-color: dimgrey;" :src="item.map"></g-image>
+                        <figcaption>
+                          <div v-for="tl in item.threatcategories" style="float: left;" class="has-text-left is-size-7">
+                            <span class="legend-item" :style="'background:' + threatCategories[tl].color"></span>
+                            <span style="padding-left: 4px; padding-right: 4px;"> {{threatCategories[tl].text}}</span>
+                          </div>
+                          <br>
+                        </figcaption>
+                      </figure>
                     </div>
                   </div>
                 </div>
