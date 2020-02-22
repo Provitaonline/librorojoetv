@@ -67,7 +67,10 @@ Existen varias clases de servicios ecosistémicos. Los servicios de provisionami
 
 Se propone un procedimiento que tiene dos pasos. En el primero, se elabora una matriz de los ecosistemas de interés y de las grandes categorías de servicios ecosistémicos (Tabla 1). En cada ecosistema se asigna el número tres (3) a los servicios aportados por éste, que no son provistos en mayor grado por ningún otro. Se asigna dos (2) a los servicios que aporta, pero en menor grado que los anteriores. Finalmente se asigna uno (1) a los servicios cuya contribución se considere poco significativa. En un segundo paso, se contabiliza cuántos servicios ecosistémicos reciben la máxima puntuación. Si presenta 3 veces el número 3 (es decir que los 3 tipos de servicios son de gran importancia) se le otorgará el valor de tres (3) puntos. Si sólo tiene 2 veces el número 3, entonces se le asignará dos (2) puntos, y si finalmente se considera que únicamente uno de los servicios es excepcionalmente importante para la sociedad, se le dará un (1) punto. Es importante destacar que la asignación de estos valores es subjetiva y dependerá de quienes realicen la ponderación. El propósito es reflejar la visión de los beneficiarios de los ecosistemas sobre su conservación, por lo que necesariamente debe ser una variable capaz de adaptarse y responder a las diferentes expectativas de sociedades o grupos sociales.
 
-<div style="text-align: center;"><b>Tabla 1.</b> Cálculo de la ponderación de los servicios que brindan ecosistemas de diferentes tipos (ejemplo).
+<div class="is-size-6">
+  <b>Tabla 1.</b> Cálculo de la ponderación de los servicios que brindan ecosistemas de diferentes tipos (ejemplo).
+</div>
+<div class="table-container">
 
 | Ecosistema              | Servicios de<br>provisionamiento | Servicios de<br>regulación | Servicios<br>culturales | Valor relativo |
 |-------------------------|:--------------------------------:|:--------------------------:|:-----------------------:|:--------------:|
@@ -78,8 +81,8 @@ Se propone un procedimiento que tiene dos pasos. En el primero, se elabora una m
 | Arbustales y Matorrales | 1                                | 3                          | 1                       | 1              |
 | Vegetación Litoral      | 1                                | 3                          | 3                       | 2              |
 
-
 </div>
+
 {Foto 2}
 
 Una vez finalizada la evaluación, al multiplicar los valores de los cuatro criterios, se calcula el índice de prioridad de cada ecosistema. Este cálculo puede llevarse a cabo en cualquier escala espacial, como nacional, estadal o municipal. La información recopilada durante el cálculo del índice, más los valores del índice calculado serían un insumo clave para informar y apoyar propuestas concretas de conservación de los ecosistemas de la región de interés.
@@ -92,13 +95,17 @@ En cuanto a la evaluación de la singularidad de los bosques de la cordillera de
 
 En cuanto a los servicios ecosistémicos, tanto los bosques semideciduos como los deciduos son de alta importancia y por lo tanto les corresponde un valor de tres (3) puntos (Tabla 1). Al combinar los valores de las cuatro variables descritas en el índice de prioridad (Tabla 2), se tiene que la prioridad de los bosques deciduos es mayor que la de los bosques semideciduos por efecto de las diferencias de riesgo de eliminación entre los dos ecosistemas. En virtud de que los dos tipos de bosque son equivalentes en cuanto a la proporción protegida, singularidad y atractivo público, estas variables tienen el mismo valor en ambos casos. Sin embargo esto no siempre es así y podría ocurrir que mayores niveles de riesgo no correspondan con la máxima prioridad (Rodríguez *et al.* 2004).
 
-<div style="text-align: center;"><b>Tabla 2.</b> Cálculo del índice de prioridad de conservación de los bosques semideciduos y deciduos de la cordillera de la Costa Central.
+<div class="is-size-6">
+  <br>
+  <b>Tabla 2.</b> Cálculo del índice de prioridad de conservación de los bosques semideciduos y deciduos de la cordillera de la Costa Central.
+</div>
+<div class="table-container">
 
 | Ecosistema              | Riesgo de<br>eliminación | Proporción<br>protegida | Singularidad | Atractivo<br>público | Índice |
 |-------------------------|:------------------------:|:-----------------------:|:------------:|:--------------------:|:------:|
 | Bosques Siempreverdes   | 1                        | 3                       | 2            | 3                    | 18     |
 | Bosques Semideciduos    | 3                        | 3                       | 2            | 3                    | 54     |
-<br>
+
 </div>
 
 Por último, es importante insistir una vez más en que el modelo presentado no pretende ser la única respuesta posible para el establecimiento de prioridades de conservación de ecosistemas. Se trata de una guía sencilla para la toma de decisiones en conservación, y los criterios ofrecidos son recomendaciones, quedando de parte de los tomadores de decisión la libertad de evaluar si son apropiados o si es necesario incluir otros. En cualquier caso, lo importante será establecer prioridades con base en un método sistemático lo más objetivo y replicable posible, y las decisiones finales deberán ser tomadas dependiendo del contexto y de las opiniones de los expertos.

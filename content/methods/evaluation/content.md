@@ -70,7 +70,10 @@ El análisis del riesgo de eliminación de las formaciones vegetales de Venezuel
 INSERTAR FOTOS 1 A 5
 {Figura 6}
 
-<div style="text-align: center;"><b>Tabla 1.</b> Áreas de protección con fines prioritarios de conservación de la biodiversidad</div>
+<div class="is-size-6">
+  <br>
+  <b>Tabla 1.</b> Áreas de protección con fines prioritarios de conservación de la biodiversidad
+</div>
 <div class="table-container is-size-6">
   <table>
     <thead>
@@ -438,7 +441,10 @@ INSERTAR FOTOS 1 A 5
   </table>
 </div>
 {Figura 7}
-<div style="text-align: center;"><b>Tabla 1.</b> Áreas de protección con fines de uso potencial</div>
+<div class="is-size-6">
+  <br>
+  <b>Tabla 1.</b> Áreas de protección con fines de uso potencial
+</div>
 <div class="table-container is-size-6">
   <table>
     <thead>
