@@ -11,6 +11,8 @@ photos:
   photourl: "./foto-21.jpg"
   photocaption: "Foto 21: Paisaje vegetal de isla, Archipiélago Los Roques, Dependencias Federales. <i>Rodrigo Lazo</i>"
 ---
+# Descripción
+
 Los paisajes asociados a la región están conformados en su mayoría por ambientes salinos, expuestos a la acción de las mareas y con inestabilidad de substrato. Se distinguen dos subregiones, una correspondiente a la franja costera continental (Foto 20), desde Castilletes en el estado Zulia hasta el río Amacuro en el delta del Orinoco, denominada subregión Continental Costera (A.2). Este paisaje es contiguo a los ambientes considerados como terrestres. La otra subregión, la Insular Costera (A.1), como su nombre lo indica, se refiere a paisajes costeros de las islas venezolanas (Foto 21), donde no existe un desarrollo de área lo suficientemente grande como para considerar la influencia de ecosistemas terrestres. La excepción a esta condición es la isla de Margarita, la cual por su superficie presenta los dos tipos de subregiones.
 {Foto 21}
 Por lo tanto, los ecosistemas litorales de las subregiones A.1 y A.2 se diferencian principalmente por el intercambio ecológico activo entre las comunidades costeras propiamente dichas y las comunidades adyacentes, y, porque ese intercambio es clave para la estabilidad de las dos fitocenosis contiguas.
