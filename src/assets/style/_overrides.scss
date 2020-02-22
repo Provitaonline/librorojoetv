@@ -184,3 +184,17 @@ table {
   width: 100%;
   border-bottom: solid 3px #f0d4a6;
 }
+
+.unit-subtitle {
+  @extend .is-size-3;
+  @extend .is-size-5-mobile;
+  margin-top: -44px;
+  padding-bottom: 44px;
+}
+
+.unit-subtitle-2 {
+  @extend .is-size-4;
+  @extend .is-size-6-mobile;
+  margin-top: -44px;
+  padding-bottom: 44px;
+}
