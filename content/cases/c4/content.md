@@ -59,7 +59,10 @@ Finalmente, los cambios de cobertura observados y proyectados en el área de est
 
 En el año 1989, el área de las cuencas altas presentaba 1.418 km<sup>2</sup> de cobertura de bosques. Entre 1989 y 2002, los bosques disminuyeron 275 km<sup>2</sup>, lo que representa una pérdida de 12,48% de la cobertura original. En 2007, la deforestación eliminó 238 km<sup>2</sup> más, es decir, una pérdida de 13,57%, para finalmente alcanzar 35% de reducción de la cobertura original, es decir, 513 km<sup>2</sup> eliminados. Entre 1989 y 2002, la tasa promedio de conversión de hábitat fue 21 km<sup>2</sup>/año, mientras que entre 2002 y 2007 aumentó 47 km<sup>2</sup>/año. Para todo el período analizado, desde 1989 hasta 2007, la tasa promedio fue 28 km<sup>2</sup>/año. De acuerdo con las cifras presentadas en la tabla 1, los bosques de las cuencas altas de los ríos El Palmar, Lajas, Guasare y Apón fueron clasificados CR A2, y EN C1a. En ningún caso se contó con suficiente información histórica para satisfacer el criterio B, mientras que el criterio D no aplica (Tabla 1, Figura 2).
 
-<div style="text-align: center;"><b>Tabla 1.</b> Evaluación del riesgo de eliminación de los bosques de las cuencas altas de los ríos El Palmar, Lajas, Guasare y Apón.</div>
+<div class="is-size-6">
+  <br>
+  <b>Tabla 1.</b> Evaluación del riesgo de eliminación de los bosques de las cuencas altas de los ríos El Palmar, Lajas, Guasare y Apón.
+</div>
 <div class="table-container is-size-6">
   <table>
     <thead>
@@ -105,8 +108,11 @@ En el año 1989, el área de las cuencas altas presentaba 1.418 km<sup>2</sup> d
 </div>
 {Figura 2}
 En el área de las cuencas bajas, para el año 1986 se identificaron 328 km<sup>2</sup> de cobertura de bosques. Para el año 2001, el análisis mostró una reducción de 39% del ecosistema a una tasa de deforestación de 9 km<sup>2</sup>/año (Figura 3). La tabla 2 sintetiza los resultados relevantes para la asignación de una categoría. Para ambos casos, la proyección a 50 años de las tasas de deforestación, predice que el total de la cobertura boscosa (100%) será reemplazada por vegetación intervenida u otros usos de la tierra. Los bosques de las cuencas bajas de los ríos Guasare, Socuy y Cachirí fueron clasificados CR A2 y EN C2(a). Igual que en las cuencas altas, no se contó con sufi ciente información histórica para satisfacer el criterio B, mientras que el criterio D no aplica.
-<br><br>
-<div style="text-align: center;"><b>Tabla 2.</b> Evaluación del riesgo de eliminación de los bosques de las cuencas bajas de los ríos Guasare, Socuy y Cachirí.</div>
+
+<div class="is-size-6">
+  <br>
+  <b>Tabla 2.</b> Evaluación del riesgo de eliminación de los bosques de las cuencas bajas de los ríos Guasare, Socuy y Cachirí.
+</div>
 <div class="table-container is-size-6">
   <table>
     <thead>

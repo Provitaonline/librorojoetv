@@ -65,7 +65,10 @@ Con base en esta información, la aplicación de los criterios cuantitativos de 
 
 La tabla 1 resume la información de la extensión ocupada por cada una de las unidades de vegetación identificadas en 1986 y 1999, así como los cambios de cobertura ocurridos durante los 13 años que cubre el estudio (Figura 2).
 
-<div style="text-align: center;"><b>Tabla 1.</b> Cambios de las coberturas boscosas de la isla de Margarita entre 1986 y 1999.</div>
+<div class="is-size-6">
+  <br>
+  <b>Tabla 1.</b> Cambios de las coberturas boscosas de la isla de Margarita entre 1986 y 1999.
+</div>
 <div class="table-container">
 
 | Unidad de vegetación                     | 1986 (km<sup>2</sup>) | 1999 (km<sup>2</sup>) | % de cambio |

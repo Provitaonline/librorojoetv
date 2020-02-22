@@ -52,8 +52,7 @@ Tomando como referencia las unidades fisionómicas identificadas por Huber y Ala
 Con el fin de validar las coberturas vegetales identificadas, los resultados fueron comparados con otros mapas de vegetación disponibles para la región (Ataroff & Sarmiento 2003, Josse *et al.* 2009b). Estos mapas son compatibles a grandes rasgos y las diferencias se deben a detalles en las denominaciones, como por ejemplo, la unidad clasificada como “páramos”, es dividida por Ataroff y Sarmiento (2003) en páramo andino o altiandino, dependiendo de su altitud, mientras que Josse y colaboradores (2009b) proponen una clasificación aun más detallada.
 
 Una vez clasificadas las dos imágenes satelitales (Figura 2), se utilizó la información de los cambios detectados en 13 años (1986-2001), para proyectar la cobertura que tendrían los ecosistemas en 2036 y así abarcar los 50 años requeridos para aplicar el criterio A3 (Rodríguez *et al.* 2011, Rodríguez *et al.* 2010).
-
-INSERTAR FIGURA
+{Figura 2}
 
 # Resultados
 
@@ -61,7 +60,10 @@ En el ramal oriental de la cordillera de los Andes venezolanos, la vegetación n
 
 La tabla 2 resume la información de la extensión ocupada por cada uno de los tipos de cobertura en 1988 y 2001, así como los cambios ocurridos durante los 13 años cubiertos por el estudio. Estos datos sirvieron de base para obtener unidades métricas, necesarias en la aplicación del sistema de categorías de riesgo de eliminación de ecosistemas.
 
-<div style="text-align: center;"><b>Tabla 1.</b> Clasificación del riesgo de eliminación de las formaciones vegetales en 57 municipios de la cordillera de Mérida.</div>
+<div class="is-size-6">
+  <br>
+  <b>Tabla 1.</b> Clasificación del riesgo de eliminación de las formaciones vegetales en 57 municipios de la cordillera de Mérida.
+</div>
 <div class="table-container">
 
 <table>
@@ -153,7 +155,10 @@ La tabla 2 resume la información de la extensión ocupada por cada uno de los t
 
 </div>
 
-<div style="text-align: center;"><b>Tabla 2.</b> Cambio en las diferentes coberturas terrestres de la cordillera de Mérida (Barinas, Mérida, Trujillo) observado (1988-2001) y proyectado (1988-2038).</div>
+<div class="is-size-6">
+  <br>
+  <b>Tabla 2.</b> Cambio en las diferentes coberturas terrestres de la cordillera de Mérida (Barinas, Mérida, Trujillo) observado (1988-2001) y proyectado (1988-2038).
+</div>
 <div class="table-container is-size-6">
   <table>
     <thead>
@@ -252,8 +257,6 @@ La tabla 2 resume la información de la extensión ocupada por cada uno de los t
     </tr>
   </table>
 </div>
-
-{Figura 2}
 
 La mayor reducción de cobertura se observó en los bosques siempreverdes, semideciduos y ribereños, aunque su extensión es relativamente pequeña en el área de estudio (Tabla 2). La mayor amenaza corresponde a los bosques ubicados en el piedemonte barinés, probablemente por la expansión de las plantaciones forestales en la zona (Azócar & Fariñas 2003). Igualmente, entre 1988 y 2001 el área cubierta por nieve se redujo a casi la mitad. De continuar las tendencias observadas, se estima que los bosques siempreverdes, semideciduos y nieve desaparecerán, mientras que los bosques ribereños se reducirían a una pequeña proporción de su cobertura original. Por lo tanto, estos cuatro tipos de cobertura se consideran En Peligro Crítico (CR). En contraste, para el año 2038 se predice el crecimiento de las áreas anegadizas, suelos expuestos, y un crecimiento apreciable de las áreas urbanas. Actualmente las principales causas de amenaza de estos ecosistemas son la expansión de las actividades agrícolas, asociada al establecimiento de cultivos de papa y ajo, las actividades ganaderas de altura y los desarrollos turísticos (Azócar & Fariñas 2003).
 {Figura 3}

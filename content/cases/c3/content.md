@@ -44,7 +44,10 @@ Se realizó una búsqueda exhaustiva de las imágenes satelitales Landsat dispon
 
 La selección de las imágenes estuvo basada en cuatro condiciones principales: a) la disponibilidad de al menos dos imágenes de satélite Landsat de suficiente calidad (poca nubosidad) y separadas por un mínimo de diez años; b) la presencia de vegetación contrastante; c) la presencia de áreas urbanas y áreas naturales; y d) la presencia de al menos un área protegida.
 
-<div style="text-align: center;"><b>Tabla 1.</b> Imágenes de satélite Landsat de la Depresión de Maracaibo (Norte y Sur)</div>
+<div class="is-size-6">
+  <br>
+  <b>Tabla 1.</b> Imágenes de satélite Landsat de la Depresión de Maracaibo (Norte y Sur)
+</div>
 <div class="table-container">
 
 | Localización | Path     | Fecha        | Satétite    | Formato |
@@ -73,7 +76,10 @@ Por otro lado, se identificaron bosques ribereños en los ríos Santa Ana, Río 
 
 Con base en la clasificación de las coberturas  identificadas, evaluadas mediante el sistema de categorías de riesgo de eliminación, se procedió a determinar el estatus de cada uno de los ecosistemas, tomando en cuenta los cambios de cobertura y el patrón de fragmentación (Rodríguez *et al.* 2010, Rodríguez *et al.* 2011). Se encontró que al aplicar los criterios A, B y C, el criterio B usualmente determinó un mayor riesgo de eliminación, aunque en casos especiales se aplicó el criterio D (referente a ecosistemas de distribución restringida). La Tabla 2 muestra los cambios detectados para coberturas vegetales, y la Tabla 3 los cambios de coberturas no vegetales, no contrastadas con el sistema de categorías de riesgo.
 
-<div style="text-align: center;"><b>Tabla 2.</b> Cambios en los tipos de coberturas vegetales del norte del lago de Maracaibo (1986-2001).</div>
+<div class="is-size-6">
+  <br>
+  <b>Tabla 2.</b> Cambios en los tipos de coberturas vegetales del norte del lago de Maracaibo (1986-2001).
+</div>
 <div class="table-container is-size-6">
   <table>
     <thead>
@@ -159,7 +165,10 @@ Con base en la clasificación de las coberturas  identificadas, evaluadas median
   </table>
 </div>
 
-<div style="text-align: center;"><b>Tabla 3.</b> Cambios en los tipos de coberturas no vegetales al norte del lago de Maracaibo (1986-2001).</div>
+<div class="is-size-6">
+  <br>
+  <b>Tabla 3.</b> Cambios en los tipos de coberturas no vegetales al norte del lago de Maracaibo (1986-2001).
+</div>
 <div class="table-container is-size-6"">
   <table>
     <thead>

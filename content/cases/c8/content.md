@@ -55,7 +55,8 @@ En los dos mapas de cobertura finales se aplicaron filtros con el fin de extraer
 
 Como se muestra en la tabla 1, durante el período de diez años que abarcó el estudio, los principales cambios absolutos en cuanto a la pérdida de cobertura detectados para la zona centro-norte del estado Falcón se presentaron en los bosques deciduos, los cuales se redujeron en 535 km<sup>2</sup> (28,43%), mientras que los cardonales y espinares disminuyeron en 276 km<sup>2</sup> (16,58%). Contrastando con la pérdida de estos ecosistemas naturales, durante este mismo período las áreas intervenidas y áreas urbanas se duplicaron, pasando de 425 km<sup>2</sup> a 850 km<sup>2</sup> de extensión, lo cual pone de manifiesto la alta presión antrópica a la que está sometida la biodiversidad del área de estudio.
 
-<div style="text-align: center;">
+<div class="is-size-6">
+  <br>
   <b>Tabla 1.</b> Cambios de los diferentes tipos de cobertura terrestre de la zona centro-norte del estado Falcón (1991–2001).
 </div>
 <div class="table-container">
@@ -73,12 +74,12 @@ Como se muestra en la tabla 1, durante el período de diez años que abarcó el 
 | Áreas urbanas            |        79,40          |     107,88            |   27,87  |
 | Dunas y suelos expuestos |       453,29          |     404,20            |  -16,83  |
 
-
 </div>
 
 Al proyectar hacia el futuro las tasas de cambio de cobertura estimadas para el período de 50 años, se predice que en 2001 habrán desaparecido más de 80% de los bosques siempreverdes, bosques deciduos y cardonales y espinares remanentes, mientras que al menos 50% de la extensión de los bosques semideciduos también será reemplazada por otro tipo de cobertura (Tabla 2). En los análisis no fue considerado el municipio Democracia debido a que la imagen de la zona de estudio mostraba menos de 30% de su extensión total. Es de resaltar que en el nivel de municipio, al aplicar el sistema de categorías, mínimo uno de los ecosistemas de bosques siempreverdes (Bsv), bosques semideciduos (Bsd), bosques deciduos (Bd) y cardonales y espinares (Car-Esp), se encuentran En Peligro Crítico (CR) [Tabla 2]. Esto revela las fuertes presiones antrópicas a la que están sometidas los ecosistemas naturales en el estado Falcón. De igual manera, las Áreas Protegidas del estado, el Parque Nacional Juan Crisóstomo Falcón (Sierra de San Luis) y el Parque Nacional Médanos de Coro, enfrentan diferentes grados de afectación: los bosques deciduos (Bd) están en la categoría En Peligro (EN), y los bosques siempreverdes (Bsv) califican En Peligro Crítico (CR) respectivamente (Tabla 2). Con base en estos resultados, la aplicación de los criterios cuantitativos de riesgo de eliminación resultó en las siguientes estimaciones: bosques siempreverdes VU A1, CR A2, CR A3; bosques semideciduos LC A1, EN A2, VU A3; bosques deciduos LC A1, CR A2, CR A3 y, cardonales y espinares LC A1, CR A2, EN A3 (Foto 1).
 
-<div style="text-align: center;">
+<div class="is-size-6">
+  <br>
   <b>Tabla 2.</b> Criterios de categorías de riesgo de eliminación en los municipios de la zona centro-norte del estado Falcón.
 </div>
 <div class="table-container is-size-6">
@@ -192,9 +193,10 @@ Al proyectar hacia el futuro las tasas de cambio de cobertura estimadas para el 
     </tr>
   </table>
 </div>
-<div style="text-align: center;">
+<div class="is-size-6">
   Coberturas: Bsv: bosques siempreverdes, Bsd: bosques Semideciduos, Bd: bosques deciduos, Car-Esp: cardonales y espinares; Arb Mat: arbustales y matorrales, VLit: vegetación litoral
 </div>
+<br>
 {Foto 1}
 
 # Conclusiones
