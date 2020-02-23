@@ -18,6 +18,8 @@
               :photos="$page.vegetationCard.photos"
               :isContent="true" />
             </TextWithRefsAndPhotos>
+            <References :references="$page.references.references">
+            </References>
           </div>
         </section>
       </div>
@@ -55,6 +57,7 @@
 <script>
   import PageBanner from '~/components/PageBanner.vue'
   import TextWithRefsAndPhotos from '~/components/TextWithRefsAndPhotos.vue'
+  import References from '~/components/References.vue'
 
   export default {
     metaInfo: {
@@ -68,7 +71,8 @@
     },
     components: {
       PageBanner,
-      TextWithRefsAndPhotos
+      TextWithRefsAndPhotos,
+      References
     }
   }
 

@@ -24,9 +24,6 @@
           <b-navbar-item tag="a" href="/unidades">
               Unidades de paisaje
           </b-navbar-item>
-          <b-navbar-item tag="a" href="/bibliografia/unidades">
-              Bibliografía
-          </b-navbar-item>
         </b-navbar-dropdown>
         <b-navbar-dropdown label="MÉTODOS">
           <b-navbar-item tag="a" href="/metodos/librosrojos">
