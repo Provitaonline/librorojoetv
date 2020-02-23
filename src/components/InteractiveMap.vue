@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div style="height: 800px;">
+    <div class="map-container">
       <ClientOnly>
         <l-map @leaflet:load="mapReady"
           ref="theMap"
@@ -67,8 +67,12 @@
           <p class="is-size-5 has-text-weight-bold">Instrucciones</p>
           <div v-for="instruction in mapInstructions" class="legend-box">
             <g-image src="~/assets/svgs/map-instructions.svg"></g-image>
-            <span style="margin-top: 6px; margin-bottom: 6px; margin-left: 10px; margin-right: 10px;">{{instruction}}</span>
+            <span class="instructions-text">{{instruction}}</span>
           </div>
+          <a class="legend-box" @click="legendClick({name: 'all'})">
+            <g-image src="~/assets/svgs/view-all.svg" class="view-all-icon"></g-image>
+            <span class="instructions-text">Clic para ver todas</span>
+          </a>
         </div>
         <div class="legend column columns">
           <div v-for="i in numberOfLegendGroups" class="column">
@@ -83,10 +87,6 @@
             <div v-if="i === numberOfLegendGroups" style="display: flex;">
               <div>&nbsp;</div>
             </div>
-            <div v-if="i === numberOfLegendGroups" style="display: flex;">
-              <div title="Clic para ver todo en el mapa" @click="legendClick({name: 'all'})" class="legend-symbol"><span class="legend-item" :style="'background: #f8e7e8;'"></span></div>
-              <div> <font-awesome size="sm" :icon="['fas', 'arrow-left']"/><i> Clic para ver todas</i></div>
-            </div>
           </div>
         </div>
       </div>
@@ -99,6 +99,18 @@
 </static-query>
 
 <style lang="scss" scoped>
+
+  @import "~/assets/style/_variables";
+
+  .map-container {
+    height: 50vh;
+  }
+
+  @media only screen and (max-width: 400px) {
+    .map-container {
+      height: 70vh;
+    }
+  }
 
   .legend {
     border: 2px solid #626262;
@@ -122,7 +134,7 @@
   }
 
   .legend-item:hover, .dot:hover {
-    border: 2px solid #BE1421;
+    border: 2px solid $primary;
   }
 
   .legend-box {
@@ -177,6 +189,19 @@
   .map-ocean-label {
     color: #2D60AB;
     font-style: italic;
+  }
+
+  .instructions-text {
+    margin: 6px 10px;
+  }
+
+  .view-all-icon:hover {
+    border: 2px solid #626262;
+  }
+
+  .view-all-icon {
+    width: 32px;
+    height: 32px;
   }
 
   @media only screen and (max-width: 600px) {
