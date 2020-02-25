@@ -69,7 +69,7 @@
             <g-image src="~/assets/svgs/map-instructions.svg"></g-image>
             <span class="instructions-text">{{instruction}}</span>
           </div>
-          <a class="legend-box" @click="legendClick({name: 'all'})">
+          <a v-show="!isShowAll" class="legend-box" @click="legendClick({name: 'all'})">
             <g-image src="~/assets/svgs/view-all.svg" class="view-all-icon"></g-image>
             <span class="instructions-text">Clic para ver todas</span>
           </a>
@@ -387,6 +387,7 @@
         isLoading: true,
         zoomAnimation: true,
         mapLabel: '',
+        isShowAll: true,
         mapLabelLookupKey: '',
         hideLabels: false,
         zoom: 7,
@@ -555,10 +556,12 @@
         })
 
         if (item.name != 'all') {
+          this.isShowAll = false
           this.mapLabel = this.makeMapPopupLabel(item.name, isLegendLookUp)
           if (isLegendLookUp) this.mapLabelLookupKey = item.name
           document.getElementById(this.makeId(item.name)).setAttribute('style', 'background: #f8e7e8;')
         } else {
+          this.isShowAll = true
           this.mapLabel = ''
         }
 
