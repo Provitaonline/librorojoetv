@@ -69,10 +69,12 @@
             <g-image src="~/assets/svgs/map-instructions.svg"></g-image>
             <span class="instructions-text">{{instruction}}</span>
           </div>
-          <a v-show="!isShowAll" class="legend-box" @click="legendClick({name: 'all'})">
-            <g-image src="~/assets/svgs/view-all.svg" class="view-all-icon"></g-image>
-            <span class="instructions-text">Clic para ver todas</span>
-          </a>
+          <transition name="fade" appear>
+            <a v-show="!isShowAll" class="legend-box" @click="legendClick({name: 'all'})">
+              <g-image src="~/assets/svgs/view-all.svg" class="view-all-icon"></g-image>
+              <span class="instructions-text">Clic para ver todas</span>
+            </a>
+          </transition>
         </div>
         <div class="legend column columns">
           <div v-for="i in numberOfLegendGroups" class="column">
