@@ -198,3 +198,15 @@ table {
   margin-top: -44px;
   padding-bottom: 44px;
 }
+
+.info-icon {
+  @extend .has-text-grey-lighter;
+  @extend .has-text-right;
+  position: absolute;
+  margin-top: -35px;
+  right: 10px;
+}
+
+.info-icon:hover {
+  @extend .has-text-white;
+}
