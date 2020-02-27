@@ -17,7 +17,7 @@ import {
     faArrowDown, faArrowLeft, faAngleDoubleDown, faSyncAlt, faCaretRight, faBars,
     faListUl, faEllipsisH, faTimes, faAngleUp, faAngleDown, faShareAlt,
     faFileDownload, faLink, faCamera, faMapMarkerAlt, faEnvelope,
-    faPhone, faGlobeAmericas
+    faPhone, faGlobeAmericas, faInfoCircle
   }
   from '@fortawesome/free-solid-svg-icons'
 import '@fortawesome/fontawesome-svg-core/styles.css'
@@ -25,7 +25,7 @@ config.autoAddCss = false;
 library.add(
   faFacebook, faFacebookF, faTwitter, faInstagram, faArrowDown, faArrowLeft, faAngleDoubleDown, faSyncAlt,
   faCaretRight, faBars, faListUl, faEllipsisH, faTimes, faAngleUp, faAngleDown, faShareAlt,
-  faFileDownload, faLink, faCamera, faMapMarkerAlt, faEnvelope, faPhone, faGlobeAmericas)
+  faFileDownload, faLink, faCamera, faMapMarkerAlt, faEnvelope, faPhone, faGlobeAmericas, faInfoCircle)
 
 export default function (Vue, { router, head, isClient }) {
   head.htmlAttrs = { lang: 'es' }
