@@ -7,7 +7,7 @@
           <g-image src="~/assets/images/provita.png"/>
         </div>
       </section>
-
+      <BannerInfo />
       <section class="section is-center-narrow">
         <div class="tile is-ancestor">
           <div class="tile ">
@@ -84,9 +84,14 @@
 </page-query>
 
 <script>
+  import BannerInfo from '~/components/BannerInfo.vue'
+
   export default {
     metaInfo: {
       title: 'Contacto'
+    },
+    components: {
+      BannerInfo
     }
   }
 </script>

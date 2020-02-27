@@ -16,9 +16,7 @@
         </div>
       </div>
     </section>
-    <figcaption class="has-text-centered">
-      <div class="is-size-6 is-size-7-mobile" v-html="caption"></div>
-    </figcaption>
+    <BannerInfo :info="caption" />
   </div>
 </template>
 
@@ -89,6 +87,8 @@
 </style>
 
 <script>
+  import BannerInfo from '~/components/BannerInfo.vue'
+
   const defaultBannerHeight = '300px'
   let defaultBanner = require('~/assets/images/default-banner.jpg')
 
@@ -114,6 +114,9 @@
           '--hero-padding-bottom': this.heroPaddingBottom
         }
       }
+    },
+    components: {
+      BannerInfo
     }
   }
 </script>

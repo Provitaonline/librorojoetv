@@ -7,7 +7,7 @@
           <g-image src="~/assets/svgs/librorojo-banner.svg"/>
         </div>
       </section>
-
+      <BannerInfo />
       <section class="section not-as-narrow">
         <div class="tile is-ancestor">
           <div class="tile">
@@ -120,7 +120,7 @@
       height: 200px;
     }
     .hero-body {
-      bottom: 0;
+      bottom: 10px;
     }
     .bottom-body {
       width: 320px;
@@ -201,7 +201,7 @@
 </style>
 
 <script>
-  import InteractiveMap from '~/components/InteractiveMap.vue'
+  import BannerInfo from '~/components/BannerInfo.vue'
 
   export default {
     metaInfo: {
@@ -255,7 +255,7 @@
       }
     },
     components: {
-      InteractiveMap
+      BannerInfo
     },
     created() {
 
