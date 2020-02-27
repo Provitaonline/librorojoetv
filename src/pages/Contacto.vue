@@ -7,7 +7,7 @@
           <g-image src="~/assets/images/provita.png"/>
         </div>
       </section>
-      <BannerInfo />
+      <BannerInfo :info="$page.homeData.contact.bannerCaption"/>
       <section class="section is-center-narrow">
         <div class="tile is-ancestor">
           <div class="tile ">
@@ -78,6 +78,7 @@
         email
         web
         banner
+        bannerCaption
       }
     }
   }

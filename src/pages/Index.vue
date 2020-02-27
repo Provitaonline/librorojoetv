@@ -2,12 +2,12 @@
   <Layout>
     <div class="page-wrapper red-line">
       <section class="hero">
-        <g-image class="hero-bg-img" src="~/assets/images/home-hero-image.jpg"/>
+        <g-image class="hero-bg-img" :src="$page.homeData.bannerImage"/>
         <div class="hero-body">
           <g-image src="~/assets/svgs/librorojo-banner.svg"/>
         </div>
       </section>
-      <BannerInfo />
+      <BannerInfo :info="$page.homeData.bannerCaption" />
       <section class="section not-as-narrow">
         <div class="tile is-ancestor">
           <div class="tile">
@@ -62,6 +62,8 @@
     homeData: homeData (id: "home") {
       title
       heroTitle
+      bannerImage
+      bannerCaption
       indexCards {
         title
         link

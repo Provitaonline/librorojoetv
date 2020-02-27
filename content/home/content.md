@@ -2,6 +2,8 @@
 id: home
 title: 'Página principal, acerca de y contacto'
 heroTitle: Libro rojo de los ecosistemas terrestres de Venezuela
+bannerImage: ./home-hero-image.jpg
+bannerCaption: Laguna de Canaima, estado Bolívar. <i>Román Rangel</i>
 indexCards:
   - image: ./riesgo.svg
     link: /fichas/
@@ -29,6 +31,7 @@ contact:
   phone: '(58) (212) 2637240<br>(58) (212) 2656996<br>(58) (212) 2670897'
   web: 'https://www.provita.org.ve/'
   banner: './banner-contact.jpg'
+  bannerCaption: 'Macizo Guayanés, zona Caroní medio, Auyán-tepui, estado Bolivar. <i>Rebecca Miller</i>'
 about:
   cardimage: ./foto-1.jpg
   cardimagecaption: Cotorra cabeciamarilla (<i>Amazona barbadensis</i>). <i>Thea Segall</i>
