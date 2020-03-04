@@ -220,10 +220,14 @@
           },
           {
             name: "twitter:card",
-            content: "summary",
+            content: "summary_large_image",
           },
           {
             name: "twitter:site",
+            content: "@provita_ong"
+          },
+          {
+            name: "twitter:creator",
             content: "@provita_ong"
           },
           {
