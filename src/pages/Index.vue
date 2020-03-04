@@ -206,8 +206,40 @@
   import BannerInfo from '~/components/BannerInfo.vue'
 
   export default {
-    metaInfo: {
-      title: 'Página principal'
+    metaInfo() {
+      return {
+        title: 'Página principal',
+        meta: [
+          {
+            name: "description",
+            content: this.$page.homeData.heroTitle
+          },
+          {
+            property: "og:title",
+            content: this.$page.homeData.heroTitle
+          },
+          {
+            name: "twitter:card",
+            content: "summary",
+          },
+          {
+            name: "twitter:site",
+            content: "@provita_ong"
+          },
+          {
+            name: "twitter:description",
+            content: this.$page.homeData.heroTitle
+          },
+          {
+            name: "twitter:image",
+            content: this.$page.homeData.bannerImage.src
+          },
+          {
+            property: "og:image",
+            content: this.$page.homeData.bannerImage.src
+          }
+        ]
+      }
     },
     data() {
       let self = this
@@ -260,7 +292,7 @@
       BannerInfo
     },
     created() {
-
+      console.log(this.$page.homeData.bannerImage.src)
     },
     mounted () {
 
