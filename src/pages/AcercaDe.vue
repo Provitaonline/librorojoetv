@@ -58,6 +58,7 @@
   ::v-deep .table-in-content {
     font-size: 1rem !important;
     width: 100%;
+    table-layout: fixed;
   }
 
   ::v-deep thead {
