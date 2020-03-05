@@ -11,7 +11,7 @@
       </div>
     </div>
     <transition name="fade" appear>
-      <div v-if="showMore || !hasHeading" style="padding-top: 0px;" class="tile is-child box is-size-6 is-size-7-mobile">
+      <div v-if="showMore || !hasHeading" style="padding: 0px;" class="tile is-child box is-size-6 is-size-7-mobile">
         <table class="table">
           <tbody>
             <tr v-for="value in sortedReferences">
@@ -31,7 +31,7 @@
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    border-bottom: 4px solid $primary;
+    border-bottom: 16px solid $primary;
     margin-bottom: 10px;
   }
 
@@ -49,10 +49,7 @@
   }
 
   td {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 20px;
     border: none;
   }
 </style>
