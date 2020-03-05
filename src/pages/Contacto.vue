@@ -97,10 +97,10 @@
     },
     computed: {
       pageTitle() {
-        return this.$page.homeData.heroTitle
+        return 'Contacto: ' + this.$page.homeData.heroTitle
       },
       pageImage() {
-        return this.$page.homeData.contact.banner.src
+        return require('!!assets-loader!~/assets/images/provita.png').src
       }
     }
   }
