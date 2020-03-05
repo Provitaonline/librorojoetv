@@ -8,6 +8,7 @@ const {basename} = require('path')
 
 module.exports = {
   siteName: 'Libro Rojo ETV',
+  siteUrl: 'https://librorojoetv.netlify.com',
   runtimeCompiler: true,
   plugins: [
     {

@@ -71,6 +71,9 @@
         text
       }
     }
+    metadata {
+      siteUrl
+    }
   }
 </page-query>
 
@@ -296,7 +299,7 @@
       BannerInfo
     },
     created() {
-      console.log(this.$page.homeData.bannerImage.src)
+      console.log(this.$page.metadata.siteUrl, this.$page.homeData.bannerImage.src)
     },
     mounted () {
 

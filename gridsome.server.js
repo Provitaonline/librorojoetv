@@ -8,6 +8,7 @@
 module.exports = function (api) {
   api.loadSource(({ addContentType }) => {
     // Use the Data Store API here: https://gridsome.org/docs/data-store-api
+    store.addMetaData('siteUrl', api.config.siteUrl)
   })
 
   api.createPages(({ createPage }) => {
