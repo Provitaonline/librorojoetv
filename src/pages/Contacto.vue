@@ -12,24 +12,19 @@
         <div class="tile is-ancestor">
           <div class="tile ">
             <div class="tile is-parent" style="flex-direction: column;">
-              <font-awesome size="2x" :icon="['fas', 'map-marker-alt']"/>
-              <h1>Provita</h1>
+              <g-image src="~/assets/svgs/location.svg"/>
+              <h1 class="is-size-3">Provita</h1>
               <p v-html="$page.homeData.contact.address"></p>
             </div>
             <div class="tile is-parent" style="flex-direction: column;">
-              <font-awesome size="2x" :icon="['fas', 'phone']"/>
-              <h1>Teléfonos</h1>
+              <g-image src="~/assets/svgs/phone.svg"/>
+              <h1 class="is-size-3">Teléfonos</h1>
               <p v-html="$page.homeData.contact.phone"></p><br>
            </div>
             <div class="tile is-parent" style="flex-direction: column;">
-              <font-awesome size="2x" :icon="['fas', 'envelope']"/>
-              <h1>Mail</h1>
+              <g-image src="~/assets/svgs/mail.svg"/>
+              <h1 class="is-size-3">Mail</h1>
               <p><a :href="'mailto:' + $page.homeData.contact.email">{{$page.homeData.contact.email}}</a></p><br>
-            </div>
-            <div class="tile is-parent" style="flex-direction: column;">
-              <font-awesome size="2x" :icon="['fas', 'globe-americas']"/>
-              <h1>Web</h1>
-              <p><a :href="$page.homeData.contact.web">{{$page.homeData.contact.web}}</a></p>
             </div>
           </div>
         </div>
@@ -64,7 +59,7 @@
   }
 
   h1 {
-    padding: 0;
+    padding: 10px 0 0;
     margin: 0;
   }
 </style>
