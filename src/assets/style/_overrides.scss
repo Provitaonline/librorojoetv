@@ -200,7 +200,7 @@ table {
 }
 
 .info-icon {
-  @extend .has-text-grey-lighter;
+  @extend .has-text-white;
   @extend .has-text-right;
   position: absolute;
   margin-top: -35px;
@@ -208,5 +208,5 @@ table {
 }
 
 .info-icon:hover {
-  @extend .has-text-white;
+  @extend .has-text-grey-lighter;
 }
