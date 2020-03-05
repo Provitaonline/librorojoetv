@@ -73,6 +73,7 @@
     }
     metadata {
       siteUrl
+      twitterId
     }
   }
 </page-query>
@@ -222,16 +223,20 @@
             content: this.$page.homeData.heroTitle
           },
           {
+            property: "og:image",
+            content: this.$page.metadata.siteUrl + this.$page.homeData.bannerImage.src
+          },
+          {
             name: "twitter:card",
             content: "summary_large_image",
           },
           {
             name: "twitter:site",
-            content: "@provita_ong"
+            content: this.$page.metadata.twitterId
           },
           {
             name: "twitter:creator",
-            content: "@provita_ong"
+            content: this.$page.metadata.twitterId
           },
           {
             name: "twitter:title",
@@ -239,10 +244,6 @@
           },
           {
             name: "twitter:image",
-            content: this.$page.metadata.siteUrl + this.$page.homeData.bannerImage.src
-          },
-          {
-            property: "og:image",
             content: this.$page.metadata.siteUrl + this.$page.homeData.bannerImage.src
           }
         ]
@@ -301,7 +302,6 @@
     created() {
     },
     mounted () {
-
     },
     updated() {
 
