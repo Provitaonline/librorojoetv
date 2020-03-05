@@ -18,7 +18,7 @@
               :photos="$page.vegetationCard.photos"
               :isContent="true" />
             </TextWithRefsAndPhotos>
-            <References :references="$page.references.references">
+            <References class="box" :references="$page.references.references">
             </References>
           </div>
         </section>

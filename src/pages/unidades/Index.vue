@@ -24,7 +24,7 @@
             :refs="$page.references.references"
             :isContent="true" />
           </TextWithRefsAndPhotos>
-          <References :references="$page.references.references">
+          <References class="box" :references="$page.references.references">
           </References>
         </div>
 
