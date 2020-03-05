@@ -149,6 +149,7 @@
 
   .footer {
     border-top: 2px solid #4a4a4a;
+    padding: 2rem 1.5rem 2rem;
   }
 
   @media only screen and (min-width: 1024px) {
