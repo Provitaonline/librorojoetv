@@ -59,9 +59,6 @@
       },
       pageTitle() {
         return 'Bibliografía: ' + this.$page.references.title.replace(/<[^>]*>?/gm, ' ')
-      },
-      pageImage() {
-        return this.$page.references.banner.src
       }
     }
   }

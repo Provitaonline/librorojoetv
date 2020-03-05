@@ -188,7 +188,7 @@
           },
           {
             property: "og:image",
-            content: this.$static.metadata.siteUrl + this.$parent.pageImage
+            content: this.getPageImage
           },
           {
             name: "twitter:card",
@@ -208,7 +208,7 @@
           },
           {
             name: "twitter:image",
-            content: this.$static.metadata.siteUrl + this.$parent.pageImage
+            content: this.getPageImage
           }
         ]
       }
@@ -227,6 +227,11 @@
     methods: {
       getCurrentUrl: function() {
         return window.location.href
+      }
+    },
+    computed: {
+      getPageImage() {
+        return this.$parent.pageImage ? this.$static.metadata.siteUrl + this.$parent.pageImage : ''
       }
     }
   }
