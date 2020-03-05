@@ -22,7 +22,7 @@
                     </div>
                     <div class="card-content has-text-centered">
                       <div class="content">
-                        <div class="box is-size-4 is-size-5-mobile has-text-weight-bold explore-title">{{item.title}}</div>
+                        <div class="box is-size-4 is-size-5-mobile has-text-weight-medium explore-title">{{item.title}}</div>
                         {{item.text}}
                         <br><br>
                       </div>
