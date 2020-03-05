@@ -121,6 +121,14 @@
       makeLink(t) {
         return slugify(t, {lower: true})
       }
+    },
+    computed: {
+      pageTitle() {
+        return this.$page.unitCardsIndex.title
+      },
+      pageImage() {
+        return this.$page.unitCardsIndex.banner.src
+      }
     }
   }
 </script>

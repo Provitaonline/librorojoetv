@@ -72,6 +72,7 @@
 <page-query>
   query Home {
     homeData: homeData (id: "home") {
+      heroTitle
       contact {
         address
         phone
@@ -93,6 +94,14 @@
     },
     components: {
       BannerInfo
+    },
+    computed: {
+      pageTitle() {
+        return this.$page.homeData.heroTitle
+      },
+      pageImage() {
+        return this.$page.homeData.contact.banner.src
+      }
     }
   }
 </script>

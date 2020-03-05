@@ -201,7 +201,12 @@
 
     },
     computed: {
-
+      pageTitle() {
+        return this.$page.riskCardsIndex.title
+      },
+      pageImage() {
+        return this.$page.riskCardsIndex.banner.src
+      }
     },
     methods: {
       makeLink(t) {

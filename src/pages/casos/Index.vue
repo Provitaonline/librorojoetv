@@ -106,7 +106,12 @@
 
     },
     computed: {
-
+      pageTitle() {
+        return this.$page.casesIndex.title
+      },
+      pageImage() {
+        return this.$page.casesIndex.banner.src
+      }
     },
     methods: {
       makeLink(t) {

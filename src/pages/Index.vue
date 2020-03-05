@@ -71,10 +71,6 @@
         text
       }
     }
-    metadata {
-      siteUrl
-      twitterId
-    }
   }
 </page-query>
 
@@ -210,44 +206,8 @@
   import BannerInfo from '~/components/BannerInfo.vue'
 
   export default {
-    metaInfo() {
-      return {
-        title: 'Página principal',
-        meta: [
-          {
-            name: "description",
-            content: this.$page.homeData.heroTitle
-          },
-          {
-            property: "og:title",
-            content: this.$page.homeData.heroTitle
-          },
-          {
-            property: "og:image",
-            content: this.$page.metadata.siteUrl + this.$page.homeData.bannerImage.src
-          },
-          {
-            name: "twitter:card",
-            content: "summary_large_image",
-          },
-          {
-            name: "twitter:site",
-            content: this.$page.metadata.twitterId
-          },
-          {
-            name: "twitter:creator",
-            content: this.$page.metadata.twitterId
-          },
-          {
-            name: "twitter:title",
-            content: this.$page.homeData.heroTitle
-          },
-          {
-            name: "twitter:image",
-            content: this.$page.metadata.siteUrl + this.$page.homeData.bannerImage.src
-          }
-        ]
-      }
+    metaInfo: {
+      title: 'Página principal'
     },
     components: {
       BannerInfo
@@ -260,7 +220,12 @@
 
     },
     computed: {
-
+      pageTitle() {
+        return this.$page.homeData.heroTitle
+      },
+      pageImage() {
+        return this.$page.homeData.bannerImage.src
+      }
     },
     methods: {
 

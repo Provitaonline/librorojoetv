@@ -98,6 +98,14 @@
       PageBanner,
       TextWithRefsAndPhotos,
       References
+    },
+    computed: {
+      pageTitle() {
+        return 'Acerca del libro rojo de los ecosistemas terrestres de Venezuela'
+      },
+      pageImage() {
+        return this.$page.homeData.about.cardimage.src
+      }
     }
   }
 </script>
