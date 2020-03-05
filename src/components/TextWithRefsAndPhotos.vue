@@ -117,12 +117,12 @@ function processContent(text, photos, inlineFigs) {
       inlineFigs.push(item.trim())
       return `
         <a @click="photoClick" class='photo-link'>
-          <div id="` + slugify(item, {lower: true}) + `" class="inline-figure has-text-centered">
+          <div id="` + slugify(item, {lower: true}) + `" class="inline-figure">
             <br>
             <figure>
               <g-image :src="photos[` + pIdx + `].photourl"></g-image>
             </figure>
-            <figcaption style="max-width: 80%; margin: 0 auto;">
+            <figcaption>
               <div class="is-size-6 is-size-7-mobile" v-html="photos[` + pIdx + `].photocaption"></div>
             </figcaption>
             <br>
