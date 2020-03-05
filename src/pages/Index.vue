@@ -119,7 +119,7 @@
 
   @media screen and (max-width: 768px) {
     .hero-bg-img {
-      height: 200px;
+      height: 300px;
     }
     .hero-body {
       width: 300px;

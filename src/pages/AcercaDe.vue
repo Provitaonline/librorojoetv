@@ -6,7 +6,6 @@
         :banner="$page.homeData.about.cardimage"
         :caption="$page.homeData.about.cardimagecaption"
         title="Acerca del libro rojo<br>de los ecosistemas terrestres<br>de Venezuela"
-        bannerHeight="600px"
         />
       </PageBanner>
 

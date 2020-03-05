@@ -64,7 +64,7 @@
 
   @media screen and (max-width: 768px) {
     .hero-bg-img {
-      height: var(--default-banner-height);
+      height: var(--mobile-banner-height);
     }
     .hero-body {
       bottom: 0;
@@ -89,7 +89,9 @@
 <script>
   import BannerInfo from '~/components/BannerInfo.vue'
 
-  const defaultBannerHeight = '300px'
+  const defaultBannerHeight = '540px'
+  const mobileBannerHeight = '300px'
+
   let defaultBanner = require('~/assets/images/default-banner.jpg')
 
   export default {
@@ -111,6 +113,7 @@
           '--banner-height': this.bannerHeight,
           '--minus-banner-height': '-' + this.bannerHeight,
           '--default-banner-height': defaultBannerHeight,
+          '--mobile-banner-height': mobileBannerHeight,
           '--hero-padding-bottom': this.heroPaddingBottom
         }
       }

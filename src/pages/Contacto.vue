@@ -53,9 +53,15 @@
   }
 
   .hero-bg-img {
-    height: 300px;
+    height: 540px;
     width: 100%;
     object-fit: cover;
+  }
+
+  @media screen and (max-width: 768px) {
+    .hero-bg-img {
+      height: 300px;
+    }
   }
 
   h1 {
