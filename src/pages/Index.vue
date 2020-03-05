@@ -234,7 +234,7 @@
             content: "@provita_ong"
           },
           {
-            name: "twitter:description",
+            name: "twitter:title",
             content: this.$page.homeData.heroTitle
           },
           {
