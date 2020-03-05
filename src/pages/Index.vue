@@ -249,53 +249,6 @@
         ]
       }
     },
-    data() {
-      let self = this
-      return {
-        geoJsonResources: [
-          {
-            url: '/mapdata/FormacionesVegetales.topojson',
-            legendTitleProperty: 'T_VE',
-            isTopoJson: true,
-            topoJsonObject: 'FormacionesVegetales'
-          },
-          {
-            url: '/mapdata/VenezuelaAgua.topojson',
-            isTopoJson: true,
-            topoJsonObject: 'collection',
-            geoJsonLayerOptions: {
-              style: {
-                weight: 0,
-                opacity: 0,
-                fillOpacity: 1,
-                fillColor: '#BDE6E0',
-                interactive: false
-              }
-            }
-          },
-          {
-            url: '/mapdata/VenezuelaNoStates.topojson',
-            isTopoJson: true,
-            topoJsonObject: 'collection',
-            geoJsonLayerOptions: {
-              style: {
-                weight: 1,
-                color: '#504f54',
-                dashArray: '2,3',
-                opacity: 1,
-                fillOpacity: 0,
-                interactive: false
-              }
-            }
-          },
-          {
-            url: '/mapdata/Saxicola.json',
-            legendTitleProperty: 'name',
-            makePointsToCircles: true,
-          }
-        ]
-      }
-    },
     components: {
       BannerInfo
     },
