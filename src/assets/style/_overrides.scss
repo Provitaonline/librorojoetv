@@ -69,8 +69,8 @@ a.navbar-item {
 h1 {
   @extend .section-header;
   @extend .box;
-  @extend .is-size-2;
-  @extend .is-size-4-mobile;
+  @extend .is-size-1;
+  @extend .is-size-3-mobile;
   margin-top: 24px;
   margin-left: -32px;
   margin-right: -32px;
@@ -80,13 +80,12 @@ h1 {
 h2 {
   @extend .section-header;
   @extend .box;
-  @extend .is-size-4;
-  @extend .is-size-5-mobile;
+  @extend .is-size-3;
+  @extend .is-size-4-mobile;
   @extend .has-text-weight-bold;
   margin-top: 18px;
   margin-left: -32px;
   margin-right: -32px;
-  font-family: $family-serif;
 }
 
 .side-panel-item, .side-panel-item-title {
@@ -193,8 +192,9 @@ table {
 }
 
 .unit-subtitle-2 {
-  @extend .is-size-4;
+  @extend .is-size-5;
   @extend .is-size-6-mobile;
+  @extend .has-text-weight-bold;
   margin-top: -44px;
   padding-bottom: 44px;
 }
