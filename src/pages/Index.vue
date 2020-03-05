@@ -239,11 +239,11 @@
           },
           {
             name: "twitter:image",
-            content: this.$page.homeData.bannerImage.src
+            content: this.$page.metadata.siteUrl + this.$page.homeData.bannerImage.src
           },
           {
             property: "og:image",
-            content: this.$page.homeData.bannerImage.src
+            content: this.$page.metadata.siteUrl + this.$page.homeData.bannerImage.src
           }
         ]
       }
@@ -299,7 +299,6 @@
       BannerInfo
     },
     created() {
-      console.log(this.$page.metadata.siteUrl, this.$page.homeData.bannerImage.src)
     },
     mounted () {
 
