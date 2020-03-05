@@ -202,7 +202,7 @@
     },
     computed: {
       pageTitle() {
-        return this.$page.riskCardsIndex.title
+        return this.$page.riskCardsIndex.title.replace(/<[^>]*>?/gm, ' ')
       },
       pageImage() {
         return this.$page.riskCardsIndex.banner.src
