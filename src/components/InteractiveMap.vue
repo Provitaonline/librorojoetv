@@ -115,7 +115,7 @@
   }
 
   .legend {
-    border: 2px solid #626262;
+    border: 1px solid #626262;
   }
 
   .legend-block {
