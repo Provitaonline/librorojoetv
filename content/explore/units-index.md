@@ -2,7 +2,7 @@
 title: "Paisajes Vegetales de Venezuela"
 mapTitle: "Unidades de paisaje<br>de Venezuela -  2010"
 banner: "./units-pancarta.jpg"
-bannerCaption: "Sistema de colinas y sierras bajas piemontanas del Escudo Guayanés, Canaima, estado Bolívar. <i>Rebecca Miller</i>"
+bannerCaption: "Macizo Guayanés, zona Caroní medio, Auyán-tepui, estado Bolivar. <i>Rebecca Miller</i>"
 legendItems:
   - name: "A"
     label: "<b>Región A. Costas e islas.</b> <br>Paisajes vegetales de las costas e islas"
