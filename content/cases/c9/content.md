@@ -115,11 +115,11 @@ La tabla 2 muestra los cambios en las coberturas vegetales identificadas en el �
 
 En el sector de Requena clasificarían En Peligro (EN) las comunidades leñosas anegables, Vulnerable (VU) los arbustales y sabanas arboladas no anegables, mientras que resultarían En Peligro Crítico (CR) los bosques ribereños (Foto 1). Al este del sector de Mapire, y debido fundamentalmente a los incendios, estarían En Peligro Crítico (CR) los herbazales anegables y los arbustales y sabanas arboladas sobre el plano de anegación. Por último, en el sector de Soledad también estarían En Peligro Crítico (CR) los herbazales del plano aluvial, los bosques ribereños y las sabanas altas. Las comunidades no sometidas a la creciente anual del Orinoco, como las sabanas, los arbustales y los bosque ribereños, incluyendo los morichales, se extienden ampliamente sobre las planicies de la Mesa, por lo que su conversión sería menos impactante. Sin embargo, la cobertura vegetal mantiene un importante equilibrio sedimentario y nutricional sobre los cauces que drenan al plano de anegación, y funcionan como corredor para el intercambio de especies vegetales y animales entre las partes altas y las bajas (e.g. polen, semillas y propágulos).
 
-<div class="is-size-6">
-  <br>
-  <b>Tabla 2.</b> Cambios de las coberturas vegetales observados (1985-2001) y proyectados (1985-2035) en los sectores de Requena, Mapire y Soledad. Incluye categorías y criterios de riesgo de eliminación.
-</div>
 <div class="is-oversized">
+  <div class="is-size-6">
+    <br>
+    <b>Tabla 2.</b> Cambios de las coberturas vegetales observados (1985-2001) y proyectados (1985-2035) en los sectores de Requena, Mapire y Soledad. Incluye categorías y criterios de riesgo de eliminación.
+  </div>
   <div class="table-container is-size-6">
     <table>
       <thead>
