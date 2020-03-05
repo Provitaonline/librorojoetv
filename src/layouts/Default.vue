@@ -120,6 +120,15 @@
   </div>
 </template>
 
+<static-query>
+  query Metadata {
+    metadata {
+      siteUrl
+      twitterId
+    }
+  }
+</static-query>
+
 <style lang="scss" scoped>
   @import "~/assets/style/_variables";
 
@@ -166,6 +175,44 @@
   import SocialSharing from 'vue-social-sharing'
 
   export default {
+    metaInfo() {
+      return {
+        meta: [
+          {
+            name: "description",
+            content: this.$parent.pageTitle
+          },
+          {
+            property: "og:title",
+            content: this.$parent.pageTitle
+          },
+          {
+            property: "og:image",
+            content: this.$static.metadata.siteUrl + this.$parent.pageImage
+          },
+          {
+            name: "twitter:card",
+            content: "summary_large_image",
+          },
+          {
+            name: "twitter:site",
+            content: this.$static.metadata.twitterId
+          },
+          {
+            name: "twitter:creator",
+            content: this.$static.metadata.twitterId
+          },
+          {
+            name: "twitter:title",
+            content: this.$parent.pageTitle
+          },
+          {
+            name: "twitter:image",
+            content: this.$static.metadata.siteUrl + this.$parent.pageImage
+          }
+        ]
+      }
+    },
     data() {
       return {
         version: version
