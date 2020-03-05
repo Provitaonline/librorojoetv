@@ -81,6 +81,14 @@
       PageBanner,
       TextWithRefsAndPhotos,
       References
+    },
+    computed: {
+      pageTitle() {
+        return this.$page.methodCard.title.replace(/<[^>]*>?/gm, ' ')
+      },
+      pageImage() {
+        return this.$page.methodCard.cardimage.src
+      }
     }
   }
 

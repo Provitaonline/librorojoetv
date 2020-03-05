@@ -518,6 +518,12 @@
           }
         })
         return cl
+      },
+      pageTitle() {
+        return 'Riesgo de colapso: ' + this.$page.riskCard.title
+      },
+      pageImage() {
+        return this.$page.riskCard.cardimage.src
       }
     }
   }

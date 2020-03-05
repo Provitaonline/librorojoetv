@@ -137,6 +137,12 @@
           }
         })
         return cl
+      },
+      pageTitle() {
+        return 'Unidades de paisaje: ' + this.$page.unitCard.title
+      },
+      pageImage() {
+        return this.$page.unitCard.cardimage.src
       }
     }
   }

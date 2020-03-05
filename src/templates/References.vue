@@ -56,6 +56,12 @@
     computed: {
       linkToParent: function() {
         return this.$page.references.parent ? this.$page.references.parent + '/' + this.$page.references.id : this.$page.references.id
+      },
+      pageTitle() {
+        return 'Bibliografía: ' + this.$page.references.title.replace(/<[^>]*>?/gm, ' ')
+      },
+      pageImage() {
+        return this.$page.references.banner.src
       }
     }
   }

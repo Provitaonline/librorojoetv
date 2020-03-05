@@ -262,6 +262,12 @@
           })
         })
         return cl
+      },
+      pageTitle() {
+        return this.$page.caseCard.title
+      },
+      pageImage() {
+        return this.$page.caseCard.cardimage.src
       }
     }
   }

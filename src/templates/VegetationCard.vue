@@ -73,6 +73,14 @@
       PageBanner,
       TextWithRefsAndPhotos,
       References
+    },
+    computed: {
+      pageTitle() {
+        return this.$page.vegetationCard.title.replace(/<[^>]*>?/gm, ' ')
+      },
+      pageImage() {
+        return this.$page.vegetationCard.cardimage.src
+      }
     }
   }
 
