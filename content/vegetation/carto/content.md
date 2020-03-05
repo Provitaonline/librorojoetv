@@ -1,6 +1,6 @@
 ---
 id: cartografia
-title: "Revisión y análisis histórico de la<br>cartografía sistemática de la<br>vegetación en Venezuela"
+title: "Revisión y análisis histórico de la cartografía sistemática de la vegetación en Venezuela"
 cardimage: "./carto-pancarta.jpg"
 cardimagecaption: "Bosque de manglar, Parque Nacional Laguna de La Restinga, estado Nueva Esparta. <i>Román Rangel</i>"
 photos:
