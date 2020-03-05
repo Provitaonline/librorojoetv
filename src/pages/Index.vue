@@ -8,7 +8,7 @@
         </div>
       </section>
       <BannerInfo :info="$page.homeData.bannerCaption" />
-      <section class="section not-as-narrow">
+      <section style="padding-top: 88px; padding-bottom: 88px;" class="section not-as-narrow">
         <div class="tile is-ancestor">
           <div class="tile">
             <div v-for="item in $page.homeData.indexCards" class="tile is-parent" style="flex-direction: column;">
@@ -88,15 +88,15 @@
 
   .hero-body {
     position: absolute;
-    width: 300px;
+    width: 600px;
     left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translate(-50%, -50%);
     padding: 10px;
   }
 
   .hero-bg-img {
-    height: 400px;
+    height: 540px;
     width: 100%;
     object-fit: cover;
   }
@@ -122,7 +122,7 @@
       height: 200px;
     }
     .hero-body {
-      bottom: 10px;
+      width: 300px;
     }
     .bottom-body {
       width: 320px;
@@ -130,7 +130,11 @@
   }
 
   .button {
-    border-radius: 0px;
+    border-radius: 7px;
+  }
+
+  .button:hover {
+    color: #DBDBDB;
   }
 
   .hero-text {
@@ -193,11 +197,15 @@
     padding-left: 5%;
     padding-right: 5%;
 
-    /* border-radius: 10px; */
+    border-radius: 10px;
     border: solid 2px white;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .download-text:hover {
+    color: #DBDBDB;
   }
 
 </style>
