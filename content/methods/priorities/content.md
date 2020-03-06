@@ -72,7 +72,7 @@ Se propone un procedimiento que tiene dos pasos. En el primero, se elabora una m
 </div>
 <div class="table-container">
 
-| Ecosistema              | Servicios de<br>provisionamiento | Servicios de<br>regulación | Servicios<br>culturales | Valor relativo |
+| Ecosistema              | Servicios de provisionamiento    | Servicios de regulación    | Servicios    culturales | Valor relativo |
 |-------------------------|:--------------------------------:|:--------------------------:|:-----------------------:|:--------------:|
 | Bosques Siempreverdes   | 3                                | 3                          | 3                       | 3              |
 | Bosques Semideciduos    | 3                                | 3                          | 3                       | 3              |
@@ -101,7 +101,7 @@ En cuanto a los servicios ecosistémicos, tanto los bosques semideciduos como lo
 </div>
 <div class="table-container">
 
-| Ecosistema              | Riesgo de<br>eliminación | Proporción<br>protegida | Singularidad | Atractivo<br>público | Índice |
+| Ecosistema              | Riesgo de eliminación    | Proporción protegida    | Singularidad | Atractivo público    | Índice |
 |-------------------------|:------------------------:|:-----------------------:|:------------:|:--------------------:|:------:|
 | Bosques Siempreverdes   | 1                        | 3                       | 2            | 3                    | 18     |
 | Bosques Semideciduos    | 3                        | 3                       | 2            | 3                    | 54     |

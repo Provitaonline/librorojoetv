@@ -29,7 +29,7 @@ El sistema diseñado combina medidas de distribución geográfica, función ecol
     <br>
       <b>Tabla 1.</b> Sistema de categorías y criterios para ecosistemas amenazados propuesto por Rodríguez <i>et al.</i> (2011). Basado en la Lista Roja de IUCN (2001) y en el sistema presentado por Nicholson <i>et al.</i> (2009)
   </div>
-  <div class="table-container is-size-6 no-row-shading">
+  <div class="table-container is-size-6 no-row-shading align-top">
     <table>
       <thead>
         <tr>

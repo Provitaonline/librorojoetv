@@ -162,7 +162,8 @@ html {
 
 thead th {
   background-color: #f0d4a6 !important;
-  border: solid 1px white !important;;
+  border: solid 1px white !important;
+  vertical-align: middle !important;
 }
 
 .table-in-content {
@@ -175,6 +176,7 @@ table>tr:nth-child(odd), table>tbody>tr:nth-child(odd) {
 
 table>tr>td, table>tbody>tr>td {
   border: solid 1px #F8F8F8 !important;
+  vertical-align: middle !important;
 }
 
 table {
