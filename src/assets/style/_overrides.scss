@@ -71,7 +71,7 @@ h1 {
   @extend .box;
   @extend .is-size-1;
   @extend .is-size-3-mobile;
-  margin-top: 24px;
+  margin-top: 0px;
   margin-bottom: 0px !important;
   padding-bottom: 18px;
   margin-left: -32px;
@@ -85,7 +85,7 @@ h2 {
   @extend .is-size-3;
   @extend .is-size-4-mobile;
   @extend .has-text-weight-bold;
-  margin-top: 18px;
+  margin-top: 0px;
   margin-bottom: 0px !important;
   padding-bottom: 18px;
   margin-left: -32px;
@@ -193,16 +193,16 @@ table {
 .unit-subtitle {
   @extend .is-size-3;
   @extend .is-size-5-mobile;
-  margin-top: -44px;
-  padding-bottom: 44px;
+  margin-top: -26px;
+  padding-bottom: 18px;
 }
 
 .unit-subtitle-2 {
   @extend .is-size-5;
   @extend .is-size-6-mobile;
   @extend .has-text-weight-bold;
-  margin-top: -44px;
-  padding-bottom: 44px;
+  margin-top: -26px;
+  padding-bottom: 18px;
 }
 
 .info-icon {
