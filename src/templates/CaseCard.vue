@@ -206,6 +206,15 @@
     border: none !important;
   }
 
+  ::v-deep .table-container {
+    -ms-overflow-style: none;  /* Edge  */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  ::v-deep .table-container::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome */
+  }
+
 </style>
 
 <script>

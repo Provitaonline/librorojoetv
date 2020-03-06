@@ -46,6 +46,15 @@
     }
   }
 
+  .side-panel-content {
+    -ms-overflow-style: none;  /* Edge  */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  .side-panel-content::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome */
+  }
+
   .side-panel.isopen {
     margin-left: 0 !important;
   }
