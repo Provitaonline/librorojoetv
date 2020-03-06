@@ -8,7 +8,7 @@
         </div>
       </section>
       <BannerInfo :info="$page.homeData.bannerCaption" />
-      <section style="padding-top: 88px; padding-bottom: 88px;" class="section not-as-narrow">
+      <section class="section card-section">
         <div class="tile is-ancestor">
           <div class="tile">
             <div v-for="item in $page.homeData.indexCards" class="tile is-parent" style="flex-direction: column;">
@@ -23,7 +23,7 @@
                     <div class="card-content has-text-centered">
                       <div class="content">
                         <div class="box is-size-4 is-size-5-mobile has-text-weight-medium explore-title">{{item.title}}</div>
-                        {{item.text}}
+                        <span>{{item.text}}</span>
                         <br><br>
                       </div>
                     </div>
@@ -159,12 +159,33 @@
     opacity: 1;
   }
 
+  .card-section {
+    padding-top: 88px;
+    padding-bottom: 88px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
   .card {
     box-shadow: none;
   }
 
   .card-content {
-    height: 280px;
+    height: 180px;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+
+  @media screen and (max-width: 1024px) and (min-width: 769px)  {
+    .card-content {
+      height: 250px;
+    }
+  }
+
+  @media screen and (min-width: 1279px)  {
+    .card-content {
+      height: 160px;
+    }
   }
 
   .card-image {
@@ -182,12 +203,13 @@
   .menu-card-button {
     display: flex;
     justify-content: center;
-    padding: 10px;
+    padding: 10px 10px 28px;
   }
 
   .explore-title {
     color: $primary;
     font-family: $family-serif;
+    margin: 0;
   }
 
   .download-text {
