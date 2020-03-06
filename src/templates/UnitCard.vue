@@ -132,7 +132,8 @@
               childLabel: item.label,
               childLink: '/unidades/' + item.cardPath,
               isIndented: item.name.length > 2,
-              hasSeparator: item.hasSeparator
+              hasSeparator: item.hasSeparator,
+              noHighlight: true
             })
           }
         })

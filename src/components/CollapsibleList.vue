@@ -13,7 +13,7 @@
       <b-collapse :open="isOpen[index]">
         <div
           class="side-panel-item child"
-          v-bind:class="{'child-indented': (child.isIndented), 'gray-separator': (child.hasSeparator), current: ($route.path === child.childLink)}"
+          v-bind:class="{'child-indented': (child.isIndented), 'gray-separator': (child.hasSeparator), current: !child.noHighlight && ($route.path === child.childLink)}"
           v-for="(child, index) in parent.children" :key="index">
           <g-link :to="child.childLink"><span v-html="child.childLabel"></span></g-link>
         </div>
