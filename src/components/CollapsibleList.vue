@@ -6,9 +6,9 @@
             style="display: flex; align-items: center; justify-content: space-between;">
         <g-link v-if="parent.parentLink" :to="parent.parentLink"><span v-html="parent.parentLabel"></span></g-link>
         <div v-else>{{parent.parentLabel}}</div>
-        <button class="button is-white is-transparent" v-if="parent.children" @click="toggle(index)">
-          <font-awesome size="lg" :icon="['fas', !isOpen[index] ? 'angle-down' : 'angle-up']" />
-        </button>
+        <div class="button is-transparent" v-if="parent.children" @click="toggle(index)">
+          <font-awesome class="arrow" size="lg" :icon="['fas', !isOpen[index] ? 'angle-down' : 'angle-up']" />
+        </div>
       </div>
       <b-collapse :open="isOpen[index]">
         <div
@@ -40,7 +40,7 @@
   }
 
   .red-separator {
-    border-bottom: 2px solid $primary
+    border-bottom: 1px solid $primary
   }
 
   .gray-separator {
@@ -53,6 +53,11 @@
 
   .is-transparent {
     background-color: transparent;
+    border-width: 0px;
+  }
+
+  .arrow:hover {
+    color: $primary;
   }
 
 </style>
