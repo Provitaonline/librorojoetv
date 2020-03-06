@@ -72,6 +72,8 @@ h1 {
   @extend .is-size-1;
   @extend .is-size-3-mobile;
   margin-top: 24px;
+  margin-bottom: 0px !important;
+  padding-bottom: 18px;
   margin-left: -32px;
   margin-right: -32px;
   font-family: $family-serif;
@@ -84,6 +86,8 @@ h2 {
   @extend .is-size-4-mobile;
   @extend .has-text-weight-bold;
   margin-top: 18px;
+  margin-bottom: 0px !important;
+  padding-bottom: 18px;
   margin-left: -32px;
   margin-right: -32px;
 }
