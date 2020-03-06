@@ -8,7 +8,7 @@
               <div class="side-panel-times"><font-awesome :icon="['fas', 'times']"/></div>
             </div>
           </a>
-          <p class="side-panel-title-text is-size-4 has-text-weight-bold">
+          <p class="side-panel-title-text is-size-5 has-text-weight-bold is-uppercase">
             <slot name="title"></slot>
           </p>
         </div>
@@ -85,8 +85,9 @@
 
   .side-panel-title-text {
     padding-left: 20px;
-    padding-top: 30px;
+    padding-top: 50px;
     padding-bottom: 0px;
+    font-family: $family-serif;
   }
 
   @media only screen and (min-width: 769px) {
@@ -157,6 +158,10 @@
     right: -12px;
     top: -12px;
     color: white;
+  }
+
+  ::v-deep .box {
+    padding-top: 10px;
   }
 </style>
 
