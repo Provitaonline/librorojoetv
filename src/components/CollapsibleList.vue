@@ -30,11 +30,13 @@
   }
 
   .child {
-    margin-left: 16px;
+    padding-left: 24px;
+    /*margin-left: 16px; */
   }
 
   .child-indented {
-    margin-left: 24px;
+    padding-left: 32px;
+    /*margin-left: 24px; */
   }
 
   .red-separator {
