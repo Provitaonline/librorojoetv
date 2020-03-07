@@ -67,7 +67,7 @@ Existen varias clases de servicios ecosistémicos. Los servicios de provisionami
 
 Se propone un procedimiento que tiene dos pasos. En el primero, se elabora una matriz de los ecosistemas de interés y de las grandes categorías de servicios ecosistémicos (Tabla 1). En cada ecosistema se asigna el número tres (3) a los servicios aportados por éste, que no son provistos en mayor grado por ningún otro. Se asigna dos (2) a los servicios que aporta, pero en menor grado que los anteriores. Finalmente se asigna uno (1) a los servicios cuya contribución se considere poco significativa. En un segundo paso, se contabiliza cuántos servicios ecosistémicos reciben la máxima puntuación. Si presenta 3 veces el número 3 (es decir que los 3 tipos de servicios son de gran importancia) se le otorgará el valor de tres (3) puntos. Si sólo tiene 2 veces el número 3, entonces se le asignará dos (2) puntos, y si finalmente se considera que únicamente uno de los servicios es excepcionalmente importante para la sociedad, se le dará un (1) punto. Es importante destacar que la asignación de estos valores es subjetiva y dependerá de quienes realicen la ponderación. El propósito es reflejar la visión de los beneficiarios de los ecosistemas sobre su conservación, por lo que necesariamente debe ser una variable capaz de adaptarse y responder a las diferentes expectativas de sociedades o grupos sociales.
 
-<div class="is-size-6">
+<div class="is-size-6 table-title">
   <b>Tabla 1.</b> Cálculo de la ponderación de los servicios que brindan ecosistemas de diferentes tipos (ejemplo).
 </div>
 <div class="table-container">
@@ -95,8 +95,7 @@ En cuanto a la evaluación de la singularidad de los bosques de la cordillera de
 
 En cuanto a los servicios ecosistémicos, tanto los bosques semideciduos como los deciduos son de alta importancia y por lo tanto les corresponde un valor de tres (3) puntos (Tabla 1). Al combinar los valores de las cuatro variables descritas en el índice de prioridad (Tabla 2), se tiene que la prioridad de los bosques deciduos es mayor que la de los bosques semideciduos por efecto de las diferencias de riesgo de eliminación entre los dos ecosistemas. En virtud de que los dos tipos de bosque son equivalentes en cuanto a la proporción protegida, singularidad y atractivo público, estas variables tienen el mismo valor en ambos casos. Sin embargo esto no siempre es así y podría ocurrir que mayores niveles de riesgo no correspondan con la máxima prioridad (Rodríguez *et al.* 2004).
 
-<div class="is-size-6">
-  <br>
+<div class="is-size-6 table-title">
   <b>Tabla 2.</b> Cálculo del índice de prioridad de conservación de los bosques semideciduos y deciduos de la cordillera de la Costa Central.
 </div>
 <div class="table-container">

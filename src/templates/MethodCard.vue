@@ -64,6 +64,10 @@
     border: none !important;
   }
 
+  ::v-deep #formula-1 {
+    text-align: center;
+  }
+
 </style>
 
 <script>
