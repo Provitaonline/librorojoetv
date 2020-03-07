@@ -206,10 +206,11 @@
                   </div>
                 </div>
                 <div v-if="$page.riskCard.content != '\n'" class="container is-size-5 has-text-centered">
-                  <a @click="showMore = !showMore">
-                    <p v-if="!showMore">LEER MÁS...<font-awesome :icon="['fas', 'angle-down']"/></p>
-                    <p v-else>LEER MENOS...<font-awesome :icon="['fas', 'angle-up']"/></p>
-                  </a>
+                  <div v-show="!showMore" @click="showMore = !showMore">
+                    <button class="button is-primary is-medium has-text-weight-semibold">
+                      <p v-if="!showMore">Leer más <font-awesome :icon="['fas', 'angle-down']"/></p>
+                    </button>
+                  </div>
                 </div>
                 <div v-if="showMore" class="tile is-parent">
                   <!-- <div class="d-content tile is-child is-size-5" v-html="$page.riskCard.content"></div> -->
@@ -364,6 +365,19 @@
     height: 12px;
     width: 20px;
     display: inline-block;
+  }
+
+  .button {
+    border-radius: 7px;
+  }
+
+  .button:hover {
+    color: #DBDBDB;
+  }
+
+  .button {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   ::v-deep .handle {
