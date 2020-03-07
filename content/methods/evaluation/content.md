@@ -67,10 +67,9 @@ El último elemento a considerar para el análisis del riesgo de eliminación de
 
 El análisis del riesgo de eliminación de las formaciones vegetales de Venezuela inicia con los bosques y finaliza con las formaciones de tipo herbáceo.
 
-INSERTAR FOTOS 1 A 5
 {Figura 6}
 
-<div class="is-size-6">
+<div class="is-size-6 table-title">
   <br>
   <b>Tabla 1.</b> Áreas de protección con fines prioritarios de conservación de la biodiversidad
 </div>
@@ -441,8 +440,7 @@ INSERTAR FOTOS 1 A 5
   </table>
 </div>
 {Figura 7}
-<div class="is-size-6">
-  <br>
+<div class="is-size-6 table-title">
   <b>Tabla 1.</b> Áreas de protección con fines de uso potencial
 </div>
 <div class="table-container is-size-6">
