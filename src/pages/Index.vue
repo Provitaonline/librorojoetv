@@ -171,7 +171,7 @@
   }
 
   .card-content {
-    height: 180px;
+    height: 190px;
     padding-top: 0px !important;
     padding-bottom: 0px !important;
   }
