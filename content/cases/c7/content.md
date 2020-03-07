@@ -64,7 +64,7 @@ Para el período comprendido entre 1986 y 2001, la comparación de las cobertura
 
 La proyección de estos cambios, considerando un período de 50 años en el futuro, predice una pérdida de menos de 20% del total de la superficie de bosques siempreverdes, por lo que el riesgo de eliminación de estos ecosistemas se ubica en la categoría Preocupación Menor (LC), para toda la Reserva Forestal Sipapo, extrapolable a la zona noroccidental del estado Amazonas (Tabla 1).
 
-<div class="is-size-6">
+<div class="is-size-6 table-title">
   <br>
   <b>Tabla 1.</b> Evaluación del riesgo de eliminación de los bosques siempreverdes en la Reserva Forestal Sipapo, estado Amazonas. Escala espacial 1:500.000.
 </div>
@@ -102,7 +102,7 @@ Sin embargo, si se modifica la escala espacial a una con mayor resolución (celd
 
 Al estudiar el mapa temático del riesgo de eliminación por grillas (Figura 3), se hace evidente que la mayor parte de las celdas amenazadas coincide con la ubicación de algunas de las principales comunidades indígenas de la zona, lo que pone de manifiesto el impacto de su desarrollo sobre los ecosistemas naturales que las circundan.
 
-<div class="is-size-6">
+<div class="is-size-6 table-title">
   <br>
   <b>Tabla 2.</b> Evaluación del riesgo de eliminación de los bosques siempreverdes en la zona noroccidental del estado Amazonas (Reserva Forestal Sipapo). Escala espacial 100 Km<sup>2</sup>.
 </div>

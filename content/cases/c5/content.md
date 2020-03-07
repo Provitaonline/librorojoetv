@@ -60,7 +60,7 @@ En el ramal oriental de la cordillera de los Andes venezolanos, la vegetación n
 
 La tabla 2 resume la información de la extensión ocupada por cada uno de los tipos de cobertura en 1988 y 2001, así como los cambios ocurridos durante los 13 años cubiertos por el estudio. Estos datos sirvieron de base para obtener unidades métricas, necesarias en la aplicación del sistema de categorías de riesgo de eliminación de ecosistemas.
 
-<div class="is-size-6">
+<div class="is-size-6 table-title">
   <br>
   <b>Tabla 1.</b> Clasificación del riesgo de eliminación de las formaciones vegetales en 57 municipios de la cordillera de Mérida.
 </div>
@@ -155,7 +155,7 @@ La tabla 2 resume la información de la extensión ocupada por cada uno de los t
 
 </div>
 
-<div class="is-size-6">
+<div class="is-size-6 table-title">
   <br>
   <b>Tabla 2.</b> Cambio en las diferentes coberturas terrestres de la cordillera de Mérida (Barinas, Mérida, Trujillo) observado (1988-2001) y proyectado (1988-2038).
 </div>

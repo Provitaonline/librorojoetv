@@ -62,8 +62,6 @@
   ::v-deep .table-container {
     /*box-shadow: 0 3px 10px 4px rgba(0, 0, 0, 0.12) !important; */
     border: none !important;
-    padding-bottom: 10px !important;
-    margin-bottom: 0px;
   }
 
 </style>

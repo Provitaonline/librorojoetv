@@ -52,7 +52,7 @@ En la primera fase del análisis, se recopiló toda la información documental y
 
 Para cuantificar los cambios de cobertura se procesaron imágenes satelitales que estuviesen separadas en el tiempo por al menos 10 años. Concretamente, para cada sector se emplearon dos imágenes Landsat, una de la década de 1980 (Landsat TM) y una de la década de 2000 (Landsat ETM+) [Tabla 1]. Mediante el uso de programas para el procesamiento digital y el análisis de las imágenes satelitales, principalmente Idrisi y ArcView 3.3, se realizó una clasificación no supervisada de las imágenes, lo que permitió una identificación preliminar de la cobertura de la tierra. Luego se llevó a cabo una verificación de campo con el fin de confrontar los tipos de cobertura vegetal presentes en el sitio, con sus correspondientes firmas espectrales en las imágenes de satélite. De manera general, los diferentes tipos de vegetación se agruparon en vegetación anegable leñosa y herbácea, y vegetación no anegable, sabana, sabana arbolada y arbustales. Por su parte, los bosques ribereños conectan ambos ambientes y tienen un componente anegable durante las crecientes estacionales. De manera adicional, se identificaron otras coberturas no vegetales como áreas intervenidas (agropecuarias y/o deforestadas), áreas urbanas, áreas quemadas, y suelos expuestos, así como nubes, sombra de nubes y cuerpos de agua.
 
-<div class="is-size-6">
+<div class="is-size-6 table-title">
   <b>Tabla 1.</b> Imágenes de satélite Landsat del área de estudio. La ubicación de los sectores se indica en la Figura 1.
 </div>
 <div class="table-container">
@@ -116,7 +116,7 @@ La tabla 2 muestra los cambios en las coberturas vegetales identificadas en el �
 En el sector de Requena clasificarían En Peligro (EN) las comunidades leñosas anegables, Vulnerable (VU) los arbustales y sabanas arboladas no anegables, mientras que resultarían En Peligro Crítico (CR) los bosques ribereños (Foto 1). Al este del sector de Mapire, y debido fundamentalmente a los incendios, estarían En Peligro Crítico (CR) los herbazales anegables y los arbustales y sabanas arboladas sobre el plano de anegación. Por último, en el sector de Soledad también estarían En Peligro Crítico (CR) los herbazales del plano aluvial, los bosques ribereños y las sabanas altas. Las comunidades no sometidas a la creciente anual del Orinoco, como las sabanas, los arbustales y los bosque ribereños, incluyendo los morichales, se extienden ampliamente sobre las planicies de la Mesa, por lo que su conversión sería menos impactante. Sin embargo, la cobertura vegetal mantiene un importante equilibrio sedimentario y nutricional sobre los cauces que drenan al plano de anegación, y funcionan como corredor para el intercambio de especies vegetales y animales entre las partes altas y las bajas (e.g. polen, semillas y propágulos).
 
 <div class="is-oversized">
-  <div class="is-size-6">
+  <div class="is-size-6 table-title">
     <b>Tabla 2.</b> Cambios de las coberturas vegetales observados (1985-2001) y proyectados (1985-2035) en los sectores de Requena, Mapire y Soledad. Incluye categorías y criterios de riesgo de eliminación.
   </div>
   <div class="table-container is-size-6">
@@ -238,13 +238,11 @@ En el sector de Requena clasificarían En Peligro (EN) las comunidades leñosas 
         <td><div style="display: flex;">{cr}&nbsp;A3</div></td>
       </tr>
     </table>
-    <div>
-      Obs: cambio observado; Pro: cambio proyectado; Cat: categoría de riesgo
-    </div>
   </div>
+  <div class="is-size-6">Obs: cambio observado; Pro: cambio proyectado; Cat: categoría de riesgo</div>
 </div>
 
-<div class="is-size-6">
+<div class="is-size-6 table-title">
   <br>
   <b>Tabla 3.</b> Cambios de las coberturas no vegetales observados (1985-2001) en los sectores de Requena, Mapire y Soledad.
 </div>
