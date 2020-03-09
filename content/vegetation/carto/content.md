@@ -15,7 +15,7 @@ photos:
   photocaption: "<b>Figura 3:</b> Representación del Mapa de la vegetación de la República de Venezuela. Fuente: Hueck (1960)"
 - photokey: "Figura 4"
   photourl: "./figura-4.jpg"
-  photocaption: "<b>Figura 4:</b> Representación del Mapa ecológico según la clasifi cación de zonas de vida del mundo de L.R. Holdridge. Fuente: Ewel et al. (1976)"
+  photocaption: "<b>Figura 4:</b> Representación del Mapa ecológico según la clasificación de zonas de vida del mundo de L.R. Holdridge. Fuente: Ewel et al. (1976)"
 - photokey: "Figura 5"
   photourl: "./figura-5.jpg"
   photocaption: "<b>Figura 5:</b> Representación del Mapa de la vegetación actual de Venezuela (1979-1982). Fuente: Madi et al. (2008)"
