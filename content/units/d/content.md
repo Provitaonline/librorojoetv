@@ -37,6 +37,7 @@ photos:
 - photokey: "Foto 39"
   photourl: "./foto-39.jpg"
   photocaption: "Foto 39: Salto Eutobarima, río Caroní, estado Bolívar."
+  isCentered: true
 - photokey: "Foto 40"
   photourl: "./foto-40.jpg"
   photocaption: "Foto 40: Macizo Guayanés, zona noroccidental, Autana, estado Amazonas. <i>Rebecca Miller</i>"
