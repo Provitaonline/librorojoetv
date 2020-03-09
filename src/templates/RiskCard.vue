@@ -99,8 +99,6 @@
                       </table>
                     </div>
                   </div>
-
-
                   <div v-if="$page.riskCard.areain2010" class="tile is-parent">
                     <div class="tile is-child is-2"></div>
                     <div class="tile is-child is-8 is-size-6 has-text-centered">
@@ -123,9 +121,6 @@
                       </ClientOnly>
                     </div>
                   </div>
-
-
-
                   <div class="text-block tile is-child box is-size-5 is-size-6-mobile">
                     <h1>Situación a 2010</h1>
                     <div class="has-text-centered">
@@ -211,9 +206,7 @@
                       </table>
                     </div>
                   </div>
-
                 </div>
-
                 <div v-if="$page.riskCard.content != '\n'" class="container is-size-5 has-text-centered">
                   <div v-show="!showMore" @click="showMore = !showMore">
                     <button class="button is-primary is-medium has-text-weight-semibold">
