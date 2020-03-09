@@ -7,6 +7,7 @@ cardimagecaption: "Recorrido entre Puerto Ayacucho y Autana, estado Amazonas. <i
 photos:
 - photokey: "Formula 1"
   photourl: "./formula.svg"
+  isCentered: true
 - photokey: "Figura 1"
   photourl: "./figura-1.jpg"
   photocaption: "<b>Figura 1.</b> Relación entre la prioridad relativa de los ecosistemas, según el área que ocupan, su proporción protegida y las metas de representatividad propuestas. Figura tomada y modificada de Rodrigues *et al.* (2004a)."
