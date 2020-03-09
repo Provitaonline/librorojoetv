@@ -151,7 +151,7 @@
                 </div>
                 <div class="tile is-parent">
                   <div v-if="$page.riskCard.riskofcolapsestatelevel.length" class="tile is-child is-2"></div>
-                  <div v-if="$page.riskCard.riskofcolapsestatelevel.length" class="tile is-child is-8 box">
+                  <div v-if="$page.riskCard.riskofcolapsestatelevel.length" class="tile is-child is-8">
                     <div class="has-text-centered"><b>Riesgo de colapso por {{($page.riskCard.zonelabel).toLowerCase()}}:</b><br>
                       <span class="is-size-7"><b>(Tabla 2)</b></span>
                       <br><br>
