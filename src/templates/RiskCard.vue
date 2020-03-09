@@ -56,7 +56,7 @@
                     </div>
                   </figcaption>
                 </div>
-                <h1>Cambios en la distribución</h1>
+                <h1 v-if="$page.riskCard.areain2010">Cambios en la distribución</h1>
                 <div v-if="$page.riskCard.areain2010" class="tile is-parent" style="padding-top: 0;">
                   <div v-if="$page.riskCard.stateleveltable.length" class="tile is-child is-2"></div>
                   <div v-if="$page.riskCard.stateleveltable.length" class="tile is-child is-8">
