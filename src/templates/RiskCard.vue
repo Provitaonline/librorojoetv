@@ -120,8 +120,8 @@
                     </ClientOnly>
                   </div>
                 </div>
+                <h1>Situación a 2010</h1>
                 <div class="text-block tile is-child box is-size-5 is-size-6-mobile">
-                  <h1>Situación a 2010</h1>
                   <div class="has-text-centered">
                     <b>Riesgo de colapso a nivel nacional: </b>
                     {{threatCategories[$page.riskCard.category].text.toUpperCase()}}
