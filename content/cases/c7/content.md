@@ -17,6 +17,7 @@ photos:
 - photokey: "Figura 1"
   photourl: "./figura-1.png"
   photocaption: "Figura 1: Localización de la Reserva Forestal Sipapo, zona noroccidental del estado Amazonas."
+  isCentered: true
 - photokey: "Figura 2"
   photourl: "./figura-2.jpg"
   photocaption: "Figura 2: Cobertura de bosques siempreverdes (verde oscuro) para los años 1986 y 2001 en la zona noroccidental del estado Amazonas."

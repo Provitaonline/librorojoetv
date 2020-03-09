@@ -20,6 +20,7 @@ photos:
 - photokey: "Figura 1"
   photourl: "./figura-1.png"
   photocaption: "Figura 1: Localización del área de estudio en el estado Falcón."
+  isCentered: true
 - photokey: "Figura 2"
   photourl: "./figura-2.jpg"
   photocaption: "Figura 1: Cobertura de los ecosistemas terrestre de la zona centro-norte del estado Falcón en 1991-2001."

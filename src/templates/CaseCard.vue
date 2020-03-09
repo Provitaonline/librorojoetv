@@ -131,6 +131,7 @@
         photokey
         photourl
         photocaption
+        isCentered
       }
     }
     casesIndex: casesIndex (path: "/content/explore/cases-index") {

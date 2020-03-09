@@ -19,6 +19,7 @@ photos:
 - photokey: "Figura 1"
   photourl: "./figura-1.jpg"
   photocaption: "Figura 1: Localización del área de estudio (isla de Margarita)."
+  isCentered: true
 - photokey: "Figura 2"
   photourl: "./figura-2a-1986.jpg"
   photocaption: "Figura 2: Cambio de cobertura de los ecosistemas terrestres de la isla de Margarita (1986)"

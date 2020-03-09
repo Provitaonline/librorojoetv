@@ -17,7 +17,8 @@ cardtablerows:
 photos:
 - photokey: "Figura 1"
   photourl: "./figura-1.jpg"
-  photocaption: "Foto 1: Área delimitada para el caso de estudio."
+  photocaption: "Figura 1: Área delimitada para el caso de estudio."
+  isCentered: true
 - photokey: "Figura 2"
   photourl: "./figura-2.jpg"
   photocaption: "Figura 2: Imágenes satelitales del área escogida para el caso de estudio. Muestran los límites de las tres áreas protegidas incluidas en el área (de izquierda a derecha, Parque Nacional Henri Pittier, Monumento Natural Pico Codazzi y Parque Nacional Macarao)."

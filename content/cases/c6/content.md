@@ -18,6 +18,7 @@ photos:
 - photokey: "Figura 1"
   photourl: "./figura-1.jpg"
   photocaption: "Figura 1: Ubicación relativa del área de estudio en los llanos centrales, estados Cojedes y Guárico (rojo). El límite amarillo identifica al antiguo hato Piñero."
+  isCentered: true
 - photokey: "Figura 2"
   photourl: "./figura-2.jpg"
   photocaption: "Figura 2: Análisis de mezcla espectral (SMA)."

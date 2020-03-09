@@ -21,15 +21,18 @@ photos:
 - photokey: "Figura 1"
   photourl: "./figura-1.jpg"
   photocaption: "Figura 1: Ubicación de la cordillera de Mérida y el área de estudio."
+  isCentered: true
 - photokey: "Figura 2"
   photourl: "./figura-2.jpg"
   photocaption: "Figura 2: Cambios de la cobertura de los ecosistemas terrestres de la cordillera de Mérida (Barinas, Mérida,  Trujillo) en 1986-2001."
 - photokey: "Figura 3"
   photourl: "./figura-3.jpg"
   photocaption: "Figura 3: Grado de amenaza de las formaciones vegetales en los municipios del ramal oriental de la cordillera de los Andes venezolanos. Las abreviaciones de las categorías son las mismas que en la Tabla 1. Las áreas en blanco son los municipios clasificados en las categorías Preocupación Menor (LC), Datos Insuficientes (DD) y No Evaluado (NE)."
+  isCentered: true
 - photokey: "Foto 1"
   photourl: "./foto-1.jpg"
   photocaption: "Foto 1: Caja Seca y Torondoy, estado Mérida. <i>Fernando Rojas-Runjaic</i>"
+  isCentered: true
 ---
 # Contexto
 

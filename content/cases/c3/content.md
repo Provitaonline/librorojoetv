@@ -21,6 +21,7 @@ photos:
 - photokey: "Figura 1"
   photourl: "./figura-1.jpg"
   photocaption: "Figura 1: Área delimitada para el caso de estudio."
+  isCentered: true
 - photokey: "Figura 2"
   photourl: "./figura-2.jpg"
   photocaption: "Figura 2: Cambio de cobertura de los ecosistemas terrestres al norte y sur del lago de Maracaibo en 1986 y 2001-2003."
