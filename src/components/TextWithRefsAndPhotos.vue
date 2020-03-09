@@ -114,10 +114,11 @@ function processContent(text, photos, inlineFigs) {
       pIdx = photos.findIndex(function(p) { return p.photokey === item.trim()})
     }
     if (pIdx >= 0) {
+      let centerClass = photos[pIdx].isCentered ? ' has-text-centered' : ''
       inlineFigs.push(item.trim())
       return `
         <a @click="photoClick" class='photo-link'>
-          <div id="` + slugify(item, {lower: true}) + `" class="inline-figure">
+          <div id="` + slugify(item, {lower: true}) + `" class="inline-figure` + centerClass + `">
             <br>
             <figure>
               <g-image :src="photos[` + pIdx + `].photourl"></g-image>
