@@ -47,6 +47,7 @@ photos:
 - photokey: "Foto 4"
   photourl: "./foto-4.jpg"
   photocaption: "Foto 4: Arbustal ribereño del alto Temi, durante la época de máxima inundación, estado Amazonas. <i>Otto Huber</i>"
+  isCentered: true
 ---
 De acuerdo al criterio C2, tanto a escala nacional como estadal califican en Preocupación Menor (LC). Aunque los análisis realizados en 1988 no detectaron ninguna perturbación (lo cual podría deberse a limitaciones metodológicas), en 2010 se estima que aproximadamente 40% presenta intervenciones bajas, medias o de intensidad mayor. Este nivel de perturbación relativamente bajo ofrece la oportunidad de iniciar observaciones de campo y con sensores remotos, para identificar posibles modificaciones antrópicas y tomar las medidas correctivas antes de que alcancen los umbrales de ecosistemas amenazados.
 

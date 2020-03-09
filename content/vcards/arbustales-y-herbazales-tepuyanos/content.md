@@ -92,6 +92,7 @@ photos:
 - photokey: "Foto 8"
   photourl: "./foto-8.jpg"
   photocaption: "Foto 8: Herbazal arrosetado (manchas) dominado por <i>Orectanthe</i> (Xyridaceae) junto a <i>Stegolepis</i> (Rapateaceae), cumbre del Roraima, estado Bolívar. <i>Otto Huber</i>"
+  isCentered: true
 - photokey: "Foto 9"
   photourl: "./foto-9.jpg"
   photocaption: "Foto 9: Herbazal latifoliado subtepuyano de <i>Stegolepis ptaritepuiensis</i>, Gran Sabana, estado Bolívar. <i>Otto Huber</i>"

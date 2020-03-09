@@ -279,6 +279,7 @@
         photokey
         photourl
         photocaption
+        isCentered
       }
       content
     }

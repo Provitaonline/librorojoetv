@@ -151,6 +151,7 @@ photos:
 - photokey: "Foto 8"
   photourl: "./foto-8.jpg"
   photocaption: "Foto 8: Construcción (techo) con mapora (<i>Roystonea oleracea</i>), Yaracal, cuenca del río Tocuyo, estado Falcón. <i>Giuseppe Colonnello</i>"
+  isCentered: true
 - photokey: "Foto 9"
   photourl: "./foto-9.jpg"
   photocaption: "Foto 9: Construcción de vivienda con mapora (<i>Roystonea oleracea</i>), estado Falcón. <i>Giuseppe Colonnello</i>"
