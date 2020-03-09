@@ -37,6 +37,7 @@ photos:
 - photokey: "Foto 10"
   photourl: "./foto-10.jpg"
   photocaption: "<b>Foto 10:</b> Arbustal tepuyano, serranía de Maigualida, estado Bolívar. <i>Otto Huber</i>"
+  isCentered: true
 - photokey: "Foto 11"
   photourl: "./foto-11.jpg"
   photocaption: "<b>Foto 11:</b> Arbustal espinoso, península de Macanao, estado Nueva Esparta. <i>David Southall</i>"
