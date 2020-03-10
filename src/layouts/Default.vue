@@ -111,7 +111,7 @@
               <g-link to="https://twitter.com/provita_ong"><font-awesome size="lg" :icon="['fab', 'twitter']"/></g-link>
               &nbsp;
             </div>
-            <span> Derechos reservados, copyright © 2019 <a href="https://www.provita.org.ve/">Provita</a>, licencia <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>.</span>
+            <span> Derechos reservados, copyright © 2019 <a :href="$static.homeData.contact.web">Provita</a>, licencia <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>.</span>
             <span> | Este sitio está en desarrollo (v{{version}})</span>
           </div>
         </div>
@@ -125,6 +125,11 @@
     metadata {
       siteUrl
       twitterId
+    }
+    homeData: homeData (id: "home") {
+      contact {
+        web
+      }
     }
   }
 </static-query>
