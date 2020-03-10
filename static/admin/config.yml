@@ -27,6 +27,8 @@ collections:
       - {label: "Id", name: "id", widget: "hidden", required: true}
       - {label: "Título", name: "title", widget: "string"}
       - {label: "Texto del banner", name: "heroTitle", widget: "string"}
+      - {label: "Imagen de portada", name: "bannerImage", widget: "file" , allow_multiple: false, required: true}
+      - {label: "Subtítulo de la imagen de portada", name: "bannerCaption", widget: "string", required: true}
       - {label: "Tarjetas de la página principal", name: "indexCards", widget: "list", allow_add: false, fields: [
           {label: "Título", name: "title", widget: "string"},
           {label: "Enlace", name: "link", widget: "string"},
@@ -36,7 +38,9 @@ collections:
           {label: "Dirección", name: "address", widget: "string"},
           {label: "Teléfonos", name: "phone", widget: "string"},
           {label: "email", name: "email", widget: "string"},
-          {label: "Sitio web", name: "web", widget: "string"}]}
+          {label: "Sitio web", name: "web", widget: "string"}
+          {label: "Imagen de portada", name: "banner", widget: "file", allow_multiple: false, required: true}
+          {label: "Subtítulo de la imagen de portada", name: "bannerCaption", widget: "string", required: true}]}
       - {label: "Acerca de (imágenes)", name: "about", widget: "object", fields: [
           {label: "Imagen de portada", name: "cardimage", widget: "file", allow_multiple: false, required: true},
           {label: "Subtítulo de la imagen de portada", name: "cardimagecaption", widget: "string", required: true},
@@ -56,6 +60,7 @@ collections:
     slug: "{{method}}"
     media_folder: ''
     fields:
+      - {label: "Id", name: "id", widget: "hidden", required: true}
       - {label: "Método", name: "method", widget: "hidden", required: true}
       - {label: "Título", name: "title", widget: "string", required: true}
       - {label: "Imagen de portada", name: "cardimage", widget: "file" , allow_multiple: false, required: true}
@@ -63,6 +68,7 @@ collections:
       - {label: "Imagenes", name: "photos", widget: "list", fields: [
           {label: "Etiqueta", name: "photokey", widget: "string", required: true},
           {label: "Url", name: "photourl", widget: "file" , allow_multiple: false, required: true},
+          {label: "Centrar la imagen?", name: "isCentered", widget: "boolean", required: false},
           {label: "Subtítulo", name: "photocaption", widget: "string", required: true}]}
       - {label: "Texto", name: "body", widget: "text"}
   - name: "vcards"
@@ -158,6 +164,7 @@ collections:
       - {label: "Fotos", name: "photos", widget: "list", fields: [
           {label: "Etiqueta", name: "photokey", widget: "string", required: true},
           {label: "Url", name: "photourl", widget: "file" , allow_multiple: false, required: true},
+          {label: "Centrar la imagen?", name: "isCentered", widget: "boolean", required: false},
           {label: "Subtítulo", name: "photocaption", widget: "string", required: true}]}
       - {label: "Detalles", name: "body", widget: "text"}
   - name: "cases"
@@ -187,6 +194,7 @@ collections:
       - {label: "Imagenes", name: "photos", widget: "list", fields: [
           {label: "Etiqueta", name: "photokey", widget: "string", required: true},
           {label: "Url", name: "photourl", widget: "file", allow_multiple: false, required: true},
+          {label: "Centrar la imagen?", name: "isCentered", widget: "boolean", required: false},
           {label: "Subtítulo", name: "photocaption", widget: "string", required: true}]}
       - {label: "Texto", name: "body", widget: "text"}
   - name: "units"
@@ -207,6 +215,7 @@ collections:
       - {label: "Imagenes", name: "photos", widget: "list", fields: [
           {label: "Etiqueta", name: "photokey", widget: "string", required: true},
           {label: "Url", name: "photourl", widget: "file" , allow_multiple: false, required: true},
+          {label: "Centrar la imagen?", name: "isCentered", widget: "boolean", required: false},
           {label: "Subtítulo", name: "photocaption", widget: "string", required: true}]}
       - {label: "Texto", name: "body", widget: "text"}
   - name: "references"
