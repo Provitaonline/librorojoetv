@@ -71,7 +71,7 @@ function addPopovers(data, references, photos, inlineFigs) {
                 <div @click="closePhotoModal" class="modal-background"></div>
                 <div class="modal-content has-text-centered">
                   <figure style="padding: 2%;">
-                    <g-image style="max-height: calc(100vh - 120px); width: auto;" :src="photos[` + pIdx + `].photourl"></g-image>
+                    <g-image :immediate="true" style="max-height: calc(100vh - 120px); width: auto;" :src="photos[` + pIdx + `].photourl"></g-image>
                   </figure>
                   <figcaption class="has-text-centered">
                     <div class="is-size-6 is-size-7-mobile has-text-white" v-html="photos[` + pIdx + `].photocaption">
@@ -132,7 +132,7 @@ function processContent(text, photos, inlineFigs) {
           <div @click="closePhotoModal" class="modal-background"></div>
           <div class="modal-content has-text-centered">
             <figure style="padding: 2%;">
-              <g-image style="max-height: calc(100vh - 120px); width: auto;" :src="photos[` + pIdx + `].photourl"></g-image>
+              <g-image :immediate="true" style="max-height: calc(100vh - 120px); width: auto;" :src="photos[` + pIdx + `].photourl"></g-image>
             </figure>
             <figcaption class="has-text-centered">
               <div class="is-size-6 is-size-7-mobile has-text-white" v-html="photos[` + pIdx + `].photocaption">
