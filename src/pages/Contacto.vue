@@ -20,7 +20,7 @@
             </div>
             <div class="tile is-parent" style="flex-direction: column;">
               <g-image src="~/assets/svgs/phone.svg"/>
-              <h1 class="is-size-3">Teléfonos</h1>
+              <h1 class="is-size-3">Teléfono</h1>
               <p v-html="$page.homeData.contact.phone"></p><br>
            </div>
             <div class="tile is-parent" style="flex-direction: column;">

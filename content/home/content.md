@@ -28,7 +28,7 @@ contact:
     Calle La Joya con Avenida Libertador, Unidad Técnica del Este,
     piso 10, oficina 29-30<br>Chacao ZP 1060<br>Caracas, Venezuela<br><br>
   email: informacion@provitaonline.org
-  phone: '(58) (212) 2637240<br>(58) (212) 2656996<br>(58) (212) 2670897'
+  phone: '(58) (212) 2656996'
   web: 'https://www.provita.org.ve/'
   banner: './banner-contact.jpg'
   bannerCaption: 'Sistema de colinas y sierras bajas piemontanas del Escudo Guayanés, Canaima, estado Bolívar. <i>Rebecca Miller</i>'

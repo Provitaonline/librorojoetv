@@ -105,8 +105,11 @@
               <g-link to="https://twitter.com/provita_ong"><font-awesome size="lg" :icon="['fab', 'twitter']"/></g-link>
               &nbsp;
             </div>
-            <span> Derechos reservados, copyright © 2019 <a :href="$static.homeData.contact.web">Provita</a>, licencia <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>.</span>
-            <span> | Este sitio está en desarrollo (v{{version}})</span>
+            <span> Derechos reservados, copyright © 2019 </span>
+            <a :href="$static.homeData.contact.web" target="_blank">Provita <font-awesome size="sm" :icon="['fas', 'external-link-alt']"/></a>
+            <span>, licencia </span>
+            <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>
+            <span>. | Este sitio está en desarrollo (v{{version}})</span>
           </div>
         </div>
       </footer>
