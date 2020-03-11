@@ -225,7 +225,7 @@
     },
     methods: {
       getCurrentUrl: function() {
-        return window.location.href
+        return (process.isClient) ? window.location.href : ''
       }
     },
     computed: {
