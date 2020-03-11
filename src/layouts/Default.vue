@@ -163,8 +163,6 @@
     }
   }
 
-
-
   /* This is a workaround for the MS Edge issue of not opening dropdowns */
   @media only screen and (min-width: 1024px) {
     ::v-deep .navbar-item.has-dropdown.is-active>.navbar-dropdown {
@@ -184,10 +182,6 @@
     metaInfo() {
       return {
         meta: [
-          {
-            name: "description",
-            content: this.$parent.pageTitle
-          },
           {
             property: "og:title",
             content: this.$parent.pageTitle
