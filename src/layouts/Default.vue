@@ -106,9 +106,9 @@
               &nbsp;
             </div>
             <span> Derechos reservados, copyright © 2019 </span>
-            <a :href="$static.homeData.contact.web" target="_blank">Provita <font-awesome size="sm" :icon="['fas', 'external-link-alt']"/></a>
+            <g-link :href="$static.homeData.contact.web" target="_blank">Provita</g-link>
             <span>, licencia </span>
-            <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>
+            <g-link href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</g-link>
             <span>. | Este sitio está en desarrollo (v{{version}})</span>
           </div>
         </div>
