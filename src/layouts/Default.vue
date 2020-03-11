@@ -63,7 +63,7 @@
           <template slot="label">
             <font-awesome :icon="['fas', 'share-alt']" />
           </template>
-          <social-sharing inline-template>
+          <social-sharing :url="getCurrentUrl()" inline-template>
             <div>
               <b-navbar-item>
                 <network network="facebook">
@@ -222,6 +222,11 @@
       SocialSharing
     },
     mounted () {
+    },
+    methods: {
+      getCurrentUrl: function() {
+        return (process.isClient) ? window.location.href : ''
+      }
     },
     computed: {
       getPageImage() {
