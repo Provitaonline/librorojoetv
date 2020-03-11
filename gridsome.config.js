@@ -11,7 +11,8 @@ module.exports = {
   siteUrl: 'https://librorojoetv.netlify.com',
   siteDescription: 'El libro rojo de los ecosistemas terrestres de Venezuela evalúa el estado de conservación y los riesgos de colapso de los principales ecosistemas del país. El libro también describe las principales formaciones vegetales, asi como los estándares y métodos utilizados para las evaluaciónes efectuadas.',
   metadata: {
-    twitterId: '@provita_ong'
+    twitterId: '@provita_ong',
+    keywords: 'venezuela,conservation,ecology,ecosystems,red list,risk assessment,risk of collapse'
   },
   runtimeCompiler: true,
   plugins: [

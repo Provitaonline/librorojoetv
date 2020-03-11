@@ -125,6 +125,7 @@
     metadata {
       siteUrl
       twitterId
+      keywords
     }
     homeData: homeData (id: "home") {
       contact {
@@ -183,31 +184,35 @@
       return {
         meta: [
           {
-            property: "og:title",
+            property: 'og:title',
             content: this.$parent.pageTitle
           },
           {
-            property: "og:image",
+            property: 'keywords',
+            content: this.$static.metadata.keywords
+          },
+          {
+            property: 'og:image',
             content: this.getPageImage
           },
           {
-            name: "twitter:card",
-            content: "summary_large_image",
+            name: 'twitter:card',
+            content: 'summary_large_image',
           },
           {
-            name: "twitter:site",
+            name: 'twitter:site',
             content: this.$static.metadata.twitterId
           },
           {
-            name: "twitter:creator",
+            name: 'twitter:creator',
             content: this.$static.metadata.twitterId
           },
           {
-            name: "twitter:title",
+            name: 'twitter:title',
             content: this.$parent.pageTitle
           },
           {
-            name: "twitter:image",
+            name: 'twitter:image',
             content: this.getPageImage
           }
         ]
