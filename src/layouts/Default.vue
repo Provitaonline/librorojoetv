@@ -63,13 +63,7 @@
           <template slot="label">
             <font-awesome :icon="['fas', 'share-alt']" />
           </template>
-          <b-navbar-item>
-            <font-awesome :icon="['fab', 'facebook']"/>&nbsp;Facebook
-          </b-navbar-item>
-          <b-navbar-item>
-            <font-awesome :icon="['fab', 'twitter']"/>&nbsp;Twitter
-          </b-navbar-item>
-          <!-- <social-sharing :url="getCurrentUrl()" inline-template>
+          <social-sharing :url="getCurrentUrl()" inline-template>
             <div>
               <b-navbar-item>
                 <network network="facebook">
@@ -82,7 +76,7 @@
                 </network>
               </b-navbar-item>
             </div>
-          </social-sharing> -->
+          </social-sharing>
         </b-navbar-dropdown>
       </template>
     </b-navbar>
