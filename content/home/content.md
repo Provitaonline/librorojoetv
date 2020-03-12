@@ -65,9 +65,9 @@ CON LA COLABORACIÓN DE:
 <div style="position: relative;">
 
 ![Colaboración](./colaboracion.png){class="colab"}
-<a href="http://www.fundacionempresaspolar.org/" title="Fundación Empresas Polar" style="position: absolute; left: 0%; top: 0%; width: 30%; height: 100%; z-index: 2;"></a>
-<a href="https://www.iucn.org/" title="IUCN" style="position: absolute; left: 30%; top: 0%; width: 25%; height: 100%; z-index: 2;"></a>
-<a href="https://www.ecohealthalliance.org/" title="EcoHealth Alliance" style="position: absolute; left: 55%; top: 0%; width: 45%; height: 100%; z-index: 2;"></a>
+<g-link to="http://www.fundacionempresaspolar.org/" title="Fundación Empresas Polar" style="position: absolute; left: 0%; top: 0%; width: 30%; height: 100%; z-index: 2;"></g-link>
+<g-link to="https://www.iucn.org/" title="IUCN" style="position: absolute; left: 30%; top: 0%; width: 25%; height: 100%; z-index: 2;"></g-link>
+<g-link to="https://www.ecohealthalliance.org/" title="EcoHealth Alliance" style="position: absolute; left: 55%; top: 0%; width: 45%; height: 100%; z-index: 2;"></g-link>
 
 </div>
 
