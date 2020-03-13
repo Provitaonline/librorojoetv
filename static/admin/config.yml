@@ -292,7 +292,7 @@ collections:
       - {label: "Imagen de portada", name: "banner", widget: "file" , allow_multiple: false, required: true}
       - {label: "Subtítulo de la imagen de portada", name: "bannerCaption", widget: "string", required: true}
       - {label: "Ítems de la leyenda", name: "legendItems", widget: "list", fields: [
-          {label: "Nombre", name: "name", widget: "hidden", required: true},
+          {label: "Nombre clave", name: "name", widget: "string", required: true},
           {label: "Etiqueta", name: "label", widget: "string", required: true},
           {label: "Grupo", name: "group", widget: "hidden", required: true},
           {label: "Color", name: "color", widget: "string", required: true},
