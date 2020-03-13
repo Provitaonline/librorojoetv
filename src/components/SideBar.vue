@@ -62,7 +62,7 @@
   .side-panel-content {
     height: 0;
     transition: height .3s;
-    overflow: auto;
+    overflow-y: auto;
     position: sticky;
     top: 0;
   }
@@ -85,7 +85,7 @@
 
   .side-panel-title-text {
     padding-left: 20px;
-    padding-top: 50px;
+    padding-top: 60px;
     padding-bottom: 0px;
     font-family: $family-serif;
   }

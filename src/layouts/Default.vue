@@ -9,7 +9,7 @@
       </section>
     </ClientOnly>
 
-    <b-navbar :close-on-click="false">
+    <b-navbar :close-on-click="false" class="is-fixed-top">
       <template slot="brand">
         <b-navbar-item tag="a" href="/">
 
