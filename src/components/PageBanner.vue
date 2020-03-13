@@ -6,11 +6,11 @@
       <div class="hero-body-outer">
         <div class="hero-body-container">
           <div class="hero-body">
-            <g-link v-if="link" :to="link" class="hero-link is-size-3 is-size-5-touch"><span v-html="lead"></span></g-link>
-            <span class="is-size-3 is-size-5-touch" v-else v-html="lead"></span>
-            <p class="hero-text is-size-1 is-uppercase has-text-weight-bold is-size-4-touch" v-html="title"></p>
+            <g-link v-if="link" :to="link" class="hero-link is-size-3 is-size-4-desktop is-size-6-touch"><span v-html="lead"></span></g-link>
+            <span class="is-size-3 is-size-6-touch" v-else v-html="lead"></span>
+            <p class="hero-text is-size-1 is-uppercase has-text-weight-bold is-size-2-desktop is-size-4-tablet is-size-5-mobile" v-html="title"></p>
             <p v-if="subtitle" class="hero-text is-size-4 is-size-6-touch">{{subtitle}}</p>
-            <p v-if="authors" class="hero-text is-size-5 is-size-6-touch">{{authors}}</p>
+            <p v-if="authors" class="hero-text is-size-5 is-size-7-touch">{{authors}}</p>
             <slot name="follow"></slot>
           </div>
         </div>
@@ -72,8 +72,8 @@
       height: var(--mobile-banner-height);
     }
     .hero-body {
-      padding-top: 10px;
-      padding-bottom: 10px;
+      padding-top: 5px;
+      padding-bottom: 5px;
     }
   }
 
