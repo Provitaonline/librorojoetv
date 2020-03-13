@@ -134,10 +134,6 @@
 <style lang="scss" scoped>
   @import "~/assets/style/_variables";
 
-  .button {
-    border-radius: 0px;
-  }
-
   .logo {
     fill: $primary;
     stroke-opacity: 0;
