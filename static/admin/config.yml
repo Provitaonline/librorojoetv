@@ -276,3 +276,29 @@ collections:
       - {label: "Lista de referencias", name: "references", widget: "list", fields: [
           {label: "Abreviación", name: "referencekey", widget: "string", required: true},
           {label: "Referencia", name: "reference", widget: "text", required: true}]}
+  - name: "legends"
+    label: "Leyendas de mapas"
+    editor:
+       preview: false
+    folder: "content/explore"
+    create: false
+    delete: false
+    slug: "{{id}}"
+    media_folder: ""
+    fields:
+      - {label: "Id", name: "id", widget: "hidden", required: true}
+      - {label: "Título", name: "title", widget: "string", required: true}
+      - {label: "Título del mapa", name: "mapTitle", widget: "string", required: true}
+      - {label: "Imagen de portada", name: "banner", widget: "file" , allow_multiple: false, required: true}
+      - {label: "Subtítulo de la imagen de portada", name: "bannerCaption", widget: "string", required: true}
+      - {label: "Ítems de la leyenda", name: "legendItems", widget: "list", fields: [
+          {label: "Nombre", name: "name", widget: "hidden", required: true},
+          {label: "Etiqueta", name: "label", widget: "string", required: true},
+          {label: "Grupo", name: "group", widget: "hidden", required: true},
+          {label: "Color", name: "color", widget: "string", required: true},
+          {label: "Código de leyenda", name: "legend", widget: "hidden", required: true},
+          {label: "Clave", name: "cardPath", widget: "hidden", required: true},
+          {label: "Es encabezado", name: "isHeading", widget: "hidden", required: false},
+          {label: "Tiene separador", name: "hasSeparator", widget: "hidden", required: false},
+          {label: "Está indentado", name: "isIndented", widget: "hidden", required: true},
+          {label: "Formación vegetal", name: "plantformation", widget: "text", required: false}]}

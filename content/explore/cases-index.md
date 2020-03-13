@@ -1,5 +1,6 @@
 ---
 title: "Estudios de caso"
+id: "cases-index"
 mapTitle: "Localización<br>de las áreas de estudio"
 banner: "./cases-pancarta.jpg"
 bannerCaption: "Salinas de Araya, estado Sucre. <i>José Antonio González-Carcacía</i>"
