@@ -109,7 +109,7 @@
             <g-link :href="$static.homeData.contact.web" target="_blank">Provita</g-link>
             <span>, licencia </span>
             <g-link href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</g-link>
-            <span>. | Este sitio está en desarrollo (v{{version}})</span>
+            <span>. | Versión {{version}}</span>
           </div>
         </div>
       </footer>
