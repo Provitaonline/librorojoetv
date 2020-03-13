@@ -44,7 +44,6 @@
 
 .navbar {
   @extend .red-line;
-  box-shadow: 10px 2px 0 0 whitesmoke;
 }
 
 a.navbar-item {
@@ -228,5 +227,5 @@ table {
 }
 
 body {
-  padding-top: 4rem;
+  padding-top: $navbar-height;
 }

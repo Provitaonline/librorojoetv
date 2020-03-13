@@ -9,7 +9,7 @@
       </section>
     </ClientOnly>
 
-    <b-navbar :close-on-click="false" class="is-fixed-top" style="z-index: 1100;">
+    <b-navbar :close-on-click="false" class="is-fixed-top" style="z-index: 1100;" :shadow="true">
       <template slot="brand">
         <b-navbar-item tag="a" href="/">
 
