@@ -162,13 +162,13 @@
     padding-rigth: 24px;
     font-weight: normal;
     width: 100%;
-    background-color: #f0d4a6;
+    background-color: $table-header-background-color;
   }
 
   .card-info-title {
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: #FAF2E4;
+    background-color: $table-subheader-background-color;
   }
 
   .card-info-column {

@@ -12,6 +12,7 @@ $primary-invert: findColorInvert($primary);
 $twitter: #4099FF;
 $twitter-invert: findColorInvert($twitter);
 
+// Customizations
 $box-shadow: 0 0 0;
 $box-radius: 0;
 $dropdown-content-radius: 0;
@@ -24,6 +25,16 @@ $not-as-narrow-text-width: 1100px;
 $navbar-height: 4rem;
 
 $navbar-box-shadow-size: 10px 2px 0 0;
+
+$logo-hover-fill: #990033;
+
+$button-hover-text-color: #DBDBDB;
+$table-header-background-color: #f0d4a6;
+$table-subheader-background-color: #FAF2E4;
+$table-odd-row-background-color: #F8F8F8;
+$map-legend-border-color: #626262;
+$collapsible-list-current-item-background-color: #EEEEE0;
+$collapsible-list-separator-color: #dddddd;
 
 // Setup $colors to use as bulma classes (e.g. 'is-twitter')
 $colors: (

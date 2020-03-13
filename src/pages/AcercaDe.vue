@@ -50,6 +50,8 @@
 
 <style lang="scss" scoped>
 
+  @import "~/assets/style/_variables";
+
   ::v-deep .colab {
     width: 100%;
   }
@@ -62,7 +64,7 @@
 
   ::v-deep thead {
     font-size: 1.5rem !important;
-    background-color: #f0d4a6;
+    background-color: $table-header-background-color;
   }
 
   ::v-deep td {

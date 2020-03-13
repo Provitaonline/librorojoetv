@@ -26,7 +26,7 @@
   @import "~/assets/style/_variables";
 
   .current {
-    background-color: #EEEEE0;
+    background-color: $collapsible-list-current-item-background-color;
   }
 
   .child {
@@ -44,11 +44,11 @@
   }
 
   .gray-separator {
-    border-bottom: 1px solid #dddddd
+    border-bottom: 1px solid $collapsible-list-separator-color;
   }
 
   .top-line {
-    border-top: 2px solid #dddddd
+    border-top: 2px solid $collapsible-list-separator-color;
   }
 
   .is-transparent {

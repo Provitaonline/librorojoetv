@@ -165,7 +165,7 @@ html {
 }
 
 thead th {
-  background-color: #f0d4a6 !important;
+  background-color: $table-header-background-color !important;
   border: solid 1px white !important;
   vertical-align: middle !important;
 }
@@ -184,11 +184,11 @@ thead th {
 }
 
 table>tr:nth-child(odd), table>tbody>tr:nth-child(odd) {
-  background-color: #F8F8F8;
+  background-color: $table-odd-row-background-color;
 }
 
 table>tr>td, table>tbody>tr>td {
-  border: solid 1px #F8F8F8 !important;
+  border: solid 1px $table-odd-row-background-color !important;
   vertical-align: middle !important;
 }
 
@@ -196,7 +196,7 @@ table {
   border-collapse: collapse !important;
   border-spacing: 0px;
   width: 100%;
-  border-bottom: solid 3px #f0d4a6;
+  border-bottom: solid 3px $table-header-background-color;
 }
 
 .unit-subtitle {

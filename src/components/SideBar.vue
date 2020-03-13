@@ -102,24 +102,6 @@
     }
   }
 
-  .open-side-panel-icon>g {
-    stroke: #5f5f5f;
-    fill: #ffffff;
-    fill-opacity: 0.5;
-  }
-
-  .open-side-panel-icon>g:hover {
-    stroke: $primary;
-  }
-
-  .close-side-panel-icon {
-    color: #5f5f5f;
-  }
-
-  .close-side-panel-icon:hover {
-    color: $primary;
-  }
-
   .side-panel-triangle-right {
     position: absolute;
     width: 0;
@@ -146,11 +128,11 @@
   }
 
   .side-panel-bars:hover {
-    color: #d3d3d3;
+    color: $button-hover-text-color;
   }
 
   .side-panel-times:hover {
-    color: #d3d3d3;
+    color: $button-hover-text-color;
   }
 
   .side-panel-times {

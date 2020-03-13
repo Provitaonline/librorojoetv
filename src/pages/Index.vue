@@ -227,7 +227,7 @@
   }
 
   .download-text:hover {
-    color: #DBDBDB;
+    color: $button-hover-text-color;
   }
 
 </style>

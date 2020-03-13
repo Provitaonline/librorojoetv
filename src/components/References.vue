@@ -45,7 +45,7 @@
   }
 
   tr:nth-child(odd) {
-    background-color: #F8F8F8;
+    background-color: $table-odd-row-background-color;
   }
 
   td {
