@@ -16,6 +16,7 @@
     "axios": "^0.19.2",
     "buefy": "^0.8.12",
     "bulma-slider": "^2.0.0",
+    "clipboard": "^2.0.6",
     "gridsome": "^0.7.13",
     "leaflet": "^1.6.0",
     "slugify": "^1.4.0",
@@ -31,6 +32,7 @@
   "devDependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.27",
     "@fortawesome/free-brands-svg-icons": "^5.12.1",
+    "@fortawesome/free-regular-svg-icons": "^5.12.1",
     "@fortawesome/free-solid-svg-icons": "^5.12.1",
     "@fortawesome/vue-fontawesome": "^0.1.9",
     "@gridsome/source-filesystem": "^0.6.2",

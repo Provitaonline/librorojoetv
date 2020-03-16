@@ -28,12 +28,18 @@
 import slugify from 'slugify'
 import VRuntimeTemplate from 'v-runtime-template'
 import {threatCategories} from '~/assets/js/siteConfig.js'
+import ClipboardJS from 'clipboard'
+
+let refId = 0
 
 function addPopovers(data, references, photos, inlineFigs) {
   let r = data.replace(/\(.*?\)/g, function (match) {
     let lookup = ((match.replace(/[{()}]/g, ''))).split(',')
     let dropDownItems = ''
     let photoItems = ''
+    let copyIcon = function(refId) {
+      return `<a class="copy-to-clipboard" data-clipboard-target="#ref` + refId + `"><font-awesome :icon="['far', 'copy']"/></a>'`
+    }
     if (references) {
       lookup.forEach(refItem => {
         refItem = refItem.replace(/\<i\>|\<\/i\>|\<em\>|\<\/em\>/g, '') // Get rid of italic markup
@@ -41,7 +47,7 @@ function addPopovers(data, references, photos, inlineFigs) {
         if (re) {
           dropDownItems += `
             <div class="dropdown-item">
-              <p>` + re.reference + `</p>
+              <p><span id="ref` + (refId) + `">` + re.reference + '</span> ' + copyIcon(refId++) + `</p>
             </div>
           `
         }
@@ -195,6 +201,7 @@ export default {
   mounted() {
     document.addEventListener('click', documentClickHandler)
     document.addEventListener('keyup', documentKeyHandler)
+    new ClipboardJS('.copy-to-clipboard')
   },
   beforeDestroy() {
     document.removeEventListener('click', documentClickHandler)

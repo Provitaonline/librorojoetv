@@ -15,6 +15,7 @@ import VueScrollTo from 'vue-scrollto'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { config, library } from '@fortawesome/fontawesome-svg-core'
 import { faFacebook, faFacebookF, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faCopy } from '@fortawesome/free-regular-svg-icons'
 import {
     faArrowDown, faArrowLeft, faAngleDoubleDown, faSyncAlt, faCaretRight, faBars,
     faListUl, faEllipsisH, faTimes, faAngleUp, faAngleDown, faShareAlt,
@@ -26,7 +27,7 @@ import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false;
 library.add(
   faFacebook, faFacebookF, faTwitter, faInstagram, faArrowDown, faArrowLeft, faAngleDoubleDown, faSyncAlt,
-  faCaretRight, faBars, faListUl, faEllipsisH, faTimes, faAngleUp, faAngleDown, faShareAlt,
+  faCaretRight, faBars, faListUl, faEllipsisH, faTimes, faAngleUp, faAngleDown, faShareAlt, faCopy,
   faFileDownload, faLink, faCamera, faMapMarkerAlt, faEnvelope, faPhone, faGlobeAmericas, faInfoCircle, faExternalLinkAlt)
 
 export default function (Vue, { router, head, isClient }) {
