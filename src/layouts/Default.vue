@@ -19,43 +19,43 @@
         </b-navbar-item>
       </template>
       <template slot="end">
-        <b-navbar-item tag="a" href="/acerca-de">
+        <b-navbar-item tag="g-link" to="/acerca-de">
           ACERCA DE
         </b-navbar-item>
         <b-navbar-dropdown label="VEGETACIÓN">
-          <b-navbar-item tag="a" href="/vegetacion/cartografia">
+          <b-navbar-item tag="g-link" to="/vegetacion/cartografia">
               Cartografía histórica
           </b-navbar-item>
-          <b-navbar-item tag="a" href="/vegetacion/formaciones">
+          <b-navbar-item tag="g-link" to="/vegetacion/formaciones">
               Formaciones vegetales
           </b-navbar-item>
-          <b-navbar-item tag="a" href="/unidades">
+          <b-navbar-item tag="g-link" to="/unidades">
               Unidades de paisaje
           </b-navbar-item>
         </b-navbar-dropdown>
         <b-navbar-dropdown label="MÉTODOS">
-          <b-navbar-item tag="a" href="/metodos/librosrojos">
+          <b-navbar-item tag="g-link" to="/metodos/librosrojos">
               Libros rojos
           </b-navbar-item>
-          <b-navbar-item tag="a" href="/metodos/clasificacion">
+          <b-navbar-item tag="g-link" to="/metodos/clasificacion">
               Clasificación del riesgo
           </b-navbar-item>
-          <b-navbar-item tag="a" href="/metodos/evaluacion">
+          <b-navbar-item tag="g-link" to="/metodos/evaluacion">
               Evaluación del riesgo
           </b-navbar-item>
-          <b-navbar-item tag="a" href="/metodos/prioridades">
+          <b-navbar-item tag="g-link" to="/metodos/prioridades">
               Prioridades de conservación
           </b-navbar-item>
         </b-navbar-dropdown>
         <b-navbar-dropdown label="RIESGO DE COLAPSO">
-          <b-navbar-item tag="a" href="/fichas">
+          <b-navbar-item tag="g-link" to="/fichas">
               Nacional (formaciones vegetales)
           </b-navbar-item>
-          <b-navbar-item tag="a" href="/casos">
+          <b-navbar-item tag="g-link" to="/casos">
               Local (estudios de caso)
           </b-navbar-item>
         </b-navbar-dropdown>
-        <b-navbar-item tag="a" href="/contacto">
+        <b-navbar-item tag="g-link" to="/contacto">
           CONTACTO
         </b-navbar-item>
         <b-navbar-dropdown arrowless right>
