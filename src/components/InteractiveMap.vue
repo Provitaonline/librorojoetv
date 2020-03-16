@@ -16,15 +16,10 @@
           <l-control class="leaflet-control leaflet-bar" position="topleft" >
             <a @click="resetView" href="#" title="Vista inicial"><font-awesome size="lg" :icon="['fas', 'sync-alt']"/></a>
           </l-control>
-          <l-control class="leaflet-control transparency-control" v-bind:class="{'is-touch': isTouch}" @ready="tcReady" position="topleft" >
-              <div title="Ajuste de transparencia">
-                <b-tooltip class="tc-tooltip" type="is-white" :style="ttStyle" :label="layerTransparency + '%'" position="is-right">
-                  <input id="transparencySlider" class="slider" step="1" min="0" max="100" :value="layerTransparency" type="range" orient="vertical">
-                </b-tooltip>
-              </div>
-            <!-- <b-field class="transparency-control" label="Ajuste de transparencia">
-              <b-slider v-model="layerTransparency" :custom-formatter="val => val + '%'" type="is-light" rounded></b-slider>
-            </b-field> -->
+          <l-control title="Ajuste de transparencia" class="leaflet-control transparency-control" v-bind:class="{'is-touch': isTouch}" @ready="tcReady" position="topleft" >
+            <b-tooltip class="tc-tooltip" type="is-white" :style="ttStyle" :label="layerTransparency + '%'" position="is-right">
+              <input id="transparencySlider" class="slider" step="1" min="0" max="100" :value="layerTransparency" type="range">
+            </b-tooltip>
           </l-control>
           <l-control-layers position="topleft"  ></l-control-layers>
           <l-tile-layer
@@ -206,32 +201,13 @@
     height: 32px;
   }
 
-  @media only screen and (max-width: 600px) {
-    ::v-deep .transparency-control {
-      margin-bottom: 28px;
-    }
-  }
-
-  @media only screen and (max-width: 400px) {
-    ::v-deep .transparency-control {
-      margin-bottom: 42px;
-    }
-  }
-
   .transparency-control {
     background: rgba(255, 255, 255, 1);
     border-radius: 4px;
     box-shadow: 0 1px 5px rgba(0,0,0,0.65);
     width: 26px;
+    height: 100px;
     margin-bottom: 0px;
-  }
-
-  .transparency-control .slider {
-    height: 80px;
-    width: 20px;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    margin-left: 3px;
   }
 
   .transparency-control.is-touch {
@@ -242,14 +218,21 @@
     width: 34px;
   }
 
-  .transparency-control.is-touch .slider {
-    margin-left: 5px;
+  #transparencySlider {
+    width: 80px;
+    margin-left: -27px;
+    margin-top: 46px;
+    transform: rotate(270deg);
+  }
+
+  .is-touch #transparencySlider {
+    margin-left: -25px;
   }
 
   ::v-deep .tc-tooltip {
     &::after, &::before {
       top: var(--ttpos);
-      margin-left: 5px;
+      margin-left: -30px;
       font-size: .75rem;
     }
   }
@@ -522,10 +505,14 @@
       tcReady() {
         this.isTouch = lBrowser.touch
         let self = this
-        this.ttStyle['--ttpos'] = 0.8*(110 - this.layerTransparency) + '%'
+        let calcTtpos = function(t) {
+          return (120 - t) + '%'
+        }
+        this.ttStyle['--ttpos'] = calcTtpos(this.layerTransparency)
         document.getElementById('transparencySlider').addEventListener('input', function(e) {
           self.layerTransparency = e.target.value
-          self.ttStyle['--ttpos'] = 0.8*(110 - e.target.value) + '%'
+          console.log(110 - e.target.value)
+          self.ttStyle['--ttpos'] = calcTtpos(e.target.value)
         })
       },
       tileLayerAdded(e) {
