@@ -30,15 +30,13 @@ import VRuntimeTemplate from 'v-runtime-template'
 import {threatCategories} from '~/assets/js/siteConfig.js'
 import ClipboardJS from 'clipboard'
 
-let refId = 0
-
 function addPopovers(data, references, photos, inlineFigs) {
   let r = data.replace(/\(.*?\)/g, function (match) {
     let lookup = ((match.replace(/[{()}]/g, ''))).split(',')
     let dropDownItems = ''
     let photoItems = ''
-    let copyIcon = function(refId) {
-      return `<a class="copy-to-clipboard" data-clipboard-target="#ref` + refId + `"><font-awesome :icon="['far', 'copy']"/></a>'`
+    let copyIcon = function(refText) {
+      return `<a class="copy-to-clipboard" data-clipboard-text="` + refText + `"><font-awesome :icon="['far', 'copy']"/></a>'`
     }
     if (references) {
       lookup.forEach(refItem => {
@@ -47,7 +45,7 @@ function addPopovers(data, references, photos, inlineFigs) {
         if (re) {
           dropDownItems += `
             <div class="dropdown-item">
-              <p><span id="ref` + (refId) + `">` + re.reference + '</span> ' + copyIcon(refId++) + `</p>
+              <p><span>` + re.reference + '</span> ' + copyIcon(re.reference) + `</p>
             </div>
           `
         }
