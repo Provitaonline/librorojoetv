@@ -36,7 +36,7 @@ function addPopovers(data, references, photos, inlineFigs) {
     let dropDownItems = ''
     let photoItems = ''
     let copyIcon = function(refText) {
-      return `<a class="copy-to-clipboard" data-clipboard-text="` + refText + `"><font-awesome :icon="['far', 'copy']"/></a>'`
+      return `<a title="Copiar texto" class="copy-to-clipboard" data-clipboard-text="` + refText + `"><font-awesome :icon="['far', 'copy']"/></a>'`
     }
     if (references) {
       lookup.forEach(refItem => {
