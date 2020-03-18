@@ -2,7 +2,7 @@
 case: c3
 title: "Estado de amenaza de los ecosistemas al norte y sur del lago de Maracaibo, Estado Zulia"
 authors: "María Idalí Tachack-García, Fabián Carrasquel, Sergio Zambrano-Martínez"
-citationPre: "Tachack-García M.I., F. Carrasquel & S. Zambrano-Martínez (2010). Estado de amenaza de los ecosistemas al norte y sur del lago de Maracaibo, Estado Zulia. Pp: 250-256. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
+citationPre: "Tachack-García, M.I., F. Carrasquel & S. Zambrano-Martínez (2010). Estado de amenaza de los ecosistemas al norte y sur del lago de Maracaibo, Estado Zulia. Pp: 250-256. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
 citationPost: ""
 cardimage: "./pancarta.jpg"
 landscapeunits: "Depresión de Maracaibo (<a href='/unidades/b#b1'>B1</a>)"
