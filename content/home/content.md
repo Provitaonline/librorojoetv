@@ -33,6 +33,9 @@ contact:
   banner: './banner-contact.jpg'
   bannerCaption: 'Sistema de colinas y sierras bajas piemontanas del Escudo Guayanés, Canaima, estado Bolívar. <i>Rebecca Miller</i>'
 about:
+  title: Acerca del libro rojo<br>de los ecosistemas terrestres<br>de Venezuela
+  citationPre: Rodríguez, J.P., F. Rojas-Suárez & D. Giraldo Hernández (eds.) (2010).
+  citationPost: 324 pp.
   cardimage: ./foto-1.jpg
   cardimagecaption: Cotorra cabeciamarilla (<i>Amazona barbadensis</i>). <i>Thea Segall</i>
   photos:

@@ -5,7 +5,9 @@
       <PageBanner
         :banner="$page.homeData.about.cardimage"
         :caption="$page.homeData.about.cardimagecaption"
-        title="Acerca del libro rojo<br>de los ecosistemas terrestres<br>de Venezuela"
+        :title="$page.homeData.about.title"
+        :citationPre="$page.homeData.about.citationPre"
+        :citationPost="$page.homeData.about.citationPost"
         />
       </PageBanner>
 
@@ -29,6 +31,9 @@
   query Home {
     homeData: homeData (id: "home") {
       about {
+        title
+        citationPre
+        citationPost
         cardimage
         cardimagecaption
         photos {
