@@ -2,6 +2,8 @@
 id: librosrojos
 method: clasificacion
 title: "Los libros rojos y su uso en la conservación de especies y ambientes amenazados"
+citationPre: "Rodríguez J.P., K.M. Rodríguez-Clark & M. Assmüssen (2010). Categorías y criterios de las listas rojas de ecosistemas. Los libros rojos y su uso en la conservación de especies y ambientes amenazados. Pp: 93-96. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
+citationPost: ""
 cardimage: "./pancarta-redbooks.jpg"
 cardimagecaption: "Atardecer en el Llano, estado Apure. <i>Rebecca Miller</i>"
 photos:

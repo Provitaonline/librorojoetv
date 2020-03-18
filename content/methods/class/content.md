@@ -2,6 +2,8 @@
 id: clasificacion
 method: clasificacion
 title: "Clasificación del riesgo<br>de colapso de ecosistemas<br>terrestres"
+citationPre: "Rodríguez J.P., K.M. Rodríguez-Clark & M. Assmüssen (2010). Categorías y criterios de las listas rojas de ecosistemas. Clasificación del riesgo de colapso de ecosistemas terrestres. Pp: 97-105. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
+citationPost: ""
 cardimage: "./pancarta-class.jpg"
 cardimagecaption: "Atardecer en el Llano, estado Apure. <i>Rebecca Miller</i>"
 photos:

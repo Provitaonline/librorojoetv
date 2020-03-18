@@ -7,6 +7,8 @@
           :caption="$page.methodCard.cardimagecaption"
           lead="Métodos"
           :title="$page.methodCard.title"
+          :citationPre="$page.methodCard.citationPre"
+          :citationPost="$page.methodCard.citationPost"
           />
         </PageBanner>
 
@@ -30,6 +32,8 @@
   query MethodCard ($id: ID!) {
     methodCard: methodCard (id: $id) {
       title
+      citationPre
+      citationPost
       cardimage
       cardimagecaption
       method {
