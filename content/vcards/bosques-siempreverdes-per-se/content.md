@@ -1,6 +1,8 @@
 ---
 title: "Bosques siempreverdes per se"
 formattedtitle: "Bosques siempreverdes <i>per se</i>"
+citationPre: "Oliveira-Miranda, M.A., O. Huber, J.P. Rodríguez, F. Rojas-Suárez, R. De Oliveira-Miranda, S. Zambrano-Martínez & G. Giraldo-Hernández, (eds) (2010). Bosques siempreverdes <i>per se</i>. Pp: 124-129. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
+citationPost: ""
 cardimage: "./foto-1.jpg"
 cardimagecaption: "Bosque siempreverde <i>per se</i>, Sierra de Perijá, estado Zulia. <i>Mariana Hernández-Montilla</i>"
 plantformation: "Bosques siempreverdes"

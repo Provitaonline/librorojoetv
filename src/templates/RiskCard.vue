@@ -18,6 +18,8 @@
             lead="Riesgo de colapso"
             link="/fichas"
             :title="$page.riskCard.formattedtitle ? $page.riskCard.formattedtitle : $page.riskCard.title"
+            :citationPre="$page.riskCard.citationPre"
+            :citationPost="$page.riskCard.citationPost"
             :subtitle="$page.riskCard.plantformation ? `(${$page.riskCard.plantformation})` : null">
             <template v-slot:follow>
               <hr align="left" width="50%" style="margin: 1rem 0">
@@ -237,6 +239,8 @@
     riskCard: riskCard (path: $path) {
       title
       formattedtitle
+      citationPre
+      citationPost
       plantformation
       category
       description
