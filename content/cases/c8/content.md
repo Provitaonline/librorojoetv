@@ -2,6 +2,8 @@
 case: c8
 title: "Conversión de los bosques y zonas áridas del centro-norte del estado Falcón"
 authors: "Irene Zager, Fabián Carrasquel"
+citationPre: "Zager, I. & F. Carrasquel (2010). Conversión de los bosques y zonas áridas del centro-norte del estado Falcón. Pp: 281-286. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
+citationPost: ""
 cardimage: "./pancarta.jpg"
 landscapeunits: "Sistema de colinas y sierras bajas Lara-Falcón (<a href='/unidades/c#c1'>C1</a>), Sierra de San Luis y Cerro Santa Ana (<a href='/unidades/d#d3'>D3</a>)"
 locality: "Zona centro-norte del estado Falcón"

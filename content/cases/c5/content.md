@@ -2,6 +2,8 @@
 case: c5
 title: "Estado de conservación de los ecosistemas del ramal oriental de la cordillera de los Andes venezolanos"
 authors: "María Idalí Tachack-García, Fabián Carrasquel"
+citationPre: "Tachack-García, M.I. & F. Carrasquel (2010). Estado de conservación de los ecosistemas del ramal oriental de la cordillera de los Andes venezolanos. Pp: 263-268. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
+citationPost: ""
 cardimage: "./pancarta.jpg"
 landscapeunits: "Cordillera de los Andes (<a href='/unidades/d#d2'>D2</a>)"
 locality: "Ramal oriental cordillera de los Andes venezolanos"

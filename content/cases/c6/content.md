@@ -2,6 +2,8 @@
 case: c6
 title: "Conversión de los bosques deciduos en los llanos centrales de Venezuela"
 authors: "Sergio Zambrano-Martínez, Jon Paul Rodríguez"
+citationPre: "Zambrano-Martínez, S. & J.P. Rodríguez (2010). Conversión de los bosques deciduos en los llanos centrales de Venezuela. Pp: 269-274. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
+citationPost: ""
 cardimage: "./pancarta.jpg"
 landscapeunits: "Llanos (<a href='/unidades/b#b2'>B2</a>)"
 locality: "Llanos centrales"

@@ -2,6 +2,8 @@
 case: c10
 title: "Cambios en la cobertura de manglares en tres sitios de la costa Caribe de Venezuela"
 authors: "Ana Lucía Dávalos"
+citationPre: "Dávalos, A.L. (2010). Cambios en la cobertura de manglares en tres sitios de la costa Caribe de Venezuela. Pp: 293-301. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
+citationPost: ""
 cardimage: "./pancarta.jpg"
 landscapeunits: "Bosques de manglar (<a href='/unidades/a'>A2</a>)"
 locality: "Costa Central, costa Oriental del lago, península de La Guajira"

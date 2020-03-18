@@ -2,6 +2,8 @@
 case: c7
 title: "Conversión de bosques en la reserva forestal Sipapo, estado Amazonas"
 authors: "Irene Zager, Fabián Carrasquel"
+citationPre: "Zager, I. & F. Carrasquel (2010). Conversión de bosques en la reserva forestal Sipapo, estado Amazonas. Pp: 275-280. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
+citationPost: ""
 cardimage: "./pancarta.jpg"
 landscapeunits: "Sistema de colinas y sierras bajas piemontanas del Escudo Guayanés (<a href='/unidades/c#c2'>C2</a>)"
 locality: "Reserva Forestal Sipapo, noroccidente estado Amazonas"
