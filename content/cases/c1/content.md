@@ -2,6 +2,8 @@
 case: c1
 title: "Conversión de los bosques en la cordillera central de Venezuela"
 authors: "Carlos Portillo-Quintero, Pablo Lacabana, Fabián Carrasquel"
+citationPre: "Portillo-Quintero C., P. Lacabana & F. Carrasquel (2010). Conversión de los bosques en la cordillera central de Venezuela. Pp: 239-243. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
+citationPost: ""
 cardimage: "./pancarta.jpg"
 landscapeunits: "Cordillera de la costa (<a href='/unidades/d#d42'>D42</a>, <a href='/unidades/d#d43'>D43</a>)"
 locality: "Tramo medio de la costa central"

@@ -19,6 +19,8 @@
             link="/casos"
             :title="$page.caseCard.title"
             :authors="$page.caseCard.authors"
+            :citationPre="$page.caseCard.citationPre"
+            :citationPost="$page.caseCard.citationPost"
             heroPaddingBottom="72px"
             />
           </PageBanner>
@@ -110,6 +112,8 @@
     caseCard: caseCard (path: $path) {
       title
       authors
+      citationPre
+      citationPost
       content
       cardimage
       landscapeunits

@@ -1,7 +1,7 @@
 ---
 title: "Estudios de caso"
 id: "cases-index"
-citationPre: "J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.) (2010). Casos de estudio."
+citationPre: "Rodríguez J.P., F. Rojas-Suárez & D. Giraldo-Hernández (eds.) (2010). Casos de estudio."
 citationPost: " Pp: 237-301"
 mapTitle: "Localización<br>de las áreas de estudio"
 banner: "./cases-pancarta.jpg"
