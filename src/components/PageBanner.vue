@@ -8,7 +8,20 @@
           <div class="hero-body">
             <g-link v-if="link" :to="link" class="hero-link is-size-3 is-size-4-desktop is-size-6-touch"><span v-html="lead"></span></g-link>
             <span class="is-size-3 is-size-6-touch" v-else v-html="lead"></span>
-            <p class="hero-text is-size-1 is-uppercase has-text-weight-bold is-size-2-desktop is-size-4-tablet is-size-5-mobile" v-html="title"></p>
+            <div>
+              <span class="hero-text is-size-1 is-uppercase has-text-weight-bold is-size-2-desktop is-size-4-tablet is-size-5-mobile" v-html="title"></span>
+              <b-dropdown id="citationDropdown" @active-change="citationChange" position="is-top-right" class="citation-icon" :mobile-modal="false">
+                <span title="Cita" slot="trigger">&nbsp;<font-awesome size="xs" :icon="['fas', 'book']"/></span>
+                <b-dropdown-item custom :focusable="false">
+                  <p><span v-html="'<b>Cita: </b>' + citationText"></span>
+                    &nbsp;
+                    <a title="Copiar texto" class="copy-citation-to-clipboard" :data-clipboard-text="citationText">
+                      <font-awesome :icon="['far', 'copy']"/>
+                    </a>
+                  </p>
+                </b-dropdown-item>
+              </b-dropdown>
+            </div>
             <p v-if="subtitle" class="hero-text is-size-4 is-size-6-touch">{{subtitle}}</p>
             <p v-if="authors" class="hero-text is-size-5 is-size-7-touch">{{authors}}</p>
             <slot name="follow"></slot>
@@ -89,10 +102,25 @@
   .hero-link:hover {
     text-decoration: underline;
   }
+
+  ::v-deep #citationDropdown .dropdown-content {
+    width: 40vw;
+  }
+
+  @media screen and (max-width: 768px) {
+    ::v-deep #citationDropdown .dropdown-content {
+      width: 70vw;
+    }
+  }
+
 </style>
 
 <script>
   import BannerInfo from '~/components/BannerInfo.vue'
+  import {docCitation} from '~/assets/js/siteConfig.js'
+
+  import ClipboardJS from 'clipboard'
+  let clipboard
 
   const defaultBannerHeight = '540px'
   const mobileBannerHeight = '300px'
@@ -107,6 +135,8 @@
       lead: { type: String, required: false },
       link: { type: String, required: false },
       title: { type: String, required: true },
+      citationPre: { type: String, required: false },
+      citationPost: { type: String, required: false },
       subtitle: {type: String, required: false},
       authors: {type: String, required: false},
       bannerHeight: {type: String, required: false, default: defaultBannerHeight},
@@ -121,11 +151,33 @@
           '--mobile-banner-height': mobileBannerHeight,
           '--minus-mobile-banner-height': '-' + mobileBannerHeight,
           '--hero-padding-bottom': this.heroPaddingBottom
-        }
+        },
+        docCitation: docCitation
       }
     },
     components: {
       BannerInfo
+    },
+    mounted() {
+      clipboard = new ClipboardJS('.copy-citation-to-clipboard')
+    },
+    beforeDestroy() {
+      clipboard.destroy()
+    },
+    computed: {
+      citationText: function() {
+        return (this.citationPre ? this.citationPre + ' ' : '') + this.docCitation + (this.citationPost ? ' ' + this.citationPost : '')
+      }
+    },
+    methods: {
+      citationChange: function(active) {
+        let citationDropdownElement = document.getElementById('citationDropdown')
+        let offset =  (window.innerWidth / 2) - citationDropdownElement.offsetLeft - 120
+        citationDropdownElement.querySelector('.dropdown-menu').setAttribute('style', 'left: ' + Math.min(0,offset) + 'px')
+        if (active) {
+
+        }
+      }
     }
   }
 </script>

@@ -226,6 +226,14 @@ table {
   @extend .has-text-grey-lighter;
 }
 
+.citation-icon {
+  @extend .has-text-white;
+}
+
+.citation-icon:hover {
+  @extend .has-text-grey-lighter;
+}
+
 body {
   padding-top: $navbar-height;
 }
