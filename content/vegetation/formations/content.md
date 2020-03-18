@@ -1,6 +1,8 @@
 ---
 id: formaciones
 title: "Representación de las formaciones vegetales de Venezuela 2010"
+citationPre: "Huber, O. & M.A. Oliveira-Miranda (2010). Ambientes terrestres. Representación de las formaciones vegetales de Venezuela 2010. Pp: 38-53. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
+citationPost: ""
 cardimage: "./formaciones-pancarta.jpg"
 cardimagecaption: "Bosque de manglar, Parque Nacional Laguna de La Restinga, estado Nueva Esparta. <i>Román Rangel</i>"
 photos:

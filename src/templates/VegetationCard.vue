@@ -7,6 +7,8 @@
           :caption="$page.vegetationCard.cardimagecaption"
           lead="Vegetación"
           :title="$page.vegetationCard.title"
+          :citationPre="$page.vegetationCard.citationPre"
+          :citationPost="$page.vegetationCard.citationPost"
           />
         </PageBanner>
 
@@ -30,6 +32,8 @@
   query VegetationCard ($id: ID!) {
     vegetationCard: vegetationCard (id: $id) {
       title
+      citationPre
+      citationPost
       cardimage
       cardimagecaption
       photos {

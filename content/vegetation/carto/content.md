@@ -1,6 +1,8 @@
 ---
 id: cartografia
 title: "Revisión y análisis histórico de la cartografía sistemática de la vegetación en Venezuela"
+citationPre: "Huber, O. & M.A. Oliveira-Miranda (2010). Ambientes terrestres. Revisión y análisis histórico de la cartografía sistemática de la vegetación en Venezuela. Pp: 29-37. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
+citationPost: ""
 cardimage: "./carto-pancarta.jpg"
 cardimagecaption: "Bosque de manglar, Parque Nacional Laguna de La Restinga, estado Nueva Esparta. <i>Román Rangel</i>"
 photos:

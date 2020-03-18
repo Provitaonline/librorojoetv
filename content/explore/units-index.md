@@ -1,7 +1,7 @@
 ---
 title: "Paisajes Vegetales de Venezuela"
 id: "units-index"
-citationPre: "Huber, O. & M.A. Oliveira-Miranda (2010). Ambientes terrestres. Unidades de paisaje de Venezuela 2010. Pp: 56-85. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
+citationPre: "Huber, O. & M.A. Oliveira-Miranda (2010). Ambientes terrestres. Unidades de paisaje de Venezuela 2010. Pp: 54-89. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
 citationPost: ""
 mapTitle: "Unidades de paisaje<br>de Venezuela -  2010"
 banner: "./units-pancarta.jpg"
