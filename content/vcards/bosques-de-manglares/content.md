@@ -1,5 +1,7 @@
 ---
 title: "Bosques de manglares"
+citationPre: "Oliveira-Miranda, M.A., O. Huber, J.P. Rodríguez, F. Rojas-Suárez, R. De Oliveira-Miranda, S. Zambrano-Martínez & G. Giraldo-Hernández, (eds) (2010). Bosques de manglares. Pp: 143-149. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
+citationPost: ""
 cardimage: "./foto-1.jpg"
 cardimagecaption: "Bosque de manglares de <i>Avicennia germinans</i> y <i>Rhizophora mangle</i>, Parque Nacional Turuépano, estado Sucre. <i>Giuseppe Colonnello</i>"
 plantformation: "Bosques siempreverdes"

@@ -1,5 +1,7 @@
 ---
 title: "Bosques de palmas y bosques de pantano"
+citationPre: "Oliveira-Miranda, M.A., O. Huber, J.P. Rodríguez, F. Rojas-Suárez, R. De Oliveira-Miranda, S. Zambrano-Martínez & G. Giraldo-Hernández, (eds) (2010). Bosques de palmas y bosques de pantano. Pp: 136-142. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
+citationPost: ""
 cardimage: "./foto-1.jpg"
 cardimagecaption: "Bosque de palmas denso (chaguaramos), en las inmediaciones del Parque Nacional Turuépano. <i>Giuseppe Colonnello</i>"
 plantformation: "Bosques siempreverdes"

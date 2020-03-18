@@ -1,5 +1,7 @@
 ---
 title: "Bosques nublados"
+citationPre: "Oliveira-Miranda, M.A., O. Huber, J.P. Rodríguez, F. Rojas-Suárez, R. De Oliveira-Miranda, S. Zambrano-Martínez & G. Giraldo-Hernández, (eds) (2010). Bosques nublados. Pp: 130-135. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
+citationPost: ""
 cardimage: "./foto-1.jpg"
 cardimagecaption: "Bosque nublado entre Humocaro Alto y Campo Elias, Cordillera de los Andes. <i>Giuseppe Colonnello</i>"
 plantformation: "Bosques siempreverdes"
