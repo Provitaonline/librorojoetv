@@ -10,7 +10,7 @@
             <span class="is-size-3 is-size-6-touch" v-else v-html="lead"></span>
             <div>
               <span class="hero-text is-size-1 is-uppercase has-text-weight-bold is-size-2-desktop is-size-4-tablet is-size-5-mobile" v-html="title"></span>
-              <b-dropdown id="citationDropdown" @active-change="citationChange" position="is-top-right" class="citation-icon" :mobile-modal="false">
+              <b-dropdown v-if="(citationPre || citationPost)" id="citationDropdown" @active-change="citationChange" position="is-top-right" class="citation-icon" :mobile-modal="false">
                 <span title="Cita" slot="trigger">&nbsp;<font-awesome size="xs" :icon="['fas', 'book']"/></span>
                 <b-dropdown-item custom :focusable="false">
                   <p><span v-html="'<b>Cita: </b>' + citationText"></span>
