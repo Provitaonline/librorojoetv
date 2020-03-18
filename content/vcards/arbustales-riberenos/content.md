@@ -1,5 +1,7 @@
 ---
 title: "Arbustales ribereños"
+citationPre: "Oliveira-Miranda, M.A., O. Huber, J.P. Rodríguez, F. Rojas-Suárez, R. De Oliveira-Miranda, S. Zambrano-Martínez & G. Giraldo-Hernández, (eds) (2010). Arbustales ribereños. Pp: 184-187. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
+citationPost: ""
 cardimage: "./foto-1.jpg"
 cardimagecaption: "Arbustales ribereños asociados a ríos de aguas negras naturales, estado Amazonas. <i>Pedro Uviedo</i>"
 plantformation: "Arbustales"

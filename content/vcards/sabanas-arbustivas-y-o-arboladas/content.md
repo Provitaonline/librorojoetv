@@ -1,5 +1,7 @@
 ---
 title: "Sabanas arbustivas y/o arboladas"
+citationPre: "Oliveira-Miranda, M.A., O. Huber, J.P. Rodríguez, F. Rojas-Suárez, R. De Oliveira-Miranda, S. Zambrano-Martínez & G. Giraldo-Hernández, (eds) (2010). Sabanas arbustivas y/o arboladas. Pp: 206-210. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
+citationPost: ""
 cardimage: "./foto-1.jpg"
 cardimagecaption: "Sabana arbolada sobre la formación Mesa, muy próxima al río Orinoco, estado Anzoátegui. <i>Giuseppe Colonnello</i>"
 category: "vu"

@@ -1,5 +1,7 @@
 ---
 title: "Vegetación saxícola"
+citationPre: "Oliveira-Miranda, M.A., O. Huber, J.P. Rodríguez, F. Rojas-Suárez, R. De Oliveira-Miranda, S. Zambrano-Martínez & G. Giraldo-Hernández, (eds) (2010). Vegetación saxícola. Pp: 225-230. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
+citationPost: ""
 cardimage: "./foto-1.jpg"
 cardimagecaption: "Vegetación saxícola pionera en superficies rocosas, tepuy Roraima, estado Bolívar. <i>Christian Ceccarelli Navarro</i>"
 category: "vu"

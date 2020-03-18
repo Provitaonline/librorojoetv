@@ -1,5 +1,7 @@
 ---
 title: "Sabanas abiertas"
+citationPre: "Oliveira-Miranda, M.A., O. Huber, J.P. Rodríguez, F. Rojas-Suárez, R. De Oliveira-Miranda, S. Zambrano-Martínez & G. Giraldo-Hernández, (eds) (2010). Sabanas abiertas. Pp: 200-205. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
+citationPost: ""
 cardimage: "./foto-1.jpg"
 cardimagecaption: "Sabana abierta de Huachamacari, estado Amazonas. <i>Leonardo Ruiz-Díaz</i>"
 category: "en"

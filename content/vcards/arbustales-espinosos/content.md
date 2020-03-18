@@ -1,5 +1,7 @@
 ---
 title: "Arbustales espinosos"
+citationPre: "Oliveira-Miranda, M.A., O. Huber, J.P. Rodríguez, F. Rojas-Suárez, R. De Oliveira-Miranda, S. Zambrano-Martínez & G. Giraldo-Hernández, (eds) (2010). Arbustales espinosos. Pp: 176-183. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
+citationPost: ""
 cardimage: "./foto-1.jpg"
 cardimagecaption: "Cardonal en Tierra Negra, estado Mérida. <i>Mariana Hernández-Montilla</i>"
 plantformation: "Arbustales"

@@ -1,5 +1,7 @@
 ---
 title: "Herbazales de pantano"
+citationPre: "Oliveira-Miranda, M.A., O. Huber, J.P. Rodríguez, F. Rojas-Suárez, R. De Oliveira-Miranda, S. Zambrano-Martínez & G. Giraldo-Hernández, (eds) (2010). Herbazales de pantano. Pp: 211-215. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
+citationPost: ""
 cardimage: "./pancarta.jpg"
 cardimagecaption: "Sabana arbolada sobre la formación Mesa, muy próxima al río Orinoco, estado Anzoátegui. <i>Giuseppe Colonnello</i>"
 plantformation: "Herbazales"

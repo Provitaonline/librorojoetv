@@ -1,5 +1,7 @@
 ---
 title: "Arbustales y herbazales parameros"
+citationPre: "Oliveira-Miranda, M.A., O. Huber, J.P. Rodríguez, F. Rojas-Suárez, R. De Oliveira-Miranda, S. Zambrano-Martínez & G. Giraldo-Hernández, (eds) (2010). Arbustales y herbazales parameros. Pp: 188-192. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
+citationPost: ""
 cardimage: "./foto-1.jpg"
 cardimagecaption: "Páramo a 3.500 msnm cerca de Piedras Blancas, ruta de Torondoy hacia La Lagunita, estado Mérida. <i>Giuseppe Colonnello</i>"
 category: "vu"

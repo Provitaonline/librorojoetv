@@ -1,5 +1,7 @@
 ---
 title: "Arbustales y herbazales tepuyanos"
+citationPre: "Oliveira-Miranda, M.A., O. Huber, J.P. Rodríguez, F. Rojas-Suárez, R. De Oliveira-Miranda, S. Zambrano-Martínez & G. Giraldo-Hernández, (eds) (2010). Arbustales y herbazales tepuyanos. Pp: 193-199. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
+citationPost: ""
 cardimage: "./foto-2.jpg"
 cardimagecaption: "Arbustales tepuyanos, cerro Duida, estado Amazonas. <i>Otto Huber</i>"
 plantformation: "Arbustales siempreverdes y herbazales no graminosos"

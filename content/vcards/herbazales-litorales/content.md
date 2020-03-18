@@ -1,5 +1,7 @@
 ---
 title: "Herbazales litorales"
+citationPre: "Oliveira-Miranda, M.A., O. Huber, J.P. Rodríguez, F. Rojas-Suárez, R. De Oliveira-Miranda, S. Zambrano-Martínez & G. Giraldo-Hernández, (eds) (2010). Herbazales litorales. Pp: 220-224. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
+citationPost: ""
 cardimage: "./foto-2.jpg"
 cardimagecaption: "Herbazal litoral interrumpido por salinas, extremo occidental de la península de Araya, estado Sucre. <i>José Antonio González-Carcacía</i>"
 plantformation: "Herbazales"

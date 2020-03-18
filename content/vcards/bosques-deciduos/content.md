@@ -1,5 +1,7 @@
 ---
 title: "Bosques deciduos"
+citationPre: "Oliveira-Miranda, M.A., O. Huber, J.P. Rodríguez, F. Rojas-Suárez, R. De Oliveira-Miranda, S. Zambrano-Martínez & G. Giraldo-Hernández, (eds) (2010). Bosques deciduos. Pp: 156-163. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
+citationPost: ""
 cardimage: "./foto-1.jpg"
 cardimagecaption: "Bosque deciduo bajo, estado Cojedes. <i>José Antonio González-Carcacía</i>"
 category: "cr"

@@ -1,5 +1,7 @@
 ---
 title: "Herbazales arbustivos sobre arena blanca"
+citationPre: "Oliveira-Miranda, M.A., O. Huber, J.P. Rodríguez, F. Rojas-Suárez, R. De Oliveira-Miranda, S. Zambrano-Martínez & G. Giraldo-Hernández, (eds) (2010). Herbazales arbustivos sobre arena blanca. Pp: 216-219. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
+citationPost: ""
 cardimage: "./foto-1.jpg"
 cardimagecaption: "Patrón de drenaje laberíntico frecuente en herbazales sobre arena blanca, Alto Yagua, estado Amazonas. <i>Otto Huber</i>"
 plantformation: "Herbazales"

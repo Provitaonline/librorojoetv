@@ -1,5 +1,7 @@
 ---
 title: "Bosques semideciduos"
+citationPre: "Oliveira-Miranda, M.A., O. Huber, J.P. Rodríguez, F. Rojas-Suárez, R. De Oliveira-Miranda, S. Zambrano-Martínez & G. Giraldo-Hernández, (eds) (2010). Bosques semideciduos. Pp: 150-155. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
+citationPost: ""
 cardimage: "./foto-1.jpg"
 cardimagecaption: "Bosque semideciduo intervenido para uso agrícola, carretera desde San Cristóbal (estado Zulia) hacia Piñango (estado Mérida). <i>Giuseppe Colonnello</i>"
 category: "en"
