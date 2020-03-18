@@ -7,6 +7,8 @@
         :caption="$page.unitCardsIndex.bannerCaption"
         :lead="$page.unitCardsIndex.title"
         :title="$page.unitCardsIndex.mapTitle"
+        :citationPre="$page.unitCardsIndex.citationPre"
+        :citationPost="$page.unitCardsIndex.citationPost"
         />
       </PageBanner>
 
@@ -38,6 +40,8 @@
   query Home {
     unitCardsIndex: unitCardsIndex (path: "/content/explore/units-index") {
       title
+      citationPre
+      citationPost
       mapTitle
       banner
       bannerCaption

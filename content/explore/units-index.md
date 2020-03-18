@@ -1,6 +1,8 @@
 ---
 title: "Paisajes Vegetales de Venezuela"
 id: "units-index"
+citationPre: "Huber, O. & M.A. Oliveira-Miranda (2010). Ambientes terrestres. Unidades de paisaje de Venezuela 2010. Pp: 56-85. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
+citationPost: ""
 mapTitle: "Unidades de paisaje<br>de Venezuela -  2010"
 banner: "./units-pancarta.jpg"
 bannerCaption: "Macizo Guayanés, zona Caroní medio, Auyán-tepui, estado Bolivar. <i>Rebecca Miller</i>"

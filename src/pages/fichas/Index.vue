@@ -7,6 +7,8 @@
         :caption="$page.riskCardsIndex.bannerCaption"
         :lead="$page.riskCardsIndex.title"
         :title="$page.riskCardsIndex.mapTitle"
+        :citationPre="$page.riskCardsIndex.citationPre"
+        :citationPost="$page.riskCardsIndex.citationPost"
         />
       </PageBanner>
 
@@ -70,6 +72,8 @@
     }
     riskCardsIndex: riskCardsIndex (path: "/content/explore/vcards-index") {
       title
+      citationPre
+      citationPost
       mapTitle
       banner
       bannerCaption

@@ -7,6 +7,8 @@
         :caption="$page.casesIndex.bannerCaption"
         :lead="$page.casesIndex.title"
         :title="$page.casesIndex.mapTitle"
+        :citationPre="$page.casesIndex.citationPre"
+        :citationPost="$page.casesIndex.citationPost"
         />
       </PageBanner>
 
@@ -29,6 +31,8 @@
   query Home {
     casesIndex: casesIndex (path: "/content/explore/cases-index") {
       title
+      citationPre
+      citationPost
       mapTitle
       banner
       bannerCaption

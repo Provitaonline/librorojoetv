@@ -1,6 +1,8 @@
 ---
 title: "Riesgo de colapso de los<br>ecosistemas terrestres de Venezuela"
 id: "vcards-index"
+citationPre: "Oliveira-Miranda, M.A. Huber, O. Rodríguez, J.P. Rojas-Suárez, F. De Oliveira-Miranda, R. Zambrano-Martínez S. & Giraldo-Hernández, G. (eds) (2010). Riesgo de eliminación de los ecosistemas terrestres de Venezuela . Pp: 107-235. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
+citationPost: ""
 mapTitle: "Formaciones Vegetales<br>de Venezuela - 2010"
 banner: "./vcards-pancarta.jpg"
 bannerCaption: "Vista panorámica de Lagunillas, estado Mérida. <i>Leonardo Ruíz-Díaz</i>"
