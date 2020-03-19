@@ -4,9 +4,9 @@
       <section class="hero">
         <g-image class="hero-bg-img" :src="$page.homeData.contact.banner"/>
         <div class="hero-body">
-          <a title="Provita" :href="$page.homeData.contact.web">
+          <g-link title="Provita" :to="$page.homeData.contact.web">
             <g-image src="~/assets/images/provita.png"/>
-          </a>
+          </g-link>
         </div>
       </section>
       <BannerInfo :info="$page.homeData.contact.bannerCaption"/>
