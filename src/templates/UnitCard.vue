@@ -93,6 +93,22 @@
 
 </style>
 
+<style lang="scss">
+
+  @import "~/assets/style/_variables";
+
+  /* This is needed to adjust the anchors to account for fixed navbar */
+  [id]::before {
+    content: '';
+    display: block;
+    height: $navbar-height/2;
+    margin-top: $navbar-height*-1/2;
+    visibility: hidden;
+  }
+</style>
+
+
+
 <script>
   import PageBanner from '~/components/PageBanner.vue'
   import CollapsibleList from '~/components/CollapsibleList.vue'
