@@ -24,8 +24,9 @@ En Venezuela el paisaje fisiográfico colinar no es muy extendido. Este término
 * [Subregión C.2. Sistema de colinas y sierras bajas piemontanas del Escudo Guayanés](#c2)
 * [Subregión C.3. Sistema de sierras bajas y colinas Imataca-Cuyuní del Escudo Guayanés nororiental](#c3)
 
+<a id='c1'></a>
+
 # Subregión C.1.
-{id="c1"}
 ### Sistema de colinas y sierras bajas Lara-Falcón
 {class="unit-subtitle"}
 Esta subregión se extiende desde los límites norte de los Andes y noroeste de la cordillera de la Costa hasta las costas del mar Caribe en el norte y este (Foto 26). En el oeste la separa la sierra Jirajara o Ziruma (Baragua) de las llanuras nororientales de la Depresión de Maracaibo. La altitud de estos paisajes de lomas y colinas redondeadas o cónicas, que alterna con grandes valles transversales, varía entre 10 y 700-1.000 m aproximadamente. Quedan excluidas las partes altas de las sierras Baragua, San Luis y cerro Santa Ana en la península de Paraguaná, cuya vegetación pertenece más a la región de montañas (D). Toda la subregión está sujeta a un régimen principalmente macrotérmico, con transiciones hacia el submesotérmico en las zonas más elevadas. El régimen pluviométrico es de tipo árido a semiárido (PMA entre 300 y 1.000 mm), con una excepción hacia el este (en la zona de los “valles marítimos”) y el oeste de la subregión, donde se registra una precipitación media anual mayor, entre 1.200 y 1.800 mm, distribuida entre 8 meses del año.
@@ -36,8 +37,9 @@ Los bosques alisios semicaducifolios, que caracterizaban el paisaje de los “va
 
 Donde la vegetación natural boscosa haya sido degradada a consecuencia de una fuerte y persistente intervención humana, se forman extensos matorrales, en los cuales se observa un conjunto florístico diferente del existente previamente en el bosque original. En estos casos, la así llamada flora adventicia e invasora ha desplazado a las especies originales hasta constituir nuevas comunidades vegetales, que en este caso reciben el adjetivo de “secundarias”.
 
+<a id='c2'></a>
+
 # Subregión C.2.
-{id="c2"}
 ### Sistema de colinas y sierras bajas piemontanas del Escudo Guayanés
 {class="unit-subtitle"}
 Debido a su considerable extensión, esta subregión es heterogénea en su vegetación y flora (Foto 27). Cubre la franja entre el borde noroccidental del Escudo Guayanés y el río Orinoco, desde la desembocadura del río Sipapo en el estado Amazonas hasta la boca del río Caura. Desde allí hacia el este, comprende la parte inferior de las cuencas de los ríos Caura y Paragua, del bajo río Caroní y del río Cuyuní. Además, incluye la sierra de Imataca y la altiplanicie de Nuria en la línea divisoria entre el estado Bolívar y el estado Delta Amacuro. Toda la subregión se desarrolla sobre el basamento ígneo-metamórfico del Escudo Guayanés, cuyos afloramientos graníticos, en forma de lajas (inselbergs) o serranías bajas, constituyen uno de los rasgos más significativos no sólo del paisaje sino también de la vegetación.
@@ -46,8 +48,9 @@ Las características climáticas de esta área son muy variadas. En líneas gene
 
 Desde el punto de vista florístico, casi toda la subregión constituye una zona de transición entre la biorregión de los Llanos, hacia el norte, y la biorregión de la Guayana, hacia el sur. Entre Caicara del Orinoco y Puerto Ordaz se extiende un “bolsón”, hacia el sur, de sabanas típicamente llaneras, las cuales casi alcanzan el pie de las montañas del Escudo Guayanés en los alrededores de Tumeremo. Por otra parte, a lo largo de la ribera meridional del río Orinoco, hasta más al sur de Puerto Ayacucho, aparecen manchas más o menos extensas de sabanas, en las cuales domina nítidamente el elemento llanero. Sin embargo, allí ya comienzan a presentarse especies de genuina afinidad florística guayanesa.
 
+<a id='c21'></a>
+
 ## Sector C.2.1.
-{id="c21"}
 ### Zona noroccidental
 {class="unit-subtitle-2"}
 Este sector se extiende desde el río Orinoco, al norte y oeste, hasta el piedemonte del macizo Guayanés, al sur y este. Presenta elevaciones promedio de hasta aproximadamente 600-800 msnm. Aquí predominan bosques basimontanos y submontanos, bosques ribereños, sabanas arbustivas y chaparrales. Los bosques han sido poco estudiados hasta la fecha, pero se trata de bosques estacionales medianamente altos y densos, semideciduos, en los cuales predominan árboles con copas anchas y aplanadas, tales como el yopo (*Anadenanthera peregrina*) o el aceite (*Copaifera pubiflora*). Localmente es frecuente la palma *Attalea maripa* (Boom 1990).
@@ -56,14 +59,16 @@ Los chaparrales están muy bien desarrollados en este sector y le otorgan un asp
 
 Otro tipo de vegetación sobresaliente de este sector es la vegetación saxícola, es decir, aquella que crece sobre los numerosos afloramientos rocosos graníticos (lajas). Estos domos rocosos, redondeados y de coloración negra debido a las cubiertas de cianobacterias y líquenes adheridas a la superficie, le confieren un carácter inconfundible al paisaje colinar entre Los Pijiguaos y Puerto Ayacucho. Las plantas que han logrado instalarse sobre estas rocas soportan oscilaciones térmicas de más de 40°C durante un día de sol, así como oscilaciones extremas en la disponibilidad hídrica durante los meses de menor pluviosidad. Esta vegetación tiene una gran importancia botánica por su alto nivel de endemismo y sus peculiares adaptaciones ecológicas. Entre la multitud de especies destaca la curiosa hierba *Vellozia tubiflora*, de aspecto primitivo, pero con flores blancas sumamente vistosas. Del mismo modo sobresale *Pseudobombax croizatii*, un arbusto retorcido con corteza verde y flores rosadas delicadas, visitadas por murciélagos nocturnos.
 
+<a id='c22'></a>
+
 ## Sector C.2.2.
-{id="c22"}
 ### Zona centro-norte
 {class="unit-subtitle-2"}
 Esta zona abarca la porción centro-norte del estado Bolívar y la franja de piedemonte septentrional del macizo Guayanés, desde la boca del río Caura, en el oeste, hasta la boca del río Caroní, en el este. Este sector incluye las cuencas bajas de estos dos ríos y la del río Aro. Es heterogénea, florística y fisionómicamente, de manera que su cobertura vegetal varía desde bosques siempreverdes húmedos (ombrófilos) hasta bosques ribereños deciduos (caducifolios), alternando con sabanas muy ralas y vegetación saxícola sobre afloramientos rocosos. Sin embargo, las especies encontradas en cada uno de estos ecosistemas difieren en grado más o menos notable de ecosistemas similares, ubicados en el sector occidental. Estas diferencias se deben, en primer lugar, al régimen climático generalmente más seco de esta zona y, en segundo lugar, a las diferentes condiciones edáficas, ya que las rocas del grupo Imataca, predominantes en este sector, están entre las más antiguas de todo el Escudo Guayanés.
 
+<a id='c3'></a>
+
 # Subregión C.3.
-{id="c3"}
 ### Sistema de sierras bajas y colinas Imataca-Cuyuní del Escudo Guayanés nororiental
 {class="unit-subtitle"}
 Esta subregión pertenece a la provincia fitogeográfica Guayana oriental que se extiende a todo lo largo de las tres Guayanas, es decir, entre el río Amacuro bajo, en Venezuela, y el límite entre la Guayana Francesa y el Estado de Amapá, en el Brasil nororiental (Huber 1994, Berry *et al.* 1995). En Venezuela abarca, en forma de triángulo invertido, toda la mitad sur del estado Amacuro, las sierras Piacoa e Imataca, y la gran zona boscosa delimitada, en el oeste, por una línea imaginaria entre el poblado de Tumeremo y las cabeceras del río Yuruán. El límite sur podría trazarse siguiendo la cota de 200 msnm a lo largo del piedemonte de la sierra de Lema, en dirección oriental hasta caer en el río Venamo, aproximadamente en su confluencia con el río Cuyuní (Foto 28).
