@@ -42,6 +42,9 @@ collections:
           {label: "Imagen de portada", name: "banner", widget: "file", allow_multiple: false, required: true},
           {label: "Subtítulo de la imagen de portada", name: "bannerCaption", widget: "string", required: true}]}
       - {label: "Acerca de (imágenes)", name: "about", widget: "object", fields: [
+          {label: "Texto del banner", name: "title", widget: "string", required: true},
+          {label: "Ante-cita", name: "citationPre", widget: "string"},
+          {label: "Post-cita", name: "citationPost", widget: "string"},
           {label: "Imagen de portada", name: "cardimage", widget: "file", allow_multiple: false, required: true},
           {label: "Subtítulo de la imagen de portada", name: "cardimagecaption", widget: "string", required: true},
           {label: "Imagenes", name: "photos", widget: "list", fields: [
