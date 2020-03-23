@@ -511,7 +511,6 @@
         this.ttStyle['--ttpos'] = calcTtpos(this.layerTransparency)
         document.getElementById('transparencySlider').addEventListener('input', function(e) {
           self.layerTransparency = e.target.value
-          console.log(110 - e.target.value)
           self.ttStyle['--ttpos'] = calcTtpos(e.target.value)
         })
       },
