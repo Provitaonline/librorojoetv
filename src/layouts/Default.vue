@@ -19,6 +19,28 @@
         </b-navbar-item>
       </template>
       <template slot="end">
+        <b-navbar-dropdown arrowless>
+          <template slot="label">
+            <font-awesome :icon="['fas', 'search']" />
+          </template>
+          <div class="field" style="min-width: 19.5rem; padding: 10px;">
+            <p class="control has-icons-left has-icons-right">
+              <input class="input" type="email" placeholder="Buscar...">
+              <span class="icon is-small is-left">
+                <i class="fas fa-envelope"></i>
+              </span>
+              <span class="icon is-small is-left">
+                <font-awesome :icon="['fas', 'search']" />
+              </span>
+              <b-navbar-item>
+                Search result 1
+              </b-navbar-item>
+              <b-navbar-item>
+                Search result 2
+              </b-navbar-item>
+            </p>
+          </div>
+        </b-navbar-dropdown>
         <b-navbar-item tag="g-link" to="/acerca-de">
           ACERCA DE
         </b-navbar-item>
