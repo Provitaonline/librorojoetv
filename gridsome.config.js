@@ -170,6 +170,41 @@ module.exports = {
           }
         ]
       }
+    },
+    {
+      use: 'gridsome-plugin-flexsearch',
+      options: {
+        chunk: true,
+        profile: 'memory',
+        collections: [
+          {
+            typeName: 'RiskCard',
+            indexName: 'RiskCard',
+            fields: ['title']
+          },
+          {
+            typeName: 'CaseCard',
+            indexName: 'CaseCard',
+            fields: ['title']
+          },
+          {
+            typeName: 'UnitCard',
+            indexName: 'UnitCard',
+            fields: ['title']
+          },
+          {
+            typeName: 'MethodCard',
+            indexName: 'MethodCard',
+            fields: ['title']
+          },
+          {
+            typeName: 'VegetationCard',
+            indexName: 'VegetationCard',
+            fields: ['title']
+          }
+        ],
+        searchFields: ['title', 'description', 'distribution', 'content']
+      }
     }
   ],
   templates: {

@@ -19,24 +19,27 @@
         </b-navbar-item>
       </template>
       <template slot="end">
-        <b-navbar-dropdown arrowless>
+        <b-navbar-dropdown @click.native="searchClick" arrowless>
           <template slot="label">
             <font-awesome :icon="['fas', 'search']" />
           </template>
-          <div class="field" style="min-width: 19.5rem; padding: 10px;">
+          <div class="field" style="min-width: 19.5rem; width: 50vw; padding: 10px;">
             <p class="control has-icons-left has-icons-right">
-              <input class="input" type="email" placeholder="Buscar...">
+              <input
+                class="input"
+                ref="search"
+                type="text"
+                v-model="searchTerm"
+                placeholder="Buscar...">
               <span class="icon is-small is-left">
                 <i class="fas fa-envelope"></i>
               </span>
               <span class="icon is-small is-left">
                 <font-awesome :icon="['fas', 'search']" />
               </span>
-              <b-navbar-item>
-                Search result 1
-              </b-navbar-item>
-              <b-navbar-item>
-                Search result 2
+
+              <b-navbar-item tag="g-link" style="white-space: normal;" v-for="item in searchResults" :key="item.key" :to="item.path">
+                {{item.title}}
               </b-navbar-item>
             </p>
           </div>
@@ -234,7 +237,8 @@
     },
     data() {
       return {
-        version: version
+        version: version,
+        searchTerm: ''
       }
     },
     components: {
@@ -246,11 +250,27 @@
     methods: {
       getCurrentUrl: function() {
         return (process.isClient) ? window.location.href : ''
+      },
+      searchClick: function(e) {
+        if (this.$refs.search) {
+          this.$refs.search.focus()
+        }
       }
     },
     computed: {
       getPageImage() {
         return this.$parent.pageImage ? this.$static.metadata.siteUrl + this.$parent.pageImage : ''
+      },
+      searchResults () {
+        const searchTerm = this.searchTerm
+        if (searchTerm.length < 3) return []
+        return this.$search.search({ query: searchTerm, limit: 10 }).map(a => {
+          let o = {}
+          o.key = a.key
+          o.title = a.title.replace(/<[^>]*>?/gm, ' ')
+          o.path = a.path
+          return o
+        })
       }
     }
   }
