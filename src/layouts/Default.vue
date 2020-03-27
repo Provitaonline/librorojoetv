@@ -19,31 +19,32 @@
         </b-navbar-item>
       </template>
       <template slot="end">
-        <b-navbar-dropdown @click.native="searchClick" arrowless>
-          <template slot="label">
-            <font-awesome :icon="['fas', 'search']" />
-          </template>
-          <div class="field" style="min-width: 19.5rem; width: 50vw; padding: 10px;">
-            <p class="control has-icons-left has-icons-right">
-              <input
-                class="input"
-                ref="search"
-                type="text"
-                v-model="searchTerm"
-                placeholder="Buscar...">
-              <span class="icon is-small is-left">
-                <i class="fas fa-envelope"></i>
-              </span>
-              <span class="icon is-small is-left">
-                <font-awesome :icon="['fas', 'search']" />
-              </span>
-
-              <b-navbar-item tag="g-link" style="white-space: normal;" v-for="item in searchResults" :key="item.key" :to="item.path">
-                {{item.title}}
-              </b-navbar-item>
-            </p>
+        <b-navbar-item class="custom-navbar-item" @click.native="searchClick">
+          <font-awesome :icon="['fas', 'search']" />
+          <div class="dropdown" v-bind:class="{ 'is-active': searchIsActive }">
+            <div class="dropdown-menu search-box" role="menu">
+              <div class="dropdown-content">
+                <div class="control has-icons-left" v-bind:class="{ 'has-padding': searchResults.length }">
+                  <input
+                    class="input"
+                    ref="search"
+                    type="text"
+                    v-model="searchTerm"
+                    placeholder="Buscar...">
+                  <span class="icon is-small is-left">
+                    <font-awesome :icon="['fas', 'search']" />
+                  </span>
+                </div>
+                <div @click="searchIsActive = false" v-for="item in searchResults" :key="item.key">
+                  <g-link class="dropdown-item" style="white-space: normal;" :to="item.path">
+                    <span>{{item.title}}</span>
+                  </g-link>
+                  <hr class="dropdown-divider">
+                </div>
+              </div>
+            </div>
           </div>
-        </b-navbar-dropdown>
+        </b-navbar-item>
         <b-navbar-item tag="g-link" to="/acerca-de">
           ACERCA DE
         </b-navbar-item>
@@ -175,6 +176,29 @@
     padding: 2rem 1.5rem 2rem;
   }
 
+  .search-box {
+    transform: translateY(30px);
+  }
+
+  .has-padding {
+    padding-bottom: 8px;
+  }
+
+  .search-box>.dropdown-content {
+    margin-left:-18px;
+    min-width: 500px;
+    padding: 10px;
+  }
+
+  @media only screen and (max-width: 1023px) {
+    .search-box>.dropdown-content {
+      min-width: calc(100vw - 24px;);
+    }
+    .search-box {
+      transform: translateY(24px);
+    }
+  }
+
   @media only screen and (min-width: 1024px) {
     .social {
       display: inline-block;
@@ -238,22 +262,42 @@
     data() {
       return {
         version: version,
-        searchTerm: ''
+        searchTerm: '',
+        searchIsActive: false
       }
     },
     components: {
       BackToTop,
       SocialSharing
     },
-    mounted () {
+    mounted() {
+      document.addEventListener('click', this.clickHandler)
+      document.addEventListener('keyup', this.keyHandler)
+    },
+    beforeDestroy() {
+      document.removeEventListener('click', this.clickHandler)
+      document.removeEventListener('keyup', this.keyHandler)
     },
     methods: {
       getCurrentUrl: function() {
         return (process.isClient) ? window.location.href : ''
       },
       searchClick: function(e) {
-        if (this.$refs.search) {
+        if (e.target.classList.contains('custom-navbar-item') || !e.target.closest('.dropdown')) {
+          this.searchIsActive = !this.searchIsActive
+        }
+        this.$nextTick(() => {
           this.$refs.search.focus()
+        })
+      },
+      keyHandler: function(e) {
+        if (e.keyCode === 27) {
+          this.searchIsActive = false
+        }
+      },
+      clickHandler: function(e) {
+        if (!e.target.closest('.custom-navbar-item')) {
+          this.searchIsActive = false
         }
       }
     },
