@@ -84,22 +84,23 @@
         <b-navbar-item tag="g-link" to="/contacto">
           CONTACTO
         </b-navbar-item>
-        <b-navbar-dropdown arrowless right>
+        <b-navbar-dropdown arrowless right ref="share">
           <template slot="label">
             <font-awesome :icon="['fas', 'share-alt']" />
           </template>
-          <social-sharing :url="getCurrentUrl()" inline-template>
+          <social-sharing
+            :url="getCurrentUrl()"
+            :title="$parent.pageTitle"
+            :twitter-user="$static.metadata.twitterId"
+            @open="openShare()"
+            network-tag="a" inline-template>
             <div>
-              <b-navbar-item>
-                <network network="facebook">
+                <network class="navbar-item" network="facebook">
                   <font-awesome :icon="['fab', 'facebook']"/>&nbsp;Facebook
                 </network>
-              </b-navbar-item>
-              <b-navbar-item>
-                <network network="twitter">
+                <network class="navbar-item" network="twitter">
                   <font-awesome :icon="['fab', 'twitter']"/>&nbsp;Twitter
                 </network>
-              </b-navbar-item>
             </div>
           </social-sharing>
         </b-navbar-dropdown>
@@ -143,13 +144,13 @@
 </template>
 
 <static-query>
-  query Metadata {
+  query {
     metadata {
       siteUrl
       twitterId
       keywords
     }
-    homeData: homeData (id: "home") {
+    homeData (id: "home") {
       contact {
         web
       }
@@ -293,12 +294,16 @@
       keyHandler: function(e) {
         if (e.keyCode === 27) {
           this.searchIsActive = false
+          this.$refs.share.closeMenu()
         }
       },
       clickHandler: function(e) {
         if (!e.target.closest('.custom-navbar-item')) {
           this.searchIsActive = false
         }
+      },
+      openShare() {
+        this.$refs.share.closeMenu()
       }
     },
     computed: {
