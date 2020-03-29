@@ -2,9 +2,8 @@
   <div>
     <ClientOnly>
       <section v-if="($browserDetect && $browserDetect.isIE)" class="red-line">
-        <b-message title="Navegador (Internet Explorer) no soportado" type="is-warning" aria-close-label="Close message">
-          Lamentamos la incoveniencia, pero no soportamos el navegador web Internet Explorer en esta página web.
-          Para una mejor experiencia, recomendamos utilizar Chrome, Firefox, Safari o Edge.
+        <b-message :title="$page.labels.global.IENotSupportedTitle" type="is-warning" aria-close-label="Close message">
+          {{$page.labels.global.IENotSupportedMessage}}
         </b-message>
       </section>
     </ClientOnly>
@@ -150,6 +149,12 @@
     homeData (id: "home") {
       contact {
         web
+      }
+    }
+    labels (id: "labels") {
+      global {
+        IENotSupportedTitle
+        IENotSupportedMessage
       }
     }
   }

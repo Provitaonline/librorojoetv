@@ -19,6 +19,13 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
+        path: 'content/labels/labels.md',
+        typeName: 'Labels'
+      }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
         path: 'content/vcards/**/content.md',
         typeName: 'RiskCard',
         remark:{
