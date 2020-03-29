@@ -2,8 +2,8 @@
   <div>
     <ClientOnly>
       <section v-if="($browserDetect && $browserDetect.isIE)" class="red-line">
-        <b-message :title="$page.labels.global.IENotSupportedTitle" type="is-warning" aria-close-label="Close message">
-          {{$page.labels.global.IENotSupportedMessage}}
+        <b-message :title="$static.labels.global.IENotSupportedTitle" type="is-warning" aria-close-label="Close message">
+          {{$static.labels.global.IENotSupportedMessage}}
         </b-message>
       </section>
     </ClientOnly>
@@ -41,44 +41,18 @@
             </div>
           </div>
         </b-navbar-item>
-        <b-navbar-item tag="g-link" to="/acerca-de">
-          ACERCA DE
+        <b-navbar-item tag="g-link" :to="$static.labels.global.navbaritems.about.path">
+          {{$static.labels.global.navbaritems.about.label}}
         </b-navbar-item>
-        <b-navbar-dropdown label="VEGETACIÓN">
-          <b-navbar-item tag="g-link" to="/vegetacion/cartografia">
-              Cartografía histórica
-          </b-navbar-item>
-          <b-navbar-item tag="g-link" to="/vegetacion/formaciones">
-              Formaciones vegetales
-          </b-navbar-item>
-          <b-navbar-item tag="g-link" to="/unidades">
-              Unidades de paisaje
+
+        <b-navbar-dropdown v-for="dropdown in $static.labels.global.navbardropdowns" :key="dropdown.label" :label="dropdown.label">
+          <b-navbar-item v-for="item in dropdown.items" :key="item.label" tag="g-link" :to="item.path">
+            {{item.label}}
           </b-navbar-item>
         </b-navbar-dropdown>
-        <b-navbar-dropdown label="MÉTODOS">
-          <b-navbar-item tag="g-link" to="/metodos/librosrojos">
-              Libros rojos
-          </b-navbar-item>
-          <b-navbar-item tag="g-link" to="/metodos/clasificacion">
-              Clasificación del riesgo
-          </b-navbar-item>
-          <b-navbar-item tag="g-link" to="/metodos/evaluacion">
-              Evaluación del riesgo
-          </b-navbar-item>
-          <b-navbar-item tag="g-link" to="/metodos/prioridades">
-              Prioridades de conservación
-          </b-navbar-item>
-        </b-navbar-dropdown>
-        <b-navbar-dropdown label="RIESGO DE COLAPSO">
-          <b-navbar-item tag="g-link" to="/fichas">
-              Nacional (formaciones vegetales)
-          </b-navbar-item>
-          <b-navbar-item tag="g-link" to="/casos">
-              Local (estudios de caso)
-          </b-navbar-item>
-        </b-navbar-dropdown>
-        <b-navbar-item tag="g-link" to="/contacto">
-          CONTACTO
+
+        <b-navbar-item tag="g-link" :to="$static.labels.global.navbaritems.contact.path">
+          {{$static.labels.global.navbaritems.contact.label}}
         </b-navbar-item>
         <b-navbar-dropdown arrowless right ref="share">
           <template slot="label">
@@ -155,6 +129,23 @@
       global {
         IENotSupportedTitle
         IENotSupportedMessage
+        navbaritems {
+          about {
+            label
+            path
+          }
+          contact {
+            label
+            path
+          }
+        }
+        navbardropdowns {
+          label
+          items {
+            label
+            path
+          }
+        }
       }
     }
   }
