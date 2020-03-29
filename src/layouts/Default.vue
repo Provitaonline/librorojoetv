@@ -102,7 +102,7 @@
               &nbsp;
             </div>
             <span> Derechos reservados, copyright © 2019 </span>
-            <g-link :href="$static.homeData.contact.web" target="_blank">Provita</g-link>
+            <g-link :href="$static.homeData.contact.web" target="_blank">{{$static.homeData.contact.organization}}</g-link>
             <span>, licencia </span>
             <g-link href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</g-link>
             <span>. | Versión {{version}}</span>
@@ -122,6 +122,7 @@
     }
     homeData (id: "home") {
       contact {
+        organization
         web
       }
     }

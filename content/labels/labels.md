@@ -39,6 +39,8 @@ global:
 home:
   explore: Explorar
   download: Descarga el documento PDF (63 MB)
-
+contact:
+  phone: Teléfono
+  email: Mail
 
 ---

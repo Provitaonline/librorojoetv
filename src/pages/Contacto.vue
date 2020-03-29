@@ -15,17 +15,17 @@
           <div class="tile ">
             <div class="tile is-parent" style="flex-direction: column;">
               <g-image src="~/assets/svgs/location.svg"/>
-              <h1 class="is-size-3">Provita</h1>
+              <h1 class="is-size-3">{{$page.homeData.contact.organization}}</h1>
               <p v-html="$page.homeData.contact.address"></p>
             </div>
             <div class="tile is-parent" style="flex-direction: column;">
               <g-image src="~/assets/svgs/phone.svg"/>
-              <h1 class="is-size-3">Teléfono</h1>
+              <h1 class="is-size-3">{{$page.labels.contact.phone}}</h1>
               <p v-html="$page.homeData.contact.phone"></p><br>
            </div>
             <div class="tile is-parent" style="flex-direction: column;">
               <g-image src="~/assets/svgs/mail.svg"/>
-              <h1 class="is-size-3">Mail</h1>
+              <h1 class="is-size-3">{{$page.labels.contact.email}}</h1>
               <p><a :href="'mailto:' + $page.homeData.contact.email">{{$page.homeData.contact.email}}</a></p><br>
             </div>
           </div>
@@ -77,12 +77,19 @@
     homeData: homeData (id: "home") {
       heroTitle
       contact {
+        organization
         address
         phone
         email
         web
         banner
         bannerCaption
+      }
+    }
+    labels (id: "labels") {
+      contact {
+        phone
+        email
       }
     }
   }

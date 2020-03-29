@@ -24,6 +24,7 @@ indexCards:
       paisajes vegetales de Venezuela.
     title: Unidades de paisaje
 contact:
+  organization: Provita
   address: >-
     Calle La Joya con Avenida Libertador, Unidad Técnica del Este,
     piso 10, oficina 29-30<br>Chacao ZP 1060<br>Caracas, Venezuela<br><br>
