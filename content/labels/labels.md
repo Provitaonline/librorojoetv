@@ -42,5 +42,6 @@ home:
 contact:
   phone: Teléfono
   email: Mail
-
+vcards:
+  listheading: Lista alfabética de fichas
 ---

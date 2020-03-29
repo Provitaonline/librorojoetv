@@ -22,9 +22,8 @@
       </section>
 
       <section class="section is-center-narrow">
-        <!-- <div class="section-header box is-size-3 is-size-4-mobile has-text-weight-bold">Lista alfabética de fichas</div> -->
         <div class="box">
-          <h1>Lista alfabética de fichas</h1>
+          <h1>{{$page.labels.vcards.listheading}}</h1>
         </div>
 
         <div class="tile box is-ancestor is-size-6 is-size-7-mobile">
@@ -103,6 +102,11 @@
       references {
         referencekey
         reference
+      }
+    }
+    labels (id: "labels") {
+      vcards {
+        listheading
       }
     }
   }
@@ -195,15 +199,6 @@
       InteractiveMap,
       References
     },
-    created() {
-
-    },
-    mounted () {
-
-    },
-    updated() {
-
-    },
     computed: {
       pageTitle() {
         return this.$page.riskCardsIndex.title.replace(/<[^>]*>?/gm, ' ')
@@ -216,8 +211,6 @@
       makeLink(t) {
         return slugify(t, {lower: true})
       }
-    },
-    watch: {
     }
   }
 </script>
