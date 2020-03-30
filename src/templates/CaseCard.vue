@@ -2,7 +2,7 @@
   <Layout>
     <SideBar>
       <template v-slot:title>
-        Estudios de caso
+        {{$page.labels.case.sidepaneltitle}}
       </template>
       <template v-slot:sidebar>
         <div class="box">
@@ -15,7 +15,7 @@
             :banner="$page.caseCard.cardimage"
             bannerHeight="500px"
             :caption="$page.caseCard.cardimagecaption"
-            lead="Estudios de caso"
+            :lead="$page.labels.case.bannerlead"
             link="/casos"
             :title="$page.caseCard.title"
             :authors="$page.caseCard.authors"
@@ -30,7 +30,7 @@
               <div class="card summary-box">
                 <header>
                   <p class="card-header-title has-text-centered is-inline-block">
-                    <b>Paisaje vegetal:</b>&nbsp;<span v-html="$page.caseCard.landscapeunits"></span>
+                    <b>{{$page.labels.case.summary.landscape}}:</b>&nbsp;<span v-html="$page.caseCard.landscapeunits"></span>
                   </p>
                 </header>
                 <div class="card-content">
@@ -38,19 +38,19 @@
                     <div class="columns" style="margin-left: 0; margin-right: 0;">
                       <div class="column card-info-column">
                         <div class="card-info-title">
-                          <b>Localidad:</b>
+                          <b>{{$page.labels.case.summary.locality}}:</b>
                         </div>
                         <div class="card-info-content" v-html="$page.caseCard.locality"></div>
                       </div>
                       <div class="column card-info-column">
                         <div class="card-info-title">
-                          <b>Estados:</b>
+                          <b>{{$page.labels.case.summary.states}}:</b>
                         </div>
                         <div class="card-info-content">{{$page.caseCard.states}}</div>
                       </div>
                       <div class="column card-info-column">
                         <div class="card-info-title">
-                          <b>Área aprox.:</b>
+                          <b>{{$page.labels.case.summary.area}}:</b>
                         </div>
                         <div class="card-info-content" v-if="$page.caseCard.areatext" v-html="$page.caseCard.areatext"><br></div>
                         <div class="card-info-content" v-else>{{$page.caseCard.area | number}} km<sup>2</sup><br></div>
@@ -148,6 +148,18 @@
         color
         legend
         cardPath
+      }
+    }
+    labels (id: "labels") {
+      case {
+        sidepaneltitle
+        bannerlead
+        summary {
+          landscape
+          locality
+          states
+          area
+        }
       }
     }
   }

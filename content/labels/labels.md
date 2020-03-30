@@ -44,4 +44,12 @@ contact:
   email: Mail
 vcards:
   listheading: Lista alfabética de fichas
+case:
+  sidepaneltitle: Estudios de caso
+  bannerlead: Estudios de caso
+  summary:
+    landscape: Paisaje vegetal
+    locality: Localidad
+    states: Estados
+    area: Área aprox.
 ---
