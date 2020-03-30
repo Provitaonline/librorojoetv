@@ -83,4 +83,6 @@ unit:
   bannerlead: Unidades de paisaje
 vegetation:
   bannerlead: Vegetación
+method:
+  bannerlead: Métodos
 ---
