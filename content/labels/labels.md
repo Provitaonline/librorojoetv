@@ -52,4 +52,6 @@ case:
     locality: Localidad
     states: Estados
     area: Área aprox.
+references:
+  title: Bibliografía
 ---
