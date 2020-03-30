@@ -28,7 +28,7 @@
                       </div>
                     </div>
                     <div class="menu-card-button" >
-                      <button class="button is-primary">Explorar</button>
+                      <button class="button is-primary">{{$page.labels.home.explore}}</button>
                     </div>
                   </div>
                 </g-link>
@@ -45,7 +45,7 @@
 
           <div class="container">
             <a href="/files/libro_rojo_ecosistemas_terrestre.pdf" download>
-              <p class="download-text is-size-6 is-size-7-mobile">Descarga el documento PDF (63 MB)&nbsp;&nbsp;
+              <p class="download-text is-size-6 is-size-7-mobile">{{$page.labels.home.download}}&nbsp;&nbsp;
                 <span class="is-size-3">&#10515;</span>
               </p>
             </a>
@@ -58,8 +58,8 @@
 </template>
 
 <page-query>
-  query Home {
-    homeData: homeData (id: "home") {
+  query  {
+    homeData (id: "home") {
       title
       heroTitle
       bannerImage
@@ -69,6 +69,12 @@
         link
         image
         text
+      }
+    }
+    labels (id: "labels") {
+      home {
+        explore
+        download
       }
     }
   }

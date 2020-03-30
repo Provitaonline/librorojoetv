@@ -2,7 +2,7 @@
   <Layout>
     <SideBar>
       <template v-slot:title>
-        Unidades de paisaje
+        {{$page.labels.unit.sidepaneltitle}}
       </template>
       <template v-slot:sidebar>
         <div class="box">
@@ -16,7 +16,7 @@
           <PageBanner
             :banner="$page.unitCard.cardimage"
             :caption="$page.unitCard.cardimagecaption"
-            lead="Unidades de paisaje"
+            :lead="$page.labels.unit.bannerlead"
             link="/unidades"
             :title="$page.unitCard.title"
             />
@@ -78,6 +78,12 @@
         color
         legend
         cardPath
+      }
+    }
+    labels (id: "labels") {
+      unit {
+        sidepaneltitle
+        bannerlead
       }
     }
   }

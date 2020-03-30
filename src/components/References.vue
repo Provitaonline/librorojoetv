@@ -2,7 +2,7 @@
   <div>
     <div v-if="hasHeading" class="is-size-5 has-text-centered">
       <div class="ref-header">
-        <h1 class="ref-header-text">Bibliografía</h1>
+        <h1 class="ref-header-text">{{$static.labels.references.title}}</h1>
         <a @click="showMore = !showMore">
           <span v-if="!showMore"><font-awesome size="lg" :icon="['fas', 'angle-down']"/></span>
           <span v-else><font-awesome size="lg" :icon="['fas', 'angle-up']"/></span>
@@ -23,6 +23,16 @@
     </transition>
   </div>
 </template>
+
+<static-query>
+  query {
+    labels (id: "labels") {
+      references {
+        title
+      }
+    }
+  }
+</static-query>
 
 <style lang="scss" scoped>
   @import "~/assets/style/_variables";

@@ -5,7 +5,7 @@
         <PageBanner
           :banner="$page.vegetationCard.cardimage"
           :caption="$page.vegetationCard.cardimagecaption"
-          lead="Vegetación"
+          :lead="$page.labels.vegetation.bannerlead"
           :title="$page.vegetationCard.title"
           :citationPre="$page.vegetationCard.citationPre"
           :citationPost="$page.vegetationCard.citationPost"
@@ -44,11 +44,15 @@
       }
       content
     }
-
     references: references (id: "unidades") {
       references {
         referencekey
         reference
+      }
+    }
+    labels (id: "labels") {
+      vegetation {
+        bannerlead
       }
     }
   }
