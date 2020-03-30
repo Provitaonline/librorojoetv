@@ -78,4 +78,7 @@ vcard:
   criteria: Criterios
   criteriaversion: Versión:v 1.0
   readmore: Leer más
+unit:
+  sidepaneltitle: Unidades de paisaje
+  bannerlead: Unidades de paisaje
 ---
