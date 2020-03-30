@@ -2,7 +2,7 @@
   <Layout>
     <SideBar>
       <template v-slot:title>
-        Formaciones vegetales
+        {{$page.labels.vcard.sidepaneltitle}}
       </template>
       <template v-slot:sidebar>
         <div class="box">
@@ -15,7 +15,7 @@
           <PageBanner
             :banner="$page.riskCard.cardimage"
             :caption="$page.riskCard.cardimagecaption"
-            lead="Riesgo de colapso"
+            :lead="$page.labels.vcard.bannerlead"
             link="/fichas"
             :title="$page.riskCard.formattedtitle ? $page.riskCard.formattedtitle : $page.riskCard.title"
             :citationPre="$page.riskCard.citationPre"
@@ -33,13 +33,13 @@
           <section class="section is-center-narrow">
             <div class="tile is-vertical is-parent">
               <div class="tile is-child box is-size-5 is-size-6-mobile">
-                <h1>Descripción</h1>
+                <h1>{{$page.labels.vcard.description}}</h1>
                 <TextWithRefsAndPhotos
                   :text="$page.riskCard.description"
                   :refs="$page.references.references"
                   :photos="$page.riskCard.photos">
                 </TextWithRefsAndPhotos>
-                <h1>Distribución</h1>
+                <h1>{{$page.labels.vcard.distribution}}</h1>
                 <TextWithRefsAndPhotos
                   :text="$page.riskCard.distribution"
                   :refs="$page.references.references"
@@ -54,26 +54,28 @@
                     <div class="is-size-6 is-size-7-mobile">
                       <br>
                       <span v-html="$page.riskCard.formattedtitle ? $page.riskCard.formattedtitle : $page.riskCard.title"></span>
-                      <span> - Distribución en 2010, <i>Huber y Oliveira-Miranda (2010)</i></span>
+                      <span v-html="$page.labels.vcard.distributionmapcaption"></span>
                     </div>
                   </figcaption>
                 </div>
-                <h1 v-if="$page.riskCard.areain2010">Cambios en la distribución</h1>
+                <h1 v-if="$page.riskCard.areain2010">{{$page.labels.vcard.distributionchanges}}</h1>
                 <div v-if="$page.riskCard.areain2010" class="tile is-parent" style="padding-top: 0;">
                   <div v-if="$page.riskCard.stateleveltable.length" class="tile is-child is-2"></div>
                   <div v-if="$page.riskCard.stateleveltable.length" class="tile is-child is-8">
-                    <div class="has-text-centered is-size-6 has-text-weight-bold">Superficie estimada (km<sup>2</sup>) por estado:<br>
-                      <span class="is-size-7"><b>(Tabla 1)</b></span>
+                    <div class="has-text-centered is-size-6 has-text-weight-bold">
+                      <span v-html="$page.labels.vcard.areaheading"></span>:
+                      <br>
+                      <span class="is-size-7"><b>({{$page.labels.vcard.table1}})</b></span>
                       <br><br>
                     </div>
                     <table align="center" class="statetable table is-size-6 is-size-7-mobile">
                       <thead>
                         <tr>
-                          <th v-if="$page.riskCard.formationColumn">Formación</th>
-                          <th>Estado</th>
+                          <th v-if="$page.riskCard.formationColumn">{{$page.labels.vcard.formation}}</th>
+                          <th>{{$page.labels.vcard.state}}</th>
                           <th class="has-text-right">1988</th>
                           <th class="has-text-right">2010</th>
-                          <th class="has-text-right">Diferencia</th>
+                          <th class="has-text-right">{{$page.labels.vcard.difference}}</th>
                           <th></th>
                         </tr>
                       </thead>
@@ -103,9 +105,9 @@
                 <div v-if="$page.riskCard.areain2010" class="tile is-parent">
                   <div class="tile is-child is-2"></div>
                   <div class="tile is-child is-8 is-size-6 has-text-centered">
-                    <b>Superficie en 1988 (km<sup>2</sup>): </b>{{$page.riskCard.areain1988 | number}}<br>
-                    <b>Superficie en 2010 (km<sup>2</sup>): </b>{{$page.riskCard.areain2010 | number}}<br>
-                    <span class="is-size-7"><b>(Figuras 1a y 1b)</b></span>
+                    <b>{{$page.labels.vcard.areain1988}} (km<sup>2</sup>): </b>{{$page.riskCard.areain1988 | number}}<br>
+                    <b>{{$page.labels.vcard.areain2010}} (km<sup>2</sup>): </b>{{$page.riskCard.areain2010 | number}}<br>
+                    <span class="is-size-7"><b>({{$page.labels.vcard.figures1aand1b}})</b></span>
                     <ClientOnly>
                       <div v-for="item in $page.riskCard.mapcompare">
                         <br>
@@ -122,10 +124,10 @@
                     </ClientOnly>
                   </div>
                 </div>
-                <h1>Situación a 2010</h1>
+                <h1>{{$page.labels.vcard.nationalriskofcollapse}}</h1>
                 <div class="text-block tile is-child box is-size-5 is-size-6-mobile">
                   <div class="has-text-centered">
-                    <b>Riesgo de colapso a nivel nacional: </b>
+                    <b>{{$page.labels.vcard.nationalriskofcollapse}}: </b>
                     {{threatCategories[$page.riskCard.category].text.toUpperCase()}}
                     <img :src="threatCategories[$page.riskCard.category].img" height="30" width="30" style="margin-bottom: -5px;">
                   </div>
@@ -133,8 +135,8 @@
                 <div class="tile is-parent">
                   <div class="tile is-child is-2"></div>
                   <div class="tile is-child is-8 is-size-6 has-text-centered">
-                    <b>Grado de amenaza 2010: </b><br>
-                    <span class="is-size-7"><b>(Figura 1c)</b></span>
+                    <b>{{$page.labels.vcard.threatlevel}}: </b><br>
+                    <span class="is-size-7"><b>({{$page.labels.vcard.figure1c}})</b></span>
                     <div v-for="item in $page.riskCard.threatlevelmaps">
                       <br>
                       <div class="has-text-centered is-size-7 has-text-weight-bold" >{{item.caption}}</div>
@@ -154,8 +156,8 @@
                 <div class="tile is-parent">
                   <div v-if="$page.riskCard.riskofcolapsestatelevel.length" class="tile is-child is-2"></div>
                   <div v-if="$page.riskCard.riskofcolapsestatelevel.length" class="tile is-child is-8">
-                    <div class="has-text-centered"><b>Riesgo de colapso por {{($page.riskCard.zonelabel).toLowerCase()}}:</b><br>
-                      <span class="is-size-7"><b>(Tabla 2)</b></span>
+                    <div class="has-text-centered"><b>{{$page.labels.vcard.riskofcollapseby}} {{($page.riskCard.zonelabel).toLowerCase()}}:</b><br>
+                      <span class="is-size-7"><b>({{$page.labels.vcard.table2}})</b></span>
                       <br><br>
                     </div>
                     <table align="center" class="risktable table is-size-6 is-size-7-mobile">
@@ -165,13 +167,13 @@
                           <th></th>
                           <th align="center" :colspan="$page.riskCard.criteriaused.length - 1">
                             <!-- <b-tooltip position="is-top" type="is-warning" label="Versión v1.0, 2010"> -->
-                              <b>Criterios</b>
+                              <b>{{$page.labels.vcard.criteria}}</b>
                             <!-- </b-tooltip> -->
                           </th>
                           <th></th>
                         </tr>
                         <tr>
-                          <th v-if="$page.riskCard.formationColumn">Formación</th>
+                          <th v-if="$page.riskCard.formationColumn">{{$page.labels.vcard.formation}}</th>
                           <th>{{$page.riskCard.zonelabel}}</th>
                           <th v-for="value in $page.riskCard.criteriaused" align="center">
                             <b-dropdown v-if="criteria[value]" class="criteria-box" position="is-bottom-left">
@@ -182,7 +184,7 @@
                                 <div class="has-text-weight-bold has-text-centered">Criterio {{value}}<br><br></div>
                                 <span class="has-text-weight-medium">{{criteria[value.charAt(0)]}}</span>
                                 <span v-if="value.length>1"><br><br>{{criteria[value]}}</span>
-                                <small><br><br>Versión:v 1.0</small>
+                                <small><br><br>{{$page.labels.vcard.criteriaversion}}</small>
                               </b-dropdown-item>
                             </b-dropdown>
                             <span v-else v-html="value"></span>
@@ -211,7 +213,7 @@
               <div v-if="$page.riskCard.content != '\n'" class="container is-size-5 has-text-centered">
                 <div v-show="!showMore" @click="showMore = !showMore">
                   <button class="button is-primary is-medium has-text-weight-semibold">
-                    <p v-if="!showMore">Leer más <font-awesome :icon="['fas', 'angle-down']"/></p>
+                    <p v-if="!showMore">{{$page.labels.vcard.readmore}} <font-awesome :icon="['fas', 'angle-down']"/></p>
                   </button>
                 </div>
               </div>
@@ -301,6 +303,33 @@
         legend
         cardPath
         plantformation
+      }
+    }
+    labels (id: "labels") {
+      vcard {
+        sidepaneltitle
+        bannerlead
+        description
+        distribution
+        distributionmapcaption
+        distributionchanges
+        areaheading
+        table1
+        formation
+        state
+        difference
+        areain1988
+        areain2010
+        figures1aand1b
+        situation
+        nationalriskofcollapse
+        threatlevel
+        figure1c
+        riskofcollapseby
+        table2
+        criteria
+        criteriaversion
+        readmore
       }
     }
   }

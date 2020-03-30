@@ -54,4 +54,28 @@ case:
     area: Área aprox.
 references:
   title: Bibliografía
+vcard:
+  sidepaneltitle: Formaciones vegetales
+  bannerlead: Riesgo de colapso
+  description: Descripción
+  distribution: Distribución
+  distributionmapcaption: ' - Distribución en 2010, <i>Huber y Oliveira-Miranda (2010)</i>'
+  distributionchanges: Cambios en la distribución
+  areaheading: Superficie estimada (km<sup>2</sup>) por estado
+  table1: Tabla 1
+  formation: Formación
+  state: Estado
+  difference: Diferencia
+  areain1988: Superficie en 1988
+  areain2010: Superficie en 2010
+  figures1aand1b: Figuras 1a y 1b
+  situation: Situación a 2010
+  nationalriskofcollapse: Riesgo de colapso a nivel nacional
+  threatlevel: Grado de amenaza 2010
+  figure1c: Figura 1c
+  riskofcollapseby: Riesgo de colapso por
+  table2: Tabla 2
+  criteria: Criterios
+  criteriaversion: Versión:v 1.0
+  readmore: Leer más
 ---
