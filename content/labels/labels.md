@@ -81,4 +81,6 @@ vcard:
 unit:
   sidepaneltitle: Unidades de paisaje
   bannerlead: Unidades de paisaje
+vegetation:
+  bannerlead: Vegetación
 ---
