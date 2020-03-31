@@ -168,6 +168,14 @@
     padding-bottom: 8px;
   }
 
+  .dropdown.is-active .dropdown-menu {
+    display: block;
+  }
+
+  .dropdown .dropdown-menu {
+    display: none;
+  }
+
   .search-box>.dropdown-content {
     margin-left:-18px;
     min-width: 500px;
