@@ -9,6 +9,14 @@
     margin-left: 0 !important;
   }
 
+  .dropdown.is-active .dropdown-menu {
+    display: block;
+  }
+
+  .dropdown .dropdown-menu {
+    display: none;
+  }
+
   sup { vertical-align: top; font-size: 0.6em; }
 
   @media only screen and (min-width: 769px) {
