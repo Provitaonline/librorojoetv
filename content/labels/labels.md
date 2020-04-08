@@ -39,6 +39,8 @@ global:
 home:
   explore: Explorar
   download: Descarga el documento PDF (63 MB)
+banner:
+  docCitation: 'Libro Rojo de los Ecosistemas Terrestres de Venezuela. Provita, Shell Venezuela, Lenovo (Venezuela). Caracas: Venezuela.'
 map:
   mapInstructions:
     - Haz click en una de las áreas para ver la ficha de información

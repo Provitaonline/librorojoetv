@@ -42,5 +42,3 @@ export const threatCategories = {
     img: require('../svgs/ne-icon.svg')
   }
 }
-
-export const docCitation = "Libro Rojo de los Ecosistemas Terrestres de Venezuela. Provita, Shell Venezuela, Lenovo (Venezuela). Caracas: Venezuela."

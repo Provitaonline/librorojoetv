@@ -33,6 +33,18 @@
   </div>
 </template>
 
+<static-query>
+
+  query pagebanner {
+    labels (id: "labels") {
+      banner {
+        docCitation
+      }
+    }
+  }
+
+</static-query>
+
 <style lang="scss" scoped>
   @import "~/assets/style/_variables";
 
@@ -117,7 +129,6 @@
 
 <script>
   import BannerInfo from '~/components/BannerInfo.vue'
-  import {docCitation} from '~/assets/js/siteConfig.js'
 
   import ClipboardJS from 'clipboard'
   let clipboard
@@ -152,11 +163,14 @@
           '--minus-mobile-banner-height': '-' + mobileBannerHeight,
           '--hero-padding-bottom': this.heroPaddingBottom
         },
-        docCitation: docCitation
+        docCitation: null
       }
     },
     components: {
       BannerInfo
+    },
+    created() {
+      this.docCitation = this.$static.labels.banner.docCitation
     },
     mounted() {
       clipboard = new ClipboardJS('.copy-citation-to-clipboard')
