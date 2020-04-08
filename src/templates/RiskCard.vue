@@ -330,6 +330,10 @@
         criteria
         criteriaversion
         readmore
+        criteriaLabels {
+          code
+          text
+        }
       }
     }
   }
@@ -442,7 +446,7 @@
 
 <script>
 
-  import {threatCategories, criteria} from '~/assets/js/siteConfig.js'
+  import {threatCategories} from '~/assets/js/siteConfig.js'
   import PageBanner from '~/components/PageBanner.vue'
   import CollapsibleList from '~/components/CollapsibleList.vue'
   import TextWithRefsAndPhotos from '~/components/TextWithRefsAndPhotos.vue'
@@ -456,12 +460,14 @@
       title: 'Ficha'
     },
     created() {
-
+      this.$page.labels.vcard.criteriaLabels.forEach(item => {
+        this.criteria[item.code] = item.text
+      })
     },
     data() {
       return {
         threatCategories: threatCategories,
-        criteria: criteria,
+        criteria: {},
         showMore: false,
         currentSlug: null,
         pathParent: null

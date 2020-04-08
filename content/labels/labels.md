@@ -78,6 +78,56 @@ vcard:
   criteria: Criterios
   criteriaversion: Versión:v 1.0
   readmore: Leer más
+  criteriaLabels:
+    - code: A
+      text: Disminución en el corto plazo (en distribución o en función ecológica)
+    - code: B
+      text: Disminución histórica (en distribución o en función ecológica)
+    - code: C
+      text: 'Distribución actual pequeña y en disminución o en muy pocas localidades (en distribución
+      o en función ecológica)'
+    - code: A1
+      text: 'Reducción observada, estimada, inferida o sospechada en su distribución, durante
+      los últimos 50 años: CR ≥ 80%, EN ≥ 50%, VU ≥ 30%'
+    - code: A2
+      text: 'Reducción proyectada o sospechada en su distribución, en los próximos 50 años:
+      CR ≥ 80%, EN ≥ 50%, VU ≥ 30%'
+    - code: A3
+      text: 'Reducción observada, estimada, inferida, proyectada o sospechada en su distribución
+      pasada o futura, en un intervalo de 50 años, que incluye el pasado y el futuro:
+      CR ≥ 80%, EN ≥ 50%, VU ≥ 30%'
+    - code: A4
+      text: 'Reducción o posible reducción en su función ecológica, en al menos un proceso
+      ecológico fundamental (en relación con un estado de referencia apropiado para
+      el ecosistema): CR - muy severa, en ≥80% de su distribución durante los últimos
+      o próximos 50 años, EN - muy severa, en ≥50% de su distribución durante los últimos
+      o próximos 50 años,  EN - severa, en ≥80% de su distribución durante los últimos
+      o próximos 50 años, VU - muy severa, en ≥30% de su distribución durante los últimos
+      o próximos 50 años, VU - severa, en ≥50% de su distribución durante los últimos
+      o próximos 50 años, VU - moderadamente severa, en ≥80% de su distribución durante
+      los últimos o próximos 50 años'
+    - code: B1
+      text: 'Reducción estimada, inferida o sospechada en su distribución durante los últimos
+      500 años: CR ≥ 90%, EN ≥ 70%, VU ≥ 50%'
+    - code: B2
+      text: 'Reducción muy severa en al menos un proceso ecológico fundamental de su distribución,
+      durante los últimos 500 años (en relación con un estado de referencia apropiado
+      para el ecosistema): CR ≥ 90%, EN ≥ 70%, VU ≥ 50%'
+    - code: C1
+      text: 'Extensión estimada en ≤ 100 km² (CR) , ≤ 5.000 km² (EN), ≤ 20.000 km² (VU) con
+      reducción persistente o severa observada, estimada, inferida o sospechada en distribución
+      o en al menos un proceso ecológico fundamental, o una restricción del ecosistema
+      a una localidad (CR), 5 o menos localidades (EN), o 10 o menos localidades (VU)'
+    - code: C2
+      text: 'Área de ocupación estimada en ≤ 10 km² (CR), ≤ 500 km² (EN), o ≤ 2.000 km² (VU)
+      con reducción persistente o severa observada, estimada, inferida o sospechada
+      en distribución o en al menos un proceso ecológico fundamental; o una restricción
+      del ecosistema a una localidad (CR), 5 o menos localidades (EN), o 10 o menos
+      localidades (VU)'
+    - code: D
+      text: 'Distribución actual muy pequeña, con posibles amenazas serias, con o sin evidencia
+      de reducciones pasadas (en distribución o en función ecológica), estimada en ≤
+      5 km² (CR), ≤ 50 km² (EN), ≤ 100 km² (VU)'
 unit:
   sidepaneltitle: Unidades de paisaje
   bannerlead: Unidades de paisaje
