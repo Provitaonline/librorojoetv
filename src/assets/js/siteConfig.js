@@ -43,10 +43,4 @@ export const threatCategories = {
   }
 }
 
-export const mapInstructions = [
-  'Haz click en una de las áreas para ver la ficha de información',
-  'Haz clic en uno de los títulos de la leyenda para ver la ficha de información',
-  'Haz clic en uno de los elementos de color para ver sólo ese en el mapa'
-]
-
 export const docCitation = "Libro Rojo de los Ecosistemas Terrestres de Venezuela. Provita, Shell Venezuela, Lenovo (Venezuela). Caracas: Venezuela."

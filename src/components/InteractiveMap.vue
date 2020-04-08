@@ -93,6 +93,14 @@
 
 <static-query>
 
+  query map {
+    labels (id: "labels") {
+      map {
+        mapInstructions
+      }
+    }
+  }
+
 </static-query>
 
 <style lang="scss" scoped>
@@ -251,9 +259,6 @@
   import axios from 'axios'
   import slugify from 'slugify'
   import * as topojson from 'topojson-client'
-  import {mapInstructions} from '~/assets/js/siteConfig.js'
-
-  //import bulmaSlider from 'bulma-slider/dist/js/bulma-slider.min.js'
 
   slugify.extend({'/': '-'})
 
@@ -444,7 +449,7 @@
     },
     created() {
       this.tileProviders[(this.initialTileProvider ? this.initialTileProvider : 0)].visible = true
-      this.mapInstructions = mapInstructions
+      this.mapInstructions = this.$static.labels.map.mapInstructions
     },
     mounted () {
       if (process.isClient) {
