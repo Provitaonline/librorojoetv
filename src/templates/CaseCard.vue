@@ -71,7 +71,7 @@
                               <div :style='$page.caseCard.leftJustifyIcons ? "" : "margin: auto;"'>
                                 <b-tooltip :label="xtractedIcon(item).text" position="is-top" type="is-warning">
                                   <div class="iconInTable" style="display: inline-block">
-                                    <img :src="xtractedIcon(item).img">
+                                    <img :src="xtractedIcon(item).img.src">
                                   </div>
                                 </b-tooltip>
                               </div>
@@ -161,6 +161,13 @@
           area
         }
       }
+      global {
+        threatCategories {
+          code
+          text
+          img
+        }
+      }
     }
   }
 </page-query>
@@ -235,7 +242,6 @@
 </style>
 
 <script>
-  import {threatCategories} from '~/assets/js/siteConfig.js'
   import PageBanner from '~/components/PageBanner.vue'
   import CollapsibleList from '~/components/CollapsibleList.vue'
   import TextWithRefsAndPhotos from '~/components/TextWithRefsAndPhotos.vue'
@@ -248,12 +254,15 @@
     },
     data() {
       return {
-        threatCategories: threatCategories,
+        threatCategories: {},
         categoryIcon: null,
         showMore: false
       }
     },
-    mounted () {
+    created() {
+      this.$page.labels.global.threatCategories.forEach(item => {
+        this.threatCategories[item.code] = {text: item.text, img: item.img}
+      })
     },
     beforeRouteUpdate (to, from, next) {
       this.showMore = false
@@ -272,10 +281,10 @@
         item.replace(/\{.*?\}/, function (match) {
           iconKey = match.replace(/[{\{\}}]/g, '')
         })
-        return threatCategories[iconKey]
+        return this.threatCategories[iconKey]
       },
       iconText: function(item) {
-        return threatCategories[item] ? '' : item.replace(/\{.*?\}/, '')
+        return this.threatCategories[item] ? '' : item.replace(/\{.*?\}/, '')
       }
     },
     computed: {
