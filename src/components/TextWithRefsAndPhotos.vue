@@ -11,7 +11,6 @@
         threatCategories {
           code
           text
-          color
           img
         }
       }
