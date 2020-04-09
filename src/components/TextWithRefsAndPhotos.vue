@@ -175,7 +175,7 @@ function processContent(text, photos, inlineFigs, threatCategories) {
         return `
           <b-tooltip label=" ` + threatCategories[item].text + `" position="is-top" type="is-warning">
             <div style="width: 25px; height: 25px; display: inline-block">
-              <img src=` + threatCategories[item].img + `>
+              <img :src="threatCategories['` + item + `'].img.src">
             </div>
           </b-tooltip>
         `
