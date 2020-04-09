@@ -77,7 +77,6 @@
   import PageBanner from '~/components/PageBanner.vue'
   import TextWithRefsAndPhotos from '~/components/TextWithRefsAndPhotos.vue'
   import References from '~/components/References.vue'
-  import {threatCategories} from '~/assets/js/siteConfig.js'
 
   slugify.extend({'/': '-'})
 
@@ -85,7 +84,6 @@
     metaInfo: {
       title: 'Unidades'
     },
-    threatCategories: threatCategories,
     data() {
       let self = this
       return {
