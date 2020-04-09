@@ -36,9 +36,9 @@
                   </figure>
                   <div>
                     <div style="display: flex;">
-                      <b-tooltip :label="$options.threatCategories[item.node.category].text" position="is-top" type="is-warning">
+                      <b-tooltip :label="threatCategories[item.node.category].text" position="is-top" type="is-warning">
                         <div class="iconInTable">
-                          <img :src="$options.threatCategories[item.node.category].img"></img>
+                          <img :src="threatCategories[item.node.category].img.src"></img>
                         </div>
                       </b-tooltip>
                       &nbsp;&nbsp;<g-link :to="'/fichas/' + makeLink(item.node.title)"><strong v-html="item.node.title"></strong></g-link>
@@ -108,6 +108,13 @@
       vcards {
         listheading
       }
+      global {
+        threatCategories {
+          code
+          text
+          img
+        }
+      }
     }
   }
 </page-query>
@@ -138,7 +145,6 @@
   import InteractiveMap from '~/components/InteractiveMap.vue'
   import PageBanner from '~/components/PageBanner.vue'
   import References from '~/components/References.vue'
-  import {threatCategories} from '~/assets/js/siteConfig.js'
 
   slugify.extend({'/': '-'})
 
@@ -146,10 +152,10 @@
     metaInfo: {
       title: 'Fichas'
     },
-    threatCategories: threatCategories,
     data() {
       let self = this
       return {
+        threatCategories: {},
         geoJsonResources: [
           {
             url: '/mapdata/FormacionesVegetales.topojson',
@@ -198,6 +204,11 @@
       PageBanner,
       InteractiveMap,
       References
+    },
+    created() {
+      this.$page.labels.global.threatCategories.forEach(item => {
+        this.threatCategories[item.code] = {text: item.text, img: item.img}
+      })
     },
     computed: {
       pageTitle() {
