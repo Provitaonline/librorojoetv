@@ -24,7 +24,7 @@
             <template v-slot:follow>
               <hr align="left" width="50%" style="margin: 1rem 0">
               <div style="display: flex; height: 50px;" class= "hero-text">
-                <img :src="threatCategories[$page.riskCard.category].img" height="50" width="50" />
+                <img :src="threatCategories[$page.riskCard.category].img.src" height="50" width="50" />
                 <span style="font-size: small; margin-top: auto; margin-bottom: auto; padding-left: 10px;"><b>{{threatCategories[$page.riskCard.category].text}}</b></span>
               </div>
             </template>
@@ -129,7 +129,7 @@
                   <div class="has-text-centered">
                     <b>{{$page.labels.vcard.nationalriskofcollapse}}: </b>
                     {{threatCategories[$page.riskCard.category].text.toUpperCase()}}
-                    <img :src="threatCategories[$page.riskCard.category].img" height="30" width="30" style="margin-bottom: -5px;">
+                    <img :src="threatCategories[$page.riskCard.category].img.src" height="30" width="30" style="margin-bottom: -5px;">
                   </div>
                 </div>
                 <div class="tile is-parent">
@@ -199,7 +199,7 @@
                           <td align="center" v-for="value in item.threatcategories">
                             <b-tooltip v-if="threatCategories[value]" :label="threatCategories[value] ? threatCategories[value].text : ''" position="is-top" type="is-warning">
                               <div class="iconInTable">
-                                <img :src="threatCategories[value].img">
+                                <img :src="threatCategories[value].img.src">
                               </div>
                             </b-tooltip>
                             <div v-else>{{value}}</div>
@@ -335,6 +335,14 @@
           text
         }
       }
+      global {
+        threatCategories {
+          code
+          text
+          color
+          img
+        }
+      }
     }
   }
 </page-query>
@@ -446,7 +454,6 @@
 
 <script>
 
-  import {threatCategories} from '~/assets/js/siteConfig.js'
   import PageBanner from '~/components/PageBanner.vue'
   import CollapsibleList from '~/components/CollapsibleList.vue'
   import TextWithRefsAndPhotos from '~/components/TextWithRefsAndPhotos.vue'
@@ -463,10 +470,13 @@
       this.$page.labels.vcard.criteriaLabels.forEach(item => {
         this.criteria[item.code] = item.text
       })
+      this.$page.labels.global.threatCategories.forEach(item => {
+        this.threatCategories[item.code] = {text: item.text, color: item.color, img: item.img}
+      })
     },
     data() {
       return {
-        threatCategories: threatCategories,
+        threatCategories: {},
         criteria: {},
         showMore: false,
         currentSlug: null,
