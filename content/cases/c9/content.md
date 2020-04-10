@@ -5,8 +5,7 @@ authors: "Giuseppe Colonnello, María Idalí Tachack-García, Fabián Carrasquel
 citationPre: "Colonnello, G., M.I. Tachack-García & F. Carrasquel (2010). Transformación de los ecosistemas terrestres anegables del tramo central del bajo Orinoco. Pp: 287-292. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
 citationPost: ""
 cardimage: "./pancarta.jpg"
-landscapeunits: "Los llanos (<a href='/unidades/b#b23'>B23</a>), (<a href='/unidades/b#b27'>B27</a>), Sistema de
-colinas y sierras bajas piemontanas del Escudo Guayanés (<a href='/unidades/c#c21'>C21</a>), (<a href='/unidades/c#c22'>C22</a>)"
+landscapeunits: "Los llanos (<a href='/unidades/b#b23'>B23</a>), (<a href='/unidades/b#b27'>B27</a>), Sistema de colinas y sierras bajas piemontanas del Escudo Guayanés (<a href='/unidades/c#c21'>C21</a>), (<a href='/unidades/c#c22'>C22</a>)"
 locality: "Tramo central del bajo Orinoco"
 states: "Anzoátegui, Bolívar, Guárico"
 area: 6500
