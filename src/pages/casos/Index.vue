@@ -57,7 +57,6 @@
   import slugify from 'slugify';
   import InteractiveMap from '~/components/InteractiveMap.vue'
   import PageBanner from '~/components/PageBanner.vue'
-  import {threatCategories} from '~/assets/js/siteConfig.js'
 
   slugify.extend({'/': '-'})
 
@@ -65,7 +64,6 @@
     metaInfo: {
       title: 'Casos'
     },
-    threatCategories: threatCategories,
     data() {
       let self = this
       return {

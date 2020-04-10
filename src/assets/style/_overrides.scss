@@ -49,6 +49,23 @@
 a.navbar-item {
   padding-top: 0.1rem;
   padding-bottom: 0.1rem;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+a.navbar-link {
+  padding-left: 0.625em;
+}
+
+a.navbar-link.is-arrowless {
+  padding-right: 0.625em !important;
+}
+
+.navbar-link:not(.is-arrowless) {
+  padding-right: 2em;
+  &::after {
+    right: 0.625em;
+  }
 }
 
 .navbar-item img {

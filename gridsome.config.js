@@ -19,6 +19,13 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
+        path: 'content/labels/labels.md',
+        typeName: 'Labels'
+      }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
         path: 'content/vcards/**/content.md',
         typeName: 'RiskCard',
         remark:{
@@ -169,6 +176,41 @@ module.exports = {
             sortAttrs: true
           }
         ]
+      }
+    },
+    {
+      use: 'gridsome-plugin-flexsearch',
+      options: {
+        chunk: true,
+        profile: 'memory',
+        collections: [
+          {
+            typeName: 'RiskCard',
+            indexName: 'RiskCard',
+            fields: ['title']
+          },
+          {
+            typeName: 'CaseCard',
+            indexName: 'CaseCard',
+            fields: ['title']
+          },
+          {
+            typeName: 'UnitCard',
+            indexName: 'UnitCard',
+            fields: ['title']
+          },
+          {
+            typeName: 'MethodCard',
+            indexName: 'MethodCard',
+            fields: ['title']
+          },
+          {
+            typeName: 'VegetationCard',
+            indexName: 'VegetationCard',
+            fields: ['title']
+          }
+        ],
+        searchFields: ['title', 'description', 'distribution', 'content']
       }
     }
   ],

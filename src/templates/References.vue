@@ -6,7 +6,7 @@
         :banner="$page.references.banner"
         :lead="$page.references.title"
         :link="'/' + linkToParent"
-        title="Bibliografía"
+        :title="$page.labels.references.title"
         />
       </PageBanner>
 
@@ -28,6 +28,11 @@
       references {
         referencekey
         reference
+      }
+    }
+    labels (id: "labels") {
+      references {
+        title
       }
     }
   }

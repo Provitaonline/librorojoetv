@@ -22,9 +22,8 @@
       </section>
 
       <section class="section is-center-narrow">
-        <!-- <div class="section-header box is-size-3 is-size-4-mobile has-text-weight-bold">Lista alfabética de fichas</div> -->
         <div class="box">
-          <h1>Lista alfabética de fichas</h1>
+          <h1>{{$page.labels.vcards.listheading}}</h1>
         </div>
 
         <div class="tile box is-ancestor is-size-6 is-size-7-mobile">
@@ -37,9 +36,9 @@
                   </figure>
                   <div>
                     <div style="display: flex;">
-                      <b-tooltip :label="$options.threatCategories[item.node.category].text" position="is-top" type="is-warning">
+                      <b-tooltip :label="threatCategories[item.node.category].text" position="is-top" type="is-warning">
                         <div class="iconInTable">
-                          <img :src="$options.threatCategories[item.node.category].img"></img>
+                          <img :src="threatCategories[item.node.category].img.src"></img>
                         </div>
                       </b-tooltip>
                       &nbsp;&nbsp;<g-link :to="'/fichas/' + makeLink(item.node.title)"><strong v-html="item.node.title"></strong></g-link>
@@ -105,6 +104,18 @@
         reference
       }
     }
+    labels (id: "labels") {
+      vcards {
+        listheading
+      }
+      global {
+        threatCategories {
+          code
+          text
+          img
+        }
+      }
+    }
   }
 </page-query>
 
@@ -134,7 +145,6 @@
   import InteractiveMap from '~/components/InteractiveMap.vue'
   import PageBanner from '~/components/PageBanner.vue'
   import References from '~/components/References.vue'
-  import {threatCategories} from '~/assets/js/siteConfig.js'
 
   slugify.extend({'/': '-'})
 
@@ -142,10 +152,10 @@
     metaInfo: {
       title: 'Fichas'
     },
-    threatCategories: threatCategories,
     data() {
       let self = this
       return {
+        threatCategories: {},
         geoJsonResources: [
           {
             url: '/mapdata/FormacionesVegetales.topojson',
@@ -196,13 +206,9 @@
       References
     },
     created() {
-
-    },
-    mounted () {
-
-    },
-    updated() {
-
+      this.$page.labels.global.threatCategories.forEach(item => {
+        this.threatCategories[item.code] = {text: item.text, img: item.img}
+      })
     },
     computed: {
       pageTitle() {
@@ -216,8 +222,6 @@
       makeLink(t) {
         return slugify(t, {lower: true})
       }
-    },
-    watch: {
     }
   }
 </script>

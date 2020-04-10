@@ -4,9 +4,31 @@
   </div>
 </template>
 
+<static-query>
+  query {
+    labels (id: "labels") {
+      global {
+        threatCategories {
+          code
+          text
+          img
+        }
+      }
+    }
+  }
+</static-query>
+
 <style lang="scss">
   .dropdown {
     margin-left: 0 !important;
+  }
+
+  .dropdown.is-active .dropdown-menu {
+    display: block;
+  }
+
+  .dropdown .dropdown-menu {
+    display: none;
   }
 
   sup { vertical-align: top; font-size: 0.6em; }
@@ -27,7 +49,6 @@
 <script>
 import slugify from 'slugify'
 import VRuntimeTemplate from 'v-runtime-template'
-import {threatCategories} from '~/assets/js/siteConfig.js'
 import ClipboardJS from 'clipboard'
 
 let clipboard
@@ -104,7 +125,7 @@ function photoItemLabel (item) {
   return item.trim() + ` <small><font-awesome size="xs" :icon="['fas', 'camera']"/></small>`
 }
 
-function processContent(text, photos, inlineFigs) {
+function processContent(text, photos, inlineFigs, threatCategories) {
 
   // Replace mardownified content <p> with <div> so that <div> elements can be inserted
   // Add class to table elements
@@ -153,7 +174,7 @@ function processContent(text, photos, inlineFigs) {
         return `
           <b-tooltip label=" ` + threatCategories[item].text + `" position="is-top" type="is-warning">
             <div style="width: 25px; height: 25px; display: inline-block">
-              <img src=` + threatCategories[item].img + `>
+              <img :src="threatCategories['` + item + `'].img.src">
             </div>
           </b-tooltip>
         `
@@ -195,8 +216,14 @@ export default {
   },
   data () {
     return {
-      isImageModalActive: false
+      isImageModalActive: false,
+      threatCategories: {}
     }
+  },
+  created() {
+    this.$static.labels.global.threatCategories.forEach(item => {
+      this.threatCategories[item.code] = {text: item.text, img: item.img}
+    })
   },
   mounted() {
     document.addEventListener('click', documentClickHandler)
@@ -221,7 +248,7 @@ export default {
       let inlineFigs = []
       let text
       if (this.isContent) {
-        text = processContent(this.text, this.photos, inlineFigs)
+        text = processContent(this.text, this.photos, inlineFigs, this.threatCategories)
       } else {
         text = this.text
       }

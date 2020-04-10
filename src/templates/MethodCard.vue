@@ -5,7 +5,7 @@
         <PageBanner
           :banner="$page.methodCard.cardimage"
           :caption="$page.methodCard.cardimagecaption"
-          lead="Métodos"
+          :lead="$page.labels.method.bannerlead"
           :title="$page.methodCard.title"
           :citationPre="$page.methodCard.citationPre"
           :citationPost="$page.methodCard.citationPost"
@@ -49,6 +49,11 @@
         isCentered
       }
       content
+    }
+    labels (id: "labels") {
+      method {
+        bannerlead
+      }
     }
   }
 </page-query>

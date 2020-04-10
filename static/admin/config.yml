@@ -35,6 +35,7 @@ collections:
           {label: "Imagen", name: "image", widget: "string"},
           {label: "Texto", name: "text", widget: "string"}]}
       - {label: "Contacto", name: "contact", widget: "object", fields: [
+          {label: "Organización", name: "organization", widget: "string"},
           {label: "Dirección", name: "address", widget: "string"},
           {label: "Teléfonos", name: "phone", widget: "string"},
           {label: "email", name: "email", widget: "string"},

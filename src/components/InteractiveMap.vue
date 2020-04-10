@@ -59,7 +59,7 @@
     <div class="legend-block is-size-6 has-text-left">
       <div class="columns">
         <div class="column is-one-quarter">
-          <p class="is-size-5 has-text-weight-bold">Instrucciones</p>
+          <p class="is-size-5 has-text-weight-bold">{{$static.labels.map.instructions}}</p>
           <div v-for="instruction in mapInstructions" class="legend-box">
             <g-image src="~/assets/svgs/map-instructions.svg"></g-image>
             <span class="instructions-text">{{instruction}}</span>
@@ -67,7 +67,7 @@
           <transition name="fade" appear>
             <a v-show="!isShowAll" class="legend-box" @click="legendClick({name: 'all'})">
               <g-image src="~/assets/svgs/view-all.svg" class="view-all-icon"></g-image>
-              <span class="instructions-text">Clic para ver todas</span>
+              <span class="instructions-text">{{$static.labels.map.clicktoseeall}}</span>
             </a>
           </transition>
         </div>
@@ -92,6 +92,16 @@
 </template>
 
 <static-query>
+
+  query map {
+    labels (id: "labels") {
+      map {
+        instructions
+        mapInstructions
+        clicktoseeall
+      }
+    }
+  }
 
 </static-query>
 
@@ -251,9 +261,6 @@
   import axios from 'axios'
   import slugify from 'slugify'
   import * as topojson from 'topojson-client'
-  import {mapInstructions} from '~/assets/js/siteConfig.js'
-
-  //import bulmaSlider from 'bulma-slider/dist/js/bulma-slider.min.js'
 
   slugify.extend({'/': '-'})
 
@@ -444,7 +451,7 @@
     },
     created() {
       this.tileProviders[(this.initialTileProvider ? this.initialTileProvider : 0)].visible = true
-      this.mapInstructions = mapInstructions
+      this.mapInstructions = this.$static.labels.map.mapInstructions
     },
     mounted () {
       if (process.isClient) {

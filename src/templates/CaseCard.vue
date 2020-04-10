@@ -2,7 +2,7 @@
   <Layout>
     <SideBar>
       <template v-slot:title>
-        Estudios de caso
+        {{$page.labels.case.sidepaneltitle}}
       </template>
       <template v-slot:sidebar>
         <div class="box">
@@ -15,7 +15,7 @@
             :banner="$page.caseCard.cardimage"
             bannerHeight="500px"
             :caption="$page.caseCard.cardimagecaption"
-            lead="Estudios de caso"
+            :lead="$page.labels.case.bannerlead"
             link="/casos"
             :title="$page.caseCard.title"
             :authors="$page.caseCard.authors"
@@ -30,7 +30,7 @@
               <div class="card summary-box">
                 <header>
                   <p class="card-header-title has-text-centered is-inline-block">
-                    <b>Paisaje vegetal:</b>&nbsp;<span v-html="$page.caseCard.landscapeunits"></span>
+                    <b>{{$page.labels.case.summary.landscape}}:</b>&nbsp;<span v-html="$page.caseCard.landscapeunits"></span>
                   </p>
                 </header>
                 <div class="card-content">
@@ -38,19 +38,19 @@
                     <div class="columns" style="margin-left: 0; margin-right: 0;">
                       <div class="column card-info-column">
                         <div class="card-info-title">
-                          <b>Localidad:</b>
+                          <b>{{$page.labels.case.summary.locality}}:</b>
                         </div>
                         <div class="card-info-content" v-html="$page.caseCard.locality"></div>
                       </div>
                       <div class="column card-info-column">
                         <div class="card-info-title">
-                          <b>Estados:</b>
+                          <b>{{$page.labels.case.summary.states}}:</b>
                         </div>
                         <div class="card-info-content">{{$page.caseCard.states}}</div>
                       </div>
                       <div class="column card-info-column">
                         <div class="card-info-title">
-                          <b>Área aprox.:</b>
+                          <b>{{$page.labels.case.summary.area}}:</b>
                         </div>
                         <div class="card-info-content" v-if="$page.caseCard.areatext" v-html="$page.caseCard.areatext"><br></div>
                         <div class="card-info-content" v-else>{{$page.caseCard.area | number}} km<sup>2</sup><br></div>
@@ -71,7 +71,7 @@
                               <div :style='$page.caseCard.leftJustifyIcons ? "" : "margin: auto;"'>
                                 <b-tooltip :label="xtractedIcon(item).text" position="is-top" type="is-warning">
                                   <div class="iconInTable" style="display: inline-block">
-                                    <img :src="xtractedIcon(item).img">
+                                    <img :src="xtractedIcon(item).img.src">
                                   </div>
                                 </b-tooltip>
                               </div>
@@ -150,6 +150,25 @@
         cardPath
       }
     }
+    labels (id: "labels") {
+      case {
+        sidepaneltitle
+        bannerlead
+        summary {
+          landscape
+          locality
+          states
+          area
+        }
+      }
+      global {
+        threatCategories {
+          code
+          text
+          img
+        }
+      }
+    }
   }
 </page-query>
 
@@ -223,7 +242,6 @@
 </style>
 
 <script>
-  import {threatCategories} from '~/assets/js/siteConfig.js'
   import PageBanner from '~/components/PageBanner.vue'
   import CollapsibleList from '~/components/CollapsibleList.vue'
   import TextWithRefsAndPhotos from '~/components/TextWithRefsAndPhotos.vue'
@@ -236,12 +254,15 @@
     },
     data() {
       return {
-        threatCategories: threatCategories,
+        threatCategories: {},
         categoryIcon: null,
         showMore: false
       }
     },
-    mounted () {
+    created() {
+      this.$page.labels.global.threatCategories.forEach(item => {
+        this.threatCategories[item.code] = {text: item.text, img: item.img}
+      })
     },
     beforeRouteUpdate (to, from, next) {
       this.showMore = false
@@ -260,10 +281,10 @@
         item.replace(/\{.*?\}/, function (match) {
           iconKey = match.replace(/[{\{\}}]/g, '')
         })
-        return threatCategories[iconKey]
+        return this.threatCategories[iconKey]
       },
       iconText: function(item) {
-        return threatCategories[item] ? '' : item.replace(/\{.*?\}/, '')
+        return this.threatCategories[item] ? '' : item.replace(/\{.*?\}/, '')
       }
     },
     computed: {
