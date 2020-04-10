@@ -1,38 +1,35 @@
 ---
 id: home
-title: 'Página principal, acerca de y contacto'
+title: Página principal, acerca de y contacto
 heroTitle: Libro rojo de los ecosistemas terrestres de Venezuela
 bannerImage: ./home-hero-image.jpg
 bannerCaption: Laguna de Canaima, estado Bolívar. <i>Román Rangel</i>
 indexCards:
   - image: ./riesgo.svg
     link: /fichas/
-    text: >-
-      Cambios temporales en distribución geográfica y riesgos de colapso a
-      nivel nacional y estadal.
+    text: Cambios temporales en distribución geográfica y riesgos de colapso a nivel
+      nacional y estadal.
     title: Riesgo de colapso
   - image: ./casos.svg
     link: /casos/
-    text: >-
-      Aplicación de las categorías y criterios de las listas rojas de
+    text: Aplicación de las categorías y criterios de las listas rojas de
       ecosistemas a diferentes escalas geográficas.
     title: Estudios de caso
   - image: ./unidades.svg
     link: /unidades/
-    text: >-
-      Clasificación, descripción y distribución geográfica de los principales
+    text: Clasificación, descripción y distribución geográfica de los principales
       paisajes vegetales de Venezuela.
     title: Unidades de paisaje
 contact:
   organization: Provita
-  address: >-
-    Calle La Joya con Avenida Libertador, Unidad Técnica del Este,
-    piso 10, oficina 29-30<br>Chacao ZP 1060<br>Caracas, Venezuela<br><br>
+  address: Calle La Joya con Avenida Libertador, Unidad Técnica del Este, piso 10,
+    oficina 29-30<br>Chacao ZP 1060<br>Caracas, Venezuela<br><br>
   email: informacion@provitaonline.org
-  phone: '(58) (212) 2656996'
-  web: 'https://www.provita.org.ve/'
-  banner: './banner-contact.jpg'
-  bannerCaption: 'Sistema de colinas y sierras bajas piemontanas del Escudo Guayanés, Canaima, estado Bolívar. <i>Rebecca Miller</i>'
+  phone: (58) (212) 2656996
+  web: https://www.provita.org.ve/
+  banner: ./banner-contact.jpg
+  bannerCaption: Sistema de colinas y sierras bajas piemontanas del Escudo
+    Guayanés, Canaima, estado Bolívar. <i>Rebecca Miller</i>
 about:
   title: Acerca del libro rojo<br>de los ecosistemas terrestres<br>de Venezuela
   citationPre: Rodríguez, J.P., F. Rojas-Suárez & D. Giraldo Hernández (eds.) (2010).
@@ -40,21 +37,20 @@ about:
   cardimage: ./foto-1.jpg
   cardimagecaption: Cotorra cabeciamarilla (<i>Amazona barbadensis</i>). <i>Thea Segall</i>
   photos:
-    - photocaption: 'Rio en cima del Auyantepuy, estado Bolívar. <i>Román Rangel</i>'
+    - photocaption: Rio en cima del Auyantepuy, estado Bolívar. <i>Román Rangel</i>
       photokey: Foto 2
       photourl: ./foto-2.jpg
-    - photocaption: 'Laguna de Canaima, estado Bolívar. <i>Román Rangel</i>'
+    - photocaption: Laguna de Canaima, estado Bolívar. <i>Román Rangel</i>
       photokey: Foto 3
       photourl: ./foto-3.jpg
     - photocaption: Danta (<i>Tapirus terrestris</i>). <i>Karl Weidmann</i>
       photokey: Foto 4
       photourl: ./foto-4.jpg
-    - photocaption: 'Río Sipapo, estado Amazonas. <i>Lucía Pizzani</i>'
+    - photocaption: Río Sipapo, estado Amazonas. <i>Lucía Pizzani</i>
       photokey: Foto 5
       photourl: ./foto-5.jpg
-    - photocaption: >-
-        Valle del río Chama, sector Lagunillas, estado Mérida. <i>José Antonio
-        González-Carcacía</i>
+    - photocaption: Valle del río Chama, sector Lagunillas, estado Mérida. <i>José
+        Antonio González-Carcacía</i>
       photokey: Foto 6
       photourl: ./foto-6.jpg
 ---
