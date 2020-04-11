@@ -7,7 +7,7 @@ bannerCaption: Laguna de Canaima, estado Bolívar. <i>Román Rangel</i>
 indexCards:
   - image: ./riesgo.svg
     link: /fichas/
-    text: Cambios temporales en distribución geográfica y riesgos de colapso a nivel
+    text: Cambios en la distribución geográfica y riesgos de colapso a nivel
       nacional y estadal.
     title: Riesgo de colapso
   - image: ./casos.svg
@@ -76,7 +76,7 @@ CON LA COLABORACIÓN DE:
 | Equipo de trabajo          |
 | -------------------------- | -------------------------- | -------------------------- |
 | Ana Lucía Dávalos          | Giuseppe Colonnello        | Mariana Hernández-Montilla |
-| Bibiana Sucre              | Irene ZagerFernando        | Marianne Assmüssen         |
+| Bibiana Sucre              | Irene Zager        | Marianne Assmüssen         |
 | Carlos Portillo-Quintero   | Jon Paul Rodríguez         | Otto Huber                 |
 | Diego Giraldo Hernández    | Kathryn M. Rodríguez-Clark | Pablo Lacabana             |
 | Fabián Carrasquel          | María A. Oliveira-Miranda  | Rosa De Oliveira-Miranda   |
@@ -92,7 +92,7 @@ CON LA COLABORACIÓN DE:
 | César Molina                   | Leonardo Ruíz-Díaz                | Rodrigo Lazo             |
 | Christian Ceccarelli Navarro   | Lucía Pizzani                     | Román Rangel             |
 | David Southall                 | María Gabriela Montiel-Villalobos | Rosa De Oliveira-Miranda |
-| Rojas-Runjaic                  | María José Chávez                 | Sergio Zambrano-Martínez |
+| Fernando Rojas-Runjaic                  | María José Chávez                 | Sergio Zambrano-Martínez |
 | Franklin Rojas-Suárez          | Mariana Hernández-Montilla        | Susanne Renner           |
 | Gilson Rivas                   | Mario Fariñas                     | Thea Segall              |
 | Giuseppe Colonnello            | Natalia Ceballos                  |                          |
