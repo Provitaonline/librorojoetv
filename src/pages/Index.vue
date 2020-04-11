@@ -44,7 +44,7 @@
         <div class="bottom-body has-text-centered">
 
           <div class="container">
-            <a href="/files/libro_rojo_ecosistemas_terrestre.pdf" download>
+            <a href="/files/libro_rojo_ecosistemas_terrestres_Venezuela.pdf" download>
               <p class="download-text is-size-6 is-size-7-mobile">{{$page.labels.home.download}}&nbsp;&nbsp;
                 <span class="is-size-3">&#10515;</span>
               </p>

@@ -12,7 +12,7 @@ indexCards:
     title: Riesgo de colapso
   - image: ./casos.svg
     link: /casos/
-    text: Aplicación de las categorías y criterios de la listas roja de ecosistemas
+    text: Aplicación de las categorías y criterios de la lista roja de ecosistemas
       a diferentes escalas geográficas.
     title: Estudios de caso
   - image: ./unidades.svg
