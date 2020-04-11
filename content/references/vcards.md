@@ -63,7 +63,7 @@ references:
 - referencekey: Briceño et al. 1997
   reference: >
       Briceño, E., L. Balbás & J.A. Blanco (1997). Bosques ribereños del bajo Río Caura: vegetación, suelos y fauna. Scientia Guaianae 7: 259-289.
-- referencekey: Brunner et al. 2001
+- referencekey: Bruner et al. 2001
   reference: >
       Bruner, A.G., R.E. Gullison, R.E. Rice & G.A.B. da Fonseca (2001). Effectiveness of parks in protecting tropical biodiversity. Science 291: 125-128.
 - referencekey: Calzadilla & Lárez 2008
@@ -228,7 +228,7 @@ references:
 - referencekey: Lamprecht 1954
   reference: >
       Lamprecht, H. (1954). Estudios Silviculturales en los Bosques del Valle de La Mucuy, cerca de Mérida. Ed. Fac. Ingeniería Forestal, Universidad de Los Andes: Mérida, Venezuela.
-- referencekey: Lentino 1994
+- referencekey: Lentino & Bruni 1994
   reference: >
       Lentino, M. & A.R. Bruni (1994). Humedales Costeros de Venezuela: Situación Ambiental. Sociedad Conservacionista Audubon de Venezuela: Caracas. 188 pp.
 - referencekey: Lentino et al. 2005
@@ -272,7 +272,10 @@ references:
       Monasterio, M. & S. Reyes (1980). Diversidad ambiental y variación de la vegetación en los páramos de los Andes venezolanos. Pp. 47-91. En: M. Monasterio (ed.). Estudios Ecológicos en los Páramos Andinos. Universidad de Los Andes: Mérida, Venezuela.
 - referencekey: Monente & Colonnello 2004
   reference: >
-      Monente, J.A. & G. Colonnello (2004). Consecuencias ambientales de la intervención del delta del Orinoco. Pp. 114-124. En: C.A. Lasso, L.E. Alonso, A.L. Flores & G. Love (eds.). Evaluación rápida de la biodiversidad y aspectos sociales de los ecosistemas acuáticos del delta del río Orinoco y golfo de Paria, Venezuela. Boletín RAP de Evaluación Biológica 37. Conservation International: Washington, D.C. Moreno-Urdaneta, C.L. (2006). Deterioro Ambiental y Marginalidad Económica y Social de los Pobladores de la Subcuenca del Río Caramacate. Estado Aragua, Venezuela [en línea]. Disponible en: <http://www.alasru.org/cdalasru2006/14%20GT%20Carmen%20Leonor%20Moreno%20Urdaneta.pdf>
+      Monente, J.A. & G. Colonnello (2004). Consecuencias ambientales de la intervención del delta del Orinoco. Pp. 114-124. En: C.A. Lasso, L.E. Alonso, A.L. Flores & G. Love (eds.). Evaluación rápida de la biodiversidad y aspectos sociales de los ecosistemas acuáticos del delta del río Orinoco y golfo de Paria, Venezuela. Boletín RAP de Evaluación Biológica 37. Conservation International: Washington, D.C.
+- referencekey: Moreno-Urdaneta 2006
+  reference: >
+      Moreno-Urdaneta, C.L. (2006). Deterioro Ambiental y Marginalidad Económica y Social de los Pobladores de la Subcuenca del Río Caramacate. Estado Aragua, Venezuela [en línea]. Disponible en: <http://www.alasru.org/cdalasru2006/14%20GT%20Carmen%20Leonor%20Moreno%20Urdaneta.pdf>
 - referencekey: Mueller & Hellmann 2008
   reference: >
       Mueller, J.M. & J.J. Hellmann (2008). An assessment of invasion risk from assisted migration. Conservation Biology 22(3): 562-567.
@@ -324,10 +327,10 @@ references:
 - referencekey: Roa 2007
   reference: >
       Roa, R. (2007). La gestión del punto focal técnico en la aplicación de la Convención de Lucha Contra la Desertificación en Venezuela. Pp. 87-91. En: M. Riveros Caballero, L.E. Sánchez & J. Paolini (eds.). Memoria Taller Binacional y Regional Sobre Desertificación. Ediciones IVIC (Instituto Venezolano de Investigaciones Científicas): Caracas.
-- referencekey: Rodriguez 1994
+- referencekey: Rodríguez 1994
   reference: >
-      Rodriguez, G. (1994). Situación actual de los manglares en Venezuela. Pp. 218-228. En: D.O. Suman (ed.). El ecosistema de manglar en América Latina y la Cuenca del Caribe: su manejo y conservación. Rosenstiel School of Marine and Atmospheric Science & The Tinker Foundation: Florida & New York.
-- referencekey: Rodriguez 2004
+      Rodríguez, G. (1994). Situación actual de los manglares en Venezuela. Pp. 218-228. En: D.O. Suman (ed.). El ecosistema de manglar en América Latina y la Cuenca del Caribe: su manejo y conservación. Rosenstiel School of Marine and Atmospheric Science & The Tinker Foundation: Florida & New York.
+- referencekey: Rodríguez 2004
   reference: >
       Rodríguez, I. (2004). Conocimiento indígena vs. científico: el conflicto por el uso del fuego en el Parque Nacional Canaima, Venezuela. Interciencia 29(3): 121-129.
 - referencekey: Rodríguez & Sletto 2009

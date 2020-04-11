@@ -1,6 +1,6 @@
 ---
 title: "Arbustales espinosos"
-citationPre: "Oliveira-Miranda, M.A., O. Huber, J.P. Rodríguez, F. Rojas-Suárez, R. De Oliveira-Miranda, S. Zambrano-Martínez & G. Giraldo-Hernández, (eds) (2010). Arbustales espinosos. Pp: 176-183. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
+citationPre: "Oliveira-Miranda, M.A., O. Huber, J.P. Rodríguez, F. Rojas-Suárez, R. De Oliveira-Miranda, S. Zambrano-Martínez & G. Giraldo-Hernández, (eds) (2010). Arbustales espinosos. Pp: 176-183. En: J.P. Rodríguez, F. Rojas-Suárez & D. Giraldo Hernández (eds.)."
 citationPost: ""
 cardimage: "./foto-1.jpg"
 cardimagecaption: "Cardonal en Tierra Negra, estado Mérida. <i>Mariana Hernández-Montilla</i>"
@@ -181,7 +181,7 @@ Esta práctica ha incidido en la aceleración de la pérdida del suelo, cuya nat
 Adicionalmente, es frecuente su uso como zonas de disposición de desechos (Foto 11, Foto 12) y son evidentes los desarrollos urbanísticos (Foto 13) poco planificados, con fines recreativos y vacacionales (Soriano & Ruiz 2003). La edificación de infraestructura de gran escala y sus servicios conexos constituyen la principal amenaza en la región de la cordillera de la Costa Central (Matteucci 1986). El alto nivel de intervención para los arbustales espinosos es una condición reportada por diferentes autores (Matteucci 1986, Matteucci 1987, Soriano & Ruiz 2003, Fajardo *et al.* 2005, Fajardo 2007, Fernández *et al.* 2007).
 {Foto 11}
 {Foto 12}
-En el caso de la isla de Margarita, los arbustales espinosos han sufrido un impacto asociado a la explotación de arena a cielo abierto (Foto 10), agravado por tratarse de ecosistemas insulares ya de por si restringidos. El deterioro ambiental de esta actividad ha sido selectivo, afectando principalmente los cauces de los ríos y quebradas (que permanecen secos la mayor parte del año), donde se desarrollan las especies arbóreas más importantes como Bulnesia arborea (Fajardo 2007). La destrucción ambiental es evidente en la diversidad de fauna, con varias poblaciones en situación crítica, incluyendo el venado endémico (*Odocoileus margaritae*) y la cotorra margariteña (*Amazona barbadensis*), Ave Regional del Estado Nueva Esparta (Rodríguez & Rojas- Suárez 2008).
+En el caso de la isla de Margarita, los arbustales espinosos han sufrido un impacto asociado a la explotación de arena a cielo abierto (Foto 10), agravado por tratarse de ecosistemas insulares ya de por si restringidos. El deterioro ambiental de esta actividad ha sido selectivo, afectando principalmente los cauces de los ríos y quebradas (que permanecen secos la mayor parte del año), donde se desarrollan las especies arbóreas más importantes como Bulnesia arborea (Fajardo 2007). La destrucción ambiental es evidente en la diversidad de fauna, con varias poblaciones en situación crítica, incluyendo el venado endémico (*Odocoileus margaritae*) y la cotorra margariteña (*Amazona barbadensis*), Ave Regional del Estado Nueva Esparta (Rodríguez & Rojas-Suárez 2008).
 
 # Conservación
 
