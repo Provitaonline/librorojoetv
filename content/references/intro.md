@@ -96,7 +96,7 @@ references:
       Hoekstra, J.M., T.M. Boucher, T.H. Ricketts & C. Roberts (2005).
       Confronting a biome crisis: global disparities of habitat loss and
       protection. Ecology Letters 8(1): 23-29.
-  - referencekey: Huber &  Alarcón 1988
+  - referencekey: Huber & Alarcón 1988
     reference: >
       Huber, O. & C. Alarcón (1988). Mapa de Vegetación de Venezuela. Ministerio
       del Ambiente y los Recursos Naturales Renovables, The Nature Conservancy,
