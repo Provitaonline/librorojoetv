@@ -2,7 +2,7 @@
 id: acerca-de
 title: Introducción
 references:
-  - referencekey: Baillie et al, 2004
+  - referencekey: Baillie et al. 2004
     reference: >
       Baillie, J.E.M., C. Hilton-Taylor & S.N. Stuart (2004). 2004 IUCN Red List
       of Threatened Species. A Global Species Assessment. IUCN: Gland,
