@@ -187,7 +187,7 @@ references:
 - referencekey: Huber et al. 1984
   reference: >
     Huber, O., J.A. Steyermark, G.T. Prance & C. Alès (1984). The vegetation of the Sierra Parima, Venezuela - Brazil: Some results of recent exploration. Brittonia 36(2): 104-139.
-- referencekey: Huber & Riina  1997
+- referencekey: Huber & Riina 1997
   reference: >
     Huber, O. & R. Riina (eds.) (1997). Glosario Fitoecológico de las Américas. Vol. I. América del Sur: países hispanoparlantes. UNESCO, Fundación Instituto Botánico de Venezuela: Caracas. 500 pp.
 - referencekey: Hueck 1960
@@ -214,7 +214,7 @@ references:
 - referencekey: Lazo 2009
   reference: >
     Lazo, R. (2009). Diagnóstico y evaluación de áreas de manglar de la República Bolivariana de Venezuela. IVIC [no publicado].
-- referencekey: Leopardi & Veliz 2009
+- referencekey: Leopardi et al. 2009
   reference: >
     Leopardi, C., J. Veliz & L.J. Cumana (2009). Orquideoflórula preliminar de la península de Araya y áreas adyacentes, Estado Sucre, Venezuela. Acta Bot. Venez. 32(1): 159-177.
 - referencekey: MAC 1960
@@ -256,7 +256,7 @@ references:
 - referencekey: Matteucci et al. 1979
   reference: >
     Matteucci, S., A. Colma & L. Pla (1979). La vegetación de Falcón. Instituto Universitario de Tecnología: Coro, Venezuela.
-- referencekey: Matteucci & Barboza 2006
+- referencekey: Medina & Barboza 2006
   reference: >
     Medina, E. & F. Barboza (2006). Lagunas costeras del lago de Maracaibo: Distribución, estatus y perspectivas de conservación. Ecotropicos 19(2): 128-139.
 - referencekey: C
