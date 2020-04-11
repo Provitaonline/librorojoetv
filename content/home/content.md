@@ -37,7 +37,7 @@ about:
   cardimage: ./foto-1.jpg
   cardimagecaption: Cotorra cabeciamarilla (<i>Amazona barbadensis</i>). <i>Thea Segall</i>
   photos:
-    - photocaption: Rio en cima del Auyantepuy, estado Bolívar. <i>Román Rangel</i>
+    - photocaption: Río en cima del Auyantepuy, estado Bolívar. <i>Román Rangel</i>
       photokey: Foto 2
       photourl: ./foto-2.jpg
     - photocaption: Laguna de Canaima, estado Bolívar. <i>Román Rangel</i>
