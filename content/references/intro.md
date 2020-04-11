@@ -81,7 +81,7 @@ references:
       Ferrier, S. (2002). Mapping spatial pattern in biodiversity for regional
       conservation planning: Where to from here? Systematic Biology 51(2):
       331-363.
-  - referencekey: Funk * Fa 2010
+  - referencekey: Funk & Fa 2010
     reference: >
       Funk, S.M. & J.E. Fa (2010). Ecoregion prioritization suggests an armoury
       not a silver bullet for conservation planning. PLoS ONE 5(1): e8923.
