@@ -208,6 +208,11 @@ module.exports = {
             typeName: 'VegetationCard',
             indexName: 'VegetationCard',
             fields: ['title']
+          },
+          {
+            typeName: 'HomeData',
+            indexName: 'HomeData',
+            fields: ['title']
           }
         ],
         searchFields: ['title', 'description', 'distribution', 'content']

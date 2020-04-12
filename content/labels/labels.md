@@ -6,7 +6,7 @@ global:
     Lamentamos la incoveniencia, pero no soportamos el navegador web Internet Explorer en esta página web. Para una mejor experiencia, recomendamos utilizar Chrome, Firefox, Safari o Edge.
   navbaritems:
     about:
-      label: ACERCA DE
+      label: Acerca de
       path: "/acerca-de"
     contact:
       label: CONTACTO

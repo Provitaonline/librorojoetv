@@ -41,7 +41,7 @@
             </div>
           </div>
         </b-navbar-item>
-        <b-navbar-item tag="g-link" :to="$static.labels.global.navbaritems.about.path">
+        <b-navbar-item class="is-uppercase" tag="g-link" :to="$static.labels.global.navbaritems.about.path">
           {{$static.labels.global.navbaritems.about.label}}
         </b-navbar-item>
 
@@ -309,8 +309,13 @@
         return this.$search.search({ query: searchTerm, limit: 10 }).map(a => {
           let o = {}
           o.key = a.key
-          o.title = a.title.replace(/<[^>]*>?/gm, ' ')
-          o.path = a.path
+          if (a.index === 'HomeData') {
+            o.title = this.$static.labels.global.navbaritems.about.label
+            o.path = this.$static.labels.global.navbaritems.about.path
+          } else {
+            o.title = a.title.replace(/<[^>]*>?/gm, ' ')
+            o.path = a.path
+          }
           return o
         })
       }
