@@ -7,6 +7,7 @@
           :caption="$page.vegetationCard.cardimagecaption"
           :lead="$page.labels.vegetation.bannerlead"
           :title="$page.vegetationCard.title"
+          :authors="$page.vegetationCard.authors"
           :citationPre="$page.vegetationCard.citationPre"
           :citationPost="$page.vegetationCard.citationPost"
           />
@@ -32,6 +33,7 @@
   query VegetationCard ($id: ID!) {
     vegetationCard: vegetationCard (id: $id) {
       title
+      authors
       citationPre
       citationPost
       cardimage

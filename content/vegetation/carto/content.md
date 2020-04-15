@@ -1,6 +1,7 @@
 ---
 id: cartografia
 title: "Revisión y análisis histórico de la cartografía sistemática de la vegetación en Venezuela"
+authors: "Otto Huber, María A. Oliveira-Miranda"
 citationPre: "Huber, O. & M.A. Oliveira-Miranda (2010). Ambientes terrestres. Revisión y análisis histórico de la cartografía sistemática de la vegetación en Venezuela. Pp: 29-37. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
 citationPost: ""
 cardimage: "./carto-pancarta.jpg"
