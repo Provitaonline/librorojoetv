@@ -2,6 +2,7 @@
 id: prioridades
 method: priorities
 title: "Estableciendo prioridades<br>para la conservación de los<br>ecosistemas terrestres de Venezuela"
+authors: "María Idalí Tachack-García, Jon Paul Rodríguez"
 citationPre: "Tachack-García, M.I. & J.P. Rodríguez (2010). Estableciendo prioridades para la conservación de los ecosistemas terrestres de Venezuela. Pp: 303-311. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
 citationPost: ""
 cardimage: "./pancarta-priorities.jpg"

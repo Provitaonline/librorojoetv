@@ -2,6 +2,7 @@
 id: clasificacion
 method: clasificacion
 title: "Clasificación del riesgo<br>de colapso de ecosistemas<br>terrestres"
+authors: "Jon Paul Rodríguez, Kathryn M. Rodríguez-Clark, Marianne Assmüssen"
 citationPre: "Rodríguez J.P., K.M. Rodríguez-Clark & M. Assmüssen (2010). Categorías y criterios de las listas rojas de ecosistemas. Clasificación del riesgo de colapso de ecosistemas terrestres. Pp: 97-105. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
 citationPost: ""
 cardimage: "./pancarta-class.jpg"

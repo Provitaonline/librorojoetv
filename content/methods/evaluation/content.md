@@ -2,7 +2,8 @@
 id: evaluacion
 method: evaluacion
 title: "Método para la evaluación del<br>riesgo de colapso de los<br>ecosistemas terrestres de Venezuela"
-citationPre: "Oliveira-Miranda, M.A., O. Huber, J.P. Rodríguez, F. Rojas-Suárez, R. De Oliveira-Miranda, S. Zambrano-Martínez & G. Giraldo-Hernández, (eds) (2010). Riesgo de eliminación de los ecosistemas terrestres de Venezuela. Método para la evaluación del riesgo de colapso de los ecosistemas terrestres de Venezuela. Pp: 109-123. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
+authors: "María A. Oliveira-Miranda, Otto Huber, Jon Paul Rodríguez, Franklin Rojas-Suárez, Rosa De Oliveira-Miranda, Mariana Hernández-Montilla, Sergio Zambrano-Martínez"
+citationPre: "Oliveira-Miranda, M.A., O. Huber, J.P. Rodríguez, F. Rojas-Suárez, R. De Oliveira-Miranda & S. Zambrano-Martínez (eds.) (2010). Riesgo de eliminación de los ecosistemas terrestres de Venezuela. Método para la evaluación del riesgo de colapso de los ecosistemas terrestres de Venezuela. Pp: 109-123. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
 citationPost: ""
 cardimage: "./pancarta-eval.jpg"
 cardimagecaption: "Vista panorámica de Lagunillas, estado Mérida. <i>Leonardo Ruíz-Díaz</i>"

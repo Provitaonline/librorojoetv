@@ -2,6 +2,7 @@
 id: librosrojos
 method: clasificacion
 title: "Los libros rojos y su uso en la conservación de especies y ambientes amenazados"
+authors: "Jon Paul Rodríguez, Kathryn M. Rodríguez-Clark, Marianne Assmüssen"
 citationPre: "Rodríguez J.P., K.M. Rodríguez-Clark & M. Assmüssen (2010). Categorías y criterios de las listas rojas de ecosistemas. Los libros rojos y su uso en la conservación de especies y ambientes amenazados. Pp: 93-96. En: J.P. Rodríguez, F. Rojas-Suárez & D. Giraldo Hernández (eds.)."
 citationPost: ""
 cardimage: "./pancarta-redbooks.jpg"

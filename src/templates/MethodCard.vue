@@ -7,6 +7,7 @@
           :caption="$page.methodCard.cardimagecaption"
           :lead="$page.labels.method.bannerlead"
           :title="$page.methodCard.title"
+          :authors="$page.methodCard.authors"
           :citationPre="$page.methodCard.citationPre"
           :citationPost="$page.methodCard.citationPost"
           />
@@ -32,6 +33,7 @@
   query MethodCard ($id: ID!) {
     methodCard: methodCard (id: $id) {
       title
+      authors
       citationPre
       citationPost
       cardimage

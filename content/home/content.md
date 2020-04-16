@@ -32,6 +32,7 @@ contact:
     Guayanés, Canaima, estado Bolívar. <i>Rebecca Miller</i>
 about:
   title: Acerca del libro rojo<br>de los ecosistemas terrestres<br>de Venezuela
+  authors: "Jon Paul Rodríguez, Franklin Rojas-Suárez, Diego Giraldo Hernández"
   citationPre: Rodríguez, J.P., F. Rojas-Suárez & D. Giraldo Hernández (eds.) (2010).
   citationPost: 324 pp.
   cardimage: ./foto-1.jpg

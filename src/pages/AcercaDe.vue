@@ -6,6 +6,7 @@
         :banner="$page.homeData.about.cardimage"
         :caption="$page.homeData.about.cardimagecaption"
         :title="$page.homeData.about.title"
+        :authors="$page.homeData.about.authors"
         :citationPre="$page.homeData.about.citationPre"
         :citationPost="$page.homeData.about.citationPost"
         />
@@ -32,6 +33,7 @@
     homeData: homeData (id: "home") {
       about {
         title
+        authors
         citationPre
         citationPost
         cardimage
