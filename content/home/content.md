@@ -59,13 +59,22 @@ about:
 
 EL LIBRO ROJO DE LOS ECOSISTEMAS TERRESTRES DE VENEZUELA (2010) ES UNA PRODUCCIÓN CONJUNTA DE:
 
-Provita, Compañías Shell en Venezuela y Lenovo Venezuela, en el marco de la Ley Orgánica de Ciencia, Tecnología e Innovación (LOCTI)
+[Provita](https://provita.org.ve/), [Compañías Shell en Venezuela](https://www.shell.com.ve/) y [Lenovo Venezuela](https://www.lenovo.com/ve/es/), en el marco de la Ley Orgánica de Ciencia, Tecnología e Innovación (LOCTI)
+
+<div style="position: relative;">
+
+![Producción](./produccion.png)
+<g-link to="https://provita.org.ve/" title="Provita" style="position: absolute; left: 0%; top: 0%; width: 20%; height: 100%; z-index: 2;"></g-link>
+<g-link to="https://www.shell.com.ve/" title="Shell en Venezuela" style="position: absolute; left: 20%; top: 0%; width: 25%; height: 100%; z-index: 2;"></g-link>
+<g-link to="https://www.lenovo.com/ve/es/" title="Lenovo Venezuela" style="position: absolute; left: 45%; top: 0%; width: 55%; height: 100%; z-index: 2;"></g-link>
+
+</div>
 
 CON LA COLABORACIÓN DE:
 
 <div style="position: relative;">
 
-![Colaboración](./colaboracion.png){class="colab"}
+![Colaboración](./colaboracion.png)
 <g-link to="http://www.fundacionempresaspolar.org/" title="Fundación Empresas Polar" style="position: absolute; left: 0%; top: 0%; width: 30%; height: 100%; z-index: 2;"></g-link>
 <g-link to="https://www.iucn.org/" title="IUCN" style="position: absolute; left: 30%; top: 0%; width: 25%; height: 100%; z-index: 2;"></g-link>
 <g-link to="https://www.ecohealthalliance.org/" title="EcoHealth Alliance" style="position: absolute; left: 55%; top: 0%; width: 45%; height: 100%; z-index: 2;"></g-link>
