@@ -7,6 +7,7 @@
         :caption="$page.riskCardsIndex.bannerCaption"
         :lead="$page.riskCardsIndex.title"
         :title="$page.riskCardsIndex.mapTitle"
+        :authors="$page.riskCardsIndex.authors"
         :citationPre="$page.riskCardsIndex.citationPre"
         :citationPost="$page.riskCardsIndex.citationPost"
         />
@@ -71,6 +72,7 @@
     }
     riskCardsIndex: riskCardsIndex (path: "/content/explore/vcards-index") {
       title
+      authors
       citationPre
       citationPost
       mapTitle

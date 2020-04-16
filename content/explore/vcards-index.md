@@ -1,7 +1,8 @@
 ---
 title: "Riesgo de colapso de los<br>ecosistemas terrestres de Venezuela"
 id: "vcards-index"
-citationPre: "Oliveira-Miranda, M.A., O. Huber, J.P. Rodríguez, F. Rojas-Suárez, R. De Oliveira-Miranda, S. Zambrano-Martínez & G. Giraldo-Hernández, (eds) (2010). Riesgo de eliminación de los ecosistemas terrestres de Venezuela. Pp: 107-235. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
+authors: "María A. Oliveira-Miranda, Otto Huber, Jon Paul Rodríguez, Franklin Rojas-Suárez, Rosa De Oliveira-Miranda, Mariana Hernández-Montilla, Sergio Zambrano-Martínez"
+citationPre: "Oliveira-Miranda, M.A., O. Huber, J.P. Rodríguez, F. Rojas-Suárez, R. De Oliveira-Miranda & S. Zambrano-Martínez (eds.) (2010). Riesgo de eliminación de los ecosistemas terrestres de Venezuela. Pp: 107-235. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
 citationPost: ""
 mapTitle: "Formaciones Vegetales<br>de Venezuela - 2010"
 banner: "./vcards-pancarta.jpg"
