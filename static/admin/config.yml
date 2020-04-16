@@ -323,3 +323,4 @@ collections:
           {label: "Tiene separador", name: "hasSeparator", widget: "hidden", required: false},
           {label: "Está indentado", name: "isIndented", widget: "hidden", required: true},
           {label: "Formación vegetal", name: "plantformation", widget: "text", required: false}]}
+      - {label: "Texto", name: "body", widget: "text"}
