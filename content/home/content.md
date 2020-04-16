@@ -117,13 +117,13 @@ Este sitio web es una versión digital del [Libro Rojo de los Ecosistemas Terres
 | Ingrid Zager      | Lila García   | Ricmary Bron |
 | Irene Zager       | Ricardo Morín | Rodrigo Lazo |
 
-| Desarrollo Web | Diseño gráfico   |
-|----------------|------------------|
-| Ricardo Morín  | Marlene Alvarado |
+| Diseño gráfico   | Desarrollo Web |
+|------------------|----------------|
+| Marlene Alvarado | Ricardo Morín  |
 
-| Coordinación de actividades | Coordinación general |
-|-----------------------------|----------------------|
-| Ricmary Bron                | Irene Zager          |
+| Coordinación general | Coordinación de actividades |
+|----------------------|-----------------------------|
+| Irene Zager          | Ricmary Bron                |
 
 | Agradecimientos |
 |-----------------|--------------------|-----------------------------------|
