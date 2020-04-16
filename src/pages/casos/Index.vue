@@ -21,6 +21,11 @@
           :initialTileProvider="1"
         >
         </InteractiveMap>
+        <div class="tile is-vertical is-parent">
+          <TextWithRefsAndPhotos class="tile is-child box is-size-5 is-size-6-mobile"
+            :text="$page.casesIndex.content" />
+          </TextWithRefsAndPhotos>
+        </div>
       </section>
 
     </div>
@@ -44,6 +49,7 @@
         legend
         cardPath
       }
+      content
     }
   }
 </page-query>
@@ -56,6 +62,7 @@
 <script>
   import slugify from 'slugify';
   import InteractiveMap from '~/components/InteractiveMap.vue'
+  import TextWithRefsAndPhotos from '~/components/TextWithRefsAndPhotos.vue'
   import PageBanner from '~/components/PageBanner.vue'
 
   slugify.extend({'/': '-'})
@@ -96,7 +103,8 @@
     },
     components: {
       PageBanner,
-      InteractiveMap
+      InteractiveMap,
+      TextWithRefsAndPhotos
     },
     created() {
 

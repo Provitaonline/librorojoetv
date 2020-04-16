@@ -55,6 +55,9 @@
             </div>
           </div>
         </div>
+        <TextWithRefsAndPhotos class="tile is-child box is-size-5 is-size-6-mobile"
+          :text="$page.riskCardsIndex.content" />
+        </TextWithRefsAndPhotos>
         <References class="box" :references="$page.references.references">
         </References>
 
@@ -85,6 +88,7 @@
         legend
         cardPath
       }
+      content
     }
     vcards: allRiskCard (sortBy: "title", order: ASC) {
       edges {
@@ -146,6 +150,7 @@
   import slugify from 'slugify';
   import InteractiveMap from '~/components/InteractiveMap.vue'
   import PageBanner from '~/components/PageBanner.vue'
+  import TextWithRefsAndPhotos from '~/components/TextWithRefsAndPhotos.vue'
   import References from '~/components/References.vue'
 
   slugify.extend({'/': '-'})
@@ -205,7 +210,8 @@
     components: {
       PageBanner,
       InteractiveMap,
-      References
+      References,
+      TextWithRefsAndPhotos
     },
     created() {
       this.$page.labels.global.threatCategories.forEach(item => {
