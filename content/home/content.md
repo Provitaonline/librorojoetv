@@ -108,6 +108,28 @@ CON LA COLABORACIÓN DE:
 | Giuseppe Colonnello            | Natalia Ceballos                  |                          |
 | Gustavo Romero                 | Oscar Lasso-Alcalá                |                          |
 
+# Versión Web
+
+Este sitio web es una versión digital del [Libro Rojo de los Ecosistemas Terrestres de Venezuela (2010)](https://ecosistemasamenazados.org/files/libro_rojo_ecosistemas_terrestres_Venezuela.pdf) que busca facilitar el acceso a la primera y única (hasta ahora, abril de 2020) evaluación del riesgo de colapso de los ecosistemas venezolanos. Esta versión incluye además herramientas de navegación y visualización de la información geográfica que esperamos ayuden al lector en su revisión de la información. Esta versión fue posible gracias a:
+
+| Conceptualización |
+|-------------------|---------------|--------------|
+| Ingrid Zager      | Lila García   | Ricmary Bron |
+| Irene Zager       | Ricardo Morín | Rodrigo Lazo |
+
+| Desarrollo Web | Diseño gráfico   |
+|----------------|------------------|
+| Ricardo Morín  | Marlene Alvarado |
+
+| Coordinación de actividades | Coordinación general |
+|-----------------------------|----------------------|
+| Ricmary Bron                | Irene Zager          |
+
+| Agradecimientos |
+|-----------------|--------------------|-----------------------------------|
+| Bibiana Sucre   | Jon Paul Rodríguez | María José Chávez                 |
+|                 |                    | (Chávez & López - Diseño Gráfico) |
+
 {Foto 2}
 
 # A modo de introducción
