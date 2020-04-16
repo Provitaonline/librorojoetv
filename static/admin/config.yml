@@ -44,6 +44,7 @@ collections:
           {label: "Subtítulo de la imagen de portada", name: "bannerCaption", widget: "string", required: true}]}
       - {label: "Acerca de (imágenes)", name: "about", widget: "object", fields: [
           {label: "Texto del banner", name: "title", widget: "string", required: true},
+          {label: "Autores", name: "authors", widget: "string"},
           {label: "Ante-cita", name: "citationPre", widget: "string"},
           {label: "Post-cita", name: "citationPost", widget: "string"},
           {label: "Imagen de portada", name: "cardimage", widget: "file", allow_multiple: false, required: true},
@@ -67,6 +68,7 @@ collections:
       - {label: "Id", name: "id", widget: "hidden", required: true}
       - {label: "Método", name: "method", widget: "hidden", required: true}
       - {label: "Título", name: "title", widget: "string", required: true}
+      - {label: "Autores", name: "authors", widget: "string"}
       - {label: "Ante-cita", name: "citationPre", widget: "string"}
       - {label: "Post-cita", name: "citationPost", widget: "string"}
       - {label: "Imagen de portada", name: "cardimage", widget: "file" , allow_multiple: false, required: true}
@@ -241,6 +243,7 @@ collections:
     fields:
       - {label: "Id", name: "id", widget: "hidden", required: true}
       - {label: "Título", name: "title", widget: "string", required: true}
+      - {label: "Autores", name: "authors", widget: "string"}
       - {label: "Ante-cita", name: "citationPre", widget: "string"}
       - {label: "Post-cita", name: "citationPost", widget: "string"}
       - {label: "Imagen de portada", name: "cardimage", widget: "file" , allow_multiple: false, required: true}
@@ -265,6 +268,7 @@ collections:
       - {label: "Id", name: "id", widget: "hidden", required: true}
       - {label: "Método", name: "method", widget: "hidden", required: true}
       - {label: "Título", name: "title", widget: "string", required: true}
+      - {label: "Autores", name: "authors", widget: "string"}
       - {label: "Ante-cita", name: "citationPre", widget: "string"}
       - {label: "Post-cita", name: "citationPost", widget: "string"}
       - {label: "Imagen de portada", name: "cardimage", widget: "file" , allow_multiple: false, required: true}
@@ -302,6 +306,7 @@ collections:
     fields:
       - {label: "Id", name: "id", widget: "hidden", required: true}
       - {label: "Título", name: "title", widget: "string", required: true}
+      - {label: "Autores", name: "authors", widget: "string"}
       - {label: "Ante-cita", name: "citationPre", widget: "string"}
       - {label: "Post-cita", name: "citationPost", widget: "string"}
       - {label: "Título del mapa", name: "mapTitle", widget: "string", required: true}
