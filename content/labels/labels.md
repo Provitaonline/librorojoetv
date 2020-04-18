@@ -69,6 +69,9 @@ global:
       text: No Evaluado
       color: "#0068B4"
       img: "./ne-icon.svg"
+  riskEvalNoteText: >-
+    El protocolo de evaluación del riesgo de colapso de los ecosistemas fue actualizado luego de la publicación de esta edición del Libro Rojo de los Ecosistemas Terrestres de Venezuela, y adoptado formalmente por la Unión Internacional para la Conservación de la Naturaleza (UICN) como estándar global en el 2014.<br><br>
+    Las evaluaciones de riesgo que se desarrollen en el futuro deben basarse en la última versión de las Categorías y Criterios de la Lista Roja de Ecosistemas de UICN, la cual está disponible en el <g-link to="https://iucnrle.org/resources/guidelines/">sitio oficial</g-link> de la iniciativa.
 home:
   explore: Explorar
   download: Descarga el documento PDF (63 MB)

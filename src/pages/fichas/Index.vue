@@ -55,9 +55,7 @@
             </div>
           </div>
         </div>
-        <TextWithRefsAndPhotos class="tile is-child box is-size-5 is-size-6-mobile"
-          :text="$page.riskCardsIndex.content" />
-        </TextWithRefsAndPhotos>
+        <RiskEvalNote />
         <References class="box" :references="$page.references.references">
         </References>
 
@@ -152,6 +150,7 @@
   import PageBanner from '~/components/PageBanner.vue'
   import TextWithRefsAndPhotos from '~/components/TextWithRefsAndPhotos.vue'
   import References from '~/components/References.vue'
+  import RiskEvalNote from '~/components/RiskEvalNote.vue'
 
   slugify.extend({'/': '-'})
 
@@ -211,7 +210,8 @@
       PageBanner,
       InteractiveMap,
       References,
-      TextWithRefsAndPhotos
+      TextWithRefsAndPhotos,
+      RiskEvalNote
     },
     created() {
       this.$page.labels.global.threatCategories.forEach(item => {

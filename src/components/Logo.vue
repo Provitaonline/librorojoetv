@@ -21,6 +21,6 @@
 
 <script>
   export default {
-    name: 'SideBar'
+    name: 'Logo'
   }
 </script>

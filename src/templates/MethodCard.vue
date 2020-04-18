@@ -15,6 +15,7 @@
 
         <section class="section is-center-narrow">
           <div class="tile is-vertical is-parent">
+            <RiskEvalNote v-if="$page.methodCard.showRiskEvalNote" />
             <TextWithRefsAndPhotos class="tile is-child box is-size-5 is-size-6-mobile"
               :text="$page.methodCard.content"
               :photos="$page.methodCard.photos"
@@ -38,6 +39,7 @@
       citationPost
       cardimage
       cardimagecaption
+      showRiskEvalNote
       method {
         references {
           referencekey
@@ -82,6 +84,7 @@
   import PageBanner from '~/components/PageBanner.vue'
   import TextWithRefsAndPhotos from '~/components/TextWithRefsAndPhotos.vue'
   import References from '~/components/References.vue'
+  import RiskEvalNote from '~/components/RiskEvalNote.vue'
 
   export default {
     metaInfo: {
@@ -96,7 +99,8 @@
     components: {
       PageBanner,
       TextWithRefsAndPhotos,
-      References
+      References,
+      RiskEvalNote
     },
     computed: {
       pageTitle() {
