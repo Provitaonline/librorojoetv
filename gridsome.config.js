@@ -217,6 +217,12 @@ module.exports = {
         ],
         searchFields: ['title', 'description', 'distribution', 'content']
       }
+    },
+    {
+      use: '@gridsome/plugin-google-analytics',
+      options: {
+        id: 'UA-64070309-5'
+      }
     }
   ],
   templates: {
