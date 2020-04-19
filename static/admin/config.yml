@@ -73,7 +73,7 @@ collections:
       - {label: "Post-cita", name: "citationPost", widget: "string"}
       - {label: "Imagen de portada", name: "cardimage", widget: "file" , allow_multiple: false, required: true}
       - {label: "Subtítulo de la imagen de portada", name: "cardimagecaption", widget: "string", required: true}
-      - {label: "Mostrar nota de evaluación de riesgo?", name: "showRiskEvalNote", widget: "boolean"}
+      - {label: "Mostrar nota de evaluación de riesgo?", name: "showRiskEvalNote", widget: "boolean", required: false}
       - {label: "Imagenes", name: "photos", widget: "list", fields: [
           {label: "Etiqueta", name: "photokey", widget: "string", required: true},
           {label: "Url", name: "photourl", widget: "file" , allow_multiple: false, required: true},
