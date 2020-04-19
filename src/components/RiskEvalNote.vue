@@ -1,6 +1,6 @@
 <template>
   <div class="risk-eval-note message is-warning box">
-    <div class="message-body" v-html="$static.labels.global.riskEvalNoteText"></div>
+    <div class="message-body is-size-7-mobile" v-html="$static.labels.global.riskEvalNoteText"></div>
   </div>
 </template>
 
