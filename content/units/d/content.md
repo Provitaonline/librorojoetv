@@ -167,7 +167,9 @@ Steyermark (1966), quien exploró el macizo del Turimiquire durante dos meses en
 ## Sector D.5.2.
 ### Serranía de Paria
 {class="unit-subtitle-2"}
-La vegetación de la serranía de Paria está constituida principalmente por bosques y arbustales espinosos (espinares) o tropófilos, emplazados en el piso colinar y basimontano, dominados principalmente por especies leñosas y espinosas de leguminosas (Silva 1999). No obstante, en las cumbres de los cerros Patao y Humo, ubicados al noreste del estado Sucre, a una altitud de 1.200-1.300 msnm, se encuentran pequeñas manchas de bosque nublado, interesantes desde el punto de vista fitogeográfico y florístico (Steyermark & Agostini 1966). Una gran parte de la vegetación original de esta subregión en el noreste del país ha sido sometida a una intensa ocupación humana desde hace varios siglos, de manera que su actual cubierta vegetal incluye terrenos deforestados con matorrales o sabanas secundarias, así como bosques basimontanos y submontanos con alto grado de intervención debido a la tala selectiva de las especies maderables (Silva 1999).
+La vegetación de la serranía de Paria está constituida principalmente por bosques y arbustales espinosos (espinares) o tropófilos, emplazados en el piso colinar y basimontano, dominados principalmente por especies leñosas y espinosas de leguminosas (Silva 1999). No obstante, en las cumbres de los cerros Patao y Humo, ubicados al noreste del estado Sucre, a una altitud de 1.200-1.300 msnm, se encuentran pequeñas manchas de bosque nublado, interesantes desde el punto de vista fitogeográfico y florístico (Steyermark & Agostini 1966). 
+
+Una gran parte de la vegetación original de esta subregión en el noreste del país ha sido sometida a una intensa ocupación humana desde hace varios siglos, de manera que su actual cubierta vegetal incluye terrenos deforestados con matorrales o sabanas secundarias, así como bosques basimontanos y submontanos con alto grado de intervención debido a la tala selectiva de las especies maderables (Silva 1999).
 
 <a id='d6'></a>
 
