@@ -1,23 +1,34 @@
 ---
 id: clasificacion
 method: clasificacion
-title: "Clasificación del riesgo<br>de colapso de ecosistemas<br>terrestres"
-authors: "Jon Paul Rodríguez, Kathryn M. Rodríguez-Clark, Marianne Assmüssen"
-citationPre: "Rodríguez J.P., K.M. Rodríguez-Clark & M. Assmüssen (2010). Categorías y criterios de las listas rojas de ecosistemas. Clasificación del riesgo de colapso de ecosistemas terrestres. Pp: 97-105. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
+title: Clasificación del riesgo<br>de colapso de ecosistemas<br>terrestres
+authors: Jon Paul Rodríguez, Kathryn M. Rodríguez-Clark, Marianne Assmüssen
+citationPre: "Rodríguez J.P., K.M. Rodríguez-Clark & M. Assmüssen (2010).
+  Categorías y criterios de las listas rojas de ecosistemas. Clasificación del
+  riesgo de colapso de ecosistemas terrestres. Pp: 97-105. En: J.P. Rodríguez,
+  F. Rojas- Suárez & D. Giraldo Hernández (eds.)"
 citationPost: ""
-cardimage: "./pancarta-class.jpg"
-cardimagecaption: "Atardecer en el Llano, estado Apure. <i>Rebecca Miller</i>"
+cardimage: ./pancarta-class.jpg
+cardimagecaption: Atardecer en el Llano, estado Apure. <i>Rebecca Miller</i>
 showRiskEvalNote: true
 photos:
-- photokey: "Figura 1"
-  photourl: "./figura-1.png"
-  photocaption: "<b>Figura 1:</b> Esquema de la aplicación de los criterios para la clasificación de ecosistemas amenazados de eliminación. Fuente: Rodríguez *et al.* (2011)"
-- photokey: "Figura 2"
-  photourl: "./criterios.svg"
-  photocaption: "<b>Figura 2:</b> Sistema de categorías y criterios para ecosistemas terrestres amenazados de Venezuela"
-- photokey: "Figura 3"
-  photourl: "./figura-3.png"
-  photocaption: "<b>Figura 3:</b> Diferencia entre extensión de la presencia y área de ocupación. (A) es la distribución espacial de lugares de presencia conocidos, inferidos o proyectados. (B) muestra una delimitación posible de la extensión de la presencia, la cual es el área  medida dentro de este límite. (C) muestra una medida del área de ocupación la cual puede ser obtenida por la suma de cuadros ocupados (UICN 2001)"
+  - photokey: Figura 1
+    photourl: ./figura-1.png
+    photocaption: "<b>Figura 1:</b> Esquema de la aplicación de los criterios para
+      la clasificación de ecosistemas amenazados de eliminación. Fuente:
+      Rodríguez *et al.* (2011)"
+  - photokey: Figura 2
+    photourl: ./criterios.svg
+    photocaption: <b>Figura 2:</b> Sistema de categorías y criterios para
+      ecosistemas terrestres amenazados de Venezuela
+  - photokey: Figura 3
+    photourl: ./figura-3.png
+    photocaption: <b>Figura 3:</b> Diferencia entre extensión de la presencia y área
+      de ocupación. (A) es la distribución espacial de lugares de presencia
+      conocidos, inferidos o proyectados. (B) muestra una delimitación posible
+      de la extensión de la presencia, la cual es el área  medida dentro de este
+      límite. (C) muestra una medida del área de ocupación la cual puede ser
+      obtenida por la suma de cuadros ocupados (UICN 2001)
 ---
 Dado que la medición directa del nivel de amenaza de los ecosistemas y las especies es costosa y difícil, las evaluaciones dependen de medidas indirectas de riesgo o “criterios” (Mace *et al.* 2008). Para las especies los criterios fueron derivados a partir de los estimados de la distribución y su abundancia, incluyendo las tendencias temporales (UICN 2001, Mace *et al.* 2008). Sin embargo, los criterios basados en las tendencias de distribución y abundancia de especies podrían ser insuficientes en el contexto de los ecosistemas (son más que “individuos”), donde los cambios en extensión espacial representan el punto final de otros procesos (transformación estructural o declinación funcional). Por lo tanto, la evaluación de ecosistemas requiere la formulación de criterios adicionales, que consideren medidas de su función ecológica y tomen en cuenta al menos tres características de las causas de amenazas: inmediatez, alcance y severidad (Master *et al.* 2009). Por ejemplo, la tala total de un bosque representa la pérdida de funciones ecológicas en tiempo inmediato, de modo amplio y en forma severa, además de las pérdidas irreversibles en la composición, estructura y función, incluyendo cambios abruptos y reducciones permanentes en la distribución geográfica del ecosistema (Scheffer *et al.* 2001). En cambio, en un bosque sujeto a tala selectiva de especies maderables de mayor valor, es posible que se preserven algunas de sus funciones ecológicas originales. El grado de disminución funcional dependería de la intensidad (severidad) y extensión (alcance) de la perturbación. Los indicadores de pérdida funcional de ecosistemas pueden estar basados en medidas asociadas a amenazas específicas (e.g. aumento en la proporción de especies exóticas invasivas o en los niveles de contaminación), a medidas de estructura (e.g. cambios en riqueza de especies, estructura trófica, o estatus de especies clave particulares como dispersores de semillas o polinizadores), o a medidas de función (e.g. cambios en el ciclaje de nutrientes, complejidad trófica, flujos energéticos, acumulación de biomasa o patrones de flujo de agua), entre otras medidas (Nel *et al.* 2007, Nicholson *et al.* 2009).
 
