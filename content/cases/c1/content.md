@@ -94,7 +94,7 @@ Por otra parte, los bosques semideciduos, que se encuentran en una franja altitu
     <thead>
       <tr>
         <th rowspan="2"></th>
-        <th align="center" colspan="2">Extensión (Km<sup>2</sup>)<br></th>
+        <th align="center" colspan="2">Extensión (km<sup>2</sup>)<br></th>
         <th align="center"colspan="2">Conversión (1986-2001)</th>
         <th align="center">Proyección (50 años)</th>
       </tr>
