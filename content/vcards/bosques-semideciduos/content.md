@@ -197,7 +197,7 @@ riskofcolapsestatelevel:
     threatcategories:
       - "-"
       - cr
-      - vu
+      - en
       - cr
   - zone: Delta Amacuro
     threatcategories:
@@ -215,7 +215,7 @@ riskofcolapsestatelevel:
     threatcategories:
       - "-"
       - cr
-      - en
+      - lc
       - cr
   - zone: Guárico
     threatcategories:
