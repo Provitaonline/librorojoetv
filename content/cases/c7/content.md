@@ -1,31 +1,38 @@
 ---
 case: c7
-title: "Conversión de bosques en la reserva forestal Sipapo, estado Amazonas"
-authors: "Irene Zager, Fabián Carrasquel"
-citationPre: "Zager, I. & F. Carrasquel (2010). Conversión de bosques en la reserva forestal Sipapo, estado Amazonas. Pp: 275-280. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
+title: Conversión de bosques en la reserva forestal Sipapo, estado Amazonas
+authors: Irene Zager, Fabián Carrasquel
+citationPre: "Zager, I. & F. Carrasquel (2010). Conversión de bosques en la
+  reserva forestal Sipapo, estado Amazonas. Pp: 275-280. En: J.P. Rodríguez, F.
+  Rojas- Suárez & D. Giraldo Hernández (eds.)."
 citationPost: ""
-cardimage: "./pancarta.jpg"
-landscapeunits: "Sistema de colinas y sierras bajas piemontanas del Escudo Guayanés (<a href='/unidades/c#c2'>C2</a>)"
-locality: "Reserva Forestal Sipapo, noroccidente estado Amazonas"
-states: "Amazonas"
+cardimage: ./pancarta.jpg
+landscapeunits: Sistema de colinas y sierras bajas piemontanas del Escudo
+  Guayanés (<a href='/unidades/c#c2'>C2</a>)
+locality: Reserva Forestal Sipapo, noroccidente estado Amazonas
+states: Amazonas
 area: 9000
 cardtablecolumns:
-  - "Formación Vegetal"
-  - "Categoría"
-  - "Criterio"
+  - Formación Vegetal
+  - Categoría
+  - Criterio
 cardtablerows:
-  - "Bosques siempreverdes|lc|A1, A2, A3"
+  - Bosques siempreverdes|lc|A1, A2, A3
 photos:
-- photokey: "Figura 1"
-  photourl: "./figura-1.png"
-  photocaption: "Figura 1: Localización de la Reserva Forestal Sipapo, zona noroccidental del estado Amazonas."
-  isCentered: true
-- photokey: "Figura 2"
-  photourl: "./figura-2.jpg"
-  photocaption: "Figura 2: Cobertura de bosques siempreverdes (verde oscuro) para los años 1986 y 2001 en la zona noroccidental del estado Amazonas."
-- photokey: "Figura 3"
-  photourl: "./figura-3.jpg"
-  photocaption: "Figura 3: Mapa del riesgo de eliminación de los bosques siempreverdes de la zona noroccidental del estado Amazonas por grillas de 100 Km2. A) Bosques siempreverdes B) Arbustales y herbazales"
+  - photokey: Figura 1
+    photourl: ./figura-1.png
+    photocaption: "Figura 1: Localización de la Reserva Forestal Sipapo, zona
+      noroccidental del estado Amazonas."
+    isCentered: true
+  - photokey: Figura 2
+    photourl: ./figura-2.jpg
+    photocaption: "Figura 2: Cobertura de bosques siempreverdes (verde oscuro) para
+      los años 1986 y 2001 en la zona noroccidental del estado Amazonas."
+  - photokey: Figura 3
+    photourl: ./figura-3.jpg
+    photocaption: "Figura 3: Mapa del riesgo de eliminación de los bosques
+      siempreverdes de la zona noroccidental del estado Amazonas por grillas de
+      100 Km2. A) Bosques siempreverdes B) Arbustales y herbazales"
 ---
 # Contexto
 
@@ -47,11 +54,11 @@ Con respecto a sus potencialidades faunísticas, la Reserva Forestal Sipapo fue 
 
 # Métodos
 
-El área de estudio correspondió a 5% del área total del estado Amazonas, cubriendo aproximadamente 9.000 km<sup>2</sup> de la zona noroccidental (Figura 1). Esta extensión abarca parcialmente tres entidades municipales (Atures, Atabapo y Autana), y cubre casi en su totalidad a la Reserva Forestal Sipapo. Con el fin de analizar los cambios de cobertura ocurridos en la zona noroccidental del estado Amazonas, se llevó a cabo el procesamiento y análisis de dos imágenes satelitales, una imagen Landsat TM del 26 de diciembre de 1986 y una imagen Landsat ETM+ del 9 de enero de 2001.
+El área de estudio correspondió a 5% del área total del estado Amazonas, cubriendo aproximadamente 9.000 km<sup>2</sup> de la zona noroccidental (Figura 1). Esta extensión abarca parcialmente tres entidades municipales (Atures, Atabapo y Autana), y cubre casi en su totalidad a la Reserva Forestal Sipapo. 
 
-Para el procesamiento de las imágenes se utilizó el programa Idrisi Kilimanjaro, que facilitó la corrección radiométrica y atmosférica de sus bandas, y así calibrar las discrepancias derivadas del uso de sensores diferentes y de los efectos atmosféricos (Eastman 2003). Previo al análisis, las zonas ocupadas por nubes, sombras y cuerpos de agua fueron eliminadas mediante la creación de una “máscara”. Después de esta corrección, se procedió a identificar los principales tipos de cobertura presentes en el área y sus respectivas firmas espectrales.
+Con el fin de analizar los cambios de cobertura ocurridos en la zona noroccidental del estado Amazonas, se llevó a cabo el procesamiento y análisis de dos imágenes satelitales, una imagen Landsat TM del 26 de diciembre de 1986 y una imagen Landsat ETM+ del 9 de enero de 2001.
 
-Para ello, se superpusieron puntos de referencia para cada una de las coberturas terrestres identificadas sobre una composición en falso color de las imágenes satelitales. Esto permitió definir las áreas de entrenamiento para realizar una clasificación supervisada de las imágenes utilizando el algoritmo de clasificación de Distancia Mínima a la Media (MINDIST) y así mejorar la confiabilidad de los resultados (Jensen 1996, Eastman 2003). Los   puntos de referencia incluyeron cada una de las coberturas obtenidas durante una salida de campo, así como las coberturas terrestres señaladas en los mapas de vegetación elaborados para la zona por Huber (1995c), y en los ortofotomapas (1:50.000) correspondientes al Proyecto CartoSur I.
+Para el procesamiento de las imágenes se utilizó el programa Idrisi Kilimanjaro, que facilitó la corrección radiométrica y atmosférica de sus bandas, y así calibrar las discrepancias derivadas del uso de sensores diferentes y de los efectos atmosféricos (Eastman 2003). Previo al análisis, las zonas ocupadas por nubes, sombras y cuerpos de agua fueron eliminadas mediante la creación de una “máscara”. Después de esta corrección, se procedió a identificar los principales tipos de cobertura presentes en el área y sus respectivas firmas espectrales. Para ello, se superpusieron puntos de referencia para cada una de las coberturas terrestres identificadas sobre una composición en falso color de las imágenes satelitales. Esto permitió definir las áreas de entrenamiento para realizar una clasificación supervisada de las imágenes utilizando el algoritmo de clasificación de Distancia Mínima a la Media (MINDIST) y así mejorar la confiabilidad de los resultados (Jensen 1996, Eastman 2003). Los   puntos de referencia incluyeron cada una de las coberturas obtenidas durante una salida de campo, así como las coberturas terrestres señaladas en los mapas de vegetación elaborados para la zona por Huber (1995c), y en los ortofotomapas (1:50.000) correspondientes al Proyecto CartoSur I.
 {Figura 2}
 Dadas las características de reflectancia de las imágenes sujetas a análisis, al momento de realizar las clasificaciones supervisadas sólo se logró diferenciar cuatro clases de cobertura: i) bosques siempreverdes (incluyendo bosques ribereños), ii) arbustales y herbazales, iii) áreas anegadizas, áreas intervenidas y suelos expuestos, y iv) formaciones rocosas.
 
