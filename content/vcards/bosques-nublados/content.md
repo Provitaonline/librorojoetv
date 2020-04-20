@@ -82,7 +82,7 @@ stateleveltable:
     areain1988: "100"
     areain2010: "33"
   - state: Apure
-    areain1988: " "
+    areain1988: ""
     areain2010: "101"
   - state: Aragua
     areain1988: "213"
@@ -100,7 +100,7 @@ stateleveltable:
     areain1988: "238"
     areain2010: "343"
   - state: Guárico
-    areain1988: " "
+    areain1988: ""
     areain2010: "34"
   - state: Lara
     areain1988: "221"
@@ -116,7 +116,7 @@ stateleveltable:
     areain2010: "142"
   - state: Portuguesa
     areain1988: "1"
-    areain2010: " "
+    areain2010: ""
   - state: Sucre
     areain1988: "97"
     areain2010: "178"
@@ -133,7 +133,7 @@ stateleveltable:
     areain1988: "1069"
     areain2010: "1018"
   - state: Zulia
-    areain1988: " "
+    areain1988: ""
     areain2010: "796"
 threatlevelmaps:
   - map: ./figura-3a-amen-occ.jpg
