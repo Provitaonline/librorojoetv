@@ -42,7 +42,7 @@ distribution: >
   montañas), 12 subregiones y 11 sectores de las unidades de paisaje definidas
   para Venezuela.
 distributionmap: ./dist.png
-areain1988: "71684"
+areain1988: "69684"
 areain2010: "56690"
 mapcompare:
   - in2010: ./figura-1b-2010-1.jpg
