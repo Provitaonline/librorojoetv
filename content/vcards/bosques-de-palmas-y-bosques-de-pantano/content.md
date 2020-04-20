@@ -139,7 +139,7 @@ stateleveltable:
     areain2010: "45"
   - formation: ""
     state: Sucre
-    areain1988: " "
+    areain1988: ""
     areain2010: "367"
   - formation: ""
     state: Yaracuy
