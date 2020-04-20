@@ -1,35 +1,47 @@
 ---
 case: c1
-title: "Conversión de los bosques en la cordillera central de Venezuela"
-authors: "Carlos Portillo-Quintero, Pablo Lacabana, Fabián Carrasquel"
-citationPre: "Portillo-Quintero C., P. Lacabana & F. Carrasquel (2010). Conversión de los bosques en la cordillera central de Venezuela. Pp: 239-243. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
-citationPost: ""
-cardimage: "./pancarta.jpg"
-landscapeunits: "Cordillera de la costa (<a href='/unidades/d#d42'>D42</a>, <a href='/unidades/d#d43'>D43</a>)"
-locality: "Tramo medio de la costa central"
-states: "Aragua, Carabobo, Guárico, Miranda, Vargas"
+title: Conversión de los bosques en la cordillera de la costa central de Venezuela
+authors: Carlos Portillo-Quintero, Pablo Lacabana, Fabián Carrasquel
+citationPre: "Portillo-Quintero C., P. Lacabana & F. Carrasquel (2010).
+  Conversión de los bosques en la cordillera de la costa central de Venezuela.
+  Pp: 239-243. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández
+  (eds.)."
+citationPost: "Pp: 239-243"
+cardimage: ./pancarta.jpg
+landscapeunits: Cordillera de la Costa (<a href='/unidades/d#d42'>D42</a>, <a
+  href='/unidades/d#d43'>D43</a>)
+locality: Tramo medio de la cordillera de la costa Central
+states: Aragua, Carabobo, Guárico, Miranda, Vargas
 area: 6500
 cardtablecolumns:
-  - "Formación Vegetal"
-  - "Categoría"
-  - "Criterio"
+  - Formación Vegetal
+  - Categoría
+  - Criterio
 cardtablerows:
-  - "Bosques siempreverdes|lc|-"
-  - "Bosques semideciduos|vu|A3"
+  - Bosques siempreverdes|lc|-
+  - Bosques semideciduos|vu|A3
+  - Bosques deciduos|cr|A3
 photos:
-- photokey: "Figura 1"
-  photourl: "./figura-1.jpg"
-  photocaption: "Figura 1: Área delimitada para el caso de estudio."
-  isCentered: true
-- photokey: "Figura 2"
-  photourl: "./figura-2.jpg"
-  photocaption: "Figura 2: Imágenes satelitales del área escogida para el caso de estudio. Muestran los límites de las tres áreas protegidas incluidas en el área (de izquierda a derecha, Parque Nacional Henri Pittier, Monumento Natural Pico Codazzi y Parque Nacional Macarao)."
-- photokey: "Figura 3"
-  photourl: "./figura-3.jpg"
-  photocaption: "Figura 3: Mapas de cobertura de bosques siempreverdes (verde oscuro), bosques semideciduos (verde claro) y bosques deciduos para los años 1986 y 2001 en la región de la cordillera de la Costa en el Centro-Norte de Venezuela."
-- photokey: "Foto 1"
-  photourl: "./foto-1.jpg"
-  photocaption: "Foto 1: Cordillera de la Costa Central, Henri Pittier, estado Aragua. <i>David Southall</i>"
+  - photokey: Figura 1
+    photourl: ./figura-1.jpg
+    photocaption: "Figura 1: Área delimitada para el caso de estudio."
+    isCentered: true
+  - photokey: Figura 2
+    photourl: ./figura-2.jpg
+    photocaption: "Figura 2: Imágenes satelitales del área escogida para el caso de
+      estudio. Muestran los límites de las tres áreas protegidas incluidas en el
+      área (de izquierda a derecha, Parque Nacional Henri Pittier, Monumento
+      Natural Pico Codazzi y Parque Nacional Macarao)."
+  - photokey: Figura 3
+    photourl: ./figura-3.jpg
+    photocaption: "Figura 3: Mapas de cobertura de bosques siempreverdes (verde
+      oscuro), bosques semideciduos (verde claro) y bosques deciduos para los
+      años 1986 y 2001 en la región de la cordillera de la Costa en el
+      Centro-Norte de Venezuela."
+  - photokey: Foto 1
+    photourl: ./foto-1.jpg
+    photocaption: "Foto 1: Cordillera de la Costa Central, Henri Pittier, estado
+      Aragua. <i>David Southall</i>"
 ---
 # Contexto
 
@@ -82,7 +94,7 @@ Por otra parte, los bosques semideciduos, que se encuentran en una franja altitu
     <thead>
       <tr>
         <th rowspan="2"></th>
-        <th align="center" colspan="2">Extensión (Km<sup>2</sup>)<br></th>
+        <th align="center" colspan="2">Extensión (km<sup>2</sup>)<br></th>
         <th align="center"colspan="2">Conversión (1986-2001)</th>
         <th align="center">Proyección (50 años)</th>
       </tr>

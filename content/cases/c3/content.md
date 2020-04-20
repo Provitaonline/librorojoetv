@@ -1,35 +1,41 @@
 ---
 case: c3
-title: "Estado de amenaza de los ecosistemas al norte y sur del lago de Maracaibo, Estado Zulia"
-authors: "María Idalí Tachack-García, Fabián Carrasquel, Sergio Zambrano-Martínez"
-citationPre: "Tachack-García, M.I., F. Carrasquel & S. Zambrano-Martínez (2010). Estado de amenaza de los ecosistemas al norte y sur del lago de Maracaibo, Estado Zulia. Pp: 250-256. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
-citationPost: ""
-cardimage: "./pancarta.jpg"
-landscapeunits: "Depresión de Maracaibo (<a href='/unidades/b#b1'>B1</a>)"
-locality: "Norte y sur cuenca del lago de Maracaibo"
-states: "Zulia"
-area: 934
+title: Estado de amenaza de los ecosistemas al norte y sur del lago de
+  Maracaibo, Estado Zulia
+authors: María Idalí Tachack-García, Fabián Carrasquel, Sergio Zambrano-Martínez
+citationPre: "Tachack-García, M.I., F. Carrasquel & S. Zambrano-Martínez (2010).
+  Estado de amenaza de los ecosistemas al norte y sur del lago de Maracaibo,
+  Estado Zulia. Pp: 250-256. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo
+  Hernández (eds.)."
+citationPost: "Pp: 250-252"
+cardimage: ./pancarta.jpg
+landscapeunits: Depresión de Maracaibo (<a href='/unidades/b#b1'>B1</a>)
+locality: Norte y sur cuenca del lago de Maracaibo
+states: Zulia
+area: "6.485"
 cardtablecolumns:
-  - "Formación Vegetal"
-  - "Categoría"
-  - "Criterio"
+  - Formación Vegetal
+  - Categoría
+  - Criterio
 cardtablerows:
-  - "Bosques siempreverdes|vu|A1"
-  - "Bosques semideciduos|cr|A2"
-  - "Bosques de ribereños|vu|D"
-  - "Ciénagas|vu|D"
-  - "Manglares|lc|"
+  - Bosques siempreverdes|vu|A1
+  - Bosques semideciduos|cr|A2
+  - Bosques de ribereños|vu|D
+  - Ciénagas|vu|D
+  - Manglares|lc|
 photos:
-- photokey: "Figura 1"
-  photourl: "./figura-1.jpg"
-  photocaption: "Figura 1: Área delimitada para el caso de estudio."
-  isCentered: true
-- photokey: "Figura 2"
-  photourl: "./figura-2.jpg"
-  photocaption: "Figura 2: Cambio de cobertura de los ecosistemas terrestres al norte y sur del lago de Maracaibo en 1986 y 2001-2003."
-- photokey: "Foto 1"
-  photourl: "./foto-1.jpg"
-  photocaption: "Foto 1: Ciénaga de Juan Manuel, estado Zulia. <i>Sergio Zambrano-Martínez</i>"
+  - photokey: Figura 1
+    photourl: ./figura-1.jpg
+    photocaption: "Figura 1: Área delimitada para el caso de estudio."
+    isCentered: true
+  - photokey: Figura 2
+    photourl: ./figura-2.jpg
+    photocaption: "Figura 2: Cambio de cobertura de los ecosistemas terrestres al
+      norte y sur del lago de Maracaibo en 1986 y 2001-2003."
+  - photokey: Foto 1
+    photourl: ./foto-1.jpg
+    photocaption: "Foto 1: Ciénaga de Juan Manuel, estado Zulia. <i>Sergio
+      Zambrano-Martínez</i>"
 ---
 # Contexto
 
