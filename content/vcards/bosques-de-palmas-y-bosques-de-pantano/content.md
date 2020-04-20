@@ -96,7 +96,7 @@ distribution: >
   país, pero por la escala de análisis de esta investigación no pueden ser
   cuantificados.
 distributionmap: ./dist.png
-areain1988: "22269"
+areain1988: "22296"
 areain2010: "23109"
 mapcompare:
   - in2010: ./figura-1b-1-2010.jpg
