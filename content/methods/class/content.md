@@ -16,7 +16,7 @@ photos:
     photourl: ./figura-1.png
     photocaption: "<b>Figura 1:</b> Esquema de la aplicación de los criterios para
       la clasificación de ecosistemas amenazados de eliminación. Fuente:
-      Rodríguez *et al.* (2011)"
+      Rodríguez <i>et al</i>.* (2011)"
   - photokey: Figura 2
     photourl: ./criterios.svg
     photocaption: <b>Figura 2:</b> Sistema de categorías y criterios para
