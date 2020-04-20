@@ -1,34 +1,42 @@
 ---
 case: c4
-title: "Conversión de los bosques del norte de la sierra de Perijá, estado Zulia"
-authors: "Mariana C. Hernández-Montilla, Carlos Portillo-Quintero"
-citationPre: "Hernández-Montilla, M.C. & C. Portillo-Quintero (2010). Conversión de los bosques del norte de la sierra de Perijá, estado Zulia. Pp: 257-262. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
-citationPost: ""
-cardimage: "./pancarta.jpg"
-landscapeunits: "Serranía de Perijá (<a href='/unidades/d#d1'>D1</a>)"
-locality: "Cuencas altas de los ríos El Palmar, Lajas, Guasare y Apón<sup>(1)</sup>. Cuencas bajas de los ríos Guasare, Socuy y Cachirí<sup>(2)</sup>"
-states: "Zulia"
+title: Conversión de los bosques del norte de la sierra de Perijá, estado Zulia
+authors: Mariana C. Hernández-Montilla, Carlos Portillo-Quintero
+citationPre: "Hernández-Montilla, M.C. & C. Portillo-Quintero (2010). Conversión
+  de los bosques del norte de la sierra de Perijá, estado Zulia. Pp: 257-262.
+  En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
+citationPost: "Pp: 257-262"
+cardimage: ./pancarta.jpg
+landscapeunits: Serranía de Perijá (<a href='/unidades/d#d1'>D1</a>)
+locality: Cuencas altas de los ríos El Palmar, Lajas, Guasare y
+  Apón<sup>(1)</sup>. Cuencas bajas de los ríos Guasare, Socuy y
+  Cachirí<sup>(2)</sup>
+states: Zulia
 area: 1746
 cardtablecolumns:
-  - "Formación Vegetal"
-  - "Categoría"
-  - "Criterio"
+  - Formación Vegetal
+  - Categoría
+  - Criterio
 cardtablerows:
-  - "Bosques siempreverdes<sup>(1)</sup>|cr|A2"
-  - "Bosques siempreverdes<sup>(2)</sup>|cr|A2"
+  - Bosques siempreverdes<sup>(1)</sup>|cr|A2
+  - Bosques siempreverdes<sup>(2)</sup>|cr|A2
 photos:
-- photokey: "Figura 1"
-  photourl: "./figura-1.png"
-  photocaption: "Figura 1: Localización geográfica de las áreas de estudio al norte de la sierra de Perijá, estado Zulia."
-- photokey: "Foto 1"
-  photourl: "./foto-1.jpg"
-  photocaption: "Foto 1: Bosques muy intervenidos de la Sierra de Perijá, estado Zulia. Mariana Hernández-Montilla"
-- photokey: "Figura 2"
-  photourl: "./figura-2.jpg"
-  photocaption: "Figura 2: Reducción de la cobertura boscosa en las cuencas altas de los ríos El Palmar, Lajas, Guasare y Apón entre 1989 y 2007."
-- photokey: "Figura 3"
-  photourl: "./figura-3.jpg"
-  photocaption: "Figura 3: Reducción de la cobertura boscosa en las cuencas bajas de los ríos Guasare, Socuy y Cachirí entre 1986 y 2001."
+  - photokey: Figura 1
+    photourl: ./figura-1.png
+    photocaption: "Figura 1: Localización geográfica de las áreas de estudio al
+      norte de la sierra de Perijá, estado Zulia."
+  - photokey: Foto 1
+    photourl: ./foto-1.jpg
+    photocaption: "Foto 1: Bosques muy intervenidos de la Sierra de Perijá, estado
+      Zulia. Mariana Hernández-Montilla"
+  - photokey: Figura 2
+    photourl: ./figura-2.jpg
+    photocaption: "Figura 2: Reducción de la cobertura boscosa en las cuencas altas
+      de los ríos El Palmar, Lajas, Guasare y Apón entre 1989 y 2007."
+  - photokey: Figura 3
+    photourl: ./figura-3.jpg
+    photocaption: "Figura 3: Reducción de la cobertura boscosa en las cuencas bajas
+      de los ríos Guasare, Socuy y Cachirí entre 1986 y 2001."
 ---
 # Contexto
 
@@ -160,7 +168,9 @@ En el área de las cuencas bajas, para el año 1986 se identificaron 328 km<sup>
 
 En general, la principal amenaza es la expansión de cultivos comerciales extensivos en terrenos previamente ocupados por bosques maduros o en etapa sucesional tardía. Entre 1989 y 2007, en las cuencas altas el área ocupada por cultivos pasó de 0,58 ha a 7,25 ha; sin embargo, el área de suelos expuestos podría estar relacionada con suelos abandonados por cultivos, lo cual incrementaría el área afectada. Las áreas de bosques intervenidos también podrían ser estados sucesionales avanzados de zonas anteriormente ocupadas por cultivos, y actualmente en descanso o en abandono por el desplazamiento de las fronteras agrícolas. Así mismo, se observa que el crecimiento de los cultivos ocurrió de manera dispersa y fragmentada, y penetró incluso en lotes boscosos originalmente extensos y relativamente remotos. El cultivo más frecuente fue el ocumo (*Xanthosoma saggittifolium*), un cormo perteneciente a la familia Aracea y, en menor medida, cultivos de subsistencia relacionados con árboles frutales de noni (*Morinda citrifolia*), lechoza (*Carica papaya*), limón (*Citrus limon*), musáceas como plátano y cambur o banano (*Musa paradisiaca*), y café (*Coffea arabiga*), entre otros frutos (Hernández-Montilla 2010).
 
-En la zona de las cuencas altas la amenaza de la expansión agrícola es evidente y se observó con claridad el incremento en la tasa de conversión de hábitat en los últimos 5 años (2002-2007), en relación con la tasa obtenida para los primeros 13 años. Esto podría atribuirse a los avances técnicos de los sistemas de agroproducción y a los problemas de orden civil, evidenciados en la presión creciente de las actividades humanas sobre el bosque. Por ejemplo, el incremento y mejoramiento de las vías que permiten el acceso a la zona, y el establecimiento de las redes de comercio rural que va desde el cultivo hasta el transporte, y que incluye la importación y exportación del producto final (Hernández-Montilla *et al.* 2007, Hernández-Montilla 2010). En la zona de las cuencas bajas la agricultura extensiva es el uso de la tierra más común en la región, principalmente porque la mayoría de los terrenos pertenece a pequeños productores que carecen de los recursos para la implementación de una agricultura intensiva. Sin embargo, el uso industrial de la tierra, que reemplaza los hábitats originales, es especialmente significativo en la zona debido al avance y expansión de los proyectos para la extracción carbonífera (IESA 1997, Rojas 2004). En las orillas del río Cachirí se observó también la presencia de empresas dedicadas a la extracción de piedra caliza, así como agricultura intensiva en más de la mitad de la zona oriental del área de estudio.
+En la zona de las cuencas altas la amenaza de la expansión agrícola es evidente y se observó con claridad el incremento en la tasa de conversión de hábitat en los últimos 5 años (2002-2007), en relación con la tasa obtenida para los primeros 13 años. Esto podría atribuirse a los avances técnicos de los sistemas de agroproducción y a los problemas de orden civil, evidenciados en la presión creciente de las actividades humanas sobre el bosque. Por ejemplo, el incremento y mejoramiento de las vías que permiten el acceso a la zona, y el establecimiento de las redes de comercio rural que va desde el cultivo hasta el transporte, y que incluye la importación y exportación del producto final (Hernández-Montilla *et al.* 2007, Hernández-Montilla 2010). 
+
+En la zona de las cuencas bajas la agricultura extensiva es el uso de la tierra más común en la región, principalmente porque la mayoría de los terrenos pertenece a pequeños productores que carecen de los recursos para la implementación de una agricultura intensiva. Sin embargo, el uso industrial de la tierra, que reemplaza los hábitats originales, es especialmente significativo en la zona debido al avance y expansión de los proyectos para la extracción carbonífera (IESA 1997, Rojas 2004). En las orillas del río Cachirí se observó también la presencia de empresas dedicadas a la extracción de piedra caliza, así como agricultura intensiva en más de la mitad de la zona oriental del área de estudio.
 
 # Conclusiones
 
