@@ -12,7 +12,7 @@ cardimage: ./pancarta.jpg
 landscapeunits: Depresión de Maracaibo (<a href='/unidades/b#b1'>B1</a>)
 locality: Norte y sur cuenca del lago de Maracaibo
 states: Zulia
-area: "6.485"
+area: "6485.46"
 cardtablecolumns:
   - Formación Vegetal
   - Categoría
