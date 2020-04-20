@@ -66,7 +66,7 @@ photos:
     photocaption: <b>Foto 13:</b> Sabana abierta, estado Apure. <i>César Molina</i>
   - photokey: Foto 14
     photourl: ./foto-14.jpg
-    photocaption: <b>Foto 1:</b> Sabana arbolada, estado Anzoátegui. <i>César Molina</i>
+    photocaption: <b>Foto 14:</b> Sabana arbolada, estado Anzoátegui. <i>César Molina</i>
   - photokey: Foto 15
     photourl: ./foto-15.jpg
     photocaption: <b>Foto 15:</b> Herbazal paramero, Guaramacal, estado Trujillo.
