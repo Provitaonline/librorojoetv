@@ -1,34 +1,39 @@
 ---
 case: c8
-title: "Conversión de los bosques y zonas áridas del centro-norte del estado Falcón"
-authors: "Irene Zager, Fabián Carrasquel"
-citationPre: "Zager, I. & F. Carrasquel (2010). Conversión de los bosques y zonas áridas del centro-norte del estado Falcón. Pp: 281-286. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
+title: Conversión de los bosques y zonas áridas del centro-norte del estado Falcón
+authors: Irene Zager, Fabián Carrasquel
+citationPre: "Zager, I. & F. Carrasquel (2010). Conversión de los bosques y
+  zonas áridas del centro-norte del estado Falcón. Pp: 281-286. En: J.P.
+  Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
 citationPost: ""
-cardimage: "./pancarta.jpg"
-landscapeunits: "Sistema de colinas y sierras bajas Lara-Falcón (<a href='/unidades/c#c1'>C1</a>), Sierra de San Luis y Cerro Santa Ana (<a href='/unidades/d#d3'>D3</a>)"
-locality: "Zona centro-norte del estado Falcón"
-states: "Falcón"
+cardimage: ./pancarta.jpg
+landscapeunits: Sistema de colinas y sierras bajas Lara-Falcón (<a
+  href='/unidades/c#c1'>C1</a>), Sierra de San Luis y Cerro Santa Ana (<a
+  href='/unidades/d#d3'>D3</a>)
+locality: Zona centro-norte del estado Falcón
+states: Falcón
 area: 10000
 cardtablecolumns:
-  - "Formación Vegetal"
-  - "Categoría"
-  - "Criterio"
+  - Formación Vegetal
+  - Categoría
+  - Criterio
 cardtablerows:
-  - "Bosques siempreverdes|cr|A2, A3"
-  - "Bosques semideciduos|en|A2"
-  - "Bosques deciduos|cr|A2, A3"
-  - "Cardonales y espinares|cr|A2"
+  - Bosques siempreverdes|cr|A2, A3
+  - Bosques semideciduos|en|A2
+  - Bosques deciduos|cr|A2, A3
+  - Cardonales y espinares|cr|A2
 photos:
-- photokey: "Figura 1"
-  photourl: "./figura-1.png"
-  photocaption: "Figura 1: Localización del área de estudio en el estado Falcón."
-  isCentered: true
-- photokey: "Figura 2"
-  photourl: "./figura-2.jpg"
-  photocaption: "Figura 1: Cobertura de los ecosistemas terrestre de la zona centro-norte del estado Falcón en 1991-2001."
-- photokey: "Foto 1"
-  photourl: "./foto-1.jpg"
-  photocaption: "Foto 1: Cardonales y espinares, estado Falcón. <i>Archivo Provita</i>"
+  - photokey: Figura 1
+    photourl: ./figura-1.png
+    photocaption: "Figura 1: Localización del área de estudio en el estado Falcón."
+    isCentered: true
+  - photokey: Figura 2
+    photourl: ./figura-2.jpg
+    photocaption: "Figura 1: Cobertura de los ecosistemas terrestre de la zona
+      centro-norte del estado Falcón en 1991-2001."
+  - photokey: Foto 1
+    photourl: ./foto-1.jpg
+    photocaption: "Foto 1: Cardonales y espinares, estado Falcón. <i>Archivo Provita</i>"
 ---
 # Contexto
 
@@ -50,7 +55,9 @@ La comparación de los cambios de cobertura ocurridos en la zona centro-norte de
 
 Seguidamente se procedió a la identificación de los principales tipos de cobertura vegetal presentes en el área y sus respectivas firmas espectrales. Los puntos de referencia para cada una de las coberturas terrestres se obtuvieron en campo utilizando un posicionador satelital (GPS). Los puntos de referencia se superpusieron en la composición en falso color de las imágenes satelitales para definir áreas de entrenamiento y así realizar una clasificación supervisada de las imágenes mediante el algoritmo de clasificación de *Distancia Mínima a la Media* (MINDIST) (Jensen 1996, Eastman 2003).
 
-De acuerdo con la refl ectancia encontrada en el área y la época en que fueron tomadas las imágenes, en la clasificación supervisada se reconocieron diez tipos de coberturas diferentes: 1) bosques siempreverdes, 2) bosques semideciduos, 3) bosques deciduos, 4) cardonales y espinares, 5) arbustales y matorrales, 6) vegetación litoral, 7) áreas anegadizas, 8) arenas y suelos expuestos, 9) áreas intervenidas, y 10) áreas urbanas. Sin embargo, en algunas zonas fue muy difícil diferenciar entre los distintos tipos de vegetación debido a las características predominantemente áridas y semiáridas del área de estudio, lo que pudo afectar las estimaciones de cobertura. Una vez obtenidos los mapas de cobertura preliminares para los años 1991 y 2001, estos fueron superpuestos con el fin de detectar polígonos o coberturas falsas, siguiendo el método de procesamiento en pares mediante el módulo CROSSTAB del programa Idrisi Kilimanjaro (Sánchez-Azofeifa *et al.* 2001, Eastman 2003). Estas inconsistencias fueron revisadas junto con los ortofotomapas y corregidas en los mapas de cobertura correspondientes.
+De acuerdo con la refl ectancia encontrada en el área y la época en que fueron tomadas las imágenes, en la clasificación supervisada se reconocieron diez tipos de coberturas diferentes: 1) bosques siempreverdes, 2) bosques semideciduos, 3) bosques deciduos, 4) cardonales y espinares, 5) arbustales y matorrales, 6) vegetación litoral, 7) áreas anegadizas, 8) arenas y suelos expuestos, 9) áreas intervenidas, y 10) áreas urbanas. Sin embargo, en algunas zonas fue muy difícil diferenciar entre los distintos tipos de vegetación debido a las características predominantemente áridas y semiáridas del área de estudio, lo que pudo afectar las estimaciones de cobertura. 
+
+Una vez obtenidos los mapas de cobertura preliminares para los años 1991 y 2001, estos fueron superpuestos con el fin de detectar polígonos o coberturas falsas, siguiendo el método de procesamiento en pares mediante el módulo CROSSTAB del programa Idrisi Kilimanjaro (Sánchez-Azofeifa *et al.* 2001, Eastman 2003). Estas inconsistencias fueron revisadas junto con los ortofotomapas y corregidas en los mapas de cobertura correspondientes.
 {Figura 2}
 En los dos mapas de cobertura finales se aplicaron filtros con el fin de extraer la cobertura original de 1991 y la cobertura reciente de 2001 (Figura 2) de las siguientes unidades de vegetación: i) bosques siempreverdes, ii) bosques semideciduos, iii) bosques deciduos y iv) cardonales y espinares. Posteriormente se calculó la proporción original y remanente de cada una de estas unidades, y se proyectó su conversión hacia el futuro considerando una ventana de 50 años, esto último con el fin de aplicar los criterios cuantitativos de riesgo de eliminación de ecosistemas propuestos por Rodríguez y colaboradores (2011) (Rodríguez *et al.* 2010). Los cambios de cobertura observados y proyectados para cada unidad de vegetación fueron contrastados con los umbrales establecidos para el criterio A, asignando como categoría final aquella que correspondiera al mayor riesgo relativo, de conformidad con el principio de precaución (Rodríguez *et al.* 2010). La asignación de categorías de riesgo de eliminación se basó únicamente en la información de los cambios de cobertura, dado que no se disponía de datos cuantitativos sobre la pérdida de función ecológica.
 
@@ -79,7 +86,11 @@ Como se muestra en la tabla 1, durante el período de diez años que abarcó el 
 
 </div>
 
-Al proyectar hacia el futuro las tasas de cambio de cobertura estimadas para el período de 50 años, se predice que en 2001 habrán desaparecido más de 80% de los bosques siempreverdes, bosques deciduos y cardonales y espinares remanentes, mientras que al menos 50% de la extensión de los bosques semideciduos también será reemplazada por otro tipo de cobertura (Tabla 2). En los análisis no fue considerado el municipio Democracia debido a que la imagen de la zona de estudio mostraba menos de 30% de su extensión total. Es de resaltar que en el nivel de municipio, al aplicar el sistema de categorías, mínimo uno de los ecosistemas de bosques siempreverdes (Bsv), bosques semideciduos (Bsd), bosques deciduos (Bd) y cardonales y espinares (Car-Esp), se encuentran En Peligro Crítico (CR) [Tabla 2]. Esto revela las fuertes presiones antrópicas a la que están sometidas los ecosistemas naturales en el estado Falcón. De igual manera, las Áreas Protegidas del estado, el Parque Nacional Juan Crisóstomo Falcón (Sierra de San Luis) y el Parque Nacional Médanos de Coro, enfrentan diferentes grados de afectación: los bosques deciduos (Bd) están en la categoría En Peligro (EN), y los bosques siempreverdes (Bsv) califican En Peligro Crítico (CR) respectivamente (Tabla 2). Con base en estos resultados, la aplicación de los criterios cuantitativos de riesgo de eliminación resultó en las siguientes estimaciones: bosques siempreverdes VU A1, CR A2, CR A3; bosques semideciduos LC A1, EN A2, VU A3; bosques deciduos LC A1, CR A2, CR A3 y, cardonales y espinares LC A1, CR A2, EN A3 (Foto 1).
+Al proyectar hacia el futuro las tasas de cambio de cobertura estimadas para el período de 50 años, se predice que en 2001 habrán desaparecido más de 80% de los bosques siempreverdes, bosques deciduos y cardonales y espinares remanentes, mientras que al menos 50% de la extensión de los bosques semideciduos también será reemplazada por otro tipo de cobertura (Tabla 2). En los análisis no fue considerado el municipio Democracia debido a que la imagen de la zona de estudio mostraba menos de 30% de su extensión total. 
+
+Es de resaltar que en el nivel de municipio, al aplicar el sistema de categorías, mínimo uno de los ecosistemas de bosques siempreverdes (Bsv), bosques semideciduos (Bsd), bosques deciduos (Bd) y cardonales y espinares (Car-Esp), se encuentran En Peligro Crítico (CR) [Tabla 2]. Esto revela las fuertes presiones antrópicas a la que están sometidas los ecosistemas naturales en el estado Falcón. De igual manera, las Áreas Protegidas del estado, el Parque Nacional Juan Crisóstomo Falcón (Sierra de San Luis) y el Parque Nacional Médanos de Coro, enfrentan diferentes grados de afectación: los bosques deciduos (Bd) están en la categoría En Peligro (EN), y los bosques siempreverdes (Bsv) califican En Peligro Crítico (CR) respectivamente (Tabla 2). 
+
+Con base en estos resultados, la aplicación de los criterios cuantitativos de riesgo de eliminación resultó en las siguientes estimaciones: bosques siempreverdes VU A1, CR A2, CR A3; bosques semideciduos LC A1, EN A2, VU A3; bosques deciduos LC A1, CR A2, CR A3 y, cardonales y espinares LC A1, CR A2, EN A3 (Foto 1).
 
 <div class="is-size-6 table-title">
   <br>
