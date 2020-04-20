@@ -1,18 +1,22 @@
 ---
 region: c
-title: "Región C. Colinas"
-cardimage: "./foto-27.jpg"
-cardimagecaption: "Sistema de colinas y sierras bajas piemontanas del Escudo Guayanés, Canaima, estado Bolívar. <i>Rebecca Miller</i>"
+title: Región C. Colinas
+cardimage: ./foto-27.jpg
+cardimagecaption: Sistema de colinas y sierras bajas piemontanas del Escudo
+  Guayanés, Canaima, estado Bolívar. <i>Rebecca Miller</i>
 photos:
-- photokey: "Foto 26"
-  photourl: "./foto-26.jpg"
-  photocaption: "Foto 26: Sistema de colinas y sierras bajas Lara-Falcón, estado Lara. <i>Giuseppe Colonnello</i>"
-- photokey: "Foto 27"
-  photourl: "./foto-27.jpg"
-  photocaption: "Foto 27: Sistema de colinas y sierras bajas piemontanas del Escudo Guayanés, Canaima, estado Bolívar. <i>Rebecca Miller</i>"
-- photokey: "Foto 28"
-  photourl: "./foto-28.jpg"
-  photocaption: "Foto 28: Sistema de sierras bajas y colinas Imataca-Cuyuní, Imataca, estado Bolívar. <i>Giuseppe Colonnello</i>"
+  - photokey: Foto 26
+    photourl: ./foto-26.jpg
+    photocaption: "Foto 26: Sistema de colinas y sierras bajas Lara-Falcón, estado
+      Lara. <i>Giuseppe Colonnello</i>"
+  - photokey: Foto 27
+    photourl: ./foto-27.jpg
+    photocaption: "Foto 27: Sistema de colinas y sierras bajas piemontanas del
+      Escudo Guayanés, Canaima, estado Bolívar. <i>Rebecca Miller</i>"
+  - photokey: Foto 28
+    photourl: ./foto-28.jpg
+    photocaption: "Foto 28: Sistema de sierras bajas y colinas Imataca-Cuyuní,
+      Imataca, estado Bolívar. <i>Giuseppe Colonnello</i>"
 ---
 # Descripción
 
@@ -31,7 +35,7 @@ En Venezuela el paisaje fisiográfico colinar no es muy extendido. Este término
 {class="unit-subtitle"}
 Esta subregión se extiende desde los límites norte de los Andes y noroeste de la cordillera de la Costa hasta las costas del mar Caribe en el norte y este (Foto 26). En el oeste la separa la sierra Jirajara o Ziruma (Baragua) de las llanuras nororientales de la Depresión de Maracaibo. La altitud de estos paisajes de lomas y colinas redondeadas o cónicas, que alterna con grandes valles transversales, varía entre 10 y 700-1.000 m aproximadamente. Quedan excluidas las partes altas de las sierras Baragua, San Luis y cerro Santa Ana en la península de Paraguaná, cuya vegetación pertenece más a la región de montañas (D). Toda la subregión está sujeta a un régimen principalmente macrotérmico, con transiciones hacia el submesotérmico en las zonas más elevadas. El régimen pluviométrico es de tipo árido a semiárido (PMA entre 300 y 1.000 mm), con una excepción hacia el este (en la zona de los “valles marítimos”) y el oeste de la subregión, donde se registra una precipitación media anual mayor, entre 1.200 y 1.800 mm, distribuida entre 8 meses del año.
 {Foto 26}
-La vegetación predominante está constituida por bosques deciduos y arbustales espinosos, citados en la bibliografía como bosques secos y arbustales xerófilos, parcialmente espinosos (Smith 1972, Matteucci *et al.* 1979). Entre Barquisimeto y Carora se observan extensos cardonales, es decir, arbustales espinosos mezclados con cactáceas columnares arborescentes, como el cardón Stenocereus griseus, cactáceas fruticosas, las tunas (Opuntia spp.) y los característicos buches (*Melocactus curvispinus, Mammillaria* spp.). Entre los elementos arbustivos o arbóreos bajos predominan las leguminosas, con las especies *Prosopis juliflora* (cují), *Cercidium praecox* (yabo), *Acacia angustissima*, junto con otros elementos leñosos característicos tales como el olivo (*Capparis* spp.) o el trompillo (*Jacquinia frutescens*).
+La vegetación predominante está constituida por bosques deciduos y arbustales espinosos, citados en la bibliografía como bosques secos y arbustales xerófilos, parcialmente espinosos (Smith 1972, Matteucci *et al.* 1979). Entre Barquisimeto y Carora se observan extensos cardonales, es decir, arbustales espinosos mezclados con cactáceas columnares arborescentes, como el cardón *Stenocereus griseus*, cactáceas fruticosas, las tunas (*Opuntia* spp.) y los característicos buches (*Melocactus curvispinus, Mammillaria* spp.). Entre los elementos arbustivos o arbóreos bajos predominan las leguminosas, con las especies *Prosopis juliflora* (cují), *Cercidium praecox* (yabo), *Acacia angustissima*, junto con otros elementos leñosos característicos tales como el olivo (*Capparis* spp.) o el trompillo (*Jacquinia frutescens*).
 
 Los bosques alisios semicaducifolios, que caracterizaban el paisaje de los “valles marítimos” ubicados en la mitad oriental de este sector, han sido sustituidos casi totalmente por fincas ganaderas y agrícolas. Originalmente dominaban allí árboles como el puy o araguaney (*Tabebuia billbergii*), la vera (*Bulnesia arborea*) o el membrillo (*Phyllostylon rhamnoides*), junto con un sotobosque bastante variado y denso.
 
@@ -42,7 +46,7 @@ Donde la vegetación natural boscosa haya sido degradada a consecuencia de una f
 # Subregión C.2.
 ### Sistema de colinas y sierras bajas piemontanas del Escudo Guayanés
 {class="unit-subtitle"}
-Debido a su considerable extensión, esta subregión es heterogénea en su vegetación y flora (Foto 27). Cubre la franja entre el borde noroccidental del Escudo Guayanés y el río Orinoco, desde la desembocadura del río Sipapo en el estado Amazonas hasta la boca del río Caura. Desde allí hacia el este, comprende la parte inferior de las cuencas de los ríos Caura y Paragua, del bajo río Caroní y del río Cuyuní. Además, incluye la sierra de Imataca y la altiplanicie de Nuria en la línea divisoria entre el estado Bolívar y el estado Delta Amacuro. Toda la subregión se desarrolla sobre el basamento ígneo-metamórfico del Escudo Guayanés, cuyos afloramientos graníticos, en forma de lajas (inselbergs) o serranías bajas, constituyen uno de los rasgos más significativos no sólo del paisaje sino también de la vegetación.
+Debido a su considerable extensión, esta subregión es heterogénea en su vegetación y flora (Foto 27). Cubre la franja entre el borde noroccidental del Escudo Guayanés y el río Orinoco, desde la desembocadura del río Sipapo en el estado Amazonas hasta la boca del río Caura. Desde allí hacia el este, comprende la parte inferior de las cuencas de los ríos Caura y Paragua, del bajo río Caroní y del río Cuyuní. Además, incluye la sierra de Imataca y la altiplanicie de Nuria en la línea divisoria entre el estado Bolívar y el estado Delta Amacuro. Toda la subregión se desarrolla sobre el basamento ígneo-metamórfico del Escudo Guayanés, cuyos afloramientos graníticos, en forma de lajas (*inselbergs*) o serranías bajas, constituyen uno de los rasgos más significativos no sólo del paisaje sino también de la vegetación.
 {Foto 27}
 Las características climáticas de esta área son muy variadas. En líneas generales, el clima de la zona más al norte, que bordea el río Orinoco entre los Castillos de Guayana y Caicara, es biestacional, con una pronunciada alternancia entre la época seca y la época lluviosa, con temperaturas medias anuales mayores a 24°C y precipitaciones medias anuales entre 800 y 1.500 mm. Por su parte, las zonas del Cuyuní-bajo Caroní y Caicara-Boca Sipapo, en el estado Amazonas, tienen un clima más equilibrado, con una pluviosidad media anual que varía entre 1.200 y 2.000 mm. Dentro de la subregión, las únicas áreas que no pertenecen al clima macrotérmico son las cumbres de las colinas que tienen un clima submesotérmico, y que alcanzan entre 800 y 1.000 msnm.
 
