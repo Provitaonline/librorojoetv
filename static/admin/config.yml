@@ -193,7 +193,7 @@ collections:
       - {label: "Título", name: "title", widget: "string", required: true}
       - {label: "Autores", name: "authors", widget: "string", required: true}
       - {label: "Ante-cita", name: "citationPre", widget: "string"}
-      - {label: "Post-cita", name: "citationPost", widget: "string"}
+      - {label: "Post-cita", name: "citationPost", widget: "string", required: false, default: ""}
       - {label: "Imagen de portada", name: "cardimage", widget: "file", allow_multiple: false, required: true}
       - {label: "Unidades de paisaje", name: "landscapeunits", widget: "string", required: true}
       - {label: "Localidad", name: "locality", widget: "string", required: true}
@@ -284,7 +284,7 @@ collections:
       - {label: "Título", name: "title", widget: "string", required: true}
       - {label: "Autores", name: "authors", widget: "string"}
       - {label: "Ante-cita", name: "citationPre", widget: "string"}
-      - {label: "Post-cita", name: "citationPost", widget: "string"}
+      - {label: "Post-cita", name: "citationPost", widget: "string", required: false, default: ""}
       - {label: "Título del mapa", name: "mapTitle", widget: "string", required: true}
       - {label: "Imagen de portada", name: "banner", widget: "file" , allow_multiple: false, required: true}
       - {label: "Subtítulo de la imagen de portada", name: "bannerCaption", widget: "string", required: true}
