@@ -152,11 +152,13 @@ collections:
           - label: "En 1988"
             name: "areain1988"
             widget: "string"
-            required: true
+            required: false
+            default: ""
           - label: "En 2010"
             name: "areain2010"
             widget: "string"
-            required: true
+            required: false
+            default: ""
           - label: "Formación"
             name: "formation"
             widget: "string"
