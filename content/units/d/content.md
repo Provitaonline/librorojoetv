@@ -1,49 +1,59 @@
 ---
 region: d
-title: "Región D. Montañas"
-cardimage: "./foto-30.jpg"
-cardimagecaption: "Cordillera de los Andes, páramos andinos, estado Mérida. <i>David Southall</i>"
+title: Región D. Montañas
+cardimage: ./foto-30.jpg
+cardimagecaption: Cordillera de los Andes, páramos andinos, estado Mérida. <i>David Southall</i>
 photos:
-- photokey: "Foto 29"
-  photourl: "./foto-29.jpg"
-  photocaption: "Foto 29: Serranía de Perijá, estado Zulia. <i>Fernando Rojas-Runjaic</i>"
-- photokey: "Foto 30"
-  photourl: "./foto-30.jpg"
-  photocaption: "Foto 30: Cordillera de los Andes, páramos andinos, estado Mérida. <i>David Southall</i>"
-- photokey: "Foto 31"
-  photourl: "./foto-31.jpg"
-  photocaption: "Foto 31: Cerro Santa Ana, península de Paraguaná, estado Falcón. <i>José A. González-Carcacía</i>"
-- photokey: "Foto 32"
-  photourl: "./foto-32.jpg"
-  photocaption: "Foto 32: Cordillera de la Costa Central, cerro El Ávila, Distrito Capital. <i>David Southall</i>"
-- photokey: "Foto 33"
-  photourl: "./foto-33.jpg"
-  photocaption: "Foto 33: Cordillera de la Costa Oriental, Turimiquire, estado Anzoáteguí. <i>Gilson Rivas</i>"
-- photokey: "Foto 34"
-  photourl: "./foto-34.jpg"
-  photocaption: "Foto 34: Cerro El Copey, isla de Margarita, estado Nueva Esparta. <i>Natalia Ceballos</i>"
-- photokey: "Foto 35"
-  photourl: "./foto-35.jpg"
-  photocaption: "Foto 35: Cerro Autana, estado Amazonas. <i>Rebecca Miller</i>"
-- photokey: "Foto 36"
-  photourl: "./foto-36.jpg"
-  photocaption: "Foto 36: Macizo Guayanés, zona suroriental, Kukenán, estado Bolivar. <i>Roderic Mast</i>"
-- photokey: "Foto 37"
-  photourl: "./foto-37.jpg"
-  photocaption: "Foto 37: Macizo Guayanés, Gran Sabana, quebrada de Jaspe, estado Bolivar. <i>Pedro Uviedo</i>"
-- photokey: "Foto 38"
-  photourl: "./foto-38.jpg"
-  photocaption: "Foto 38: Macizo Guayanés, zona Caroní medio, Auyán-tepui, estado Bolivar. <i>Rebecca Miller</i>"
-- photokey: "Foto 39"
-  photourl: "./foto-39.jpg"
-  photocaption: "Foto 39: Salto Eutobarima, río Caroní, estado Bolívar."
-  isCentered: true
-- photokey: "Foto 40"
-  photourl: "./foto-40.jpg"
-  photocaption: "Foto 40: Macizo Guayanés, zona noroccidental, Autana, estado Amazonas. <i>Rebecca Miller</i>"
-- photokey: "Foto 41"
-  photourl: "./foto-41.jpg"
-  photocaption: "Foto 41: Macizo Guayanés, zona Centro Sur, Cerro Duida, estado Amazonas. <i>Leonardo Ruíz-Díaz</i>"
+  - photokey: Foto 29
+    photourl: ./foto-29.jpg
+    photocaption: "Foto 29: Serranía de Perijá, estado Zulia. <i>Fernando Rojas-Runjaic</i>"
+  - photokey: Foto 30
+    photourl: ./foto-30.jpg
+    photocaption: "Foto 30: Cordillera de los Andes, páramos andinos, estado Mérida.
+      <i>David Southall</i>"
+  - photokey: Foto 31
+    photourl: ./foto-31.jpg
+    photocaption: "Foto 31: Cerro Santa Ana, península de Paraguaná, estado Falcón.
+      <i>José A. González-Carcacía</i>"
+  - photokey: Foto 32
+    photourl: ./foto-32.jpg
+    photocaption: "Foto 32: Cordillera de la Costa Central, cerro El Ávila, Distrito
+      Capital. <i>David Southall</i>"
+  - photokey: Foto 33
+    photourl: ./foto-33.jpg
+    photocaption: "Foto 33: Cordillera de la Costa Oriental, Turimiquire, estado
+      Anzoáteguí. <i>Gilson Rivas</i>"
+  - photokey: Foto 34
+    photourl: ./foto-34.jpg
+    photocaption: "Foto 34: Cerro El Copey, isla de Margarita, estado Nueva Esparta.
+      <i>Natalia Ceballos</i>"
+  - photokey: Foto 35
+    photourl: ./foto-35.jpg
+    photocaption: "Foto 35: Cerro Autana, estado Amazonas. <i>Rebecca Miller</i>"
+  - photokey: Foto 36
+    photourl: ./foto-36.jpg
+    photocaption: "Foto 36: Macizo Guayanés, zona suroriental, Kukenán, estado
+      Bolivar. <i>Roderic Mast</i>"
+  - photokey: Foto 37
+    photourl: ./foto-37.jpg
+    photocaption: "Foto 37: Macizo Guayanés, Gran Sabana, quebrada de Jaspe, estado
+      Bolivar. <i>Pedro Uviedo</i>"
+  - photokey: Foto 38
+    photourl: ./foto-38.jpg
+    photocaption: "Foto 38: Macizo Guayanés, zona Caroní medio, Auyán-tepui, estado
+      Bolivar. <i>Rebecca Miller</i>"
+  - photokey: Foto 39
+    photourl: ./foto-39.jpg
+    photocaption: "Foto 39: Salto Eutobarima, río Caroní, estado Bolívar."
+    isCentered: true
+  - photokey: Foto 40
+    photourl: ./foto-40.jpg
+    photocaption: "Foto 40: Macizo Guayanés, zona noroccidental, Autana, estado
+      Amazonas. <i>Rebecca Miller</i>"
+  - photokey: Foto 41
+    photourl: ./foto-41.jpg
+    photocaption: "Foto 41: Macizo Guayanés, zona Centro Sur, Cerro Duida, estado
+      Amazonas. <i>Leonardo Ruíz-Díaz</i>"
 ---
 # Descripción
 
@@ -70,7 +80,7 @@ Debido a la multitud de hábitats y situaciones geográficas particulares, lo qu
 {class="unit-subtitle"}
 Esta serranía pertenece al ramal más al norte de la cordillera andina (Foto 29). Su constitución geológica es principalmente sedimentaria, con inclusiones de calizas y areniscas calcáreas. Alcanza elevaciones de más de 3.600 msnm. Las vertientes orientales (venezolanas) reciben copiosas precipitaciones, especialmente en los pisos superiores, donde se forma también una faja de nieblas orográficas, frecuentes durante la mayor parte del año. Los bosques montanos y páramos presentan múltiples afinidades con la flora andina de la cordillera oriental, en Colombia, y de la cordillera de Mérida, en Venezuela. No obstante, a partir de los escasos estudios realizados en estas montañas de la sierra de Perijá, poco accesibles, pareciera que la flora de sus bosques y páramos tiene un nivel de endemismo menor que en las otras cordilleras andinas (Steyermark & Delascio 1985).
 {Foto 29}
-La vegetación desarrollada sobre las vertientes orientales de la sierra de Perijá se articula de la siguiente manera: entre 100 y 700 msnm se encuentra un bosque macrotérmico estacional o tropófilo, semideciduo, en el cual crecen árboles grandes como el mijao (*Anacardium excelsum*), el suipo (*Trichilia pleena*) y el jobo (*Spondias mombin*) (Steyermark & Delascio 1985). En el piso climático superior, entre 1.100 y 2.500 msnm, el bosque montano es siempreverde, alto y denso, y adquiere muchos rasgos de bosque nublado, con abundantes epífitas de musgos, helechos, bromelias y orquídeas sobre las ramas y helechos arborescentes en el sotobosque. Uno de los árboles notables de este bosque es Bathysa perijaensis, de la familia del café y endémico a esta región. Finalmente, por encima de 2.500 msnm se extienden unos páramos hasta los límites superiores de la serranía, entre 3.000 y 3.600 msnm; en estos páramos también dominan los frailejones (incluidas *Espeletia perijaensis* y *E. tillettii*, dos especies endémicas), gramíneas y unos arbustos típicamente altoandinos (*Befaria, Hypericum* y *Disterigma*).
+La vegetación desarrollada sobre las vertientes orientales de la sierra de Perijá se articula de la siguiente manera: entre 100 y 700 msnm se encuentra un bosque macrotérmico estacional o tropófilo, semideciduo, en el cual crecen árboles grandes como el mijao (*Anacardium excelsum*), el suipo (*Trichilia pleena*) y el jobo (*Spondias mombin*) (Steyermark & Delascio 1985). En el piso climático superior, entre 1.100 y 2.500 msnm, el bosque montano es siempreverde, alto y denso, y adquiere muchos rasgos de bosque nublado, con abundantes epífitas de musgos, helechos, bromelias y orquídeas sobre las ramas y helechos arborescentes en el sotobosque. Uno de los árboles notables de este bosque es *Bathysa perijaensis*, de la familia del café y endémico a esta región. Finalmente, por encima de 2.500 msnm se extienden unos páramos hasta los límites superiores de la serranía, entre 3.000 y 3.600 msnm; en estos páramos también dominan los frailejones (incluidas *Espeletia perijaensis* y *E. tillettii*, dos especies endémicas), gramíneas y unos arbustos típicamente altoandinos (*Befaria, Hypericum* y *Disterigma*).
 
 <a id='d2'></a>
 
