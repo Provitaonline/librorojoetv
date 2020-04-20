@@ -119,60 +119,60 @@ stateleveltable:
     areain2010: "1412"
   - formation: ""
     state: Bolívar
-    areain1988: ""
+    areain1988: " "
     areain2010: "1301"
   - formation: ""
     state: Delta Amacuro
-    areain1988: ""
+    areain1988: " "
     areain2010: "2489"
   - formation: ""
     state: Falcón
-    areain1988: ""
+    areain1988: " "
     areain2010: < 3
   - formation: ""
     state: Miranda
-    areain1988: ""
+    areain1988: " "
     areain2010: < 1
   - formation: ""
     state: Monagas
-    areain1988: ""
+    areain1988: " "
     areain2010: "45"
   - formation: ""
     state: Sucre
-    areain1988: ""
+    areain1988: " "
     areain2010: "367"
   - formation: ""
     state: Yaracuy
-    areain1988: ""
+    areain1988: " "
     areain2010: < 3
   - formation: Bosques de pantano
     state: Delta Amacuro
-    areain1988: ""
+    areain1988: " "
     areain2010: "13687"
   - formation: ""
     state: Monagas
-    areain1988: ""
+    areain1988: " "
     areain2010: "1147"
   - formation: ""
     state: Sucre
-    areain1988: ""
+    areain1988: " "
     areain2010: "219"
   - formation: ""
     state: Zulia
-    areain1988: ""
+    areain1988: " "
     areain2010: "2435"
   - formation: Bosques de pantano y de palmas
     state: Delta Amacuro
     areain1988: "15433"
-    areain2010: ""
+    areain2010: " "
   - formation: ""
     state: Monagas
     areain1988: "1874"
-    areain2010: ""
+    areain2010: " "
   - formation: ""
     state: Sucre
     areain1988: "481"
-    areain2010: ""
+    areain2010: " "
 threatlevelmaps:
   - map: ./figura-1c-1-amenazas.jpg
     caption: Norte y Delta del río Orinoco
@@ -303,6 +303,6 @@ La principal intervención en el delta del Orinoco ha sido el control impuesto a
 
 Aproximadamente la cuarta parte de los bosques de palmas del país se encuentran incluidos en áreas protegidas con fines de conservación (Figura 1c), mientras que 56% (3.154 km<sup>2</sup>) se localiza dentro de áreas de protección reservadas para aprovechamiento futuro. Sin embargo, los bosques de palmas del norte de Venezuela están predominantemente fuera de áreas protegidas, salvo por los del estado Miranda que se encuentran en la Zona Protectora Litoral Central (Rodríguez <i>et al.</i> 2010, Figura 7).
 
-Steyermark (1977) destacó la importancia de proteger el bosque de chaguaramo o palma real (Roystonea sp.) en la desembocadura del río Aricagua, al este de Chuspa en el estado Miranda. En ese momento, el área no había sido alterada y, al tratarse de una formación poco común al norte del país pero sustancialmente modificada por actividades agrícolas en otras regiones, merecía recibir atención especial. La principal amenaza era la transformación del paisaje por desarrollos privados, actividad que no ha sido cuantificada recientemente. En el caso de los bosques de pantano, 34% (5.957 km<sup>2</sup>) está en áreas protegidas con fines de conservación y 49% en áreas destinadas a usos posteriores, incluyendo reservas forestales. En conjunto, los bosques de palmas y de pantano de la planicie deltaica del Orinoco están asociados a 15 áreas protegidas, incluyendo parques nacionales como Delta del Orinoco y Turuépano, la reserva de biósfera Delta del Orinoco y reservas forestales como Guarapiche, entre otras (Colonnello 2004).
+Steyermark (1977) destacó la importancia de proteger el bosque de chaguaramo o palma real (*Roystonea* sp.) en la desembocadura del río Aricagua, al este de Chuspa en el estado Miranda. En ese momento, el área no había sido alterada y, al tratarse de una formación poco común al norte del país pero sustancialmente modificada por actividades agrícolas en otras regiones, merecía recibir atención especial. La principal amenaza era la transformación del paisaje por desarrollos privados, actividad que no ha sido cuantificada recientemente. En el caso de los bosques de pantano, 34% (5.957 km<sup>2</sup>) está en áreas protegidas con fines de conservación y 49% en áreas destinadas a usos posteriores, incluyendo reservas forestales. En conjunto, los bosques de palmas y de pantano de la planicie deltaica del Orinoco están asociados a 15 áreas protegidas, incluyendo parques nacionales como Delta del Orinoco y Turuépano, la reserva de biósfera Delta del Orinoco y reservas forestales como Guarapiche, entre otras (Colonnello 2004).
 
 El bosque de pantano asociado al Catatumbo es considerado una de las ecorregiones más amenazadas del país (Dinerstein *et al.* 1995) [Figura 1c]. Es el relicto de una superficie boscosa mayor eliminada antes de 1988. Se estima que entre 1975 y 1980 el sur del lago de Maracaibo perdió 90% de sus bosques, una situación especialmente preocupante ya que se trata de un refugio del Cuaternario con una alta riqueza vegetal y varias especies endémicas, y que aporta 60% del agua dulce del lago de Maracaibo (Steyermark 1979, Bevilacqua *et al.* 2002, Llamozas *et al.* 2003). La cuenca del río Catatumbo es compartida con Colombia y es también afectada por los conflictos armados que tienen lugar en el vecino país, problemática que se potencia con la explotación petrolera y la minería de carbón a cielo abierto. En tiempos recientes, los oleoductos en la zona han sufrido atentados con consecuentes derrames de hidrocarburos. Entre las principales amenazas reconocidas para este bosque, ya en 1977 figuraban la extracción maderera y la construcción de obras de drenaje (Steyermark 1977). No obstante, la mayor porción de la extensión remanente está incluida en el Parque Nacional Ciénagas de Juan Manuel y en la Reserva de Fauna Ciénagas de Juan Manuel, de Aguas Blancas y Aguas Negras, por lo que su persistencia futura podría estar resguardada (Figura 1c).
