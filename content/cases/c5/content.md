@@ -266,7 +266,7 @@ La tabla 2 resume la información de la extensión ocupada por cada uno de los t
       <td>Nieve</td>
       <td align="center">1,53</td>
       <td align="center">0,88</td>
-      <td align="center">42,48</td>
+      <td align="center">-42,48</td>
       <td align="center">-100</td>
       <td align="center">{cr}</td>
     </tr>
