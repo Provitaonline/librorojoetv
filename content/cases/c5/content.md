@@ -1,40 +1,50 @@
 ---
 case: c5
-title: "Estado de conservación de los ecosistemas del ramal oriental de la cordillera de los Andes venezolanos"
-authors: "María Idalí Tachack-García, Fabián Carrasquel"
-citationPre: "Tachack-García, M.I. & F. Carrasquel (2010). Estado de conservación de los ecosistemas del ramal oriental de la cordillera de los Andes venezolanos. Pp: 263-268. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
-citationPost: ""
-cardimage: "./pancarta.jpg"
-landscapeunits: "Cordillera de los Andes (<a href='/unidades/d#d2'>D2</a>)"
-locality: "Ramal oriental cordillera de los Andes venezolanos"
-states: "Táchira, Mérida*, Trujillo*, Lara, Portuguesa*, Barinas"
+title: Estado de conservación de los ecosistemas del ramal oriental de la
+  cordillera de los Andes venezolanos
+authors: María Idalí Tachack-García, Fabián Carrasquel
+citationPre: "Tachack-García, M.I. & F. Carrasquel (2010). Estado de
+  conservación de los ecosistemas del ramal oriental de la cordillera de los
+  Andes venezolanos. Pp: 263-268. En: J.P. Rodríguez, F. Rojas- Suárez & D.
+  Giraldo Hernández (eds.)."
+citationPost: "Pp: 263-268"
+cardimage: ./pancarta.jpg
+landscapeunits: Cordillera de los Andes (<a href='/unidades/d#d2'>D2</a>)
+locality: Ramal oriental cordillera de los Andes venezolanos
+states: Táchira, Mérida*, Trujillo*, Lara, Portuguesa*, Barinas
 area: 28604
 cardtablecolumns:
-  - "Formación Vegetal*"
-  - "Categoría"
-  - "Criterio"
+  - Formación Vegetal*
+  - Categoría
+  - Criterio
 cardtablerows:
-  - "Bosques nublados|lc|--"
-  - "Bosques siempreverdes|cr|A2"
-  - "Bosques semideciduos|cr|A2"
-  - "Bosques ribereños|cr|A2"
-  - "Bosques Páramos|lc|--"
+  - Bosques nublados|lc|--
+  - Bosques siempreverdes|cr|A2
+  - Bosques semideciduos|cr|A2
+  - Bosques ribereños|cr|A2
+  - Páramos|lc|--
 photos:
-- photokey: "Figura 1"
-  photourl: "./figura-1.jpg"
-  photocaption: "Figura 1: Ubicación de la cordillera de Mérida y el área de estudio."
-  isCentered: true
-- photokey: "Figura 2"
-  photourl: "./figura-2.jpg"
-  photocaption: "Figura 2: Cambios de la cobertura de los ecosistemas terrestres de la cordillera de Mérida (Barinas, Mérida,  Trujillo) en 1986-2001."
-- photokey: "Figura 3"
-  photourl: "./figura-3.jpg"
-  photocaption: "Figura 3: Grado de amenaza de las formaciones vegetales en los municipios del ramal oriental de la cordillera de los Andes venezolanos. Las abreviaciones de las categorías son las mismas que en la Tabla 1. Las áreas en blanco son los municipios clasificados en las categorías Preocupación Menor (LC), Datos Insuficientes (DD) y No Evaluado (NE)."
-  isCentered: true
-- photokey: "Foto 1"
-  photourl: "./foto-1.jpg"
-  photocaption: "Foto 1: Caja Seca y Torondoy, estado Mérida. <i>Fernando Rojas-Runjaic</i>"
-  isCentered: true
+  - photokey: Figura 1
+    photourl: ./figura-1.jpg
+    photocaption: "Figura 1: Ubicación de la cordillera de Mérida y el área de estudio."
+    isCentered: true
+  - photokey: Figura 2
+    photourl: ./figura-2.jpg
+    photocaption: "Figura 2: Cambios de la cobertura de los ecosistemas terrestres
+      de la cordillera de Mérida (Barinas, Mérida,  Trujillo) en 1986-2001."
+  - photokey: Figura 3
+    photourl: ./figura-3.jpg
+    photocaption: "Figura 3: Grado de amenaza de las formaciones vegetales en los
+      municipios del ramal oriental de la cordillera de los Andes venezolanos.
+      Las abreviaciones de las categorías son las mismas que en la Tabla 1. Las
+      áreas en blanco son los municipios clasificados en las categorías
+      Preocupación Menor (LC), Datos Insuficientes (DD) y No Evaluado (NE)."
+    isCentered: true
+  - photokey: Foto 1
+    photourl: ./foto-1.jpg
+    photocaption: "Foto 1: Caja Seca y Torondoy, estado Mérida. <i>Fernando
+      Rojas-Runjaic</i>"
+    isCentered: true
 ---
 # Contexto
 
