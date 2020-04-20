@@ -902,3 +902,43 @@ El análisis del riesgo de eliminación de las formaciones vegetales de Venezuel
     </tr>
   </table>
 </div>
+
+<div class="is-size-6 table-title">
+  <br>
+  <b>Tabla 1.</b> Ejemplos de la diversidad de áreas protegidas en Venezuela (Figura 6)
+</div>
+
+<div class="columns is-size-6 is-desktop">
+<div class="column">
+
+| Áreas protegidas de conservación de biodiversidad<br><br> |
+|---------------------------------------------------|
+| **Parques Nacionales:** áreas que destacan por su belleza escénica natural y/o por la presencia de flora y fauna de importancia nacional. |
+| **Refugios de Fauna Silvestre:** zonas destinadas para la protección, conservación y propagación de animales silvestres, principalmente especies amenazadas residentes o migratorias. |
+| **Santuarios de Fauna Silvestre:** zonas con alta concentración de animales inusuales o poco comunes, de interés para la recreación y el turismo. |
+| **Monumentos Naturales:** regiones y objetos naturales de interés estético o de valor históricos o científico. Contienen formaciones geológicas extraordinarias y paisajes de singular belleza. |
+| **Reservas de Biosfera:** áreas mixtas de conservación y manejo. A sus rasgos naturales de alto valor científico y biológico se suma la presencia de poblaciones locales caracterizadas por modos de vida compatibles con el aprovechamiento sustentable de los recursos naturales. |
+
+</div>
+<div class="column">
+
+| Áreas protegidas de conservación y manejo<br>de recursos naturales |
+|-----------------------------------------------------------------|
+| **Zonas Protectoras:** |
+| **1.** Área con un radio de 200 m, que incluye desde un manantial o el nacimiento de una corriente de agua. |
+| **2.** Área con un ancho mínimo de 300 m en ambos lados y en paralelo a las filas de las montañas y a los bordes inclinados de las mesetas. |
+| **3.** Área con un ancho mínimo de 60 m en ambas márgenes de los ríos navegables y de 25 m para los cursos no navegables permanentes o intermitentes. |
+| **Reservas Forestales:** macizos boscosos indispensables para la industria maderera nacional. |
+| **Reservas de Fauna Silvestre:** zonas para el desarrollo de programas de ordenación y manejo de poblaciones de animales silvestres, que aseguren su producción para la caza o contribuyan a cualquier otra forma de aprovechamiento. |
+| **Áreas de Manejo Integral de Recursos Naturales:** |
+| **1.** Zonas de Reserva para la Construcción de Presas y Embalses: áreas que se consideren idóneas para la construcción de presas y embalses. |
+| **2.** Zonas de Aprovechamiento Agrícola: áreas que deben ser resguardadas para su explotación agrícola. |
+| **Áreas Rurales de Desarrollo Integrado:** zonas sometidas a una estrategia de desarrollo agrario que combine la participación de las entidades públicas y la población rural organizada. |
+| **Áreas de Protección y Recuperación Ambiental:** zonas que requieren de un plan de manejo para corregir procesos de degradación naturales o causados por humanos. |
+| **Reservas Nacionales Hidráulicas:** territorios en los cuales yacen cuerpos de agua que requieran un régimen de administración especial. |
+| **Áreas de Protección de Obras Públicas:** zonas de influencia de las construcciones públicas. |
+| **Áreas Críticas con Prioridad de Tratamiento:** espacios que por sus condiciones ecológicas, requieren ser sometidas con carácter prioritario a un plan de manejo, ordenación y protección. |
+| **Áreas Boscosas:** zonas de bosques altos, primarios o secundarios, que existen en el territorio nacional |
+
+</div>
+</div>
