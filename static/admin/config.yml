@@ -92,7 +92,7 @@ collections:
     fields:
       - {label: "Título de ficha", name: "title", widget: "string", required: true}
       - {label: "Ante-cita", name: "citationPre", widget: "string"}
-      - {label: "Post-cita", name: "citationPost", widget: "string"}
+      - {label: "Post-cita", name: "citationPost", widget: "string", required: false, default: ""}
       - {label: "Título (con formato)", name: "formattedtitle", widget: "string", required: false}
       - {label: "Formación vegetal", name: "plantformation", widget: "string", required: false}
       - {label: "Imagen de portada", name: "cardimage", widget: "image", allow_multiple: false, required: true}
