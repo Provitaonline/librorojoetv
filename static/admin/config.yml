@@ -70,7 +70,7 @@ collections:
       - {label: "Título", name: "title", widget: "string", required: true}
       - {label: "Autores", name: "authors", widget: "string"}
       - {label: "Ante-cita", name: "citationPre", widget: "string"}
-      - {label: "Post-cita", name: "citationPost", widget: "string", default: ""}
+      - {label: "Post-cita", name: "citationPost", widget: "string", required: false, default: ""}
       - {label: "Imagen de portada", name: "cardimage", widget: "file" , allow_multiple: false, required: true}
       - {label: "Subtítulo de la imagen de portada", name: "cardimagecaption", widget: "string", required: true}
       - {label: "Mostrar nota de evaluación de riesgo?", name: "showRiskEvalNote", widget: "boolean", required: false}
