@@ -169,8 +169,8 @@ collections:
       - {label: "Criterios empleados", name: "criteriaused", widget: "list", required: true}
       - {label: "Tabla de riesgos de colapso", name: "riskofcolapsestatelevel", widget: "list", fields: [
           {label: "Estado o localidad", name: "zone", widget: "string", required: true},
-          {label: "Formación", name: "formation", widget: "string", required: true},
-          {label: "Área", name: "area", widget: "string", required: true},
+          {label: "Formación", name: "formation", widget: "string", required: false},
+          {label: "Área", name: "area", widget: "string", required: false},
           {label: "Categorías de riesgo", name: "threatcategories", widget: "list", required: true}]}
       - {label: "Fotos", name: "photos", widget: "list", fields: [
           {label: "Etiqueta", name: "photokey", widget: "string", required: true},
