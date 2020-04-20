@@ -1,36 +1,42 @@
 ---
 case: c2
-title: "Estado de amenaza de los ecosistemas terrestres de la isla de Margarita, estado Nueva Esparta"
-authors: "Irene Zager, Fabián Carrasquel"
-citationPre: "Zager I. & F. Carrasquel (2010). Estado de amenaza de los ecosistemas terrestres de la isla de Margarita, estado Nueva Esparta. Pp: 244-249. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
-citationPost: ""
-cardimage: "./pancarta.jpg"
-landscapeunits: "Insular costera (<a href='/unidades/a'>A1</a>)"
-locality: "Isla de Margarita"
-states: "Nueva Esparta"
+title: Estado de amenaza de los ecosistemas terrestres de la isla de Margarita,
+  estado Nueva Esparta
+authors: Irene Zager, Fabián Carrasquel
+citationPre: "Zager I. & F. Carrasquel (2010). Estado de amenaza de los
+  ecosistemas terrestres de la isla de Margarita, estado Nueva Esparta. Pp:
+  244-249. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
+citationPost: "Pp: 244-249"
+cardimage: ./pancarta.jpg
+landscapeunits: Insular costera (<a href='/unidades/a'>A1</a>)
+locality: Isla de Margarita
+states: Nueva Esparta
 area: 934
 cardtablecolumns:
-  - "Formación Vegetal"
-  - "Categoría"
-  - "Criterio"
+  - Formación Vegetal
+  - Categoría
+  - Criterio
 cardtablerows:
-  - "Bosques siempreverdes|cr|A2"
-  - "Bosques semideciduos, arbustales y cardonales|cr|A2"
-  - "Bosques de manglar|en|C1a"
+  - Bosques siempreverdes|cr|A2
+  - Bosques semideciduos, arbustales y cardonales|cr|A2
+  - Bosques de manglar|en|C1a
 photos:
-- photokey: "Figura 1"
-  photourl: "./figura-1.jpg"
-  photocaption: "Figura 1: Localización del área de estudio (isla de Margarita)."
-  isCentered: true
-- photokey: "Figura 2"
-  photourl: "./figura-2a-1986.jpg"
-  photocaption: "Figura 2: Cambio de cobertura de los ecosistemas terrestres de la isla de Margarita (1986)"
-- photokey: "Figura 2b"
-  photourl: "./figura-2b-1999.jpg"
-  photocaption: "Figura 2: Cambio de cobertura de los ecosistemas terrestres de la isla de Margarita (1999)"
-- photokey: "Foto 1"
-  photourl: "./foto-1.jpg"
-  photocaption: "Foto 1: Cerro El Copey, isla de Margarita, estado Nueva Esparta. <i>Archivo Provita</i>"
+  - photokey: Figura 1
+    photourl: ./figura-1.jpg
+    photocaption: "Figura 1: Localización del área de estudio (isla de Margarita)."
+    isCentered: true
+  - photokey: Figura 2
+    photourl: ./figura-2a-1986.jpg
+    photocaption: "Figura 2: Cambio de cobertura de los ecosistemas terrestres de la
+      isla de Margarita (1986)"
+  - photokey: Figura 2b
+    photourl: ./figura-2b-1999.jpg
+    photocaption: "Figura 2: Cambio de cobertura de los ecosistemas terrestres de la
+      isla de Margarita (1999)"
+  - photokey: Foto 1
+    photourl: ./foto-1.jpg
+    photocaption: "Foto 1: Cerro El Copey, isla de Margarita, estado Nueva Esparta.
+      <i>Archivo Provita</i>"
 ---
 # Contexto
 
@@ -90,7 +96,9 @@ En la península de Macanao el crecimiento urbanístico ha sido mucho más lento
 
 Como indican los resultados de este análisis, las áreas protegidas de la isla no son suficientes para asegurar la persistencia de sus ecosistemas naturales (Sanz 2007). Durante el período de estudio, el análisis individual de estas áreas muestra que todas experimentaron reducción de cobertura en los ecosistemas boscosos. En el caso de los bosques de manglar esta pérdida fue menos acelerada, aunque son muy vulnerables dada su reducida extensión geográfica. Adicionalmente, recientes estudios de campo indican importantes cambios en la composición de especies de este ecosistema dentro del PN Laguna de La Restinga, donde se detecta el reemplazo de parches de mangle rojo (*Rhizophora mangle*) por mangle negro (*Avicennia germinans*) (Sánchez-Arias 2005).
 
-De igual preocupación es la vulnerabilidad de los ecosistemas de las áreas protegidas del sector oriental de la isla, como resultado de las presiones de los grandes centros urbanos. Se ha reportado que los ecosistemas del PN Cerro Copey están amenazados por el crecimiento poblacional, la extensión de las áreas agrícolas, los incendios forestales y la introducción de especies exóticas. Las propuestas para su ampliación hacia las montañas del norte no ha tenido el respaldo gubernamental necesario (Sanz 2007, Parkswatch 2008). La degradación y pérdida de los ecosistemas naturales de la isla de Margarita afectaron negativamente a las especies asociadas. Ejemplo de esto es el caso del perico cara sucia (*Aratinga pertinax margaritensis*), cuya distribución originalmente incluía ambas secciones de la isla y era considerado como una especie abundante. En la actualidad está restringido a la península de Macanao y al PN Laguna de La Restinga, y sus poblaciones se han reducido considerablemente (Phelps 1945, Yépez-Tamayo 1963, Harms & Eberhard 2003, V. Sanz com. pers.).
+De igual preocupación es la vulnerabilidad de los ecosistemas de las áreas protegidas del sector oriental de la isla, como resultado de las presiones de los grandes centros urbanos. Se ha reportado que los ecosistemas del PN Cerro Copey están amenazados por el crecimiento poblacional, la extensión de las áreas agrícolas, los incendios forestales y la introducción de especies exóticas. Las propuestas para su ampliación hacia las montañas del norte no ha tenido el respaldo gubernamental necesario (Sanz 2007, Parkswatch 2008). 
+
+La degradación y pérdida de los ecosistemas naturales de la isla de Margarita afectaron negativamente a las especies asociadas. Ejemplo de esto es el caso del perico cara sucia (*Aratinga pertinax margaritensis*), cuya distribución originalmente incluía ambas secciones de la isla y era considerado como una especie abundante. En la actualidad está restringido a la península de Macanao y al PN Laguna de La Restinga, y sus poblaciones se han reducido considerablemente (Phelps 1945, Yépez-Tamayo 1963, Harms & Eberhard 2003, V. Sanz com. pers.).
 
 Es indudable que la conservación de los ecosistemas y de la biodiversidad de la isla de Margarita requiere mayor atención por parte de las autoridades y entes reguladores del desarrollo urbanístico y turístico, así como de los encargados de la vigilancia y control del ambiente. Es preciso que la expansión urbana y el desarrollo de las actividades turísticas se efectúen de forma racional y en consideración del impacto que ocasionan sobre el ambiente (Foto 1).
 
