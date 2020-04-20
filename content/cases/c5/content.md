@@ -113,8 +113,8 @@ La tabla 2 resume la información de la extensión ocupada por cada uno de los t
     <td align="center">--</td>
     <td align="center">1</td>
     <td align="center">1</td>
-    <td align="center"></td>
     <td align="center">1</td>
+    <td align="center"></td>
     <td align="center">3</td>
   </tr>
   <tr>
@@ -129,9 +129,9 @@ La tabla 2 resume la información de la extensión ocupada por cada uno de los t
   </tr>  <tr>
     <td>Portuguesa</td>
     <td align="center">--</td>
-    <td align="center">--</td>
     <td align="center">2</td>
     <td align="center">1</td>
+    <td align="center">--</td>
     <td align="center">--</td>
     <td align="center">--</td>
     <td align="center">3</td>
