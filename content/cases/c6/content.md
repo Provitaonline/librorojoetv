@@ -1,41 +1,45 @@
 ---
 case: c6
-title: "Conversión de los bosques deciduos en los llanos centrales de Venezuela"
-authors: "Sergio Zambrano-Martínez, Jon Paul Rodríguez"
-citationPre: "Zambrano-Martínez, S. & J.P. Rodríguez (2010). Conversión de los bosques deciduos en los llanos centrales de Venezuela. Pp: 269-274. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
-citationPost: ""
-cardimage: "./pancarta.jpg"
-landscapeunits: "Llanos (<a href='/unidades/b#b2'>B2</a>)"
-locality: "Llanos centrales"
-states: "Cojedes, Guárico"
+title: Conversión de los bosques deciduos en los llanos centrales de Venezuela
+authors: Sergio Zambrano-Martínez, Jon Paul Rodríguez
+citationPre: "Zambrano-Martínez, S. & J.P. Rodríguez (2010). Conversión de los
+  bosques deciduos en los llanos centrales de Venezuela. Pp: 269-274. En: J.P.
+  Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
+citationPost: "Pp: 269-274"
+cardimage: ./pancarta.jpg
+landscapeunits: Llanos (<a href='/unidades/b#b2'>B2</a>)
+locality: Llanos centrales
+states: Cojedes, Guárico
 area: 2316.14
 cardtablecolumns:
-  - "Formación Vegetal"
-  - "Categoría"
-  - "Criterio"
+  - Formación Vegetal
+  - Categoría
+  - Criterio
 cardtablerows:
-  - "Bosques deciduos y bosques de galería|en|A2"
-  - "Sabanas|en|A2"
+  - Bosques deciduos y bosques de galería|en|A2
+  - Sabanas|en|A2
 photos:
-- photokey: "Figura 1"
-  photourl: "./figura-1.jpg"
-  photocaption: "Figura 1: Ubicación relativa del área de estudio en los llanos centrales, estados Cojedes y Guárico (rojo). El límite amarillo identifica al antiguo hato Piñero."
-  isCentered: true
-- photokey: "Figura 2"
-  photourl: "./figura-2.jpg"
-  photocaption: "Figura 2: Análisis de mezcla espectral (SMA)."
-- photokey: "Figura 3"
-  photourl: "./figura-3.jpg"
-  photocaption: "Figura 3: Índice de diferencia normalizado de fracciones (NDFI)."
-- photokey: "Figura 4"
-  photourl: "./figura-4.jpg"
-  photocaption: "Figura 4: Cobertura de las formaciones vegetales en el área de estudio."
-- photokey: "Figura 5"
-  photourl: "./figura-5.jpg"
-  photocaption: "Figura 5: Superficie de las coberturas de bosque en el área de estudio."
-- photokey: "Figura 6"
-  photourl: "./figura-6.jpg"
-  photocaption: "Figura 6: Superficie de las coberturas en el área de estudio."
+  - photokey: Figura 1
+    photourl: ./figura-1.jpg
+    photocaption: "Figura 1: Ubicación relativa del área de estudio en los llanos
+      centrales, estados Cojedes y Guárico (rojo). El límite amarillo identifica
+      al antiguo hato Piñero."
+    isCentered: true
+  - photokey: Figura 2
+    photourl: ./figura-2.jpg
+    photocaption: "Figura 2: Análisis de mezcla espectral (SMA)."
+  - photokey: Figura 3
+    photourl: ./figura-3.jpg
+    photocaption: "Figura 3: Índice de diferencia normalizado de fracciones (NDFI)."
+  - photokey: Figura 4
+    photourl: ./figura-4.jpg
+    photocaption: "Figura 4: Cobertura de las formaciones vegetales en el área de estudio."
+  - photokey: Figura 5
+    photourl: ./figura-5.jpg
+    photocaption: "Figura 5: Superficie de las coberturas de bosque en el área de estudio."
+  - photokey: Figura 6
+    photourl: ./figura-6.jpg
+    photocaption: "Figura 6: Superficie de las coberturas en el área de estudio."
 ---
 # Contexto
 
