@@ -119,7 +119,7 @@ La cordillera de la Costa se levantó a partir del período Paleozoico, razón p
 ## Sector D.4.1.
 ### Sierra de Aroa
 {class="unit-subtitle-2"}
-Se trata de una montaña en el estado Yaracuy, relativamente aislada del resto de la cordillera a consecuencia de la falla de Boconó. Su mayor elevación casi alcanza 1.500 m de altitud. La vegetación está caracterizada por sus bosques nublados con un número significativo de especies endémicas, especialmente en el cerro La Chapa. La vegetación original boscosa de las laderas de esta sierra ha sido sustituida casi enteramente por cultivos agrícolas. En la cumbre bastante extensa todavía se encuentran fragmentos de bosque nublado costero, pero la presión de aprovechamiento de estas zonas para ganadería con pastos artificiales es muy fuerte (W. Meier com. pers.).
+Se trata de una montaña en el estado Yaracuy, relativamente aislada del resto de la cordillera a consecuencia de la falla de Boconó. Su mayor elevación casi alcanza 1.500 m de altitud. La vegetación está caracterizada por sus bosques nublados con un número significativo de especies endémicas, especialmente en el cerro La Chapa. La vegetación original boscosa de las laderas de esta sierra ha sido sustituida casi enteramente por cultivos agrícolas. En la cumbre bastante extensa todavía se encuentran fragmentos de bosque nublado costero, pero la presión de aprovechamiento de estas zonas para ganadería con pastos artificiales es muy fuerte (W. Meier *com. pers*.).
 
 <a id='d42'></a>
 
