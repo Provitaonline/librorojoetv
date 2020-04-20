@@ -1,25 +1,28 @@
 ---
 region: b
 title: "Región B: Llanuras bajas"
-cardimage: "./foto-22.jpg"
-cardimagecaption: "Llanos, estado Apure. <i>Román Rangel</i>"
+cardimage: ./foto-22.jpg
+cardimagecaption: Llanos, estado Apure. <i>Román Rangel</i>
 photos:
-- photokey: "Foto 22"
-  photourl: "./foto-22.jpg"
-  photocaption: "Foto 22: Llanos, estado Apure. <i>Román Rangel</i>"
-- photokey: "Foto 23"
-  photourl: "./foto-23.jpg"
-  photocaption: "Foto 23: Planicie cenagosa costera del río San Juan, caño Guariquén, Turuépano, estado Sucre. <i>Giuseppe Colonnello</i>"
-- photokey: "Foto 24"
-  photourl: "./foto-24.jpg"
-  photocaption: "Foto 24: Penillanura del río Caura, estado Bolívar. <i>Rebecca Miller</i>"
-- photokey: "Foto 25"
-  photourl: "./foto-25.jpg"
-  photocaption: "Foto 25: Penillanura del Casiquiare, estado Amazonas. <i>Rebecca Miller</i>"
+  - photokey: Foto 22
+    photourl: ./foto-22.jpg
+    photocaption: "Foto 22: Llanos, estado Apure. <i>Román Rangel</i>"
+  - photokey: Foto 23
+    photourl: ./foto-23.jpg
+    photocaption: "Foto 23: Planicie cenagosa costera del río San Juan, caño
+      Guariquén, Turuépano, estado Sucre. <i>Giuseppe Colonnello</i>"
+  - photokey: Foto 24
+    photourl: ./foto-24.jpg
+    photocaption: "Foto 24: Penillanura del río Caura, estado Bolívar. <i>Rebecca Miller</i>"
+  - photokey: Foto 25
+    photourl: ./foto-25.jpg
+    photocaption: "Foto 25: Penillanura del Casiquiare, estado Amazonas. <i>Rebecca
+      Miller</i>"
 ---
 # Descripción
 
-Esta región se encuentra caracterizada por un relieve plano o casi plano, una isotermia climática, un único piso climático y presenta, además, una extensión considerable de terrenos inundables. En su conjunto, las llanuras bajas cubren casi la mitad del territorio nacional tanto al norte como al sur del país. La casi absoluta homogeneidad térmica anual, que apenas oscila alrededor de 25°C y 27°C, contrasta marcadamente con la serie de gradientes pluviométricos locales, los cuales van desde 500 hasta 4.000 mm/año. Las condiciones edáficas de una región tan grande, como es usual, varían marcadamente no sólo en los tipos de suelo, sino también en los regímenes hídricos del sustrato. En consecuencia, la cobertura vegetal refleja en igual grado una enorme diversidad florística y fisionómica a lo largo y ancho de estas planicies, que erróneamente todavía son consideradas como ambientes monótonos y poco atractivos debido al aspecto uniforme del paisaje sabanero comparado con el de las montañas o el de los bosques pluviales. Dentro de la región de las llanuras bajas pueden distinguirse cinco grandes subregiones, tres ubicadas al norte y dos al sur del río Orinoco:
+Esta región se encuentra caracterizada por un relieve plano o casi plano, una isotermia climática, un único piso climático y presenta, además, una extensión considerable de terrenos inundables. En su conjunto, las llanuras bajas cubren casi la mitad del territorio nacional tanto al norte como al sur del país. La casi absoluta homogeneidad térmica anual, que apenas oscila alrededor de 25°C y 27°C, contrasta marcadamente con la serie de gradientes pluviométricos locales, los cuales van desde 500 hasta 4.000 mm/año. Las condiciones edáficas de una región tan grande, como es usual, varían marcadamente no sólo en los tipos de suelo, sino también en los regímenes hídricos del sustrato. En consecuencia, la cobertura vegetal refleja en igual grado una enorme diversidad florística y fisionómica a lo largo y ancho de estas planicies, que erróneamente todavía son consideradas como ambientes monótonos y poco atractivos debido al aspecto uniforme del paisaje sabanero comparado con el de las montañas o el de los bosques pluviales. 
+Dentro de la región de las llanuras bajas pueden distinguirse cinco grandes subregiones, tres ubicadas al norte y dos al sur del río Orinoco:
 
 * [Subregión B.1 Depresión de Maracaibo](#b1)
 * [Subregión B.2 Llanos](#b2)
@@ -49,7 +52,8 @@ Exceptuando algunas zonas inundables, como las ciénagas de Juan Manuel de Aguas
 # Subregion B.2.
 ### Llanos
 {class="unit-subtitle"}
-Las grandes llanuras sedimentarias y aluviales que atraviesan todo el centro del país, desde el pie de la cordillera andina en el suroeste, hasta el delta del Orinoco al este, constituyen una enorme subregión: los Llanos, caracterizada por una aparente homogeneidad fisiográfica y vegetacional (Foto 22). Allí se ha desarrollado un mosaico complejo de unidades fisiográficas y de vegetación que todavía no ha sido inventariado en su totalidad. Su límite meridional está constituido por el valle del río Orinoco, hacia el suroeste continúa en los Llanos orientales de Colombia, y en el este colinda con la planicie cenagosa costera del río San Juan y el delta del río Orinoco. En los Llanos el régimen térmico es macrotérmico en toda su extensión (Temperatura Media Anual o TMA siempre mayor a 24°C). Por el contrario, el régimen pluviométrico muestra un gradiente en progresivo aumento desde el noreste (Precipitación Media Anual o PMA aproximado de 1.000 mm en el sur de Monagas) hacia el suroeste (PMA alrededor de 2.000 mm en el río Meta, Apure meridional). El régimen climático es típicamente biestacional con fuerte alternancia entre el período seco y el período lluvioso.
+Las grandes llanuras sedimentarias y aluviales que atraviesan todo el centro del país, desde el pie de la cordillera andina en el suroeste, hasta el delta del Orinoco al este, constituyen una enorme subregión: los Llanos, caracterizada por una aparente homogeneidad fisiográfica y vegetacional (Foto 22). Allí se ha desarrollado un mosaico complejo de unidades fisiográficas y de vegetación que todavía no ha sido inventariado en su totalidad. Su límite meridional está constituido por el valle del río Orinoco, hacia el suroeste continúa en los Llanos orientales de Colombia, y en el este colinda con la planicie cenagosa costera del río San Juan y el delta del río Orinoco. 
+En los Llanos el régimen térmico es macrotérmico en toda su extensión (Temperatura Media Anual o TMA siempre mayor a 24°C). Por el contrario, el régimen pluviométrico muestra un gradiente en progresivo aumento desde el noreste (Precipitación Media Anual o PMA aproximado de 1.000 mm en el sur de Monagas) hacia el suroeste (PMA alrededor de 2.000 mm en el río Meta, Apure meridional). El régimen climático es típicamente biestacional con fuerte alternancia entre el período seco y el período lluvioso.
 {Foto 22}
 El tipo de vegetación predominante de los Llanos es la sabana, que ocupa más de la mitad de la superficie. No obstante, también forman parte del típico paisaje vegetal llanero los densos bosques ribereños que acompañan casi todos los cursos de agua, así como los extensos palmares y los diferentes tipos de bosques semicaducifolios. Aparte de las diferencias edáficas intrínsecas, el régimen hídrico del suelo ejerce una gran influencia sobre los tipos de vegetación natural que se evidencian en la amplia gama de ecosistemas de sabana, diferenciados entre ellos no sólo desde el punto de vista fisionómico (sabana arbolada, sabana arbustiva, sabana abierta, sabana con palma), sino especialmente por su composición florística.
 
