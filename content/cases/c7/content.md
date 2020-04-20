@@ -32,7 +32,7 @@ photos:
     photourl: ./figura-3.jpg
     photocaption: "Figura 3: Mapa del riesgo de eliminación de los bosques
       siempreverdes de la zona noroccidental del estado Amazonas por grillas de
-      100 Km2. A) Bosques siempreverdes B) Arbustales y herbazales"
+      100 Km<sup>2</sup>. A) Bosques siempreverdes B) Arbustales y herbazales"
 ---
 # Contexto
 
@@ -54,7 +54,7 @@ Con respecto a sus potencialidades faunísticas, la Reserva Forestal Sipapo fue 
 
 # Métodos
 
-El área de estudio correspondió a 5% del área total del estado Amazonas, cubriendo aproximadamente 9.000 km<sup>2</sup> de la zona noroccidental (Figura 1). Esta extensión abarca parcialmente tres entidades municipales (Atures, Atabapo y Autana), y cubre casi en su totalidad a la Reserva Forestal Sipapo. 
+El área de estudio correspondió a 5% del área total del estado Amazonas, cubriendo aproximadamente 9.000 km<sup>2</sup> de la zona noroccidental (Figura 1). Esta extensión abarca parcialmente tres entidades municipales (Atures, Atabapo y Autana), y cubre casi en su totalidad a la Reserva Forestal Sipapo.
 
 Con el fin de analizar los cambios de cobertura ocurridos en la zona noroccidental del estado Amazonas, se llevó a cabo el procesamiento y análisis de dos imágenes satelitales, una imagen Landsat TM del 26 de diciembre de 1986 y una imagen Landsat ETM+ del 9 de enero de 2001.
 
