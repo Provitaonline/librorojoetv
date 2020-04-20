@@ -1,49 +1,59 @@
 ---
 region: d
-title: "Región D. Montañas"
-cardimage: "./foto-30.jpg"
-cardimagecaption: "Cordillera de los Andes, páramos andinos, estado Mérida. <i>David Southall</i>"
+title: Región D. Montañas
+cardimage: ./foto-30.jpg
+cardimagecaption: Cordillera de los Andes, páramos andinos, estado Mérida. <i>David Southall</i>
 photos:
-- photokey: "Foto 29"
-  photourl: "./foto-29.jpg"
-  photocaption: "Foto 29: Serranía de Perijá, estado Zulia. <i>Fernando Rojas-Runjaic</i>"
-- photokey: "Foto 30"
-  photourl: "./foto-30.jpg"
-  photocaption: "Foto 30: Cordillera de los Andes, páramos andinos, estado Mérida. <i>David Southall</i>"
-- photokey: "Foto 31"
-  photourl: "./foto-31.jpg"
-  photocaption: "Foto 31: Cerro Santa Ana, península de Paraguaná, estado Falcón. <i>José A. González-Carcacía</i>"
-- photokey: "Foto 32"
-  photourl: "./foto-32.jpg"
-  photocaption: "Foto 32: Cordillera de la Costa Central, cerro El Ávila, Distrito Capital. <i>David Southall</i>"
-- photokey: "Foto 33"
-  photourl: "./foto-33.jpg"
-  photocaption: "Foto 33: Cordillera de la Costa Oriental, Turimiquire, estado Anzoáteguí. <i>Gilson Rivas</i>"
-- photokey: "Foto 34"
-  photourl: "./foto-34.jpg"
-  photocaption: "Foto 34: Cerro El Copey, isla de Margarita, estado Nueva Esparta. <i>Natalia Ceballos</i>"
-- photokey: "Foto 35"
-  photourl: "./foto-35.jpg"
-  photocaption: "Foto 35: Cerro Autana, estado Amazonas. <i>Rebecca Miller</i>"
-- photokey: "Foto 36"
-  photourl: "./foto-36.jpg"
-  photocaption: "Foto 36: Macizo Guayanés, zona suroriental, Kukenán, estado Bolivar. <i>Roderic Mast</i>"
-- photokey: "Foto 37"
-  photourl: "./foto-37.jpg"
-  photocaption: "Foto 37: Macizo Guayanés, Gran Sabana, quebrada de Jaspe, estado Bolivar. <i>Pedro Uviedo</i>"
-- photokey: "Foto 38"
-  photourl: "./foto-38.jpg"
-  photocaption: "Foto 38: Macizo Guayanés, zona Caroní medio, Auyán-tepui, estado Bolivar. <i>Rebecca Miller</i>"
-- photokey: "Foto 39"
-  photourl: "./foto-39.jpg"
-  photocaption: "Foto 39: Salto Eutobarima, río Caroní, estado Bolívar."
-  isCentered: true
-- photokey: "Foto 40"
-  photourl: "./foto-40.jpg"
-  photocaption: "Foto 40: Macizo Guayanés, zona noroccidental, Autana, estado Amazonas. <i>Rebecca Miller</i>"
-- photokey: "Foto 41"
-  photourl: "./foto-41.jpg"
-  photocaption: "Foto 41: Macizo Guayanés, zona Centro Sur, Cerro Duida, estado Amazonas. <i>Leonardo Ruíz-Díaz</i>"
+  - photokey: Foto 29
+    photourl: ./foto-29.jpg
+    photocaption: "Foto 29: Serranía de Perijá, estado Zulia. <i>Fernando Rojas-Runjaic</i>"
+  - photokey: Foto 30
+    photourl: ./foto-30.jpg
+    photocaption: "Foto 30: Cordillera de los Andes, páramos andinos, estado Mérida.
+      <i>David Southall</i>"
+  - photokey: Foto 31
+    photourl: ./foto-31.jpg
+    photocaption: "Foto 31: Cerro Santa Ana, península de Paraguaná, estado Falcón.
+      <i>José A. González-Carcacía</i>"
+  - photokey: Foto 32
+    photourl: ./foto-32.jpg
+    photocaption: "Foto 32: Cordillera de la Costa Central, cerro El Ávila, Distrito
+      Capital. <i>David Southall</i>"
+  - photokey: Foto 33
+    photourl: ./foto-33.jpg
+    photocaption: "Foto 33: Cordillera de la Costa Oriental, Turimiquire, estado
+      Anzoáteguí. <i>Gilson Rivas</i>"
+  - photokey: Foto 34
+    photourl: ./foto-34.jpg
+    photocaption: "Foto 34: Cerro El Copey, isla de Margarita, estado Nueva Esparta.
+      <i>Natalia Ceballos</i>"
+  - photokey: Foto 35
+    photourl: ./foto-35.jpg
+    photocaption: "Foto 35: Cerro Autana, estado Amazonas. <i>Rebecca Miller</i>"
+  - photokey: Foto 36
+    photourl: ./foto-36.jpg
+    photocaption: "Foto 36: Macizo Guayanés, zona suroriental, Kukenán, estado
+      Bolivar. <i>Roderic Mast</i>"
+  - photokey: Foto 37
+    photourl: ./foto-37.jpg
+    photocaption: "Foto 37: Macizo Guayanés, Gran Sabana, quebrada de Jaspe, estado
+      Bolivar. <i>Pedro Uviedo</i>"
+  - photokey: Foto 38
+    photourl: ./foto-38.jpg
+    photocaption: "Foto 38: Macizo Guayanés, zona Caroní medio, Auyán-tepui, estado
+      Bolivar. <i>Rebecca Miller</i>"
+  - photokey: Foto 39
+    photourl: ./foto-39.jpg
+    photocaption: "Foto 39: Salto Eutobarima, río Caroní, estado Bolívar."
+    isCentered: true
+  - photokey: Foto 40
+    photourl: ./foto-40.jpg
+    photocaption: "Foto 40: Macizo Guayanés, zona noroccidental, Autana, estado
+      Amazonas. <i>Rebecca Miller</i>"
+  - photokey: Foto 41
+    photourl: ./foto-41.jpg
+    photocaption: "Foto 41: Macizo Guayanés, zona Centro Sur, Cerro Duida, estado
+      Amazonas. <i>Leonardo Ruíz-Díaz</i>"
 ---
 # Descripción
 
@@ -70,7 +80,7 @@ Debido a la multitud de hábitats y situaciones geográficas particulares, lo qu
 {class="unit-subtitle"}
 Esta serranía pertenece al ramal más al norte de la cordillera andina (Foto 29). Su constitución geológica es principalmente sedimentaria, con inclusiones de calizas y areniscas calcáreas. Alcanza elevaciones de más de 3.600 msnm. Las vertientes orientales (venezolanas) reciben copiosas precipitaciones, especialmente en los pisos superiores, donde se forma también una faja de nieblas orográficas, frecuentes durante la mayor parte del año. Los bosques montanos y páramos presentan múltiples afinidades con la flora andina de la cordillera oriental, en Colombia, y de la cordillera de Mérida, en Venezuela. No obstante, a partir de los escasos estudios realizados en estas montañas de la sierra de Perijá, poco accesibles, pareciera que la flora de sus bosques y páramos tiene un nivel de endemismo menor que en las otras cordilleras andinas (Steyermark & Delascio 1985).
 {Foto 29}
-La vegetación desarrollada sobre las vertientes orientales de la sierra de Perijá se articula de la siguiente manera: entre 100 y 700 msnm se encuentra un bosque macrotérmico estacional o tropófilo, semideciduo, en el cual crecen árboles grandes como el mijao (*Anacardium excelsum*), el suipo (*Trichilia pleena*) y el jobo (*Spondias mombin*) (Steyermark & Delascio 1985). En el piso climático superior, entre 1.100 y 2.500 msnm, el bosque montano es siempreverde, alto y denso, y adquiere muchos rasgos de bosque nublado, con abundantes epífitas de musgos, helechos, bromelias y orquídeas sobre las ramas y helechos arborescentes en el sotobosque. Uno de los árboles notables de este bosque es Bathysa perijaensis, de la familia del café y endémico a esta región. Finalmente, por encima de 2.500 msnm se extienden unos páramos hasta los límites superiores de la serranía, entre 3.000 y 3.600 msnm; en estos páramos también dominan los frailejones (incluidas *Espeletia perijaensis* y *E. tillettii*, dos especies endémicas), gramíneas y unos arbustos típicamente altoandinos (*Befaria, Hypericum* y *Disterigma*).
+La vegetación desarrollada sobre las vertientes orientales de la sierra de Perijá se articula de la siguiente manera: entre 100 y 700 msnm se encuentra un bosque macrotérmico estacional o tropófilo, semideciduo, en el cual crecen árboles grandes como el mijao (*Anacardium excelsum*), el suipo (*Trichilia pleena*) y el jobo (*Spondias mombin*) (Steyermark & Delascio 1985). En el piso climático superior, entre 1.100 y 2.500 msnm, el bosque montano es siempreverde, alto y denso, y adquiere muchos rasgos de bosque nublado, con abundantes epífitas de musgos, helechos, bromelias y orquídeas sobre las ramas y helechos arborescentes en el sotobosque. Uno de los árboles notables de este bosque es *Bathysa perijaensis*, de la familia del café y endémico a esta región. Finalmente, por encima de 2.500 msnm se extienden unos páramos hasta los límites superiores de la serranía, entre 3.000 y 3.600 msnm; en estos páramos también dominan los frailejones (incluidas *Espeletia perijaensis* y *E. tillettii*, dos especies endémicas), gramíneas y unos arbustos típicamente altoandinos (*Befaria, Hypericum* y *Disterigma*).
 
 <a id='d2'></a>
 
@@ -100,14 +110,16 @@ De acuerdo con Steyermark (1975), quien realizó las exploraciones botánicas m�
 ### Cordillera de la Costa Central
 {class="unit-subtitle"}
 {Foto 32}
-La cordillera de la Costa Central se desarrolla a lo largo de la franja septentrional del país, entre la Depresión de Barquisimeto en el oeste y la Depresión de Unare en el este, alcanzando su mayor altitud de 2.765 msnm en el pico Naiguatá (Foto 32). A pesar de su escasa altura y poca extensión como la cordillera de Mérida, ésta exhibe una sucesión reconocible de pisos altitudinales, desde la línea costera con el mar Caribe hasta sus partes altas. Abarca los pisos basimontano, submontano y montano, así como una angosta faja de subpáramo en sus cimas más elevadas (mayores de 2.200 msnm). Las vertientes que dan hacia el mar Caribe son, generalmente, más húmedas que las meridionales, ya que experimentan el efecto de “sombra de lluvia”. En esta cordillera, la frecuente niebla orográfica se forma entre 1.000 y 2.000 m de altitud. La cordillera de la Costa se levantó a partir del período Paleozoico, razón por la cual es considerada geológica y paleoecológicamente diferente de la cordillera de los Andes. Esta subregión central se compone de tres sectores geográficamente diferentes, separados entre ellos por dos importantes fallas geológicas:
+La cordillera de la Costa Central se desarrolla a lo largo de la franja septentrional del país, entre la Depresión de Barquisimeto en el oeste y la Depresión de Unare en el este, alcanzando su mayor altitud de 2.765 msnm en el pico Naiguatá (Foto 32). A pesar de su escasa altura y poca extensión como la cordillera de Mérida, ésta exhibe una sucesión reconocible de pisos altitudinales, desde la línea costera con el mar Caribe hasta sus partes altas. Abarca los pisos basimontano, submontano y montano, así como una angosta faja de subpáramo en sus cimas más elevadas (mayores de 2.200 msnm). Las vertientes que dan hacia el mar Caribe son, generalmente, más húmedas que las meridionales, ya que experimentan el efecto de “sombra de lluvia”. En esta cordillera, la frecuente niebla orográfica se forma entre 1.000 y 2.000 m de altitud. 
+
+La cordillera de la Costa se levantó a partir del período Paleozoico, razón por la cual es considerada geológica y paleoecológicamente diferente de la cordillera de los Andes. Esta subregión central se compone de tres sectores geográficamente diferentes, separados entre ellos por dos importantes fallas geológicas:
 
 <a id='d41'></a>
 
 ## Sector D.4.1.
 ### Sierra de Aroa
 {class="unit-subtitle-2"}
-Se trata de una montaña en el estado Yaracuy, relativamente aislada del resto de la cordillera a consecuencia de la falla de Boconó. Su mayor elevación casi alcanza 1.500 m de altitud. La vegetación está caracterizada por sus bosques nublados con un número significativo de especies endémicas, especialmente en el cerro La Chapa. La vegetación original boscosa de las laderas de esta sierra ha sido sustituida casi enteramente por cultivos agrícolas. En la cumbre bastante extensa todavía se encuentran fragmentos de bosque nublado costero, pero la presión de aprovechamiento de estas zonas para ganadería con pastos artificiales es muy fuerte (W. Meier com. pers.).
+Se trata de una montaña en el estado Yaracuy, relativamente aislada del resto de la cordillera a consecuencia de la falla de Boconó. Su mayor elevación casi alcanza 1.500 m de altitud. La vegetación está caracterizada por sus bosques nublados con un número significativo de especies endémicas, especialmente en el cerro La Chapa. La vegetación original boscosa de las laderas de esta sierra ha sido sustituida casi enteramente por cultivos agrícolas. En la cumbre bastante extensa todavía se encuentran fragmentos de bosque nublado costero, pero la presión de aprovechamiento de estas zonas para ganadería con pastos artificiales es muy fuerte (W. Meier *com. pers*.).
 
 <a id='d42'></a>
 
@@ -127,7 +139,11 @@ La cordillera de la Costa Central, con sus valles transversales de Caracas y Ara
 ## Sector D.4.3.
 ### Serranía del Interior
 {class="unit-subtitle-2"}
-La serranía del Interior se extiende al sur y paralelamente a la serranía del Litoral. Comprende la porción meridional de los estados Yaracuy, Carabobo, Aragua y Miranda, así como la franja piemontana en el norte de los estados Cojedes y Guárico. Sus elevaciones oscilan mayormente entre 800 y 1.500 m de altitud, con excepción del cerro Platillón, cerca de San Juan de los Morros, el cual alcanza 1.931 msnm (Zambrano 1970). Por su ubicación con respecto a la cordillera de la Costa, la serranía del Interior experimenta el efecto “sombra de lluvias” y el clima es, por lo tanto, notablemente menos lluvioso. Adicionalmente, en las vertientes ubicadas al sur, orientadas hacia los Llanos, el período de sequía suele ser generalmente más intenso. Los tipos de vegetación más característicos de esta serranía son los tupidos bosques húmedos (ombrófilos) submontanos y montanos de la selva de Guatopo y de la serranía del Bachiller. En el piso inferior originalmente existían grandes extensiones de bosques semideciduos (selvas alisias) y bosques bajos deciduos, pero estos han sido degradados en su mayor parte a matorrales densos deciduos. Debido a su cercanía a las ciudades de Caracas, Maracay y Valencia, la vegetación de todo el sector presenta un grado muy elevado de intervención humana y hoy en día muchas laderas de la serranía del Interior están cubiertas apenas por una sabana secundaria pobre en especies, en la cual localmente pueden presentarse grandes poblaciones de agaves.
+La serranía del Interior se extiende al sur y paralelamente a la serranía del Litoral. Comprende la porción meridional de los estados Yaracuy, Carabobo, Aragua y Miranda, así como la franja piemontana en el norte de los estados Cojedes y Guárico. Sus elevaciones oscilan mayormente entre 800 y 1.500 m de altitud, con excepción del cerro Platillón, cerca de San Juan de los Morros, el cual alcanza 1.931 msnm (Zambrano 1970). Por su ubicación con respecto a la cordillera de la Costa, la serranía del Interior experimenta el efecto “sombra de lluvias” y el clima es, por lo tanto, notablemente menos lluvioso. Adicionalmente, en las vertientes ubicadas al sur, orientadas hacia los Llanos, el período de sequía suele ser generalmente más intenso. 
+
+Los tipos de vegetación más característicos de esta serranía son los tupidos bosques húmedos (ombrófilos) submontanos y montanos de la selva de Guatopo y de la serranía del Bachiller. En el piso inferior originalmente existían grandes extensiones de bosques semideciduos (selvas alisias) y bosques bajos deciduos, pero estos han sido degradados en su mayor parte a matorrales densos deciduos. 
+
+Debido a su cercanía a las ciudades de Caracas, Maracay y Valencia, la vegetación de todo el sector presenta un grado muy elevado de intervención humana y hoy en día muchas laderas de la serranía del Interior están cubiertas apenas por una sabana secundaria pobre en especies, en la cual localmente pueden presentarse grandes poblaciones de agaves.
 
 <a id='d5'></a>
 
@@ -142,14 +158,18 @@ La sección oriental de la cordillera de la Costa se extiende en dirección oest
 ## Sector D.5.1.
 ### Macizo del Turimiquire
 {class="unit-subtitle-2"}
-El macizo del Turimiquire se ubica, mayormente, en la porción noroccidental del estado Monagas y en el suroeste del estado Sucre. Sus cumbres alcanzan hasta 2.600 msnm. La vegetación natural más importante está constituida por diferentes tipos de bosque, entre los cuales destacan los bosques siempreverdes montanos y los bosques nublados por su gran número de especies endémicas (Steyermark 1966). En las cumbres también se han encontrado arbustales abiertos, praderas y pequeñas áreas pantanosas con musgos (*Sphagnum* spp.). Steyermark (1966), quien exploró el macizo del Turimiquire durante dos meses en 1945, reportó que las laderas inferiores de este complejo montañoso estaban mayormente deforestadas. En 1975 fue declarada la Zona Protectora del Macizo Montañoso del Turimiquire, pero desde entonces se ha construido la gran represa del Turimiquire a media montaña y la figura de protección no ha sido del todo eficiente. Hoy en día probablemente sólo el piso superior montano (> 2.000 msnm), con remanentes de bosques nublados costeros y con arbustales mesotérmicos, representa parte de la vegetación natural original de este imponente sistema montañoso.
+El macizo del Turimiquire se ubica, mayormente, en la porción noroccidental del estado Monagas y en el suroeste del estado Sucre. Sus cumbres alcanzan hasta 2.600 msnm. La vegetación natural más importante está constituida por diferentes tipos de bosque, entre los cuales destacan los bosques siempreverdes montanos y los bosques nublados por su gran número de especies endémicas (Steyermark 1966). En las cumbres también se han encontrado arbustales abiertos, praderas y pequeñas áreas pantanosas con musgos (*Sphagnum* spp.). 
+
+Steyermark (1966), quien exploró el macizo del Turimiquire durante dos meses en 1945, reportó que las laderas inferiores de este complejo montañoso estaban mayormente deforestadas. En 1975 fue declarada la Zona Protectora del Macizo Montañoso del Turimiquire, pero desde entonces se ha construido la gran represa del Turimiquire a media montaña y la figura de protección no ha sido del todo eficiente. Hoy en día probablemente sólo el piso superior montano (> 2.000 msnm), con remanentes de bosques nublados costeros y con arbustales mesotérmicos, representa parte de la vegetación natural original de este imponente sistema montañoso.
 
 <a id='d52'></a>
 
 ## Sector D.5.2.
 ### Serranía de Paria
 {class="unit-subtitle-2"}
-La vegetación de la serranía de Paria está constituida principalmente por bosques y arbustales espinosos (espinares) o tropófilos, emplazados en el piso colinar y basimontano, dominados principalmente por especies leñosas y espinosas de leguminosas (Silva 1999). No obstante, en las cumbres de los cerros Patao y Humo, ubicados al noreste del estado Sucre, a una altitud de 1.200-1.300 msnm, se encuentran pequeñas manchas de bosque nublado, interesantes desde el punto de vista fitogeográfico y florístico (Steyermark & Agostini 1966). Una gran parte de la vegetación original de esta subregión en el noreste del país ha sido sometida a una intensa ocupación humana desde hace varios siglos, de manera que su actual cubierta vegetal incluye terrenos deforestados con matorrales o sabanas secundarias, así como bosques basimontanos y submontanos con alto grado de intervención debido a la tala selectiva de las especies maderables (Silva 1999).
+La vegetación de la serranía de Paria está constituida principalmente por bosques y arbustales espinosos (espinares) o tropófilos, emplazados en el piso colinar y basimontano, dominados principalmente por especies leñosas y espinosas de leguminosas (Silva 1999). No obstante, en las cumbres de los cerros Patao y Humo, ubicados al noreste del estado Sucre, a una altitud de 1.200-1.300 msnm, se encuentran pequeñas manchas de bosque nublado, interesantes desde el punto de vista fitogeográfico y florístico (Steyermark & Agostini 1966). 
+
+Una gran parte de la vegetación original de esta subregión en el noreste del país ha sido sometida a una intensa ocupación humana desde hace varios siglos, de manera que su actual cubierta vegetal incluye terrenos deforestados con matorrales o sabanas secundarias, así como bosques basimontanos y submontanos con alto grado de intervención debido a la tala selectiva de las especies maderables (Silva 1999).
 
 <a id='d6'></a>
 
@@ -171,13 +191,17 @@ La mayoría de estas mesetas son llamadas “tepui”<sup>(Nota 2)</sup> por los
 
 Las condiciones climáticas de esta subregión son muy variadas, aun cuando el clima húmedo lluvioso predomina en toda su extensión, con una precipitación media anual mayor a 2.500 mm. En las cumbres tepuyanas más elevadas se han observado cortos períodos de sequía (pocos días a 1-2 semanas, usualmente durante los primeros meses del año), durante los cuales el sustrato turboso, ampliamente distribuido, se puede secar considerablemente.
 
-Los pisos altitudinales de las montañas guayanesas comprenden una zona piemontana macrotérmica seguida por una zona submontana con régimen submesotérmico, ambas desarrolladas sobre las laderas inferiores y medias de los tepuyes cubiertos por bosques densos. A continuación aparece una zona montana que generalmente comprende las paredes superiores y las cumbres altotepuyanas con un régimen mesotérmico, a excepción de las mesas con una altura superior a 2.800 m, donde se puede encontrar un régimen submicrotérmico. Desde el punto de vista biogeográfico, todos los ecosistemas altotepuyanos, mayormente localizados por encima de 1.500-1.800 msnm, son incluidos en una provincia vegetal propia llamada Pantepui (Huber 1987, 1994). Debido al aislamiento geográfico de cada tepuy, en la perspectiva horizontal con respecto a los diferentes sistemas tepuyanos y en la vertical, por la separación entre las tierras bajas basales y las cumbres, al menos 1.500 metros más arriba, el Pantepui es una especie de archipiélago ecológico, con una historia evolutiva en el espacio y en el tiempo muy peculiar y que ha dado origen a una gran variedad de ecosistemas localizados en las diferentes secciones de la región biogeográfica guayanesa (Berry & Riina 2005, Huber 2005).
+Los pisos altitudinales de las montañas guayanesas comprenden una zona piemontana macrotérmica seguida por una zona submontana con régimen submesotérmico, ambas desarrolladas sobre las laderas inferiores y medias de los tepuyes cubiertos por bosques densos. A continuación aparece una zona montana que generalmente comprende las paredes superiores y las cumbres altotepuyanas con un régimen mesotérmico, a excepción de las mesas con una altura superior a 2.800 m, donde se puede encontrar un régimen submicrotérmico. Desde el punto de vista biogeográfico, todos los ecosistemas altotepuyanos, mayormente localizados por encima de 1.500-1.800 msnm, son incluidos en una provincia vegetal propia llamada Pantepui (Huber 1987, 1994). 
+
+Debido al aislamiento geográfico de cada tepuy, en la perspectiva horizontal con respecto a los diferentes sistemas tepuyanos y en la vertical, por la separación entre las tierras bajas basales y las cumbres, al menos 1.500 metros más arriba, el Pantepui es una especie de archipiélago ecológico, con una historia evolutiva en el espacio y en el tiempo muy peculiar y que ha dado origen a una gran variedad de ecosistemas localizados en las diferentes secciones de la región biogeográfica guayanesa (Berry & Riina 2005, Huber 2005).
 
 La vegetación del macizo Guayanés está constituida en primer lugar por los bosques húmedos de ladera en los pisos basimontanos, submontanos y montanos. Estos bosques son muy variados en su composición, tanto desde el punto de vista estructural como florístico. En conjunto, representan más de 80% de la cobertura vegetal de esta provincia biogeográfica llamada Guayana central de la región Guayana (Huber 1994). También pertenecen a esta provincia los densos bosques de las altiplanicies de la sierra Parima y del macizo Cuao-Sipapo, que se desarrollan entre 700 y 1.200 msnm, en los pisos submontano y montano. El restante 20% de esta subregión incluye: a) las sabanas graminosas submesotérmicas y los morichales de la Gran Sabana, entre 700 y 1.400 msnm, b) los herbazales latifoliados, dominados por *Stegolepis*, que se desarrollan sobre sustratos como turberas, arenas blancas o afloramientos rocosos y c) arbustales de diferente fisionomía y composición florística esparcidos por toda la subregión (Huber 1989).
 
 En cambio, en la provincia Pantepui predominan los ecosistemas no boscosos, encontrándose numerosos tipos de herbazales latifoliados y arbustales tepuyanos que crecen mayormente sobre espesos sustratos de turba o directamente sobre la roca descubierta, esto último menos frecuente. A lo largo de los cursos de agua, en las depresiones y en las grietas, se desarrollan verdaderos bosques tepuyanos. Esta provincia se desarrolla en el piso montano alto, localizado a partir de 1.500-1.800 msnm, el cual incluye las cumbres de los tepuyes de arenisca y las montañas no sedimentarias superiores, tales como la serranía de Maigualida. Un detalle interesante es que sobre las rocas expuestas de estos ambientes crece una vegetación pionera bien desarrollada, la cual está compuesta por cianobacterias, criptógamas y fanerógamas especializadas, constituyendo un verdadero litobioma, un área todavía muy poco estudiada.
 
-La diversidad de comunidades vegetales encontrada en el macizo Guayanés con sus dos provincias, Guayana Central y Pantepui, está basada sobre un patrimonio florístico muy rico y diversificado. Según la recientemente concluida *Flora de la Guayana Venezolana* (Berry *et al*. 1995, 1995c, 1997, 1998, 1999, 2001, 2003, 2004, 2005), se han registrado 2.322 especies en Pantepui sensu stricto (> 1.500 msnm) y de éstas, 766 especies son consideradas endémicas a esta provincia fitogeográfica (Berry *et al*. 1995b). Los mayores centros de endemismo se encuentran en el cerro de la Neblina y los macizos de Chimantá y Duida-Marahuaca. Todas ellas con altiplanicies por encima de 1.800 m, llegando a 2.800 m en el Marahuaca, y a 3.000 m en el cerro de la Neblina. Aparentemente la altitud no es el principal factor para el desarrollo de endemismos, sino también el grado de aislamiento de cada una de estas montañas. Por esta razón probablemente el cerro de la Neblina es la montaña con la mayor fitodiversidad y el mayor porcentaje de especies endémicas en el trópico americano, ya que es el cerro tepuyano más aislado hacia el sur en todo el área del Escudo Guayanés.
+La diversidad de comunidades vegetales encontrada en el macizo Guayanés con sus dos provincias, Guayana Central y Pantepui, está basada sobre un patrimonio florístico muy rico y diversificado. Según la recientemente concluida *Flora de la Guayana Venezolana* (Berry *et al*. 1995, 1995c, 1997, 1998, 1999, 2001, 2003, 2004, 2005), se han registrado 2.322 especies en Pantepui sensu stricto (> 1.500 msnm) y de éstas, 766 especies son consideradas endémicas a esta provincia fitogeográfica (Berry *et al*. 1995b). 
+
+Los mayores centros de endemismo se encuentran en el cerro de la Neblina y los macizos de Chimantá y Duida-Marahuaca. Todas ellas con altiplanicies por encima de 1.800 m, llegando a 2.800 m en el Marahuaca, y a 3.000 m en el cerro de la Neblina. Aparentemente la altitud no es el principal factor para el desarrollo de endemismos, sino también el grado de aislamiento de cada una de estas montañas. Por esta razón probablemente el cerro de la Neblina es la montaña con la mayor fitodiversidad y el mayor porcentaje de especies endémicas en el trópico americano, ya que es el cerro tepuyano más aislado hacia el sur en todo el área del Escudo Guayanés.
 
 La subregión del macizo Guayanés presenta características prácticamente únicas en el trópico americano:
 
@@ -190,7 +214,9 @@ La subregión del macizo Guayanés presenta características prácticamente úni
 <li>Presenta un conjunto de paisajes y escenarios naturales únicos en el trópico americano.</li>
 </ol>
 
-En consecuencia, es necesario proponer nuevas perspectivas de desarrollo que conlleven oportunidades reales de subsistencia y de trabajo para los habitantes locales de la región. La administración de las áreas protegidas y un ecoturismo balanceado y sustentable podrían constituir una alternativa en esa dirección. Se distinguen nueve sectores fitoecológicos, que conforman esta compleja y extensa subregión de paisajes vegetales del sur de Venezuela<sup>(Nota 3)</sup>.
+En consecuencia, es necesario proponer nuevas perspectivas de desarrollo que conlleven oportunidades reales de subsistencia y de trabajo para los habitantes locales de la región. La administración de las áreas protegidas y un ecoturismo balanceado y sustentable podrían constituir una alternativa en esa dirección. 
+
+Se distinguen nueve sectores fitoecológicos, que conforman esta compleja y extensa subregión de paisajes vegetales del sur de Venezuela<sup>(Nota 3)</sup>.
 
 <a id='d71'></a>
 
@@ -217,7 +243,7 @@ Este sector ocupa la extensa altiplanicie ubicada entre la sierra de Lema y el c
 ### Zona Caroní medio
 {class="unit-subtitle-2"}
 {Foto 38}
-El Caroní medio incluye los macizos del Auyán-tepui y del Chimantá, así como los tepuyes aislados Ptaritepui, Sororopán-tepui, Los Testigos (Agparamán-tepui, Murisipán-tepui, Tereke-yurén-tepui y Kamarkawaraitepui), Uaipán-tepui, Aprada-tepui, Upuigma-tepui y Angasima-tepui (Foto 38). Todas estas mesetas son de edad precámbrica y pertenecen a las areniscas y cuarcitas del grupo Roraima. Su altitud varía entre 1.500 y 2.650 msnm. Los macizos del Chimantá y del Auyán-tepui constituyen uno de los núcleos biológicos más ricos y diversificados en el Pantepui (Huber 1992). En este sector se incluyen también los bosques húmedos submontanos y montanos de las vertientes septentrionales de la sierra de Lema y La Escalera. La vegetación está caracterizada por la presencia de bosques húmedos siempreverdes basimontanos, submontanos y montanos en las laderas, sabanas macrotémicas y submesotérmicas arbustivas de piedemonte. En el piso tepuyano y altotepuyano predominan los herbazales latifoliados, arrosetados y tubulares sobre turba y sobre roca, los arbustales densos y los arbustales paramoides de Chimantaea, así como un litobioma bien desarrollado en todas las superficies rocosas.
+El Caroní medio incluye los macizos del Auyán-tepui y del Chimantá, así como los tepuyes aislados Ptaritepui, Sororopán-tepui, Los Testigos (Agparamán-tepui, Murisipán-tepui, Tereke-yurén-tepui y Kamarkawaraitepui), Uaipán-tepui, Aprada-tepui, Upuigma-tepui y Angasima-tepui (Foto 38). Todas estas mesetas son de edad precámbrica y pertenecen a las areniscas y cuarcitas del grupo Roraima. Su altitud varía entre 1.500 y 2.650 msnm. Los macizos del Chimantá y del Auyán-tepui constituyen uno de los núcleos biológicos más ricos y diversificados en el Pantepui (Huber 1992). En este sector se incluyen también los bosques húmedos submontanos y montanos de las vertientes septentrionales de la sierra de Lema y La Escalera. La vegetación está caracterizada por la presencia de bosques húmedos siempreverdes basimontanos, submontanos y montanos en las laderas, sabanas macrotémicas y submesotérmicas arbustivas de piedemonte. En el piso tepuyano y altotepuyano predominan los herbazales latifoliados, arrosetados y tubulares sobre turba y sobre roca, los arbustales densos y los arbustales paramoides de *Chimantaea*, así como un litobioma bien desarrollado en todas las superficies rocosas.
 
 <a id='d74'></a>
 
