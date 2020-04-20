@@ -1,40 +1,50 @@
 ---
 case: c5
-title: "Estado de conservación de los ecosistemas del ramal oriental de la cordillera de los Andes venezolanos"
-authors: "María Idalí Tachack-García, Fabián Carrasquel"
-citationPre: "Tachack-García, M.I. & F. Carrasquel (2010). Estado de conservación de los ecosistemas del ramal oriental de la cordillera de los Andes venezolanos. Pp: 263-268. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
-citationPost: ""
-cardimage: "./pancarta.jpg"
-landscapeunits: "Cordillera de los Andes (<a href='/unidades/d#d2'>D2</a>)"
-locality: "Ramal oriental cordillera de los Andes venezolanos"
-states: "Táchira, Mérida*, Trujillo*, Lara, Portuguesa*, Barinas"
+title: Estado de conservación de los ecosistemas del ramal oriental de la
+  cordillera de los Andes venezolanos
+authors: María Idalí Tachack-García, Fabián Carrasquel
+citationPre: "Tachack-García, M.I. & F. Carrasquel (2010). Estado de
+  conservación de los ecosistemas del ramal oriental de la cordillera de los
+  Andes venezolanos. Pp: 263-268. En: J.P. Rodríguez, F. Rojas- Suárez & D.
+  Giraldo Hernández (eds.)."
+citationPost: "Pp: 263-268"
+cardimage: ./pancarta.jpg
+landscapeunits: Cordillera de los Andes (<a href='/unidades/d#d2'>D2</a>)
+locality: Ramal oriental cordillera de los Andes venezolanos
+states: Táchira, Mérida*, Trujillo*, Lara, Portuguesa*, Barinas
 area: 28604
 cardtablecolumns:
-  - "Formación Vegetal*"
-  - "Categoría"
-  - "Criterio"
+  - Formación Vegetal*
+  - Categoría
+  - Criterio
 cardtablerows:
-  - "Bosques nublados|lc|--"
-  - "Bosques siempreverdes|cr|A2"
-  - "Bosques semideciduos|cr|A2"
-  - "Bosques ribereños|cr|A2"
-  - "Bosques Páramos|lc|--"
+  - Bosques nublados|lc|--
+  - Bosques siempreverdes|cr|A2
+  - Bosques semideciduos|cr|A2
+  - Bosques ribereños|cr|A2
+  - Páramos|lc|--
 photos:
-- photokey: "Figura 1"
-  photourl: "./figura-1.jpg"
-  photocaption: "Figura 1: Ubicación de la cordillera de Mérida y el área de estudio."
-  isCentered: true
-- photokey: "Figura 2"
-  photourl: "./figura-2.jpg"
-  photocaption: "Figura 2: Cambios de la cobertura de los ecosistemas terrestres de la cordillera de Mérida (Barinas, Mérida,  Trujillo) en 1986-2001."
-- photokey: "Figura 3"
-  photourl: "./figura-3.jpg"
-  photocaption: "Figura 3: Grado de amenaza de las formaciones vegetales en los municipios del ramal oriental de la cordillera de los Andes venezolanos. Las abreviaciones de las categorías son las mismas que en la Tabla 1. Las áreas en blanco son los municipios clasificados en las categorías Preocupación Menor (LC), Datos Insuficientes (DD) y No Evaluado (NE)."
-  isCentered: true
-- photokey: "Foto 1"
-  photourl: "./foto-1.jpg"
-  photocaption: "Foto 1: Caja Seca y Torondoy, estado Mérida. <i>Fernando Rojas-Runjaic</i>"
-  isCentered: true
+  - photokey: Figura 1
+    photourl: ./figura-1.jpg
+    photocaption: "Figura 1: Ubicación de la cordillera de Mérida y el área de estudio."
+    isCentered: true
+  - photokey: Figura 2
+    photourl: ./figura-2.jpg
+    photocaption: "Figura 2: Cambios de la cobertura de los ecosistemas terrestres
+      de la cordillera de Mérida (Barinas, Mérida,  Trujillo) en 1986-2001."
+  - photokey: Figura 3
+    photourl: ./figura-3.jpg
+    photocaption: "Figura 3: Grado de amenaza de las formaciones vegetales en los
+      municipios del ramal oriental de la cordillera de los Andes venezolanos.
+      Las abreviaciones de las categorías son las mismas que en la Tabla 1. Las
+      áreas en blanco son los municipios clasificados en las categorías
+      Preocupación Menor (LC), Datos Insuficientes (DD) y No Evaluado (NE)."
+    isCentered: true
+  - photokey: Foto 1
+    photourl: ./foto-1.jpg
+    photocaption: "Foto 1: Caja Seca y Torondoy, estado Mérida. <i>Fernando
+      Rojas-Runjaic</i>"
+    isCentered: true
 ---
 # Contexto
 
@@ -42,11 +52,11 @@ Venezuela forma parte de los andes tropicales, considerados la región de mayor 
 
 La cordillera oriental de Colombia se bifurca en los Andes venezolanos, lo cual da lugar a dos grandes subregiones: la primera forma la sierra de Perijá (estado Zulia), mientras que la segunda llega hasta el macizo de Tamá, desaparece en la depresión de Táchira y vuelve a emerger como la cordillera de Mérida (ramal oriental de los Andes venezolanos). Allí se encuentran las formaciones montañosas de mayor altitud en Venezuela, y diferentes tipos de bosques a lo largo de los distintos pisos altitudinales, incluyendo bosques ombrófilos basimontanos semicaducifolios, bosques ombrófilos submontanos y montanos siempreverdes, y bosques nublados entre 2.800 a 3.000 m de altitud. De la misma forma, se observa vegetación arbustiva y herbácea paramera entre 3.000 a 4.500 m de altitud, y hasta 4.700 m (MARN 2000). Esta región se caracteriza por temperaturas que oscilan desde 27°C en las selvas tropicales hasta -5°C en las cumbres más altas. Se reconocen suelos crudos rocosos, suelos flojos mineralizados, suelos sedimentarios y suelos selváticos (Vareschi 1970).
 
-En esta región se desarrollan importantes actividades económicas, entre las que predomina la agricultura principalmente asociada a cultivos de fresa, mora, papa, cebolla, ajo, coliflor, plátano, cambur y café. Adicionalmente, existe una industria local de ganadería de leche y de carne. La actividad piscícola ha tenido gran auge en los últimos años, junto con las empresas madereras. La zona presenta también un gran atractivo como destino turístico principalmente por su riqueza paisajística (PDVSA 1992). Estas riquezas naturales, inmensas pero de gran fragilidad, se encuentran amenazadas y bajo intensa presión humana, principalmente por la deforestación asociada a prácticas agrícolas y ganaderas, y por la cacería y extracción ilegal de especies. De hecho, algunas de sus especies más emblemáticas, como el cóndor (Vultur gryphus) y el oso frontino (Tremarctos ornatus) se encuentran amenazadas de extinción (Rodríguez & Rojas-Suárez 2008).
+En esta región se desarrollan importantes actividades económicas, entre las que predomina la agricultura principalmente asociada a cultivos de fresa, mora, papa, cebolla, ajo, coliflor, plátano, cambur y café. Adicionalmente, existe una industria local de ganadería de leche y de carne. La actividad piscícola ha tenido gran auge en los últimos años, junto con las empresas madereras. La zona presenta también un gran atractivo como destino turístico principalmente por su riqueza paisajística (PDVSA 1992). Estas riquezas naturales, inmensas pero de gran fragilidad, se encuentran amenazadas y bajo intensa presión humana, principalmente por la deforestación asociada a prácticas agrícolas y ganaderas, y por la cacería y extracción ilegal de especies. De hecho, algunas de sus especies más emblemáticas, como el cóndor (*Vultur gryphus*) y el oso frontino (*Tremarctos ornatus*) se encuentran amenazadas de extinción (Rodríguez & Rojas-Suárez 2008).
 
 # Métodos
 
-El presente análisis se realizó a dos escalas espaciales y temporales diferentes. En una primera aproximación, se examinaron los cambios históricos de vegetación en el ramal oriental de la cordillera de los Andes venezolanos. Utilizando el Mapa de Ecosistemas de los Andes del Norte y Centro elaborado por Josse y colaboradores, se extrajo el subconjunto de datos referidos a Venezuela para cuantificar la pérdida total de vegetación no intervenida (Josse *et al.* 2009b). El análisis se restringió a los municipios donde al menos 50% de la superficie estuviese incluida en el mapa citado. Los 57 municipios seleccionados ocuparon 28.604 km<sup>2</sup> ubicados en los estados Barinas (1), Lara (3), Mérida (19), Portuguesa (3), Táchira (22) y Trujillo (9). Esta primera aproximación histórica se fundamenta en que los cambios de cobertura de vegetación observados corresponden a una escala temporal de cientos de años, lo que permitiría la aplicación del criterio B1 del sistema de clasificación para estimar el riesgo de eliminación de ecosistemas (Rodríguez *et al.* 2011, Rodríguez *et al.* 2010).
+El presente análisis se realizó a dos escalas espaciales y temporales diferentes. En una primera aproximación, se examinaron los cambios históricos de vegetación en el ramal oriental de la cordillera de los Andes venezolanos. Utilizando el *Mapa de Ecosistemas de los Andes del Norte y Centro* elaborado por Josse y colaboradores, se extrajo el subconjunto de datos referidos a Venezuela para cuantificar la pérdida total de vegetación no intervenida (Josse *et al.* 2009b). El análisis se restringió a los municipios donde al menos 50% de la superficie estuviese incluida en el mapa citado. Los 57 municipios seleccionados ocuparon 28.604 km<sup>2</sup> ubicados en los estados Barinas (1), Lara (3), Mérida (19), Portuguesa (3), Táchira (22) y Trujillo (9). Esta primera aproximación histórica se fundamenta en que los cambios de cobertura de vegetación observados corresponden a una escala temporal de cientos de años, lo que permitiría la aplicación del criterio B1 del sistema de clasificación para estimar el riesgo de eliminación de ecosistemas (Rodríguez *et al.* 2011, Rodríguez *et al.* 2010).
 
 En una segunda aproximación se emplearon imágenes de satélite para examinar los cambios de cobertura recientes de la vegetación en una ventana restringida a la cordillera de Mérida, que representa 41% del estado Trujillo, 24% de Mérida y 15% de Barinas (Figura 1). Si bien el estado Barinas corresponde estrictamente a la región los Llanos, este segmento se incorpora al análisis debido a su localización en las imágenes de satélite empleadas y en virtud del valor que representan los ecosistemas del piedemonte barinés. Este segundo análisis evaluó una región de aproximadamente 12.864 km<sup>2</sup>.
 
@@ -103,8 +113,8 @@ La tabla 2 resume la información de la extensión ocupada por cada uno de los t
     <td align="center">--</td>
     <td align="center">1</td>
     <td align="center">1</td>
-    <td align="center"></td>
     <td align="center">1</td>
+    <td align="center"></td>
     <td align="center">3</td>
   </tr>
   <tr>
@@ -119,9 +129,9 @@ La tabla 2 resume la información de la extensión ocupada por cada uno de los t
   </tr>  <tr>
     <td>Portuguesa</td>
     <td align="center">--</td>
-    <td align="center">--</td>
     <td align="center">2</td>
     <td align="center">1</td>
+    <td align="center">--</td>
     <td align="center">--</td>
     <td align="center">--</td>
     <td align="center">3</td>
@@ -256,7 +266,7 @@ La tabla 2 resume la información de la extensión ocupada por cada uno de los t
       <td>Nieve</td>
       <td align="center">1,53</td>
       <td align="center">0,88</td>
-      <td align="center">42,48</td>
+      <td align="center">-42,48</td>
       <td align="center">-100</td>
       <td align="center">{cr}</td>
     </tr>
