@@ -119,60 +119,60 @@ stateleveltable:
     areain2010: "1412"
   - formation: ""
     state: Bolívar
-    areain1988: " "
+    areain1988: ""
     areain2010: "1301"
   - formation: ""
     state: Delta Amacuro
-    areain1988: " "
+    areain1988: ""
     areain2010: "2489"
   - formation: ""
     state: Falcón
-    areain1988: " "
+    areain1988: ""
     areain2010: < 3
   - formation: ""
     state: Miranda
-    areain1988: " "
+    areain1988: ""
     areain2010: < 1
   - formation: ""
     state: Monagas
-    areain1988: " "
+    areain1988: ""
     areain2010: "45"
   - formation: ""
     state: Sucre
-    areain1988: " "
+    areain1988: ""
     areain2010: "367"
   - formation: ""
     state: Yaracuy
-    areain1988: " "
+    areain1988: ""
     areain2010: < 3
   - formation: Bosques de pantano
     state: Delta Amacuro
-    areain1988: " "
+    areain1988: ""
     areain2010: "13687"
   - formation: ""
     state: Monagas
-    areain1988: " "
+    areain1988: ""
     areain2010: "1147"
   - formation: ""
     state: Sucre
-    areain1988: " "
+    areain1988: ""
     areain2010: "219"
   - formation: ""
     state: Zulia
-    areain1988: " "
+    areain1988: ""
     areain2010: "2435"
   - formation: Bosques de pantano y de palmas
     state: Delta Amacuro
     areain1988: "15433"
-    areain2010: " "
+    areain2010: ""
   - formation: ""
     state: Monagas
     areain1988: "1874"
-    areain2010: " "
+    areain2010: ""
   - formation: ""
     state: Sucre
     areain1988: "481"
-    areain2010: " "
+    areain2010: ""
 threatlevelmaps:
   - map: ./figura-1c-1-amenazas.jpg
     caption: Norte y Delta del río Orinoco
