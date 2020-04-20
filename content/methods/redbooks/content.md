@@ -1,16 +1,19 @@
 ---
 id: librosrojos
 method: clasificacion
-title: "Los libros rojos y su uso en la conservación de especies y ambientes amenazados"
-authors: "Jon Paul Rodríguez, Kathryn M. Rodríguez-Clark, Marianne Assmüssen"
-citationPre: "Rodríguez J.P., K.M. Rodríguez-Clark & M. Assmüssen (2010). Categorías y criterios de las listas rojas de ecosistemas. Los libros rojos y su uso en la conservación de especies y ambientes amenazados. Pp: 93-96. En: J.P. Rodríguez, F. Rojas-Suárez & D. Giraldo Hernández (eds.)."
-citationPost: ""
-cardimage: "./pancarta-redbooks.jpg"
-cardimagecaption: "Atardecer en el Llano, estado Apure. <i>Rebecca Miller</i>"
+title: Los libros rojos y su uso en la conservación de especies y ambientes amenazados
+authors: Jon Paul Rodríguez, Kathryn M. Rodríguez-Clark, Marianne Assmüssen
+citationPre: "Rodríguez J.P., K.M. Rodríguez-Clark & M. Assmüssen (2010).
+  Categorías y criterios de las listas rojas de ecosistemas. Los libros rojos y
+  su uso en la conservación de especies y ambientes amenazados. Pp: 93-96. En:
+  J.P. Rodríguez, F. Rojas-Suárez & D. Giraldo Hernández (eds.)."
+citationPost: "Pp: 93-96"
+cardimage: ./pancarta-redbooks.jpg
+cardimagecaption: Atardecer en el Llano, estado Apure. <i>Rebecca Miller</i>
 photos:
-- photokey: "Foto 1"
-  photourl: "./foto-1.jpg"
-  photocaption: ""
+  - photokey: Foto 1
+    photourl: ./foto-1.jpg
+    photocaption: "  "
 ---
 Las listas rojas de especies amenazadas de extinción han sido fundamentales para documentar el estatus de animales y plantas, informar al público, impulsar propuestas de conservación y catalizar políticas públicas sobre biodiversidad. Históricamente, sus principales usos han sido: 1) aumentar el grado de conocimiento del público en general acerca de la situación de las especies amenazadas; 2) servir como punto de referencia para evaluar los cambios en el estado de conservación de la biodiversidad; 3) identificar las áreas que podrían ser incorporadas a los sistemas nacionales de áreas protegidas; 4) dar seguimiento a las actividades humanas que amenazan a la biodiversidad, y 5) definir prioridades para la inversión de recursos en conservación (Collar 1996, Possingham et al. 2002, Lamoreux et al. 2003, Rodríguez et al. 2004, Stuart et al. 2010). Las listas rojas son documentos muy influyentes, como es expuesto en la decisión del Convenio sobre la Diversidad Biológica. Entre muchas otras funciones, sirven para cuantificar cambios en el estatus de las especies mediante la aplicación del Índice de las Listas Rojas, una medida promedio del riesgo de extinción de un grupo de organismos en un momento dado (Butchart et al. 2007).
 
