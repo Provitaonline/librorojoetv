@@ -924,15 +924,10 @@ El análisis del riesgo de eliminación de las formaciones vegetales de Venezuel
 
 | Áreas protegidas de conservación y manejo<br>de recursos naturales |
 |-----------------------------------------------------------------|
-| **Zonas Protectoras:** |
-| **1.** Área con un radio de 200 m, que incluye desde un manantial o el nacimiento de una corriente de agua. |
-| **2.** Área con un ancho mínimo de 300 m en ambos lados y en paralelo a las filas de las montañas y a los bordes inclinados de las mesetas. |
-| **3.** Área con un ancho mínimo de 60 m en ambas márgenes de los ríos navegables y de 25 m para los cursos no navegables permanentes o intermitentes. |
+| **Zonas Protectoras:**<br>**1.** Área con un radio de 200 m, que incluye desde un manantial o el nacimiento de una corriente de agua.<br>**2.** Área con un ancho mínimo de 300 m en ambos lados y en paralelo a las filas de las montañas y a los bordes inclinados de las mesetas.<br>**3.** Área con un ancho mínimo de 60 m en ambas márgenes de los ríos navegables y de 25 m para los cursos no navegables permanentes o intermitentes. |
 | **Reservas Forestales:** macizos boscosos indispensables para la industria maderera nacional. |
 | **Reservas de Fauna Silvestre:** zonas para el desarrollo de programas de ordenación y manejo de poblaciones de animales silvestres, que aseguren su producción para la caza o contribuyan a cualquier otra forma de aprovechamiento. |
-| **Áreas de Manejo Integral de Recursos Naturales:** |
-| **1.** Zonas de Reserva para la Construcción de Presas y Embalses: áreas que se consideren idóneas para la construcción de presas y embalses. |
-| **2.** Zonas de Aprovechamiento Agrícola: áreas que deben ser resguardadas para su explotación agrícola. |
+| **Áreas de Manejo Integral de Recursos Naturales:**<br>**1.** Zonas de Reserva para la Construcción de Presas y Embalses: áreas que se consideren idóneas para la construcción de presas y embalses.<br>**2.** Zonas de Aprovechamiento Agrícola: áreas que deben ser resguardadas para su explotación agrícola. |
 | **Áreas Rurales de Desarrollo Integrado:** zonas sometidas a una estrategia de desarrollo agrario que combine la participación de las entidades públicas y la población rural organizada. |
 | **Áreas de Protección y Recuperación Ambiental:** zonas que requieren de un plan de manejo para corregir procesos de degradación naturales o causados por humanos. |
 | **Reservas Nacionales Hidráulicas:** territorios en los cuales yacen cuerpos de agua que requieran un régimen de administración especial. |
