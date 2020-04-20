@@ -74,7 +74,7 @@ description: >
   caribea, Helietta plaeana, Krugiodendron ferreum</i>, y <i>Zizyphus
   cinnamomum</i>. No obstante, las especies dominantes son <i>Bursera
   simaruba</i> (indio desnudo), que destaca por su corteza cobriza, y
-  <i>Lonchocarpus punctatus</i> (mamoncillo),así como varias especies de los
+  <i>Lonchocarpus punctatus</i> (mamoncillo), así como varias especies de los
   géneros <i>Acacia, Cordia, Capparis, Bursera</i> y <i>Sapindus</i>, como
   ocurre en otros bosques deciduos (Steyermark 1994).<br><br> Entre las especies
   endémicas asociadas a los bosques deciduos se encuentran <i>Lonchocarpus
