@@ -171,7 +171,7 @@ threatlevelmaps:
       - lc
 zonelabel: Localidad
 criteriaused:
-  - Extensión (Km<sup>2</sup>)
+  - Extensión (km<sup>2</sup>)
   - D2
   - Situación por localidad
 riskofcolapsestatelevel:
