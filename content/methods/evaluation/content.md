@@ -1,49 +1,83 @@
 ---
 id: evaluacion
 method: evaluacion
-title: "Método para la evaluación del<br>riesgo de colapso de los<br>ecosistemas terrestres de Venezuela"
-authors: "María A. Oliveira-Miranda, Otto Huber, Jon Paul Rodríguez, Franklin Rojas-Suárez, Rosa De Oliveira-Miranda, Mariana Hernández-Montilla, Sergio Zambrano-Martínez"
-citationPre: "Oliveira-Miranda, M.A., O. Huber, J.P. Rodríguez, F. Rojas-Suárez, R. De Oliveira-Miranda & S. Zambrano-Martínez (eds.) (2010). Riesgo de eliminación de los ecosistemas terrestres de Venezuela. Método para la evaluación del riesgo de colapso de los ecosistemas terrestres de Venezuela. Pp: 109-123. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
-citationPost: ""
-cardimage: "./pancarta-eval.jpg"
-cardimagecaption: "Vista panorámica de Lagunillas, estado Mérida. <i>Leonardo Ruíz-Díaz</i>"
+title: Método para la evaluación del<br>riesgo de colapso de los<br>ecosistemas
+  terrestres de Venezuela
+authors: María A. Oliveira-Miranda, Otto Huber, Jon Paul Rodríguez, Franklin
+  Rojas-Suárez, Rosa De Oliveira-Miranda, Mariana Hernández-Montilla, Sergio
+  Zambrano-Martínez
+citationPre: "Oliveira-Miranda, M.A., O. Huber, J.P. Rodríguez, F. Rojas-Suárez,
+  R. De Oliveira-Miranda & S. Zambrano-Martínez (eds.) (2010). Riesgo de
+  eliminación de los ecosistemas terrestres de Venezuela. Método para la
+  evaluación del riesgo de colapso de los ecosistemas terrestres de Venezuela.
+  Pp: 109-123. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández
+  (eds.)."
+citationPost: "Pp: 109-123"
+cardimage: ./pancarta-eval.jpg
+cardimagecaption: Vista panorámica de Lagunillas, estado Mérida. <i>Leonardo Ruíz-Díaz</i>
 photos:
-- photokey: "Figura 1"
-  photourl: "./figura-1.jpg"
-  photocaption: "<b>Figura 1:</b> Áreas intervenidas y grado de intervención de las formaciones vegetales naturales de Venezuela para 1988 y 2010. Fuente: Huber y Alarcón (1988), Huber y Oliveira-Miranda (2010)."
-- photokey: "Figura 2"
-  photourl: "./figura-2.jpg"
-  photocaption: "<b>Figura 2:</b> Extracción de carbón en el noreste del estado Zulia como una actividad que elimina la cobertura vegetal. Imágenes Landsat, años 1986, sensor TM y 2001, sensor ETM+ (bandas 4,5,2). Para 2001 se aprecia la eliminación completa de cobertura vegetal y la intensificación de las actividades agropecuarias."
-- photokey: "Figura 3"
-  photourl: "./figura-3.jpg"
-  photocaption: "<b>Figura 3:</b> Eliminación de la cobertura vegetal en la Reserva Forestal de Caparo entre 1988 y 2001. Imágenes de satélite Landsat, sensores TM y ETM+, respectivamente (bandas 4,5,2)."
-- photokey: "Figura 4"
-  photourl: "./figura-4.jpg"
-  photocaption: "<b>Figura 4:</b> Eliminación de la cobertura vegetal en la Reserva Forestal de Ticoporo entre 1988 y 2001. Imágenes de satélite Landsat, sensores TM y ETM+, respectivamente (bandas 4,5,2)."
-- photokey: "Figura 5"
-  photourl: "./figura-5.jpg"
-  photocaption: "<b>Figura 5:</b> La producción de alimentos mediante la acuicultura y la extracción industrial de sal pueden generar modificaciones del espacio que inciden en la dinámica natural de diversos tipos de vegetación, como se aprecia cerca de los linderos del Refugio de Fauna Silvestre Ciénaga Los Olivitos, al este de la boca del lago de Maracaibo, estado Zulia. Imágenes de satélite Landsat, sensores TM y ETM+, respectivamente (bandas 4,5,2)."
-- photokey: "Figura 6"
-  photourl: "./figura-6.jpg"
-  photocaption: "<b>Figura 6:</b> Representación de las áreas de protección con fines prioritarios de conservación de la biodiversidad, elaborado por Zambrano-Martínez y Oliveira-Miranda 2010"
-- photokey: "Figura 7"
-  photourl: "./figura-7.jpg"
-  photocaption: "<b>Figura 7:</b> Representación de las áreas de protección con fines de uso potencial, elaborado por Zambrano-Martínez y Oliveira-Miranda 2010"
-- photokey: "Foto 1"
-  photourl: "./foto-1.jpg"
-  photocaption: "Foto 1: Extracción de arena para actividades de construcción en la Isla de Margarita, estado Nueva Esparta. <i>Franklin Rojas-Suárez</i>"
-- photokey: "Foto 2"
-  photourl: "./foto-2.jpg"
-  photocaption: "Foto 2: Ganadería y actividad petrolera en el estado Anzoátegui. <i>Mariana Hernández-Montilla</i>"
-- photokey: "Foto 3"
-  photourl: "./foto-3.jpg"
-  photocaption: "Foto 3: Eliminación de bosques con fines agropecuarios en las inmediaciones de Piedra Cachimbo, cerca del Monumento Nacional Pico Codazzi. <i>Giuseppe Colonnel</i>"
-- photokey: "Foto 4"
-  photourl: "./foto-4.jpg"
-  photocaption: "Foto 4: Plantaciones de palma africana al sur Lago de Maracaibo, estado Zulia. <i>Giuseppe Colonnello</i>"
-- photokey: "Foto 5"
-  photourl: "./foto-5.jpg"
-  photocaption: "Foto 4: Extracción de oro sin eliminación del dosel, estado Bolívar. <i>Sergio Zambrano-Martínez</i>"
+  - photokey: Figura 1
+    photourl: ./figura-1.jpg
+    photocaption: "<b>Figura 1:</b> Áreas intervenidas y grado de intervención de
+      las formaciones vegetales naturales de Venezuela para 1988 y 2010. Fuente:
+      Huber y Alarcón (1988), Huber y Oliveira-Miranda (2010)."
+  - photokey: Figura 2
+    photourl: ./figura-2.jpg
+    photocaption: <b>Figura 2:</b> Extracción de carbón en el noreste del estado
+      Zulia como una actividad que elimina la cobertura vegetal. Imágenes
+      Landsat, años 1986, sensor TM y 2001, sensor ETM+ (bandas 4,5,2). Para
+      2001 se aprecia la eliminación completa de cobertura vegetal y la
+      intensificación de las actividades agropecuarias.
+  - photokey: Figura 3
+    photourl: ./figura-3.jpg
+    photocaption: <b>Figura 3:</b> Eliminación de la cobertura vegetal en la Reserva
+      Forestal de Caparo entre 1988 y 2001. Imágenes de satélite Landsat,
+      sensores TM y ETM+, respectivamente (bandas 4,5,2).
+  - photokey: Figura 4
+    photourl: ./figura-4.jpg
+    photocaption: <b>Figura 4:</b> Eliminación de la cobertura vegetal en la Reserva
+      Forestal de Ticoporo entre 1988 y 2001. Imágenes de satélite Landsat,
+      sensores TM y ETM+, respectivamente (bandas 4,5,2).
+  - photokey: Figura 5
+    photourl: ./figura-5.jpg
+    photocaption: <b>Figura 5:</b> La producción de alimentos mediante la
+      acuicultura y la extracción industrial de sal pueden generar
+      modificaciones del espacio que inciden en la dinámica natural de diversos
+      tipos de vegetación, como se aprecia cerca de los linderos del Refugio de
+      Fauna Silvestre Ciénaga Los Olivitos, al este de la boca del lago de
+      Maracaibo, estado Zulia. Imágenes de satélite Landsat, sensores TM y ETM+,
+      respectivamente (bandas 4,5,2).
+  - photokey: Figura 6
+    photourl: ./figura-6.jpg
+    photocaption: <b>Figura 6:</b> Representación de las áreas de protección con
+      fines prioritarios de conservación de la biodiversidad, elaborado por
+      Zambrano-Martínez y Oliveira-Miranda 2010
+  - photokey: Figura 7
+    photourl: ./figura-7.jpg
+    photocaption: <b>Figura 7:</b> Representación de las áreas de protección con
+      fines de uso potencial, elaborado por Zambrano-Martínez y Oliveira-Miranda
+      2010
+  - photokey: Foto 1
+    photourl: ./foto-1.jpg
+    photocaption: "Foto 1: Extracción de arena para actividades de construcción en
+      la Isla de Margarita, estado Nueva Esparta. <i>Franklin Rojas-Suárez</i>"
+  - photokey: Foto 2
+    photourl: ./foto-2.jpg
+    photocaption: "Foto 2: Ganadería y actividad petrolera en el estado Anzoátegui.
+      <i>Mariana Hernández-Montilla</i>"
+  - photokey: Foto 3
+    photourl: ./foto-3.jpg
+    photocaption: "Foto 3: Eliminación de bosques con fines agropecuarios en las
+      inmediaciones de Piedra Cachimbo, cerca del Monumento Nacional Pico
+      Codazzi. <i>Giuseppe Colonnel</i>"
+  - photokey: Foto 4
+    photourl: ./foto-4.jpg
+    photocaption: "Foto 4: Plantaciones de palma africana al sur Lago de Maracaibo,
+      estado Zulia. <i>Giuseppe Colonnello</i>"
+  - photokey: Foto 5
+    photourl: ./foto-5.jpg
+    photocaption: "Foto 5: Extracción de oro sin eliminación del dosel, estado
+      Bolívar. <i>Sergio Zambrano-Martínez</i>"
 ---
 El presente análisis se centra en las [formaciones vegetales presentes en Venezuela para 2010](/fichas), identificadas por Huber y Oliveira-Miranda (Huber & Oliveira-Miranda 2010, Figura 8). Su clasificación corresponde a las principales formas de crecimiento de la vegetación: arbórea, arbustiva y herbácea divididas a su vez en tipos, de acuerdo con sus características fisiológicas, topográficas y geográficas. Las formaciones arbóreas ocupan más de la mitad de la superficie terrestre de Venezuela (54%), mientras que las herbáceas abarcan 18% y las arbustivas 6%. Las áreas intervenidas alcanzan alrededor de 22% del territorio nacional.
 
