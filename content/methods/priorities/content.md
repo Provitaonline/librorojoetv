@@ -1,25 +1,34 @@
 ---
 id: prioridades
 method: priorities
-title: "Estableciendo prioridades<br>para la conservación de los<br>ecosistemas terrestres de Venezuela"
-authors: "María Idalí Tachack-García, Jon Paul Rodríguez"
-citationPre: "Tachack-García, M.I. & J.P. Rodríguez (2010). Estableciendo prioridades para la conservación de los ecosistemas terrestres de Venezuela. Pp: 303-311. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
+title: Estableciendo prioridades<br>para la conservación de los<br>ecosistemas
+  terrestres de Venezuela
+authors: María Idalí Tachack-García, Jon Paul Rodríguez
+citationPre: "Tachack-García, M.I. & J.P. Rodríguez (2010). Estableciendo
+  prioridades para la conservación de los ecosistemas terrestres de Venezuela.
+  Pp: 303-311. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández
+  (eds.)."
 citationPost: ""
-cardimage: "./pancarta-priorities.jpg"
-cardimagecaption: "Recorrido entre Puerto Ayacucho y Autana, estado Amazonas. <i>Rebecca Miller</i>"
+cardimage: ./pancarta-priorities.jpg
+cardimagecaption: Recorrido entre Puerto Ayacucho y Autana, estado Amazonas.
+  <i>Rebecca Miller</i>
 photos:
-- photokey: "Formula 1"
-  photourl: "./formula.svg"
-  isCentered: true
-- photokey: "Figura 1"
-  photourl: "./figura-1.jpg"
-  photocaption: "<b>Figura 1.</b> Relación entre la prioridad relativa de los ecosistemas, según el área que ocupan, su proporción protegida y las metas de representatividad propuestas. Figura tomada y modificada de Rodrigues *et al.* (2004a)."
-- photokey: "Foto 1"
-  photourl: "./foto-1.jpg"
-  photocaption: "Auyan-tepui, estado Bolívar. <i>Rebecca Miller</i>"
-- photokey: "Foto 2"
-  photourl: "./foto-2.jpg"
-  photocaption: "Arbustales espinosos, estado Lara. <i>Rebecca Miller</i>"
+  - photokey: Formula 1
+    photourl: ./formula.svg
+    isCentered: true
+    photocaption: " "
+  - photokey: Figura 1
+    photourl: ./figura-1.jpg
+    photocaption: <b>Figura 1.</b> Relación entre la prioridad relativa de los
+      ecosistemas, según el área que ocupan, su proporción protegida y las metas
+      de representatividad propuestas. Figura tomada y modificada de Rodrigues
+      *et al.* (2004a).
+  - photokey: Foto 1
+    photourl: ./foto-1.jpg
+    photocaption: Auyan-tepui, estado Bolívar. <i>Rebecca Miller</i>
+  - photokey: Foto 2
+    photourl: ./foto-2.jpg
+    photocaption: Arbustales espinosos, estado Lara. <i>Rebecca Miller</i>
 ---
 Las evaluaciones de riesgo objetivas, transparentes y basadas en información científica son un requisito previo para la planificación y definición de políticas efectivas de conservación (Mace *et al.* 2008, Rodríguez *et al.* 2011). Sin embargo, aunque las evaluaciones son necesarias y muy valiosas en cualquier ecuación para establecer prioridades no son suficientes por sí solas, y en la planificación para la conservación de ecosistemas se requiere contar con herramientas adicionales que faciliten la toma de decisiones.
 
@@ -59,7 +68,7 @@ El grado de endemismo de la biota de un ecosistema, o la proporción de sus orga
 
 A este respecto, se propone cuantificar el grado de singularidad de un ecosistema en función de la proporción de sus especies endémicas. La lógica es que mientras mayor sea la singularidad de un ecosistema mayor sería su prioridad, ya que también sería mayor la probabilidad de que la conservación de las especies que contiene y las interacciones entre éstas y su ambiente físico, sólo sean posibles en este ecosistema y no en otro. Una de las fórmulas más utilizadas para cuantificar el grado de endemismo es la siguiente:
 {Formula 1}
-En esta fórmula, **Ie** es el índice de riqueza de cada región ecológica **(e)**; **n** es el número total de especies en la región ecológica **(e)**; **Gi<sub>(e)</sub>** es el número de especies en el grupo **i** por ecorregión; y **Gi<sub>(t)</sub>** es el número total de especies del grupo **i** (Lamoreux *et al.* 2006). Esta fórmula puede ser aplicada a la información obtenida sobre uno o más grupos taxonómicos, cuyo grado de endemismo sea conocido en los ecosistemas presentes en el área de estudio.
+En esta fórmula, ***Ie*** es el índice de riqueza de cada región ecológica **(*e*)**; ***n*** es el número total de especies en la región ecológica **(*e*)**; ***Gi*<sub>(*e*)</sub>** es el número de especies en el grupo ***i*** por ecorregión; y ***Gi*<sub>(*t*)</sub>** es el número total de especies del grupo ***i*** (Lamoreux *et al.* 2006). Esta fórmula puede ser aplicada a la información obtenida sobre uno o más grupos taxonómicos, cuyo grado de endemismo sea conocido en los ecosistemas presentes en el área de estudio.
 
 La presente utilización del criterio de endemismo sigue la doctrina de la responsabilidad final postulada por McNeeley y otros autores (1990) y adoptada por la UICN (Unión Internacional para la Conservación de la Naturaleza), según la cual cualquier nación que posea especies o ecosistemas únicos tiene la responsabilidad final de garantizar su supervivencia (Mittermeier *et al.* 1998). Empleando valores de referencia obtenidos de la literatura científica, a los ecosistemas con índice de endemismo mayor a 2% se asigna el valor de tres (3) puntos, de acuerdo con la propuesta de Mittermeier y colaboradores (1997) para países megadiversos; mientras que a aquellos que presenten valores entre 1% y 2% les corresponde el valor de dos (2) puntos, en función de los valores usados para determinar un hotspot de biodiversidad (Mittermeier *et al.* 1998, Myers *et al.* 2000). Finalmente, para los ecosistemas cuyo índice sea menor que 1%, el valor empleado es un (1) punto.
 
