@@ -43,8 +43,8 @@ distribution: >
   oriente del país, en el sur de la península de Paria y en todo el delta del
   Orinoco (Figura 1). Su distribución es relativamente fragmentada, formando un
   mosaico con los bosques de pantano y los bosques de palmar en Delta Amacuro,
-  Sucre y Monagas (Foto 4) [Huber & Alarcón 1988, González 2004, Colonnello
-  <i>et al.</i> 2009]. Adicionalmente, se encuentran en el estado Zulia,
+  Sucre y Monagas (Foto 4) (Huber & Alarcón 1988, González 2004, Colonnello
+  <i>et al.</i> 2009). Adicionalmente, se encuentran en el estado Zulia,
   asociados a la ciénaga de Juan Manuel. La superficie total de los herbazales
   de pantano se estimó en 5.960 km<sup>2</sup>, lo que representa 0,65% del
   territorio nacional (Figura 1, Tabla 1). El estado donde los herbazales de
