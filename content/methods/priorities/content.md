@@ -1,25 +1,34 @@
 ---
 id: prioridades
 method: priorities
-title: "Estableciendo prioridades<br>para la conservación de los<br>ecosistemas terrestres de Venezuela"
-authors: "María Idalí Tachack-García, Jon Paul Rodríguez"
-citationPre: "Tachack-García, M.I. & J.P. Rodríguez (2010). Estableciendo prioridades para la conservación de los ecosistemas terrestres de Venezuela. Pp: 303-311. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
+title: Estableciendo prioridades<br>para la conservación de los<br>ecosistemas
+  terrestres de Venezuela
+authors: María Idalí Tachack-García, Jon Paul Rodríguez
+citationPre: "Tachack-García, M.I. & J.P. Rodríguez (2010). Estableciendo
+  prioridades para la conservación de los ecosistemas terrestres de Venezuela.
+  Pp: 303-311. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández
+  (eds.)."
 citationPost: ""
-cardimage: "./pancarta-priorities.jpg"
-cardimagecaption: "Recorrido entre Puerto Ayacucho y Autana, estado Amazonas. <i>Rebecca Miller</i>"
+cardimage: ./pancarta-priorities.jpg
+cardimagecaption: Recorrido entre Puerto Ayacucho y Autana, estado Amazonas.
+  <i>Rebecca Miller</i>
 photos:
-- photokey: "Formula 1"
-  photourl: "./formula.svg"
-  isCentered: true
-- photokey: "Figura 1"
-  photourl: "./figura-1.jpg"
-  photocaption: "<b>Figura 1.</b> Relación entre la prioridad relativa de los ecosistemas, según el área que ocupan, su proporción protegida y las metas de representatividad propuestas. Figura tomada y modificada de Rodrigues *et al.* (2004a)."
-- photokey: "Foto 1"
-  photourl: "./foto-1.jpg"
-  photocaption: "Auyan-tepui, estado Bolívar. <i>Rebecca Miller</i>"
-- photokey: "Foto 2"
-  photourl: "./foto-2.jpg"
-  photocaption: "Arbustales espinosos, estado Lara. <i>Rebecca Miller</i>"
+  - photokey: Formula 1
+    photourl: ./formula.svg
+    isCentered: true
+    photocaption: " "
+  - photokey: Figura 1
+    photourl: ./figura-1.jpg
+    photocaption: <b>Figura 1.</b> Relación entre la prioridad relativa de los
+      ecosistemas, según el área que ocupan, su proporción protegida y las metas
+      de representatividad propuestas. Figura tomada y modificada de Rodrigues
+      *et al.* (2004a).
+  - photokey: Foto 1
+    photourl: ./foto-1.jpg
+    photocaption: Auyan-tepui, estado Bolívar. <i>Rebecca Miller</i>
+  - photokey: Foto 2
+    photourl: ./foto-2.jpg
+    photocaption: Arbustales espinosos, estado Lara. <i>Rebecca Miller</i>
 ---
 Las evaluaciones de riesgo objetivas, transparentes y basadas en información científica son un requisito previo para la planificación y definición de políticas efectivas de conservación (Mace *et al.* 2008, Rodríguez *et al.* 2011). Sin embargo, aunque las evaluaciones son necesarias y muy valiosas en cualquier ecuación para establecer prioridades no son suficientes por sí solas, y en la planificación para la conservación de ecosistemas se requiere contar con herramientas adicionales que faciliten la toma de decisiones.
 
@@ -59,15 +68,15 @@ El grado de endemismo de la biota de un ecosistema, o la proporción de sus orga
 
 A este respecto, se propone cuantificar el grado de singularidad de un ecosistema en función de la proporción de sus especies endémicas. La lógica es que mientras mayor sea la singularidad de un ecosistema mayor sería su prioridad, ya que también sería mayor la probabilidad de que la conservación de las especies que contiene y las interacciones entre éstas y su ambiente físico, sólo sean posibles en este ecosistema y no en otro. Una de las fórmulas más utilizadas para cuantificar el grado de endemismo es la siguiente:
 {Formula 1}
-En esta fórmula, **Ie** es el índice de riqueza de cada región ecológica **(e)**; **n** es el número total de especies en la región ecológica **(e)**; **Gi<sub>(e)</sub>** es el número de especies en el grupo **i** por ecorregión; y **Gi<sub>(t)</sub>** es el número total de especies del grupo **i** (Lamoreux *et al.* 2006). Esta fórmula puede ser aplicada a la información obtenida sobre uno o más grupos taxonómicos, cuyo grado de endemismo sea conocido en los ecosistemas presentes en el área de estudio.
+En esta fórmula, ***Ie*** es el índice de riqueza de cada región ecológica **(*e*)**; ***n*** es el número total de especies en la región ecológica **(*e*)**; ***Gi*<sub>(*e*)</sub>** es el número de especies en el grupo ***i*** por ecorregión; y ***Gi*<sub>(*t*)</sub>** es el número total de especies del grupo ***i*** (Lamoreux *et al.* 2006). Esta fórmula puede ser aplicada a la información obtenida sobre uno o más grupos taxonómicos, cuyo grado de endemismo sea conocido en los ecosistemas presentes en el área de estudio.
 
-La presente utilización del criterio de endemismo sigue la doctrina de la responsabilidad final postulada por McNeeley y otros autores (1990) y adoptada por la UICN (Unión Internacional para la Conservación de la Naturaleza), según la cual cualquier nación que posea especies o ecosistemas únicos tiene la responsabilidad final de garantizar su supervivencia (Mittermeier *et al.* 1998). Empleando valores de referencia obtenidos de la literatura científica, a los ecosistemas con índice de endemismo mayor a 2% se asigna el valor de tres (3) puntos, de acuerdo con la propuesta de Mittermeier y colaboradores (1997) para países megadiversos; mientras que a aquellos que presenten valores entre 1% y 2% les corresponde el valor de dos (2) puntos, en función de los valores usados para determinar un hotspot de biodiversidad (Mittermeier *et al.* 1998, Myers *et al.* 2000). Finalmente, para los ecosistemas cuyo índice sea menor que 1%, el valor empleado es un (1) punto.
+La presente utilización del criterio de endemismo sigue la *doctrina de la responsabilidad final* postulada por McNeeley y otros autores (1990) y adoptada por la UICN (Unión Internacional para la Conservación de la Naturaleza), según la cual cualquier nación que posea especies o ecosistemas únicos tiene la responsabilidad final de garantizar su supervivencia (Mittermeier *et al.* 1998). Empleando valores de referencia obtenidos de la literatura científica, a los ecosistemas con índice de endemismo mayor a 2% se asigna el valor de tres (3) puntos, de acuerdo con la propuesta de Mittermeier y colaboradores (1997) para países megadiversos; mientras que a aquellos que presenten valores entre 1% y 2% les corresponde el valor de dos (2) puntos, en función de los valores usados para determinar un *hotspot* de biodiversidad (Mittermeier *et al.* 1998, Myers *et al.* 2000). Finalmente, para los ecosistemas cuyo índice sea menor que 1%, el valor empleado es un (1) punto.
 
 # Atractivo para el público
 
 La biodiversidad contribuye al bienestar humano mediante la generación de una amplia variedad de servicios ecosistémicos (Millennium Ecosystem Assessment 2005). Valorar los ecosistemas en función de su aporte relativo de servicios ecosistémicos, permite jerarquizarlos según el atractivo que puedan despertar en el público.
 
-Existen varias clases de servicios ecosistémicos. Los servicios de provisionamiento están relacionados con productos directos del ecosistema, como alimentos, agua, combustible, fibras y recursos genéticos. Los servicios de regulación son aquellos que benefician a los humanos por la regulación de los procesos ecosistémicos como el clima, la erosión y la purificación del agua. Los servicios culturales no ofrecen beneficios materiales para la humanidad pero son reflejados en oportunidades para la recreación y el ecoturismo, atributos de carácter estético que sirven de inspiración y para la educación, o son el reflejo de herencias culturales u otras creencias (Millennium Ecosystem Assessment 2005).
+Existen varias clases de servicios ecosistémicos. Los *servicios de provisionamiento* están relacionados con productos directos del ecosistema, como alimentos, agua, combustible, fibras y recursos genéticos. Los *servicios de regulación* son aquellos que benefician a los humanos por la regulación de los procesos ecosistémicos como el clima, la erosión y la purificación del agua. Los *servicios culturales* no ofrecen beneficios materiales para la humanidad pero son reflejados en oportunidades para la recreación y el ecoturismo, atributos de carácter estético que sirven de inspiración y para la educación, o son el reflejo de herencias culturales u otras creencias (Millennium Ecosystem Assessment 2005).
 
 Se propone un procedimiento que tiene dos pasos. En el primero, se elabora una matriz de los ecosistemas de interés y de las grandes categorías de servicios ecosistémicos (Tabla 1). En cada ecosistema se asigna el número tres (3) a los servicios aportados por éste, que no son provistos en mayor grado por ningún otro. Se asigna dos (2) a los servicios que aporta, pero en menor grado que los anteriores. Finalmente se asigna uno (1) a los servicios cuya contribución se considere poco significativa. En un segundo paso, se contabiliza cuántos servicios ecosistémicos reciben la máxima puntuación. Si presenta 3 veces el número 3 (es decir que los 3 tipos de servicios son de gran importancia) se le otorgará el valor de tres (3) puntos. Si sólo tiene 2 veces el número 3, entonces se le asignará dos (2) puntos, y si finalmente se considera que únicamente uno de los servicios es excepcionalmente importante para la sociedad, se le dará un (1) punto. Es importante destacar que la asignación de estos valores es subjetiva y dependerá de quienes realicen la ponderación. El propósito es reflejar la visión de los beneficiarios de los ecosistemas sobre su conservación, por lo que necesariamente debe ser una variable capaz de adaptarse y responder a las diferentes expectativas de sociedades o grupos sociales.
 
@@ -91,13 +100,15 @@ Se propone un procedimiento que tiene dos pasos. En el primero, se elabora una m
 
 Una vez finalizada la evaluación, al multiplicar los valores de los cuatro criterios, se calcula el índice de prioridad de cada ecosistema. Este cálculo puede llevarse a cabo en cualquier escala espacial, como nacional, estadal o municipal. La información recopilada durante el cálculo del índice, más los valores del índice calculado serían un insumo clave para informar y apoyar propuestas concretas de conservación de los ecosistemas de la región de interés.
 
-Con el propósito de ilustrar la aplicación de este modelo, se aprovechó la evaluación realizada en los bosques de la cordillera de la Costa Central, uno de los casos de estudio presentados en este libro (Portillo-Quintero *et al.* 2010). Los resultados de ese análisis indican que los bosques siempreverdes de la región no están amenazados, mientras que los semideciduos calificarían Vulnerable (VU) y los deciduos En Peligro Crítico (CR). Por lo tanto, según la variable de riesgo de eliminación, los bosques semideciduos tienen un valor de un (1) punto y a los deciduos les corresponde tres (3) puntos.
+Con el propósito de ilustrar la aplicación de este modelo, se aprovechó la evaluación realizada en los bosques de la cordillera de la Costa Central, uno de los casos de estudio presentados en este libro (Portillo-Quintero *et al.* 2010). Los resultados de ese análisis indican que los bosques siempreverdes de la región no están amenazados, mientras que los semideciduos calificarían Vulnerable (VU) y los deciduos En Peligro Crítico (CR). Por lo tanto, según la variable de *riesgo de eliminación*, los bosques semideciduos tienen un valor de un (1) punto y a los deciduos les corresponde tres (3) puntos.
 
-En 2001, la fecha más reciente que se tiene de datos cuantitativos, el área ocupada por los bosques semideciduos y deciduos era aproximadamente entre 1.040 y 1.560 km<sup>2</sup> respectivamente. Sólo estaban protegidos 41% de los bosques semideciduos y 6% de los bosques deciduos. Aplicando la Figura 1, de acuerdo con la proporción de ecosistema protegido, ambos tienen un valor de tres (3) puntos. Los bosques semideciduos están muy cerca de la línea roja, pero por debajo de ella, por lo que un aumento relativamente pequeño en su grado de protección podría resultar en la disminución del valor de esta variable. Los bosques deciduos sí están muy por debajo de la línea roja.
+En 2001, la fecha más reciente que se tiene de datos cuantitativos, el área ocupada por los bosques semideciduos y deciduos era aproximadamente entre 1.040 y 1.560 km<sup>2</sup> respectivamente. Sólo estaban protegidos 41% de los bosques semideciduos y 6% de los bosques deciduos. Aplicando la Figura 1, de acuerdo con la *proporción de ecosistema protegido*, ambos tienen un valor de tres (3) puntos. Los bosques semideciduos están muy cerca de la línea roja, pero por debajo de ella, por lo que un aumento relativamente pequeño en su grado de protección podría resultar en la disminución del valor de esta variable. Los bosques deciduos sí están muy por debajo de la línea roja.
 
-En cuanto a la evaluación de la singularidad de los bosques de la cordillera de la Costa Central, se examinaron los patrones de diversidad de plantas en las diferentes regiones de Venezuela (Llamozas *et al.* 2003). Aunque en el momento de la evaluación no se contó con información específica sobre el endemismo en los diferentes tipos de bosque, los mayores niveles de endemismo de plantas se encuentran en Guayana (14% de la flora de Venezuela), seguidos por los Andes (3%), la cordillera de la Costa (2%) y los Llanos (<1%). En consecuencia, tanto a los bosques semideciduos como a los deciduos se les asignó un valor de dos (2) puntos, tomando como referencia el contexto nacional.
+En cuanto a la *evaluación de la singularidad* de los bosques de la cordillera de la Costa Central, se examinaron los patrones de diversidad de plantas en las diferentes regiones de Venezuela (Llamozas *et al.* 2003). Aunque en el momento de la evaluación no se contó con información específica sobre el endemismo en los diferentes tipos de bosque, los mayores niveles de endemismo de plantas se encuentran en Guayana (14% de la flora de Venezuela), seguidos por los Andes (3%), la cordillera de la Costa (2%) y los Llanos (<1%). En consecuencia, tanto a los bosques semideciduos como a los deciduos se les asignó un valor de dos (2) puntos, tomando como referencia el contexto nacional.
 
-En cuanto a los servicios ecosistémicos, tanto los bosques semideciduos como los deciduos son de alta importancia y por lo tanto les corresponde un valor de tres (3) puntos (Tabla 1). Al combinar los valores de las cuatro variables descritas en el índice de prioridad (Tabla 2), se tiene que la prioridad de los bosques deciduos es mayor que la de los bosques semideciduos por efecto de las diferencias de riesgo de eliminación entre los dos ecosistemas. En virtud de que los dos tipos de bosque son equivalentes en cuanto a la proporción protegida, singularidad y atractivo público, estas variables tienen el mismo valor en ambos casos. Sin embargo esto no siempre es así y podría ocurrir que mayores niveles de riesgo no correspondan con la máxima prioridad (Rodríguez *et al.* 2004).
+En cuanto a los *servicios ecosistémicos*, tanto los bosques semideciduos como los deciduos son de alta importancia y por lo tanto les corresponde un valor de tres (3) puntos (Tabla 1). 
+
+Al combinar los valores de las cuatro variables descritas en el índice de prioridad (Tabla 2), se tiene que la prioridad de los bosques deciduos es mayor que la de los bosques semideciduos por efecto de las diferencias de riesgo de eliminación entre los dos ecosistemas. En virtud de que los dos tipos de bosque son equivalentes en cuanto a la proporción protegida, singularidad y atractivo público, estas variables tienen el mismo valor en ambos casos. Sin embargo esto no siempre es así y podría ocurrir que mayores niveles de riesgo no correspondan con la máxima prioridad (Rodríguez *et al.* 2004).
 
 <div class="is-size-6 table-title">
   <b>Tabla 2.</b> Cálculo del índice de prioridad de conservación de los bosques semideciduos y deciduos de la cordillera de la Costa Central.

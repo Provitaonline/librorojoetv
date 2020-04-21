@@ -1,38 +1,51 @@
 ---
 case: c9
-title: "Transformación de los ecosistemas terrestres anegables del tramo central del bajo Orinoco"
-authors: "Giuseppe Colonnello, María Idalí Tachack-García, Fabián Carrasquel"
-citationPre: "Colonnello, G., M.I. Tachack-García & F. Carrasquel (2010). Transformación de los ecosistemas terrestres anegables del tramo central del bajo Orinoco. Pp: 287-292. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
+title: Transformación de los ecosistemas terrestres anegables del tramo central
+  del bajo Orinoco
+authors: Giuseppe Colonnello, María Idalí Tachack-García, Fabián Carrasquel
+citationPre: "Colonnello, G., M.I. Tachack-García & F. Carrasquel (2010).
+  Transformación de los ecosistemas terrestres anegables del tramo central del
+  bajo Orinoco. Pp: 287-292. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo
+  Hernández (eds.)."
 citationPost: ""
-cardimage: "./pancarta.jpg"
-landscapeunits: "Los llanos (<a href='/unidades/b#b23'>B23</a>), (<a href='/unidades/b#b27'>B27</a>), Sistema de colinas y sierras bajas piemontanas del Escudo Guayanés (<a href='/unidades/c#c21'>C21</a>), (<a href='/unidades/c#c22'>C22</a>)"
-locality: "Tramo central del bajo Orinoco"
-states: "Anzoátegui, Bolívar, Guárico"
+cardimage: ./pancarta.jpg
+landscapeunits: Los llanos (<a href='/unidades/b#b23'>B23</a>), (<a
+  href='/unidades/b#b27'>B27</a>), Sistema de colinas y sierras bajas
+  piemontanas del Escudo Guayanés (<a href='/unidades/c#c21'>C21</a>), (<a
+  href='/unidades/c#c22'>C22</a>)
+locality: Tramo central del bajo Orinoco
+states: Anzoátegui, Bolívar, Guárico
 area: 6500
 cardtablecolumns:
-  - "Formación Vegetal"
-  - "Requena"
-  - "Mapire"
-  - "Soledad"
+  - Formación Vegetal
+  - Requena
+  - Mapire
+  - Soledad
 cardtablerows:
-  - "Vegetación leñosa anegable|{en}A3|lc|lc"
-  - "Herbazales anegables|lc|{cr}A3|{cr}A3"
-  - "Bosques ribereños|{cr}A3|lc|{cr}A3"
-  - "Arbustales|{vu}A3|{cr}A3|lc"
-  - "Sabanas arboladas|{vu}A3|{cr}A3|lc"
-  - "Sabanas abiertas|lc|lc|{cr}A3"
+  - Vegetación leñosa anegable|{en}A3|lc|lc
+  - Herbazales anegables|lc|{cr}A3|{cr}A3
+  - Bosques ribereños|{cr}A3|lc|{cr}A3
+  - Arbustales|{vu}A3|{cr}A3|lc
+  - Sabanas arboladas|{vu}A3|{cr}A3|lc
+  - Sabanas abiertas|lc|lc|{cr}A3
 leftJustifyIcons: true
 enableTableScroll: true
 photos:
-- photokey: "Figura 1"
-  photourl: "./figura-1.jpg"
-  photocaption: "Figura 1: Situación relativa del área de estudio."
-- photokey: "Foto 1"
-  photourl: "./foto-1.jpg"
-  photocaption: "Foto 1: Rebalse anegado, Requena, estado Guárico. <i>Giuseppe Colonnello</i>"
-- photokey: "Figura 2"
-  photourl: "./figura-2.jpg"
-  photocaption: "Figura 2: Mosaico de imágenes Landsat (combinación en falso color 453). Sectores estudiados antes (A) y después (D): Requena (R), Mapire (M), y Soledad (S). Coberturas observables (colores): Vegetación anegable y bosques tropófilos y ribereños (rojo-naranja ladrillo), áreas quemadas (verde oscuronegro), agua (azul), sabanas (verde-azul), centros poblados (morado)."
+  - photokey: Figura 1
+    photourl: ./figura-1.jpg
+    photocaption: "Figura 1: Situación relativa del área de estudio."
+  - photokey: Foto 1
+    photourl: ./foto-1.jpg
+    photocaption: "Foto 1: Rebalse anegado, Requena, estado Guárico. <i>Giuseppe
+      Colonnello</i>"
+  - photokey: Figura 2
+    photourl: ./figura-2.jpg
+    photocaption: "Figura 2: Mosaico de imágenes Landsat (combinación en falso color
+      453). Sectores estudiados antes (A) y después (D): Requena (R), Mapire
+      (M), y Soledad (S). Coberturas observables (colores): Vegetación anegable
+      y bosques tropófilos y ribereños (rojo-naranja ladrillo), áreas quemadas
+      (verde oscuronegro), agua (azul), sabanas (verde-azul), centros poblados
+      (morado)."
 ---
 # Contexto
 
@@ -221,12 +234,12 @@ En el sector de Requena clasificarían En Peligro (EN) las comunidades leñosas 
         <td><div style="display: flex;">{cr}&nbsp;A3</div></td>
         <td align="center">-3</td>
         <td align="center">-14</td>
-        <td>{vu}</td>
+        <td>{lc}</td>
       </tr>
       <tr>
         <td>Sabanas abiertas</td>
         <td align="center">-3</td>
-        <td align="center">-8</td>
+        <td align="center">8</td>
         <td>{lc}</td>
         <td align="center">53</td>
         <td align="center">75</td>
@@ -295,7 +308,7 @@ En el sector de Requena clasificarían En Peligro (EN) las comunidades leñosas 
 {Foto 1}
 {Figura 2}
 
-Una de las dificultades principales para determinar con más precisión las áreas que habían sufrido cambios en el período considerado, fue la calidad de las imágenes disponibles. Por ejemplo, en el sector de Mapire la clasificación indicó reducciones de la vegetación herbácea mas no en la vegetación leñosa, sin embargo, en un recorrido en bote se documentó quemas extensas de áreas boscosas de la orilla del río y hacia el interior, en la laguna de Anache. Actualmente los troncos secos están cubiertos por trepadoras que enmascaran esta perturbación. De manera similar, en la orilla derecha del Orinoco, al oeste de la desembocadura del río Caura, amplias áreas del plano de anegación fueron clareadas para introducir ganado durante el estiaje, y aunque las imágenes satelitales no indicaron cambios, las fotos in situ muestran una cobertura muy rala de matorral, con arbustos y palmas con los cogollos quemados y rebrotando. El incremento de las quemas en este sector fue mayor a 200%. Cuando la quema ha ocurrido algunos años antes de la captura de la imagen, los procesos de recolonización vegetal borran parcialmente los efectos del factor perturbador. Igualmente, en el sector Soledad, el más poblado de las tres localidades, se observan reducciones de 20% en los herbazales anegables, probablemente destinados a la agricultura o al pastoreo. Así mismo, las comunidades leñosas, aunque no presentan una disminución en la clasificación de la imagen, han sido fuertemente afectadas por talas selectivas (Díaz & Rosales 2006).
+Una de las dificultades principales para determinar con más precisión las áreas que habían sufrido cambios en el período considerado, fue la calidad de las imágenes disponibles. Por ejemplo, en el sector de Mapire la clasificación indicó reducciones de la vegetación herbácea mas no en la vegetación leñosa, sin embargo, en un recorrido en bote se documentó quemas extensas de áreas boscosas de la orilla del río y hacia el interior, en la laguna de Anache. Actualmente los troncos secos están cubiertos por trepadoras que enmascaran esta perturbación. De manera similar, en la orilla derecha del Orinoco, al oeste de la desembocadura del río Caura, amplias áreas del plano de anegación fueron clareadas para introducir ganado durante el estiaje, y aunque las imágenes satelitales no indicaron cambios, las fotos *in situ* muestran una cobertura muy rala de matorral, con arbustos y palmas con los cogollos quemados y rebrotando. El incremento de las quemas en este sector fue mayor a 200%. Cuando la quema ha ocurrido algunos años antes de la captura de la imagen, los procesos de recolonización vegetal borran parcialmente los efectos del factor perturbador. Igualmente, en el sector Soledad, el más poblado de las tres localidades, se observan reducciones de 20% en los herbazales anegables, probablemente destinados a la agricultura o al pastoreo. Así mismo, las comunidades leñosas, aunque no presentan una disminución en la clasificación de la imagen, han sido fuertemente afectadas por talas selectivas (Díaz & Rosales 2006).
 
 Para los rebalses del Orinoco, son pocos los estudios acerca del uso de la fauna de estos hábitats, con la única excepción de la ictiofauna. Sin embargo, la reducción de la cobertura de herbazales y bosques anegables tendría un marcado efecto negativo en la conservación del manatí (*Trichechus manatus*), una de las especies que utiliza estos ambientes para su alimentación y refugio (Rivas *et al.* en prensa).
 
