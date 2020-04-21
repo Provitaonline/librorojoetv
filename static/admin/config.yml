@@ -121,7 +121,7 @@ collections:
           - label: "Subtítulo"
             name: "caption"
             widget: "string"
-            required: true
+            required: false
           - label: "Leyenda"
             name: "interventionlegend"
             widget: "list"
@@ -165,8 +165,8 @@ collections:
             required: false
       - {label: "Mapas de amenazas", name: "threatlevelmaps", widget: "list", fields: [
           {label: "Mapa", name: "map", widget: "file" , allow_multiple: false, required: true},
-          {label: "Subtítulo", name: "caption", widget: "string", required: true},
-          {label: "Categorías para leyenda", name: "threatcategories", widget: "list", required: true}]}
+          {label: "Subtítulo", name: "caption", widget: "string", required: false},
+          {label: "Categorías para leyenda", name: "threatcategories", widget: "list", required: false}]}
       - {label: "Etiqueta de zona", name: "zonelabel", widget: "select", options: ["Estado", "Localidad"], required: true}
       - {label: "Criterios empleados", name: "criteriaused", widget: "list", required: true}
       - {label: "Tabla de riesgos de colapso", name: "riskofcolapsestatelevel", widget: "list", fields: [
