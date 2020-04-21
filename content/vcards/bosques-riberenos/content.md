@@ -133,7 +133,7 @@ threatlevelmaps:
       - en
       - vu
       - nt
-    caption: Grado de amenaza 2010
+    caption: " "
 zonelabel: Estado
 criteriaused:
   - A3
