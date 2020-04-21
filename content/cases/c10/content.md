@@ -1,57 +1,73 @@
 ---
 case: c10
-title: "Cambios en la cobertura de manglares en tres sitios de la costa Caribe de Venezuela"
-authors: "Ana Lucía Dávalos"
-citationPre: "Dávalos, A.L. (2010). Cambios en la cobertura de manglares en tres sitios de la costa Caribe de Venezuela. Pp: 293-301. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
+title: Cambios en la cobertura de manglares en tres sitios de la costa Caribe de
+  Venezuela
+authors: Ana Lucía Dávalos
+citationPre: "Dávalos, A.L. (2010). Cambios en la cobertura de manglares en tres
+  sitios de la costa Caribe de Venezuela. Pp: 293-301. En: J.P. Rodríguez, F.
+  Rojas- Suárez & D. Giraldo Hernández (eds.)."
 citationPost: ""
-cardimage: "./pancarta.jpg"
-landscapeunits: "Bosques de manglar (<a href='/unidades/a'>A2</a>)"
-locality: "Costa Central, costa Oriental del lago, península de La Guajira"
-states: "Miranda, Zulia"
+cardimage: ./pancarta.jpg
+landscapeunits: Bosques de manglar (<a href='/unidades/a'>A2</a>)
+locality: Costa Central, costa Oriental del lago, península de La Guajira
+states: Miranda, Zulia
 area: 1746
-areatext: 113.126 ha (laguna de Tacarigua<sup>(1)</sup>), 89.165 ha (ciénaga de Los Olivitos<sup>(2)</sup>) y 2.433 ha (laguna de Cocinetas<sup>(3)</sup>)
+areatext: 113.126 ha (laguna de Tacarigua<sup>(1)</sup>), 89.165 ha (ciénaga de
+  Los Olivitos<sup>(2)</sup>) y 2.433 ha (laguna de Cocinetas<sup>(3)</sup>)
 cardtablecolumns:
-  - "Formación Vegetal"
-  - "Categoría"
-  - "Criterio"
+  - Formación Vegetal
+  - Categoría
+  - Criterio
 cardtablerows:
-  - "Bosques de manglar<sup>(1)</sup>|lc|--"
-  - "Bosques de manglar<sup>(2)</sup>|en|A2"
-  - "Bosques de manglar<sup>(3)</sup>|en|A2"
+  - Bosques de manglar<sup>(1)</sup>|lc|--
+  - Bosques de manglar<sup>(2)</sup>|en|A2
+  - Bosques de manglar<sup>(3)</sup>|en|A2
 photos:
-- photokey: "Figura 1"
-  photourl: "./figura-1.jpg"
-  photocaption: "Figura 1: Ubicación relativa del Parque Nacional Laguna de Tacarigua, estado Miranda (a), Refugio de Fauna Silvestre Ciénaga de Los Olivitos y laguna de Cocinetas, estado Zulia (b)."
-- photokey: "Figura 2"
-  photourl: "./figura-2a.jpg"
-  photocaption: "Figura 2a: Cobertura de manglares para el sector de laguna de Tacarigua. 1991."
-- photokey: "Figura 2b"
-  photourl: "./figura-2b.jpg"
-  photocaption: "Figura 2b: Cobertura de manglares para el sector de laguna de Tacarigua. 2001."
-- photokey: "Figura 2c"
-  photourl: "./figura-2c.jpg"
-  photocaption: "Figura 2c: Cobertura de manglares para el sector de laguna de Tacarigua. Cambios 1991-2001."
-- photokey: "Figura 3"
-  photourl: "./figura-3a.jpg"
-  photocaption: "Figura 3a: Cobertura de manglares para el sector ciénaga de Los Olivitos. 1986."
-- photokey: "Figura 3b"
-  photourl: "./figura-3b.jpg"
-  photocaption: "Figura 3b: Cobertura de manglares para el sector ciénaga de Los Olivitos. 2001."
-- photokey: "Figura 3c"
-  photourl: "./figura-3c.jpg"
-  photocaption: "Figura 3c: Cobertura de manglares para el sector ciénaga de Los Olivitos. Cambios 1986-2001."
-- photokey: "Figura 4"
-  photourl: "./figura-4a.jpg"
-  photocaption: "Figura 4a: Cobertura de manglares para el sector laguna de Cocinetas. 1986."
-- photokey: "Figura 4b"
-  photourl: "./figura-4b.jpg"
-  photocaption: "Figura 4b: Cobertura de manglares para el sector laguna de Cocinetas. 2001."
-- photokey: "Figura 4c"
-  photourl: "./figura-4c.jpg"
-  photocaption: "Figura 4c: Cobertura de manglares para el sector laguna de Cocinetas. Cambios 1986-2001."
-- photokey: "Foto 1"
-  photourl: "./foto-1.jpg"
-  photocaption: "Foto 1: Mangle rojo (<i>Rhizophora mangle</i>), Parque Nacional Laguna de Tacarigua, Estado Miranda. <i>Ana Lucía Dávalos</i>"
+  - photokey: Figura 1
+    photourl: ./figura-1.jpg
+    photocaption: "Figura 1: Ubicación relativa del Parque Nacional Laguna de
+      Tacarigua, estado Miranda (a), Refugio de Fauna Silvestre Ciénaga de Los
+      Olivitos y laguna de Cocinetas, estado Zulia (b)."
+  - photokey: Figura 2
+    photourl: ./figura-2a.jpg
+    photocaption: "Figura 2a: Cobertura de manglares para el sector de laguna de
+      Tacarigua. 1991."
+  - photokey: Figura 2b
+    photourl: ./figura-2b.jpg
+    photocaption: "Figura 2b: Cobertura de manglares para el sector de laguna de
+      Tacarigua. 2001."
+  - photokey: Figura 2c
+    photourl: ./figura-2c.jpg
+    photocaption: "Figura 2c: Cobertura de manglares para el sector de laguna de
+      Tacarigua. Cambios 1991-2001."
+  - photokey: Figura 3
+    photourl: ./figura-3a.jpg
+    photocaption: "Figura 3a: Cobertura de manglares para el sector ciénaga de Los
+      Olivitos. 1986."
+  - photokey: Figura 3b
+    photourl: ./figura-3b.jpg
+    photocaption: "Figura 3b: Cobertura de manglares para el sector ciénaga de Los
+      Olivitos. 2001."
+  - photokey: Figura 3c
+    photourl: ./figura-3c.jpg
+    photocaption: "Figura 3c: Cobertura de manglares para el sector ciénaga de Los
+      Olivitos. Cambios 1986-2001."
+  - photokey: Figura 4
+    photourl: ./figura-4a.jpg
+    photocaption: "Figura 4a: Cobertura de manglares para el sector laguna de
+      Cocinetas. 1986."
+  - photokey: Figura 4b
+    photourl: ./figura-4b.jpg
+    photocaption: "Figura 4b: Cobertura de manglares para el sector laguna de
+      Cocinetas. 2001."
+  - photokey: Figura 4c
+    photourl: ./figura-4c.jpg
+    photocaption: "Figura 4c: Cobertura de manglares para el sector laguna de
+      Cocinetas. Cambios 1986-2001."
+  - photokey: Foto 1
+    photourl: ./foto-1.jpg
+    photocaption: "Foto 1: Mangle rojo (<i>Rhizophora mangle</i>), Parque Nacional
+      Laguna de Tacarigua, Estado Miranda. <i>Ana Lucía Dávalos</i>"
 ---
 # Contexto
 
@@ -72,7 +88,9 @@ El tercer lugar de estudio, laguna de Cocinetas, se ubica en el extremo norte de
 
 Para cuantificar los cambios de cobertura se procesaron seis imágenes satelitales Landsat, asignándose para cada sector dos imágenes de fechas diferentes (Tabla 1). La selección de imágenes útiles para la detección de manglares y con bajo contenido de nubes, se llevó a cabo mediante búsqueda en el catálogo digital del sitio Web del Global Land Cover Facility: Landsat Imagery, usando la herramienta de exploración y visualización ESDI (University of Maryland 2010). El criterio de selección estuvo basado en la escogencia de imágenes tomadas durante la época seca y con una cobertura mínima de nubes.
 
-Para el procesamiento de la información geográfica se usó el programa ArcGis, y para el análisis de las imágenes satelitales el programa Idrisi Andes (ESRI 1999-2008, Eastman 2006). Con la cartografía oficial, previamente referenciada para cada sector, se procedió a estandarizar y referenciar las bandas de las imágenes satelitales del año 2001 (Tabla 1). Para cada sector se referenció la imagen satelital más antigua con respecto a la imagen de 2001. Todas las imágenes fueron procesadas a una resolución de 30 m. En cada sector de estudio se crearon ventanas para cubrir las zonas de interés, y delimitar las superficies que serían analizadas: 113.126 ha en laguna de Tacarigua, 89.165 ha en ciénaga de Los Olivitos y 2.433 ha en laguna de Cocinetas. Para la identificación de las diferentes coberturas se crearon composiciones de imágenes en falso color (con las combinaciones de las bandas 123 y 345), además de “máscaras” para eliminar de cada imagen las áreas ocupadas por nubes y sombras.
+Para el procesamiento de la información geográfica se usó el programa ArcGis, y para el análisis de las imágenes satelitales el programa Idrisi Andes (ESRI 1999-2008, Eastman 2006). Con la cartografía oficial, previamente referenciada para cada sector, se procedió a estandarizar y referenciar las bandas de las imágenes satelitales del año 2001 (Tabla 1). Para cada sector se referenció la imagen satelital más antigua con respecto a la imagen de 2001. Todas las imágenes fueron procesadas a una resolución de 30 m. 
+
+En cada sector de estudio se crearon ventanas para cubrir las zonas de interés, y delimitar las superficies que serían analizadas: 113.126 ha en laguna de Tacarigua, 89.165 ha en ciénaga de Los Olivitos y 2.433 ha en laguna de Cocinetas. Para la identificación de las diferentes coberturas se crearon composiciones de imágenes en falso color (con las combinaciones de las bandas 123 y 345), además de “máscaras” para eliminar de cada imagen las áreas ocupadas por nubes y sombras.
 
 Se realizaron diferentes tipos de clasificaciones y análisis de cobertura para cada sector, siendo la clasificación supervisada de máxima verosimilitud la que produjo los datos más concluyentes (Dávalos 2010). Los mapas de cobertura original y de cobertura actual se construyeron con base en la imagen más antigua (1986-1991) y la más reciente (2001). Una vez procesadas las imágenes, se calculó en hectáreas la superficie para cada cobertura, comparándolas con los datos de superficie de manglares obtenidos para cada año. Para validar la clasificación supervisada se utilizó la cartografía nacional a escala 1:100.000, que muestra las áreas con manglares en cada sector. Sólo se verificó en campo el sector laguna de Tacarigua, en diciembre de 2009. Para registrar geográficamente en el sitio los diferentes tipos de cobertura, con énfasis en las áreas con manglares, se usó un sistema de posicionamiento global (GPS).
 
