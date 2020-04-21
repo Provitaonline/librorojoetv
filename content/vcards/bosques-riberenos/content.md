@@ -81,7 +81,7 @@ mapcompare:
     interventionlegend:
       - image: ./intervenidas.png
         text: Áreas intervenidas
-    caption: Distribución 2010
+    caption: " "
 formationColumn: false
 stateleveltable:
   - state: Amazonas
