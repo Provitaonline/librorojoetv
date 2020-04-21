@@ -1,38 +1,51 @@
 ---
 case: c9
-title: "Transformación de los ecosistemas terrestres anegables del tramo central del bajo Orinoco"
-authors: "Giuseppe Colonnello, María Idalí Tachack-García, Fabián Carrasquel"
-citationPre: "Colonnello, G., M.I. Tachack-García & F. Carrasquel (2010). Transformación de los ecosistemas terrestres anegables del tramo central del bajo Orinoco. Pp: 287-292. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo Hernández (eds.)."
+title: Transformación de los ecosistemas terrestres anegables del tramo central
+  del bajo Orinoco
+authors: Giuseppe Colonnello, María Idalí Tachack-García, Fabián Carrasquel
+citationPre: "Colonnello, G., M.I. Tachack-García & F. Carrasquel (2010).
+  Transformación de los ecosistemas terrestres anegables del tramo central del
+  bajo Orinoco. Pp: 287-292. En: J.P. Rodríguez, F. Rojas- Suárez & D. Giraldo
+  Hernández (eds.)."
 citationPost: ""
-cardimage: "./pancarta.jpg"
-landscapeunits: "Los llanos (<a href='/unidades/b#b23'>B23</a>), (<a href='/unidades/b#b27'>B27</a>), Sistema de colinas y sierras bajas piemontanas del Escudo Guayanés (<a href='/unidades/c#c21'>C21</a>), (<a href='/unidades/c#c22'>C22</a>)"
-locality: "Tramo central del bajo Orinoco"
-states: "Anzoátegui, Bolívar, Guárico"
+cardimage: ./pancarta.jpg
+landscapeunits: Los llanos (<a href='/unidades/b#b23'>B23</a>), (<a
+  href='/unidades/b#b27'>B27</a>), Sistema de colinas y sierras bajas
+  piemontanas del Escudo Guayanés (<a href='/unidades/c#c21'>C21</a>), (<a
+  href='/unidades/c#c22'>C22</a>)
+locality: Tramo central del bajo Orinoco
+states: Anzoátegui, Bolívar, Guárico
 area: 6500
 cardtablecolumns:
-  - "Formación Vegetal"
-  - "Requena"
-  - "Mapire"
-  - "Soledad"
+  - Formación Vegetal
+  - Requena
+  - Mapire
+  - Soledad
 cardtablerows:
-  - "Vegetación leñosa anegable|{en}A3|lc|lc"
-  - "Herbazales anegables|lc|{cr}A3|{cr}A3"
-  - "Bosques ribereños|{cr}A3|lc|{cr}A3"
-  - "Arbustales|{vu}A3|{cr}A3|lc"
-  - "Sabanas arboladas|{vu}A3|{cr}A3|lc"
-  - "Sabanas abiertas|lc|lc|{cr}A3"
+  - Vegetación leñosa anegable|{en}A3|lc|lc
+  - Herbazales anegables|lc|{cr}A3|{cr}A3
+  - Bosques ribereños|{cr}A3|lc|{cr}A3
+  - Arbustales|{vu}A3|{cr}A3|lc
+  - Sabanas arboladas|{vu}A3|{cr}A3|lc
+  - Sabanas abiertas|lc|lc|{cr}A3
 leftJustifyIcons: true
 enableTableScroll: true
 photos:
-- photokey: "Figura 1"
-  photourl: "./figura-1.jpg"
-  photocaption: "Figura 1: Situación relativa del área de estudio."
-- photokey: "Foto 1"
-  photourl: "./foto-1.jpg"
-  photocaption: "Foto 1: Rebalse anegado, Requena, estado Guárico. <i>Giuseppe Colonnello</i>"
-- photokey: "Figura 2"
-  photourl: "./figura-2.jpg"
-  photocaption: "Figura 2: Mosaico de imágenes Landsat (combinación en falso color 453). Sectores estudiados antes (A) y después (D): Requena (R), Mapire (M), y Soledad (S). Coberturas observables (colores): Vegetación anegable y bosques tropófilos y ribereños (rojo-naranja ladrillo), áreas quemadas (verde oscuronegro), agua (azul), sabanas (verde-azul), centros poblados (morado)."
+  - photokey: Figura 1
+    photourl: ./figura-1.jpg
+    photocaption: "Figura 1: Situación relativa del área de estudio."
+  - photokey: Foto 1
+    photourl: ./foto-1.jpg
+    photocaption: "Foto 1: Rebalse anegado, Requena, estado Guárico. <i>Giuseppe
+      Colonnello</i>"
+  - photokey: Figura 2
+    photourl: ./figura-2.jpg
+    photocaption: "Figura 2: Mosaico de imágenes Landsat (combinación en falso color
+      453). Sectores estudiados antes (A) y después (D): Requena (R), Mapire
+      (M), y Soledad (S). Coberturas observables (colores): Vegetación anegable
+      y bosques tropófilos y ribereños (rojo-naranja ladrillo), áreas quemadas
+      (verde oscuronegro), agua (azul), sabanas (verde-azul), centros poblados
+      (morado)."
 ---
 # Contexto
 
@@ -221,12 +234,12 @@ En el sector de Requena clasificarían En Peligro (EN) las comunidades leñosas 
         <td><div style="display: flex;">{cr}&nbsp;A3</div></td>
         <td align="center">-3</td>
         <td align="center">-14</td>
-        <td>{vu}</td>
+        <td>{lc}</td>
       </tr>
       <tr>
         <td>Sabanas abiertas</td>
         <td align="center">-3</td>
-        <td align="center">-8</td>
+        <td align="center">8</td>
         <td>{lc}</td>
         <td align="center">53</td>
         <td align="center">75</td>
