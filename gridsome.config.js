@@ -223,6 +223,9 @@ module.exports = {
       options: {
         id: 'UA-64070309-5'
       }
+    },
+    {
+      use: '@gridsome/plugin-sitemap'
     }
   ],
   templates: {

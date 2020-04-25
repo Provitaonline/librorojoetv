@@ -1,6 +1,6 @@
 {
   "name": "librorojoetv",
-  "version": "0.8.2",
+  "version": "0.8.3",
   "repository": {
     "type": "git",
     "url": "https://github.com/jimmyangel/librorojoetv.git"
@@ -36,6 +36,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.12.1",
     "@fortawesome/vue-fontawesome": "^0.1.9",
     "@gridsome/plugin-google-analytics": "^0.1.0",
+    "@gridsome/plugin-sitemap": "^0.2.3",
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.4.0",
     "fs-extra": "^8.1.0",
