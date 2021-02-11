@@ -101,7 +101,7 @@
               <g-link to="https://twitter.com/provita_ong"><font-awesome size="lg" :icon="['fab', 'twitter']"/></g-link>
               &nbsp;
             </div>
-            <span> Derechos reservados, copyright © 2019 </span>
+            <span> Derechos reservados, copyright © 2019-2021 </span>
             <g-link :href="$static.homeData.contact.web" target="_blank">{{$static.homeData.contact.organization}}</g-link>
             <span>, licencia </span>
             <g-link href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</g-link>
