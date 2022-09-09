@@ -6,4 +6,3 @@ node_modules
 dist
 .env
 .env.*
-package-lock.json
